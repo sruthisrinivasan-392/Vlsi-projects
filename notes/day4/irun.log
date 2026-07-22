@@ -1,0 +1,101 @@
+irun(64): 15.20-s086: (c) Copyright 1995-2020 Cadence Design Systems, Inc.
+TOOL:	irun(64)	15.20-s086: Started on Jun 06, 2026 at 14:48:24 IST
+irun
+	seq_det_101_moore.v
+	seq_det_101_moore_tb.v
+	-access +rwc
+	-gui
+	-coverage all
+Recompiling... reason: file './seq_det_101_moore.v' is newer than expected.
+	expected: Thu Jun  4 15:46:23 2026
+	actual:   Sat Jun  6 14:47:49 2026
+file: seq_det_101_moore.v
+	module worklib.moore:v
+		errors: 0, warnings: 0
+		Caching library 'worklib' ....... Done
+	Elaborating the design hierarchy:
+	Top level design units:
+		tb_moore
+
+	Extracting FSMs for coverage:
+		worklib.moore
+		worklib.tb_moore
+	Total FSMs extracted = 0
+	Building instance overlay tables: .................... Done
+	Enabling instrumentation for coverage types: block expression FSM toggle functional
+ncelab: *W,COVDCL: By default expression coverage is scored only for Verilog logical operators (|| and &&) and VHDL logical operators (OR, AND, NOR, and NAND), and is scored only in condition expressions. To score coverage for other operators and for expressions in other statements, use the "set_expr_coverable_operators" and "set_expr_coverable_statements" coverage configuration file commands with suitable options at elaboration.
+	Generating native compiled code:
+		worklib.moore:v <0x2075909f>
+			streams:   3, words:  3104
+		worklib.tb_moore:v <0x5b38f2d6>
+			streams:   7, words: 18121
+	Building instance specific data structures.
+	Loading native compiled code:     .................... Done
+	Design hierarchy summary:
+		             Instances  Unique
+		Modules:             2       2
+		Registers:           5       5
+		Scalar wires:        4       -
+		Always blocks:       1       1
+		Initial blocks:      3       3
+		Pseudo assignments:  3       3
+	Writing initial simulation snapshot: worklib.tb_moore:v
+
+-------------------------------------
+Relinquished control to SimVision...
+ncsim> 
+ncsim> source /home/install/INCISIVE152/tools/inca/files/ncsimrc
+ncsim> database -open waves -into waves.shm -default
+Created default SHM database waves
+ncsim> probe -create -shm tb_moore.clk tb_moore.in tb_moore.out tb_moore.rst
+Created probe 1
+ncsim> run
+ncsim: *E,C58EXE: Coverage database file already exists in the test output directory './cov_work/scope/test', and will not be overwritten. Specify a different name for the test output directory or use the '-covoverwrite' option to overwrite the existing test output directory, and rerun the simulation.
+Time=0 rst=x in=x state=x out=x
+Time=5 rst=x in=x state=0 out=0
+Time=10 rst=1 in=x state=0 out=0
+Time=20 rst=0 in=x state=0 out=0
+Time=30 rst=1 in=x state=0 out=0
+Time=40 rst=1 in=0 state=0 out=0
+Time=52 rst=0 in=0 state=0 out=0
+Time=55 rst=0 in=1 state=1 out=0
+Time=65 rst=0 in=1 state=2 out=0
+Time=75 rst=0 in=1 state=3 out=1
+Time=85 rst=0 in=1 state=1 out=1
+Time=95 rst=0 in=0 state=1 out=1
+Time=105 rst=0 in=1 state=2 out=0
+Time=115 rst=0 in=0 state=2 out=0
+Time=125 rst=0 in=1 state=3 out=1
+Time=135 rst=0 in=0 state=2 out=0
+Time=145 rst=0 in=1 state=3 out=1
+Time=155 rst=0 in=1 state=1 out=1
+Time=165 rst=0 in=0 state=1 out=1
+Simulation complete via $finish(1) at time 195 NS + 0
+./seq_det_101_moore_tb.v:41         $finish;
+ncsim> coverage -analyze
+
+coverage setup:
+  workdir  :  ./cov_work
+  dutinst  :  tb_moore(tb_moore)
+  scope    :  scope
+  testname :  test
+
+coverage files:
+  model(design data) :  ./cov_work/scope/icc_65c7a168_00000000.ucm (reused)
+  data               :  ./cov_work/scope/test/icc_65c7a168_00000000.ucd
+
+Launching IMC...
+
+ncsim> 
+coverage setup:
+  workdir  :  ./cov_work
+  dutinst  :  tb_moore(tb_moore)
+  scope    :  scope
+  testname :  test
+
+coverage files:
+  model(design data) :  ./cov_work/scope/icc_65c7a168_00000000.ucm (reused)
+  data               :  ./cov_work/scope/test/icc_65c7a168_00000000.ucd
+...Regained control from SimVision
+-------------------------------------
+TOOL:	irun(64)	15.20-s086: Exiting on Jun 06, 2026 at 16:20:29 IST  (total: 01:32:05)

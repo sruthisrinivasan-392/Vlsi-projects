@@ -1,0 +1,744 @@
+#######################################################
+#                                                     
+#  Innovus Command Logging File                     
+#  Created on Thu Jun 18 15:17:25 2026                
+#                                                     
+#######################################################
+
+#@(#)CDS: Innovus v21.15-s110_1 (64bit) 09/23/2022 13:08 (Linux 3.10.0-693.el7.x86_64)
+#@(#)CDS: NanoRoute 21.15-s110_1 NR220912-2004/21_15-UB (database version 18.20.592) {superthreading v2.17}
+#@(#)CDS: AAE 21.15-s039 (64bit) 09/23/2022 (Linux 3.10.0-693.el7.x86_64)
+#@(#)CDS: CTE 21.15-s038_1 () Sep 20 2022 11:42:13 ( )
+#@(#)CDS: SYNTECH 21.15-s012_1 () Sep  5 2022 10:25:51 ( )
+#@(#)CDS: CPE v21.15-s076
+#@(#)CDS: IQuantus/TQuantus 21.1.1-s867 (64bit) Sun Jun 26 22:12:54 PDT 2022 (Linux 3.10.0-693.el7.x86_64)
+
+set_global _enable_mmmc_by_default_flow      $CTE::mmmc_default
+suppressMessage ENCEXT-2799
+getVersion
+getVersion
+getVersion
+win
+encMessage warning 0
+encMessage debug 0
+is_common_ui_mode
+restoreDesign /home/vlsi30/day16/memory/physical_design/memory_placement.enc.dat memory
+setDrawView fplan
+encMessage warning 1
+encMessage debug 0
+getIoFlowFlag
+setLayerPreference node_layer -isVisible 0
+setLayerPreference node_layer -isVisible 1
+setLayerPreference node_layer -isVisible 0
+setSrouteMode -viaConnectToShape { noshape }
+sroute -connect { blockPin padPin padRing corePin floatingStripe } -layerChangeRange { Metal1(1) Metal9(9) } -blockPinTarget { nearestTarget } -padPinPortConnect { allPort oneGeom } -padPinTarget { nearestTarget } -corePinTarget { firstAfterRowEnd } -floatingStripeTarget { blockring padring ring stripe ringpin blockpin followpin } -allowJogging 1 -crossoverViaLayerRange { Metal1(1) Metal9(9) } -nets { VDD VSS } -allowLayerChange 1 -blockPin useLef -targetViaLayerRange { Metal1(1) Metal9(9) }
+addEndCap -preCap FILL1 -postCap FILL1 -prefix ENDCAP
+setPlaceMode -fp false
+place_design
+setRouteMode -earlyGlobalHonorMsvRouteConstraint false -earlyGlobalRoutePartitionPinGuide true
+setEndCapMode -reset
+setEndCapMode -boundary_tap false
+setUsefulSkewMode -noBoundary false -maxAllowedDelay 1
+setRouteMode -earlyGlobalHonorMsvRouteConstraint false -earlyGlobalRoutePartitionPinGuide true
+setEndCapMode -reset
+setEndCapMode -boundary_tap false
+setUsefulSkewMode -noBoundary false -maxAllowedDelay 1
+setRouteMode -earlyGlobalHonorMsvRouteConstraint false -earlyGlobalRoutePartitionPinGuide true
+setEndCapMode -reset
+setEndCapMode -boundary_tap false
+setUsefulSkewMode -noBoundary false -maxAllowedDelay 1
+setPlaceMode -fp false
+place_design
+setDrawView place
+zoomBox -0.87750 16.67550 156.28150 93.44100
+zoomBox 33.53000 26.51900 130.04600 73.66300
+zoomBox -16.61550 12.17300 168.27950 102.48650
+zoomBox 26.68100 29.33200 140.23000 84.79600
+fit
+redirect -quiet {set honorDomain [getAnalysisMode -honorClockDomains]} > /dev/null
+timeDesign -preCTS -pathReports -drvReports -slackReports -numPaths 50 -prefix memory_preCTS -outDir timingReports
+setOptMode -fixCap true -fixTran true -fixFanoutLoad false
+optDesign -preCTS
+setOptMode -fixCap true -fixTran true -fixFanoutLoad false
+optDesign -preCTS
+redirect -quiet {set honorDomain [getAnalysisMode -honorClockDomains]} > /dev/null
+timeDesign -preCTS -pathReports -drvReports -slackReports -numPaths 50 -prefix memory_preCTS -outDir timingReports
+getCTSMode -engine -quiet
+create_ccopt_clock_tree_spec
+ctd_win -side none -id ctd_window
+zoomBox -62.55500 12.71800 193.35250 137.71800
+zoomBox -32.31000 44.97250 152.58400 135.28550
+zoomBox -20.49750 57.56950 136.66200 134.33550
+zoomBox -10.45700 68.27700 123.12850 133.52800
+zoomBox -82.28950 -9.41700 218.78000 137.64300
+zoomBox -163.42400 -97.17150 326.81800 142.29150
+zoomBox -98.79700 -31.22700 255.40400 141.78550
+zoomBox -52.10300 16.41800 203.80700 141.41950
+zoomBox -18.36700 50.84150 166.52800 141.15500
+zoomBox 30.49450 100.69900 112.53450 140.77200
+zoomBox 41.30950 111.73400 100.58350 140.68700
+zoomBox 52.17450 122.82100 88.57650 140.60200
+zoomBox 58.84650 129.63000 81.20250 140.55000
+zoomBox 61.79300 132.63700 77.94600 140.52700
+zoomBox 62.94400 133.81150 76.67400 140.51800
+zoomBox 57.46750 128.83350 83.77000 141.68100
+zoomBox 55.44550 126.99800 86.39000 142.11300
+zoomBox 57.17000 128.01050 83.47300 140.85850
+zoomBox 60.94100 130.22450 77.09450 138.11500
+zoomBox 62.60550 131.20250 74.27700 136.90350
+zoomBox 63.80850 131.90900 72.24200 136.02850
+zoomBox 65.55350 132.93650 69.29600 134.76450
+zoomBox 65.93950 133.16450 68.64400 134.48550
+zoomBox 66.09050 133.25350 68.38950 134.37650
+panPage -1 0
+panPage -1 0
+panPage -1 0
+panPage -1 0
+panPage -1 0
+panPage -1 0
+panPage -1 0
+panPage -1 0
+panPage -1 0
+panPage -1 0
+panPage -1 0
+panPage -1 0
+panPage -1 0
+panPage -1 0
+panPage -1 0
+panPage -1 0
+panPage -1 0
+panPage -1 0
+panPage -1 0
+panPage -1 0
+panPage -1 0
+panPage -1 0
+panPage -1 0
+panPage -1 0
+panPage -1 0
+panPage -1 0
+panPage -1 0
+panPage -1 0
+panPage -1 0
+panPage -1 0
+panPage -1 0
+panPage -1 0
+panPage -1 0
+panPage -1 0
+panPage -1 0
+panPage -1 0
+panPage -1 0
+panPage -1 0
+panPage -1 0
+panPage -1 0
+panPage -1 0
+panPage -1 0
+panPage -1 0
+panPage -1 0
+panPage -1 0
+panPage -1 0
+panPage -1 0
+panPage -1 0
+panPage -1 0
+panPage -1 0
+panPage -1 0
+panPage -1 0
+panPage -1 0
+panPage -1 0
+panPage -1 0
+panPage -1 0
+panPage -1 0
+panPage -1 0
+panPage -1 0
+panPage -1 0
+panPage -1 0
+panPage -1 0
+panPage -1 0
+panPage -1 0
+panPage -1 0
+panPage -1 0
+panPage -1 0
+panPage -1 0
+panPage -1 0
+panPage -1 0
+panPage -1 0
+panPage -1 0
+panPage -1 0
+panPage -1 0
+panPage -1 0
+panPage -1 0
+panPage -1 0
+panPage -1 0
+panPage -1 0
+panPage -1 0
+panPage -1 0
+panPage -1 0
+panPage -1 0
+panPage -1 0
+panPage -1 0
+panPage -1 0
+panPage -1 0
+panPage -1 0
+panPage -1 0
+panPage -1 0
+panPage -1 0
+panPage -1 0
+panPage -1 0
+panPage -1 0
+panPage -1 0
+panPage -1 0
+panPage -1 0
+panPage -1 0
+panPage -1 0
+panPage -1 0
+zoomBox -2.42600 133.53200 -1.22550 134.11850
+zoomBox -2.86100 133.25250 -0.56000 134.37650
+zoomBox -3.69350 132.71650 0.71650 134.87050
+zoomBox -4.78750 132.01300 2.39350 135.52050
+zoomBox -8.34200 129.72650 7.84350 137.63250
+zoomBox -16.35050 124.57450 20.12750 142.39250
+zoomBox -64.10900 93.84700 93.38750 170.77750
+zoomBox -103.16300 68.72000 153.29450 193.98900
+fit
+zoomBox -64.00100 4.98400 191.90650 129.98400
+zoomBox 13.53700 40.14050 147.12350 105.39200
+zoomBox 72.46700 67.91650 115.29250 88.83500
+zoomBox 89.84550 76.07950 105.99750 83.96900
+zoomBox 96.99400 79.43750 102.17350 81.96750
+zoomBox 98.66200 80.21650 101.36600 81.53750
+zoomBox 99.53300 80.62350 100.94450 81.31300
+zoomBox 99.98650 80.83550 100.72450 81.19600
+zoomBox 99.16350 80.45100 101.12300 81.40800
+zoomBox 97.50800 79.67700 101.92400 81.83400
+zoomBox 79.56250 71.28850 110.60900 86.45350
+zoomBox 45.16400 54.48950 127.48400 94.69950
+zoomBox -46.04450 9.94850 172.22750 116.56550
+zoomBox -287.88050 -108.15100 290.86350 174.54150
+zoomBox -225.63200 -70.98300 266.30050 169.30550
+zoomBox -89.51850 10.43050 212.59000 157.99800
+zoomBox -29.40450 46.38650 188.86900 153.00400
+zoomBox 30.99000 82.51000 165.03750 147.98650
+zoomBox 57.66200 98.46350 154.51250 145.77100
+zoomBox 76.93300 109.99000 146.90800 144.17000
+zoomBox 90.85650 118.31800 141.41350 143.01300
+zoomBox 99.76050 124.78200 130.80950 139.94800
+zoomBox 105.22850 128.75150 124.29750 138.06600
+zoomBox 108.58650 131.22250 120.29800 136.94300
+zoomBox 110.06950 132.31350 118.53150 136.44700
+zoomBox 111.55950 133.41050 116.75650 135.94900
+zoomBox 112.21750 133.89450 115.97300 135.72900
+zoomBox 109.38600 131.81100 119.34450 136.67550
+zoomBox 106.52850 129.70900 122.74600 137.63050
+zoomBox 110.30800 131.43500 118.77450 135.57050
+zoomBox 111.90100 132.16200 117.10100 134.70200
+zoomBox 112.60600 132.49600 116.36300 134.33100
+panPage -1 0
+panPage -1 0
+panPage -1 0
+panPage -1 0
+panPage -1 0
+panPage -1 0
+panPage -1 0
+panPage -1 0
+panPage -1 0
+panPage -1 0
+panPage -1 0
+panPage -1 0
+panPage 1 0
+panPage -1 0
+panPage -1 0
+panPage -1 0
+panPage -1 0
+panPage -1 0
+panPage -1 0
+panPage -1 0
+panPage -1 0
+panPage -1 0
+panPage -1 0
+panPage -1 0
+panPage -1 0
+panPage -1 0
+panPage -1 0
+panPage -1 0
+panPage -1 0
+panPage -1 0
+panPage -1 0
+panPage -1 0
+panPage -1 0
+panPage -1 0
+panPage -1 0
+panPage -1 0
+panPage -1 0
+panPage -1 0
+panPage -1 0
+panPage -1 0
+panPage -1 0
+panPage -1 0
+panPage -1 0
+panPage -1 0
+panPage -1 0
+panPage -1 0
+panPage -1 0
+panPage -1 0
+panPage -1 0
+panPage -1 0
+panPage -1 0
+panPage -1 0
+panPage -1 0
+panPage -1 0
+panPage -1 0
+panPage -1 0
+panPage -1 0
+panPage -1 0
+panPage -1 0
+panPage -1 0
+panPage -1 0
+panPage -1 0
+panPage -1 0
+panPage -1 0
+panPage -1 0
+panPage -1 0
+panPage -1 0
+panPage -1 0
+panPage -1 0
+panPage -1 0
+panPage -1 0
+panPage -1 0
+panPage -1 0
+panPage -1 0
+panPage -1 0
+panPage -1 0
+panPage -1 0
+panPage -1 0
+panPage -1 0
+panPage -1 0
+panPage -1 0
+panPage -1 0
+panPage -1 0
+panPage -1 0
+panPage -1 0
+panPage -1 0
+panPage -1 0
+panPage -1 0
+zoomBox 14.19850 132.25650 20.31600 135.24450
+zoomBox 16.05300 132.57650 19.24650 134.13650
+zoomBox 17.31850 132.80850 18.52450 133.39750
+fit
+selectObject Net clk
+zoomSelected
+zoomBox -71.60750 25.81450 185.05300 151.18250
+zoomBox -47.53100 58.85400 137.90650 149.43250
+zoomBox -23.34200 92.04700 90.54050 147.67400
+zoomBox -4.94050 117.29800 54.50700 146.33550
+zoomBox -1.92600 121.43450 48.60450 146.11650
+zoomBox 2.81400 127.93900 39.32250 145.77200
+zoomBox 6.23850 132.63850 32.61600 145.52300
+zoomBox 4.66750 130.59000 35.70100 145.74850
+zoomBox 2.82050 128.18000 39.33050 146.01350
+zoomBox -4.91850 118.08450 54.53300 147.12400
+zoomBox 5.36400 123.73850 41.87500 141.57250
+zoomBox 9.86000 126.39400 36.24000 139.27950
+zoomBox 14.37700 129.06200 30.57800 136.97550
+zoomBox 16.36900 130.24950 28.07450 135.96700
+zoomBox 17.13750 130.79700 27.08750 135.65700
+zoomBox 17.78850 131.26800 26.24600 135.39900
+zoomBox 19.55250 132.54400 23.96750 134.70050
+zoomBox 20.29600 133.08150 23.00750 134.40600
+zoomBox 20.47350 133.21000 22.77800 134.33550
+panPage 1 0
+panPage 1 0
+panPage 1 0
+panPage 1 0
+panPage 1 0
+panPage 1 0
+panPage 1 0
+panPage 1 0
+panPage 1 0
+panPage 1 0
+panPage 1 0
+panPage 1 0
+panPage 1 0
+panPage 1 0
+panPage 1 0
+panPage 1 0
+panPage 1 0
+panPage 1 0
+panPage 1 0
+panPage 1 0
+panPage 1 0
+panPage 1 0
+panPage 1 0
+panPage 1 0
+panPage 1 0
+panPage 1 0
+panPage 1 0
+panPage 1 0
+panPage 1 0
+panPage 1 0
+panPage 1 0
+panPage 1 0
+panPage 1 0
+panPage 1 0
+panPage 1 0
+panPage 1 0
+panPage 1 0
+panPage 1 0
+panPage 1 0
+zoomBox 47.05550 132.93000 50.24500 134.48800
+fit
+zoomBox -39.48050 32.63100 178.04100 138.88150
+zoomBox 3.76850 72.13050 137.35450 137.38150
+zoomBox 22.86950 89.57500 119.38550 136.71900
+zoomBox 46.64050 111.28450 97.02300 135.89450
+zoomBox 56.65750 120.43350 87.59900 135.54700
+zoomBox 62.80950 126.05200 81.81100 135.33350
+zoomBox 66.58700 129.50150 78.25700 135.20200
+zoomBox 69.45950 132.12600 75.55300 135.10250
+zoomBox 71.23950 133.06900 74.42100 134.62300
+zoomBox 71.53100 133.22300 74.23550 134.54400
+zoomBox 71.77900 133.35400 74.07800 134.47700
+fit
+zoomBox 28.58500 71.13250 162.17150 136.38400
+zoomBox 41.87900 80.44300 155.42750 135.90650
+zoomBox 62.78400 95.09400 144.82250 135.16650
+zoomBox 82.89000 109.92050 133.27200 134.53000
+zoomBox 100.69100 123.04650 123.04600 133.96600
+zoomBox 107.47750 128.05100 119.14700 133.75100
+zoomBox 109.45400 129.62300 117.88600 133.74150
+panPage 0 1
+panPage 0 1
+zoomBox 111.01850 132.46300 117.11100 135.43900
+zoomBox 111.62950 132.60750 116.80800 135.13700
+zoomBox 112.58950 132.83400 116.33200 134.66200
+zoomBox 113.55450 133.06150 115.85350 134.18450
+panPage -1 0
+panPage -1 0
+panPage -1 0
+panPage -1 0
+panPage -1 0
+panPage -1 0
+panPage -1 0
+panPage -1 0
+panPage -1 0
+panPage -1 0
+panPage -1 0
+panPage -1 0
+panPage -1 0
+panPage -1 0
+panPage -1 0
+panPage -1 0
+panPage -1 0
+panPage -1 0
+panPage -1 0
+panPage -1 0
+panPage -1 0
+panPage -1 0
+panPage -1 0
+panPage -1 0
+panPage -1 0
+panPage -1 0
+panPage -1 0
+panPage -1 0
+panPage -1 0
+panPage -1 0
+panPage -1 0
+panPage -1 0
+panPage -1 0
+panPage -1 0
+panPage -1 0
+panPage -1 0
+panPage -1 0
+panPage -1 0
+panPage 1 0
+panPage 1 0
+panPage 1 0
+panPage 1 0
+panPage 1 0
+panPage -1 0
+panPage -1 0
+panPage -1 0
+panPage -1 0
+panPage -1 0
+panPage -1 0
+panPage -1 0
+panPage -1 0
+panPage -1 0
+panPage -1 0
+panPage -1 0
+panPage -1 0
+panPage -1 0
+panPage -1 0
+panPage -1 0
+panPage -1 0
+panPage -1 0
+panPage -1 0
+panPage -1 0
+panPage -1 0
+panPage -1 0
+panPage -1 0
+panPage -1 0
+panPage -1 0
+panPage -1 0
+panPage -1 0
+panPage -1 0
+panPage -1 0
+panPage -1 0
+panPage -1 0
+panPage -1 0
+panPage -1 0
+panPage -1 0
+panPage -1 0
+panPage -1 0
+panPage -1 0
+panPage -1 0
+panPage -1 0
+panPage -1 0
+panPage -1 0
+panPage -1 0
+panPage -1 0
+panPage -1 0
+panPage -1 0
+panPage -1 0
+panPage -1 0
+panPage -1 0
+panPage -1 0
+panPage -1 0
+panPage -1 0
+panPage -1 0
+panPage -1 0
+panPage -1 0
+panPage -1 0
+panPage -1 0
+panPage -1 0
+panPage -1 0
+panPage -1 0
+panPage -1 0
+panPage -1 0
+panPage -1 0
+panPage -1 0
+panPage -1 0
+panPage -1 0
+panPage -1 0
+panPage -1 0
+panPage -1 0
+panPage -1 0
+panPage -1 0
+panPage -1 0
+panPage -1 0
+panPage -1 0
+panPage -1 0
+panPage -1 0
+panPage -1 0
+panPage -1 0
+panPage -1 0
+panPage -1 0
+panPage -1 0
+panPage -1 0
+panPage -1 0
+panPage -1 0
+panPage -1 0
+panPage -1 0
+panPage -1 0
+panPage -1 0
+panPage -1 0
+panPage -1 0
+panPage -1 0
+panPage -1 0
+panPage -1 0
+panPage -1 0
+panPage -1 0
+panPage -1 0
+panPage -1 0
+panPage -1 0
+panPage -1 0
+panPage -1 0
+panPage -1 0
+panPage -1 0
+panPage -1 0
+panPage -1 0
+panPage -1 0
+panPage -1 0
+panPage -1 0
+panPage -1 0
+panPage -1 0
+panPage -1 0
+panPage -1 0
+panPage -1 0
+panPage -1 0
+panPage -1 0
+panPage -1 0
+panPage -1 0
+panPage -1 0
+panPage -1 0
+panPage -1 0
+panPage -1 0
+panPage -1 0
+panPage 1 0
+panPage 1 0
+panPage 1 0
+panPage 1 0
+panPage 1 0
+panPage 1 0
+panPage 1 0
+panPage 1 0
+panPage 1 0
+panPage 1 0
+panPage 1 0
+panPage 1 0
+panPage 1 0
+panPage 1 0
+panPage 1 0
+panPage -1 0
+panPage 1 0
+panPage 1 0
+zoomBox 20.20900 133.16200 21.87050 133.97350
+zoomBox 20.37550 133.20100 21.78800 133.89100
+panPage -1 0
+panPage -1 0
+panPage -1 0
+panPage -1 0
+panPage -1 0
+panPage -1 0
+panPage -1 0
+panPage -1 0
+panPage -1 0
+panPage -1 0
+panPage -1 0
+panPage -1 0
+panPage -1 0
+panPage -1 0
+panPage -1 0
+panPage -1 0
+panPage -1 0
+panPage -1 0
+panPage -1 0
+panPage -1 0
+panPage -1 0
+panPage -1 0
+panPage -1 0
+panPage -1 0
+panPage -1 0
+panPage -1 0
+panPage -1 0
+panPage -1 0
+panPage -1 0
+panPage -1 0
+panPage -1 0
+panPage -1 0
+panPage -1 0
+panPage -1 0
+panPage -1 0
+panPage -1 0
+panPage -1 0
+panPage -1 0
+panPage -1 0
+panPage -1 0
+panPage -1 0
+panPage -1 0
+panPage -1 0
+panPage -1 0
+panPage -1 0
+panPage -1 0
+panPage -1 0
+panPage -1 0
+panPage -1 0
+panPage -1 0
+panPage -1 0
+panPage -1 0
+panPage -1 0
+panPage -1 0
+panPage -1 0
+panPage -1 0
+panPage -1 0
+panPage -1 0
+panPage -1 0
+panPage -1 0
+fit
+deselectAll
+zoomBox -220.42900 -53.02700 269.81100 186.43500
+zoomBox -547.66600 -162.99800 391.48050 295.73650
+zoomBox -220.43000 -53.02750 269.81150 186.43500
+zoomBox -49.61050 4.37700 206.29950 129.37850
+zoomBox 54.16500 39.25150 167.71450 94.71550
+zoomBox 86.10500 49.98500 155.83850 84.04700
+zoomBox 110.13000 58.02600 146.53250 75.80700
+zoomBox 120.25450 61.41400 142.61050 72.33400
+zoomBox 127.95650 63.99200 139.62700 69.69250
+selectObject IO_Pin clk
+zoomBox 117.76900 60.39600 144.07200 73.24400
+zoomBox 87.52450 49.72150 157.26950 83.78900
+zoomBox 26.64600 28.23500 183.83450 105.01500
+zoomBox -73.56250 -7.13300 227.56150 139.95350
+zoomBox -154.08300 -35.55200 262.69750 168.02800
+deselectObject IO_Pin clk
+selectObject Net clk
+zoomSelected
+setNanoRouteMode -quiet -routeWithTimingDriven 1
+setNanoRouteMode -quiet -routeWithSiDriven 1
+setNanoRouteMode -quiet -routeTopRoutingLayer 9
+setNanoRouteMode -quiet -routeBottomRoutingLayer 1
+setNanoRouteMode -quiet -drouteEndIteration 1
+setNanoRouteMode -quiet -routeWithTimingDriven true
+setNanoRouteMode -quiet -routeWithSiDriven true
+routeDesign -globalDetail
+getCTSMode -engine -quiet
+setLayerPreference node_layer -isVisible 1
+zoomBox -347.68900 -127.69700 452.93550 263.37500
+zoomBox -747.27600 -305.10900 786.47000 444.06250
+zoomBox -347.69000 -127.69750 452.93550 263.37500
+zoomBox -30.22150 13.25550 187.94350 119.82000
+zoomBox 56.28650 51.66400 115.73550 80.70250
+zoomBox 71.77450 58.54050 102.80800 73.69900
+zoomBox 78.30050 61.43750 97.36000 70.74750
+ui_view_box
+ui_view_box
+dbquery -area {78.3 61.4375 97.36 70.7475} -objType inst
+dbquery -area {78.3 61.4375 97.36 70.7475} -objType regular
+dbquery -area {78.3 61.4375 97.36 70.7475} -objType special
+selectInst {mem_reg[10][26]}
+deselectInst {mem_reg[10][26]}
+deselectInst {mem_reg[10][26]}
+deselectAll
+selectVia 82.2200 68.6700 83.2200 69.6700 9 VDD
+fit
+fit
+fit
+ui_view_box
+ui_view_box
+dbquery -area {-82.529 -6.6845 218.5385 140.3745} -objType inst
+dbquery -area {-82.529 -6.6845 218.5385 140.3745} -objType regular
+dbquery -area {-82.529 -6.6845 218.5385 140.3745} -objType special
+selectVia 82.2200 68.6700 83.2200 69.6700 9 VDD
+deselectVia 82.2200 68.6700 83.2200 69.6700 9 VDD
+deselectVia 82.2200 68.6700 83.2200 69.6700 9 VDD
+ui_view_box
+ui_view_box
+dbquery -area {-82.529 -6.6845 218.5385 140.3745} -objType inst
+dbquery -area {-82.529 -6.6845 218.5385 140.3745} -objType regular
+dbquery -area {-82.529 -6.6845 218.5385 140.3745} -objType special
+selectInst {mem_reg[7][18]}
+deselectInst {mem_reg[7][18]}
+deselectInst {mem_reg[7][18]}
+selectInst {mem_reg[7][18]}
+deselectInst {mem_reg[7][18]}
+deselectInst {mem_reg[7][18]}
+selectInst {mem_reg[7][18]}
+deselectInst {mem_reg[7][18]}
+deselectInst {mem_reg[7][18]}
+selectInst {mem_reg[7][18]}
+deselectInst {mem_reg[7][18]}
+deselectInst {mem_reg[7][18]}
+selectInst {mem_reg[7][18]}
+deselectInst {mem_reg[7][18]}
+deselectInst {mem_reg[7][18]}
+zoomBox -183.10050 -55.98450 307.13700 183.47650
+zoomBox -878.95900 -397.09150 920.15350 481.70050
+zoomBox -528.48350 -219.78600 576.39700 319.90250
+zoomBox -373.69800 -141.48000 424.57850 248.44500
+zoomBox -261.63750 -81.34200 315.11750 200.37900
+zoomBox -113.32250 -20.02750 240.87750 152.98450
+zoomBox -47.82000 7.05150 208.09000 132.05300
+zoomBox -0.49450 26.61650 184.40050 116.93000
+zoomBox 33.69800 40.75200 167.28500 106.00350
+saveDesign memory_router.enc
+zoomBox 44.65600 55.22800 141.17300 102.37250
+streamOut memory.gds -libName DesignLib -units 2000 -mode ALL

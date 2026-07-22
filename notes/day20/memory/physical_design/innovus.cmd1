@@ -1,0 +1,123 @@
+#######################################################
+#                                                     
+#  Innovus Command Logging File                     
+#  Created on Thu Jun 18 13:21:56 2026                
+#                                                     
+#######################################################
+
+#@(#)CDS: Innovus v21.15-s110_1 (64bit) 09/23/2022 13:08 (Linux 3.10.0-693.el7.x86_64)
+#@(#)CDS: NanoRoute 21.15-s110_1 NR220912-2004/21_15-UB (database version 18.20.592) {superthreading v2.17}
+#@(#)CDS: AAE 21.15-s039 (64bit) 09/23/2022 (Linux 3.10.0-693.el7.x86_64)
+#@(#)CDS: CTE 21.15-s038_1 () Sep 20 2022 11:42:13 ( )
+#@(#)CDS: SYNTECH 21.15-s012_1 () Sep  5 2022 10:25:51 ( )
+#@(#)CDS: CPE v21.15-s076
+#@(#)CDS: IQuantus/TQuantus 21.1.1-s867 (64bit) Sun Jun 26 22:12:54 PDT 2022 (Linux 3.10.0-693.el7.x86_64)
+
+set_global _enable_mmmc_by_default_flow      $CTE::mmmc_default
+suppressMessage ENCEXT-2799
+getVersion
+getVersion
+getVersion
+win
+set init_gnd_net VSS
+set init_lef_file ../../../../install/FOUNDRY/digital/90nm/dig/lef/gsclib090_translated.lef
+set init_verilog ../synthesis/memory_netlist.v
+set init_pwr_net VDD
+init_design
+zoomBox -39.08150 31.74500 123.35200 111.08700
+zoomBox -59.47500 8.75000 165.34700 118.56650
+zoomBox -72.44450 -5.87350 192.05250 123.32250
+getIoFlowFlag
+setIoFlowFlag 0
+floorPlan -coreMarginsBy die -site gsclib090site -r 1 0.7 8 8 8 8
+uiSetTool select
+getIoFlowFlag
+fit
+zoomBox -70.76050 1.89000 185.14750 126.89050
+gui_select -rect {0.31450 52.76650 8.50800 55.05350}
+zoomBox -58.67050 9.92150 158.85150 116.17200
+zoomBox -70.76100 1.89000 185.14750 126.89050
+uiSetTool ruler
+uiSetTool ruler
+uiSetTool ruler
+uiSetTool ruler
+zoomBox -47.83800 9.86400 169.68450 116.11500
+zoomBox -70.76200 1.88950 185.14750 126.89050
+zoomBox -97.73050 -7.49300 203.33950 139.56750
+clearGlobalNets
+clearGlobalNets
+clearGlobalNets
+clearGlobalNets
+clearGlobalNets
+clearGlobalNets
+globalNetConnect VDD -type pgpin -pin VDD -instanceBasename * -hierarchicalInstance {}
+globalNetConnect VSS -type pgpin -pin VSS -instanceBasename * -hierarchicalInstance {}
+set sprCreateIeRingOffset 1.0
+set sprCreateIeRingThreshold 1.0
+set sprCreateIeRingJogDistance 1.0
+set sprCreateIeRingLayers {}
+set sprCreateIeRingOffset 1.0
+set sprCreateIeRingThreshold 1.0
+set sprCreateIeRingJogDistance 1.0
+set sprCreateIeRingLayers {}
+set sprCreateIeStripeWidth 10.0
+set sprCreateIeStripeThreshold 1.0
+set sprCreateIeStripeWidth 10.0
+set sprCreateIeStripeThreshold 1.0
+set sprCreateIeRingOffset 1.0
+set sprCreateIeRingThreshold 1.0
+set sprCreateIeRingJogDistance 1.0
+set sprCreateIeRingLayers {}
+set sprCreateIeStripeWidth 10.0
+set sprCreateIeStripeThreshold 1.0
+setAddRingMode -ring_target default -extend_over_row 0 -ignore_rows 0 -avoid_short 0 -skip_crossing_trunks none -stacked_via_top_layer Metal9 -stacked_via_bottom_layer Metal1 -via_using_exact_crossover_size 1 -orthogonal_only true -skip_via_on_pin {  standardcell } -skip_via_on_wire_shape {  noshape }
+addRing -nets {VDD VSS} -type core_rings -follow core -layer {top Metal9 bottom Metal9 left Metal8 right Metal8} -width {top 1.8 bottom 1.8 left 1.8 right 1.8} -spacing {top 0.5 bottom 0.5 left 0.5 right 0.5} -offset {top 1.8 bottom 1.8 left 1.8 right 1.8} -center 0 -threshold 0 -jog_distance 0 -snap_wire_center_to_grid None
+zoomBox -75.84000 9.38750 180.07000 134.38900
+zoomBox -57.06100 24.02200 160.46250 130.27300
+zoomBox -88.16650 -4.34600 212.90500 142.71500
+zoomBox -33.76700 32.35750 183.75750 138.60900
+zoomBox -12.50850 46.69150 172.38750 137.00550
+zoomBox 5.56100 58.87550 162.72300 135.64250
+zoomBox 20.92000 69.23200 154.50800 134.48400
+zoomBox 38.33750 83.50250 134.85450 130.64700
+zoomBox 45.13950 89.07550 127.17900 129.14850
+zoomBox 20.88050 68.19450 154.47000 133.44750
+zoomBox -3.43850 46.41100 181.46050 136.72650
+zoomBox -18.93900 32.51400 198.58900 138.76750
+zoomBox -58.62950 -3.07050 242.44700 143.99300
+zoomBox -83.86950 -25.69950 270.33800 147.31600
+zoomBox -73.93950 -5.24650 227.13700 141.81700
+set sprCreateIeRingOffset 1.0
+set sprCreateIeRingThreshold 1.0
+set sprCreateIeRingJogDistance 1.0
+set sprCreateIeRingLayers {}
+set sprCreateIeRingOffset 1.0
+set sprCreateIeRingThreshold 1.0
+set sprCreateIeRingJogDistance 1.0
+set sprCreateIeRingLayers {}
+set sprCreateIeStripeWidth 10.0
+set sprCreateIeStripeThreshold 1.0
+set sprCreateIeStripeWidth 10.0
+set sprCreateIeStripeThreshold 1.0
+set sprCreateIeRingOffset 1.0
+set sprCreateIeRingThreshold 1.0
+set sprCreateIeRingJogDistance 1.0
+set sprCreateIeRingLayers {}
+set sprCreateIeStripeWidth 10.0
+set sprCreateIeStripeThreshold 1.0
+setAddStripeMode -ignore_block_check false -break_at none -route_over_rows_only false -rows_without_stripes_only false -extend_to_closest_target none -stop_at_last_wire_for_area false -partial_set_thru_domain false -ignore_nondefault_domains false -trim_antenna_back_to_shape none -spacing_type edge_to_edge -spacing_from_block 0 -stripe_min_length stripe_width -stacked_via_top_layer Metal9 -stacked_via_bottom_layer Metal1 -via_using_exact_crossover_size false -split_vias false -orthogonal_only true -allow_jog { padcore_ring  block_ring } -skip_via_on_pin {  standardcell } -skip_via_on_wire_shape {  noshape   }
+addStripe -nets {VDD VSS} -layer Metal9 -direction horizontal -width 1 -spacing 0.4 -number_of_sets 20 -start_from bottom -switch_layer_over_obs false -max_same_layer_jog_length 2 -padcore_ring_top_layer_limit Metal9 -padcore_ring_bottom_layer_limit Metal1 -block_ring_top_layer_limit Metal9 -block_ring_bottom_layer_limit Metal1 -use_wire_group 0 -snap_wire_center_to_grid None
+zoomBox -43.26950 6.01350 174.25850 112.26700
+zoomBox -19.71700 14.77800 137.44700 91.54600
+zoomBox -43.26950 6.01350 174.25850 112.26700
+zoomBox -58.24700 0.44000 197.66800 125.44400
+zoomBox -75.86800 -6.11750 225.20850 140.94600
+uiSetTool select
+setDrawView place
+setDrawView fplan
+uiSetTool select
+ui_view_box
+ui_view_box
+dbquery -area {-75.868 -6.1175 225.2085 140.946} -objType inst
+dbquery -area {-75.868 -6.1175 225.2085 140.946} -objType regular
+dbquery -area {-75.868 -6.1175 225.2085 140.946} -objType special

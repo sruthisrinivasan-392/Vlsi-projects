@@ -1,0 +1,1912 @@
+
+Cadence Innovus(TM) Implementation System.
+Copyright 2021 Cadence Design Systems, Inc. All rights reserved worldwide.
+
+Version:	v21.15-s110_1, built Fri Sep 23 13:08:12 PDT 2022
+Options:	
+Date:		Mon Jun 22 10:59:11 2026
+Host:		cadence (x86_64 w/Linux 4.18.0-425.3.1.el8.x86_64) (8cores*16cpus*Intel(R) Core(TM) i7-10875H CPU @ 2.30GHz 16384KB)
+OS:		Red Hat Enterprise Linux release 8.7 (Ootpa)
+
+License:
+		[10:59:11.095625] Configured Lic search path (21.01-s002): 5280@cadence
+
+		invs	Innovus Implementation System	21.1	checkout succeeded
+		8 CPU jobs allowed with the current license(s). Use setMultiCpuUsage to set your required CPU count.
+Change the soft stacksize limit to 0.2%RAM (63 mbytes). Set global soft_stack_size_limit to change the value.
+
+**INFO:  MMMC transition support version v31-84 
+
+<CMD> set_global _enable_mmmc_by_default_flow      $CTE::mmmc_default
+<CMD> suppressMessage ENCEXT-2799
+<CMD> getVersion
+<CMD> getVersion
+<CMD> getVersion
+[INFO] Loading PVS 22.20 fill procedures
+<CMD> win
+<CMD> save_global ../../day17/FSM/physical_design/Default.globals
+<CMD> set init_gnd_net VSS
+<CMD> set init_lef_file ../../../install/FOUNDRY/digital/90nm/dig/lef/gsclib090_translated.lef
+<CMD> set init_verilog ../synthesis/fsm_netlist.v
+<CMD> set init_mmmc_file ../../day17/FSM/physical_design/Default.view
+<CMD> set init_pwr_net VDD
+<CMD> init_design
+#% Begin Load MMMC data ... (date=06/22 11:04:25, mem=1005.8M)
+**ERROR: (TCLCMD-995):	Can not open file '../../../../install/FOUNDRY/digital/90nm/dig/captable/gpdk090.lef.extended.CapTbl' for RC corner
+<CMD> set init_gnd_net VSS
+<CMD> set init_lef_file ../../../install/FOUNDRY/digital/90nm/dig/lef/gsclib090_translated.lef
+<CMD> set init_verilog ../synthesis/fsm_netlist.v
+<CMD> set init_mmmc_file ../../day17/FSM/physical_design/Default.view
+<CMD> set init_pwr_net VDD
+<CMD> init_design
+% Begin Load MMMC data ... (date=06/22 11:04:27, mem=1006.0M)
+**ERROR: (TCLCMD-995):	Can not open file '../../../../install/FOUNDRY/digital/90nm/dig/captable/gpdk090.lef.extended.CapTbl' for RC corner
+<CMD> set init_gnd_net VSS
+<CMD> set init_lef_file ../../../install/FOUNDRY/digital/90nm/dig/lef/gsclib090_translated.lef
+<CMD> set init_verilog ../synthesis/fsm_netlist.v
+<CMD> set init_mmmc_file ../../day17/FSM/physical_design/Default.view
+<CMD> set init_pwr_net VDD
+<CMD> init_design
+% Begin Load MMMC data ... (date=06/22 11:04:27, mem=1006.0M)
+**ERROR: (TCLCMD-995):	Can not open file '../../../../install/FOUNDRY/digital/90nm/dig/captable/gpdk090.lef.extended.CapTbl' for RC corner
+<CMD> set init_gnd_net VSS
+<CMD> set init_lef_file ../../../install/FOUNDRY/digital/90nm/dig/lef/gsclib090_translated.lef
+<CMD> set init_verilog ../synthesis/fsm_netlist.v
+<CMD> set init_mmmc_file ../../day17/FSM/physical_design/Default.view
+<CMD> set init_pwr_net VDD
+<CMD> init_design
+% Begin Load MMMC data ... (date=06/22 11:04:27, mem=1006.0M)
+**ERROR: (TCLCMD-995):	Can not open file '../../../../install/FOUNDRY/digital/90nm/dig/captable/gpdk090.lef.extended.CapTbl' for RC corner
+<CMD> set init_gnd_net VSS
+<CMD> set init_lef_file ../../../install/FOUNDRY/digital/90nm/dig/lef/gsclib090_translated.lef
+<CMD> set init_verilog ../synthesis/fsm_netlist.v
+<CMD> set init_mmmc_file ../../day17/FSM/physical_design/Default.view
+<CMD> set init_pwr_net VDD
+<CMD> init_design
+% Begin Load MMMC data ... (date=06/22 11:04:27, mem=1006.0M)
+**ERROR: (TCLCMD-995):	Can not open file '../../../../install/FOUNDRY/digital/90nm/dig/captable/gpdk090.lef.extended.CapTbl' for RC corner
+<CMD> set init_gnd_net VSS
+<CMD> set init_lef_file ../../../install/FOUNDRY/digital/90nm/dig/lef/gsclib090_translated.lef
+<CMD> set init_verilog ../synthesis/fsm_netlist.v
+<CMD> set init_mmmc_file ../../day17/FSM/physical_design/Default.view
+<CMD> set init_pwr_net VDD
+<CMD> init_design
+% Begin Load MMMC data ... (date=06/22 11:04:27, mem=1006.0M)
+**ERROR: (TCLCMD-995):	Can not open file '../../../../install/FOUNDRY/digital/90nm/dig/captable/gpdk090.lef.extended.CapTbl' for RC corner
+<CMD> set init_gnd_net VSS
+<CMD> set init_lef_file ../../../install/FOUNDRY/digital/90nm/dig/lef/gsclib090_translated.lef
+<CMD> set init_verilog ../synthesis/fsm_netlist.v
+<CMD> set init_mmmc_file ../../day17/FSM/physical_design/Default.view
+<CMD> set init_pwr_net VDD
+<CMD> init_design
+% Begin Load MMMC data ... (date=06/22 11:04:28, mem=1006.0M)
+**ERROR: (TCLCMD-995):	Can not open file '../../../../install/FOUNDRY/digital/90nm/dig/captable/gpdk090.lef.extended.CapTbl' for RC corner
+<CMD> set init_gnd_net VSS
+<CMD> set init_lef_file ../../../install/FOUNDRY/digital/90nm/dig/lef/gsclib090_translated.lef
+<CMD> set init_verilog ../synthesis/fsm_netlist.v
+<CMD> set init_mmmc_file ../../day17/FSM/physical_design/Default.view
+<CMD> set init_pwr_net VDD
+<CMD> init_design
+% Begin Load MMMC data ... (date=06/22 11:04:28, mem=1006.0M)
+**ERROR: (TCLCMD-995):	Can not open file '../../../../install/FOUNDRY/digital/90nm/dig/captable/gpdk090.lef.extended.CapTbl' for RC corner
+<CMD> set init_gnd_net VSS
+<CMD> set init_lef_file ../../../install/FOUNDRY/digital/90nm/dig/lef/gsclib090_translated.lef
+<CMD> set init_verilog ../synthesis/fsm_netlist.v
+<CMD> set init_mmmc_file ../../day17/FSM/physical_design/Default.view
+<CMD> set init_pwr_net VDD
+<CMD> init_design
+% Begin Load MMMC data ... (date=06/22 11:04:28, mem=1006.0M)
+**ERROR: (TCLCMD-995):	Can not open file '../../../../install/FOUNDRY/digital/90nm/dig/captable/gpdk090.lef.extended.CapTbl' for RC corner
+<CMD> set init_gnd_net VSS
+<CMD> set init_lef_file ../../../install/FOUNDRY/digital/90nm/dig/lef/gsclib090_translated.lef
+<CMD> set init_verilog ../synthesis/fsm_netlist.v
+<CMD> set init_mmmc_file ../../day17/FSM/physical_design/Default.view
+<CMD> set init_pwr_net VDD
+<CMD> init_design
+% Begin Load MMMC data ... (date=06/22 11:04:28, mem=1006.0M)
+**ERROR: (TCLCMD-995):	Can not open file '../../../../install/FOUNDRY/digital/90nm/dig/captable/gpdk090.lef.extended.CapTbl' for RC corner
+<CMD> set init_gnd_net VSS
+<CMD> set init_lef_file ../../../install/FOUNDRY/digital/90nm/dig/lef/gsclib090_translated.lef
+<CMD> set init_verilog ../synthesis/fsm_netlist.v
+<CMD> set init_mmmc_file ../../day17/FSM/physical_design/Default.view
+<CMD> set init_pwr_net VDD
+<CMD> init_design
+% Begin Load MMMC data ... (date=06/22 11:04:28, mem=1006.0M)
+**ERROR: (TCLCMD-995):	Can not open file '../../../../install/FOUNDRY/digital/90nm/dig/captable/gpdk090.lef.extended.CapTbl' for RC corner
+<CMD> set init_gnd_net VSS
+<CMD> set init_lef_file ../../../install/FOUNDRY/digital/90nm/dig/lef/gsclib090_translated.lef
+<CMD> set init_verilog ../synthesis/fsm_netlist.v
+<CMD> set init_mmmc_file ../../day17/FSM/physical_design/Default.view
+<CMD> set init_pwr_net VDD
+<CMD> init_design
+% Begin Load MMMC data ... (date=06/22 11:04:29, mem=1006.0M)
+**ERROR: (TCLCMD-995):	Can not open file '../../../../install/FOUNDRY/digital/90nm/dig/captable/gpdk090.lef.extended.CapTbl' for RC corner
+<CMD> save_global Default.globals
+<CMD> set init_gnd_net VSS
+<CMD> set init_lef_file ../../../install/FOUNDRY/digital/90nm/dig/lef/gsclib090_translated.lef
+<CMD> set init_verilog ../synthesis/fsm_netlist.v
+<CMD> set init_mmmc_file ../../day17/FSM/physical_design/Default.view
+<CMD> set init_pwr_net VDD
+<CMD> init_design
+% Begin Load MMMC data ... (date=06/22 11:06:14, mem=1006.6M)
+**ERROR: (TCLCMD-995):	Can not open file '../../../../install/FOUNDRY/digital/90nm/dig/captable/gpdk090.lef.extended.CapTbl' for RC corner
+<CMD> set init_gnd_net VSS
+<CMD> set init_lef_file ../../../install/FOUNDRY/digital/90nm/dig/lef/gsclib090_translated.lef
+<CMD> set init_verilog ../synthesis/fsm_netlist.v
+<CMD> set init_mmmc_file ../../day17/FSM/physical_design/Default.view
+<CMD> set init_pwr_net VDD
+<CMD> init_design
+% Begin Load MMMC data ... (date=06/22 11:06:14, mem=1006.6M)
+**ERROR: (TCLCMD-995):	Can not open file '../../../../install/FOUNDRY/digital/90nm/dig/captable/gpdk090.lef.extended.CapTbl' for RC corner
+<CMD> set init_gnd_net VSS
+<CMD> set init_lef_file ../../../install/FOUNDRY/digital/90nm/dig/lef/gsclib090_translated.lef
+<CMD> set init_verilog ../synthesis/fsm_netlist.v
+<CMD> set init_mmmc_file ../../day17/FSM/physical_design/Default.view
+<CMD> set init_pwr_net VDD
+<CMD> init_design
+% Begin Load MMMC data ... (date=06/22 11:06:15, mem=1006.6M)
+**ERROR: (TCLCMD-995):	Can not open file '../../../../install/FOUNDRY/digital/90nm/dig/captable/gpdk090.lef.extended.CapTbl' for RC corner
+<CMD> set init_gnd_net VSS
+<CMD> set init_lef_file ../../../install/FOUNDRY/digital/90nm/dig/lef/gsclib090_translated.lef
+<CMD> set init_verilog ../synthesis/fsm_netlist.v
+<CMD> set init_mmmc_file ../../day17/FSM/physical_design/Default.view
+<CMD> set init_pwr_net VDD
+<CMD> init_design
+% Begin Load MMMC data ... (date=06/22 11:06:15, mem=1006.6M)
+**ERROR: (TCLCMD-995):	Can not open file '../../../../install/FOUNDRY/digital/90nm/dig/captable/gpdk090.lef.extended.CapTbl' for RC corner
+<CMD> set init_gnd_net VSS
+<CMD> set init_lef_file ../../../install/FOUNDRY/digital/90nm/dig/lef/gsclib090_translated.lef
+<CMD> set init_verilog ../synthesis/fsm_netlist.v
+<CMD> set init_mmmc_file ../../day17/FSM/physical_design/Default.view
+<CMD> set init_pwr_net VDD
+<CMD> init_design
+% Begin Load MMMC data ... (date=06/22 11:06:15, mem=1006.6M)
+**ERROR: (TCLCMD-995):	Can not open file '../../../../install/FOUNDRY/digital/90nm/dig/captable/gpdk090.lef.extended.CapTbl' for RC corner
+<CMD> set init_gnd_net VSS
+<CMD> set init_lef_file ../../../install/FOUNDRY/digital/90nm/dig/lef/gsclib090_translated.lef
+<CMD> set init_verilog ../synthesis/fsm_netlist.v
+<CMD> set init_mmmc_file ../../day17/FSM/physical_design/Default.view
+<CMD> set init_pwr_net VDD
+<CMD> init_design
+% Begin Load MMMC data ... (date=06/22 11:06:15, mem=1006.6M)
+**ERROR: (TCLCMD-995):	Can not open file '../../../../install/FOUNDRY/digital/90nm/dig/captable/gpdk090.lef.extended.CapTbl' for RC corner
+<CMD> set init_gnd_net VSS
+<CMD> set init_lef_file ../../../install/FOUNDRY/digital/90nm/dig/lef/gsclib090_translated.lef
+<CMD> set init_verilog ../synthesis/fsm_netlist.v
+<CMD> set init_mmmc_file ../../day17/FSM/physical_design/Default.view
+<CMD> set init_pwr_net VDD
+<CMD> init_design
+% Begin Load MMMC data ... (date=06/22 11:06:15, mem=1006.6M)
+**ERROR: (TCLCMD-995):	Can not open file '../../../../install/FOUNDRY/digital/90nm/dig/captable/gpdk090.lef.extended.CapTbl' for RC corner
+<CMD> set init_gnd_net VSS
+<CMD> set init_lef_file ../../../install/FOUNDRY/digital/90nm/dig/lef/gsclib090_translated.lef
+<CMD> set init_verilog ../synthesis/fsm_netlist.v
+<CMD> set init_mmmc_file ../../day17/FSM/physical_design/Default.view
+<CMD> set init_pwr_net VDD
+<CMD> init_design
+% Begin Load MMMC data ... (date=06/22 11:06:16, mem=1006.6M)
+**ERROR: (TCLCMD-995):	Can not open file '../../../../install/FOUNDRY/digital/90nm/dig/captable/gpdk090.lef.extended.CapTbl' for RC corner
+<CMD> set init_gnd_net VSS
+<CMD> set init_lef_file ../../../install/FOUNDRY/digital/90nm/dig/lef/gsclib090_translated.lef
+<CMD> set init_verilog ../synthesis/fsm_netlist.v
+<CMD> set init_mmmc_file ../../day17/FSM/physical_design/Default.view
+<CMD> set init_pwr_net VDD
+<CMD> init_design
+% Begin Load MMMC data ... (date=06/22 11:06:16, mem=1006.6M)
+<CMD> set init_gnd_net VSS
+<CMD> set init_lef_file ../../../install/FOUNDRY/digital/90nm/dig/lef/gsclib090_translated.lef
+<CMD> set init_verilog ../synthesis/fsm_netlist.v
+<CMD> set init_mmmc_file ../../day17/FSM/physical_design/Default.view
+<CMD> set init_pwr_net VDD
+<CMD> init_design
+% Begin Load MMMC data ... (date=06/22 11:06:16, mem=1006.6M)
+<CMD> set init_gnd_net VSS
+<CMD> set init_lef_file ../../../install/FOUNDRY/digital/90nm/dig/lef/gsclib090_translated.lef
+<CMD> set init_verilog ../synthesis/fsm_netlist.v
+<CMD> set init_mmmc_file ../../day17/FSM/physical_design/Default.view
+<CMD> set init_pwr_net VDD
+<CMD> init_design
+% Begin Load MMMC data ... (date=06/22 11:06:16, mem=1006.6M)
+<CMD> set init_gnd_net VSS
+<CMD> set init_lef_file ../../../install/FOUNDRY/digital/90nm/dig/lef/gsclib090_translated.lef
+<CMD> set init_verilog ../synthesis/fsm_netlist.v
+<CMD> set init_mmmc_file ../../day17/FSM/physical_design/Default.view
+<CMD> set init_pwr_net VDD
+<CMD> init_design
+% Begin Load MMMC data ... (date=06/22 11:06:18, mem=1006.6M)
+<CMD> set init_gnd_net VSS
+<CMD> set init_lef_file ../../../install/FOUNDRY/digital/90nm/dig/lef/gsclib090_translated.lef
+<CMD> set init_verilog ../synthesis/fsm_netlist.v
+<CMD> set init_mmmc_file ../../day17/FSM/physical_design/Default.view
+<CMD> set init_pwr_net VDD
+<CMD> init_design
+% Begin Load MMMC data ... (date=06/22 11:06:20, mem=1006.6M)
+<CMD> set init_gnd_net VSS
+<CMD> set init_lef_file ../../../install/FOUNDRY/digital/90nm/dig/lef/gsclib090_translated.lef
+<CMD> set init_verilog ../synthesis/fsm_netlist.v
+<CMD> set init_mmmc_file ../../day17/FSM/physical_design/Default.view
+<CMD> set init_pwr_net VDD
+<CMD> init_design
+% Begin Load MMMC data ... (date=06/22 11:06:20, mem=1006.6M)
+<CMD> set init_gnd_net VSS
+<CMD> set init_lef_file ../../../install/FOUNDRY/digital/90nm/dig/lef/gsclib090_translated.lef
+<CMD> set init_verilog ../synthesis/fsm_netlist.v
+<CMD> set init_mmmc_file ../../day17/FSM/physical_design/Default.view
+<CMD> set init_pwr_net VDD
+<CMD> init_design
+% Begin Load MMMC data ... (date=06/22 11:06:20, mem=1006.6M)
+<CMD> set init_gnd_net VSS
+<CMD> set init_lef_file ../../../install/FOUNDRY/digital/90nm/dig/lef/gsclib090_translated.lef
+<CMD> set init_verilog ../synthesis/fsm_netlist.v
+<CMD> set init_mmmc_file ../../day17/FSM/physical_design/Default.view
+<CMD> set init_pwr_net VDD
+<CMD> init_design
+% Begin Load MMMC data ... (date=06/22 11:06:20, mem=1006.6M)
+<CMD> set init_gnd_net VSS
+<CMD> set init_lef_file ../../../install/FOUNDRY/digital/90nm/dig/lef/gsclib090_translated.lef
+<CMD> set init_verilog ../synthesis/fsm_netlist.v
+<CMD> set init_mmmc_file ../../day17/FSM/physical_design/Default.view
+<CMD> set init_pwr_net VDD
+<CMD> init_design
+% Begin Load MMMC data ... (date=06/22 11:06:20, mem=1006.6M)
+<CMD> set init_gnd_net VSS
+<CMD> set init_lef_file ../../../install/FOUNDRY/digital/90nm/dig/lef/gsclib090_translated.lef
+<CMD> set init_verilog ../synthesis/fsm_netlist.v
+<CMD> set init_mmmc_file ../../day17/FSM/physical_design/Default.view
+<CMD> set init_pwr_net VDD
+<CMD> init_design
+% Begin Load MMMC data ... (date=06/22 11:06:21, mem=1006.6M)
+<CMD> set init_gnd_net VSS
+<CMD> set init_lef_file ../../../install/FOUNDRY/digital/90nm/dig/lef/gsclib090_translated.lef
+<CMD> set init_verilog ../synthesis/fsm_netlist.v
+<CMD> set init_mmmc_file ../../day17/FSM/physical_design/Default.view
+<CMD> set init_pwr_net VDD
+<CMD> init_design
+% Begin Load MMMC data ... (date=06/22 11:06:21, mem=1006.6M)
+<CMD> set init_gnd_net VSS
+<CMD> set init_lef_file ../../../install/FOUNDRY/digital/90nm/dig/lef/gsclib090_translated.lef
+<CMD> set init_verilog ../synthesis/fsm_netlist.v
+<CMD> set init_mmmc_file ../../day17/FSM/physical_design/Default.view
+<CMD> set init_pwr_net VDD
+<CMD> init_design
+% Begin Load MMMC data ... (date=06/22 11:06:21, mem=1006.6M)
+<CMD> set init_gnd_net VSS
+<CMD> set init_lef_file ../../../install/FOUNDRY/digital/90nm/dig/lef/gsclib090_translated.lef
+<CMD> set init_verilog ../synthesis/fsm_netlist.v
+<CMD> set init_mmmc_file ../../day17/FSM/physical_design/Default.view
+<CMD> set init_pwr_net VDD
+<CMD> init_design
+% Begin Load MMMC data ... (date=06/22 11:06:21, mem=1006.6M)
+<CMD> set init_gnd_net VSS
+<CMD> set init_lef_file ../../../install/FOUNDRY/digital/90nm/dig/lef/gsclib090_translated.lef
+<CMD> set init_verilog ../synthesis/fsm_netlist.v
+<CMD> set init_mmmc_file ../../day17/FSM/physical_design/Default.view
+<CMD> set init_pwr_net VDD
+<CMD> init_design
+% Begin Load MMMC data ... (date=06/22 11:07:58, mem=1006.2M)
+<CMD> set init_gnd_net VSS
+<CMD> set init_lef_file ../../../install/FOUNDRY/digital/90nm/dig/lef/gsclib090_translated.lef
+<CMD> set init_verilog ../synthesis/fsm_netlist.v
+<CMD> set init_mmmc_file ../../day17/FSM/physical_design/Default.view
+<CMD> set init_pwr_net VDD
+<CMD> init_design
+% Begin Load MMMC data ... (date=06/22 11:07:59, mem=1006.2M)
+<CMD> set init_gnd_net VSS
+<CMD> set init_lef_file ../../../install/FOUNDRY/digital/90nm/dig/lef/gsclib090_translated.lef
+<CMD> set init_verilog ../synthesis/fsm_netlist.v
+<CMD> set init_mmmc_file ../../day17/FSM/physical_design/Default.view
+<CMD> set init_pwr_net VDD
+<CMD> init_design
+% Begin Load MMMC data ... (date=06/22 11:07:59, mem=1006.2M)
+<CMD> set init_gnd_net VSS
+<CMD> set init_lef_file ../../../install/FOUNDRY/digital/90nm/dig/lef/gsclib090_translated.lef
+<CMD> set init_verilog ../synthesis/fsm_netlist.v
+<CMD> set init_mmmc_file ../../day17/FSM/physical_design/Default.view
+<CMD> set init_pwr_net VDD
+<CMD> init_design
+% Begin Load MMMC data ... (date=06/22 11:08:00, mem=1006.2M)
+<CMD> set init_gnd_net VSS
+<CMD> set init_lef_file ../../../install/FOUNDRY/digital/90nm/dig/lef/gsclib090_translated.lef
+<CMD> set init_verilog ../synthesis/fsm_netlist.v
+<CMD> set init_mmmc_file ../../day17/FSM/physical_design/Default.view
+<CMD> set init_pwr_net VDD
+<CMD> init_design
+% Begin Load MMMC data ... (date=06/22 11:08:00, mem=1006.2M)
+<CMD> save_global Default.globals
+<CMD> save_global Default.globals
+<CMD> set init_gnd_net VSS
+<CMD> set init_lef_file ../../../install/FOUNDRY/digital/90nm/dig/lef/gsclib090_translated.lef
+<CMD> set init_verilog ../synthesis/fsm_netlist.v
+<CMD> set init_mmmc_file Default.view
+<CMD> set init_pwr_net VDD
+<CMD> init_design
+% Begin Load MMMC data ... (date=06/22 11:09:07, mem=1006.3M)
+<CMD> set init_gnd_net VSS
+<CMD> set init_lef_file ../../../install/FOUNDRY/digital/90nm/dig/lef/gsclib090_translated.lef
+<CMD> set init_verilog ../synthesis/fsm_netlist.v
+<CMD> set init_mmmc_file Default.view
+<CMD> set init_pwr_net VDD
+<CMD> init_design
+% Begin Load MMMC data ... (date=06/22 11:09:07, mem=1006.3M)
+<CMD> set init_gnd_net VSS
+<CMD> set init_lef_file ../../../install/FOUNDRY/digital/90nm/dig/lef/gsclib090_translated.lef
+<CMD> set init_verilog ../synthesis/fsm_netlist.v
+<CMD> set init_mmmc_file Default.view
+<CMD> set init_pwr_net VDD
+<CMD> init_design
+% Begin Load MMMC data ... (date=06/22 11:09:55, mem=1003.6M)
+% End Load MMMC data ... (date=06/22 11:09:55, total cpu=0:00:00.0, real=0:00:00.0, peak res=1004.0M, current mem=1004.0M)
+rc_corner
+
+Loading LEF file ../../../install/FOUNDRY/digital/90nm/dig/lef/gsclib090_translated.lef ...
+**WARN: (IMPLF-105):	The layer 'Oxide' specified in SAMENET spacing
+rule is neither a routing layer nor a cut layer. The rule is ignored.
+**WARN: (IMPLF-105):	The layer 'Poly' specified in SAMENET spacing
+rule is neither a routing layer nor a cut layer. The rule is ignored.
+Set DBUPerIGU to M2 pitch 580.
+**WARN: (IMPLF-200):	Pin 'A' in macro 'ANTENNA' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-200' for more detail.
+
+##  Check design process and node:  
+##  Both design process and tech node are not set.
+
+Loading view definition file from Default.view
+Reading slow timing library '/home/install/FOUNDRY/digital/90nm/dig/lib/slow.lib' ...
+Read 479 cells in library 'slow' 
+Reading fast timing library '/home/install/FOUNDRY/digital/90nm/dig/lib/fast.lib' ...
+Read 479 cells in library 'fast' 
+*** End library_loading (cpu=0.02min, real=0.02min, mem=41.0M, fe_cpu=2.29min, fe_real=10.75min, fe_mem=1077.9M) ***
+% Begin Load netlist data ... (date=06/22 11:09:56, mem=1027.9M)
+*** Begin netlist parsing (mem=1077.9M) ***
+**WARN: (IMPVL-159):	Pin 'VDD' of cell 'XOR3XL' is defined in LEF but not in the timing library.
+Type 'man IMPVL-159' for more detail.
+**WARN: (IMPVL-159):	Pin 'VSS' of cell 'XOR3XL' is defined in LEF but not in the timing library.
+Type 'man IMPVL-159' for more detail.
+**WARN: (IMPVL-159):	Pin 'VDD' of cell 'XOR3X1' is defined in LEF but not in the timing library.
+Type 'man IMPVL-159' for more detail.
+**WARN: (IMPVL-159):	Pin 'VSS' of cell 'XOR3X1' is defined in LEF but not in the timing library.
+Type 'man IMPVL-159' for more detail.
+**WARN: (IMPVL-159):	Pin 'VSS' of cell 'XOR2XL' is defined in LEF but not in the timing library.
+Type 'man IMPVL-159' for more detail.
+**WARN: (IMPVL-159):	Pin 'VDD' of cell 'XOR2XL' is defined in LEF but not in the timing library.
+Type 'man IMPVL-159' for more detail.
+**WARN: (IMPVL-159):	Pin 'VSS' of cell 'XOR2X4' is defined in LEF but not in the timing library.
+Type 'man IMPVL-159' for more detail.
+**WARN: (IMPVL-159):	Pin 'VDD' of cell 'XOR2X4' is defined in LEF but not in the timing library.
+Type 'man IMPVL-159' for more detail.
+**WARN: (IMPVL-159):	Pin 'VSS' of cell 'XOR2X2' is defined in LEF but not in the timing library.
+Type 'man IMPVL-159' for more detail.
+**WARN: (IMPVL-159):	Pin 'VDD' of cell 'XOR2X2' is defined in LEF but not in the timing library.
+Type 'man IMPVL-159' for more detail.
+**WARN: (IMPVL-159):	Pin 'VSS' of cell 'XOR2X1' is defined in LEF but not in the timing library.
+Type 'man IMPVL-159' for more detail.
+**WARN: (IMPVL-159):	Pin 'VDD' of cell 'XOR2X1' is defined in LEF but not in the timing library.
+Type 'man IMPVL-159' for more detail.
+**WARN: (IMPVL-159):	Pin 'VSS' of cell 'XNOR3XL' is defined in LEF but not in the timing library.
+Type 'man IMPVL-159' for more detail.
+**WARN: (IMPVL-159):	Pin 'VDD' of cell 'XNOR3XL' is defined in LEF but not in the timing library.
+Type 'man IMPVL-159' for more detail.
+**WARN: (IMPVL-159):	Pin 'VDD' of cell 'XNOR3X1' is defined in LEF but not in the timing library.
+Type 'man IMPVL-159' for more detail.
+**WARN: (IMPVL-159):	Pin 'VSS' of cell 'XNOR3X1' is defined in LEF but not in the timing library.
+Type 'man IMPVL-159' for more detail.
+**WARN: (IMPVL-159):	Pin 'VSS' of cell 'XNOR2XL' is defined in LEF but not in the timing library.
+Type 'man IMPVL-159' for more detail.
+**WARN: (IMPVL-159):	Pin 'VDD' of cell 'XNOR2XL' is defined in LEF but not in the timing library.
+Type 'man IMPVL-159' for more detail.
+**WARN: (IMPVL-159):	Pin 'VSS' of cell 'XNOR2X4' is defined in LEF but not in the timing library.
+Type 'man IMPVL-159' for more detail.
+**WARN: (IMPVL-159):	Pin 'VDD' of cell 'XNOR2X4' is defined in LEF but not in the timing library.
+Type 'man IMPVL-159' for more detail.
+**WARN: (EMS-27):	Message (IMPVL-159) has exceeded the current message display limit of 20.
+To increase the message display limit, refer to the product command reference manual.
+Created 479 new cells from 2 timing libraries.
+Reading netlist ...
+Backslashed names will retain backslash and a trailing blank character.
+Reading verilog netlist '../synthesis/fsm_netlist.v'
+
+*** Memory Usage v#1 (Current mem = 1077.891M, initial mem = 483.863M) ***
+*** End netlist parsing (cpu=0:00:00.0, real=0:00:01.0, mem=1077.9M) ***
+% End Load netlist data ... (date=06/22 11:09:57, total cpu=0:00:00.0, real=0:00:01.0, peak res=1042.0M, current mem=1042.0M)
+Top level cell is mealy_1001_1100.
+Hooked 958 DB cells to tlib cells.
+Starting recursive module instantiation check.
+No recursion found.
+Building hierarchical netlist for Cell mealy_1001_1100 ...
+*** Netlist is unique.
+** info: there are 967 modules.
+** info: there are 26 stdCell insts.
+
+*** Memory Usage v#1 (Current mem = 1132.305M, initial mem = 483.863M) ***
+**WARN: (IMPFP-3961):	The techSite 'pad' has no related standard cells in the LEF/OA library. The calculations for this site type cannot be made unless standard cell models of this type exist in the LEF/OA library. Ignore this warning if the SITE is not used by the library. Alternatively, remove the SITE definition for the LEF/OA library to avoid this message.
+Type 'man IMPFP-3961' for more detail.
+**WARN: (IMPFP-3961):	The techSite 'corner' has no related standard cells in the LEF/OA library. The calculations for this site type cannot be made unless standard cell models of this type exist in the LEF/OA library. Ignore this warning if the SITE is not used by the library. Alternatively, remove the SITE definition for the LEF/OA library to avoid this message.
+Type 'man IMPFP-3961' for more detail.
+Horizontal Layer M1 offset = 290 (derived)
+Vertical Layer M2 offset = 290 (derived)
+Start create_tracks
+Generated pitch 0.29 in Metal8 is different from 0.87 defined in technology file in unpreferred direction.
+Extraction setup Started 
+Initializing multi-corner RC extraction with 1 active RC Corners ...
+**WARN: (IMPEXT-6202):	In addition to the technology file, the capacitance table file is specified for all the RC corners. If the technology file  is already specified for all the RC corners, the capacitance table file is not required for preRoute and postRoute extraction. In a new session, the capacitance table files can be removed from the create_rc_corner command to enable the technology file to be used for preRoute and postRoute (effort level medium/high/signoff) extraction engines.
+Type 'man IMPEXT-6202' for more detail.
+Reading Capacitance Table File /home/install/FOUNDRY/digital/90nm/dig/captable/gpdk090.lef.extended.CapTbl ...
+Cap table was created using Encounter 05.20-s112_1.
+Process name: gpdk090_9l.
+Importing multi-corner RC tables ... 
+Summary of Active RC-Corners : 
+ 
+ Analysis View: worst_case
+    RC-Corner Name        : rc_corner
+    RC-Corner Index       : 0
+    RC-Corner Temperature : 125 Celsius
+    RC-Corner Cap Table   : '/home/install/FOUNDRY/digital/90nm/dig/captable/gpdk090.lef.extended.CapTbl'
+    RC-Corner PreRoute Res Factor         : 1
+    RC-Corner PreRoute Cap Factor         : 1
+    RC-Corner PostRoute Res Factor        : 1 {1 1 1}
+    RC-Corner PostRoute Cap Factor        : 1 {1 1 1}
+    RC-Corner PostRoute XCap Factor       : 1 {1 1 1}
+    RC-Corner PreRoute Clock Res Factor   : 1	[Derived from postRoute_res (effortLevel low)]
+    RC-Corner PreRoute Clock Cap Factor   : 1	[Derived from postRoute_cap (effortLevel low)]
+    RC-Corner PostRoute Clock Cap Factor  : 1 {1 1 1} 	[Derived from postRoute_cap (effortLevel low)]
+    RC-Corner PostRoute Clock Res Factor  : 1 {1 1 1} 	[Derived from postRoute_res (effortLevel low)]
+    RC-Corner PostRoute Clock coupling capacitance Factor : 1 {1 1 1} 
+    RC-Corner Technology file: '/home/install/FOUNDRY/digital/90nm/dig/qrc/gpdk090_9l.tch'
+ 
+ Analysis View: best_case
+    RC-Corner Name        : rc_corner
+    RC-Corner Index       : 0
+    RC-Corner Temperature : 125 Celsius
+    RC-Corner Cap Table   : '/home/install/FOUNDRY/digital/90nm/dig/captable/gpdk090.lef.extended.CapTbl'
+    RC-Corner PreRoute Res Factor         : 1
+    RC-Corner PreRoute Cap Factor         : 1
+    RC-Corner PostRoute Res Factor        : 1 {1 1 1}
+    RC-Corner PostRoute Cap Factor        : 1 {1 1 1}
+    RC-Corner PostRoute XCap Factor       : 1 {1 1 1}
+    RC-Corner PreRoute Clock Res Factor   : 1	[Derived from postRoute_res (effortLevel low)]
+    RC-Corner PreRoute Clock Cap Factor   : 1	[Derived from postRoute_cap (effortLevel low)]
+    RC-Corner PostRoute Clock Cap Factor  : 1 {1 1 1} 	[Derived from postRoute_cap (effortLevel low)]
+    RC-Corner PostRoute Clock Res Factor  : 1 {1 1 1} 	[Derived from postRoute_res (effortLevel low)]
+    RC-Corner PostRoute Clock coupling capacitance Factor : 1 {1 1 1} 
+    RC-Corner Technology file: '/home/install/FOUNDRY/digital/90nm/dig/qrc/gpdk090_9l.tch'
+Updating RC grid for preRoute extraction ...
+Initializing multi-corner capacitance tables ... 
+Initializing multi-corner resistance tables ...
+*Info: initialize multi-corner CTS.
+Reading timing constraints file '../synthesis/fsm_tool.sdc' ...
+Current (total cpu=0:02:18, real=0:10:46, peak res=1338.9M, current mem=1338.9M)
+**WARN: (TCLCMD-1461):	Skipped unsupported command: set_units (File ../synthesis/fsm_tool.sdc, Line 9).
+
+**WARN: (TCLCMD-1461):	Skipped unsupported command: set_units (File ../synthesis/fsm_tool.sdc, Line 10).
+
+mealy_1001_1100
+INFO (CTE): Reading of timing constraints file ../synthesis/fsm_tool.sdc completed, with 2 WARNING
+Ending "Constraint file reading stats" (total cpu=0:00:00.0, real=0:00:00.0, peak res=1357.6M, current mem=1357.6M)
+Current (total cpu=0:02:18, real=0:10:46, peak res=1357.6M, current mem=1357.6M)
+Total number of combinational cells: 317
+Total number of sequential cells: 152
+Total number of tristate cells: 10
+Total number of level shifter cells: 0
+Total number of power gating cells: 0
+Total number of isolation cells: 0
+Total number of power switch cells: 0
+Total number of pulse generator cells: 0
+Total number of always on buffers: 0
+Total number of retention cells: 0
+List of usable buffers: BUFX2 BUFX12 BUFX16 BUFX20 CLKBUFX2 BUFX3 BUFX4 BUFX6 BUFX8 CLKBUFX12 CLKBUFX16 CLKBUFX20 CLKBUFX3 CLKBUFX4 CLKBUFX6 CLKBUFX8
+Total number of usable buffers: 16
+List of unusable buffers:
+Total number of unusable buffers: 0
+List of usable inverters: CLKINVX1 CLKINVX2 CLKINVX12 CLKINVX16 CLKINVX20 CLKINVX3 CLKINVX4 CLKINVX6 CLKINVX8 INVX1 INVX2 INVX12 INVX16 INVX20 INVXL INVX3 INVX4 INVX6 INVX8
+Total number of usable inverters: 19
+List of unusable inverters:
+Total number of unusable inverters: 0
+List of identified usable delay cells: DLY1X1 DLY1X4 DLY2X1 DLY2X4 DLY3X1 DLY3X4 DLY4X1 DLY4X4
+Total number of identified usable delay cells: 8
+List of identified unusable delay cells:
+Total number of identified unusable delay cells: 0
+<CMD> getIoFlowFlag
+<CMD> setIoFlowFlag 0
+<CMD> floorPlan -coreMarginsBy die -site gsclib090site -r 1 0.7 8 8 8 8
+**WARN: (IMPFP-3961):	The techSite 'pad' has no related standard cells in the LEF/OA library. The calculations for this site type cannot be made unless standard cell models of this type exist in the LEF/OA library. Ignore this warning if the SITE is not used by the library. Alternatively, remove the SITE definition for the LEF/OA library to avoid this message.
+Type 'man IMPFP-3961' for more detail.
+**WARN: (IMPFP-3961):	The techSite 'corner' has no related standard cells in the LEF/OA library. The calculations for this site type cannot be made unless standard cell models of this type exist in the LEF/OA library. Ignore this warning if the SITE is not used by the library. Alternatively, remove the SITE definition for the LEF/OA library to avoid this message.
+Type 'man IMPFP-3961' for more detail.
+Horizontal Layer M1 offset = 290 (derived)
+Vertical Layer M2 offset = 290 (derived)
+Start create_tracks
+Generated pitch 0.29 in Metal8 is different from 0.87 defined in technology file in unpreferred direction.
+<CMD> uiSetTool select
+<CMD> getIoFlowFlag
+<CMD> fit
+<CMD> setIoFlowFlag 0
+<CMD> floorPlan -site gsclib090site -r 0.72972972973 0.693694 8.12 8.12 8.12 8.12
+**WARN: (IMPFP-3961):	The techSite 'pad' has no related standard cells in the LEF/OA library. The calculations for this site type cannot be made unless standard cell models of this type exist in the LEF/OA library. Ignore this warning if the SITE is not used by the library. Alternatively, remove the SITE definition for the LEF/OA library to avoid this message.
+Type 'man IMPFP-3961' for more detail.
+**WARN: (IMPFP-3961):	The techSite 'corner' has no related standard cells in the LEF/OA library. The calculations for this site type cannot be made unless standard cell models of this type exist in the LEF/OA library. Ignore this warning if the SITE is not used by the library. Alternatively, remove the SITE definition for the LEF/OA library to avoid this message.
+Type 'man IMPFP-3961' for more detail.
+Horizontal Layer M1 offset = 290 (derived)
+Vertical Layer M2 offset = 290 (derived)
+Start create_tracks
+Generated pitch 0.29 in Metal8 is different from 0.87 defined in technology file in unpreferred direction.
+**WARN: (IMPFP-325):	Floorplan of the design is resized. All current floorplan objects are automatically derived based on specified new floorplan. This may change blocks, fixed standard cells, existing routes and blockages.
+<CMD> uiSetTool select
+<CMD> getIoFlowFlag
+<CMD> fit
+<CMD> clearGlobalNets
+<CMD> globalNetConnect VDD -type pgpin -pin VDD -instanceBasename * -hierarchicalInstance {}
+<CMD> globalNetConnect VSS -type pgpin -pin VSS -instanceBasename * -hierarchicalInstance {}
+<CMD> clearGlobalNets
+<CMD> globalNetConnect VDD -type pgpin -pin VDD -instanceBasename * -hierarchicalInstance {}
+<CMD> globalNetConnect VSS -type pgpin -pin VSS -instanceBasename * -hierarchicalInstance {}
+<CMD> clearGlobalNets
+<CMD> globalNetConnect VDD -type pgpin -pin VDD -instanceBasename * -hierarchicalInstance {}
+<CMD> globalNetConnect VSS -type pgpin -pin VSS -instanceBasename * -hierarchicalInstance {}
+<CMD> set sprCreateIeRingOffset 1.0
+<CMD> set sprCreateIeRingThreshold 1.0
+<CMD> set sprCreateIeRingJogDistance 1.0
+<CMD> set sprCreateIeRingLayers {}
+<CMD> set sprCreateIeRingOffset 1.0
+<CMD> set sprCreateIeRingThreshold 1.0
+<CMD> set sprCreateIeRingJogDistance 1.0
+<CMD> set sprCreateIeRingLayers {}
+<CMD> set sprCreateIeStripeWidth 10.0
+<CMD> set sprCreateIeStripeThreshold 1.0
+<CMD> set sprCreateIeStripeWidth 10.0
+<CMD> set sprCreateIeStripeThreshold 1.0
+<CMD> set sprCreateIeRingOffset 1.0
+<CMD> set sprCreateIeRingThreshold 1.0
+<CMD> set sprCreateIeRingJogDistance 1.0
+<CMD> set sprCreateIeRingLayers {}
+<CMD> set sprCreateIeStripeWidth 10.0
+<CMD> set sprCreateIeStripeThreshold 1.0
+
+viaInitial starts at Mon Jun 22 11:18:43 2026
+viaInitial ends at Mon Jun 22 11:18:43 2026
+<CMD> setAddRingMode -ring_target default -extend_over_row 0 -ignore_rows 0 -avoid_short 0 -skip_crossing_trunks none -stacked_via_top_layer Metal9 -stacked_via_bottom_layer Metal1 -via_using_exact_crossover_size 1 -orthogonal_only true -skip_via_on_pin {  standardcell } -skip_via_on_wire_shape {  noshape }
+The ring targets are set to core/block ring wires.
+addRing command will consider rows while creating rings.
+addRing command will disallow rings to go over rows.
+addRing command will ignore shorts while creating rings.
+<CMD> addRing -nets {VDD VSS} -type core_rings -follow core -layer {top Metal9 bottom Metal9 left Metal8 right Metal8} -width {top 1.8 bottom 1.8 left 1.8 right 1.8} -spacing {top 0.5 bottom 0.5 left 0.5 right 0.5} -offset {top 1.8 bottom 1.8 left 1.8 right 1.8} -center 1 -threshold 0 -jog_distance 0 -snap_wire_center_to_grid None
+
+Loading cell geometries (cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 1459.3M)
+Ring generation is complete.
+vias are now being generated.
+addRing created 8 wires.
+ViaGen created 8 vias, deleted 0 via to avoid violation.
++--------+----------------+----------------+
+|  Layer |     Created    |     Deleted    |
++--------+----------------+----------------+
+| Metal8 |        4       |       NA       |
+|  Via8  |        8       |        0       |
+| Metal9 |        4       |       NA       |
++--------+----------------+----------------+
+<CMD> setAddRingMode -ring_target default -extend_over_row 0 -ignore_rows 0 -avoid_short 0 -skip_crossing_trunks none -stacked_via_top_layer Metal9 -stacked_via_bottom_layer Metal1 -via_using_exact_crossover_size 1 -orthogonal_only true -skip_via_on_pin {  standardcell } -skip_via_on_wire_shape {  noshape }
+The ring targets are set to core/block ring wires.
+addRing command will consider rows while creating rings.
+addRing command will disallow rings to go over rows.
+addRing command will ignore shorts while creating rings.
+<CMD> addRing -nets {VDD VSS} -type core_rings -follow core -layer {top Metal9 bottom Metal9 left Metal8 right Metal8} -width {top 1.8 bottom 1.8 left 1.8 right 1.8} -spacing {top 0.5 bottom 0.5 left 0.5 right 0.5} -offset {top 1.8 bottom 1.8 left 1.8 right 1.8} -center 1 -threshold 0 -jog_distance 0 -snap_wire_center_to_grid None
+
+Loading cell geometries (cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 1459.3M)
+Ring generation is complete.
+<CMD> set sprCreateIeRingOffset 1.0
+<CMD> set sprCreateIeRingThreshold 1.0
+<CMD> set sprCreateIeRingJogDistance 1.0
+<CMD> set sprCreateIeRingLayers {}
+<CMD> set sprCreateIeRingOffset 1.0
+<CMD> set sprCreateIeRingThreshold 1.0
+<CMD> set sprCreateIeRingJogDistance 1.0
+<CMD> set sprCreateIeRingLayers {}
+<CMD> set sprCreateIeStripeWidth 10.0
+<CMD> set sprCreateIeStripeThreshold 1.0
+<CMD> set sprCreateIeStripeWidth 10.0
+<CMD> set sprCreateIeStripeThreshold 1.0
+<CMD> set sprCreateIeRingOffset 1.0
+<CMD> set sprCreateIeRingThreshold 1.0
+<CMD> set sprCreateIeRingJogDistance 1.0
+<CMD> set sprCreateIeRingLayers {}
+<CMD> set sprCreateIeStripeWidth 10.0
+<CMD> set sprCreateIeStripeThreshold 1.0
+<CMD> setAddStripeMode -ignore_block_check false -break_at none -route_over_rows_only false -rows_without_stripes_only false -extend_to_closest_target none -stop_at_last_wire_for_area false -partial_set_thru_domain false -ignore_nondefault_domains false -trim_antenna_back_to_shape none -spacing_type edge_to_edge -spacing_from_block 0 -stripe_min_length stripe_width -stacked_via_top_layer Metal9 -stacked_via_bottom_layer Metal1 -via_using_exact_crossover_size false -split_vias false -orthogonal_only true -allow_jog { padcore_ring  block_ring } -skip_via_on_pin {  standardcell } -skip_via_on_wire_shape {  noshape   }
+addStripe will allow jog to connect padcore ring and block ring.
+
+Stripes will stop at the boundary of the specified area.
+When breaking rings, the power planner will consider the existence of blocks.
+Stripes will not extend to closest target.
+The power planner will set stripe antenna targets to none (no trimming allowed).
+Stripes will not be created over regions without power planning wires.
+The entire stripe set will break at the domain if one of the nets is not in the domain.
+addStripe will break automatically at non-default domains when generating global stripes over the core area or default domain.
+Offset for stripe breaking is set to 0.
+<CMD> addStripe -nets {VDD VSS} -layer Metal9 -direction horizontal -width 1 -spacing 0.4 -number_of_sets 3 -start_from bottom -switch_layer_over_obs false -max_same_layer_jog_length 2 -padcore_ring_top_layer_limit Metal9 -padcore_ring_bottom_layer_limit Metal1 -block_ring_top_layer_limit Metal9 -block_ring_bottom_layer_limit Metal1 -use_wire_group 0 -snap_wire_center_to_grid None
+
+Initialize fgc environment(mem: 1468.7M) ...  fail and won't use fgc to check drc(cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 1468.7M)
+Loading cell geometries (cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 1468.7M)
+Loading wires (cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 1468.7M)
+Loading via instances (cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 1468.7M)
+Starting stripe generation ...
+Non-Default Mode Option Settings :
+  NONE
+Stripe generation is complete.
+vias are now being generated.
+addStripe created 6 wires.
+ViaGen created 12 vias, deleted 0 via to avoid violation.
++--------+----------------+----------------+
+|  Layer |     Created    |     Deleted    |
++--------+----------------+----------------+
+|  Via8  |       12       |        0       |
+| Metal9 |        6       |       NA       |
++--------+----------------+----------------+
+<CMD> setAddStripeMode -ignore_block_check false -break_at none -route_over_rows_only false -rows_without_stripes_only false -extend_to_closest_target none -stop_at_last_wire_for_area false -partial_set_thru_domain false -ignore_nondefault_domains false -trim_antenna_back_to_shape none -spacing_type edge_to_edge -spacing_from_block 0 -stripe_min_length stripe_width -stacked_via_top_layer Metal9 -stacked_via_bottom_layer Metal1 -via_using_exact_crossover_size false -split_vias false -orthogonal_only true -allow_jog { padcore_ring  block_ring } -skip_via_on_pin {  standardcell } -skip_via_on_wire_shape {  noshape   }
+addStripe will allow jog to connect padcore ring and block ring.
+
+Stripes will stop at the boundary of the specified area.
+When breaking rings, the power planner will consider the existence of blocks.
+Stripes will not extend to closest target.
+The power planner will set stripe antenna targets to none (no trimming allowed).
+Stripes will not be created over regions without power planning wires.
+The entire stripe set will break at the domain if one of the nets is not in the domain.
+addStripe will break automatically at non-default domains when generating global stripes over the core area or default domain.
+Offset for stripe breaking is set to 0.
+<CMD> addStripe -nets {VDD VSS} -layer Metal9 -direction horizontal -width 1 -spacing 0.4 -number_of_sets 3 -start_from bottom -switch_layer_over_obs false -max_same_layer_jog_length 2 -padcore_ring_top_layer_limit Metal9 -padcore_ring_bottom_layer_limit Metal1 -block_ring_top_layer_limit Metal9 -block_ring_bottom_layer_limit Metal1 -use_wire_group 0 -snap_wire_center_to_grid None
+
+Initialize fgc environment(mem: 1468.7M) ...  fail and won't use fgc to check drc(cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 1468.7M)
+Loading cell geometries (cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 1468.7M)
+Loading wires (cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 1468.7M)
+Loading via instances (cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 1468.7M)
+Starting stripe generation ...
+Non-Default Mode Option Settings :
+  NONE
+**WARN: (IMPPP-170):	The power planner failed to create a wire at (4.310000, 8.620000) (37.740002, 8.620000) because same wire already exists.
+**WARN: (IMPPP-170):	The power planner failed to create a wire at (4.310000, 13.945000) (37.740002, 13.945000) because same wire already exists.
+**WARN: (IMPPP-170):	The power planner failed to create a wire at (4.310000, 19.270000) (37.740002, 19.270000) because same wire already exists.
+**WARN: (IMPPP-170):	The power planner failed to create a wire at (2.010000, 10.020000) (40.040001, 10.020000) because same wire already exists.
+**WARN: (IMPPP-170):	The power planner failed to create a wire at (2.010000, 15.345000) (40.040001, 15.345000) because same wire already exists.
+**WARN: (IMPPP-170):	The power planner failed to create a wire at (2.010000, 20.670000) (40.040001, 20.670000) because same wire already exists.
+Stripe generation is complete.
+<CMD> setAddStripeMode -ignore_block_check false -break_at none -route_over_rows_only false -rows_without_stripes_only false -extend_to_closest_target none -stop_at_last_wire_for_area false -partial_set_thru_domain false -ignore_nondefault_domains false -trim_antenna_back_to_shape none -spacing_type edge_to_edge -spacing_from_block 0 -stripe_min_length stripe_width -stacked_via_top_layer Metal9 -stacked_via_bottom_layer Metal1 -via_using_exact_crossover_size false -split_vias false -orthogonal_only true -allow_jog { padcore_ring  block_ring } -skip_via_on_pin {  standardcell } -skip_via_on_wire_shape {  noshape   }
+addStripe will allow jog to connect padcore ring and block ring.
+
+Stripes will stop at the boundary of the specified area.
+When breaking rings, the power planner will consider the existence of blocks.
+Stripes will not extend to closest target.
+The power planner will set stripe antenna targets to none (no trimming allowed).
+Stripes will not be created over regions without power planning wires.
+The entire stripe set will break at the domain if one of the nets is not in the domain.
+addStripe will break automatically at non-default domains when generating global stripes over the core area or default domain.
+Offset for stripe breaking is set to 0.
+<CMD> addStripe -nets {VDD VSS} -layer Metal8 -direction vertical -width 1 -spacing 0.4 -number_of_sets 3 -start_from left -switch_layer_over_obs false -max_same_layer_jog_length 2 -padcore_ring_top_layer_limit Metal9 -padcore_ring_bottom_layer_limit Metal1 -block_ring_top_layer_limit Metal9 -block_ring_bottom_layer_limit Metal1 -use_wire_group 0 -snap_wire_center_to_grid None
+
+Initialize fgc environment(mem: 1468.7M) ...  fail and won't use fgc to check drc(cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 1468.7M)
+Loading cell geometries (cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 1468.7M)
+Loading wires (cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 1468.7M)
+Loading via instances (cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 1468.7M)
+Starting stripe generation ...
+Non-Default Mode Option Settings :
+  NONE
+Stripe generation is complete.
+vias are now being generated.
+addStripe created 6 wires.
+ViaGen created 30 vias, deleted 0 via to avoid violation.
++--------+----------------+----------------+
+|  Layer |     Created    |     Deleted    |
++--------+----------------+----------------+
+| Metal8 |        6       |       NA       |
+|  Via8  |       30       |        0       |
++--------+----------------+----------------+
+<CMD> setAddStripeMode -ignore_block_check false -break_at none -route_over_rows_only false -rows_without_stripes_only false -extend_to_closest_target none -stop_at_last_wire_for_area false -partial_set_thru_domain false -ignore_nondefault_domains false -trim_antenna_back_to_shape none -spacing_type edge_to_edge -spacing_from_block 0 -stripe_min_length stripe_width -stacked_via_top_layer Metal9 -stacked_via_bottom_layer Metal1 -via_using_exact_crossover_size false -split_vias false -orthogonal_only true -allow_jog { padcore_ring  block_ring } -skip_via_on_pin {  standardcell } -skip_via_on_wire_shape {  noshape   }
+addStripe will allow jog to connect padcore ring and block ring.
+
+Stripes will stop at the boundary of the specified area.
+When breaking rings, the power planner will consider the existence of blocks.
+Stripes will not extend to closest target.
+The power planner will set stripe antenna targets to none (no trimming allowed).
+Stripes will not be created over regions without power planning wires.
+The entire stripe set will break at the domain if one of the nets is not in the domain.
+addStripe will break automatically at non-default domains when generating global stripes over the core area or default domain.
+Offset for stripe breaking is set to 0.
+<CMD> addStripe -nets {VDD VSS} -layer Metal8 -direction vertical -width 1 -spacing 0.4 -number_of_sets 3 -start_from left -switch_layer_over_obs false -max_same_layer_jog_length 2 -padcore_ring_top_layer_limit Metal9 -padcore_ring_bottom_layer_limit Metal1 -block_ring_top_layer_limit Metal9 -block_ring_bottom_layer_limit Metal1 -use_wire_group 0 -snap_wire_center_to_grid None
+
+Initialize fgc environment(mem: 1468.7M) ...  fail and won't use fgc to check drc(cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 1468.7M)
+Loading cell geometries (cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 1468.7M)
+Loading wires (cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 1468.7M)
+Loading via instances (cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 1468.7M)
+Starting stripe generation ...
+Non-Default Mode Option Settings :
+  NONE
+**WARN: (IMPPP-170):	The power planner failed to create a wire at (8.620000, 4.310000) (8.620000, 24.980000) because same wire already exists.
+**WARN: (IMPPP-170):	The power planner failed to create a wire at (20.325001, 4.310000) (20.325001, 24.980000) because same wire already exists.
+**WARN: (IMPPP-170):	The power planner failed to create a wire at (32.029999, 4.310000) (32.029999, 24.980000) because same wire already exists.
+**WARN: (IMPPP-170):	The power planner failed to create a wire at (10.020000, 2.010000) (10.020000, 27.280001) because same wire already exists.
+**WARN: (IMPPP-170):	The power planner failed to create a wire at (21.725000, 2.010000) (21.725000, 27.280001) because same wire already exists.
+**WARN: (IMPPP-170):	The power planner failed to create a wire at (33.430000, 2.010000) (33.430000, 27.280001) because same wire already exists.
+Stripe generation is complete.
+<CMD> setSrouteMode -viaConnectToShape { noshape }
+<CMD> sroute -connect { blockPin padPin padRing corePin floatingStripe } -layerChangeRange { Metal1(1) Metal9(9) } -blockPinTarget { nearestTarget } -padPinPortConnect { allPort oneGeom } -padPinTarget { nearestTarget } -corePinTarget { firstAfterRowEnd } -floatingStripeTarget { blockring padring ring stripe ringpin blockpin followpin } -allowJogging 1 -crossoverViaLayerRange { Metal1(1) Metal9(9) } -nets { VDD VSS } -allowLayerChange 1 -blockPin useLef -targetViaLayerRange { Metal1(1) Metal9(9) }
+*** Begin SPECIAL ROUTE on Mon Jun 22 11:21:57 2026 ***
+SPECIAL ROUTE ran on directory: /home/vlsi30/day18/physical_design
+SPECIAL ROUTE ran on machine: cadence (Linux 4.18.0-425.3.1.el8.x86_64 x86_64 2.30Ghz)
+
+Begin option processing ...
+srouteConnectPowerBump set to false
+routeSelectNet set to "VDD VSS"
+routeSpecial set to true
+srouteBlockPin set to "useLef"
+srouteBottomLayerLimit set to 1
+srouteBottomTargetLayerLimit set to 1
+srouteConnectConverterPin set to false
+srouteCrossoverViaBottomLayer set to 1
+srouteCrossoverViaTopLayer set to 9
+srouteFloatingStripeTarget set to "blockring padring ring stripe ringpin blockpin followpin"
+srouteFollowCorePinEnd set to 3
+srouteJogControl set to "preferWithChanges differentLayer"
+srouteNoViaOnWireShape set to "padring ring stripe blockring blockpin coverpin blockwire corewire followpin iowire"
+sroutePadPinAllPorts set to true
+sroutePreserveExistingRoutes set to true
+srouteRoutePowerBarPortOnBothDir set to true
+srouteStopBlockPin set to "nearestTarget"
+srouteTopLayerLimit set to 9
+srouteTopTargetLayerLimit set to 9
+End option processing: cpu: 0:00:00, real: 0:00:00, peak: 2946.00 megs.
+
+Reading DB technology information...
+Finished reading DB technology information.
+Reading floorplan and netlist information...
+Finished reading floorplan and netlist information.
+Read in 19 layers, 9 routing layers, 1 overlap layer
+Read in 2 nondefault rules, 0 used
+Read in 487 macros, 14 used
+Read in 13 components
+  13 core components: 13 unplaced, 0 placed, 0 fixed
+Read in 6 logical pins
+Read in 6 nets
+Read in 2 special nets, 2 routed
+Read in 26 terminals
+2 nets selected.
+
+Begin power routing ...
+**WARN: (IMPSR-1254):	Unable to connect the specified objects, since block pins of the VDD net were not found in the design. Check netlist or change the parameter value to include block pins in the design.
+**WARN: (IMPSR-1256):	Unable to find any CORE class pad pin of the VDD net due to unavailability of the pin or check netlist in the routing area or layer. Change routing area or layer to include the expected pin or check netlist. Alternatively, change port class in the technology file.
+Type 'man IMPSR-1256' for more detail.
+Cannot find any AREAIO class pad pin of net VDD. Check net list, or change port class in the technology file, or change option to include pin in given range.
+**WARN: (IMPSR-1254):	Unable to connect the specified objects, since block pins of the VSS net were not found in the design. Check netlist or change the parameter value to include block pins in the design.
+**WARN: (IMPSR-1256):	Unable to find any CORE class pad pin of the VSS net due to unavailability of the pin or check netlist in the routing area or layer. Change routing area or layer to include the expected pin or check netlist. Alternatively, change port class in the technology file.
+Type 'man IMPSR-1256' for more detail.
+Cannot find any AREAIO class pad pin of net VSS. Check net list, or change port class in the technology file, or change option to include pin in given range.
+CPU time for VDD FollowPin 0 seconds
+CPU time for VSS FollowPin 0 seconds
+  Number of IO ports routed: 0
+  Number of Block ports routed: 0
+  Number of Stripe ports routed: 0
+  Number of Core ports routed: 12
+  Number of Pad ports routed: 0
+  Number of Power Bump ports routed: 0
+  Number of Followpin connections: 6
+End power routing: cpu: 0:00:00, real: 0:00:00, peak: 2963.00 megs.
+
+
+
+ Begin updating DB with routing results ...
+ Updating DB with 0 via definition ...Extracting standard cell pins and blockage ...... 
+Pin and blockage extraction finished
+
+sroute created 18 wires.
+ViaGen created 84 vias, deleted 0 via to avoid violation.
++--------+----------------+----------------+
+|  Layer |     Created    |     Deleted    |
++--------+----------------+----------------+
+| Metal1 |       18       |       NA       |
+|  Via1  |       12       |        0       |
+|  Via2  |       12       |        0       |
+|  Via3  |       12       |        0       |
+|  Via4  |       12       |        0       |
+|  Via5  |       12       |        0       |
+|  Via6  |       12       |        0       |
+|  Via7  |       12       |        0       |
++--------+----------------+----------------+
+<CMD> setSrouteMode -viaConnectToShape { noshape }
+<CMD> sroute -connect { blockPin padPin padRing corePin floatingStripe } -layerChangeRange { Metal1(1) Metal9(9) } -blockPinTarget { nearestTarget } -padPinPortConnect { allPort oneGeom } -padPinTarget { nearestTarget } -corePinTarget { firstAfterRowEnd } -floatingStripeTarget { blockring padring ring stripe ringpin blockpin followpin } -allowJogging 1 -crossoverViaLayerRange { Metal1(1) Metal9(9) } -nets { VDD VSS } -allowLayerChange 1 -blockPin useLef -targetViaLayerRange { Metal1(1) Metal9(9) }
+*** Begin SPECIAL ROUTE on Mon Jun 22 11:21:59 2026 ***
+SPECIAL ROUTE ran on directory: /home/vlsi30/day18/physical_design
+SPECIAL ROUTE ran on machine: cadence (Linux 4.18.0-425.3.1.el8.x86_64 x86_64 2.30Ghz)
+
+Begin option processing ...
+srouteConnectPowerBump set to false
+routeSelectNet set to "VDD VSS"
+routeSpecial set to true
+srouteBlockPin set to "useLef"
+srouteBottomLayerLimit set to 1
+srouteBottomTargetLayerLimit set to 1
+srouteConnectConverterPin set to false
+srouteCrossoverViaBottomLayer set to 1
+srouteCrossoverViaTopLayer set to 9
+srouteFloatingStripeTarget set to "blockring padring ring stripe ringpin blockpin followpin"
+srouteFollowCorePinEnd set to 3
+srouteJogControl set to "preferWithChanges differentLayer"
+srouteNoViaOnWireShape set to "padring ring stripe blockring blockpin coverpin blockwire corewire followpin iowire"
+sroutePadPinAllPorts set to true
+sroutePreserveExistingRoutes set to true
+srouteRoutePowerBarPortOnBothDir set to true
+srouteStopBlockPin set to "nearestTarget"
+srouteTopLayerLimit set to 9
+srouteTopTargetLayerLimit set to 9
+End option processing: cpu: 0:00:00, real: 0:00:00, peak: 2963.00 megs.
+
+Reading DB technology information...
+Finished reading DB technology information.
+Reading floorplan and netlist information...
+Finished reading floorplan and netlist information.
+Read in 19 layers, 9 routing layers, 1 overlap layer
+Read in 2 nondefault rules, 0 used
+Read in 487 macros, 14 used
+Read in 13 components
+  13 core components: 13 unplaced, 0 placed, 0 fixed
+Read in 6 logical pins
+Read in 6 nets
+Read in 2 special nets, 2 routed
+Read in 26 terminals
+2 nets selected.
+
+Begin power routing ...
+**WARN: (IMPSR-1254):	Unable to connect the specified objects, since block pins of the VDD net were not found in the design. Check netlist or change the parameter value to include block pins in the design.
+**WARN: (IMPSR-1256):	Unable to find any CORE class pad pin of the VDD net due to unavailability of the pin or check netlist in the routing area or layer. Change routing area or layer to include the expected pin or check netlist. Alternatively, change port class in the technology file.
+Type 'man IMPSR-1256' for more detail.
+Cannot find any AREAIO class pad pin of net VDD. Check net list, or change port class in the technology file, or change option to include pin in given range.
+**WARN: (IMPSR-1254):	Unable to connect the specified objects, since block pins of the VSS net were not found in the design. Check netlist or change the parameter value to include block pins in the design.
+**WARN: (IMPSR-1256):	Unable to find any CORE class pad pin of the VSS net due to unavailability of the pin or check netlist in the routing area or layer. Change routing area or layer to include the expected pin or check netlist. Alternatively, change port class in the technology file.
+Type 'man IMPSR-1256' for more detail.
+Cannot find any AREAIO class pad pin of net VSS. Check net list, or change port class in the technology file, or change option to include pin in given range.
+CPU time for VDD FollowPin 0 seconds
+CPU time for VSS FollowPin 0 seconds
+  Number of IO ports routed: 0
+  Number of Block ports routed: 0
+  Number of Stripe ports routed: 0
+  Number of Core ports routed: 0
+  Number of Pad ports routed: 0
+  Number of Power Bump ports routed: 0
+End power routing: cpu: 0:00:00, real: 0:00:00, peak: 2965.00 megs.
+
+
+
+ Begin updating DB with routing results ...
+ Updating DB with 0 via definition ...
+sroute created 0 wire.
+ViaGen created 0 via, deleted 0 via to avoid violation.
+<CMD> addEndCap -preCap FILL1 -postCap FILL1 -prefix ENDCAP
+**WARN: (IMPSP-5224):	Option '-preCap' for command addEndCap is obsolete and has been replaced by 'setEndCapMode -rightEdge cell_name'. 
+The obsolete option still works in this release but to avoid this warning and to ensure compatibility with future releases, 
+update your script to use 'setEndCapMode -rightEdge cell_name' and 'addEndCap'.
+**WARN: (IMPSP-5224):	Option '-postcap' for command addEndCap is obsolete and has been replaced by 'setEndCapMode -leftEdge cell_name'. 
+The obsolete option still works in this release but to avoid this warning and to ensure compatibility with future releases, 
+update your script to use 'setEndCapMode -rightEdge cell_name' and 'addEndCap'.
+**WARN: (IMPSP-5534):	'setEndCapMode -leftEdge' and 'setEndCapMode -rightEdge' are using the same endcap cells
+**WARN: (IMPSP-5534):	'setEndCapMode -leftBottomCorner' and 'setEndCapMode -rightBottomCorner' are using the same endcap cells
+**WARN: (IMPSP-5534):	'setEndCapMode -leftTopCorner' and 'setEndCapMode -rightTopCorner' are using the same endcap cells
+Estimated cell power/ground rail width = 0.408 um
+Minimum row-size in sites for endcap insertion = 3.
+Minimum number of sites for row blockage       = 1.
+Inserted 5 pre-endcap <FILL1> cells (prefix ENDCAP).
+Inserted 5 post-endcap <FILL1> cells (prefix ENDCAP).
+For 10 new insts, <CMD> addEndCap -preCap FILL1 -postCap FILL1 -prefix ENDCAP
+**WARN: (IMPSP-5224):	Option '-preCap' for command addEndCap is obsolete and has been replaced by 'setEndCapMode -rightEdge cell_name'. 
+The obsolete option still works in this release but to avoid this warning and to ensure compatibility with future releases, 
+update your script to use 'setEndCapMode -rightEdge cell_name' and 'addEndCap'.
+**WARN: (IMPSP-5224):	Option '-postcap' for command addEndCap is obsolete and has been replaced by 'setEndCapMode -leftEdge cell_name'. 
+The obsolete option still works in this release but to avoid this warning and to ensure compatibility with future releases, 
+update your script to use 'setEndCapMode -rightEdge cell_name' and 'addEndCap'.
+**WARN: (IMPSP-5534):	'setEndCapMode -leftEdge' and 'setEndCapMode -rightEdge' are using the same endcap cells
+**WARN: (IMPSP-5534):	'setEndCapMode -leftBottomCorner' and 'setEndCapMode -rightBottomCorner' are using the same endcap cells
+**WARN: (IMPSP-5534):	'setEndCapMode -leftTopCorner' and 'setEndCapMode -rightTopCorner' are using the same endcap cells
+Minimum row-size in sites for endcap insertion = 3.
+Minimum number of sites for row blockage       = 1.
+**WARN: (IMPSP-5119):	AddEndCap is unable to add Pre-cap cell (FILL1) at (8.120, 8.120).
+Type 'man IMPSP-5119' for more detail.
+**WARN: (IMPSP-5119):	AddEndCap is unable to add Post-cap cell (FILL1) at (33.640, 8.120).
+Type 'man IMPSP-5119' for more detail.
+**WARN: (IMPSP-5119):	AddEndCap is unable to add Pre-cap cell (FILL1) at (8.120, 10.730).
+Type 'man IMPSP-5119' for more detail.
+**WARN: (IMPSP-5119):	AddEndCap is unable to add Post-cap cell (FILL1) at (33.640, 10.730).
+Type 'man IMPSP-5119' for more detail.
+**WARN: (IMPSP-5119):	AddEndCap is unable to add Pre-cap cell (FILL1) at (8.120, 13.340).
+Type 'man IMPSP-5119' for more detail.
+**WARN: (IMPSP-5119):	AddEndCap is unable to add Post-cap cell (FILL1) at (33.640, 13.340).
+Type 'man IMPSP-5119' for more detail.
+**WARN: (IMPSP-5119):	AddEndCap is unable to add Pre-cap cell (FILL1) at (8.120, 15.950).
+Type 'man IMPSP-5119' for more detail.
+**WARN: (IMPSP-5119):	AddEndCap is unable to add Post-cap cell (FILL1) at (33.640, 15.950).
+Type 'man IMPSP-5119' for more detail.
+**WARN: (IMPSP-5119):	AddEndCap is unable to add Pre-cap cell (FILL1) at (8.120, 18.560).
+Type 'man IMPSP-5119' for more detail.
+**WARN: (IMPSP-5119):	AddEndCap is unable to add Post-cap cell (FILL1) at (33.640, 18.560).
+Type 'man IMPSP-5119' for more detail.
+Inserted 0 pre-endcap <FILL1> cells (prefix ENDCAP).
+Inserted 0 post-endcap <FILL1> cells (prefix ENDCAP).
+**ERROR: (IMPSP-5106):	AddEndCap cannot place end cap cells at the ends of the site rows. Most probably there are pre-placed std-cell insts at 'start' of 'some' rows. Remove pre-placed instances and re-run addEndCap again.
+Type 'man IMPSP-5106' for more detail.
+**ERROR: (IMPSP-5106):	AddEndCap cannot place end cap cells at the ends of the site rows. Most probably there are pre-placed std-cell insts at 'end' of 'some' rows. Remove pre-placed instances and re-run addEndCap again.
+Type 'man IMPSP-5106' for more detail.
+For 0 new insts, *** Applied 0 GNC rules.
+<CMD> setLayerPreference node_layer -isVisible 0
+<CMD> setLayerPreference node_layer -isVisible 1
+<CMD> setRouteMode -earlyGlobalHonorMsvRouteConstraint false -earlyGlobalRoutePartitionPinGuide true
+<CMD> setEndCapMode -reset
+<CMD> setEndCapMode -boundary_tap false
+<CMD> setNanoRouteMode -quiet -droutePostRouteSpreadWire 1
+<CMD> setNanoRouteMode -quiet -droutePostRouteWidenWireRule LEFDefaultRouteSpec_gpdk090
+<CMD> setNanoRouteMode -quiet -timingEngine {}
+<CMD> setUsefulSkewMode -noBoundary false -maxAllowedDelay 1
+<CMD> setPlaceMode -reset
+<CMD> setPlaceMode -congEffort auto -timingDriven 1 -clkGateAware 1 -powerDriven 0 -ignoreScan 1 -reorderScan 1 -ignoreSpare 0 -placeIOPins 1 -moduleAwareSpare 0 -preserveRouting 1 -rmAffectedRouting 0 -checkRoute 0 -swapEEQ 0
+<CMD> setRouteMode -earlyGlobalHonorMsvRouteConstraint false -earlyGlobalRoutePartitionPinGuide true
+<CMD> setEndCapMode -reset
+<CMD> setEndCapMode -boundary_tap false
+<CMD> setUsefulSkewMode -noBoundary false -maxAllowedDelay 1
+<CMD> setPlaceMode -fp false
+<CMD> place_design
+*** placeDesign #1 [begin] : totSession cpu/real = 0:03:10.0/0:23:48.3 (0.1), mem = 1485.6M
+Extracting standard cell pins and blockage ...... 
+Pin and blockage extraction finished
+*** Starting placeDesign default flow ***
+*** Start deleteBufferTree ***
+Info: Detect buffers to remove automatically.
+Analyzing netlist ...
+Updating netlist
+
+*summary: 2 instances (buffers/inverters) removed
+*** Finish deleteBufferTree (0:00:00.2) ***
+**INFO: Enable pre-place timing setting for timing analysis
+Set Using Default Delay Limit as 101.
+**WARN: (IMPDC-1629):	The default delay limit was set to 101. This is less than the default of 1000 and may result in inaccurate delay calculation for nets with a fanout higher than the setting.  If needed, the default delay limit may be adjusted by running the command 'set delaycal_use_default_delay_limit'.
+Set Default Net Delay as 0 ps.
+Set Default Net Load as 0 pF. 
+Set Default Input Pin Transition as 1 ps.
+**INFO: Analyzing IO path groups for slack adjustment
+Effort level <high> specified for reg2reg_tmp.762172 path_group
+AAE_INFO: opIsDesignInPostRouteState() is 0
+AAE DB initialization (MEM=1599.12 CPU=0:00:00.0 REAL=0:00:00.0) 
+#################################################################################
+# Design Stage: PreRoute
+# Design Name: mealy_1001_1100
+# Design Mode: 90nm
+# Analysis Mode: MMMC Non-OCV 
+# Parasitics Mode: No SPEF/RCDB 
+# Signoff Settings: SI Off 
+#################################################################################
+Calculate delays in BcWc mode...
+Start delay calculation (fullDC) (1 T). (MEM=1602.12)
+Total number of fetched objects 30
+End delay calculation. (MEM=1750.73 CPU=0:00:00.0 REAL=0:00:00.0)
+End delay calculation (fullDC). (MEM=1750.73 CPU=0:00:00.1 REAL=0:00:01.0)
+**INFO: Disable pre-place timing setting for timing analysis
+Set Using Default Delay Limit as 1000.
+Set Default Net Delay as 1000 ps.
+Set Default Input Pin Transition as 0.1 ps.
+Set Default Net Load as 0.5 pF. 
+**INFO: Pre-place timing setting for timing analysis already disabled
+Deleted 0 physical inst  (cell - / prefix -).
+Did not delete 10 physical insts as they were marked preplaced.
+INFO: #ExclusiveGroups=0
+INFO: There are no Exclusive Groups.
+*** Starting "NanoPlace(TM) placement v#6 (mem=1733.2M)" ...
+*** Build Buffered Sizing Timing Model
+(cpu=0:00:02.6 mem=1741.2M) ***
+*** Build Virtual Sizing Timing Model
+(cpu=0:00:02.8 mem=1741.2M) ***
+No user-set net weight.
+Net fanout histogram:
+2		: 17 (63.0%) nets
+3		: 2 (7.4%) nets
+4     -	14	: 8 (29.6%) nets
+15    -	39	: 0 (0.0%) nets
+40    -	79	: 0 (0.0%) nets
+80    -	159	: 0 (0.0%) nets
+160   -	319	: 0 (0.0%) nets
+320   -	639	: 0 (0.0%) nets
+640   -	1279	: 0 (0.0%) nets
+1280  -	2559	: 0 (0.0%) nets
+2560  -	5119	: 0 (0.0%) nets
+5120+		: 0 (0.0%) nets
+Options: timingDriven clkGateAware ignoreScan pinGuide congEffort=auto gpeffort=medium 
+**WARN: (IMPSP-9042):	Scan chains were not defined, -place_global_ignore_scan option will be ignored.
+Define the scan chains before using this option.
+Type 'man IMPSP-9042' for more detail.
+#std cell=34 (10 fixed + 24 movable) #buf cell=0 #inv cell=5 #block=0 (0 floating + 0 preplaced)
+#ioInst=0 #net=27 #term=85 #term/net=3.15, #fixedIo=0, #floatIo=0, #fixedPin=0, #floatPin=6
+stdCell: 34 single + 0 double + 0 multi
+Total standard cell length = 0.0905 (mm), area = 0.0002 (mm^2)
+Average module density = 0.694.
+Density for the design = 0.694.
+       = stdcell_area 302 sites (229 um^2) / alloc_area 435 sites (329 um^2).
+Pin Density = 0.1910.
+            = total # of pins 85 / total area 445.
+=== lastAutoLevel = 5 
+Clock gating cells determined by native netlist tracing.
+Iteration  1: Total net bbox = 4.366e-14 (4.37e-14 0.00e+00)
+              Est.  stn bbox = 4.729e-14 (4.73e-14 0.00e+00)
+              cpu = 0:00:00.0 real = 0:00:00.0 mem = 1761.3M
+Iteration  2: Total net bbox = 4.366e-14 (4.37e-14 0.00e+00)
+              Est.  stn bbox = 4.729e-14 (4.73e-14 0.00e+00)
+              cpu = 0:00:00.0 real = 0:00:00.0 mem = 1761.3M
+Iteration  3: Total net bbox = 2.452e-02 (1.84e-02 6.10e-03)
+              Est.  stn bbox = 2.646e-02 (1.99e-02 6.55e-03)
+              cpu = 0:00:00.0 real = 0:00:00.0 mem = 1763.7M
+Active setup views:
+    worst_case
+Iteration  4: Total net bbox = 1.298e+02 (1.30e+02 1.05e-01)
+              Est.  stn bbox = 1.383e+02 (1.38e+02 1.10e-01)
+              cpu = 0:00:00.0 real = 0:00:00.0 mem = 1763.7M
+Iteration  5: Total net bbox = 2.252e+02 (1.51e+02 7.40e+01)
+              Est.  stn bbox = 2.440e+02 (1.64e+02 8.03e+01)
+              cpu = 0:00:00.0 real = 0:00:00.0 mem = 1763.7M
+Iteration  6: Total net bbox = 3.112e+02 (1.79e+02 1.32e+02)
+              Est.  stn bbox = 3.362e+02 (1.93e+02 1.43e+02)
+              cpu = 0:00:00.1 real = 0:00:01.0 mem = 1763.7M
+*** cost = 3.112e+02 (1.79e+02 1.32e+02) (cpu for global=0:00:00.1) real=0:00:01.0***
+Info: 0 clock gating cells identified, 0 (on average) moved 0/1
+Solver runtime cpu: 0:00:00.1 real: 0:00:00.0
+Core Placement runtime cpu: 0:00:00.1 real: 0:00:01.0
+**WARN: (IMPSP-9025):	No scan chain specified/traced.
+Type 'man IMPSP-9025' for more detail.
+*** Starting refinePlace (0:03:15 mem=1763.7M) ***
+Total net bbox length = 3.129e+02 (1.704e+02 1.425e+02) (ext = 7.549e+01)
+Move report: Detail placement moves 24 insts, mean move: 1.75 um, max move: 7.77 um 
+	Max move on inst (g710__8428): (17.62, 16.25) --> (10.15, 15.95)
+	Runtime: CPU: 0:00:00.0 REAL: 0:00:00.0 MEM: 1787.7MB
+Summary Report:
+Instances move: 24 (out of 24 movable)
+Instances flipped: 0
+Mean displacement: 1.75 um
+Max displacement: 7.77 um (Instance: g710__8428) (17.618, 16.253) -> (10.15, 15.95)
+	Length: 6 sites, height: 1 rows, site name: gsclib090site, cell type: NOR3X1
+Total net bbox length = 3.158e+02 (1.638e+02 1.520e+02) (ext = 6.935e+01)
+Runtime: CPU: 0:00:00.0 REAL: 0:00:00.0 MEM: 1787.7MB
+*** Finished refinePlace (0:03:15 mem=1787.7M) ***
+*** End of Placement (cpu=0:00:03.1, real=0:00:04.0, mem=1787.7M) ***
+default core: bins with density > 0.750 =  0.00 % ( 0 / 1 )
+Density distribution unevenness ratio = 0.000%
+*** Free Virtual Timing Model ...(mem=1787.7M)
+Starting IO pin assignment...
+The design is not routed. Using placement based method for pin assignment.
+Completed IO pin assignment.
+**INFO: Enable pre-place timing setting for timing analysis
+Set Using Default Delay Limit as 101.
+**WARN: (IMPDC-1629):	The default delay limit was set to 101. This is less than the default of 1000 and may result in inaccurate delay calculation for nets with a fanout higher than the setting.  If needed, the default delay limit may be adjusted by running the command 'set delaycal_use_default_delay_limit'.
+Set Default Net Delay as 0 ps.
+Set Default Net Load as 0 pF. 
+**INFO: Analyzing IO path groups for slack adjustment
+Effort level <high> specified for reg2reg_tmp.762172 path_group
+AAE_INFO: opIsDesignInPostRouteState() is 0
+#################################################################################
+# Design Stage: PreRoute
+# Design Name: mealy_1001_1100
+# Design Mode: 90nm
+# Analysis Mode: MMMC Non-OCV 
+# Parasitics Mode: No SPEF/RCDB 
+# Signoff Settings: SI Off 
+#################################################################################
+Calculate delays in BcWc mode...
+Start delay calculation (fullDC) (1 T). (MEM=1778.99)
+Total number of fetched objects 30
+End delay calculation. (MEM=1822.2 CPU=0:00:00.0 REAL=0:00:00.0)
+End delay calculation (fullDC). (MEM=1822.2 CPU=0:00:00.1 REAL=0:00:00.0)
+**INFO: Disable pre-place timing setting for timing analysis
+Set Using Default Delay Limit as 1000.
+Set Default Net Delay as 1000 ps.
+Set Default Net Load as 0.5 pF. 
+Info: Disable timing driven in postCTS congRepair.
+
+Starting congRepair ...
+[NR-eGR] Track table information for default rule: 
+[NR-eGR] Metal1 has single uniform track structure
+[NR-eGR] Metal2 has single uniform track structure
+[NR-eGR] Metal3 has single uniform track structure
+[NR-eGR] Metal4 has single uniform track structure
+[NR-eGR] Metal5 has single uniform track structure
+[NR-eGR] Metal6 has single uniform track structure
+[NR-eGR] Metal7 has single uniform track structure
+[NR-eGR] Metal8 has single uniform track structure
+[NR-eGR] Metal9 has single uniform track structure
+[NR-eGR] Read 276 PG shapes
+[NR-eGR] Read 0 clock shapes
+[NR-eGR] Read 0 other shapes
+[NR-eGR] #Routing Blockages  : 0
+[NR-eGR] #Instance Blockages : 0
+[NR-eGR] #PG Blockages       : 276
+[NR-eGR] #Halo Blockages     : 0
+[NR-eGR] #Boundary Blockages : 0
+[NR-eGR] #Clock Blockages    : 0
+[NR-eGR] #Other Blockages    : 0
+[NR-eGR] Num Prerouted Nets = 0  Num Prerouted Wires = 0
+[NR-eGR] Read 27 nets ( ignored 0 )
+[NR-eGR] There are 1 clock nets ( 0 with NDR ).
+[NR-eGR] ============ Routing rule table ============
+[NR-eGR] Rule id: 0  Nets: 27
+[NR-eGR] ========================================
+[NR-eGR] 
+[NR-eGR] Layer group 1: route 27 net(s) in layer range [2, 9]
+[NR-eGR] Early Global Route overflow of layer group 1: 0.00% H + 0.00% V. EstWL: 3.575700e+02um
+[NR-eGR] Congestion Analysis By layer: (blocked Gcells are excluded) 
+[NR-eGR]                        OverCon            
+[NR-eGR]                         #Gcell     %Gcell
+[NR-eGR]        Layer             (1-0)    OverCon
+[NR-eGR] ----------------------------------------------
+[NR-eGR]  Metal1 ( 1)         0( 0.00%)   ( 0.00%) 
+[NR-eGR]  Metal2 ( 2)         0( 0.00%)   ( 0.00%) 
+[NR-eGR]  Metal3 ( 3)         0( 0.00%)   ( 0.00%) 
+[NR-eGR]  Metal4 ( 4)         0( 0.00%)   ( 0.00%) 
+[NR-eGR]  Metal5 ( 5)         0( 0.00%)   ( 0.00%) 
+[NR-eGR]  Metal6 ( 6)         0( 0.00%)   ( 0.00%) 
+[NR-eGR]  Metal7 ( 7)         0( 0.00%)   ( 0.00%) 
+[NR-eGR]  Metal8 ( 8)         0( 0.00%)   ( 0.00%) 
+[NR-eGR]  Metal9 ( 9)         0( 0.00%)   ( 0.00%) 
+[NR-eGR] ----------------------------------------------
+[NR-eGR]        Total         0( 0.00%)   ( 0.00%) 
+[NR-eGR] 
+[NR-eGR] Overflow after Early Global Route 0.00% H + 0.00% V
+Early Global Route congestion estimation runtime: 0.08 seconds, mem = 1820.7M
+Local HotSpot Analysis: normalized max congestion hotspot area = 0.00, normalized total congestion hotspot area = 0.00 (area is in unit of 4 std-cell row bins)
+Skipped repairing congestion.
+[NR-eGR]                 Length (um)  Vias 
+[NR-eGR] ----------------------------------
+[NR-eGR]  Metal1  (1H)             0    79 
+[NR-eGR]  Metal2  (2V)           175   104 
+[NR-eGR]  Metal3  (3H)           175     3 
+[NR-eGR]  Metal4  (4V)            18     0 
+[NR-eGR]  Metal5  (5H)             0     0 
+[NR-eGR]  Metal6  (6V)             0     0 
+[NR-eGR]  Metal7  (7H)             0     0 
+[NR-eGR]  Metal8  (8V)             0     0 
+[NR-eGR]  Metal9  (9H)             0     0 
+[NR-eGR] ----------------------------------
+[NR-eGR]          Total          368   186 
+[NR-eGR] --------------------------------------------------------------------------
+[NR-eGR] Total half perimeter of net bounding box: 313um
+[NR-eGR] Total length: 368um, number of vias: 186
+[NR-eGR] --------------------------------------------------------------------------
+[NR-eGR] Total eGR-routed clock nets wire length: 48um, number of vias: 12
+[NR-eGR] --------------------------------------------------------------------------
+Early Global Route wiring runtime: 0.02 seconds, mem = 1756.7M
+Tdgp not successfully inited but do clear! skip clearing
+End of congRepair (cpu=0:00:00.1, real=0:00:00.0)
+*** Finishing placeDesign default flow ***
+**placeDesign ... cpu = 0: 0: 5, real = 0: 0: 6, mem = 1756.7M **
+Tdgp not successfully inited but do clear! skip clearing
+*** placeDesign #1 [finish] : cpu/real = 0:00:05.2/0:00:06.5 (0.8), totSession cpu/real = 0:03:15.1/0:23:54.7 (0.1), mem = 1756.7M
+<CMD> setPlaceMode -fp false
+<CMD> place_design
+*** placeDesign #2 [begin] : totSession cpu/real = 0:03:15.5/0:24:00.0 (0.1), mem = 1763.8M
+*** Starting placeDesign default flow ***
+*** Start deleteBufferTree ***
+Info: Detect buffers to remove automatically.
+Analyzing netlist ...
+Updating netlist
+
+*summary: 0 instances (buffers/inverters) removed
+*** Finish deleteBufferTree (0:00:00.1) ***
+**INFO: Enable pre-place timing setting for timing analysis
+Set Using Default Delay Limit as 101.
+**WARN: (IMPDC-1629):	The default delay limit was set to 101. This is less than the default of 1000 and may result in inaccurate delay calculation for nets with a fanout higher than the setting.  If needed, the default delay limit may be adjusted by running the command 'set delaycal_use_default_delay_limit'.
+Set Default Net Delay as 0 ps.
+Set Default Net Load as 0 pF. 
+**INFO: Analyzing IO path groups for slack adjustment
+Effort level <high> specified for reg2reg_tmp.762172 path_group
+AAE_INFO: opIsDesignInPostRouteState() is 0
+#################################################################################
+# Design Stage: PreRoute
+# Design Name: mealy_1001_1100
+# Design Mode: 90nm
+# Analysis Mode: MMMC Non-OCV 
+# Parasitics Mode: No SPEF/RCDB 
+# Signoff Settings: SI Off 
+#################################################################################
+Calculate delays in BcWc mode...
+Start delay calculation (fullDC) (1 T). (MEM=1770.86)
+Updating RC grid for preRoute extraction ...
+Initializing multi-corner capacitance tables ... 
+Initializing multi-corner resistance tables ...
+Total number of fetched objects 30
+End delay calculation. (MEM=1814.07 CPU=0:00:00.0 REAL=0:00:00.0)
+End delay calculation (fullDC). (MEM=1814.07 CPU=0:00:00.1 REAL=0:00:00.0)
+**INFO: Disable pre-place timing setting for timing analysis
+Set Using Default Delay Limit as 1000.
+Set Default Net Delay as 1000 ps.
+Set Default Net Load as 0.5 pF. 
+**INFO: Pre-place timing setting for timing analysis already disabled
+Deleted 0 physical inst  (cell - / prefix -).
+Did not delete 10 physical insts as they were marked preplaced.
+INFO: #ExclusiveGroups=0
+INFO: There are no Exclusive Groups.
+*** Starting "NanoPlace(TM) placement v#6 (mem=1804.6M)" ...
+*** Build Buffered Sizing Timing Model
+(cpu=0:00:02.4 mem=1804.6M) ***
+*** Build Virtual Sizing Timing Model
+(cpu=0:00:02.6 mem=1804.6M) ***
+No user-set net weight.
+Net fanout histogram:
+2		: 17 (63.0%) nets
+3		: 2 (7.4%) nets
+4     -	14	: 8 (29.6%) nets
+15    -	39	: 0 (0.0%) nets
+40    -	79	: 0 (0.0%) nets
+80    -	159	: 0 (0.0%) nets
+160   -	319	: 0 (0.0%) nets
+320   -	639	: 0 (0.0%) nets
+640   -	1279	: 0 (0.0%) nets
+1280  -	2559	: 0 (0.0%) nets
+2560  -	5119	: 0 (0.0%) nets
+5120+		: 0 (0.0%) nets
+Options: timingDriven clkGateAware ignoreScan pinGuide congEffort=auto gpeffort=medium 
+**WARN: (IMPSP-9042):	Scan chains were not defined, -place_global_ignore_scan option will be ignored.
+Define the scan chains before using this option.
+Type 'man IMPSP-9042' for more detail.
+#std cell=34 (10 fixed + 24 movable) #buf cell=0 #inv cell=5 #block=0 (0 floating + 0 preplaced)
+#ioInst=0 #net=27 #term=85 #term/net=3.15, #fixedIo=0, #floatIo=0, #fixedPin=0, #floatPin=6
+stdCell: 34 single + 0 double + 0 multi
+Total standard cell length = 0.0905 (mm), area = 0.0002 (mm^2)
+Average module density = 0.694.
+Density for the design = 0.694.
+       = stdcell_area 302 sites (229 um^2) / alloc_area 435 sites (329 um^2).
+Pin Density = 0.1910.
+            = total # of pins 85 / total area 445.
+=== lastAutoLevel = 5 
+Clock gating cells determined by native netlist tracing.
+Iteration  1: Total net bbox = 1.571e+02 (4.72e+01 1.10e+02)
+              Est.  stn bbox = 1.666e+02 (4.97e+01 1.17e+02)
+              cpu = 0:00:00.0 real = 0:00:00.0 mem = 1771.6M
+Iteration  2: Total net bbox = 1.571e+02 (4.72e+01 1.10e+02)
+              Est.  stn bbox = 1.666e+02 (4.97e+01 1.17e+02)
+              cpu = 0:00:00.0 real = 0:00:00.0 mem = 1771.6M
+Iteration  3: Total net bbox = 1.357e+02 (4.46e+01 9.12e+01)
+              Est.  stn bbox = 1.458e+02 (4.78e+01 9.80e+01)
+              cpu = 0:00:00.0 real = 0:00:00.0 mem = 1773.0M
+Active setup views:
+    worst_case
+Iteration  4: Total net bbox = 2.333e+02 (1.46e+02 8.77e+01)
+              Est.  stn bbox = 2.546e+02 (1.60e+02 9.45e+01)
+              cpu = 0:00:00.0 real = 0:00:00.0 mem = 1773.0M
+Iteration  5: Total net bbox = 2.984e+02 (1.64e+02 1.35e+02)
+              Est.  stn bbox = 3.242e+02 (1.78e+02 1.46e+02)
+              cpu = 0:00:00.0 real = 0:00:00.0 mem = 1773.0M
+Iteration  6: Total net bbox = 3.066e+02 (1.68e+02 1.39e+02)
+              Est.  stn bbox = 3.332e+02 (1.82e+02 1.51e+02)
+              cpu = 0:00:00.1 real = 0:00:00.0 mem = 1773.0M
+*** cost = 3.066e+02 (1.68e+02 1.39e+02) (cpu for global=0:00:00.1) real=0:00:00.0***
+Info: 0 clock gating cells identified, 0 (on average) moved 0/1
+Solver runtime cpu: 0:00:00.0 real: 0:00:00.0
+Core Placement runtime cpu: 0:00:00.1 real: 0:00:00.0
+**WARN: (IMPSP-9025):	No scan chain specified/traced.
+Type 'man IMPSP-9025' for more detail.
+*** Starting refinePlace (0:03:19 mem=1773.0M) ***
+Total net bbox length = 3.082e+02 (1.680e+02 1.402e+02) (ext = 7.603e+01)
+Move report: Detail placement moves 24 insts, mean move: 1.45 um, max move: 3.45 um 
+	Max move on inst (g712__5526): (16.97, 11.19) --> (18.27, 13.34)
+	Runtime: CPU: 0:00:00.0 REAL: 0:00:00.0 MEM: 1798.0MB
+Summary Report:
+Instances move: 24 (out of 24 movable)
+Instances flipped: 0
+Mean displacement: 1.45 um
+Max displacement: 3.45 um (Instance: g712__5526) (16.9715, 11.1925) -> (18.27, 13.34)
+	Length: 6 sites, height: 1 rows, site name: gsclib090site, cell type: NOR3X1
+Total net bbox length = 3.075e+02 (1.603e+02 1.472e+02) (ext = 7.181e+01)
+Runtime: CPU: 0:00:00.0 REAL: 0:00:00.0 MEM: 1798.0MB
+*** Finished refinePlace (0:03:19 mem=1798.0M) ***
+*** End of Placement (cpu=0:00:02.8, real=0:00:03.0, mem=1798.0M) ***
+default core: bins with density > 0.750 =  0.00 % ( 0 / 1 )
+Density distribution unevenness ratio = 0.000%
+*** Free Virtual Timing Model ...(mem=1798.0M)
+Starting IO pin assignment...
+The design is not routed. Using placement based method for pin assignment.
+Completed IO pin assignment.
+**INFO: Enable pre-place timing setting for timing analysis
+Set Using Default Delay Limit as 101.
+**WARN: (IMPDC-1629):	The default delay limit was set to 101. This is less than the default of 1000 and may result in inaccurate delay calculation for nets with a fanout higher than the setting.  If needed, the default delay limit may be adjusted by running the command 'set delaycal_use_default_delay_limit'.
+Set Default Net Delay as 0 ps.
+Set Default Net Load as 0 pF. 
+**INFO: Analyzing IO path groups for slack adjustment
+Effort level <high> specified for reg2reg_tmp.762172 path_group
+AAE_INFO: opIsDesignInPostRouteState() is 0
+#################################################################################
+# Design Stage: PreRoute
+# Design Name: mealy_1001_1100
+# Design Mode: 90nm
+# Analysis Mode: MMMC Non-OCV 
+# Parasitics Mode: No SPEF/RCDB 
+# Signoff Settings: SI Off 
+#################################################################################
+Calculate delays in BcWc mode...
+Start delay calculation (fullDC) (1 T). (MEM=1789.29)
+Total number of fetched objects 30
+End delay calculation. (MEM=1832.5 CPU=0:00:00.0 REAL=0:00:00.0)
+End delay calculation (fullDC). (MEM=1832.5 CPU=0:00:00.0 REAL=0:00:00.0)
+**INFO: Disable pre-place timing setting for timing analysis
+Set Using Default Delay Limit as 1000.
+Set Default Net Delay as 1000 ps.
+Set Default Net Load as 0.5 pF. 
+Info: Disable timing driven in postCTS congRepair.
+
+Starting congRepair ...
+[NR-eGR] Track table information for default rule: 
+[NR-eGR] Metal1 has single uniform track structure
+[NR-eGR] Metal2 has single uniform track structure
+[NR-eGR] Metal3 has single uniform track structure
+[NR-eGR] Metal4 has single uniform track structure
+[NR-eGR] Metal5 has single uniform track structure
+[NR-eGR] Metal6 has single uniform track structure
+[NR-eGR] Metal7 has single uniform track structure
+[NR-eGR] Metal8 has single uniform track structure
+[NR-eGR] Metal9 has single uniform track structure
+[NR-eGR] Read 276 PG shapes
+[NR-eGR] Read 0 clock shapes
+[NR-eGR] Read 0 other shapes
+[NR-eGR] #Routing Blockages  : 0
+[NR-eGR] #Instance Blockages : 0
+[NR-eGR] #PG Blockages       : 276
+[NR-eGR] #Halo Blockages     : 0
+[NR-eGR] #Boundary Blockages : 0
+[NR-eGR] #Clock Blockages    : 0
+[NR-eGR] #Other Blockages    : 0
+[NR-eGR] Num Prerouted Nets = 0  Num Prerouted Wires = 0
+[NR-eGR] Read 27 nets ( ignored 0 )
+[NR-eGR] There are 1 clock nets ( 0 with NDR ).
+[NR-eGR] ============ Routing rule table ============
+[NR-eGR] Rule id: 0  Nets: 27
+[NR-eGR] ========================================
+[NR-eGR] 
+[NR-eGR] Layer group 1: route 27 net(s) in layer range [2, 9]
+[NR-eGR] Early Global Route overflow of layer group 1: 0.00% H + 0.00% V. EstWL: 3.497400e+02um
+[NR-eGR] Congestion Analysis By layer: (blocked Gcells are excluded) 
+[NR-eGR]                        OverCon            
+[NR-eGR]                         #Gcell     %Gcell
+[NR-eGR]        Layer             (1-0)    OverCon
+[NR-eGR] ----------------------------------------------
+[NR-eGR]  Metal1 ( 1)         0( 0.00%)   ( 0.00%) 
+[NR-eGR]  Metal2 ( 2)         0( 0.00%)   ( 0.00%) 
+[NR-eGR]  Metal3 ( 3)         0( 0.00%)   ( 0.00%) 
+[NR-eGR]  Metal4 ( 4)         0( 0.00%)   ( 0.00%) 
+[NR-eGR]  Metal5 ( 5)         0( 0.00%)   ( 0.00%) 
+[NR-eGR]  Metal6 ( 6)         0( 0.00%)   ( 0.00%) 
+[NR-eGR]  Metal7 ( 7)         0( 0.00%)   ( 0.00%) 
+[NR-eGR]  Metal8 ( 8)         0( 0.00%)   ( 0.00%) 
+[NR-eGR]  Metal9 ( 9)         0( 0.00%)   ( 0.00%) 
+[NR-eGR] ----------------------------------------------
+[NR-eGR]        Total         0( 0.00%)   ( 0.00%) 
+[NR-eGR] 
+[NR-eGR] Overflow after Early Global Route 0.00% H + 0.00% V
+Early Global Route congestion estimation runtime: 0.02 seconds, mem = 1831.0M
+Local HotSpot Analysis: normalized max congestion hotspot area = 0.00, normalized total congestion hotspot area = 0.00 (area is in unit of 4 std-cell row bins)
+Skipped repairing congestion.
+[NR-eGR]                 Length (um)  Vias 
+[NR-eGR] ----------------------------------
+[NR-eGR]  Metal1  (1H)             0    79 
+[NR-eGR]  Metal2  (2V)           183    99 
+[NR-eGR]  Metal3  (3H)           166     1 
+[NR-eGR]  Metal4  (4V)             9     0 
+[NR-eGR]  Metal5  (5H)             0     0 
+[NR-eGR]  Metal6  (6V)             0     0 
+[NR-eGR]  Metal7  (7H)             0     0 
+[NR-eGR]  Metal8  (8V)             0     0 
+[NR-eGR]  Metal9  (9H)             0     0 
+[NR-eGR] ----------------------------------
+[NR-eGR]          Total          359   179 
+[NR-eGR] --------------------------------------------------------------------------
+[NR-eGR] Total half perimeter of net bounding box: 305um
+[NR-eGR] Total length: 359um, number of vias: 179
+[NR-eGR] --------------------------------------------------------------------------
+[NR-eGR] Total eGR-routed clock nets wire length: 48um, number of vias: 11
+[NR-eGR] --------------------------------------------------------------------------
+Early Global Route wiring runtime: 0.00 seconds, mem = 1774.0M
+Tdgp not successfully inited but do clear! skip clearing
+End of congRepair (cpu=0:00:00.0, real=0:00:00.0)
+*** Finishing placeDesign default flow ***
+**placeDesign ... cpu = 0: 0: 4, real = 0: 0: 3, mem = 1774.0M **
+Tdgp not successfully inited but do clear! skip clearing
+*** placeDesign #2 [finish] : cpu/real = 0:00:03.6/0:00:03.6 (1.0), totSession cpu/real = 0:03:19.1/0:24:03.6 (0.1), mem = 1774.0M
+<CMD> saveDesign mealy_1001_1100_placement.enc
+% Begin save design ... (date=06/22 11:23:42, mem=1218.9M)
+% Begin Save ccopt configuration ... (date=06/22 11:23:42, mem=1218.9M)
+% End Save ccopt configuration ... (date=06/22 11:23:42, total cpu=0:00:00.0, real=0:00:00.0, peak res=1222.4M, current mem=1222.4M)
+% Begin Save netlist data ... (date=06/22 11:23:42, mem=1222.9M)
+Writing Binary DB to mealy_1001_1100_placement.enc.dat/mealy_1001_1100.v.bin in single-threaded mode...
+% End Save netlist data ... (date=06/22 11:23:42, total cpu=0:00:00.0, real=0:00:00.0, peak res=1223.0M, current mem=1223.0M)
+Saving symbol-table file ...
+Saving congestion map file mealy_1001_1100_placement.enc.dat/mealy_1001_1100.route.congmap.gz ...
+% Begin Save AAE data ... (date=06/22 11:23:43, mem=1223.7M)
+Saving AAE Data ...
+% End Save AAE data ... (date=06/22 11:23:43, total cpu=0:00:00.0, real=0:00:00.0, peak res=1223.7M, current mem=1223.7M)
+Saving preference file mealy_1001_1100_placement.enc.dat/gui.pref.tcl ...
+Saving mode setting ...
+Saving global file ...
+% Begin Save floorplan data ... (date=06/22 11:23:44, mem=1238.3M)
+Saving floorplan file ...
+% End Save floorplan data ... (date=06/22 11:23:44, total cpu=0:00:00.0, real=0:00:00.0, peak res=1238.4M, current mem=1238.4M)
+Saving PG file mealy_1001_1100_placement.enc.dat/mealy_1001_1100.pg.gz, version#2, (Created by Innovus v21.15-s110_1 on Mon Jun 22 11:23:44 2026)
+*** Completed savePGFile (cpu=0:00:00.0 real=0:00:00.0 mem=1776.6M) ***
+Saving Drc markers ...
+... No Drc file written since there is no markers found.
+% Begin Save placement data ... (date=06/22 11:23:44, mem=1238.4M)
+** Saving stdCellPlacement_binary (version# 2) ...
+Save Adaptive View Pruning View Names to Binary file
+% End Save placement data ... (date=06/22 11:23:44, total cpu=0:00:00.0, real=0:00:00.0, peak res=1238.7M, current mem=1238.7M)
+% Begin Save routing data ... (date=06/22 11:23:44, mem=1238.7M)
+Saving route file ...
+*** Completed saveRoute (cpu=0:00:00.0 real=0:00:00.0 mem=1776.6M) ***
+% End Save routing data ... (date=06/22 11:23:44, total cpu=0:00:00.0, real=0:00:01.0, peak res=1238.9M, current mem=1238.9M)
+Saving property file mealy_1001_1100_placement.enc.dat/mealy_1001_1100.prop
+*** Completed saveProperty (cpu=0:00:00.0 real=0:00:00.0 mem=1779.6M) ***
+% Begin Save power constraints data ... (date=06/22 11:23:45, mem=1240.2M)
+% End Save power constraints data ... (date=06/22 11:23:45, total cpu=0:00:00.0, real=0:00:00.0, peak res=1240.2M, current mem=1240.2M)
+rc_corner
+rc_corner
+rc_corner
+Generated self-contained design mealy_1001_1100_placement.enc.dat
+% End save design ... (date=06/22 11:23:45, total cpu=0:00:00.6, real=0:00:03.0, peak res=1247.4M, current mem=1247.4M)
+<CMD> saveDesign mealy_1001_1100_placement.enc
+% Begin save design ... (date=06/22 11:23:45, mem=1247.4M)
+% Begin Save ccopt configuration ... (date=06/22 11:23:45, mem=1247.4M)
+% End Save ccopt configuration ... (date=06/22 11:23:45, total cpu=0:00:00.0, real=0:00:00.0, peak res=1247.6M, current mem=1247.6M)
+% Begin Save netlist data ... (date=06/22 11:23:45, mem=1247.6M)
+Writing Binary DB to mealy_1001_1100_placement.enc.dat.tmp/mealy_1001_1100.v.bin in single-threaded mode...
+% End Save netlist data ... (date=06/22 11:23:45, total cpu=0:00:00.0, real=0:00:00.0, peak res=1247.7M, current mem=1247.7M)
+Saving symbol-table file ...
+Saving congestion map file mealy_1001_1100_placement.enc.dat.tmp/mealy_1001_1100.route.congmap.gz ...
+% Begin Save AAE data ... (date=06/22 11:23:46, mem=1247.7M)
+Saving AAE Data ...
+% End Save AAE data ... (date=06/22 11:23:46, total cpu=0:00:00.0, real=0:00:00.0, peak res=1247.7M, current mem=1247.7M)
+Saving preference file mealy_1001_1100_placement.enc.dat.tmp/gui.pref.tcl ...
+Saving mode setting ...
+Saving global file ...
+% Begin Save floorplan data ... (date=06/22 11:23:46, mem=1247.7M)
+Saving floorplan file ...
+% End Save floorplan data ... (date=06/22 11:23:46, total cpu=0:00:00.0, real=0:00:00.0, peak res=1247.7M, current mem=1247.7M)
+Saving PG file mealy_1001_1100_placement.enc.dat.tmp/mealy_1001_1100.pg.gz, version#2, (Created by Innovus v21.15-s110_1 on Mon Jun 22 11:23:46 2026)
+*** Completed savePGFile (cpu=0:00:00.0 real=0:00:01.0 mem=1808.4M) ***
+Saving Drc markers ...
+... No Drc file written since there is no markers found.
+% Begin Save placement data ... (date=06/22 11:23:47, mem=1247.7M)
+** Saving stdCellPlacement_binary (version# 2) ...
+Save Adaptive View Pruning View Names to Binary file
+% End Save placement data ... (date=06/22 11:23:47, total cpu=0:00:00.0, real=0:00:00.0, peak res=1247.7M, current mem=1247.7M)
+% Begin Save routing data ... (date=06/22 11:23:47, mem=1247.7M)
+Saving route file ...
+*** Completed saveRoute (cpu=0:00:00.0 real=0:00:00.0 mem=1808.4M) ***
+% End Save routing data ... (date=06/22 11:23:47, total cpu=0:00:00.0, real=0:00:00.0, peak res=1247.7M, current mem=1247.7M)
+Saving property file mealy_1001_1100_placement.enc.dat.tmp/mealy_1001_1100.prop
+*** Completed saveProperty (cpu=0:00:00.0 real=0:00:00.0 mem=1811.4M) ***
+% Begin Save power constraints data ... (date=06/22 11:23:47, mem=1247.7M)
+% End Save power constraints data ... (date=06/22 11:23:47, total cpu=0:00:00.0, real=0:00:00.0, peak res=1247.7M, current mem=1247.7M)
+rc_corner
+rc_corner
+rc_corner
+Generated self-contained design mealy_1001_1100_placement.enc.dat.tmp
+% End save design ... (date=06/22 11:23:47, total cpu=0:00:00.5, real=0:00:02.0, peak res=1248.0M, current mem=1248.0M)
+<CMD> saveDesign mealy_1001_1100_placement.enc
+% Begin save design ... (date=06/22 11:23:47, mem=1248.0M)
+% Begin Save ccopt configuration ... (date=06/22 11:23:47, mem=1248.0M)
+% End Save ccopt configuration ... (date=06/22 11:23:47, total cpu=0:00:00.0, real=0:00:00.0, peak res=1248.0M, current mem=1248.0M)
+% Begin Save netlist data ... (date=06/22 11:23:47, mem=1248.0M)
+Writing Binary DB to mealy_1001_1100_placement.enc.dat.tmp/mealy_1001_1100.v.bin in single-threaded mode...
+% End Save netlist data ... (date=06/22 11:23:47, total cpu=0:00:00.0, real=0:00:00.0, peak res=1248.0M, current mem=1248.0M)
+Saving symbol-table file ...
+Saving congestion map file mealy_1001_1100_placement.enc.dat.tmp/mealy_1001_1100.route.congmap.gz ...
+% Begin Save AAE data ... (date=06/22 11:23:48, mem=1248.0M)
+Saving AAE Data ...
+% End Save AAE data ... (date=06/22 11:23:48, total cpu=0:00:00.0, real=0:00:00.0, peak res=1248.0M, current mem=1248.0M)
+Saving preference file mealy_1001_1100_placement.enc.dat.tmp/gui.pref.tcl ...
+Saving mode setting ...
+Saving global file ...
+% Begin Save floorplan data ... (date=06/22 11:23:48, mem=1248.0M)
+Saving floorplan file ...
+% End Save floorplan data ... (date=06/22 11:23:49, total cpu=0:00:00.0, real=0:00:01.0, peak res=1248.0M, current mem=1248.0M)
+Saving PG file mealy_1001_1100_placement.enc.dat.tmp/mealy_1001_1100.pg.gz, version#2, (Created by Innovus v21.15-s110_1 on Mon Jun 22 11:23:49 2026)
+*** Completed savePGFile (cpu=0:00:00.0 real=0:00:00.0 mem=1821.0M) ***
+Saving Drc markers ...
+... No Drc file written since there is no markers found.
+% Begin Save placement data ... (date=06/22 11:23:49, mem=1248.0M)
+** Saving stdCellPlacement_binary (version# 2) ...
+Save Adaptive View Pruning View Names to Binary file
+% End Save placement data ... (date=06/22 11:23:49, total cpu=0:00:00.0, real=0:00:00.0, peak res=1248.0M, current mem=1248.0M)
+% Begin Save routing data ... (date=06/22 11:23:49, mem=1248.0M)
+Saving route file ...
+*** Completed saveRoute (cpu=0:00:00.0 real=0:00:00.0 mem=1821.0M) ***
+% End Save routing data ... (date=06/22 11:23:49, total cpu=0:00:00.0, real=0:00:00.0, peak res=1248.0M, current mem=1248.0M)
+Saving property file mealy_1001_1100_placement.enc.dat.tmp/mealy_1001_1100.prop
+*** Completed saveProperty (cpu=0:00:00.0 real=0:00:00.0 mem=1824.0M) ***
+% Begin Save power constraints data ... (date=06/22 11:23:49, mem=1248.0M)
+% End Save power constraints data ... (date=06/22 11:23:49, total cpu=0:00:00.0, real=0:00:00.0, peak res=1248.0M, current mem=1248.0M)
+rc_corner
+rc_corner
+rc_corner
+Generated self-contained design mealy_1001_1100_placement.enc.dat.tmp
+% End save design ... (date=06/22 11:23:50, total cpu=0:00:00.6, real=0:00:03.0, peak res=1248.0M, current mem=1248.0M)
+<CMD> saveDesign mealy_1001_1100_placement.enc
+% Begin save design ... (date=06/22 11:23:50, mem=1248.0M)
+% Begin Save ccopt configuration ... (date=06/22 11:23:50, mem=1248.0M)
+% End Save ccopt configuration ... (date=06/22 11:23:50, total cpu=0:00:00.0, real=0:00:00.0, peak res=1248.0M, current mem=1248.0M)
+% Begin Save netlist data ... (date=06/22 11:23:50, mem=1248.0M)
+Writing Binary DB to mealy_1001_1100_placement.enc.dat.tmp/mealy_1001_1100.v.bin in single-threaded mode...
+% End Save netlist data ... (date=06/22 11:23:50, total cpu=0:00:00.0, real=0:00:00.0, peak res=1248.0M, current mem=1248.0M)
+Saving symbol-table file ...
+Saving congestion map file mealy_1001_1100_placement.enc.dat.tmp/mealy_1001_1100.route.congmap.gz ...
+% Begin Save AAE data ... (date=06/22 11:23:50, mem=1248.0M)
+Saving AAE Data ...
+% End Save AAE data ... (date=06/22 11:23:50, total cpu=0:00:00.0, real=0:00:00.0, peak res=1248.0M, current mem=1248.0M)
+Saving preference file mealy_1001_1100_placement.enc.dat.tmp/gui.pref.tcl ...
+Saving mode setting ...
+Saving global file ...
+% Begin Save floorplan data ... (date=06/22 11:23:51, mem=1248.0M)
+Saving floorplan file ...
+% End Save floorplan data ... (date=06/22 11:23:51, total cpu=0:00:00.0, real=0:00:00.0, peak res=1248.0M, current mem=1248.0M)
+Saving PG file mealy_1001_1100_placement.enc.dat.tmp/mealy_1001_1100.pg.gz, version#2, (Created by Innovus v21.15-s110_1 on Mon Jun 22 11:23:51 2026)
+*** Completed savePGFile (cpu=0:00:00.0 real=0:00:00.0 mem=1820.6M) ***
+Saving Drc markers ...
+... No Drc file written since there is no markers found.
+% Begin Save placement data ... (date=06/22 11:23:51, mem=1248.0M)
+** Saving stdCellPlacement_binary (version# 2) ...
+Save Adaptive View Pruning View Names to Binary file
+% End Save placement data ... (date=06/22 11:23:51, total cpu=0:00:00.0, real=0:00:00.0, peak res=1248.0M, current mem=1248.0M)
+% Begin Save routing data ... (date=06/22 11:23:51, mem=1248.0M)
+Saving route file ...
+*** Completed saveRoute (cpu=0:00:00.0 real=0:00:01.0 mem=1820.6M) ***
+% End Save routing data ... (date=06/22 11:23:52, total cpu=0:00:00.0, real=0:00:01.0, peak res=1248.0M, current mem=1248.0M)
+Saving property file mealy_1001_1100_placement.enc.dat.tmp/mealy_1001_1100.prop
+*** Completed saveProperty (cpu=0:00:00.0 real=0:00:00.0 mem=1823.6M) ***
+% Begin Save power constraints data ... (date=06/22 11:23:52, mem=1248.0M)
+% End Save power constraints data ... (date=06/22 11:23:52, total cpu=0:00:00.0, real=0:00:00.0, peak res=1248.0M, current mem=1248.0M)
+rc_corner
+rc_corner
+rc_corner
+Generated self-contained design mealy_1001_1100_placement.enc.dat.tmp
+% End save design ... (date=06/22 11:23:52, total cpu=0:00:00.6, real=0:00:02.0, peak res=1248.1M, current mem=1248.1M)
+<CMD> saveDesign mealy_1001_1100_placement.enc
+% Begin save design ... (date=06/22 11:23:52, mem=1248.1M)
+% Begin Save ccopt configuration ... (date=06/22 11:23:52, mem=1248.1M)
+% End Save ccopt configuration ... (date=06/22 11:23:52, total cpu=0:00:00.0, real=0:00:00.0, peak res=1248.1M, current mem=1248.1M)
+% Begin Save netlist data ... (date=06/22 11:23:52, mem=1248.1M)
+Writing Binary DB to mealy_1001_1100_placement.enc.dat.tmp/mealy_1001_1100.v.bin in single-threaded mode...
+% End Save netlist data ... (date=06/22 11:23:52, total cpu=0:00:00.0, real=0:00:00.0, peak res=1248.1M, current mem=1248.1M)
+Saving symbol-table file ...
+Saving congestion map file mealy_1001_1100_placement.enc.dat.tmp/mealy_1001_1100.route.congmap.gz ...
+% Begin Save AAE data ... (date=06/22 11:23:53, mem=1248.1M)
+Saving AAE Data ...
+% End Save AAE data ... (date=06/22 11:23:53, total cpu=0:00:00.0, real=0:00:00.0, peak res=1248.1M, current mem=1248.1M)
+Saving preference file mealy_1001_1100_placement.enc.dat.tmp/gui.pref.tcl ...
+Saving mode setting ...
+Saving global file ...
+% Begin Save floorplan data ... (date=06/22 11:23:53, mem=1248.1M)
+Saving floorplan file ...
+% End Save floorplan data ... (date=06/22 11:23:54, total cpu=0:00:00.0, real=0:00:01.0, peak res=1248.1M, current mem=1248.1M)
+Saving PG file mealy_1001_1100_placement.enc.dat.tmp/mealy_1001_1100.pg.gz, version#2, (Created by Innovus v21.15-s110_1 on Mon Jun 22 11:23:54 2026)
+*** Completed savePGFile (cpu=0:00:00.0 real=0:00:00.0 mem=1821.1M) ***
+Saving Drc markers ...
+... No Drc file written since there is no markers found.
+% Begin Save placement data ... (date=06/22 11:23:54, mem=1248.1M)
+** Saving stdCellPlacement_binary (version# 2) ...
+Save Adaptive View Pruning View Names to Binary file
+% End Save placement data ... (date=06/22 11:23:54, total cpu=0:00:00.0, real=0:00:00.0, peak res=1248.1M, current mem=1248.1M)
+% Begin Save routing data ... (date=06/22 11:23:54, mem=1248.1M)
+Saving route file ...
+*** Completed saveRoute (cpu=0:00:00.0 real=0:00:00.0 mem=1821.1M) ***
+% End Save routing data ... (date=06/22 11:23:54, total cpu=0:00:00.0, real=0:00:00.0, peak res=1248.1M, current mem=1248.1M)
+Saving property file mealy_1001_1100_placement.enc.dat.tmp/mealy_1001_1100.prop
+*** Completed saveProperty (cpu=0:00:00.0 real=0:00:00.0 mem=1824.1M) ***
+% Begin Save power constraints data ... (date=06/22 11:23:54, mem=1248.1M)
+% End Save power constraints data ... (date=06/22 11:23:54, total cpu=0:00:00.0, real=0:00:00.0, peak res=1248.1M, current mem=1248.1M)
+rc_corner
+rc_corner
+rc_corner
+Generated self-contained design mealy_1001_1100_placement.enc.dat.tmp
+% End save design ... (date=06/22 11:23:55, total cpu=0:00:00.6, real=0:00:03.0, peak res=1248.1M, current mem=1248.1M)
+<CMD> saveDesign mealy_1001_1100_placement.enc
+% Begin save design ... (date=06/22 11:23:55, mem=1248.1M)
+% Begin Save ccopt configuration ... (date=06/22 11:23:55, mem=1248.1M)
+% End Save ccopt configuration ... (date=06/22 11:23:55, total cpu=0:00:00.0, real=0:00:00.0, peak res=1248.1M, current mem=1248.1M)
+% Begin Save netlist data ... (date=06/22 11:23:55, mem=1248.1M)
+Writing Binary DB to mealy_1001_1100_placement.enc.dat.tmp/mealy_1001_1100.v.bin in single-threaded mode...
+% End Save netlist data ... (date=06/22 11:23:55, total cpu=0:00:00.0, real=0:00:00.0, peak res=1248.1M, current mem=1248.1M)
+Saving symbol-table file ...
+Saving congestion map file mealy_1001_1100_placement.enc.dat.tmp/mealy_1001_1100.route.congmap.gz ...
+% Begin Save AAE data ... (date=06/22 11:23:55, mem=1248.1M)
+Saving AAE Data ...
+% End Save AAE data ... (date=06/22 11:23:55, total cpu=0:00:00.0, real=0:00:00.0, peak res=1248.1M, current mem=1248.1M)
+Saving preference file mealy_1001_1100_placement.enc.dat.tmp/gui.pref.tcl ...
+Saving mode setting ...
+Saving global file ...
+% Begin Save floorplan data ... (date=06/22 11:23:56, mem=1248.1M)
+Saving floorplan file ...
+% End Save floorplan data ... (date=06/22 11:23:56, total cpu=0:00:00.0, real=0:00:00.0, peak res=1248.1M, current mem=1248.1M)
+Saving PG file mealy_1001_1100_placement.enc.dat.tmp/mealy_1001_1100.pg.gz, version#2, (Created by Innovus v21.15-s110_1 on Mon Jun 22 11:23:56 2026)
+*** Completed savePGFile (cpu=0:00:00.0 real=0:00:00.0 mem=1820.6M) ***
+Saving Drc markers ...
+... No Drc file written since there is no markers found.
+% Begin Save placement data ... (date=06/22 11:23:56, mem=1248.1M)
+** Saving stdCellPlacement_binary (version# 2) ...
+Save Adaptive View Pruning View Names to Binary file
+% End Save placement data ... (date=06/22 11:23:56, total cpu=0:00:00.0, real=0:00:00.0, peak res=1248.1M, current mem=1248.1M)
+% Begin Save routing data ... (date=06/22 11:23:56, mem=1248.1M)
+Saving route file ...
+*** Completed saveRoute (cpu=0:00:00.0 real=0:00:00.0 mem=1820.6M) ***
+% End Save routing data ... (date=06/22 11:23:57, total cpu=0:00:00.0, real=0:00:00.0, peak res=1248.1M, current mem=1248.1M)
+Saving property file mealy_1001_1100_placement.enc.dat.tmp/mealy_1001_1100.prop
+*** Completed saveProperty (cpu=0:00:00.0 real=0:00:00.0 mem=1823.6M) ***
+% Begin Save power constraints data ... (date=06/22 11:23:57, mem=1248.1M)
+% End Save power constraints data ... (date=06/22 11:23:57, total cpu=0:00:00.0, real=0:00:00.0, peak res=1248.1M, current mem=1248.1M)
+rc_corner
+rc_corner
+rc_corner
+Generated self-contained design mealy_1001_1100_placement.enc.dat.tmp
+% End save design ... (date=06/22 11:23:57, total cpu=0:00:00.6, real=0:00:02.0, peak res=1248.1M, current mem=1248.1M)
+<CMD> saveDesign mealy_1001_1100_placement.enc
+% Begin save design ... (date=06/22 11:23:57, mem=1248.1M)
+% Begin Save ccopt configuration ... (date=06/22 11:23:57, mem=1248.1M)
+% End Save ccopt configuration ... (date=06/22 11:23:57, total cpu=0:00:00.0, real=0:00:00.0, peak res=1248.1M, current mem=1248.1M)
+% Begin Save netlist data ... (date=06/22 11:23:57, mem=1248.1M)
+Writing Binary DB to mealy_1001_1100_placement.enc.dat.tmp/mealy_1001_1100.v.bin in single-threaded mode...
+% End Save netlist data ... (date=06/22 11:23:57, total cpu=0:00:00.0, real=0:00:00.0, peak res=1248.1M, current mem=1248.1M)
+Saving symbol-table file ...
+Saving congestion map file mealy_1001_1100_placement.enc.dat.tmp/mealy_1001_1100.route.congmap.gz ...
+% Begin Save AAE data ... (date=06/22 11:23:58, mem=1248.1M)
+Saving AAE Data ...
+% End Save AAE data ... (date=06/22 11:23:58, total cpu=0:00:00.0, real=0:00:00.0, peak res=1248.1M, current mem=1248.1M)
+Saving preference file mealy_1001_1100_placement.enc.dat.tmp/gui.pref.tcl ...
+Saving mode setting ...
+Saving global file ...
+% Begin Save floorplan data ... (date=06/22 11:23:58, mem=1248.1M)
+Saving floorplan file ...
+% End Save floorplan data ... (date=06/22 11:23:59, total cpu=0:00:00.0, real=0:00:01.0, peak res=1248.1M, current mem=1248.1M)
+Saving PG file mealy_1001_1100_placement.enc.dat.tmp/mealy_1001_1100.pg.gz, version#2, (Created by Innovus v21.15-s110_1 on Mon Jun 22 11:23:59 2026)
+*** Completed savePGFile (cpu=0:00:00.0 real=0:00:00.0 mem=1821.1M) ***
+Saving Drc markers ...
+... No Drc file written since there is no markers found.
+% Begin Save placement data ... (date=06/22 11:23:59, mem=1248.1M)
+** Saving stdCellPlacement_binary (version# 2) ...
+Save Adaptive View Pruning View Names to Binary file
+% End Save placement data ... (date=06/22 11:23:59, total cpu=0:00:00.0, real=0:00:00.0, peak res=1248.1M, current mem=1248.1M)
+% Begin Save routing data ... (date=06/22 11:23:59, mem=1248.1M)
+Saving route file ...
+*** Completed saveRoute (cpu=0:00:00.0 real=0:00:00.0 mem=1821.1M) ***
+% End Save routing data ... (date=06/22 11:23:59, total cpu=0:00:00.0, real=0:00:00.0, peak res=1248.1M, current mem=1248.1M)
+Saving property file mealy_1001_1100_placement.enc.dat.tmp/mealy_1001_1100.prop
+*** Completed saveProperty (cpu=0:00:00.0 real=0:00:00.0 mem=1824.1M) ***
+% Begin Save power constraints data ... (date=06/22 11:23:59, mem=1248.1M)
+% End Save power constraints data ... (date=06/22 11:23:59, total cpu=0:00:00.0, real=0:00:00.0, peak res=1248.1M, current mem=1248.1M)
+rc_corner
+rc_corner
+rc_corner
+Generated self-contained design mealy_1001_1100_placement.enc.dat.tmp
+% End save design ... (date=06/22 11:24:00, total cpu=0:00:00.5, real=0:00:03.0, peak res=1248.1M, current mem=1248.1M)
+<CMD> saveDesign mealy_1001_1100_placement.enc
+% Begin save design ... (date=06/22 11:24:00, mem=1248.1M)
+% Begin Save ccopt configuration ... (date=06/22 11:24:00, mem=1248.1M)
+% End Save ccopt configuration ... (date=06/22 11:24:00, total cpu=0:00:00.0, real=0:00:00.0, peak res=1248.1M, current mem=1248.1M)
+% Begin Save netlist data ... (date=06/22 11:24:00, mem=1248.1M)
+Writing Binary DB to mealy_1001_1100_placement.enc.dat.tmp/mealy_1001_1100.v.bin in single-threaded mode...
+% End Save netlist data ... (date=06/22 11:24:00, total cpu=0:00:00.0, real=0:00:00.0, peak res=1248.1M, current mem=1248.1M)
+Saving symbol-table file ...
+Saving congestion map file mealy_1001_1100_placement.enc.dat.tmp/mealy_1001_1100.route.congmap.gz ...
+% Begin Save AAE data ... (date=06/22 11:24:00, mem=1248.1M)
+Saving AAE Data ...
+% End Save AAE data ... (date=06/22 11:24:00, total cpu=0:00:00.0, real=0:00:00.0, peak res=1248.1M, current mem=1248.1M)
+Saving preference file mealy_1001_1100_placement.enc.dat.tmp/gui.pref.tcl ...
+Saving mode setting ...
+Saving global file ...
+% Begin Save floorplan data ... (date=06/22 11:24:01, mem=1248.1M)
+Saving floorplan file ...
+% End Save floorplan data ... (date=06/22 11:24:01, total cpu=0:00:00.0, real=0:00:00.0, peak res=1248.1M, current mem=1248.1M)
+Saving PG file mealy_1001_1100_placement.enc.dat.tmp/mealy_1001_1100.pg.gz, version#2, (Created by Innovus v21.15-s110_1 on Mon Jun 22 11:24:01 2026)
+*** Completed savePGFile (cpu=0:00:00.0 real=0:00:00.0 mem=1818.7M) ***
+Saving Drc markers ...
+... No Drc file written since there is no markers found.
+% Begin Save placement data ... (date=06/22 11:24:01, mem=1248.1M)
+** Saving stdCellPlacement_binary (version# 2) ...
+Save Adaptive View Pruning View Names to Binary file
+% End Save placement data ... (date=06/22 11:24:01, total cpu=0:00:00.0, real=0:00:00.0, peak res=1248.1M, current mem=1248.1M)
+% Begin Save routing data ... (date=06/22 11:24:01, mem=1248.1M)
+Saving route file ...
+*** Completed saveRoute (cpu=0:00:00.0 real=0:00:00.0 mem=1818.7M) ***
+% End Save routing data ... (date=06/22 11:24:02, total cpu=0:00:00.0, real=0:00:00.0, peak res=1248.1M, current mem=1248.1M)
+Saving property file mealy_1001_1100_placement.enc.dat.tmp/mealy_1001_1100.prop
+*** Completed saveProperty (cpu=0:00:00.0 real=0:00:00.0 mem=1821.7M) ***
+% Begin Save power constraints data ... (date=06/22 11:24:02, mem=1248.1M)
+% End Save power constraints data ... (date=06/22 11:24:02, total cpu=0:00:00.0, real=0:00:00.0, peak res=1248.1M, current mem=1248.1M)
+rc_corner
+rc_corner
+rc_corner
+Generated self-contained design mealy_1001_1100_placement.enc.dat.tmp
+% End save design ... (date=06/22 11:24:02, total cpu=0:00:00.6, real=0:00:02.0, peak res=1248.1M, current mem=1248.1M)
+<CMD> saveDesign mealy_1001_1100_placement.enc
+% Begin save design ... (date=06/22 11:24:02, mem=1248.1M)
+% Begin Save ccopt configuration ... (date=06/22 11:24:02, mem=1248.1M)
+% End Save ccopt configuration ... (date=06/22 11:24:02, total cpu=0:00:00.0, real=0:00:00.0, peak res=1248.1M, current mem=1248.1M)
+% Begin Save netlist data ... (date=06/22 11:24:02, mem=1248.1M)
+Writing Binary DB to mealy_1001_1100_placement.enc.dat.tmp/mealy_1001_1100.v.bin in single-threaded mode...
+% End Save netlist data ... (date=06/22 11:24:02, total cpu=0:00:00.0, real=0:00:00.0, peak res=1248.1M, current mem=1248.1M)
+Saving symbol-table file ...
+Saving congestion map file mealy_1001_1100_placement.enc.dat.tmp/mealy_1001_1100.route.congmap.gz ...
+% Begin Save AAE data ... (date=06/22 11:24:03, mem=1248.1M)
+Saving AAE Data ...
+% End Save AAE data ... (date=06/22 11:24:03, total cpu=0:00:00.0, real=0:00:00.0, peak res=1248.1M, current mem=1248.1M)
+Saving preference file mealy_1001_1100_placement.enc.dat.tmp/gui.pref.tcl ...
+Saving mode setting ...
+Saving global file ...
+% Begin Save floorplan data ... (date=06/22 11:24:03, mem=1248.1M)
+Saving floorplan file ...
+% End Save floorplan data ... (date=06/22 11:24:04, total cpu=0:00:00.0, real=0:00:01.0, peak res=1248.1M, current mem=1248.1M)
+Saving PG file mealy_1001_1100_placement.enc.dat.tmp/mealy_1001_1100.pg.gz, version#2, (Created by Innovus v21.15-s110_1 on Mon Jun 22 11:24:04 2026)
+*** Completed savePGFile (cpu=0:00:00.0 real=0:00:00.0 mem=1821.2M) ***
+Saving Drc markers ...
+... No Drc file written since there is no markers found.
+% Begin Save placement data ... (date=06/22 11:24:04, mem=1248.1M)
+** Saving stdCellPlacement_binary (version# 2) ...
+Save Adaptive View Pruning View Names to Binary file
+% End Save placement data ... (date=06/22 11:24:04, total cpu=0:00:00.0, real=0:00:00.0, peak res=1248.1M, current mem=1248.1M)
+% Begin Save routing data ... (date=06/22 11:24:04, mem=1248.1M)
+Saving route file ...
+*** Completed saveRoute (cpu=0:00:00.0 real=0:00:00.0 mem=1821.2M) ***
+% End Save routing data ... (date=06/22 11:24:04, total cpu=0:00:00.0, real=0:00:00.0, peak res=1248.1M, current mem=1248.1M)
+Saving property file mealy_1001_1100_placement.enc.dat.tmp/mealy_1001_1100.prop
+*** Completed saveProperty (cpu=0:00:00.0 real=0:00:01.0 mem=1824.2M) ***
+% Begin Save power constraints data ... (date=06/22 11:24:05, mem=1248.1M)
+% End Save power constraints data ... (date=06/22 11:24:05, total cpu=0:00:00.0, real=0:00:00.0, peak res=1248.1M, current mem=1248.1M)
+rc_corner
+rc_corner
+rc_corner
+Generated self-contained design mealy_1001_1100_placement.enc.dat.tmp
+% End save design ... (date=06/22 11:24:05, total cpu=0:00:00.5, real=0:00:03.0, peak res=1248.1M, current mem=1248.1M)
+<CMD> saveDesign mealy_1001_1100_placement.enc
+% Begin save design ... (date=06/22 11:24:05, mem=1248.1M)
+% Begin Save ccopt configuration ... (date=06/22 11:24:05, mem=1248.1M)
+% End Save ccopt configuration ... (date=06/22 11:24:05, total cpu=0:00:00.0, real=0:00:00.0, peak res=1248.1M, current mem=1248.1M)
+% Begin Save netlist data ... (date=06/22 11:24:05, mem=1248.1M)
+Writing Binary DB to mealy_1001_1100_placement.enc.dat.tmp/mealy_1001_1100.v.bin in single-threaded mode...
+% End Save netlist data ... (date=06/22 11:24:05, total cpu=0:00:00.0, real=0:00:00.0, peak res=1248.1M, current mem=1248.0M)
+Saving symbol-table file ...
+Saving congestion map file mealy_1001_1100_placement.enc.dat.tmp/mealy_1001_1100.route.congmap.gz ...
+% Begin Save AAE data ... (date=06/22 11:24:05, mem=1248.0M)
+Saving AAE Data ...
+% End Save AAE data ... (date=06/22 11:24:06, total cpu=0:00:00.0, real=0:00:01.0, peak res=1248.0M, current mem=1248.0M)
+Saving preference file mealy_1001_1100_placement.enc.dat.tmp/gui.pref.tcl ...
+Saving mode setting ...
+Saving global file ...
+% Begin Save floorplan data ... (date=06/22 11:24:06, mem=1248.1M)
+Saving floorplan file ...
+% End Save floorplan data ... (date=06/22 11:24:06, total cpu=0:00:00.0, real=0:00:00.0, peak res=1248.1M, current mem=1248.1M)
+Saving PG file mealy_1001_1100_placement.enc.dat.tmp/mealy_1001_1100.pg.gz, version#2, (Created by Innovus v21.15-s110_1 on Mon Jun 22 11:24:06 2026)
+*** Completed savePGFile (cpu=0:00:00.0 real=0:00:00.0 mem=1820.8M) ***
+Saving Drc markers ...
+... No Drc file written since there is no markers found.
+% Begin Save placement data ... (date=06/22 11:24:06, mem=1248.1M)
+** Saving stdCellPlacement_binary (version# 2) ...
+Save Adaptive View Pruning View Names to Binary file
+% End Save placement data ... (date=06/22 11:24:06, total cpu=0:00:00.0, real=0:00:00.0, peak res=1248.1M, current mem=1248.1M)
+% Begin Save routing data ... (date=06/22 11:24:06, mem=1248.1M)
+Saving route file ...
+*** Completed saveRoute (cpu=0:00:00.0 real=0:00:01.0 mem=1820.8M) ***
+% End Save routing data ... (date=06/22 11:24:07, total cpu=0:00:00.0, real=0:00:01.0, peak res=1248.1M, current mem=1248.1M)
+Saving property file mealy_1001_1100_placement.enc.dat.tmp/mealy_1001_1100.prop
+*** Completed saveProperty (cpu=0:00:00.0 real=0:00:00.0 mem=1823.8M) ***
+% Begin Save power constraints data ... (date=06/22 11:24:07, mem=1248.1M)
+% End Save power constraints data ... (date=06/22 11:24:07, total cpu=0:00:00.0, real=0:00:00.0, peak res=1248.1M, current mem=1248.1M)
+rc_corner
+rc_corner
+rc_corner
+Generated self-contained design mealy_1001_1100_placement.enc.dat.tmp
+% End save design ... (date=06/22 11:24:07, total cpu=0:00:00.5, real=0:00:02.0, peak res=1248.1M, current mem=1248.1M)
+<CMD> saveDesign mealy_1001_1100_placement.enc
+% Begin save design ... (date=06/22 11:24:07, mem=1248.1M)
+% Begin Save ccopt configuration ... (date=06/22 11:24:07, mem=1248.1M)
+% End Save ccopt configuration ... (date=06/22 11:24:07, total cpu=0:00:00.0, real=0:00:00.0, peak res=1248.1M, current mem=1248.1M)
+% Begin Save netlist data ... (date=06/22 11:24:07, mem=1248.1M)
+Writing Binary DB to mealy_1001_1100_placement.enc.dat.tmp/mealy_1001_1100.v.bin in single-threaded mode...
+% End Save netlist data ... (date=06/22 11:24:07, total cpu=0:00:00.0, real=0:00:00.0, peak res=1248.1M, current mem=1248.1M)
+Saving symbol-table file ...
+Saving congestion map file mealy_1001_1100_placement.enc.dat.tmp/mealy_1001_1100.route.congmap.gz ...
+% Begin Save AAE data ... (date=06/22 11:24:08, mem=1248.1M)
+Saving AAE Data ...
+% End Save AAE data ... (date=06/22 11:24:08, total cpu=0:00:00.0, real=0:00:00.0, peak res=1248.1M, current mem=1248.1M)
+Saving preference file mealy_1001_1100_placement.enc.dat.tmp/gui.pref.tcl ...
+Saving mode setting ...
+Saving global file ...
+% Begin Save floorplan data ... (date=06/22 11:24:08, mem=1248.1M)
+Saving floorplan file ...
+% End Save floorplan data ... (date=06/22 11:24:08, total cpu=0:00:00.0, real=0:00:00.0, peak res=1248.1M, current mem=1248.1M)
+Saving PG file mealy_1001_1100_placement.enc.dat.tmp/mealy_1001_1100.pg.gz, version#2, (Created by Innovus v21.15-s110_1 on Mon Jun 22 11:24:08 2026)
+*** Completed savePGFile (cpu=0:00:00.0 real=0:00:00.0 mem=1821.3M) ***
+Saving Drc markers ...
+... No Drc file written since there is no markers found.
+% Begin Save placement data ... (date=06/22 11:24:08, mem=1248.1M)
+** Saving stdCellPlacement_binary (version# 2) ...
+Save Adaptive View Pruning View Names to Binary file
+% End Save placement data ... (date=06/22 11:24:08, total cpu=0:00:00.0, real=0:00:01.0, peak res=1248.1M, current mem=1248.1M)
+% Begin Save routing data ... (date=06/22 11:24:09, mem=1248.1M)
+Saving route file ...
+*** Completed saveRoute (cpu=0:00:00.0 real=0:00:00.0 mem=1821.3M) ***
+% End Save routing data ... (date=06/22 11:24:09, total cpu=0:00:00.0, real=0:00:00.0, peak res=1248.1M, current mem=1248.1M)
+Saving property file mealy_1001_1100_placement.enc.dat.tmp/mealy_1001_1100.prop
+*** Completed saveProperty (cpu=0:00:00.0 real=0:00:00.0 mem=1824.3M) ***
+% Begin Save power constraints data ... (date=06/22 11:24:09, mem=1248.1M)
+% End Save power constraints data ... (date=06/22 11:24:09, total cpu=0:00:00.0, real=0:00:00.0, peak res=1248.1M, current mem=1248.1M)
+rc_corner
+rc_corner
+rc_corner
+Generated self-contained design mealy_1001_1100_placement.enc.dat.tmp
+% End save design ... (date=06/22 11:24:09, total cpu=0:00:00.5, real=0:00:02.0, peak res=1248.1M, current mem=1248.1M)
+<CMD> saveDesign mealy_1001_1100_placement.enc
+% Begin save design ... (date=06/22 11:24:09, mem=1248.1M)
+% Begin Save ccopt configuration ... (date=06/22 11:24:09, mem=1248.1M)
+% End Save ccopt configuration ... (date=06/22 11:24:09, total cpu=0:00:00.0, real=0:00:00.0, peak res=1248.1M, current mem=1248.1M)
+% Begin Save netlist data ... (date=06/22 11:24:09, mem=1248.1M)
+Writing Binary DB to mealy_1001_1100_placement.enc.dat.tmp/mealy_1001_1100.v.bin in single-threaded mode...
+% End Save netlist data ... (date=06/22 11:24:09, total cpu=0:00:00.0, real=0:00:00.0, peak res=1248.1M, current mem=1248.1M)
+Saving symbol-table file ...
+Saving congestion map file mealy_1001_1100_placement.enc.dat.tmp/mealy_1001_1100.route.congmap.gz ...
+% Begin Save AAE data ... (date=06/22 11:24:10, mem=1248.1M)
+Saving AAE Data ...
+% End Save AAE data ... (date=06/22 11:24:10, total cpu=0:00:00.0, real=0:00:00.0, peak res=1248.1M, current mem=1248.1M)
+Saving preference file mealy_1001_1100_placement.enc.dat.tmp/gui.pref.tcl ...
+Saving mode setting ...
+Saving global file ...
+% Begin Save floorplan data ... (date=06/22 11:24:10, mem=1248.1M)
+Saving floorplan file ...
+% End Save floorplan data ... (date=06/22 11:24:10, total cpu=0:00:00.0, real=0:00:00.0, peak res=1248.1M, current mem=1248.1M)
+Saving PG file mealy_1001_1100_placement.enc.dat.tmp/mealy_1001_1100.pg.gz, version#2, (Created by Innovus v21.15-s110_1 on Mon Jun 22 11:24:10 2026)
+*** Completed savePGFile (cpu=0:00:00.0 real=0:00:01.0 mem=1820.8M) ***
+Saving Drc markers ...
+... No Drc file written since there is no markers found.
+% Begin Save placement data ... (date=06/22 11:24:11, mem=1248.1M)
+** Saving stdCellPlacement_binary (version# 2) ...
+Save Adaptive View Pruning View Names to Binary file
+% End Save placement data ... (date=06/22 11:24:11, total cpu=0:00:00.0, real=0:00:00.0, peak res=1248.1M, current mem=1248.1M)
+% Begin Save routing data ... (date=06/22 11:24:11, mem=1248.1M)
+Saving route file ...
+*** Completed saveRoute (cpu=0:00:00.0 real=0:00:00.0 mem=1820.8M) ***
+% End Save routing data ... (date=06/22 11:24:11, total cpu=0:00:00.0, real=0:00:00.0, peak res=1248.1M, current mem=1248.1M)
+Saving property file mealy_1001_1100_placement.enc.dat.tmp/mealy_1001_1100.prop
+*** Completed saveProperty (cpu=0:00:00.0 real=0:00:00.0 mem=1823.8M) ***
+% Begin Save power constraints data ... (date=06/22 11:24:11, mem=1248.1M)
+% End Save power constraints data ... (date=06/22 11:24:11, total cpu=0:00:00.0, real=0:00:00.0, peak res=1248.1M, current mem=1248.1M)
+rc_corner
+rc_corner
+rc_corner
+Generated self-contained design mealy_1001_1100_placement.enc.dat.tmp
+% End save design ... (date=06/22 11:24:11, total cpu=0:00:00.5, real=0:00:02.0, peak res=1248.1M, current mem=1248.1M)
+<CMD> redirect -quiet {set honorDomain [getAnalysisMode -honorClockDomains]} > /dev/null
+<CMD> timeDesign -preCTS -pathReports -drvReports -slackReports -numPaths 50 -prefix mealy_1001_1100_preCTS -outDir timingReports
+AAE DB initialization (MEM=1799.94 CPU=0:00:00.2 REAL=0:00:00.0) 
+*** timeDesign #1 [begin] : totSession cpu/real = 0:03:41.2/0:27:06.4 (0.1), mem = 1799.9M
+Setting timing_disable_library_data_to_data_checks to 'true'.
+Setting timing_disable_user_data_to_data_checks to 'true'.
+Start to check current routing status for nets...
+All nets are already routed correctly.
+End to check current routing status for nets (mem=1792.9M)
+Extraction called for design 'mealy_1001_1100' of instances=34 and nets=32 using extraction engine 'preRoute' .
+**WARN: (IMPEXT-3530):	The process node is not set. Use the command setDesignMode -process <process node> prior to extraction for maximum accuracy and optimal automatic threshold setting.
+Type 'man IMPEXT-3530' for more detail.
+PreRoute RC Extraction called for design mealy_1001_1100.
+RC Extraction called in multi-corner(1) mode.
+RCMode: PreRoute
+      RC Corner Indexes            0   
+Capacitance Scaling Factor   : 1.00000 
+Resistance Scaling Factor    : 1.00000 
+Clock Cap. Scaling Factor    : 1.00000 
+Clock Res. Scaling Factor    : 1.00000 
+Shrink Factor                : 1.00000
+PreRoute extraction is honoring NDR/Shielding/ExtraSpace for clock nets.
+Using capacitance table file ...
+Updating RC grid for preRoute extraction ...
+Initializing multi-corner capacitance tables ... 
+Initializing multi-corner resistance tables ...
+PreRoute RC Extraction DONE (CPU Time: 0:00:00.1  Real Time: 0:00:00.0  MEM: 1792.938M)
+Starting delay calculation for Setup views
+AAE_INFO: opIsDesignInPostRouteState() is 0
+#################################################################################
+# Design Stage: PreRoute
+# Design Name: mealy_1001_1100
+# Design Mode: 90nm
+# Analysis Mode: MMMC Non-OCV 
+# Parasitics Mode: No SPEF/RCDB 
+# Signoff Settings: SI Off 
+#################################################################################
+Calculate delays in BcWc mode...
+Start delay calculation (fullDC) (1 T). (MEM=1808.27)

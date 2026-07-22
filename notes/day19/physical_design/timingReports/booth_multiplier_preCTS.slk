@@ -1,0 +1,26 @@
+# Format: clock  timeReq  slackR/slackF  setupR/setupF  instName/pinName   # cycle(s)
+clk(R)->clk(R)	0.867    */-0.437        */0.123         A_reg[1]/D    1
+clk(R)->clk(R)	0.841    */-0.436        */0.149         A_reg[0]/D    1
+clk(R)->clk(R)	0.864    -0.426/*        0.126/*         A_reg[2]/D    1
+clk(R)->clk(R)	0.864    -0.406/*        0.126/*         P_reg[3]/D    1
+clk(R)->clk(R)	0.868    -0.404/*        0.122/*         P_reg[2]/D    1
+clk(R)->clk(R)	0.868    -0.401/*        0.122/*         Count_reg[1]/D    1
+clk(R)->clk(R)	0.748    -0.401/*        0.242/*         Count_reg[0]/D0    1
+clk(R)->clk(R)	0.869    -0.400/*        0.121/*         P_reg[1]/D    1
+clk(R)->clk(R)	0.844    -0.396/*        0.146/*         P_reg[0]/D    1
+clk(R)->clk(R)	0.835    -0.388/*        0.155/*         Count_reg[2]/D    1
+clk(R)->clk(R)	0.000    */-0.379        */1.000         P[7]    1
+clk(R)->clk(R)	0.000    */-0.379        */1.000         P[6]    1
+clk(R)->clk(R)	0.832    -0.378/*        0.158/*         Q_minus_one_reg/D    1
+clk(R)->clk(R)	0.000    */-0.374        */1.000         P[4]    1
+clk(R)->clk(R)	0.000    */-0.370        */1.000         P[5]    1
+clk(R)->clk(R)	0.000    */-0.368        */1.000         P[0]    1
+clk(R)->clk(R)	0.870    -0.361/*        0.120/*         M_temp_reg[0]/D    1
+clk(R)->clk(R)	0.869    -0.361/*        0.121/*         M_temp_reg[3]/D    1
+clk(R)->clk(R)	0.870    -0.360/*        0.120/*         M_temp_reg[1]/D    1
+clk(R)->clk(R)	0.000    */-0.360        */1.000         P[1]    1
+clk(R)->clk(R)	0.869    -0.358/*        0.121/*         M_temp_reg[2]/D    1
+clk(R)->clk(R)	0.000    */-0.358        */1.000         P[3]    1
+clk(R)->clk(R)	0.000    */-0.355        */1.000         P[2]    1
+clk(R)->clk(R)	0.769    -0.323/*        0.221/*         Count_reg[0]/D1    1
+clk(R)->clk(R)	0.697    */0.314         */0.293         Count_reg[0]/S0    1

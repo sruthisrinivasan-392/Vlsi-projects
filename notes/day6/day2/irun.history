@@ -1,0 +1,11 @@
+s1(02Jun2026:12:06:29):  irun fa.v -access +rwc -gui 
+s2(02Jun2026:13:02:01):  irun fa.v -access +rwc -gui 
+s3(02Jun2026:13:30:59):  irun fa.v -access +rwc -gui 
+s4(02Jun2026:13:34:50):  irun fa.v -access +rwc -gui 
+s5(02Jun2026:13:48:25):  irun 4bitadder -access +rwc -gwi 
+s6(02Jun2026:13:49:03):  irun 4bitadder.v -access +rwc -gwi 
+s7(02Jun2026:13:50:55):  irun 4bitadder.v -access +rwc -gwi 
+s8(02Jun2026:13:51:18):  irun 4bitadder.v -access +rwc -gui 
+s9(02Jun2026:15:37:06):  irun mux.v -access +rwc -gui 
+s10(06Jun2026:11:22:17):  irun fa.v -access +rwc -gui-coverage all 
+s11(06Jun2026:11:22:51):  irun fa.v -access +rwc -gui -coverage all 

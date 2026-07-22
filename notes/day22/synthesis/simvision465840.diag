@@ -1,0 +1,92 @@
+*** Message Type: info ***
+When: Wed Jul 01 10:26:18 AM IST 2026
+SimVision started.
+Version: TOOL:  simvision(64)   15.20-s086
+User: vlsi30
+Host: localhost
+Platform: Linux/x86_64/4.18.0-425.3.1.el8.x86_64
+Started: Wed Jul 01 10:26:18 AM IST 2026
+Command: /home/install/INCISIVE152/tools.lnx86/simvision/bin/64bit/simvision.exe -connect dc:localhost:43913 -64BIT -nocopyright
+Work Directory: /home/vlsi30/day22/synthesis
+ 
+*** Message Type: info ***
+When: Wed Jul 01 10:26:18 AM IST 2026
+Create browser window: "Design Browser 1"
+ 
+*** Message Type: info ***
+When: Wed Jul 01 10:26:20 AM IST 2026
+Create console window: "Console"
+ 
+*** Message Type: info ***
+When: Wed Jul 01 10:26:21 AM IST 2026
+Connect to Simulator
+      Design: worklib.async_fifo_tb:v
+   Languages: verilog
+   Simulator: NC-Sim
+     Version: TOOL:    ncsim(64)       15.20-s086
+        User: vlsi30
+        Host: localhost
+Time Started: Wed Jul 01 10:26:17 AM IST 2026
+  Process ID: 465802
+   Directory: /home/vlsi30/day22/synthesis
+     Command: irun fifo.v fifo_tb.v -access +rwc -gui
+
+ 
+*** Message Type: info ***
+When: Wed Jul 01 10:26:21 AM IST 2026
+Create utility window: "Properties"
+ 
+*** Message Type: info ***
+When: Wed Jul 01 10:26:27 AM IST 2026
+Create waveform window: "Waveform 1"
+ 
+*** Message Type: info ***
+When: Wed Jul 01 10:30:26 AM IST 2026
+Delete waveform window: "Waveform 1"
+ 
+*** Message Type: info ***
+When: Wed Jul 01 10:30:40 AM IST 2026
+Exit NC-Sim: user
+      Design: worklib.async_fifo_tb:v
+   Languages: verilog
+   Simulator: NC-Sim
+     Version: TOOL:    ncsim(64)       15.20-s086
+        User: vlsi30
+        Host: localhost
+Time Started: Wed Jul 01 10:26:17 AM IST 2026
+  Process ID: 465802
+   Directory: /home/vlsi30/day22/synthesis
+     Command: irun fifo.v fifo_tb.v -access +rwc -gui
+
+ 
+*** Message Type: error ***
+When: Wed Jul 01 10:30:40 AM IST 2026
+NC-Sim Crashed:
+      Design: worklib.async_fifo_tb:v
+   Languages: verilog
+   Simulator: NC-Sim
+     Version: TOOL:    ncsim(64)       15.20-s086
+        User: vlsi30
+        Host: localhost
+Time Started: Wed Jul 01 10:26:17 AM IST 2026
+  Process ID: 465802
+   Directory: /home/vlsi30/day22/synthesis
+     Command: irun fifo.v fifo_tb.v -access +rwc -gui
+      Design: worklib.async_fifo_tb:v
+   Languages: verilog
+   Simulator: NC-Sim
+     Version: TOOL:        ncsim(64)       15.20-s086
+        User: vlsi30
+        Host: localhost
+Time Started: Wed Jul 01 10:26:17 AM IST 2026
+  Process ID: 465802
+   Directory: /home/vlsi30/day22/synthesis
+     Command: irun fifo.v fifo_tb.v -access +rwc -gui
+
+Outstanding STRAP Requests:
+        strap::report enable out
+ 
+*** Message Type: info ***
+When: Wed Jul 01 10:30:42 AM IST 2026
+SimVision Exit.
+ 

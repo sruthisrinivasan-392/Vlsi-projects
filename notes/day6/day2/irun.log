@@ -1,0 +1,124 @@
+irun(64): 15.20-s086: (c) Copyright 1995-2020 Cadence Design Systems, Inc.
+TOOL:	irun(64)	15.20-s086: Started on Jun 06, 2026 at 11:22:51 IST
+irun
+	fa.v
+	-access +rwc
+	-gui
+	-coverage all
+		Caching library 'worklib' ....... Done
+	Elaborating the design hierarchy:
+	Top level design units:
+		fulladder_tb
+
+	Extracting FSMs for coverage:
+		worklib.fulladder_1bit
+		worklib.fulladder_tb
+	Total FSMs extracted = 0
+	Building instance overlay tables: .................... Done
+	Enabling instrumentation for coverage types: block expression FSM toggle functional
+ncelab: *W,COVDCL: By default expression coverage is scored only for Verilog logical operators (|| and &&) and VHDL logical operators (OR, AND, NOR, and NAND), and is scored only in condition expressions. To score coverage for other operators and for expressions in other statements, use the "set_expr_coverable_operators" and "set_expr_coverable_statements" coverage configuration file commands with suitable options at elaboration.
+	Generating native compiled code:
+		worklib.fulladder_1bit:v <0x45b903e0>
+			streams:   0, words:     0
+		worklib.fulladder_tb:v <0x29bb7cd0>
+			streams:   5, words: 12770
+	Building instance specific data structures.
+	Loading native compiled code:     .................... Done
+	Design hierarchy summary:
+		             Instances  Unique
+		Modules:             2       2
+		Registers:           3       3
+		Scalar wires:        5       -
+		Initial blocks:      1       1
+		Cont. assignments:   0       2
+		Pseudo assignments:  3       3
+	Writing initial simulation snapshot: worklib.fulladder_tb:v
+
+-------------------------------------
+Relinquished control to SimVision...
+ncsim> 
+ncsim> source /home/install/INCISIVE152/tools/inca/files/ncsimrc
+ncsim> database -open waves -into waves.shm -default
+Created default SHM database waves
+ncsim> probe -create -shm fulladder_tb.a fulladder_tb.b fulladder_tb.cin fulladder_tb.cout fulladder_tb.sum
+Created probe 1
+ncsim> run
+a=0 b=0 cin=0 sum=0 cout=0
+a=0 b=0 cin=1 sum=1 cout=0
+a=0 b=1 cin=0 sum=1 cout=0
+a=0 b=1 cin=1 sum=0 cout=1
+a=1 b=0 cin=0 sum=1 cout=0
+a=1 b=0 cin=1 sum=0 cout=1
+a=1 b=1 cin=0 sum=0 cout=1
+a=1 b=1 cin=1 sum=1 cout=1
+Simulation complete via $finish(1) at time 80 NS + 0
+./fa.v:41     $finish;
+ncsim> coverage -analyze
+
+coverage setup:
+  workdir  :  ./cov_work
+  dutinst  :  fulladder_tb(fulladder_tb)
+  scope    :  scope
+  testname :  test
+
+coverage files:
+  model(design data) :  ./cov_work/scope/icc_58e3eead_00000000.ucm
+  data               :  ./cov_work/scope/test/icc_58e3eead_00000000.ucd
+
+Launching IMC...
+
+ncsim> coverage -analyze
+
+coverage setup:
+  workdir  :  ./cov_work
+  dutinst  :  fulladder_tb(fulladder_tb)
+  scope    :  scope
+  testname :  test
+
+coverage files:
+  model(design data) :  ./cov_work/scope/icc_58e3eead_00000000.ucm (reused)
+  data               :  ./cov_work/scope/test/icc_58e3eead_00000000.ucd
+
+Launching IMC...
+
+ncsim> coverage -analyze
+
+coverage setup:
+  workdir  :  ./cov_work
+  dutinst  :  fulladder_tb(fulladder_tb)
+  scope    :  scope
+  testname :  test
+
+coverage files:
+  model(design data) :  ./cov_work/scope/icc_58e3eead_00000000.ucm (reused)
+  data               :  ./cov_work/scope/test/icc_58e3eead_00000000.ucd
+
+Launching IMC...
+
+ncsim> coverage -analyze
+
+coverage setup:
+  workdir  :  ./cov_work
+  dutinst  :  fulladder_tb(fulladder_tb)
+  scope    :  scope
+  testname :  test
+
+coverage files:
+  model(design data) :  ./cov_work/scope/icc_58e3eead_00000000.ucm (reused)
+  data               :  ./cov_work/scope/test/icc_58e3eead_00000000.ucd
+
+Launching IMC...
+
+ncsim> 
+coverage setup:
+  workdir  :  ./cov_work
+  dutinst  :  fulladder_tb(fulladder_tb)
+  scope    :  scope
+  testname :  test
+
+coverage files:
+  model(design data) :  ./cov_work/scope/icc_58e3eead_00000000.ucm (reused)
+  data               :  ./cov_work/scope/test/icc_58e3eead_00000000.ucd
+...Regained control from SimVision
+-------------------------------------
+TOOL:	irun(64)	15.20-s086: Exiting on Jun 06, 2026 at 12:40:23 IST  (total: 01:17:32)

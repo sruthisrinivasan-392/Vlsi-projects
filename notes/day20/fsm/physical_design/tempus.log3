@@ -1,0 +1,2652 @@
+
+Cadence Tempus(TM) Timing Solution.
+Copyright 2024 Cadence Design Systems, Inc. All rights reserved worldwide.
+
+Version:	v23.13-s084_1, built Fri Nov 22 17:27:06 PST 2024
+Options:	
+Date:		Mon Jun 22 14:04:20 2026
+Host:		cadence (x86_64 w/Linux 4.18.0-425.3.1.el8.x86_64) (8cores*16cpus*Intel(R) Core(TM) i7-10875H CPU @ 2.30GHz 16384KB)
+OS:		Red Hat Enterprise Linux 8.7 (Ootpa)
+
+License:
+		[14:04:20.094041] Configured Lic search path (23.02-s006): 5280@cadence
+
+		tpsxl	Tempus Timing Signoff Solution XL	23.1	checkout succeeded
+		16 CPU jobs allowed with the current license(s). Use set_multi_cpu_usage to set your required CPU count.
+**ERROR: (IMPOAX-8053):	Could not open shared library libtempusoax22.so : liboaPrivateCDS.so: cannot open shared object file: No such file or directory.
+**ERROR: (IMPOAX-8053):	Could not open shared library libcdsSkillPcell.so : /home/install/SSV231/tools.lnx86/ssv/bin/64bit/../../../lib/64bit/libcdsSkillPcell.so: undefined symbol: _ZTIN12OpenAccess_413oaFSComponentE.
+**ERROR: (IMPOAX-8033):	OpenAccess features will be disabled in this session.
+Change the soft stacksize limit to 0.2%RAM (63 mbytes). Set global soft_stack_size_limit to change the value.
+environment variable TMPDIR is '/tmp/ssv_tmpdir_17001_a0558ef3-271c-4973-9524-645dc7ae41ff_RGzISY'.
+<CMD> ::stop_gui -keepDgui
+Has not load the powerDB, will keep enalbed
+Has not load the powerDB, will keep enalbed
+<CMD> read_design -physical_data mealy_1001_1100_placement.enc.dat/ mealy_1001_1100
+# Tempus Timing Solution 23.13-s084_1
+# read_design
+#  -physical_data 1
+#  dir mealy_1001_1100_placement.enc.dat/ mealy_1001_1100
+Set Default Input Pin Transition as 0.1 ps.
+Loading design 'mealy_1001_1100' saved by 'Innovus' '21.15-s110_1' on 'Mon Jun 22 11:24:11 2026'.
+**ERROR: (IMPOAX-820):	The OpenAccess (OA) features are disabled in the current session of Tempus Timing Solution because the oax shared library could not be loaded properly. This could be because your installation was not properly configured. To enable OA features, exit the current session and re-launch Tempus Timing Solution either after fixing your installation by running the Configure Installation phase, or after setting the OA_HOME variable to point to a proper OA installation. Check the "OpenAccess Installation and Configuration Guide" manual for more information.
+
+**ERROR: (IMPOAX-850):	oaxCreateCdsLibArray command cannot be run as OpenAccess features are disabled in this session.
+#% Begin Load MMMC data ... (date=06/22 14:07:10, mem=1741.2M)
+**WARN: (UI-638):	The option '-cap_table' to the command 'create_rc_corner' is ignored since it is related to the RC extraction mode which Tempus does not support. Tempus only supports the signoff QRC extraction.
+Number of views requested 1 are allowed with the current licenses... continuing with set_analysis_view.
+#% End Load MMMC data ... (date=06/22 14:07:10, total cpu=0:00:00.0, real=0:00:00.0, peak res=1741.3M, current mem=1741.3M)
+rc_corner
+
+Loading LEF file /home/vlsi30/day18/physical_design/mealy_1001_1100_placement.enc.dat/libs/lef/gsclib090_translated.lef ...
+**WARN: (IMPLF-105):	The layer 'Oxide' specified in SAMENET spacing
+rule is neither a routing layer nor a cut layer. The rule is ignored.
+**WARN: (IMPLF-105):	The layer 'Poly' specified in SAMENET spacing
+rule is neither a routing layer nor a cut layer. The rule is ignored.
+Set DBUPerIGU to M2 pitch 580.
+**WARN: (IMPLF-200):	Pin 'A' in macro 'ANTENNA' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+
+##  Check design process and node:  
+##  Both design process and tech node are not set.
+
+Loading view definition file from /home/vlsi30/day18/physical_design/mealy_1001_1100_placement.enc.dat/viewDefinition.tcl
+Reading slow timing library '/home/install/FOUNDRY/digital/90nm/dig/lib/slow.lib' ...
+Read 479 cells in library 'slow' 
+Reading fast timing library '/home/install/FOUNDRY/digital/90nm/dig/lib/fast.lib' ...
+Read 479 cells in library 'fast' 
+*** End library_loading (cpu=0.02min, real=0.02min, mem=84.0M, fe_cpu=0.43min, fe_real=2.85min, fe_mem=1878.9M) ***
+#% Begin Load netlist data ... (date=06/22 14:07:11, mem=1810.7M)
+*** Begin netlist parsing (mem=1878.9M) ***
+**WARN: (IMPVL-159):	Pin 'VDD' of cell 'XOR3XL' is defined in LEF but not in the timing library.
+**WARN: (IMPVL-159):	Pin 'VSS' of cell 'XOR3XL' is defined in LEF but not in the timing library.
+**WARN: (IMPVL-159):	Pin 'VDD' of cell 'XOR3X1' is defined in LEF but not in the timing library.
+**WARN: (IMPVL-159):	Pin 'VSS' of cell 'XOR3X1' is defined in LEF but not in the timing library.
+**WARN: (IMPVL-159):	Pin 'VSS' of cell 'XOR2XL' is defined in LEF but not in the timing library.
+**WARN: (IMPVL-159):	Pin 'VDD' of cell 'XOR2XL' is defined in LEF but not in the timing library.
+**WARN: (IMPVL-159):	Pin 'VSS' of cell 'XOR2X4' is defined in LEF but not in the timing library.
+**WARN: (IMPVL-159):	Pin 'VDD' of cell 'XOR2X4' is defined in LEF but not in the timing library.
+**WARN: (IMPVL-159):	Pin 'VSS' of cell 'XOR2X2' is defined in LEF but not in the timing library.
+**WARN: (IMPVL-159):	Pin 'VDD' of cell 'XOR2X2' is defined in LEF but not in the timing library.
+**WARN: (IMPVL-159):	Pin 'VSS' of cell 'XOR2X1' is defined in LEF but not in the timing library.
+**WARN: (IMPVL-159):	Pin 'VDD' of cell 'XOR2X1' is defined in LEF but not in the timing library.
+**WARN: (IMPVL-159):	Pin 'VSS' of cell 'XNOR3XL' is defined in LEF but not in the timing library.
+**WARN: (IMPVL-159):	Pin 'VDD' of cell 'XNOR3XL' is defined in LEF but not in the timing library.
+**WARN: (IMPVL-159):	Pin 'VDD' of cell 'XNOR3X1' is defined in LEF but not in the timing library.
+**WARN: (IMPVL-159):	Pin 'VSS' of cell 'XNOR3X1' is defined in LEF but not in the timing library.
+**WARN: (IMPVL-159):	Pin 'VSS' of cell 'XNOR2XL' is defined in LEF but not in the timing library.
+**WARN: (IMPVL-159):	Pin 'VDD' of cell 'XNOR2XL' is defined in LEF but not in the timing library.
+**WARN: (IMPVL-159):	Pin 'VSS' of cell 'XNOR2X4' is defined in LEF but not in the timing library.
+**WARN: (IMPVL-159):	Pin 'VDD' of cell 'XNOR2X4' is defined in LEF but not in the timing library.
+**WARN: (EMS-62):	Message <IMPVL-159> has exceeded the default message display limit of 20.
+To avoid this warning, increase the display limit per unique message by
+using the set_message -limit <number> command.
+The message limit can be removed by using the set_message -no_limit command.
+Note that setting a very large number using the set_message -limit command
+or removing the message limit using the set_message -no_limit command can
+significantly increase the log file size.
+To suppress a message, use the set_message -suppress command.
+Reading verilogBinary netlist '/home/vlsi30/day18/physical_design/mealy_1001_1100_placement.enc.dat/mealy_1001_1100.v.bin'
+
+*** Memory Usage v#3 (Current mem = 2078.938M, initial mem = 835.133M) ***
+*** End netlist parsing (cpu=0:00:00.0, real=0:00:00.0, mem=2078.9M) ***
+#% End Load netlist data ... (date=06/22 14:07:12, total cpu=0:00:00.5, real=0:00:01.0, peak res=1932.3M, current mem=1922.2M)
+Top level cell is mealy_1001_1100.
+Has not load the powerDB, will keep enalbed
+Has not load the powerDB, will keep enalbed
+Building hierarchical netlist for Cell mealy_1001_1100 ...
+***** UseNewTieNetMode *****.
+*** Netlist is unique.
+** info: there are 967 modules.
+** info: there are 24 stdCell insts.
+** info: there are 24 stdCell insts with at least one signal pin.
+
+*** Memory Usage v#3 (Current mem = 2556.984M, initial mem = 835.133M) ***
+*info: set bottom ioPad orient R0
+**WARN: (IMPFP-3961):	The techSite 'pad' has no related standard cells in the LEF/OA library. The calculations for this site type cannot be made unless standard cell models of this type exist in the LEF/OA library. Ignore this warning if the SITE is not used by the library. Alternatively, remove the SITE definition for the LEF/OA library to avoid this message.
+**WARN: (IMPFP-3961):	The techSite 'corner' has no related standard cells in the LEF/OA library. The calculations for this site type cannot be made unless standard cell models of this type exist in the LEF/OA library. Ignore this warning if the SITE is not used by the library. Alternatively, remove the SITE definition for the LEF/OA library to avoid this message.
+Horizontal Layer M1 offset = 290 (derived)
+Vertical Layer M2 offset = 290 (derived)
+Start create_tracks
+Generated pitch 0.29 in Metal8 is different from 0.87 defined in technology file in unpreferred direction.
+Set Default Input Pin Transition as 0.1 ps.
+Has not load the powerDB, will keep enalbed
+Has not load the powerDB, will keep enalbed
+Has not load the powerDB, will keep enalbed
+Has not load the powerDB, will keep enalbed
+Has not load the powerDB, will keep enalbed
+Has not load the powerDB, will keep enalbed
+Loading preference file /home/vlsi30/day18/physical_design/mealy_1001_1100_placement.enc.dat/gui.pref.tcl ...
+**WARN: (UI-156):	preference name 'MinFPModuleSize' is not supported in Tempus Timing Solution.
+**WARN: (UI-156):	preference name 'MinFlightLineWidth' is not supported in Tempus Timing Solution.
+**WARN: (UI-156):	preference name 'MaxFlightLineNetTerms' is not supported in Tempus Timing Solution.
+**WARN: (UI-156):	preference name 'LevelFlight' is not supported in Tempus Timing Solution.
+**WARN: (UI-156):	preference name 'DirectionSink' is not supported in Tempus Timing Solution.
+**WARN: (UI-156):	preference name 'DirectionSource' is not supported in Tempus Timing Solution.
+**WARN: (UI-156):	preference name 'ShowNumberBlockConnection' is not supported in Tempus Timing Solution.
+**WARN: (UI-156):	preference name 'StrecthRestriction' is not supported in Tempus Timing Solution.
+**WARN: (UI-156):	preference name 'StretchRectilinear' is not supported in Tempus Timing Solution.
+**WARN: (UI-156):	preference name 'MoveRestriction' is not supported in Tempus Timing Solution.
+**WARN: (UI-156):	preference name 'DisplayRelFPlan' is not supported in Tempus Timing Solution.
+**WARN: (UI-156):	preference name 'LegalizeMacro' is not supported in Tempus Timing Solution.
+**WARN: (UI-156):	preference name 'DisplayFPlanFlightLine' is not supported in Tempus Timing Solution.
+**WARN: (UI-156):	preference name 'DisplayPinName' is not supported in Tempus Timing Solution.
+**WARN: (UI-156):	preference name 'ExclusiveFlight' is not supported in Tempus Timing Solution.
+**WARN: (UI-156):	preference name 'ShowToUnplace' is not supported in Tempus Timing Solution.
+**WARN: (UI-156):	preference name 'FlightLineInMove' is not supported in Tempus Timing Solution.
+**WARN: (UI-156):	preference name 'ShowConnectionInOutNumber' is not supported in Tempus Timing Solution.
+**WARN: (UI-156):	preference name 'ConnectionColorType' is not supported in Tempus Timing Solution.
+**WARN: (UI-156):	preference name 'OnlyBundleNetFlight' is not supported in Tempus Timing Solution.
+**WARN: (EMS-27):	Message (UI-156) has exceeded the current message display limit of 20.
+To increase the message display limit, refer to the product command reference manual.
+**WARN: (IMPEXT-7000):	The option '-engine preRoute' for setExtractRCMode is ignored because only Quantus QRC extraction mode, that is, '-engine postRoute -effortLevel signoff' is supported in Tempus Timing Solution. To avoid this message, remove this option from your scripts.
+Has not load the powerDB, will keep enalbed
+Has not load the powerDB, will keep enalbed
+addRing command will ignore shorts while creating rings.
+addRing command will disallow rings to go over rows.
+addRing command will consider rows while creating rings.
+The ring targets are set to core/block ring wires.
+addStripe will allow jog to connect padcore ring and block ring.
+
+Stripes will not extend to closest target.
+When breaking rings, the power planner will consider the existence of blocks.
+addStripe will break automatically at non-default domains when generating global stripes over the core area or default domain.
+The entire stripe set will break at the domain if one of the nets is not in the domain.
+Stripes will not be created over regions without power planning wires.
+Offset for stripe breaking is set to 0.
+Stripes will stop at the boundary of the specified area.
+The power planner will set stripe antenna targets to none (no trimming allowed).
+Change floorplan default-technical-site to 'gsclib090site'.
+/dev/null
+Total number of combinational cells: 317
+Total number of sequential cells: 152
+Total number of tristate cells: 10
+Total number of level shifter cells: 0
+Total number of power gating cells: 0
+Total number of isolation cells: 0
+Total number of power switch cells: 0
+Total number of pulse generator cells: 0
+Total number of always on buffers: 0
+Total number of retention cells: 0
+Total number of physical cells: 0
+List of usable buffers: BUFX2 BUFX12 BUFX16 BUFX20 CLKBUFX2 BUFX3 BUFX4 BUFX6 BUFX8 CLKBUFX12 CLKBUFX16 CLKBUFX20 CLKBUFX3 CLKBUFX4 CLKBUFX6 CLKBUFX8
+Total number of usable buffers: 16
+List of unusable buffers:
+Total number of unusable buffers: 0
+List of usable inverters: CLKINVX1 CLKINVX2 CLKINVX12 CLKINVX16 CLKINVX20 CLKINVX3 CLKINVX4 CLKINVX6 CLKINVX8 INVX1 INVX2 INVX12 INVX16 INVX20 INVXL INVX3 INVX4 INVX6 INVX8
+Total number of usable inverters: 19
+List of unusable inverters:
+Total number of unusable inverters: 0
+List of identified usable delay cells: DLY1X1 DLY1X4 DLY2X1 DLY2X4 DLY3X1 DLY3X4 DLY4X1 DLY4X4
+Total number of identified usable delay cells: 8
+List of identified unusable delay cells:
+Total number of identified unusable delay cells: 0
+Reading floorplan file - /home/vlsi30/day18/physical_design/mealy_1001_1100_placement.enc.dat/mealy_1001_1100.fp.gz (mem = 2803.2M).
+#% Begin Load floorplan data ... (date=06/22 14:07:12, mem=2490.4M)
+*info: reset 32 existing net BottomPreferredLayer and AvoidDetour
+Deleting old partition specification.
+Set FPlanBox to (0 0 84100 58580)
+**WARN: (IMPFP-3961):	The techSite 'pad' has no related standard cells in the LEF/OA library. The calculations for this site type cannot be made unless standard cell models of this type exist in the LEF/OA library. Ignore this warning if the SITE is not used by the library. Alternatively, remove the SITE definition for the LEF/OA library to avoid this message.
+**WARN: (IMPFP-3961):	The techSite 'corner' has no related standard cells in the LEF/OA library. The calculations for this site type cannot be made unless standard cell models of this type exist in the LEF/OA library. Ignore this warning if the SITE is not used by the library. Alternatively, remove the SITE definition for the LEF/OA library to avoid this message.
+ ... processed partition successfully.
+Reading binary special route file /home/vlsi30/day18/physical_design/mealy_1001_1100_placement.enc.dat/mealy_1001_1100.fp.spr.gz (Created by Innovus v21.15-s110_1 on Mon Jun 22 11:24:10 2026, version: 1)
+Convert 0 swires and 0 svias from compressed groups
+38 swires and 134 svias were compressed
+26 swires and 8 svias were decompressed from small or sparse groups
+Ending "Read special route file" (total cpu=0:00:00.0, real=0:00:00.0, peak res=2490.4M, current mem=2490.4M)
+Extracting standard cell pins and blockage ...... 
+Pin and blockage extraction finished
+#% End Load floorplan data ... (date=06/22 14:07:13, total cpu=0:00:00.1, real=0:00:01.0, peak res=2504.8M, current mem=2504.8M)
+#% Begin Load SymbolTable ... (date=06/22 14:07:13, mem=2504.8M)
+#% End Load SymbolTable ... (date=06/22 14:07:13, total cpu=0:00:00.0, real=0:00:00.0, peak res=2504.8M, current mem=2504.8M)
+Loading place ...
+#% Begin Load placement data ... (date=06/22 14:07:13, mem=2504.8M)
+Reading placement file - /home/vlsi30/day18/physical_design/mealy_1001_1100_placement.enc.dat/mealy_1001_1100.place.gz.
+** Reading stdCellPlacement_binary (Created by Innovus v21.15-s110_1 on Mon Jun 22 11:24:11 2026, version# 2) ...
+Read Views for adaptive view pruning ...
+Read 0 views from Binary DB for adaptive view pruning
+*** applyConnectGlobalNets disabled.
+*** Completed restorePlace (cpu=0:00:00.0 real=0:00:00.0 mem=2820.2M) ***
+Has not load the powerDB, will keep enalbed
+Has not load the powerDB, will keep enalbed
+Total net length = 3.045e+02 (1.599e+02 1.446e+02) (ext = 1.062e+02)
+#% End Load placement data ... (date=06/22 14:07:13, total cpu=0:00:00.0, real=0:00:00.0, peak res=2505.8M, current mem=2505.8M)
+Reading PG file /home/vlsi30/day18/physical_design/mealy_1001_1100_placement.enc.dat/mealy_1001_1100.pg.gz, version#2, (Created by Innovus v21.15-s110_1 on       Mon Jun 22 11:24:10 2026)
+*** Completed restorePGFile (cpu=0:00:00.0 real=0:00:00.0 mem=2836.2M) ***
+#% Begin Load routing data ... (date=06/22 14:07:13, mem=2506.2M)
+Reading routing file - /home/vlsi30/day18/physical_design/mealy_1001_1100_placement.enc.dat/mealy_1001_1100.route.gz.
+Reading Innovus routing data (Created by Innovus v21.15-s110_1 on Mon Jun 22 11:24:11 2026 Format: 20.1) ...
+*** Total 32 nets are successfully restored.
+*** Completed restoreRoute (cpu=0:00:00.0 real=0:00:00.0 mem=2836.2M) ***
+Has not load the powerDB, will keep enalbed
+Has not load the powerDB, will keep enalbed
+#% End Load routing data ... (date=06/22 14:07:13, total cpu=0:00:00.0, real=0:00:00.0, peak res=2507.0M, current mem=2507.0M)
+Reading property file /home/vlsi30/day18/physical_design/mealy_1001_1100_placement.enc.dat/mealy_1001_1100.prop
+*** Completed restoreProperty (cpu=0:00:00.0 real=0:00:00.0 mem=2836.2M) ***
+Set Default Input Pin Transition as 0.1 ps.
+Extraction setup Started for TopCell mealy_1001_1100 
+Summary of Active RC-Corners : 
+ 
+ Analysis View: worst_case
+    RC-Corner Name        : rc_corner
+    RC-Corner Index       : 0
+    RC-Corner Temperature : 125 Celsius
+    RC-Corner Cap Table   : ''
+    RC-Corner PostRoute Res Factor        : 1
+    RC-Corner PostRoute Cap Factor        : 1
+    RC-Corner PostRoute XCap Factor       : 1
+    RC-Corner Technology file: '/home/vlsi30/day18/physical_design/mealy_1001_1100_placement.enc.dat/libs/mmmc/rc_corner/gpdk090_9l.tch'
+ 
+ Analysis View: best_case
+    RC-Corner Name        : rc_corner
+    RC-Corner Index       : 0
+    RC-Corner Temperature : 125 Celsius
+    RC-Corner Cap Table   : ''
+    RC-Corner PostRoute Res Factor        : 1
+    RC-Corner PostRoute Cap Factor        : 1
+    RC-Corner PostRoute XCap Factor       : 1
+    RC-Corner Technology file: '/home/vlsi30/day18/physical_design/mealy_1001_1100_placement.enc.dat/libs/mmmc/rc_corner/gpdk090_9l.tch'
+Initializing multi-corner resistance tables ...
+max_delay min_delay
+#% Begin Load power constraints ... (date=06/22 14:07:13, mem=2511.2M)
+#% End Load power constraints ... (date=06/22 14:07:13, total cpu=0:00:00.0, real=0:00:00.0, peak res=2511.8M, current mem=2511.8M)
+**WARN: (TCLCMD-1263):	The -frame parameter is obsolete and will be removed from the software in a future release. To ensure compatibility with future releases, remove this parameter from your scripts.
+max_delay min_delay
+#% Begin load AAE data ... (date=06/22 14:07:13, mem=2540.6M)
+AAE DB initialization (MEM=2553.277344 CPU=0:00:00.0 REAL=0:00:00.0) 
+**WARN: (IMPESI-621):	Timing window restoration data eosdb.dat not found. PBA-SI results may not match in save/restore flow.
+#% End load AAE data ... (date=06/22 14:07:14, total cpu=0:00:00.5, real=0:00:01.0, peak res=2555.3M, current mem=2555.3M)
+Ending "read_design" (total cpu=0:00:05.0, real=0:00:05.0, peak res=2571.2M, current mem=2400.1M)
+Loading  (mealy_1001_1100)
+Traverse HInst (mealy_1001_1100)
+<CMD> all_setup_analysis_views
+<CMD> all_hold_analysis_views
+<CMD> all_setup_analysis_views
+<CMD> all_hold_analysis_views
+**WARN: (IMPSYC-3133):	The unloadTimingCon command is not supported in the MMMC environment.
+          To modify the active set of constraints you can use one of the following means:
+          - Use the set_analysis_view command to change the set of active views.
+          - Use the update_analysis_view command to change the constraint mode associated with an active view.
+          - Use the update_constraint_mode command to change the set of SDC files pointed to be active modes.
+<CMD> all_setup_analysis_views
+<CMD> all_hold_analysis_views
+<CMD> all_setup_analysis_views
+<CMD> all_hold_analysis_views
+**WARN: (IMPSYC-3133):	The unloadTimingCon command is not supported in the MMMC environment.
+          To modify the active set of constraints you can use one of the following means:
+          - Use the set_analysis_view command to change the set of active views.
+          - Use the update_analysis_view command to change the constraint mode associated with an active view.
+          - Use the update_constraint_mode command to change the set of SDC files pointed to be active modes.
+<CMD> read_spef mealy_1001_1100.spef
+Used active corner rc_corner for reading SPEF file as option '-rc_corner <cornerName>' is not specified in MMMC mode.
+
+SPEF files for RC Corner rc_corner:
+Top-level spef file 'mealy_1001_1100.spef'.
+Start spef parsing (MEM=3061.7).
+The SPEF file, 'mealy_1001_1100.spef', has encountered the error/warning message(s) during its reading.
+**WARN: (SPEF-1132):	An invalid or ignored D_NET reference (FE_RN_1_0) is detected in D_NET. The net name doesn't have corresponding net in the netlist. This D_NET starts on line 92. Check the SPEF file is valid, correct as needed and read it again.
+**WARN: (SPEF-1132):	An invalid or ignored D_NET reference (FE_RN_0_0) is detected in D_NET. The net name doesn't have corresponding net in the netlist. This D_NET starts on line 115. Check the SPEF file is valid, correct as needed and read it again.
+**WARN: (SPEF-1132):	An invalid or ignored D_NET reference (FE_RN_1) is detected in D_NET. The net name doesn't have corresponding net in the netlist. This D_NET starts on line 133. Check the SPEF file is valid, correct as needed and read it again.
+**ERROR: (SPEF-1127):	Invalid CONN connection found (FE_OFC0_rst:A) for D_NET (rst) that starts on line 246.
+**WARN: (SPEF-1124):	Invalid capacitor node (FE_OFC0_rst:A) found in D_NET (rst) that starts on line 246. The net name doesn't have corresponding net in the netlist. Check the SPEF file is valid, correct as needed and read it again.
+**WARN: (SPEF-1135):	Invalid resistor node (FE_OFC0_rst:A) found in D_NET (rst) that starts on line 246. The net name doesn't have corresponding net in the netlist. Check the SPEF file is valid, correct as needed and read it again.
+**WARN: (SPEF-1152):	Net 'rst ( having pins g723/A rst )' is not fully specified as per its connectivity in design netlist. Missing ports have been added to the net using low RC values. The timing accuracy is not reliable for such nets.
+**ERROR: (SPEF-1127):	Invalid CONN connection found (FE_RC_1_0:A) for D_NET (din) that starts on line 268.
+**ERROR: (SPEF-1127):	Invalid CONN connection found (FE_RC_3_0:A) for D_NET (din) that starts on line 268.
+**ERROR: (SPEF-1127):	Invalid CONN connection found (FE_RC_1_0_dup:A) for D_NET (din) that starts on line 268.
+**ERROR: (SPEF-1127):	Invalid CONN connection found (g717__2802:A) for D_NET (din) that starts on line 268.
+**ERROR: (SPEF-1123):	Invalid capacitor node (g717__2802:A) does not belong to net found in D_NET (din) that starts on line 268.
+**ERROR: (SPEF-1134):	Invalid resistor node (g717__2802:A) does not belong to net found in D_NET (din) that starts on line 268.
+**WARN: (SPEF-1135):	Invalid resistor node (FE_RC_1_0_dup:A) found in D_NET (din) that starts on line 268. The net name doesn't have corresponding net in the netlist. Check the SPEF file is valid, correct as needed and read it again.
+**WARN: (SPEF-1135):	Invalid resistor node (FE_RC_3_0:A) found in D_NET (din) that starts on line 268. The net name doesn't have corresponding net in the netlist. Check the SPEF file is valid, correct as needed and read it again.
+**WARN: (SPEF-1135):	Invalid resistor node (FE_RC_1_0:A) found in D_NET (din) that starts on line 268. The net name doesn't have corresponding net in the netlist. Check the SPEF file is valid, correct as needed and read it again.
+**WARN: (SPEF-1152):	Net 'din ( having pins g721/A g714__8246/B g717__2802/B g711__6783/C g710__8428/B ...)' is not fully specified as per its connectivity in design netlist. Missing ports have been added to the net using low RC values. The timing accuracy is not reliable for such nets.
+**ERROR: (SPEF-1127):	Invalid CONN connection found (FE_RC_4_0:A) for D_NET (state[2]) that starts on line 413.
+**WARN: (SPEF-1135):	Invalid resistor node (FE_RC_4_0:A) found in D_NET (state[2]) that starts on line 413. The net name doesn't have corresponding net in the netlist. Check the SPEF file is valid, correct as needed and read it again.
+**WARN: (SPEF-1152):	Net 'state[2] ( having pins fopt2/A state_reg[2]/Q g718__5122/A g712__5526/A g710__8428/A ...)' is not fully specified as per its connectivity in design netlist. Missing ports have been added to the net using low RC values. The timing accuracy is not reliable for such nets.
+**ERROR: (SPEF-1127):	Invalid CONN connection found (FE_RC_0_0:A) for D_NET (state[0]) that starts on line 568.
+**WARN: (SPEF-1124):	Invalid capacitor node (FE_RC_0_0:A) found in D_NET (state[0]) that starts on line 568. The net name doesn't have corresponding net in the netlist. Check the SPEF file is valid, correct as needed and read it again.
+**WARN: (SPEF-1135):	Invalid resistor node (FE_RC_0_0:A) found in D_NET (state[0]) that starts on line 568. The net name doesn't have corresponding net in the netlist. Check the SPEF file is valid, correct as needed and read it again.
+**WARN: (SPEF-1152):	Net 'state[0] ( having pins state_reg[0]/Q g724/A g714__8246/A g711__6783/A )' is not fully specified as per its connectivity in design netlist. Missing ports have been added to the net using low RC values. The timing accuracy is not reliable for such nets.
+**ERROR: (SPEF-1127):	Invalid CONN connection found (FE_RC_4_0:C) for D_NET (n_4) that starts on line 678.
+**ERROR: (SPEF-1127):	Invalid CONN connection found (g716__1617:A) for D_NET (n_4) that starts on line 678.
+**WARN: (SPEF-1124):	Invalid capacitor node (FE_RC_4_0:C) found in D_NET (n_4) that starts on line 678. The net name doesn't have corresponding net in the netlist. Check the SPEF file is valid, correct as needed and read it again.
+**ERROR: (SPEF-1134):	Invalid resistor node (g716__1617:A) does not belong to net found in D_NET (n_4) that starts on line 678.
+**WARN: (SPEF-1135):	Invalid resistor node (FE_RC_4_0:C) found in D_NET (n_4) that starts on line 678. The net name doesn't have corresponding net in the netlist. Check the SPEF file is valid, correct as needed and read it again.
+**WARN: (SPEF-1152):	Net 'n_4 ( having pins g720/Y g718__5122/B g716__1617/B g710__8428/C )' is not fully specified as per its connectivity in design netlist. Missing ports have been added to the net using low RC values. The timing accuracy is not reliable for such nets.
+**ERROR: (SPEF-1127):	Invalid CONN connection found (g716__1617:B) for D_NET (n_6) that starts on line 732.
+**ERROR: (SPEF-1127):	Invalid CONN connection found (g717__2802:B) for D_NET (n_6) that starts on line 732.
+**ERROR: (SPEF-1127):	Invalid CONN connection found (FE_RC_0_0:Y) for D_NET (n_6) that starts on line 732.
+**WARN: (SPEF-1135):	Invalid resistor node (FE_RC_0_0:Y) found in D_NET (n_6) that starts on line 732. The net name doesn't have corresponding net in the netlist. Check the SPEF file is valid, correct as needed and read it again.
+**ERROR: (SPEF-1134):	Invalid resistor node (g717__2802:B) does not belong to net found in D_NET (n_6) that starts on line 732.
+**ERROR: (SPEF-1134):	Invalid resistor node (g716__1617:B) does not belong to net found in D_NET (n_6) that starts on line 732.
+**WARN: (SPEF-1152):	Net 'n_6 ( having pins g724/Y g717__2802/A g716__1617/A g715__3680/B g712__5526/C ...)' is not fully specified as per its connectivity in design netlist. Missing ports have been added to the net using low RC values. The timing accuracy is not reliable for such nets.
+**ERROR: (SPEF-1127):	Invalid CONN connection found (FE_RC_1_0:Y) for D_NET (n_7) that starts on line 779.
+**WARN: (SPEF-1135):	Invalid resistor node (FE_RC_1_0:Y) found in D_NET (n_7) that starts on line 779. The net name doesn't have corresponding net in the netlist. Check the SPEF file is valid, correct as needed and read it again.
+**WARN: (SPEF-1152):	Net 'n_7 ( having pins g721/Y g715__3680/A g707__2398/B0 )' is not fully specified as per its connectivity in design netlist. Missing ports have been added to the net using low RC values. The timing accuracy is not reliable for such nets.
+**ERROR: (SPEF-1127):	Invalid CONN connection found (FE_RC_4_0:Y) for D_NET (n_11) that starts on line 867.
+**WARN: (SPEF-1135):	Invalid resistor node (FE_RC_4_0:Y) found in D_NET (n_11) that starts on line 867. The net name doesn't have corresponding net in the netlist. Check the SPEF file is valid, correct as needed and read it again.
+**WARN: (SPEF-1152):	Net 'n_11 ( having pins state_reg[2]/D g710__8428/Y )' is not fully specified as per its connectivity in design netlist. Missing ports have been added to the net using low RC values. The timing accuracy is not reliable for such nets.
+**ERROR: (SPEF-1127):	Invalid CONN connection found (FE_OFC0_rst:Y) for D_NET (n_17) that starts on line 1036.
+**WARN: (SPEF-1124):	Invalid capacitor node (FE_OFC0_rst:Y) found in D_NET (n_17) that starts on line 1036. The net name doesn't have corresponding net in the netlist. Check the SPEF file is valid, correct as needed and read it again.
+**WARN: (SPEF-1135):	Invalid resistor node (FE_OFC0_rst:Y) found in D_NET (n_17) that starts on line 1036. The net name doesn't have corresponding net in the netlist. Check the SPEF file is valid, correct as needed and read it again.
+**WARN: (SPEF-1152):	Net 'n_17 ( having pins state_reg[0]/RN state_reg[1]/RN state_reg[2]/RN g723/Y dout_1001_reg/RN ...)' is not fully specified as per its connectivity in design netlist. Missing ports have been added to the net using low RC values. The timing accuracy is not reliable for such nets.
+SPEF file mealy_1001_1100.spef.
+Number of Resistors     : 353
+Number of Ground Caps   : 288
+Number of Coupling Caps : 0
+
+End spef parsing (MEM=3095.7 CPU=0:00:00.0 REAL=0:00:00.0).
+3 nets are missing in SPEF file. The names of these nets are saved in ./rc_corner.missing_nets.rpt.
+**WARN: (IMPEXT-3423):	Detected 9 nets with incomplete RC network. Low-value resistances have been added by the software to complete the RC network of these nets. Review the list of affected nets in the './mealy_1001_1100.rc_corner.incomplete_res.net' file to ensure they are not along the critical path because results of timing analysis performed on nets with incomplete RC network can be inaccurate.
+<CMD> all_setup_analysis_views
+<CMD> read_sdf mealy_1001_1100.sdf
+**WARN: (TCLCMD-1234):	In multi-mode, multi-corner analysis mode, you should include the -view option with the read_sdf command to annotate the SDF file to specific view(s). Without the -view option, the SDF file will only be annotated to the current default view.
+<CMD> get_eco_opt_mode -optimization_failure_tracking_file -quiet
+<CMD> get_time_unit
+<CMD> report_timing -output_format binary -max_paths 50000 -max_slack 0.75 -path_exceptions all -late > top.btarpt
+AAE_INFO: opIsDesignInPostRouteState() is 0
+#################################################################################
+# Design Name: mealy_1001_1100
+# Design Mode: 65nm
+# Analysis Mode: MMMC Non-OCV 
+# Parasitics Mode: SPEF/RCDB 
+# Signoff Settings: SI Off 
+#################################################################################
+Start delay calculation (fullDC) (1 T). (MEM=2699.82)
+/dev/null
+End delay calculation. (MEM=2814.91 CPU=0:00:00.1 REAL=0:00:00.0)
+Begin loading slews from CTE ...
+Loading slews from CTE completed...
+End delay calculation (fullDC). (MEM=2811.3 CPU=0:00:00.1 REAL=0:00:00.0)
+**ERROR: (SDF-300):	Could not locate instance 'FE_RC_4_0' in design 'mealy_1001_1100' (File /home/vlsi30/day18/physical_design/mealy_1001_1100.sdf, Line 19).
+
+**ERROR: (SDF-300):	Could not locate instance 'FE_RC_5_0' in design 'mealy_1001_1100' (File /home/vlsi30/day18/physical_design/mealy_1001_1100.sdf, Line 20).
+
+**ERROR: (SDF-300):	Could not locate instance 'FE_RC_1_0_dup' in design 'mealy_1001_1100' (File /home/vlsi30/day18/physical_design/mealy_1001_1100.sdf, Line 21).
+
+**ERROR: (SDF-300):	Could not locate instance 'FE_OFC0_rst' in design 'mealy_1001_1100' (File /home/vlsi30/day18/physical_design/mealy_1001_1100.sdf, Line 28).
+
+**ERROR: (SDF-300):	Could not locate instance 'FE_RC_1_0' in design 'mealy_1001_1100' (File /home/vlsi30/day18/physical_design/mealy_1001_1100.sdf, Line 31).
+
+**ERROR: (SDF-300):	Could not locate instance 'FE_RC_1_0_dup' in design 'mealy_1001_1100' (File /home/vlsi30/day18/physical_design/mealy_1001_1100.sdf, Line 32).
+
+**ERROR: (SDF-300):	Could not locate instance 'FE_RC_3_0' in design 'mealy_1001_1100' (File /home/vlsi30/day18/physical_design/mealy_1001_1100.sdf, Line 34).
+
+**ERROR: (SDF-300):	Could not locate instance 'FE_RC_4_0' in design 'mealy_1001_1100' (File /home/vlsi30/day18/physical_design/mealy_1001_1100.sdf, Line 43).
+
+**ERROR: (SDF-300):	Could not locate instance 'FE_RC_0_0' in design 'mealy_1001_1100' (File /home/vlsi30/day18/physical_design/mealy_1001_1100.sdf, Line 50).
+
+**ERROR: (SDF-300):	Could not locate instance 'FE_RC_4_0' in design 'mealy_1001_1100' (File /home/vlsi30/day18/physical_design/mealy_1001_1100.sdf, Line 56).
+
+**ERROR: (SDF-300):	Could not locate instance 'FE_RC_0_0' in design 'mealy_1001_1100' (File /home/vlsi30/day18/physical_design/mealy_1001_1100.sdf, Line 58).
+
+**ERROR: (SDF-300):	Could not locate instance 'FE_RC_0_0' in design 'mealy_1001_1100' (File /home/vlsi30/day18/physical_design/mealy_1001_1100.sdf, Line 59).
+
+**ERROR: (SDF-300):	Could not locate instance 'FE_RC_0_0' in design 'mealy_1001_1100' (File /home/vlsi30/day18/physical_design/mealy_1001_1100.sdf, Line 60).
+
+**ERROR: (SDF-300):	Could not locate instance 'FE_RC_0_0' in design 'mealy_1001_1100' (File /home/vlsi30/day18/physical_design/mealy_1001_1100.sdf, Line 61).
+
+**ERROR: (SDF-300):	Could not locate instance 'FE_RC_1_0' in design 'mealy_1001_1100' (File /home/vlsi30/day18/physical_design/mealy_1001_1100.sdf, Line 62).
+
+**ERROR: (SDF-300):	Could not locate instance 'FE_RC_4_0' in design 'mealy_1001_1100' (File /home/vlsi30/day18/physical_design/mealy_1001_1100.sdf, Line 66).
+
+**ERROR: (SDF-300):	Could not locate instance 'FE_OFC0_rst' in design 'mealy_1001_1100' (File /home/vlsi30/day18/physical_design/mealy_1001_1100.sdf, Line 73).
+
+**ERROR: (SDF-300):	Could not locate instance 'FE_OFC0_rst' in design 'mealy_1001_1100' (File /home/vlsi30/day18/physical_design/mealy_1001_1100.sdf, Line 74).
+
+**ERROR: (SDF-300):	Could not locate instance 'FE_OFC0_rst' in design 'mealy_1001_1100' (File /home/vlsi30/day18/physical_design/mealy_1001_1100.sdf, Line 75).
+
+**ERROR: (SDF-300):	Could not locate instance 'FE_OFC0_rst' in design 'mealy_1001_1100' (File /home/vlsi30/day18/physical_design/mealy_1001_1100.sdf, Line 76).
+
+Message <SDF-300> has exceeded the message display limit of '20'. Use 'set_message -no_limit -id list_of_msgIDs' to reset the message limit.
+**WARN: (SDF-142):	Cell type 'OAI22X2' for instance 'g709__5107' does not match with timing model (Line 227).
+
+**WARN: (SDF-142):	Cell type 'NOR2X1' for instance 'g713__4319' does not match with timing model (Line 251).
+
+**WARN: (SDF-142):	Cell type 'NAND2X2' for instance 'g716__1617' does not match with timing model (Line 297).
+
+**WARN: (SDF-142):	Cell type 'NAND2X2' for instance 'g719__1705' does not match with timing model (Line 319).
+
+**WARN: (SDF-142):	Cell type 'NAND2X4' for instance 'g718__5122' does not match with timing model (Line 330).
+
+**WARN: (SDF-142):	Cell type 'NAND2X2' for instance 'g714__8246' does not match with timing model (Line 341).
+
+**WARN: (SDF-142):	Cell type 'CLKINVX4' for instance 'g720' does not match with timing model (Line 352).
+
+Has not load the powerDB, will keep enalbed
+Has not load the powerDB, will keep enalbed
+<CMD> load_timing_debug_report -name default_report top.btarpt -max_path_num 10000 -updateCategory 0 -isDrv 0
+Parsing file top.btarpt...
+<CMD> get_time_unit
+<CMD> report_timing -output_format binary -max_paths 50000 -max_slack 0.75 -path_exceptions all -early > top.btarpt
+<CMD> load_timing_debug_report -name default_report top.btarpt -max_path_num 10000 -updateCategory 0 -isDrv 0
+Parsing file top.btarpt...
+<CMD_INTERNAL> zoomSelected
+<CMD_INTERNAL> zoomSelected
+<CMD_INTERNAL> zoomSelected
+<CMD> all_analysis_views
+best_case worst_case
+<CMD> all_setup_analysis_views
+<CMD> all_hold_analysis_views
+<CMD> get_analysis_view $view -delay_corner
+<CMD> get_delay_corner $dc -rc_corner
+<CMD> add_repeater -cell BUFX2 -net {}
+#################################################################################
+# Design Name: mealy_1001_1100
+# Design Mode: 65nm
+# Analysis Mode: MMMC Non-OCV 
+# Parasitics Mode: SPEF/RCDB 
+# Signoff Settings: SI Off 
+#################################################################################
+**ERROR: (IMPOPT-560):	Net '' not found.
+**ERROR: (IMPSYT-7004):	Failed to execute add_repeater command.
+<CMD_INTERNAL> redraw
+<CMD> add_repeater -cell BUFX2 -net n_17
+#################################################################################
+# Design Name: mealy_1001_1100
+# Design Mode: 65nm
+# Analysis Mode: MMMC Non-OCV 
+# Parasitics Mode: SPEF/RCDB 
+# Signoff Settings: SI Off 
+#################################################################################
+**WARN: (IMPOPT-6106):	There is mismatch between RC data and routing for net n_17. Rebuilding the RC network for the net; coupling caps will be grounded.
+Add inst FE_ECOC0_n_17 (BUFX2) to drive load dout_1100_reg/RN dout_1101_reg/RN dout_1001_reg/RN state_reg[2]/RN state_reg[1]/RN state_reg[0]/RN 
+Estimated cell power/ground rail width = 0.408 um
+*** Starting refinePlace (0:00:59.5 mem=4216.2M) ***
+Total net bbox length = 3.041e+02 (1.595e+02 1.446e+02) (ext = 6.648e+01)
+Max route layer is changed from 127 to 9 because there is no routing track above this layer
+Max route layer is changed from 127 to 9 because there is no routing track above this layer
+Max route layer is changed from 127 to 9 because there is no routing track above this layer
+Move report: Detail placement moves 2 insts, mean move: 1.02 um, max move: 1.74 um 
+	Max move on inst (g723): (32.77, 10.73) --> (31.03, 10.73)
+	Runtime: CPU: 0:00:00.0 REAL: 0:00:00.0 MEM: 4216.2MB
+Summary Report:
+Instances move: 2 (out of 25 movable)
+Instances flipped: 0
+Mean displacement: 1.02 um
+Max displacement: 1.74 um (Instance: g723) (32.77, 10.73) -> (31.03, 10.73)
+	Length: 3 sites, height: 1 rows, site name: gsclib090site, cell type: INVXL
+Physical-only instances move: 0 (out of 0 movable physical-only)
+Total net bbox length = 3.070e+02 (1.624e+02 1.446e+02) (ext = 6.822e+01)
+Runtime: CPU: 0:00:00.0 REAL: 0:00:00.0 MEM: 4216.2MB
+*** Finished refinePlace (0:00:59.6 mem=4216.2M) ***
+<CMD_INTERNAL> redraw
+<CMD> add_repeater -cell BUFX2 -net n_17
+#################################################################################
+# Design Name: mealy_1001_1100
+# Design Mode: 65nm
+# Analysis Mode: MMMC Non-OCV 
+# Parasitics Mode: SPEF/RCDB 
+# Signoff Settings: SI Off 
+#################################################################################
+Add inst FE_ECOC1_n_17 (BUFX2) to drive load FE_ECOC0_n_17/A 
+*** Starting refinePlace (0:01:01 mem=4251.3M) ***
+Total net bbox length = 3.079e+02 (1.629e+02 1.449e+02) (ext = 6.822e+01)
+Max route layer is changed from 127 to 9 because there is no routing track above this layer
+Max route layer is changed from 127 to 9 because there is no routing track above this layer
+Max route layer is changed from 127 to 9 because there is no routing track above this layer
+Move report: Detail placement moves 2 insts, mean move: 1.89 um, max move: 2.03 um 
+	Max move on inst (FE_ECOC1_n_17): (32.19, 10.73) --> (30.16, 10.73)
+	Runtime: CPU: 0:00:00.0 REAL: 0:00:00.0 MEM: 4235.3MB
+Summary Report:
+Instances move: 2 (out of 26 movable)
+Instances flipped: 0
+Mean displacement: 1.89 um
+Max displacement: 2.03 um (Instance: FE_ECOC1_n_17) (32.19, 10.73) -> (30.16, 10.73)
+	Length: 6 sites, height: 1 rows, site name: gsclib090site, cell type: BUFX2
+Physical-only instances move: 0 (out of 0 movable physical-only)
+Total net bbox length = 3.113e+02 (1.664e+02 1.449e+02) (ext = 6.996e+01)
+Runtime: CPU: 0:00:00.0 REAL: 0:00:00.0 MEM: 4235.3MB
+*** Finished refinePlace (0:01:01 mem=4235.3M) ***
+<CMD_INTERNAL> redraw
+<CMD> deselectAll
+<CMD_INTERNAL> zoomBox 8.45300 5.94700 40.82000 22.52800
+<CMD_INTERNAL> fit
+<CMD> get_time_unit
+<CMD> report_timing -output_format binary -max_paths 50000 -max_slack 0.75 -path_exceptions all -early > top.btarpt
+<CMD> load_timing_debug_report -name default_report top.btarpt -max_path_num 10000 -updateCategory 0 -isDrv 0
+Parsing file top.btarpt...
+<CMD> get_time_unit
+<CMD> report_timing -output_format binary -max_paths 50000 -max_slack 0.75 -path_exceptions all -early > top.btarpt
+<CMD> load_timing_debug_report -name default_report top.btarpt -max_path_num 10000 -updateCategory 0 -isDrv 0
+Parsing file top.btarpt...
+<CMD> selectInst FE_ECOC1_n_17
+<CMD_INTERNAL> zoomSelected
+<CMD_INTERNAL> zoomSelected
+<CMD_INTERNAL> zoomSelected
+<CMD> all_analysis_views
+best_case worst_case
+<CMD> all_setup_analysis_views
+<CMD> all_hold_analysis_views
+<CMD> get_analysis_view $view -delay_corner
+<CMD> get_delay_corner $dc -rc_corner
+<CMD> add_repeater -cell BUFX3 -net n_17
+#################################################################################
+# Design Name: mealy_1001_1100
+# Design Mode: 65nm
+# Analysis Mode: MMMC Non-OCV 
+# Parasitics Mode: SPEF/RCDB 
+# Signoff Settings: SI Off 
+#################################################################################
+Add inst FE_ECOC2_n_17 (BUFX3) to drive load FE_ECOC1_n_17/A 
+*** Starting refinePlace (0:01:17 mem=4259.3M) ***
+Total net bbox length = 3.148e+02 (1.690e+02 1.458e+02) (ext = 6.996e+01)
+Max route layer is changed from 127 to 9 because there is no routing track above this layer
+Max route layer is changed from 127 to 9 because there is no routing track above this layer
+Max route layer is changed from 127 to 9 because there is no routing track above this layer
+Move report: Detail placement moves 4 insts, mean move: 1.81 um, max move: 4.06 um 
+	Max move on inst (FE_ECOC0_n_17): (31.90, 10.73) --> (27.84, 10.73)
+	Runtime: CPU: 0:00:00.0 REAL: 0:00:00.0 MEM: 4235.3MB
+Summary Report:
+Instances move: 4 (out of 27 movable)
+Instances flipped: 0
+Mean displacement: 1.81 um
+Max displacement: 4.06 um (Instance: FE_ECOC0_n_17) (31.9, 10.73) -> (27.84, 10.73)
+	Length: 6 sites, height: 1 rows, site name: gsclib090site, cell type: BUFX2
+Physical-only instances move: 0 (out of 0 movable physical-only)
+Total net bbox length = 3.142e+02 (1.684e+02 1.458e+02) (ext = 7.228e+01)
+Runtime: CPU: 0:00:00.0 REAL: 0:00:00.0 MEM: 4235.3MB
+*** Finished refinePlace (0:01:17 mem=4235.3M) ***
+<CMD_INTERNAL> redraw
+<CMD> get_time_unit
+<CMD> report_timing -output_format binary -max_paths 50000 -max_slack 0.75 -path_exceptions all -early > top.btarpt
+<CMD> load_timing_debug_report -name default_report top.btarpt -max_path_num 10000 -updateCategory 0 -isDrv 0
+Parsing file top.btarpt...
+<CMD> all_analysis_views
+best_case worst_case
+<CMD> all_setup_analysis_views
+<CMD> all_hold_analysis_views
+<CMD> get_analysis_view $view -delay_corner
+<CMD> get_delay_corner $dc -rc_corner
+<CMD> all_analysis_views
+best_case worst_case
+<CMD> all_setup_analysis_views
+<CMD> all_hold_analysis_views
+<CMD> get_analysis_view $view -delay_corner
+<CMD> get_delay_corner $dc -rc_corner
+<CMD> all_analysis_views
+best_case worst_case
+<CMD> all_setup_analysis_views
+<CMD> all_hold_analysis_views
+<CMD> get_analysis_view $view -delay_corner
+<CMD> get_delay_corner $dc -rc_corner
+<CMD_INTERNAL> zoomSelected
+<CMD_INTERNAL> zoomSelected
+<CMD_INTERNAL> zoomSelected
+<CMD> all_analysis_views
+best_case worst_case
+<CMD> all_setup_analysis_views
+<CMD> all_hold_analysis_views
+<CMD> get_analysis_view $view -delay_corner
+<CMD> get_delay_corner $dc -rc_corner
+<CMD> change_cell -inst FE_ECOC1_n_17 -cell BUFX3
+#################################################################################
+# Design Name: mealy_1001_1100
+# Design Mode: 65nm
+# Analysis Mode: MMMC Non-OCV 
+# Parasitics Mode: SPEF/RCDB 
+# Signoff Settings: SI Off 
+#################################################################################
+Resize FE_ECOC1_n_17 (BUFX2) to BUFX3.
+<CMD_INTERNAL> redraw
+<CMD> get_time_unit
+<CMD> report_timing -output_format binary -max_paths 50000 -max_slack 0.75 -path_exceptions all -early > top.btarpt
+<CMD> load_timing_debug_report -name default_report top.btarpt -max_path_num 10000 -updateCategory 0 -isDrv 0
+Parsing file top.btarpt...
+<CMD_INTERNAL> zoomSelected
+<CMD_INTERNAL> zoomSelected
+<CMD_INTERNAL> zoomSelected
+<CMD> all_analysis_views
+best_case worst_case
+<CMD> all_setup_analysis_views
+<CMD> all_hold_analysis_views
+<CMD> get_analysis_view $view -delay_corner
+<CMD> get_delay_corner $dc -rc_corner
+<CMD> all_analysis_views
+best_case worst_case
+<CMD> all_setup_analysis_views
+<CMD> all_hold_analysis_views
+<CMD> get_analysis_view $view -delay_corner
+<CMD> get_delay_corner $dc -rc_corner
+<CMD> all_analysis_views
+best_case worst_case
+<CMD> all_setup_analysis_views
+<CMD> all_hold_analysis_views
+<CMD> get_analysis_view $view -delay_corner
+<CMD> get_delay_corner $dc -rc_corner
+<CMD> delete_repeater -inst FE_ECOC0_n_17
+#################################################################################
+# Design Name: mealy_1001_1100
+# Design Mode: 65nm
+# Analysis Mode: MMMC Non-OCV 
+# Parasitics Mode: SPEF/RCDB 
+# Signoff Settings: SI Off 
+#################################################################################
+Delete FE_ECOC0_n_17 (BUFX2).
+<CMD_INTERNAL> redraw
+<CMD> get_time_unit
+<CMD> report_timing -output_format binary -max_paths 50000 -max_slack 0.75 -path_exceptions all -early > top.btarpt
+<CMD> load_timing_debug_report -name default_report top.btarpt -max_path_num 10000 -updateCategory 0 -isDrv 0
+Parsing file top.btarpt...
+<CMD> all_analysis_views
+best_case worst_case
+<CMD> all_setup_analysis_views
+<CMD> all_hold_analysis_views
+<CMD> get_analysis_view $view -delay_corner
+<CMD> get_delay_corner $dc -rc_corner
+<CMD_INTERNAL> zoomSelected
+<CMD_INTERNAL> zoomSelected
+<CMD_INTERNAL> zoomSelected
+<CMD> all_analysis_views
+best_case worst_case
+<CMD> all_setup_analysis_views
+<CMD> all_hold_analysis_views
+<CMD> get_analysis_view $view -delay_corner
+<CMD> get_delay_corner $dc -rc_corner
+<CMD> all_analysis_views
+best_case worst_case
+<CMD> all_setup_analysis_views
+<CMD> all_hold_analysis_views
+<CMD> get_analysis_view $view -delay_corner
+<CMD> get_delay_corner $dc -rc_corner
+<CMD> all_analysis_views
+best_case worst_case
+<CMD> all_setup_analysis_views
+<CMD> all_hold_analysis_views
+<CMD> get_analysis_view $view -delay_corner
+<CMD> get_delay_corner $dc -rc_corner
+<CMD> all_analysis_views
+best_case worst_case
+<CMD> all_setup_analysis_views
+<CMD> all_hold_analysis_views
+<CMD> get_analysis_view $view -delay_corner
+<CMD> get_delay_corner $dc -rc_corner
+<CMD> add_repeater -cell BUFX4 -net n_17
+#################################################################################
+# Design Name: mealy_1001_1100
+# Design Mode: 65nm
+# Analysis Mode: MMMC Non-OCV 
+# Parasitics Mode: SPEF/RCDB 
+# Signoff Settings: SI Off 
+#################################################################################
+Add inst FE_ECOC3_n_17 (BUFX4) to drive load FE_ECOC2_n_17/A 
+*** Starting refinePlace (0:01:46 mem=4259.3M) ***
+Total net bbox length = 3.151e+02 (1.693e+02 1.458e+02) (ext = 7.228e+01)
+Max route layer is changed from 127 to 9 because there is no routing track above this layer
+Max route layer is changed from 127 to 9 because there is no routing track above this layer
+Max route layer is changed from 127 to 9 because there is no routing track above this layer
+Move report: Detail placement moves 3 insts, mean move: 3.00 um, max move: 7.83 um 
+	Max move on inst (FE_ECOC2_n_17): (31.32, 10.73) --> (28.71, 15.95)
+	Runtime: CPU: 0:00:00.0 REAL: 0:00:00.0 MEM: 4235.3MB
+Summary Report:
+Instances move: 3 (out of 27 movable)
+Instances flipped: 0
+Mean displacement: 3.00 um
+Max displacement: 7.83 um (Instance: FE_ECOC2_n_17) (31.32, 10.73) -> (28.71, 15.95)
+	Length: 8 sites, height: 1 rows, site name: gsclib090site, cell type: BUFX3
+Physical-only instances move: 0 (out of 0 movable physical-only)
+Total net bbox length = 3.244e+02 (1.699e+02 1.545e+02) (ext = 7.228e+01)
+Runtime: CPU: 0:00:00.0 REAL: 0:00:00.0 MEM: 4235.3MB
+*** Finished refinePlace (0:01:46 mem=4235.3M) ***
+<CMD_INTERNAL> redraw
+<CMD> get_time_unit
+<CMD> report_timing -output_format binary -max_paths 50000 -max_slack 0.75 -path_exceptions all -early > top.btarpt
+<CMD> load_timing_debug_report -name default_report top.btarpt -max_path_num 10000 -updateCategory 0 -isDrv 0
+Parsing file top.btarpt...
+<CMD_INTERNAL> zoomSelected
+<CMD_INTERNAL> zoomSelected
+<CMD_INTERNAL> zoomSelected
+<CMD> all_analysis_views
+best_case worst_case
+<CMD> all_setup_analysis_views
+<CMD> all_hold_analysis_views
+<CMD> get_analysis_view $view -delay_corner
+<CMD> get_delay_corner $dc -rc_corner
+<CMD> delete_repeater -inst FE_ECOC3_n_17
+#################################################################################
+# Design Name: mealy_1001_1100
+# Design Mode: 65nm
+# Analysis Mode: MMMC Non-OCV 
+# Parasitics Mode: SPEF/RCDB 
+# Signoff Settings: SI Off 
+#################################################################################
+Delete FE_ECOC3_n_17 (BUFX4).
+<CMD_INTERNAL> redraw
+there is no instance named 'FE_ECOC3_n_17' in design. 
+ **ERROR: (IMPQTF-4044):	Error occurs when '::tdg_timing::dpathList:popup gtdDetail@frameOnly tabfpan1detail 366 94' is executed with the error message: ''. This is probably an inner GUI action error. Use the TCL command directly instead of the GUI interactive.
+<CMD_INTERNAL> zoomSelected
+<CMD_INTERNAL> zoomSelected
+<CMD_INTERNAL> zoomSelected
+<CMD> all_analysis_views
+best_case worst_case
+<CMD> all_setup_analysis_views
+<CMD> all_hold_analysis_views
+<CMD> get_analysis_view $view -delay_corner
+<CMD> get_delay_corner $dc -rc_corner
+<CMD> all_analysis_views
+best_case worst_case
+<CMD> all_setup_analysis_views
+<CMD> all_hold_analysis_views
+<CMD> get_analysis_view $view -delay_corner
+<CMD> get_delay_corner $dc -rc_corner
+<CMD> delete_repeater -inst FE_ECOC2_n_17
+#################################################################################
+# Design Name: mealy_1001_1100
+# Design Mode: 65nm
+# Analysis Mode: MMMC Non-OCV 
+# Parasitics Mode: SPEF/RCDB 
+# Signoff Settings: SI Off 
+#################################################################################
+Delete FE_ECOC2_n_17 (BUFX3).
+<CMD_INTERNAL> redraw
+<CMD> get_time_unit
+<CMD> report_timing -output_format binary -max_paths 50000 -max_slack 0.75 -path_exceptions all -early > top.btarpt
+<CMD> load_timing_debug_report -name default_report top.btarpt -max_path_num 10000 -updateCategory 0 -isDrv 0
+Parsing file top.btarpt...
+<CMD> all_analysis_views
+best_case worst_case
+<CMD> all_setup_analysis_views
+<CMD> all_hold_analysis_views
+<CMD> get_analysis_view $view -delay_corner
+<CMD> get_delay_corner $dc -rc_corner
+<CMD> change_cell -inst FE_ECOC1_n_17 -cell BUFX2
+#################################################################################
+# Design Name: mealy_1001_1100
+# Design Mode: 65nm
+# Analysis Mode: MMMC Non-OCV 
+# Parasitics Mode: SPEF/RCDB 
+# Signoff Settings: SI Off 
+#################################################################################
+Resize FE_ECOC1_n_17 (BUFX3) to BUFX2.
+<CMD_INTERNAL> redraw
+<CMD> get_time_unit
+<CMD> report_timing -output_format binary -max_paths 50000 -max_slack 0.75 -path_exceptions all -early > top.btarpt
+<CMD> load_timing_debug_report -name default_report top.btarpt -max_path_num 10000 -updateCategory 0 -isDrv 0
+Parsing file top.btarpt...
+<CMD> all_analysis_views
+best_case worst_case
+<CMD> all_setup_analysis_views
+<CMD> all_hold_analysis_views
+<CMD> get_analysis_view $view -delay_corner
+<CMD> get_delay_corner $dc -rc_corner
+<CMD> all_analysis_views
+best_case worst_case
+<CMD> all_setup_analysis_views
+<CMD> all_hold_analysis_views
+<CMD> get_analysis_view $view -delay_corner
+<CMD> get_delay_corner $dc -rc_corner
+<CMD> add_repeater -cell BUFX2 -net n_17
+#################################################################################
+# Design Name: mealy_1001_1100
+# Design Mode: 65nm
+# Analysis Mode: MMMC Non-OCV 
+# Parasitics Mode: SPEF/RCDB 
+# Signoff Settings: SI Off 
+#################################################################################
+Add inst FE_ECOC4_n_17 (BUFX2) to drive load FE_ECOC1_n_17/A 
+*** Starting refinePlace (0:01:55 mem=4259.3M) ***
+Total net bbox length = 3.154e+02 (1.705e+02 1.449e+02) (ext = 7.228e+01)
+Max route layer is changed from 127 to 9 because there is no routing track above this layer
+Max route layer is changed from 127 to 9 because there is no routing track above this layer
+Max route layer is changed from 127 to 9 because there is no routing track above this layer
+Move report: Detail placement moves 1 insts, mean move: 0.29 um, max move: 0.29 um 
+	Max move on inst (FE_ECOC4_n_17): (32.19, 10.73) --> (31.90, 10.73)
+	Runtime: CPU: 0:00:00.0 REAL: 0:00:00.0 MEM: 4235.3MB
+Summary Report:
+Instances move: 1 (out of 26 movable)
+Instances flipped: 0
+Mean displacement: 0.29 um
+Max displacement: 0.29 um (Instance: FE_ECOC4_n_17) (32.19, 10.73) -> (31.9, 10.73)
+	Length: 6 sites, height: 1 rows, site name: gsclib090site, cell type: BUFX2
+Physical-only instances move: 0 (out of 0 movable physical-only)
+Total net bbox length = 3.148e+02 (1.699e+02 1.449e+02) (ext = 7.228e+01)
+Runtime: CPU: 0:00:00.0 REAL: 0:00:00.0 MEM: 4235.3MB
+*** Finished refinePlace (0:01:55 mem=4235.3M) ***
+<CMD_INTERNAL> redraw
+<CMD> add_repeater -cell BUFX2 -net n_17
+#################################################################################
+# Design Name: mealy_1001_1100
+# Design Mode: 65nm
+# Analysis Mode: MMMC Non-OCV 
+# Parasitics Mode: SPEF/RCDB 
+# Signoff Settings: SI Off 
+#################################################################################
+Add inst FE_ECOC5_n_17 (BUFX2) to drive load FE_ECOC4_n_17/A 
+*** Starting refinePlace (0:01:55 mem=4251.3M) ***
+Total net bbox length = 3.157e+02 (1.705e+02 1.452e+02) (ext = 7.228e+01)
+Max route layer is changed from 127 to 9 because there is no routing track above this layer
+Max route layer is changed from 127 to 9 because there is no routing track above this layer
+Max route layer is changed from 127 to 9 because there is no routing track above this layer
+Move report: Detail placement moves 2 insts, mean move: 4.35 um, max move: 5.22 um 
+	Max move on inst (FE_ECOC5_n_17): (32.19, 10.73) --> (26.97, 10.73)
+	Runtime: CPU: 0:00:00.0 REAL: 0:00:00.0 MEM: 4235.3MB
+Summary Report:
+Instances move: 2 (out of 27 movable)
+Instances flipped: 0
+Mean displacement: 4.35 um
+Max displacement: 5.22 um (Instance: FE_ECOC5_n_17) (32.19, 10.73) -> (26.97, 10.73)
+	Length: 6 sites, height: 1 rows, site name: gsclib090site, cell type: BUFX2
+Physical-only instances move: 0 (out of 0 movable physical-only)
+Total net bbox length = 3.144e+02 (1.692e+02 1.452e+02) (ext = 6.880e+01)
+Runtime: CPU: 0:00:00.0 REAL: 0:00:00.0 MEM: 4235.3MB
+*** Finished refinePlace (0:01:55 mem=4235.3M) ***
+<CMD_INTERNAL> redraw
+<CMD> get_time_unit
+<CMD> report_timing -output_format binary -max_paths 50000 -max_slack 0.75 -path_exceptions all -early > top.btarpt
+<CMD> load_timing_debug_report -name default_report top.btarpt -max_path_num 10000 -updateCategory 0 -isDrv 0
+Parsing file top.btarpt...
+**WARN: (IMPSYC-123):	No wire on net FE_ECON5_n_17.
+<CMD> all_analysis_views
+best_case worst_case
+<CMD> all_setup_analysis_views
+<CMD> all_hold_analysis_views
+<CMD> get_analysis_view $view -delay_corner
+<CMD> get_delay_corner $dc -rc_corner
+<CMD> add_repeater -cell BUFX2 -net n_17
+#################################################################################
+# Design Name: mealy_1001_1100
+# Design Mode: 65nm
+# Analysis Mode: MMMC Non-OCV 
+# Parasitics Mode: SPEF/RCDB 
+# Signoff Settings: SI Off 
+#################################################################################
+Add inst FE_ECOC6_n_17 (BUFX2) to drive load FE_ECOC5_n_17/A 
+*** Starting refinePlace (0:01:57 mem=4259.3M) ***
+Total net bbox length = 3.189e+02 (1.734e+02 1.455e+02) (ext = 6.880e+01)
+Max route layer is changed from 127 to 9 because there is no routing track above this layer
+Max route layer is changed from 127 to 9 because there is no routing track above this layer
+Max route layer is changed from 127 to 9 because there is no routing track above this layer
+Move report: Detail placement moves 1 insts, mean move: 5.51 um, max move: 5.51 um 
+	Max move on inst (FE_ECOC6_n_17): (32.19, 10.73) --> (31.90, 15.95)
+	Runtime: CPU: 0:00:00.0 REAL: 0:00:00.0 MEM: 4235.3MB
+Summary Report:
+Instances move: 1 (out of 28 movable)
+Instances flipped: 0
+Mean displacement: 5.51 um
+Max displacement: 5.51 um (Instance: FE_ECOC6_n_17) (32.19, 10.73) -> (31.9, 15.95)
+	Length: 6 sites, height: 1 rows, site name: gsclib090site, cell type: BUFX2
+Physical-only instances move: 0 (out of 0 movable physical-only)
+Total net bbox length = 3.282e+02 (1.728e+02 1.554e+02) (ext = 6.880e+01)
+Runtime: CPU: 0:00:00.0 REAL: 0:00:00.0 MEM: 4235.3MB
+*** Finished refinePlace (0:01:57 mem=4235.3M) ***
+<CMD_INTERNAL> redraw
+<CMD> get_time_unit
+<CMD> report_timing -output_format binary -max_paths 50000 -max_slack 0.75 -path_exceptions all -early > top.btarpt
+<CMD> load_timing_debug_report -name default_report top.btarpt -max_path_num 10000 -updateCategory 0 -isDrv 0
+Parsing file top.btarpt...
+<CMD> all_analysis_views
+best_case worst_case
+<CMD> all_setup_analysis_views
+<CMD> all_hold_analysis_views
+<CMD> get_analysis_view $view -delay_corner
+<CMD> get_delay_corner $dc -rc_corner
+<CMD> add_repeater -cell BUFX2 -net n_17
+#################################################################################
+# Design Name: mealy_1001_1100
+# Design Mode: 65nm
+# Analysis Mode: MMMC Non-OCV 
+# Parasitics Mode: SPEF/RCDB 
+# Signoff Settings: SI Off 
+#################################################################################
+Add inst FE_ECOC7_n_17 (BUFX2) to drive load FE_ECOC6_n_17/A 
+*** Starting refinePlace (0:01:59 mem=4278.4M) ***
+Total net bbox length = 3.290e+02 (1.734e+02 1.556e+02) (ext = 6.880e+01)
+Max route layer is changed from 127 to 9 because there is no routing track above this layer
+Max route layer is changed from 127 to 9 because there is no routing track above this layer
+Max route layer is changed from 127 to 9 because there is no routing track above this layer
+Move report: Detail placement moves 1 insts, mean move: 7.25 um, max move: 7.25 um 
+	Max move on inst (FE_ECOC7_n_17): (32.19, 10.73) --> (30.16, 15.95)
+	Runtime: CPU: 0:00:00.0 REAL: 0:00:00.0 MEM: 4254.4MB
+Summary Report:
+Instances move: 1 (out of 29 movable)
+Instances flipped: 0
+Mean displacement: 7.25 um
+Max displacement: 7.25 um (Instance: FE_ECOC7_n_17) (32.19, 10.73) -> (30.16, 15.95)
+	Length: 6 sites, height: 1 rows, site name: gsclib090site, cell type: BUFX2
+Physical-only instances move: 0 (out of 0 movable physical-only)
+Total net bbox length = 3.290e+02 (1.734e+02 1.556e+02) (ext = 6.880e+01)
+Runtime: CPU: 0:00:00.0 REAL: 0:00:00.0 MEM: 4254.4MB
+*** Finished refinePlace (0:01:59 mem=4254.4M) ***
+<CMD_INTERNAL> redraw
+<CMD> get_time_unit
+<CMD> report_timing -output_format binary -max_paths 50000 -max_slack 0.75 -path_exceptions all -early > top.btarpt
+<CMD> load_timing_debug_report -name default_report top.btarpt -max_path_num 10000 -updateCategory 0 -isDrv 0
+Parsing file top.btarpt...
+<CMD_INTERNAL> zoomSelected
+<CMD_INTERNAL> zoomSelected
+<CMD_INTERNAL> zoomSelected
+<CMD> all_analysis_views
+best_case worst_case
+<CMD> all_setup_analysis_views
+<CMD> all_hold_analysis_views
+<CMD> get_analysis_view $view -delay_corner
+<CMD> get_delay_corner $dc -rc_corner
+<CMD> add_repeater -cell BUFX2 -net n_9
+#################################################################################
+# Design Name: mealy_1001_1100
+# Design Mode: 65nm
+# Analysis Mode: MMMC Non-OCV 
+# Parasitics Mode: SPEF/RCDB 
+# Signoff Settings: SI Off 
+#################################################################################
+**WARN: (IMPOPT-6106):	There is mismatch between RC data and routing for net n_9. Rebuilding the RC network for the net; coupling caps will be grounded.
+Add inst FE_ECOC8_n_9 (BUFX2) to drive load g708__6260/B 
+*** Starting refinePlace (0:02:01 mem=4278.4M) ***
+Total net bbox length = 3.299e+02 (1.740e+02 1.559e+02) (ext = 6.880e+01)
+Max route layer is changed from 127 to 9 because there is no routing track above this layer
+Max route layer is changed from 127 to 9 because there is no routing track above this layer
+Max route layer is changed from 127 to 9 because there is no routing track above this layer
+Move report: Detail placement moves 2 insts, mean move: 1.45 um, max move: 1.74 um 
+	Max move on inst (g713__4319): (24.94, 15.95) --> (26.68, 15.95)
+	Runtime: CPU: 0:00:00.0 REAL: 0:00:00.0 MEM: 4254.4MB
+Summary Report:
+Instances move: 2 (out of 30 movable)
+Instances flipped: 0
+Mean displacement: 1.45 um
+Max displacement: 1.74 um (Instance: g713__4319) (24.94, 15.95) -> (26.68, 15.95)
+	Length: 4 sites, height: 1 rows, site name: gsclib090site, cell type: NOR2XL
+Physical-only instances move: 0 (out of 0 movable physical-only)
+Total net bbox length = 3.322e+02 (1.763e+02 1.559e+02) (ext = 6.880e+01)
+Runtime: CPU: 0:00:00.0 REAL: 0:00:00.0 MEM: 4254.4MB
+*** Finished refinePlace (0:02:01 mem=4254.4M) ***
+<CMD_INTERNAL> redraw
+<CMD> get_time_unit
+<CMD> report_timing -output_format binary -max_paths 50000 -max_slack 0.75 -path_exceptions all -early > top.btarpt
+<CMD> load_timing_debug_report -name default_report top.btarpt -max_path_num 10000 -updateCategory 0 -isDrv 0
+Parsing file top.btarpt...
+<CMD> all_analysis_views
+best_case worst_case
+<CMD> all_setup_analysis_views
+<CMD> all_hold_analysis_views
+<CMD> get_analysis_view $view -delay_corner
+<CMD> get_delay_corner $dc -rc_corner
+<CMD_INTERNAL> zoomSelected
+<CMD_INTERNAL> zoomSelected
+<CMD_INTERNAL> zoomSelected
+<CMD> all_analysis_views
+best_case worst_case
+<CMD> all_setup_analysis_views
+<CMD> all_hold_analysis_views
+<CMD> get_analysis_view $view -delay_corner
+<CMD> get_delay_corner $dc -rc_corner
+<CMD> add_repeater -cell BUFX2 -net n_9
+#################################################################################
+# Design Name: mealy_1001_1100
+# Design Mode: 65nm
+# Analysis Mode: MMMC Non-OCV 
+# Parasitics Mode: SPEF/RCDB 
+# Signoff Settings: SI Off 
+#################################################################################
+Add inst FE_ECOC9_n_9 (BUFX2) to drive load FE_ECOC8_n_9/A 
+*** Starting refinePlace (0:02:02 mem=4278.4M) ***
+Total net bbox length = 3.331e+02 (1.769e+02 1.562e+02) (ext = 6.880e+01)
+Max route layer is changed from 127 to 9 because there is no routing track above this layer
+Max route layer is changed from 127 to 9 because there is no routing track above this layer
+Max route layer is changed from 127 to 9 because there is no routing track above this layer
+Move report: Detail placement moves 3 insts, mean move: 1.55 um, max move: 1.74 um 
+	Max move on inst (FE_ECOC8_n_9): (24.94, 15.95) --> (26.68, 15.95)
+	Runtime: CPU: 0:00:00.0 REAL: 0:00:00.0 MEM: 4254.4MB
+Summary Report:
+Instances move: 3 (out of 31 movable)
+Instances flipped: 0
+Mean displacement: 1.55 um
+Max displacement: 1.74 um (Instance: FE_ECOC8_n_9) (24.94, 15.95) -> (26.68, 15.95)
+	Length: 6 sites, height: 1 rows, site name: gsclib090site, cell type: BUFX2
+Physical-only instances move: 0 (out of 0 movable physical-only)
+Total net bbox length = 3.383e+02 (1.821e+02 1.562e+02) (ext = 6.880e+01)
+Runtime: CPU: 0:00:00.0 REAL: 0:00:00.0 MEM: 4254.4MB
+*** Finished refinePlace (0:02:02 mem=4254.4M) ***
+<CMD_INTERNAL> redraw
+<CMD> get_time_unit
+<CMD> report_timing -output_format binary -max_paths 50000 -max_slack 0.75 -path_exceptions all -early > top.btarpt
+<CMD> load_timing_debug_report -name default_report top.btarpt -max_path_num 10000 -updateCategory 0 -isDrv 0
+Parsing file top.btarpt...
+<CMD> all_analysis_views
+best_case worst_case
+<CMD> all_setup_analysis_views
+<CMD> all_hold_analysis_views
+<CMD> get_analysis_view $view -delay_corner
+<CMD> get_delay_corner $dc -rc_corner
+<CMD> all_analysis_views
+best_case worst_case
+<CMD> all_setup_analysis_views
+<CMD> all_hold_analysis_views
+<CMD> get_analysis_view $view -delay_corner
+<CMD> get_delay_corner $dc -rc_corner
+<CMD> all_analysis_views
+best_case worst_case
+<CMD> all_setup_analysis_views
+<CMD> all_hold_analysis_views
+<CMD> get_analysis_view $view -delay_corner
+<CMD> get_delay_corner $dc -rc_corner
+<CMD> all_analysis_views
+best_case worst_case
+<CMD> all_setup_analysis_views
+<CMD> all_hold_analysis_views
+<CMD> get_analysis_view $view -delay_corner
+<CMD> get_delay_corner $dc -rc_corner
+<CMD> add_repeater -cell BUFX2 -net {}
+**ERROR: (IMPOPT-560):	Net '' not found.
+**ERROR: (IMPSYT-7004):	Failed to execute add_repeater command.
+<CMD_INTERNAL> redraw
+<CMD> all_analysis_views
+best_case worst_case
+<CMD> all_setup_analysis_views
+<CMD> all_hold_analysis_views
+<CMD> get_analysis_view $view -delay_corner
+<CMD> get_delay_corner $dc -rc_corner
+<CMD> get_time_unit
+<CMD> report_timing -output_format binary -max_paths 50000 -max_slack 0.75 -path_exceptions all -late > top.btarpt
+<CMD> load_timing_debug_report -name default_report top.btarpt -max_path_num 10000 -updateCategory 0 -isDrv 0
+Parsing file top.btarpt...
+<CMD> get_time_unit
+<CMD> report_timing -output_format binary -max_paths 50000 -max_slack 0.75 -path_exceptions all -early > top.btarpt
+<CMD> load_timing_debug_report -name default_report top.btarpt -max_path_num 10000 -updateCategory 0 -isDrv 0
+Parsing file top.btarpt...
+<CMD> all_analysis_views
+best_case worst_case
+<CMD> all_setup_analysis_views
+<CMD> all_hold_analysis_views
+<CMD> get_analysis_view $view -delay_corner
+<CMD> get_delay_corner $dc -rc_corner
+<CMD_INTERNAL> zoomSelected
+<CMD_INTERNAL> zoomSelected
+<CMD> all_analysis_views
+best_case worst_case
+<CMD> all_setup_analysis_views
+<CMD> all_hold_analysis_views
+<CMD> get_analysis_view $view -delay_corner
+<CMD> get_delay_corner $dc -rc_corner
+<CMD> add_repeater -cell BUFX2 -net n_15
+#################################################################################
+# Design Name: mealy_1001_1100
+# Design Mode: 65nm
+# Analysis Mode: MMMC Non-OCV 
+# Parasitics Mode: SPEF/RCDB 
+# Signoff Settings: SI Off 
+#################################################################################
+**WARN: (IMPOPT-6106):	There is mismatch between RC data and routing for net n_15. Rebuilding the RC network for the net; coupling caps will be grounded.
+Add inst FE_ECOC10_n_15 (BUFX2) to drive load dout_1100_reg/D 
+*** Starting refinePlace (0:02:10 mem=4278.4M) ***
+Total net bbox length = 3.427e+02 (1.827e+02 1.600e+02) (ext = 6.880e+01)
+Max route layer is changed from 127 to 9 because there is no routing track above this layer
+Max route layer is changed from 127 to 9 because there is no routing track above this layer
+Max route layer is changed from 127 to 9 because there is no routing track above this layer
+Move report: Detail placement moves 2 insts, mean move: 1.02 um, max move: 1.16 um 
+	Max move on inst (FE_ECOC10_n_15): (25.23, 13.34) --> (24.07, 13.34)
+	Runtime: CPU: 0:00:00.0 REAL: 0:00:00.0 MEM: 4254.4MB
+Summary Report:
+Instances move: 2 (out of 32 movable)
+Instances flipped: 0
+Mean displacement: 1.02 um
+Max displacement: 1.16 um (Instance: FE_ECOC10_n_15) (25.23, 13.34) -> (24.07, 13.34)
+	Length: 6 sites, height: 1 rows, site name: gsclib090site, cell type: BUFX2
+Physical-only instances move: 0 (out of 0 movable physical-only)
+Total net bbox length = 3.444e+02 (1.838e+02 1.606e+02) (ext = 6.880e+01)
+Runtime: CPU: 0:00:00.0 REAL: 0:00:00.0 MEM: 4254.4MB
+*** Finished refinePlace (0:02:10 mem=4254.4M) ***
+<CMD_INTERNAL> redraw
+<CMD> get_time_unit
+<CMD> report_timing -output_format binary -max_paths 50000 -max_slack 0.75 -path_exceptions all -early > top.btarpt
+<CMD> load_timing_debug_report -name default_report top.btarpt -max_path_num 10000 -updateCategory 0 -isDrv 0
+Parsing file top.btarpt...
+<CMD_INTERNAL> zoomSelected
+<CMD_INTERNAL> zoomSelected
+<CMD_INTERNAL> zoomSelected
+<CMD> all_analysis_views
+best_case worst_case
+<CMD> all_setup_analysis_views
+<CMD> all_hold_analysis_views
+<CMD> get_analysis_view $view -delay_corner
+<CMD> get_delay_corner $dc -rc_corner
+<CMD> add_repeater -cell BUFX2 -net n_15
+#################################################################################
+# Design Name: mealy_1001_1100
+# Design Mode: 65nm
+# Analysis Mode: MMMC Non-OCV 
+# Parasitics Mode: SPEF/RCDB 
+# Signoff Settings: SI Off 
+#################################################################################
+Add inst FE_ECOC11_n_15 (BUFX2) to drive load FE_ECOC10_n_15/A 
+*** Starting refinePlace (0:02:12 mem=4278.4M) ***
+Total net bbox length = 3.458e+02 (1.850e+02 1.609e+02) (ext = 6.880e+01)
+Max route layer is changed from 127 to 9 because there is no routing track above this layer
+Max route layer is changed from 127 to 9 because there is no routing track above this layer
+Max route layer is changed from 127 to 9 because there is no routing track above this layer
+Move report: Detail placement moves 2 insts, mean move: 2.32 um, max move: 2.90 um 
+	Max move on inst (FE_ECOC11_n_15): (25.23, 13.34) --> (22.33, 13.34)
+	Runtime: CPU: 0:00:00.0 REAL: 0:00:00.0 MEM: 4254.4MB
+Summary Report:
+Instances move: 2 (out of 33 movable)
+Instances flipped: 0
+Mean displacement: 2.32 um
+Max displacement: 2.90 um (Instance: FE_ECOC11_n_15) (25.23, 13.34) -> (22.33, 13.34)
+	Length: 6 sites, height: 1 rows, site name: gsclib090site, cell type: BUFX2
+Physical-only instances move: 0 (out of 0 movable physical-only)
+Total net bbox length = 3.505e+02 (1.896e+02 1.609e+02) (ext = 6.793e+01)
+Runtime: CPU: 0:00:00.0 REAL: 0:00:00.0 MEM: 4254.4MB
+*** Finished refinePlace (0:02:12 mem=4254.4M) ***
+<CMD_INTERNAL> redraw
+<CMD> get_time_unit
+<CMD> report_timing -output_format binary -max_paths 50000 -max_slack 0.75 -path_exceptions all -early > top.btarpt
+<CMD> load_timing_debug_report -name default_report top.btarpt -max_path_num 10000 -updateCategory 0 -isDrv 0
+Parsing file top.btarpt...
+<CMD> all_analysis_views
+best_case worst_case
+<CMD> all_setup_analysis_views
+<CMD> all_hold_analysis_views
+<CMD> get_analysis_view $view -delay_corner
+<CMD> get_delay_corner $dc -rc_corner
+<CMD> add_repeater -cell BUFX2 -net n_15
+#################################################################################
+# Design Name: mealy_1001_1100
+# Design Mode: 65nm
+# Analysis Mode: MMMC Non-OCV 
+# Parasitics Mode: SPEF/RCDB 
+# Signoff Settings: SI Off 
+#################################################################################
+Add inst FE_ECOC12_n_15 (BUFX2) to drive load FE_ECOC11_n_15/A 
+*** Starting refinePlace (0:02:14 mem=4278.4M) ***
+Total net bbox length = 3.519e+02 (1.908e+02 1.612e+02) (ext = 6.793e+01)
+Max route layer is changed from 127 to 9 because there is no routing track above this layer
+Max route layer is changed from 127 to 9 because there is no routing track above this layer
+Max route layer is changed from 127 to 9 because there is no routing track above this layer
+Move report: Detail placement moves 3 insts, mean move: 3.58 um, max move: 4.64 um 
+	Max move on inst (FE_ECOC12_n_15): (25.23, 13.34) --> (20.59, 13.34)
+	Runtime: CPU: 0:00:00.0 REAL: 0:00:00.0 MEM: 4254.4MB
+Summary Report:
+Instances move: 3 (out of 34 movable)
+Instances flipped: 0
+Mean displacement: 3.58 um
+Max displacement: 4.64 um (Instance: FE_ECOC12_n_15) (25.23, 13.34) -> (20.59, 13.34)
+	Length: 6 sites, height: 1 rows, site name: gsclib090site, cell type: BUFX2
+Physical-only instances move: 0 (out of 0 movable physical-only)
+Total net bbox length = 3.624e+02 (1.928e+02 1.696e+02) (ext = 6.561e+01)
+Runtime: CPU: 0:00:00.0 REAL: 0:00:00.0 MEM: 4254.4MB
+*** Finished refinePlace (0:02:14 mem=4254.4M) ***
+<CMD_INTERNAL> redraw
+<CMD> get_time_unit
+<CMD> report_timing -output_format binary -max_paths 50000 -max_slack 0.75 -path_exceptions all -early > top.btarpt
+<CMD> load_timing_debug_report -name default_report top.btarpt -max_path_num 10000 -updateCategory 0 -isDrv 0
+Parsing file top.btarpt...
+<CMD_INTERNAL> zoomSelected
+<CMD_INTERNAL> zoomSelected
+<CMD_INTERNAL> zoomSelected
+<CMD> all_analysis_views
+best_case worst_case
+<CMD> all_setup_analysis_views
+<CMD> all_hold_analysis_views
+<CMD> get_analysis_view $view -delay_corner
+<CMD> get_delay_corner $dc -rc_corner
+<CMD_INTERNAL> zoomSelected
+<CMD_INTERNAL> zoomSelected
+<CMD> all_analysis_views
+best_case worst_case
+<CMD> all_setup_analysis_views
+<CMD> all_hold_analysis_views
+<CMD> get_analysis_view $view -delay_corner
+<CMD> get_delay_corner $dc -rc_corner
+<CMD> add_repeater -cell BUFX2 -net n_13
+#################################################################################
+# Design Name: mealy_1001_1100
+# Design Mode: 65nm
+# Analysis Mode: MMMC Non-OCV 
+# Parasitics Mode: SPEF/RCDB 
+# Signoff Settings: SI Off 
+#################################################################################
+**WARN: (IMPOPT-6106):	There is mismatch between RC data and routing for net n_13. Rebuilding the RC network for the net; coupling caps will be grounded.
+Add inst FE_ECOC13_n_13 (BUFX2) to drive load dout_1001_reg/D 
+*** Starting refinePlace (0:02:16 mem=4278.4M) ***
+Total net bbox length = 3.725e+02 (1.986e+02 1.739e+02) (ext = 6.561e+01)
+Max route layer is changed from 127 to 9 because there is no routing track above this layer
+Max route layer is changed from 127 to 9 because there is no routing track above this layer
+Max route layer is changed from 127 to 9 because there is no routing track above this layer
+Move report: Detail placement moves 2 insts, mean move: 2.32 um, max move: 3.48 um 
+	Max move on inst (FE_ECOC13_n_13): (25.52, 18.56) --> (22.04, 18.56)
+	Runtime: CPU: 0:00:00.0 REAL: 0:00:00.0 MEM: 4254.4MB
+Summary Report:
+Instances move: 2 (out of 35 movable)
+Instances flipped: 0
+Mean displacement: 2.32 um
+Max displacement: 3.48 um (Instance: FE_ECOC13_n_13) (25.52, 18.56) -> (22.04, 18.56)
+	Length: 6 sites, height: 1 rows, site name: gsclib090site, cell type: BUFX2
+Physical-only instances move: 0 (out of 0 movable physical-only)
+Total net bbox length = 3.809e+02 (2.064e+02 1.745e+02) (ext = 6.445e+01)
+Runtime: CPU: 0:00:00.0 REAL: 0:00:00.0 MEM: 4254.4MB
+*** Finished refinePlace (0:02:16 mem=4254.4M) ***
+<CMD_INTERNAL> redraw
+<CMD> get_time_unit
+<CMD> report_timing -output_format binary -max_paths 50000 -max_slack 0.75 -path_exceptions all -early > top.btarpt
+<CMD> load_timing_debug_report -name default_report top.btarpt -max_path_num 10000 -updateCategory 0 -isDrv 0
+Parsing file top.btarpt...
+<CMD> all_analysis_views
+best_case worst_case
+<CMD> all_setup_analysis_views
+<CMD> all_hold_analysis_views
+<CMD> get_analysis_view $view -delay_corner
+<CMD> get_delay_corner $dc -rc_corner
+<CMD> all_analysis_views
+best_case worst_case
+<CMD> all_setup_analysis_views
+<CMD> all_hold_analysis_views
+<CMD> get_analysis_view $view -delay_corner
+<CMD> get_delay_corner $dc -rc_corner
+<CMD_INTERNAL> zoomSelected
+<CMD_INTERNAL> zoomSelected
+<CMD_INTERNAL> zoomSelected
+<CMD_INTERNAL> zoomSelected
+<CMD_INTERNAL> zoomSelected
+<CMD_INTERNAL> zoomSelected
+<CMD> all_analysis_views
+best_case worst_case
+<CMD> all_setup_analysis_views
+<CMD> all_hold_analysis_views
+<CMD> get_analysis_view $view -delay_corner
+<CMD> get_delay_corner $dc -rc_corner
+<CMD> add_repeater -cell {BUFX2 BUFX3} -net n_13
+#################################################################################
+# Design Name: mealy_1001_1100
+# Design Mode: 65nm
+# Analysis Mode: MMMC Non-OCV 
+# Parasitics Mode: SPEF/RCDB 
+# Signoff Settings: SI Off 
+#################################################################################
+Add inst FE_ECOC14_n_13 (BUFX2) to drive load FE_ECOC13_n_13/A 
+Add inst FE_ECOC15_n_13 (BUFX3) to drive load FE_ECOC13_n_13/A 
+*** Starting refinePlace (0:02:19 mem=4278.4M) ***
+Total net bbox length = 3.824e+02 (2.073e+02 1.751e+02) (ext = 6.445e+01)
+Max route layer is changed from 127 to 9 because there is no routing track above this layer
+Max route layer is changed from 127 to 9 because there is no routing track above this layer
+Max route layer is changed from 127 to 9 because there is no routing track above this layer
+Move report: Detail placement moves 10 insts, mean move: 4.32 um, max move: 10.73 um 
+	Max move on inst (g723): (30.45, 10.73) --> (19.72, 10.73)
+	Runtime: CPU: 0:00:00.0 REAL: 0:00:00.0 MEM: 4254.4MB
+Summary Report:
+Instances move: 10 (out of 37 movable)
+Instances flipped: 0
+Mean displacement: 4.32 um
+Max displacement: 10.73 um (Instance: g723) (30.45, 10.73) -> (19.72, 10.73)
+	Length: 3 sites, height: 1 rows, site name: gsclib090site, cell type: INVXL
+Physical-only instances move: 0 (out of 0 movable physical-only)
+Total net bbox length = 4.198e+02 (2.401e+02 1.797e+02) (ext = 7.953e+01)
+Runtime: CPU: 0:00:00.0 REAL: 0:00:00.0 MEM: 4254.4MB
+*** Finished refinePlace (0:02:19 mem=4254.4M) ***
+<CMD_INTERNAL> redraw
+<CMD> get_time_unit
+<CMD> report_timing -output_format binary -max_paths 50000 -max_slack 0.75 -path_exceptions all -early > top.btarpt
+<CMD> load_timing_debug_report -name default_report top.btarpt -max_path_num 10000 -updateCategory 0 -isDrv 0
+Parsing file top.btarpt...
+<CMD> all_analysis_views
+best_case worst_case
+<CMD> all_setup_analysis_views
+<CMD> all_hold_analysis_views
+<CMD> get_analysis_view $view -delay_corner
+<CMD> get_delay_corner $dc -rc_corner
+<CMD_INTERNAL> zoomSelected
+<CMD_INTERNAL> zoomSelected
+<CMD> all_analysis_views
+best_case worst_case
+<CMD> all_setup_analysis_views
+<CMD> all_hold_analysis_views
+<CMD> get_analysis_view $view -delay_corner
+<CMD> get_delay_corner $dc -rc_corner
+<CMD> add_repeater -cell BUFX2 -net n_16
+#################################################################################
+# Design Name: mealy_1001_1100
+# Design Mode: 65nm
+# Analysis Mode: MMMC Non-OCV 
+# Parasitics Mode: SPEF/RCDB 
+# Signoff Settings: SI Off 
+#################################################################################
+**WARN: (IMPOPT-6106):	There is mismatch between RC data and routing for net n_16. Rebuilding the RC network for the net; coupling caps will be grounded.
+Add inst FE_ECOC16_n_16 (BUFX2) to drive load state_reg[0]/D 
+*** Starting refinePlace (0:02:21 mem=4278.4M) ***
+Total net bbox length = 4.253e+02 (2.412e+02 1.841e+02) (ext = 7.953e+01)
+Max route layer is changed from 127 to 9 because there is no routing track above this layer
+Max route layer is changed from 127 to 9 because there is no routing track above this layer
+Max route layer is changed from 127 to 9 because there is no routing track above this layer
+Move report: Detail placement moves 2 insts, mean move: 1.45 um, max move: 1.74 um 
+	Max move on inst (g716__1617): (12.47, 15.95) --> (14.21, 15.95)
+	Runtime: CPU: 0:00:00.0 REAL: 0:00:00.0 MEM: 4254.4MB
+Summary Report:
+Instances move: 2 (out of 38 movable)
+Instances flipped: 0
+Mean displacement: 1.45 um
+Max displacement: 1.74 um (Instance: g716__1617) (12.47, 15.95) -> (14.21, 15.95)
+	Length: 5 sites, height: 1 rows, site name: gsclib090site, cell type: NAND2X1
+Physical-only instances move: 0 (out of 0 movable physical-only)
+Total net bbox length = 4.276e+02 (2.436e+02 1.841e+02) (ext = 7.953e+01)
+Runtime: CPU: 0:00:00.0 REAL: 0:00:00.0 MEM: 4254.4MB
+*** Finished refinePlace (0:02:21 mem=4254.4M) ***
+<CMD_INTERNAL> redraw
+<CMD> get_time_unit
+<CMD> report_timing -output_format binary -max_paths 50000 -max_slack 0.75 -path_exceptions all -early > top.btarpt
+<CMD> load_timing_debug_report -name default_report top.btarpt -max_path_num 10000 -updateCategory 0 -isDrv 0
+Parsing file top.btarpt...
+<CMD_INTERNAL> zoomSelected
+<CMD_INTERNAL> zoomSelected
+<CMD> all_analysis_views
+best_case worst_case
+<CMD> all_setup_analysis_views
+<CMD> all_hold_analysis_views
+<CMD> get_analysis_view $view -delay_corner
+<CMD> get_delay_corner $dc -rc_corner
+<CMD> add_repeater -cell BUFX2 -net FE_ECON16_n_16
+#################################################################################
+# Design Name: mealy_1001_1100
+# Design Mode: 65nm
+# Analysis Mode: MMMC Non-OCV 
+# Parasitics Mode: SPEF/RCDB 
+# Signoff Settings: SI Off 
+#################################################################################
+Add inst FE_ECOC17_n_16 (BUFX2) to drive load state_reg[0]/D 
+*** Starting refinePlace (0:02:23 mem=4278.4M) ***
+Total net bbox length = 4.273e+02 (2.430e+02 1.844e+02) (ext = 7.953e+01)
+Max route layer is changed from 127 to 9 because there is no routing track above this layer
+Max route layer is changed from 127 to 9 because there is no routing track above this layer
+Max route layer is changed from 127 to 9 because there is no routing track above this layer
+Move report: Detail placement moves 2 insts, mean move: 2.18 um, max move: 2.61 um 
+	Max move on inst (FE_ECOC17_n_16): (11.31, 10.73) --> (11.31, 13.34)
+	Runtime: CPU: 0:00:00.0 REAL: 0:00:00.0 MEM: 4254.4MB
+Summary Report:
+Instances move: 2 (out of 39 movable)
+Instances flipped: 0
+Mean displacement: 2.18 um
+Max displacement: 2.61 um (Instance: FE_ECOC17_n_16) (11.31, 10.73) -> (11.31, 13.34)
+	Length: 6 sites, height: 1 rows, site name: gsclib090site, cell type: BUFX2
+Physical-only instances move: 0 (out of 0 movable physical-only)
+Total net bbox length = 4.337e+02 (2.494e+02 1.844e+02) (ext = 7.953e+01)
+Runtime: CPU: 0:00:00.0 REAL: 0:00:00.0 MEM: 4254.4MB
+*** Finished refinePlace (0:02:23 mem=4254.4M) ***
+<CMD_INTERNAL> redraw
+<CMD> get_time_unit
+<CMD> report_timing -output_format binary -max_paths 50000 -max_slack 0.75 -path_exceptions all -early > top.btarpt
+<CMD> load_timing_debug_report -name default_report top.btarpt -max_path_num 10000 -updateCategory 0 -isDrv 0
+Parsing file top.btarpt...
+<CMD> all_analysis_views
+best_case worst_case
+<CMD> all_setup_analysis_views
+<CMD> all_hold_analysis_views
+<CMD> get_analysis_view $view -delay_corner
+<CMD> get_delay_corner $dc -rc_corner
+<CMD> add_repeater -cell BUFX2 -net n_11
+#################################################################################
+# Design Name: mealy_1001_1100
+# Design Mode: 65nm
+# Analysis Mode: MMMC Non-OCV 
+# Parasitics Mode: SPEF/RCDB 
+# Signoff Settings: SI Off 
+#################################################################################
+**WARN: (IMPOPT-6106):	There is mismatch between RC data and routing for net n_11. Rebuilding the RC network for the net; coupling caps will be grounded.
+Add inst FE_ECOC18_n_11 (BUFX2) to drive load state_reg[2]/D 
+*** Starting refinePlace (0:02:24 mem=4278.4M) ***
+Total net bbox length = 4.352e+02 (2.505e+02 1.846e+02) (ext = 7.953e+01)
+Max route layer is changed from 127 to 9 because there is no routing track above this layer
+Max route layer is changed from 127 to 9 because there is no routing track above this layer
+Max route layer is changed from 127 to 9 because there is no routing track above this layer
+Move report: Detail placement moves 1 insts, mean move: 2.61 um, max move: 2.61 um 
+	Max move on inst (FE_ECOC18_n_11): (11.60, 15.95) --> (8.99, 15.95)
+	Runtime: CPU: 0:00:00.0 REAL: 0:00:00.0 MEM: 4254.4MB
+Summary Report:
+Instances move: 1 (out of 40 movable)
+Instances flipped: 0
+Mean displacement: 2.61 um
+Max displacement: 2.61 um (Instance: FE_ECOC18_n_11) (11.6, 15.95) -> (8.99, 15.95)
+	Length: 6 sites, height: 1 rows, site name: gsclib090site, cell type: BUFX2
+Physical-only instances move: 0 (out of 0 movable physical-only)
+Total net bbox length = 4.340e+02 (2.494e+02 1.846e+02) (ext = 7.953e+01)
+Runtime: CPU: 0:00:00.0 REAL: 0:00:00.0 MEM: 4254.4MB
+*** Finished refinePlace (0:02:24 mem=4254.4M) ***
+<CMD_INTERNAL> redraw
+<CMD> add_repeater -cell BUFX2 -net n_11
+#################################################################################
+# Design Name: mealy_1001_1100
+# Design Mode: 65nm
+# Analysis Mode: MMMC Non-OCV 
+# Parasitics Mode: SPEF/RCDB 
+# Signoff Settings: SI Off 
+#################################################################################
+Add inst FE_ECOC19_n_11 (BUFX2) to drive load FE_ECOC18_n_11/A 
+*** Starting refinePlace (0:02:24 mem=4270.4M) ***
+Total net bbox length = 4.355e+02 (2.505e+02 1.849e+02) (ext = 7.953e+01)
+Max route layer is changed from 127 to 9 because there is no routing track above this layer
+Max route layer is changed from 127 to 9 because there is no routing track above this layer
+Max route layer is changed from 127 to 9 because there is no routing track above this layer
+Move report: Detail placement moves 2 insts, mean move: 2.61 um, max move: 2.61 um 
+	Max move on inst (FE_ECOC19_n_11): (11.60, 15.95) --> (14.21, 15.95)
+	Runtime: CPU: 0:00:00.0 REAL: 0:00:00.0 MEM: 4254.4MB
+Summary Report:
+Instances move: 2 (out of 41 movable)
+Instances flipped: 0
+Mean displacement: 2.61 um
+Max displacement: 2.61 um (Instance: FE_ECOC19_n_11) (11.6, 15.95) -> (14.21, 15.95)
+	Length: 6 sites, height: 1 rows, site name: gsclib090site, cell type: BUFX2
+Physical-only instances move: 0 (out of 0 movable physical-only)
+Total net bbox length = 4.401e+02 (2.557e+02 1.844e+02) (ext = 7.953e+01)
+Runtime: CPU: 0:00:00.0 REAL: 0:00:00.0 MEM: 4254.4MB
+*** Finished refinePlace (0:02:24 mem=4254.4M) ***
+<CMD_INTERNAL> redraw
+<CMD> get_time_unit
+<CMD> report_timing -output_format binary -max_paths 50000 -max_slack 0.75 -path_exceptions all -early > top.btarpt
+<CMD> load_timing_debug_report -name default_report top.btarpt -max_path_num 10000 -updateCategory 0 -isDrv 0
+Parsing file top.btarpt...
+<CMD> all_analysis_views
+best_case worst_case
+<CMD> all_setup_analysis_views
+<CMD> all_hold_analysis_views
+<CMD> get_analysis_view $view -delay_corner
+<CMD> get_delay_corner $dc -rc_corner
+<CMD> all_analysis_views
+best_case worst_case
+<CMD> all_setup_analysis_views
+<CMD> all_hold_analysis_views
+<CMD> get_analysis_view $view -delay_corner
+<CMD> get_delay_corner $dc -rc_corner
+<CMD> all_analysis_views
+best_case worst_case
+<CMD> all_setup_analysis_views
+<CMD> all_hold_analysis_views
+<CMD> get_analysis_view $view -delay_corner
+<CMD> get_delay_corner $dc -rc_corner
+<CMD> add_repeater -cell BUFX2 -net FE_ECON18_n_11
+#################################################################################
+# Design Name: mealy_1001_1100
+# Design Mode: 65nm
+# Analysis Mode: MMMC Non-OCV 
+# Parasitics Mode: SPEF/RCDB 
+# Signoff Settings: SI Off 
+#################################################################################
+Add inst FE_ECOC20_n_11 (BUFX2) to drive load state_reg[2]/D 
+*** Starting refinePlace (0:02:26 mem=4278.4M) ***
+Total net bbox length = 4.456e+02 (2.610e+02 1.846e+02) (ext = 7.953e+01)
+Max route layer is changed from 127 to 9 because there is no routing track above this layer
+Max route layer is changed from 127 to 9 because there is no routing track above this layer
+Max route layer is changed from 127 to 9 because there is no routing track above this layer
+Move report: Detail placement moves 4 insts, mean move: 2.25 um, max move: 3.77 um 
+	Max move on inst (g724): (15.95, 15.95) --> (14.79, 13.34)
+	Runtime: CPU: 0:00:00.0 REAL: 0:00:00.0 MEM: 4254.4MB
+Summary Report:
+Instances move: 4 (out of 42 movable)
+Instances flipped: 0
+Mean displacement: 2.25 um
+Max displacement: 3.77 um (Instance: g724) (15.95, 15.95) -> (14.79, 13.34)
+	Length: 6 sites, height: 1 rows, site name: gsclib090site, cell type: CLKINVX3
+Physical-only instances move: 0 (out of 0 movable physical-only)
+Total net bbox length = 4.552e+02 (2.705e+02 1.846e+02) (ext = 7.953e+01)
+Runtime: CPU: 0:00:00.0 REAL: 0:00:00.0 MEM: 4254.4MB
+*** Finished refinePlace (0:02:26 mem=4254.4M) ***
+<CMD_INTERNAL> redraw
+<CMD> get_time_unit
+<CMD> report_timing -output_format binary -max_paths 50000 -max_slack 0.75 -path_exceptions all -early > top.btarpt
+<CMD> load_timing_debug_report -name default_report top.btarpt -max_path_num 10000 -updateCategory 0 -isDrv 0
+Parsing file top.btarpt...
+<CMD> get_time_unit
+<CMD> report_timing -output_format binary -max_paths 50000 -max_slack 0.75 -path_exceptions all -late > top.btarpt
+<CMD> load_timing_debug_report -name default_report top.btarpt -max_path_num 10000 -updateCategory 0 -isDrv 0
+Parsing file top.btarpt...
+<CMD> write_eco -format innovus -output hold.tcl
+<CMD_INTERNAL> zoomSelected
+<CMD_INTERNAL> zoomSelected
+<CMD> all_analysis_views
+best_case worst_case
+<CMD> all_setup_analysis_views
+<CMD> all_hold_analysis_views
+<CMD> get_analysis_view $view -delay_corner
+<CMD> get_delay_corner $dc -rc_corner
+<CMD> all_analysis_views
+best_case worst_case
+<CMD> all_setup_analysis_views
+<CMD> all_hold_analysis_views
+<CMD> get_analysis_view $view -delay_corner
+<CMD> get_delay_corner $dc -rc_corner
+<CMD> all_analysis_views
+best_case worst_case
+<CMD> all_setup_analysis_views
+<CMD> all_hold_analysis_views
+<CMD> get_analysis_view $view -delay_corner
+<CMD> get_delay_corner $dc -rc_corner
+<CMD> add_repeater -cell BUFX2 -net FE_ECON18_n_11
+#################################################################################
+# Design Name: mealy_1001_1100
+# Design Mode: 65nm
+# Analysis Mode: MMMC Non-OCV 
+# Parasitics Mode: SPEF/RCDB 
+# Signoff Settings: SI Off 
+#################################################################################
+Add inst FE_ECOC21_n_11 (BUFX2) to drive load FE_ECOC20_n_11/A 
+*** Starting refinePlace (0:03:29 mem=4278.4M) ***
+Total net bbox length = 4.560e+02 (2.711e+02 1.849e+02) (ext = 7.953e+01)
+Max route layer is changed from 127 to 9 because there is no routing track above this layer
+Max route layer is changed from 127 to 9 because there is no routing track above this layer
+Max route layer is changed from 127 to 9 because there is no routing track above this layer
+Move report: Detail placement moves 5 insts, mean move: 5.92 um, max move: 11.02 um 
+	Max move on inst (g716__1617): (13.34, 13.34) --> (21.75, 15.95)
+	Runtime: CPU: 0:00:00.0 REAL: 0:00:00.0 MEM: 4254.4MB
+Summary Report:
+Instances move: 5 (out of 43 movable)
+Instances flipped: 0
+Mean displacement: 5.92 um
+Max displacement: 11.02 um (Instance: g716__1617) (13.34, 13.34) -> (21.75, 15.95)
+	Length: 5 sites, height: 1 rows, site name: gsclib090site, cell type: NAND2X1
+Physical-only instances move: 0 (out of 0 movable physical-only)
+Total net bbox length = 4.691e+02 (2.795e+02 1.896e+02) (ext = 7.866e+01)
+Runtime: CPU: 0:00:00.0 REAL: 0:00:00.0 MEM: 4254.4MB
+*** Finished refinePlace (0:03:29 mem=4254.4M) ***
+<CMD_INTERNAL> redraw
+**ERROR: (IMPQTF-4008):	Item 'topPw' already exists in form 'etsgtd@frameOnly'.
+**ERROR: (IMPQTF-4008):	Item 'pan1Pw' already exists in form 'etsgtd@frameOnly'.
+**ERROR: (IMPQTF-4008):	Item 'pan11F' already exists in form 'etsgtd@frameOnly'.
+**ERROR: (IMPQTF-4008):	Item 'hstgrm' already exists in form 'etsgtd@frameOnly'.
+**ERROR: (IMPQTF-4008):	Item 'fmpan12' already exists in form 'etsgtd@frameOnly'.
+**ERROR: (IMPQTF-4008):	Item 'fmpan12.1' already exists in form 'etsgtd@frameOnly'.
+**ERROR: (IMPQTF-4008):	Item 'fmpan12.2' already exists in form 'etsgtd@frameOnly'.
+**ERROR: (IMPQTF-4008):	Item 'tpan12' already exists in form 'etsgtd@frameOnly'.
+**ERROR: (IMPQTF-4008):	Item 'b1pan12' already exists in form 'etsgtd@frameOnly'.
+**ERROR: (IMPQTF-4008):	Item 'fmpan2' already exists in form 'etsgtd@frameOnly'.
+**ERROR: (IMPQTF-4008):	Item 'fmpan2.tree' already exists in form 'etsgtd@frameOnly'.
+**ERROR: (IMPQTF-4008):	Item 'fmpan3' already exists in form 'etsgtd@frameOnly'.
+**ERROR: (IMPQTF-4008):	Item 'f0pan3' already exists in form 'etsgtd@frameOnly'.
+**ERROR: (IMPQTF-4008):	Item 'lbpan3' already exists in form 'etsgtd@frameOnly'.
+**ERROR: (IMPQTF-4008):	Item 'f01pan3' already exists in form 'etsgtd@frameOnly'.
+**ERROR: (IMPQTF-4008):	Item 'f0sch' already exists in form 'etsgtd@frameOnly'.
+**ERROR: (IMPQTF-4008):	Item 'f0fpan3' already exists in form 'etsgtd@frameOnly'.
+**ERROR: (IMPQTF-4008):	Item 'f0fpan3_l' already exists in form 'etsgtd@frameOnly'.
+**ERROR: (IMPQTF-4008):	Item 'f0fpan3_prevb' already exists in form 'etsgtd@frameOnly'.
+**ERROR: (IMPQTF-4008):	Item 'f0fpan3_nextb' already exists in form 'etsgtd@frameOnly'.
+**WARN: (EMS-27):	Message (IMPQTF-4008) has exceeded the current message display limit of 20.
+To increase the message display limit, refer to the product command reference manual.
+<CMD> get_time_unit
+<CMD> report_timing -output_format binary -max_paths 50000 -max_slack 0.75 -path_exceptions all -late > top.btarpt
+<CMD> load_timing_debug_report -name default_report top.btarpt -max_path_num 10000 -updateCategory 0 -isDrv 0
+Parsing file top.btarpt...
+<CMD_INTERNAL> zoomSelected
+<CMD_INTERNAL> zoomSelected
+<CMD> all_analysis_views
+best_case worst_case
+<CMD> all_setup_analysis_views
+<CMD> all_hold_analysis_views
+<CMD> get_analysis_view $view -delay_corner
+<CMD> get_delay_corner $dc -rc_corner
+<CMD_INTERNAL> zoomSelected
+<CMD_INTERNAL> zoomSelected
+<CMD_INTERNAL> zoomSelected
+<CMD> all_analysis_views
+best_case worst_case
+<CMD> all_setup_analysis_views
+<CMD> all_hold_analysis_views
+<CMD> get_analysis_view $view -delay_corner
+<CMD> get_delay_corner $dc -rc_corner
+<CMD> add_repeater -cell CLKINVX4 -net n_10
+#################################################################################
+# Design Name: mealy_1001_1100
+# Design Mode: 65nm
+# Analysis Mode: MMMC Non-OCV 
+# Parasitics Mode: SPEF/RCDB 
+# Signoff Settings: SI Off 
+#################################################################################
+**WARN: (IMPOPT-6106):	There is mismatch between RC data and routing for net n_10. Rebuilding the RC network for the net; coupling caps will be grounded.
+Adding a pair of inverters [CLKINVX4].
+Add inst FE_ECOC22_n_10 (CLKINVX4) to drive load state_reg[1]/D 
+Add inst FE_ECOC23_n_10 (CLKINVX4) to drive load state_reg[1]/D 
+*** Starting refinePlace (0:04:06 mem=4278.4M) ***
+Total net bbox length = 4.691e+02 (2.807e+02 1.884e+02) (ext = 7.866e+01)
+**ERROR: (IMPSP-2002):	Density too high (99.8%), stopping detail placement.
+Max route layer is changed from 127 to 9 because there is no routing track above this layer
+Max route layer is changed from 127 to 9 because there is no routing track above this layer
+Total net bbox length = 4.691e+02 (2.807e+02 1.884e+02) (ext = 7.866e+01)
+Runtime: CPU: 0:00:00.0 REAL: 0:00:00.0 MEM: 4278.4MB
+*** Finished refinePlace (0:04:06 mem=4278.4M) ***
+<CMD_INTERNAL> redraw
+<CMD> get_time_unit
+<CMD> report_timing -output_format binary -max_paths 50000 -max_slack 0.75 -path_exceptions all -late > top.btarpt
+<CMD> load_timing_debug_report -name default_report top.btarpt -max_path_num 10000 -updateCategory 0 -isDrv 0
+Parsing file top.btarpt...
+<CMD_INTERNAL> zoomSelected
+<CMD_INTERNAL> zoomSelected
+<CMD> all_analysis_views
+best_case worst_case
+<CMD> all_setup_analysis_views
+<CMD> all_hold_analysis_views
+<CMD> get_analysis_view $view -delay_corner
+<CMD> get_delay_corner $dc -rc_corner
+<CMD_INTERNAL> zoomSelected
+<CMD_INTERNAL> zoomSelected
+<CMD_INTERNAL> zoomSelected
+<CMD> all_analysis_views
+best_case worst_case
+<CMD> all_setup_analysis_views
+<CMD> all_hold_analysis_views
+<CMD> get_analysis_view $view -delay_corner
+<CMD> get_delay_corner $dc -rc_corner
+<CMD> add_repeater -cell CLKINVX4 -net n_10
+#################################################################################
+# Design Name: mealy_1001_1100
+# Design Mode: 65nm
+# Analysis Mode: MMMC Non-OCV 
+# Parasitics Mode: SPEF/RCDB 
+# Signoff Settings: SI Off 
+#################################################################################
+Adding a pair of inverters [CLKINVX4].
+Add inst FE_ECOC24_n_10 (CLKINVX4) to drive load FE_ECOC22_n_10/A 
+Add inst FE_ECOC25_n_10 (CLKINVX4) to drive load FE_ECOC22_n_10/A 
+*** Starting refinePlace (0:04:18 mem=4278.4M) ***
+Total net bbox length = 4.708e+02 (2.813e+02 1.896e+02) (ext = 7.866e+01)
+**ERROR: (IMPSP-2002):	Density too high (103.4%), stopping detail placement.
+Max route layer is changed from 127 to 9 because there is no routing track above this layer
+Max route layer is changed from 127 to 9 because there is no routing track above this layer
+Total net bbox length = 4.708e+02 (2.813e+02 1.896e+02) (ext = 7.866e+01)
+Runtime: CPU: 0:00:00.0 REAL: 0:00:00.0 MEM: 4278.4MB
+*** Finished refinePlace (0:04:18 mem=4278.4M) ***
+<CMD_INTERNAL> redraw
+<CMD> add_repeater -cell CLKINVX4 -net n_4
+#################################################################################
+# Design Name: mealy_1001_1100
+# Design Mode: 65nm
+# Analysis Mode: MMMC Non-OCV 
+# Parasitics Mode: SPEF/RCDB 
+# Signoff Settings: SI Off 
+#################################################################################
+**WARN: (IMPOPT-6106):	There is mismatch between RC data and routing for net n_4. Rebuilding the RC network for the net; coupling caps will be grounded.
+Adding a pair of inverters [CLKINVX4].
+Add inst FE_ECOC26_n_4 (CLKINVX4) to drive load g710__8428/C g716__1617/B g718__5122/B 
+Add inst FE_ECOC27_n_4 (CLKINVX4) to drive load g710__8428/C g716__1617/B g718__5122/B 
+*** Starting refinePlace (0:04:18 mem=4278.4M) ***
+Total net bbox length = 4.732e+02 (2.824e+02 1.907e+02) (ext = 7.866e+01)
+**ERROR: (IMPSP-2002):	Density too high (107.1%), stopping detail placement.
+Max route layer is changed from 127 to 9 because there is no routing track above this layer
+Max route layer is changed from 127 to 9 because there is no routing track above this layer
+Total net bbox length = 4.732e+02 (2.824e+02 1.907e+02) (ext = 7.866e+01)
+Runtime: CPU: 0:00:00.0 REAL: 0:00:00.0 MEM: 4278.4MB
+*** Finished refinePlace (0:04:18 mem=4278.4M) ***
+<CMD_INTERNAL> redraw
+<CMD> get_time_unit
+<CMD> report_timing -output_format binary -max_paths 50000 -max_slack 0.75 -path_exceptions all -late > top.btarpt
+<CMD> load_timing_debug_report -name default_report top.btarpt -max_path_num 10000 -updateCategory 0 -isDrv 0
+Parsing file top.btarpt...
+**WARN: (IMPSYC-123):	No wire on net FE_ECON7_n_17.
+**WARN: (IMPSYC-123):	No wire on net FE_ECON6_n_17.
+**WARN: (IMPSYC-123):	No wire on net FE_ECON5_n_17.
+**WARN: (IMPSYC-123):	No wire on net FE_ECON7_n_17.
+**WARN: (IMPSYC-123):	No wire on net FE_ECON6_n_17.
+**WARN: (IMPSYC-123):	No wire on net FE_ECON5_n_17.
+<CMD_INTERNAL> zoomSelected
+<CMD_INTERNAL> zoomSelected
+<CMD_INTERNAL> zoomSelected
+<CMD_INTERNAL> zoomSelected
+<CMD_INTERNAL> zoomSelected
+<CMD_INTERNAL> zoomSelected
+<CMD> all_analysis_views
+best_case worst_case
+<CMD> all_setup_analysis_views
+<CMD> all_hold_analysis_views
+<CMD> get_analysis_view $view -delay_corner
+<CMD> get_delay_corner $dc -rc_corner
+<CMD> delete_repeater -inst FE_ECOC27_n_4
+#################################################################################
+# Design Name: mealy_1001_1100
+# Design Mode: 65nm
+# Analysis Mode: MMMC Non-OCV 
+# Parasitics Mode: SPEF/RCDB 
+# Signoff Settings: SI Off 
+#################################################################################
+Delete FE_ECOC26_n_4 (CLKINVX4).
+Delete FE_ECOC27_n_4 (CLKINVX4).
+<CMD_INTERNAL> redraw
+<CMD> get_time_unit
+<CMD> report_timing -output_format binary -max_paths 50000 -max_slack 0.75 -path_exceptions all -late > top.btarpt
+<CMD> load_timing_debug_report -name default_report top.btarpt -max_path_num 10000 -updateCategory 0 -isDrv 0
+Parsing file top.btarpt...
+**WARN: (IMPSYC-123):	No wire on net FE_ECON7_n_17.
+**WARN: (IMPSYC-123):	No wire on net FE_ECON6_n_17.
+**WARN: (IMPSYC-123):	No wire on net FE_ECON5_n_17.
+**WARN: (IMPSYC-123):	No wire on net FE_ECON7_n_17.
+**WARN: (IMPSYC-123):	No wire on net FE_ECON6_n_17.
+**WARN: (IMPSYC-123):	No wire on net FE_ECON5_n_17.
+<CMD_INTERNAL> zoomSelected
+<CMD_INTERNAL> zoomSelected
+<CMD_INTERNAL> zoomSelected
+<CMD_INTERNAL> zoomSelected
+<CMD_INTERNAL> zoomSelected
+<CMD_INTERNAL> zoomSelected
+<CMD_INTERNAL> zoomSelected
+<CMD_INTERNAL> zoomSelected
+<CMD_INTERNAL> zoomSelected
+<CMD_INTERNAL> zoomSelected
+<CMD_INTERNAL> zoomSelected
+<CMD_INTERNAL> zoomSelected
+<CMD_INTERNAL> zoomSelected
+<CMD_INTERNAL> zoomSelected
+<CMD_INTERNAL> zoomSelected
+<CMD_INTERNAL> zoomSelected
+<CMD_INTERNAL> zoomSelected
+<CMD_INTERNAL> zoomSelected
+<CMD> all_analysis_views
+best_case worst_case
+<CMD> all_setup_analysis_views
+<CMD> all_hold_analysis_views
+<CMD> get_analysis_view $view -delay_corner
+<CMD> get_delay_corner $dc -rc_corner
+<CMD> add_repeater -cell CLKINVX4 -net n_4
+#################################################################################
+# Design Name: mealy_1001_1100
+# Design Mode: 65nm
+# Analysis Mode: MMMC Non-OCV 
+# Parasitics Mode: SPEF/RCDB 
+# Signoff Settings: SI Off 
+#################################################################################
+Adding a pair of inverters [CLKINVX4].
+Add inst FE_ECOC28_n_4 (CLKINVX4) to drive load g718__5122/B g716__1617/B g710__8428/C 
+Add inst FE_ECOC29_n_4 (CLKINVX4) to drive load g718__5122/B g716__1617/B g710__8428/C 
+*** Starting refinePlace (0:04:27 mem=4297.4M) ***
+Total net bbox length = 4.732e+02 (2.824e+02 1.907e+02) (ext = 7.866e+01)
+**ERROR: (IMPSP-2002):	Density too high (107.1%), stopping detail placement.
+Max route layer is changed from 127 to 9 because there is no routing track above this layer
+Max route layer is changed from 127 to 9 because there is no routing track above this layer
+Total net bbox length = 4.732e+02 (2.824e+02 1.907e+02) (ext = 7.866e+01)
+Runtime: CPU: 0:00:00.0 REAL: 0:00:00.0 MEM: 4297.4MB
+*** Finished refinePlace (0:04:27 mem=4297.4M) ***
+<CMD_INTERNAL> redraw
+<CMD> get_time_unit
+<CMD> report_timing -output_format binary -max_paths 50000 -max_slack 0.75 -path_exceptions all -late > top.btarpt
+<CMD> load_timing_debug_report -name default_report top.btarpt -max_path_num 10000 -updateCategory 0 -isDrv 0
+Parsing file top.btarpt...
+**WARN: (IMPSYC-123):	No wire on net FE_ECON7_n_17.
+**WARN: (IMPSYC-123):	No wire on net FE_ECON6_n_17.
+**WARN: (IMPSYC-123):	No wire on net FE_ECON5_n_17.
+**WARN: (IMPSYC-123):	No wire on net FE_ECON7_n_17.
+**WARN: (IMPSYC-123):	No wire on net FE_ECON6_n_17.
+**WARN: (IMPSYC-123):	No wire on net FE_ECON5_n_17.
+<CMD_INTERNAL> zoomSelected
+<CMD_INTERNAL> zoomSelected
+<CMD_INTERNAL> zoomSelected
+<CMD_INTERNAL> zoomSelected
+<CMD_INTERNAL> zoomSelected
+<CMD_INTERNAL> zoomSelected
+<CMD> all_analysis_views
+best_case worst_case
+<CMD> all_setup_analysis_views
+<CMD> all_hold_analysis_views
+<CMD> get_analysis_view $view -delay_corner
+<CMD> get_delay_corner $dc -rc_corner
+<CMD> delete_repeater -inst FE_ECOC4_n_17
+#################################################################################
+# Design Name: mealy_1001_1100
+# Design Mode: 65nm
+# Analysis Mode: MMMC Non-OCV 
+# Parasitics Mode: SPEF/RCDB 
+# Signoff Settings: SI Off 
+#################################################################################
+Delete FE_ECOC4_n_17 (BUFX2).
+<CMD_INTERNAL> redraw
+<CMD_INTERNAL> zoomSelected
+<CMD_INTERNAL> zoomSelected
+<CMD_INTERNAL> zoomSelected
+<CMD> all_analysis_views
+best_case worst_case
+<CMD> all_setup_analysis_views
+<CMD> all_hold_analysis_views
+<CMD> get_analysis_view $view -delay_corner
+<CMD> get_delay_corner $dc -rc_corner
+<CMD> delete_repeater -inst FE_ECOC5_n_17
+#################################################################################
+# Design Name: mealy_1001_1100
+# Design Mode: 65nm
+# Analysis Mode: MMMC Non-OCV 
+# Parasitics Mode: SPEF/RCDB 
+# Signoff Settings: SI Off 
+#################################################################################
+Delete FE_ECOC5_n_17 (BUFX2).
+<CMD_INTERNAL> redraw
+<CMD_INTERNAL> zoomSelected
+<CMD_INTERNAL> zoomSelected
+<CMD_INTERNAL> zoomSelected
+<CMD> all_analysis_views
+best_case worst_case
+<CMD> all_setup_analysis_views
+<CMD> all_hold_analysis_views
+<CMD> get_analysis_view $view -delay_corner
+<CMD> get_delay_corner $dc -rc_corner
+<CMD> delete_repeater -inst FE_ECOC1_n_17
+#################################################################################
+# Design Name: mealy_1001_1100
+# Design Mode: 65nm
+# Analysis Mode: MMMC Non-OCV 
+# Parasitics Mode: SPEF/RCDB 
+# Signoff Settings: SI Off 
+#################################################################################
+Delete FE_ECOC1_n_17 (BUFX2).
+<CMD_INTERNAL> redraw
+<CMD> get_time_unit
+<CMD> report_timing -output_format binary -max_paths 50000 -max_slack 0.75 -path_exceptions all -late > top.btarpt
+<CMD> load_timing_debug_report -name default_report top.btarpt -max_path_num 10000 -updateCategory 0 -isDrv 0
+Parsing file top.btarpt...
+**WARN: (IMPSYC-123):	No wire on net FE_ECON7_n_17.
+**WARN: (IMPSYC-123):	No wire on net FE_ECON7_n_17.
+<CMD_INTERNAL> zoomSelected
+<CMD_INTERNAL> zoomSelected
+<CMD_INTERNAL> zoomSelected
+<CMD> all_analysis_views
+best_case worst_case
+<CMD> all_setup_analysis_views
+<CMD> all_hold_analysis_views
+<CMD> get_analysis_view $view -delay_corner
+<CMD> get_delay_corner $dc -rc_corner
+<CMD> delete_repeater -inst FE_ECOC7_n_17
+#################################################################################
+# Design Name: mealy_1001_1100
+# Design Mode: 65nm
+# Analysis Mode: MMMC Non-OCV 
+# Parasitics Mode: SPEF/RCDB 
+# Signoff Settings: SI Off 
+#################################################################################
+Delete FE_ECOC7_n_17 (BUFX2).
+<CMD_INTERNAL> redraw
+<CMD_INTERNAL> zoomSelected
+<CMD_INTERNAL> zoomSelected
+<CMD_INTERNAL> zoomSelected
+<CMD> all_analysis_views
+best_case worst_case
+<CMD> all_setup_analysis_views
+<CMD> all_hold_analysis_views
+<CMD> get_analysis_view $view -delay_corner
+<CMD> get_delay_corner $dc -rc_corner
+<CMD> delete_repeater -inst FE_ECOC6_n_17
+#################################################################################
+# Design Name: mealy_1001_1100
+# Design Mode: 65nm
+# Analysis Mode: MMMC Non-OCV 
+# Parasitics Mode: SPEF/RCDB 
+# Signoff Settings: SI Off 
+#################################################################################
+Delete FE_ECOC6_n_17 (BUFX2).
+<CMD_INTERNAL> redraw
+<CMD> get_time_unit
+<CMD> report_timing -output_format binary -max_paths 50000 -max_slack 0.75 -path_exceptions all -late > top.btarpt
+<CMD> load_timing_debug_report -name default_report top.btarpt -max_path_num 10000 -updateCategory 0 -isDrv 0
+Parsing file top.btarpt...
+<CMD_INTERNAL> zoomSelected
+<CMD_INTERNAL> zoomSelected
+<CMD_INTERNAL> zoomSelected
+<CMD> all_analysis_views
+best_case worst_case
+<CMD> all_setup_analysis_views
+<CMD> all_hold_analysis_views
+<CMD> get_analysis_view $view -delay_corner
+<CMD> get_delay_corner $dc -rc_corner
+<CMD> add_repeater -cell BUFX2 -net n_4
+#################################################################################
+# Design Name: mealy_1001_1100
+# Design Mode: 65nm
+# Analysis Mode: MMMC Non-OCV 
+# Parasitics Mode: SPEF/RCDB 
+# Signoff Settings: SI Off 
+#################################################################################
+Add inst FE_ECOC30_n_4 (BUFX2) to drive load FE_ECOC28_n_4/A 
+*** Starting refinePlace (0:04:33 mem=4297.4M) ***
+Total net bbox length = 4.362e+02 (2.562e+02 1.800e+02) (ext = 7.866e+01)
+**ERROR: (IMPSP-2002):	Density too high (101.6%), stopping detail placement.
+Max route layer is changed from 127 to 9 because there is no routing track above this layer
+Max route layer is changed from 127 to 9 because there is no routing track above this layer
+Total net bbox length = 4.362e+02 (2.562e+02 1.800e+02) (ext = 7.866e+01)
+Runtime: CPU: 0:00:00.0 REAL: 0:00:00.0 MEM: 4297.4MB
+*** Finished refinePlace (0:04:33 mem=4297.4M) ***
+<CMD_INTERNAL> redraw
+<CMD> get_time_unit
+<CMD> report_timing -output_format binary -max_paths 50000 -max_slack 0.75 -path_exceptions all -late > top.btarpt
+<CMD> load_timing_debug_report -name default_report top.btarpt -max_path_num 10000 -updateCategory 0 -isDrv 0
+Parsing file top.btarpt...
+<CMD_INTERNAL> zoomSelected
+<CMD_INTERNAL> zoomSelected
+<CMD_INTERNAL> zoomSelected
+<CMD> all_analysis_views
+best_case worst_case
+<CMD> all_setup_analysis_views
+<CMD> all_hold_analysis_views
+<CMD> get_analysis_view $view -delay_corner
+<CMD> get_delay_corner $dc -rc_corner
+<CMD> delete_repeater -inst FE_ECOC9_n_9
+#################################################################################
+# Design Name: mealy_1001_1100
+# Design Mode: 65nm
+# Analysis Mode: MMMC Non-OCV 
+# Parasitics Mode: SPEF/RCDB 
+# Signoff Settings: SI Off 
+#################################################################################
+Delete FE_ECOC9_n_9 (BUFX2).
+<CMD_INTERNAL> redraw
+<CMD> get_time_unit
+<CMD> report_timing -output_format binary -max_paths 50000 -max_slack 0.75 -path_exceptions all -late > top.btarpt
+<CMD> load_timing_debug_report -name default_report top.btarpt -max_path_num 10000 -updateCategory 0 -isDrv 0
+Parsing file top.btarpt...
+<CMD_INTERNAL> zoomSelected
+<CMD_INTERNAL> zoomSelected
+<CMD_INTERNAL> zoomSelected
+<CMD> all_analysis_views
+best_case worst_case
+<CMD> all_setup_analysis_views
+<CMD> all_hold_analysis_views
+<CMD> get_analysis_view $view -delay_corner
+<CMD> get_delay_corner $dc -rc_corner
+<CMD> delete_repeater -inst FE_ECOC30_n_4
+#################################################################################
+# Design Name: mealy_1001_1100
+# Design Mode: 65nm
+# Analysis Mode: MMMC Non-OCV 
+# Parasitics Mode: SPEF/RCDB 
+# Signoff Settings: SI Off 
+#################################################################################
+Delete FE_ECOC30_n_4 (BUFX2).
+<CMD_INTERNAL> redraw
+<CMD_INTERNAL> zoomSelected
+<CMD_INTERNAL> zoomSelected
+<CMD_INTERNAL> zoomSelected
+<CMD> all_analysis_views
+best_case worst_case
+<CMD> all_setup_analysis_views
+<CMD> all_hold_analysis_views
+<CMD> get_analysis_view $view -delay_corner
+<CMD> get_delay_corner $dc -rc_corner
+<CMD> delete_repeater -inst FE_ECOC17_n_16
+#################################################################################
+# Design Name: mealy_1001_1100
+# Design Mode: 65nm
+# Analysis Mode: MMMC Non-OCV 
+# Parasitics Mode: SPEF/RCDB 
+# Signoff Settings: SI Off 
+#################################################################################
+Delete FE_ECOC17_n_16 (BUFX2).
+<CMD_INTERNAL> redraw
+<CMD> get_time_unit
+<CMD> report_timing -output_format binary -max_paths 50000 -max_slack 0.75 -path_exceptions all -late > top.btarpt
+<CMD> load_timing_debug_report -name default_report top.btarpt -max_path_num 10000 -updateCategory 0 -isDrv 0
+Parsing file top.btarpt...
+<CMD> all_analysis_views
+best_case worst_case
+<CMD> all_setup_analysis_views
+<CMD> all_hold_analysis_views
+<CMD> get_analysis_view $view -delay_corner
+<CMD> get_delay_corner $dc -rc_corner
+<CMD> add_repeater -cell BUFX2 -net n_4
+#################################################################################
+# Design Name: mealy_1001_1100
+# Design Mode: 65nm
+# Analysis Mode: MMMC Non-OCV 
+# Parasitics Mode: SPEF/RCDB 
+# Signoff Settings: SI Off 
+#################################################################################
+Add inst FE_ECOC31_n_4 (BUFX2) to drive load FE_ECOC28_n_4/A 
+*** Starting refinePlace (0:04:41 mem=4297.4M) ***
+Total net bbox length = 4.357e+02 (2.562e+02 1.794e+02) (ext = 7.866e+01)
+Max route layer is changed from 127 to 9 because there is no routing track above this layer
+Max route layer is changed from 127 to 9 because there is no routing track above this layer
+Max route layer is changed from 127 to 9 because there is no routing track above this layer
+**WARN: (IMPSP-2020):	Cannot find a legal location for instance 'g714__8246' (Cell NAND2X1).
+**WARN: (IMPSP-2020):	Cannot find a legal location for instance 'g719__1705' (Cell NAND2X1).
+**ERROR: (IMPSP-2021):	Could not legalize <2> instances in the design. Check warning message IMPSP-270, IMPSP-452, IMPSP-2024, IMPSP-2039, IMPSP-2040, IMPSP-2042, or IMPSP-2020 in the log file for more details.Move report: Detail placement moves 21 insts, mean move: 6.19 um, max move: 15.37 um 
+	Max move on inst (g716__1617): (21.75, 15.95) --> (31.90, 10.73)
+	Runtime: CPU: 0:00:00.0 REAL: 0:00:00.0 MEM: 4273.4MB
+Summary Report:
+Instances move: 21 (out of 43 movable)
+Instances flipped: 2
+Mean displacement: 6.19 um
+Max displacement: 15.37 um (Instance: g716__1617) (21.75, 15.95) -> (31.9, 10.73)
+	Length: 5 sites, height: 1 rows, site name: gsclib090site, cell type: NAND2X1
+Physical-only instances move: 0 (out of 0 movable physical-only)
+Total net bbox length = 5.374e+02 (3.282e+02 2.092e+02) (ext = 9.217e+01)
+Runtime: CPU: 0:00:00.0 REAL: 0:00:00.0 MEM: 4273.4MB
+*** Finished refinePlace (0:04:41 mem=4273.4M) ***
+<CMD_INTERNAL> redraw
+<CMD> get_time_unit
+<CMD> report_timing -output_format binary -max_paths 50000 -max_slack 0.75 -path_exceptions all -late > top.btarpt
+<CMD> load_timing_debug_report -name default_report top.btarpt -max_path_num 10000 -updateCategory 0 -isDrv 0
+Parsing file top.btarpt...
+<CMD_INTERNAL> zoomSelected
+<CMD_INTERNAL> zoomSelected
+<CMD_INTERNAL> zoomSelected
+<CMD> all_analysis_views
+best_case worst_case
+<CMD> all_setup_analysis_views
+<CMD> all_hold_analysis_views
+<CMD> get_analysis_view $view -delay_corner
+<CMD> get_delay_corner $dc -rc_corner
+<CMD> all_analysis_views
+best_case worst_case
+<CMD> all_setup_analysis_views
+<CMD> all_hold_analysis_views
+<CMD> get_analysis_view $view -delay_corner
+<CMD> get_delay_corner $dc -rc_corner
+<CMD> change_cell -inst g711__6783 -cell NOR3X2
+#################################################################################
+# Design Name: mealy_1001_1100
+# Design Mode: 65nm
+# Analysis Mode: MMMC Non-OCV 
+# Parasitics Mode: SPEF/RCDB 
+# Signoff Settings: SI Off 
+#################################################################################
+Resize g711__6783 (NOR3X1) to NOR3X2.
+<CMD_INTERNAL> redraw
+<CMD> get_time_unit
+<CMD> report_timing -output_format binary -max_paths 50000 -max_slack 0.75 -path_exceptions all -late > top.btarpt
+<CMD> load_timing_debug_report -name default_report top.btarpt -max_path_num 10000 -updateCategory 0 -isDrv 0
+Parsing file top.btarpt...
+<CMD_INTERNAL> zoomSelected
+<CMD_INTERNAL> zoomSelected
+<CMD_INTERNAL> zoomSelected
+<CMD> all_analysis_views
+best_case worst_case
+<CMD> all_setup_analysis_views
+<CMD> all_hold_analysis_views
+<CMD> get_analysis_view $view -delay_corner
+<CMD> get_delay_corner $dc -rc_corner
+<CMD> change_cell -inst g708__6260 -cell NOR2BX2
+#################################################################################
+# Design Name: mealy_1001_1100
+# Design Mode: 65nm
+# Analysis Mode: MMMC Non-OCV 
+# Parasitics Mode: SPEF/RCDB 
+# Signoff Settings: SI Off 
+#################################################################################
+Resize g708__6260 (NOR2BX1) to NOR2BX2.
+<CMD_INTERNAL> redraw
+<CMD> get_time_unit
+<CMD> report_timing -output_format binary -max_paths 50000 -max_slack 0.75 -path_exceptions all -late > top.btarpt
+<CMD> load_timing_debug_report -name default_report top.btarpt -max_path_num 10000 -updateCategory 0 -isDrv 0
+Parsing file top.btarpt...
+<CMD_INTERNAL> zoomSelected
+<CMD_INTERNAL> zoomSelected
+<CMD_INTERNAL> zoomSelected
+<CMD> all_analysis_views
+best_case worst_case
+<CMD> all_setup_analysis_views
+<CMD> all_hold_analysis_views
+<CMD> get_analysis_view $view -delay_corner
+<CMD> get_delay_corner $dc -rc_corner
+<CMD> change_cell -inst g708__6260 -cell NOR2BX1
+#################################################################################
+# Design Name: mealy_1001_1100
+# Design Mode: 65nm
+# Analysis Mode: MMMC Non-OCV 
+# Parasitics Mode: SPEF/RCDB 
+# Signoff Settings: SI Off 
+#################################################################################
+Resize g708__6260 (NOR2BX2) to NOR2BX1.
+<CMD_INTERNAL> redraw
+<CMD_INTERNAL> zoomSelected
+<CMD_INTERNAL> zoomSelected
+<CMD_INTERNAL> zoomSelected
+<CMD> all_analysis_views
+best_case worst_case
+<CMD> all_setup_analysis_views
+<CMD> all_hold_analysis_views
+<CMD> get_analysis_view $view -delay_corner
+<CMD> get_delay_corner $dc -rc_corner
+<CMD> all_analysis_views
+best_case worst_case
+<CMD> all_setup_analysis_views
+<CMD> all_hold_analysis_views
+<CMD> get_analysis_view $view -delay_corner
+<CMD> get_delay_corner $dc -rc_corner
+<CMD> change_cell -inst g711__6783 -cell NOR3X4
+#################################################################################
+# Design Name: mealy_1001_1100
+# Design Mode: 65nm
+# Analysis Mode: MMMC Non-OCV 
+# Parasitics Mode: SPEF/RCDB 
+# Signoff Settings: SI Off 
+#################################################################################
+Resize g711__6783 (NOR3X2) to NOR3X4.
+<CMD_INTERNAL> redraw
+<CMD> get_time_unit
+<CMD> report_timing -output_format binary -max_paths 50000 -max_slack 0.75 -path_exceptions all -late > top.btarpt
+<CMD> load_timing_debug_report -name default_report top.btarpt -max_path_num 10000 -updateCategory 0 -isDrv 0
+Parsing file top.btarpt...
+<CMD_INTERNAL> zoomSelected
+<CMD_INTERNAL> zoomSelected
+<CMD_INTERNAL> zoomSelected
+<CMD> all_analysis_views
+best_case worst_case
+<CMD> all_setup_analysis_views
+<CMD> all_hold_analysis_views
+<CMD> get_analysis_view $view -delay_corner
+<CMD> get_delay_corner $dc -rc_corner
+<CMD> change_cell -inst g708__6260 -cell NOR2BX4
+#################################################################################
+# Design Name: mealy_1001_1100
+# Design Mode: 65nm
+# Analysis Mode: MMMC Non-OCV 
+# Parasitics Mode: SPEF/RCDB 
+# Signoff Settings: SI Off 
+#################################################################################
+Resize g708__6260 (NOR2BX1) to NOR2BX4.
+<CMD_INTERNAL> redraw
+<CMD> get_time_unit
+<CMD> report_timing -output_format binary -max_paths 50000 -max_slack 0.75 -path_exceptions all -late > top.btarpt
+<CMD> load_timing_debug_report -name default_report top.btarpt -max_path_num 10000 -updateCategory 0 -isDrv 0
+Parsing file top.btarpt...
+<CMD_INTERNAL> zoomSelected
+<CMD_INTERNAL> zoomSelected
+<CMD_INTERNAL> zoomSelected
+<CMD> all_analysis_views
+best_case worst_case
+<CMD> all_setup_analysis_views
+<CMD> all_hold_analysis_views
+<CMD> get_analysis_view $view -delay_corner
+<CMD> get_delay_corner $dc -rc_corner
+<CMD_INTERNAL> zoomSelected
+<CMD_INTERNAL> zoomSelected
+<CMD_INTERNAL> zoomSelected
+<CMD> all_analysis_views
+best_case worst_case
+<CMD> all_setup_analysis_views
+<CMD> all_hold_analysis_views
+<CMD> get_analysis_view $view -delay_corner
+<CMD> get_delay_corner $dc -rc_corner
+<CMD> delete_repeater -inst FE_ECOC8_n_9
+#################################################################################
+# Design Name: mealy_1001_1100
+# Design Mode: 65nm
+# Analysis Mode: MMMC Non-OCV 
+# Parasitics Mode: SPEF/RCDB 
+# Signoff Settings: SI Off 
+#################################################################################
+Delete FE_ECOC8_n_9 (BUFX2).
+<CMD_INTERNAL> redraw
+<CMD> get_time_unit
+<CMD> report_timing -output_format binary -max_paths 50000 -max_slack 0.75 -path_exceptions all -late > top.btarpt
+<CMD> load_timing_debug_report -name default_report top.btarpt -max_path_num 10000 -updateCategory 0 -isDrv 0
+Parsing file top.btarpt...
+<CMD_INTERNAL> zoomSelected
+<CMD_INTERNAL> zoomSelected
+<CMD_INTERNAL> zoomSelected
+<CMD> all_analysis_views
+best_case worst_case
+<CMD> all_setup_analysis_views
+<CMD> all_hold_analysis_views
+<CMD> get_analysis_view $view -delay_corner
+<CMD> get_delay_corner $dc -rc_corner
+<CMD> change_cell -inst g708__6260 -cell NOR2BX1
+#################################################################################
+# Design Name: mealy_1001_1100
+# Design Mode: 65nm
+# Analysis Mode: MMMC Non-OCV 
+# Parasitics Mode: SPEF/RCDB 
+# Signoff Settings: SI Off 
+#################################################################################
+Resize g708__6260 (NOR2BX4) to NOR2BX1.
+<CMD_INTERNAL> redraw
+<CMD> get_time_unit
+<CMD> report_timing -output_format binary -max_paths 50000 -max_slack 0.75 -path_exceptions all -late > top.btarpt
+<CMD> load_timing_debug_report -name default_report top.btarpt -max_path_num 10000 -updateCategory 0 -isDrv 0
+Parsing file top.btarpt...
+<CMD_INTERNAL> zoomSelected
+<CMD_INTERNAL> zoomSelected
+<CMD_INTERNAL> zoomSelected
+<CMD> all_analysis_views
+best_case worst_case
+<CMD> all_setup_analysis_views
+<CMD> all_hold_analysis_views
+<CMD> get_analysis_view $view -delay_corner
+<CMD> get_delay_corner $dc -rc_corner
+<CMD> change_cell -inst g712__5526 -cell NOR3X2
+#################################################################################
+# Design Name: mealy_1001_1100
+# Design Mode: 65nm
+# Analysis Mode: MMMC Non-OCV 
+# Parasitics Mode: SPEF/RCDB 
+# Signoff Settings: SI Off 
+#################################################################################
+Resize g712__5526 (NOR3X1) to NOR3X2.
+<CMD_INTERNAL> redraw
+<CMD> get_time_unit
+<CMD> report_timing -output_format binary -max_paths 50000 -max_slack 0.75 -path_exceptions all -late > top.btarpt
+<CMD> load_timing_debug_report -name default_report top.btarpt -max_path_num 10000 -updateCategory 0 -isDrv 0
+Parsing file top.btarpt...
+<CMD_INTERNAL> zoomSelected
+<CMD_INTERNAL> zoomSelected
+<CMD_INTERNAL> zoomSelected
+<CMD> all_analysis_views
+best_case worst_case
+<CMD> all_setup_analysis_views
+<CMD> all_hold_analysis_views
+<CMD> get_analysis_view $view -delay_corner
+<CMD> get_delay_corner $dc -rc_corner
+<CMD_INTERNAL> zoomSelected
+<CMD_INTERNAL> zoomSelected
+<CMD_INTERNAL> zoomSelected
+<CMD> all_analysis_views
+best_case worst_case
+<CMD> all_setup_analysis_views
+<CMD> all_hold_analysis_views
+<CMD> get_analysis_view $view -delay_corner
+<CMD> get_delay_corner $dc -rc_corner
+<CMD> change_cell -inst FE_ECOC24_n_10 -cell CLKINVX6
+#################################################################################
+# Design Name: mealy_1001_1100
+# Design Mode: 65nm
+# Analysis Mode: MMMC Non-OCV 
+# Parasitics Mode: SPEF/RCDB 
+# Signoff Settings: SI Off 
+#################################################################################
+Resize FE_ECOC24_n_10 (CLKINVX4) to CLKINVX6.
+<CMD_INTERNAL> redraw
+<CMD> get_time_unit
+<CMD> report_timing -output_format binary -max_paths 50000 -max_slack 0.75 -path_exceptions all -late > top.btarpt
+<CMD> load_timing_debug_report -name default_report top.btarpt -max_path_num 10000 -updateCategory 0 -isDrv 0
+Parsing file top.btarpt...
+<CMD_INTERNAL> zoomSelected
+<CMD_INTERNAL> zoomSelected
+<CMD_INTERNAL> zoomSelected
+<CMD> all_analysis_views
+best_case worst_case
+<CMD> all_setup_analysis_views
+<CMD> all_hold_analysis_views
+<CMD> get_analysis_view $view -delay_corner
+<CMD> get_delay_corner $dc -rc_corner
+<CMD> change_cell -inst FE_ECOC24_n_10 -cell CLKINVX4
+#################################################################################
+# Design Name: mealy_1001_1100
+# Design Mode: 65nm
+# Analysis Mode: MMMC Non-OCV 
+# Parasitics Mode: SPEF/RCDB 
+# Signoff Settings: SI Off 
+#################################################################################
+Resize FE_ECOC24_n_10 (CLKINVX6) to CLKINVX4.
+<CMD_INTERNAL> redraw
+<CMD_INTERNAL> zoomSelected
+<CMD_INTERNAL> zoomSelected
+<CMD_INTERNAL> zoomSelected
+<CMD> all_analysis_views
+best_case worst_case
+<CMD> all_setup_analysis_views
+<CMD> all_hold_analysis_views
+<CMD> get_analysis_view $view -delay_corner
+<CMD> get_delay_corner $dc -rc_corner
+<CMD> change_cell -inst FE_ECOC24_n_10 -cell CLKINVX4
+#################################################################################
+# Design Name: mealy_1001_1100
+# Design Mode: 65nm
+# Analysis Mode: MMMC Non-OCV 
+# Parasitics Mode: SPEF/RCDB 
+# Signoff Settings: SI Off 
+#################################################################################
+Resize FE_ECOC24_n_10 (CLKINVX4) to CLKINVX4.
+<CMD_INTERNAL> redraw
+<CMD_INTERNAL> zoomSelected
+<CMD_INTERNAL> zoomSelected
+<CMD_INTERNAL> zoomSelected
+<CMD> all_analysis_views
+best_case worst_case
+<CMD> all_setup_analysis_views
+<CMD> all_hold_analysis_views
+<CMD> get_analysis_view $view -delay_corner
+<CMD> get_delay_corner $dc -rc_corner
+<CMD> change_cell -inst g712__5526 -cell NOR3X4
+#################################################################################
+# Design Name: mealy_1001_1100
+# Design Mode: 65nm
+# Analysis Mode: MMMC Non-OCV 
+# Parasitics Mode: SPEF/RCDB 
+# Signoff Settings: SI Off 
+#################################################################################
+Resize g712__5526 (NOR3X2) to NOR3X4.
+<CMD_INTERNAL> redraw
+<CMD> all_analysis_views
+best_case worst_case
+<CMD> all_setup_analysis_views
+<CMD> all_hold_analysis_views
+<CMD> get_analysis_view $view -delay_corner
+<CMD> get_delay_corner $dc -rc_corner
+<CMD> get_time_unit
+<CMD> report_timing -output_format binary -max_paths 50000 -max_slack 0.75 -path_exceptions all -late > top.btarpt
+<CMD> load_timing_debug_report -name default_report top.btarpt -max_path_num 10000 -updateCategory 0 -isDrv 0
+Parsing file top.btarpt...
+<CMD_INTERNAL> zoomSelected
+<CMD_INTERNAL> zoomSelected
+<CMD_INTERNAL> zoomSelected
+<CMD> all_analysis_views
+best_case worst_case
+<CMD> all_setup_analysis_views
+<CMD> all_hold_analysis_views
+<CMD> get_analysis_view $view -delay_corner
+<CMD> get_delay_corner $dc -rc_corner
+<CMD> change_cell -inst FE_ECOC24_n_10 -cell CLKINVX3
+#################################################################################
+# Design Name: mealy_1001_1100
+# Design Mode: 65nm
+# Analysis Mode: MMMC Non-OCV 
+# Parasitics Mode: SPEF/RCDB 
+# Signoff Settings: SI Off 
+#################################################################################
+Resize FE_ECOC24_n_10 (CLKINVX4) to CLKINVX3.
+<CMD_INTERNAL> redraw
+<CMD_INTERNAL> zoomSelected
+<CMD_INTERNAL> zoomSelected
+<CMD_INTERNAL> zoomSelected
+<CMD> all_analysis_views
+best_case worst_case
+<CMD> all_setup_analysis_views
+<CMD> all_hold_analysis_views
+<CMD> get_analysis_view $view -delay_corner
+<CMD> get_delay_corner $dc -rc_corner
+<CMD> change_cell -inst FE_ECOC25_n_10 -cell CLKINVX3
+#################################################################################
+# Design Name: mealy_1001_1100
+# Design Mode: 65nm
+# Analysis Mode: MMMC Non-OCV 
+# Parasitics Mode: SPEF/RCDB 
+# Signoff Settings: SI Off 
+#################################################################################
+Resize FE_ECOC25_n_10 (CLKINVX4) to CLKINVX3.
+<CMD_INTERNAL> redraw
+<CMD> get_time_unit
+<CMD> report_timing -output_format binary -max_paths 50000 -max_slack 0.75 -path_exceptions all -late > top.btarpt
+<CMD> load_timing_debug_report -name default_report top.btarpt -max_path_num 10000 -updateCategory 0 -isDrv 0
+Parsing file top.btarpt...
+<CMD_INTERNAL> zoomSelected
+<CMD_INTERNAL> zoomSelected
+<CMD_INTERNAL> zoomSelected
+<CMD> all_analysis_views
+best_case worst_case
+<CMD> all_setup_analysis_views
+<CMD> all_hold_analysis_views
+<CMD> get_analysis_view $view -delay_corner
+<CMD> get_delay_corner $dc -rc_corner
+<CMD> change_cell -inst FE_ECOC22_n_10 -cell CLKINVX3
+#################################################################################
+# Design Name: mealy_1001_1100
+# Design Mode: 65nm
+# Analysis Mode: MMMC Non-OCV 
+# Parasitics Mode: SPEF/RCDB 
+# Signoff Settings: SI Off 
+#################################################################################
+Resize FE_ECOC22_n_10 (CLKINVX4) to CLKINVX3.
+<CMD_INTERNAL> redraw
+<CMD_INTERNAL> zoomSelected
+<CMD_INTERNAL> zoomSelected
+<CMD_INTERNAL> zoomSelected
+<CMD> all_analysis_views
+best_case worst_case
+<CMD> all_setup_analysis_views
+<CMD> all_hold_analysis_views
+<CMD> get_analysis_view $view -delay_corner
+<CMD> get_delay_corner $dc -rc_corner
+<CMD> change_cell -inst FE_ECOC23_n_10 -cell CLKINVX3
+#################################################################################
+# Design Name: mealy_1001_1100
+# Design Mode: 65nm
+# Analysis Mode: MMMC Non-OCV 
+# Parasitics Mode: SPEF/RCDB 
+# Signoff Settings: SI Off 
+#################################################################################
+Resize FE_ECOC23_n_10 (CLKINVX4) to CLKINVX3.
+<CMD_INTERNAL> redraw
+<CMD> get_time_unit
+<CMD> report_timing -output_format binary -max_paths 50000 -max_slack 0.75 -path_exceptions all -late > top.btarpt
+<CMD> load_timing_debug_report -name default_report top.btarpt -max_path_num 10000 -updateCategory 0 -isDrv 0
+Parsing file top.btarpt...
+<CMD_INTERNAL> zoomSelected
+<CMD_INTERNAL> zoomSelected
+<CMD_INTERNAL> zoomSelected
+<CMD> all_analysis_views
+best_case worst_case
+<CMD> all_setup_analysis_views
+<CMD> all_hold_analysis_views
+<CMD> get_analysis_view $view -delay_corner
+<CMD> get_delay_corner $dc -rc_corner
+<CMD> change_cell -inst FE_ECOC23_n_10 -cell CLKINVX1
+#################################################################################
+# Design Name: mealy_1001_1100
+# Design Mode: 65nm
+# Analysis Mode: MMMC Non-OCV 
+# Parasitics Mode: SPEF/RCDB 
+# Signoff Settings: SI Off 
+#################################################################################
+Resize FE_ECOC23_n_10 (CLKINVX3) to CLKINVX1.
+<CMD_INTERNAL> redraw
+<CMD> get_time_unit
+<CMD> report_timing -output_format binary -max_paths 50000 -max_slack 0.75 -path_exceptions all -late > top.btarpt
+<CMD> load_timing_debug_report -name default_report top.btarpt -max_path_num 10000 -updateCategory 0 -isDrv 0
+Parsing file top.btarpt...
+<CMD_INTERNAL> zoomSelected
+<CMD_INTERNAL> zoomSelected
+<CMD_INTERNAL> zoomSelected
+<CMD_INTERNAL> zoomSelected
+<CMD_INTERNAL> zoomSelected
+<CMD_INTERNAL> zoomSelected
+<CMD> all_analysis_views
+best_case worst_case
+<CMD> all_setup_analysis_views
+<CMD> all_hold_analysis_views
+<CMD> get_analysis_view $view -delay_corner
+<CMD> get_delay_corner $dc -rc_corner
+<CMD> all_analysis_views
+best_case worst_case
+<CMD> all_setup_analysis_views
+<CMD> all_hold_analysis_views
+<CMD> get_analysis_view $view -delay_corner
+<CMD> get_delay_corner $dc -rc_corner
+<CMD> change_cell -inst FE_ECOC22_n_10 -cell CLKINVX1
+#################################################################################
+# Design Name: mealy_1001_1100
+# Design Mode: 65nm
+# Analysis Mode: MMMC Non-OCV 
+# Parasitics Mode: SPEF/RCDB 
+# Signoff Settings: SI Off 
+#################################################################################
+Resize FE_ECOC22_n_10 (CLKINVX3) to CLKINVX1.
+<CMD_INTERNAL> redraw
+<CMD_INTERNAL> zoomSelected
+<CMD_INTERNAL> zoomSelected
+<CMD_INTERNAL> zoomSelected
+<CMD> all_analysis_views
+best_case worst_case
+<CMD> all_setup_analysis_views
+<CMD> all_hold_analysis_views
+<CMD> get_analysis_view $view -delay_corner
+<CMD> get_delay_corner $dc -rc_corner
+<CMD> change_cell -inst FE_ECOC25_n_10 -cell CLKINVX1
+#################################################################################
+# Design Name: mealy_1001_1100
+# Design Mode: 65nm
+# Analysis Mode: MMMC Non-OCV 
+# Parasitics Mode: SPEF/RCDB 
+# Signoff Settings: SI Off 
+#################################################################################
+Resize FE_ECOC25_n_10 (CLKINVX3) to CLKINVX1.
+<CMD_INTERNAL> redraw
+<CMD_INTERNAL> zoomSelected
+<CMD_INTERNAL> zoomSelected
+<CMD_INTERNAL> zoomSelected
+<CMD> all_analysis_views
+best_case worst_case
+<CMD> all_setup_analysis_views
+<CMD> all_hold_analysis_views
+<CMD> get_analysis_view $view -delay_corner
+<CMD> get_delay_corner $dc -rc_corner
+<CMD> change_cell -inst FE_ECOC24_n_10 -cell CLKINVX1
+#################################################################################
+# Design Name: mealy_1001_1100
+# Design Mode: 65nm
+# Analysis Mode: MMMC Non-OCV 
+# Parasitics Mode: SPEF/RCDB 
+# Signoff Settings: SI Off 
+#################################################################################
+Resize FE_ECOC24_n_10 (CLKINVX3) to CLKINVX1.
+<CMD_INTERNAL> redraw
+<CMD_INTERNAL> zoomSelected
+<CMD_INTERNAL> zoomSelected
+<CMD_INTERNAL> zoomSelected
+<CMD> all_analysis_views
+best_case worst_case
+<CMD> all_setup_analysis_views
+<CMD> all_hold_analysis_views
+<CMD> get_analysis_view $view -delay_corner
+<CMD> get_delay_corner $dc -rc_corner
+<CMD> change_cell -inst g724 -cell CLKINVX1
+#################################################################################
+# Design Name: mealy_1001_1100
+# Design Mode: 65nm
+# Analysis Mode: MMMC Non-OCV 
+# Parasitics Mode: SPEF/RCDB 
+# Signoff Settings: SI Off 
+#################################################################################
+Resize g724 (CLKINVX3) to CLKINVX1.
+<CMD_INTERNAL> redraw
+<CMD> get_time_unit
+<CMD> report_timing -output_format binary -max_paths 50000 -max_slack 0.75 -path_exceptions all -late > top.btarpt
+<CMD> load_timing_debug_report -name default_report top.btarpt -max_path_num 10000 -updateCategory 0 -isDrv 0
+Parsing file top.btarpt...
+<CMD_INTERNAL> zoomSelected
+<CMD_INTERNAL> zoomSelected
+<CMD_INTERNAL> zoomSelected
+<CMD> all_analysis_views
+best_case worst_case
+<CMD> all_setup_analysis_views
+<CMD> all_hold_analysis_views
+<CMD> get_analysis_view $view -delay_corner
+<CMD> get_delay_corner $dc -rc_corner
+<CMD> change_cell -inst g724 -cell CLKINVX2
+#################################################################################
+# Design Name: mealy_1001_1100
+# Design Mode: 65nm
+# Analysis Mode: MMMC Non-OCV 
+# Parasitics Mode: SPEF/RCDB 
+# Signoff Settings: SI Off 
+#################################################################################
+Resize g724 (CLKINVX1) to CLKINVX2.
+<CMD_INTERNAL> redraw
+<CMD> get_time_unit
+<CMD> report_timing -output_format binary -max_paths 50000 -max_slack 0.75 -path_exceptions all -late > top.btarpt
+<CMD> load_timing_debug_report -name default_report top.btarpt -max_path_num 10000 -updateCategory 0 -isDrv 0
+Parsing file top.btarpt...
+<CMD_INTERNAL> zoomSelected
+<CMD_INTERNAL> zoomSelected
+<CMD_INTERNAL> zoomSelected
+<CMD> all_analysis_views
+best_case worst_case
+<CMD> all_setup_analysis_views
+<CMD> all_hold_analysis_views
+<CMD> get_analysis_view $view -delay_corner
+<CMD> get_delay_corner $dc -rc_corner
+<CMD> change_cell -inst FE_ECOC24_n_10 -cell CLKINVX2
+#################################################################################
+# Design Name: mealy_1001_1100
+# Design Mode: 65nm
+# Analysis Mode: MMMC Non-OCV 
+# Parasitics Mode: SPEF/RCDB 
+# Signoff Settings: SI Off 
+#################################################################################
+Resize FE_ECOC24_n_10 (CLKINVX1) to CLKINVX2.
+<CMD_INTERNAL> redraw
+<CMD> get_time_unit
+<CMD> report_timing -output_format binary -max_paths 50000 -max_slack 0.75 -path_exceptions all -late > top.btarpt
+<CMD> load_timing_debug_report -name default_report top.btarpt -max_path_num 10000 -updateCategory 0 -isDrv 0
+Parsing file top.btarpt...
+<CMD_INTERNAL> zoomSelected
+<CMD_INTERNAL> zoomSelected
+<CMD_INTERNAL> zoomSelected
+<CMD> all_analysis_views
+best_case worst_case
+<CMD> all_setup_analysis_views
+<CMD> all_hold_analysis_views
+<CMD> get_analysis_view $view -delay_corner
+<CMD> get_delay_corner $dc -rc_corner
+<CMD> change_cell -inst FE_ECOC25_n_10 -cell CLKINVX2
+#################################################################################
+# Design Name: mealy_1001_1100
+# Design Mode: 65nm
+# Analysis Mode: MMMC Non-OCV 
+# Parasitics Mode: SPEF/RCDB 
+# Signoff Settings: SI Off 
+#################################################################################
+Resize FE_ECOC25_n_10 (CLKINVX1) to CLKINVX2.
+<CMD_INTERNAL> redraw
+<CMD> get_time_unit
+<CMD> report_timing -output_format binary -max_paths 50000 -max_slack 0.75 -path_exceptions all -late > top.btarpt
+<CMD> load_timing_debug_report -name default_report top.btarpt -max_path_num 10000 -updateCategory 0 -isDrv 0
+Parsing file top.btarpt...
+<CMD_INTERNAL> zoomSelected
+<CMD_INTERNAL> zoomSelected
+<CMD_INTERNAL> zoomSelected
+<CMD_INTERNAL> zoomSelected
+<CMD_INTERNAL> zoomSelected
+<CMD_INTERNAL> zoomSelected
+<CMD> all_analysis_views
+best_case worst_case
+<CMD> all_setup_analysis_views
+<CMD> all_hold_analysis_views
+<CMD> get_analysis_view $view -delay_corner
+<CMD> get_delay_corner $dc -rc_corner
+<CMD> change_cell -inst FE_ECOC22_n_10 -cell CLKINVX2
+#################################################################################
+# Design Name: mealy_1001_1100
+# Design Mode: 65nm
+# Analysis Mode: MMMC Non-OCV 
+# Parasitics Mode: SPEF/RCDB 
+# Signoff Settings: SI Off 
+#################################################################################
+Resize FE_ECOC22_n_10 (CLKINVX1) to CLKINVX2.
+<CMD_INTERNAL> redraw
+<CMD> get_time_unit
+<CMD> report_timing -output_format binary -max_paths 50000 -max_slack 0.75 -path_exceptions all -late > top.btarpt
+<CMD> load_timing_debug_report -name default_report top.btarpt -max_path_num 10000 -updateCategory 0 -isDrv 0
+Parsing file top.btarpt...
+<CMD_INTERNAL> zoomSelected
+<CMD_INTERNAL> zoomSelected
+<CMD_INTERNAL> zoomSelected
+<CMD> all_analysis_views
+best_case worst_case
+<CMD> all_setup_analysis_views
+<CMD> all_hold_analysis_views
+<CMD> get_analysis_view $view -delay_corner
+<CMD> get_delay_corner $dc -rc_corner
+<CMD_INTERNAL> zoomBox 11.51900 7.86200 25.85100 15.20400
+<CMD_INTERNAL> fit
+
+--------------------------------------------------------------------------------
+Exiting Tempus Timing Solution on Mon Jun 22 15:58:26 2026
+  Total CPU time:     0:05:29
+  Total real time:    1:54:08
+  Peak memory (main): 3114.59MB
+
+
+*** Memory Usage v#3 (Current mem = 4335.594M, initial mem = 835.133M) ***
+
+*** Summary of all messages that are not suppressed in this session:
+Severity  ID               Count  Summary                                  
+WARNING   IMPLF-200            1  Pin '%s' in macro '%s' has no ANTENNAGAT...
+WARNING   IMPLF-105            2  The layer '%s' specified in SAMENET spac...
+WARNING   IMPFP-3961           4  The techSite '%s' has no related standar...
+WARNING   IMPEXT-3423          1  Detected %d nets with incomplete RC netw...
+WARNING   IMPEXT-7000          1  The option '%s %s' for setExtractRCMode ...
+WARNING   UI-638               1  The %s to the command '%s' %s ignored si...
+WARNING   UI-156              72  preference name '%s' is not supported in...
+ERROR     IMPSYT-7004          4  %s                                       
+WARNING   IMPSYC-3133          2  The unloadTimingCon command is not suppo...
+WARNING   IMPSYC-123          21  No wire on net %s.                       
+WARNING   IMPVL-159          958  Pin '%s' of cell '%s' is defined in LEF ...
+WARNING   IMPESI-621           1  Timing window restoration data eosdb.dat...
+ERROR     IMPSP-2002           5  Density too high (%.1f%%), stopping deta...
+ERROR     IMPSP-2021           1  Could not legalize <%d> instances in the...
+WARNING   IMPSP-2020           2  Cannot find a legal location for instanc...
+ERROR     IMPOPT-560           2  Net '%s' not found.                      
+WARNING   IMPOPT-6106          8  There is mismatch between RC data and ro...
+ERROR     IMPOAX-820           1  The OpenAccess (OA) features are disable...
+ERROR     IMPOAX-850           1  %s command cannot be run as OpenAccess f...
+ERROR     IMPOAX-8033          1  OpenAccess features will be disabled in ...
+ERROR     IMPOAX-8053          2  Could not open shared library %s : %s.   
+ERROR     IMPQTF-4008         20  Item '%s' already exists in form '%s'.   
+ERROR     IMPQTF-4044          1  Error occurs when '%s' is executed with ...
+WARNING   SPEF-1152            9  Net '%s' is not fully specified as per i...
+ERROR     SPEF-1123            1  Invalid capacitor node (%s) does not bel...
+WARNING   SPEF-1124            4  Invalid capacitor node (%s) found in D_N...
+ERROR     SPEF-1127           15  Invalid CONN connection found (%s) for D...
+WARNING   SPEF-1132            3  An invalid or ignored D_NET reference (%...
+WARNING   SPEF-1135           11  Invalid resistor node (%s) found in D_NE...
+ERROR     SPEF-1134            4  Invalid resistor node (%s) does not belo...
+WARNING   SDF-142              7  Cell type '%s' for instance '%s' does no...
+ERROR     SDF-300             38  Could not locate instance '%s' in design...
+WARNING   TCLCMD-1234          1  In multi-mode, multi-corner analysis mod...
+WARNING   TCLCMD-1263          1  The -frame parameter is obsolete and wil...
+*** Message Summary: 1110 warning(s), 96 error(s)
+
+--- Ending "Tempus Timing Solution" (totcpu=0:05:28, real=1:54:06, mem=4335.6M) ---

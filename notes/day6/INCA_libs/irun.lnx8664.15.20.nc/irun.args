@@ -1,0 +1,11 @@
+//
+// File created by:  irun
+// Do not modify this file
+//
+up_down.v
+up_down_tb.v
+-access
++rwc
+-gui
+-coverage
+all

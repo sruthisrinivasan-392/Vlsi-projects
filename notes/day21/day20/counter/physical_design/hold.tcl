@@ -1,0 +1,15 @@
+ecoAddRepeater -cell BUFX2 -net n_70 -name FE_ECOC0_n_70
+ecoAddRepeater -cell BUFX2 -net n_49 -name FE_ECOC1_n_49
+ecoAddRepeater -cell BUFX2 -net n_47 -name FE_ECOC2_n_47
+ecoAddRepeater -cell BUFX2 -net n_46 -name FE_ECOC3_n_46
+ecoAddRepeater -cell BUFX2 -net n_71 -name FE_ECOC4_n_71
+ecoAddRepeater -cell BUFX2 -net n_71 -name FE_ECOC5_n_71
+ecoAddRepeater -cell BUFX2 -net FE_ECON1_n_49 -name FE_ECOC6_n_49
+ecoAddRepeater -cell BUFX2 -net FE_ECON6_n_49 -name FE_ECOC7_n_49
+ecoAddRepeater -cell BUFX2 -net n_44 -name FE_ECOC8_n_44
+ecoAddRepeater -cell BUFX2 -net FE_ECON8_n_44 -name FE_ECOC9_n_44
+ecoAddRepeater -cell BUFX2 -net n_48 -name FE_ECOC10_n_48
+ecoAddRepeater -cell BUFX2 -net n_48 -name FE_ECOC11_n_48
+ecoAddRepeater -cell BUFX2 -net n_41 -name FE_ECOC12_n_41
+ecoAddRepeater -cell BUFX2 -net n_41 -name FE_ECOC13_n_41
+ecoAddRepeater -cell BUFX2 -net n_41 -name FE_ECOC14_n_41

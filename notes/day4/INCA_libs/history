@@ -1,0 +1,22 @@
+//
+// File created by:  irun
+// Do not modify this file
+
+s1::(04Jun2026:09:51:32):( irun lfsr.v -access +rwc -gui )
+s2::(04Jun2026:10:08:26):( irun lfsr.v lfse_tb.v -access +rwc -gui )
+s3::(04Jun2026:10:08:55):( irun lfsr.v lfsr_tb.v -access +rwc -gui )
+s4::(04Jun2026:10:10:25):( irun lfsr.v lfsr_tb.v -access +rwc -gui )
+s5::(04Jun2026:10:35:52):( irun lfsr.v lfsr_tb.v -access +rwc -gui )
+s6::(04Jun2026:15:49:37):( irun seq_det_101_moore.v seq_det_101_moore_tb.v -access +rwc -gui )
+s7::(04Jun2026:16:11:08):( irun seq_det_101_moore.v seq_det_101_moore_tb.v -access +rwc -gui )
+s8::(06Jun2026:13:47:36):( irun lfsr.v lfsr_tb.v -access +rwc -gui -coverage all )
+s9::(06Jun2026:13:49:13):( irun lfsr.v lfsr_tb.v -access +rwc -gui -coverage all )
+s10::(06Jun2026:14:12:45):( irun seq_det_101_moore.v seq_det_101_moore_tb.v -access +rwc -gui -coverage all )
+s11::(06Jun2026:14:13:33):( irun seq_det_101_moore.v seq_det_101_moore_tb.v -access +rwc -gui -coverage all )
+s12::(06Jun2026:14:15:24):( irun seq_det_101_moore.v seq_det_101_moore_tb.v -access +rwc -gui -coverage all )
+s13::(06Jun2026:14:21:12):( irun seq_det_101_moore.v seq_det_101_moore_tb.v -access +rwc -gui -coverage all )
+s14::(06Jun2026:14:43:09):( irun seq_det_101_moore.v seq_det_101_moore_tb.v -access +rwc -gui -coverage all )
+s15::(06Jun2026:14:43:38):( irun seq_det_101_moore.v seq_det_101_moore_tb.v -access +rwc -gui -coverage all )
+s16::(06Jun2026:14:43:56):( irun seq_det_101_moore.v seq_det_101_moore_tb.v -access +rwc -gui -coverage all )
+s17::(06Jun2026:14:44:33):( irun seq_det_101_moore.v seq_det_101_moore_tb.v -access +rwc -gui -coverage all )
+s18::(06Jun2026:14:48:24):( irun seq_det_101_moore.v seq_det_101_moore_tb.v -access +rwc -gui -coverage all )

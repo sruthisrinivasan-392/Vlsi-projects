@@ -1,0 +1,631 @@
+[06/22 13:41:45      0s] 
+[06/22 13:41:45      0s] Cadence Tempus(TM) Timing Solution.
+[06/22 13:41:45      0s] Copyright 2024 Cadence Design Systems, Inc. All rights reserved worldwide.
+[06/22 13:41:45      0s] 
+[06/22 13:41:45      0s] Version:	v23.13-s084_1, built Fri Nov 22 17:27:06 PST 2024
+[06/22 13:41:45      0s] Options:	
+[06/22 13:41:45      0s] Date:		Mon Jun 22 13:41:45 2026
+[06/22 13:41:45      0s] Host:		cadence (x86_64 w/Linux 4.18.0-425.3.1.el8.x86_64) (8cores*16cpus*Intel(R) Core(TM) i7-10875H CPU @ 2.30GHz 16384KB)
+[06/22 13:41:45      0s] OS:		Red Hat Enterprise Linux 8.7 (Ootpa)
+[06/22 13:41:45      0s] 
+[06/22 13:41:45      0s] License:
+[06/22 13:41:45      0s] 		[13:41:45.094097] Configured Lic search path (23.02-s006): 5280@cadence
+
+[06/22 13:41:45      0s] 		tpsxl	Tempus Timing Signoff Solution XL	23.1	checkout succeeded
+[06/22 13:41:45      0s] 		16 CPU jobs allowed with the current license(s). Use set_multi_cpu_usage to set your required CPU count.
+[06/22 13:41:45      0s] **ERROR: (IMPOAX-8053):	Could not open shared library libtempusoax22.so : liboaPrivateCDS.so: cannot open shared object file: No such file or directory.
+**ERROR: (IMPOAX-8053):	Could not open shared library libcdsSkillPcell.so : /home/install/SSV231/tools.lnx86/ssv/bin/64bit/../../../lib/64bit/libcdsSkillPcell.so: undefined symbol: _ZTIN12OpenAccess_413oaFSComponentE.
+**ERROR: (IMPOAX-8033):	OpenAccess features will be disabled in this session.
+Memory management switch to non-aggressive memory release mode.
+[06/22 13:42:01     16s] 
+[06/22 13:42:01     16s] OS Mmap count monitoring thread starts. Limit of OS Mmap count is 65530
+[06/22 13:42:01     16s] 
+[06/22 13:42:02     17s] Reset Parastics called with the command setExtractRCMode -reset@(#)CDS: Tempus Timing Solution v23.13-s084_1 (64bit) 11/22/2024 17:27 (Linux 3.10.0-693.el7.x86_64)
+[06/22 13:42:05     19s] @(#)CDS: NanoRoute 23.13-s084_1 NR241029-2256/23_13-UB (database version 18.20.652) {superthreading v2.20}
+[06/22 13:42:05     19s] @(#)CDS: AAE 23.13-s022 (64bit) 11/22/2024 (Linux 3.10.0-693.el7.x86_64)
+[06/22 13:42:05     19s] @(#)CDS: CTE 23.13-s030_1 () Nov 21 2024 17:17:38 ( )
+[06/22 13:42:05     19s] @(#)CDS: SYNTECH 23.13-s009_1 () Oct 30 2024 09:17:13 ( )
+[06/22 13:42:05     19s] @(#)CDS: CPE v23.13-s064
+[06/22 13:42:05     19s] @(#)CDS: OA 22.61-p018 Fri Oct 18 10:45:49 2024
+[06/22 13:42:05     19s] @(#)CDS: SGN 23.10-d005 (03-Oct-2023) (64 bit executable, TkQt5.15.9)
+[06/22 13:42:05     19s] @(#)CDS: RCDB 11.15.0
+[06/22 13:42:05     19s] @(#)CDS: STYLUS 23.14-s002_1 (09/11/2024 13:54 PDT)
+[06/22 13:42:05     19s] Change the soft stacksize limit to 0.2%RAM (63 mbytes). Set global soft_stack_size_limit to change the value.
+[06/22 13:42:05     19s] **INFO: (TMPDIR-1001): The environment variable TMPDIR is not set.
+Create and set the environment variable TMPDIR to '/tmp/ssv_tmpdir_29526_0e494b24-adba-48fa-bd1b-a869333acc07_V8UJuz'.
+environment variable TMPDIR is '/tmp/ssv_tmpdir_29526_0e494b24-adba-48fa-bd1b-a869333acc07_V8UJuz'.
+[06/22 13:42:06     21s] <CMD> ::stop_gui -keepDgui
+[06/22 13:42:06     21s] Has not load the powerDB, will keep enalbed
+[06/22 13:42:06     21s] Has not load the powerDB, will keep enalbed
+[06/22 13:49:38     40s] <CMD> read_design -physical_data mealy_1001_1100_placement.enc.dat/ mealy_1001_1100
+[06/22 13:49:38     40s] # Tempus Timing Solution 23.13-s084_1
+[06/22 13:49:38     40s] # read_design
+[06/22 13:49:38     40s] #  -physical_data 1
+[06/22 13:49:38     40s] #  dir mealy_1001_1100_placement.enc.dat/ mealy_1001_1100
+[06/22 13:49:39     40s] Set Default Input Pin Transition as 0.1 ps.
+[06/22 13:49:39     41s] Loading design 'mealy_1001_1100' saved by 'Innovus' '21.15-s110_1' on 'Mon Jun 22 11:24:11 2026'.
+[06/22 13:49:39     41s] **ERROR: (IMPOAX-820):	The OpenAccess (OA) features are disabled in the current session of Tempus Timing Solution because the oax shared library could not be loaded properly. This could be because your installation was not properly configured. To enable OA features, exit the current session and re-launch Tempus Timing Solution either after fixing your installation by running the Configure Installation phase, or after setting the OA_HOME variable to point to a proper OA installation. Check the "OpenAccess Installation and Configuration Guide" manual for more information.
+
+**ERROR: (IMPOAX-850):	oaxCreateCdsLibArray command cannot be run as OpenAccess features are disabled in this session.
+#% Begin Load MMMC data ... (date=06/22 13:49:39, mem=1751.8M)
+[06/22 13:49:39     41s] **WARN: (UI-638):	The option '-cap_table' to the command 'create_rc_corner' is ignored since it is related to the RC extraction mode which Tempus does not support. Tempus only supports the signoff QRC extraction.
+[06/22 13:49:39     41s] Number of views requested 1 are allowed with the current licenses... continuing with set_analysis_view.
+[06/22 13:49:39     41s] #% End Load MMMC data ... (date=06/22 13:49:39, total cpu=0:00:00.0, real=0:00:00.0, peak res=1752.0M, current mem=1752.0M)
+[06/22 13:49:39     41s] 
+[06/22 13:49:39     41s] Loading LEF file /home/vlsi30/day18/physical_design/mealy_1001_1100_placement.enc.dat/libs/lef/gsclib090_translated.lef ...
+[06/22 13:49:39     41s] **WARN: (IMPLF-105):	The layer 'Oxide' specified in SAMENET spacing
+[06/22 13:49:39     41s] rule is neither a routing layer nor a cut layer. The rule is ignored.
+[06/22 13:49:39     41s] **WARN: (IMPLF-105):	The layer 'Poly' specified in SAMENET spacing
+[06/22 13:49:39     41s] rule is neither a routing layer nor a cut layer. The rule is ignored.
+[06/22 13:49:39     41s] Set DBUPerIGU to M2 pitch 580.
+[06/22 13:49:39     41s] **WARN: (IMPLF-200):	Pin 'A' in macro 'ANTENNA' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[06/22 13:49:39     41s] 
+##  Check design process and node:  
+##  Both design process and tech node are not set.
+
+[06/22 13:49:39     41s] Loading view definition file from /home/vlsi30/day18/physical_design/mealy_1001_1100_placement.enc.dat/viewDefinition.tcl
+[06/22 13:49:39     41s] Reading slow timing library '/home/install/FOUNDRY/digital/90nm/dig/lib/slow.lib' ...
+[06/22 13:49:40     42s] Read 479 cells in library 'slow' 
+[06/22 13:49:40     42s] Reading fast timing library '/home/install/FOUNDRY/digital/90nm/dig/lib/fast.lib' ...
+[06/22 13:49:41     43s] Read 479 cells in library 'fast' 
+[06/22 13:49:41     43s] Ending "PreSetAnalysisView" (total cpu=0:00:01.8, real=0:00:02.0, peak res=1886.9M, current mem=1821.4M)
+[06/22 13:49:41     43s] *** End library_loading (cpu=0.03min, real=0.03min, mem=83.0M, fe_cpu=0.72min, fe_real=7.93min, fe_mem=1877.9M) ***
+[06/22 13:49:41     43s] #% Begin Load netlist data ... (date=06/22 13:49:41, mem=1820.6M)
+[06/22 13:49:41     43s] *** Begin netlist parsing (mem=1877.9M) ***
+[06/22 13:49:41     43s] **WARN: (IMPVL-159):	Pin 'VDD' of cell 'XOR3XL' is defined in LEF but not in the timing library.
+[06/22 13:49:41     43s] **WARN: (IMPVL-159):	Pin 'VSS' of cell 'XOR3XL' is defined in LEF but not in the timing library.
+[06/22 13:49:41     43s] **WARN: (IMPVL-159):	Pin 'VDD' of cell 'XOR3X1' is defined in LEF but not in the timing library.
+[06/22 13:49:41     43s] **WARN: (IMPVL-159):	Pin 'VSS' of cell 'XOR3X1' is defined in LEF but not in the timing library.
+[06/22 13:49:41     43s] **WARN: (IMPVL-159):	Pin 'VSS' of cell 'XOR2XL' is defined in LEF but not in the timing library.
+[06/22 13:49:41     43s] **WARN: (IMPVL-159):	Pin 'VDD' of cell 'XOR2XL' is defined in LEF but not in the timing library.
+[06/22 13:49:41     43s] **WARN: (IMPVL-159):	Pin 'VSS' of cell 'XOR2X4' is defined in LEF but not in the timing library.
+[06/22 13:49:41     43s] **WARN: (IMPVL-159):	Pin 'VDD' of cell 'XOR2X4' is defined in LEF but not in the timing library.
+[06/22 13:49:41     43s] **WARN: (IMPVL-159):	Pin 'VSS' of cell 'XOR2X2' is defined in LEF but not in the timing library.
+[06/22 13:49:41     43s] **WARN: (IMPVL-159):	Pin 'VDD' of cell 'XOR2X2' is defined in LEF but not in the timing library.
+[06/22 13:49:41     43s] **WARN: (IMPVL-159):	Pin 'VSS' of cell 'XOR2X1' is defined in LEF but not in the timing library.
+[06/22 13:49:41     43s] **WARN: (IMPVL-159):	Pin 'VDD' of cell 'XOR2X1' is defined in LEF but not in the timing library.
+[06/22 13:49:41     43s] **WARN: (IMPVL-159):	Pin 'VSS' of cell 'XNOR3XL' is defined in LEF but not in the timing library.
+[06/22 13:49:41     43s] **WARN: (IMPVL-159):	Pin 'VDD' of cell 'XNOR3XL' is defined in LEF but not in the timing library.
+[06/22 13:49:41     43s] **WARN: (IMPVL-159):	Pin 'VDD' of cell 'XNOR3X1' is defined in LEF but not in the timing library.
+[06/22 13:49:41     43s] **WARN: (IMPVL-159):	Pin 'VSS' of cell 'XNOR3X1' is defined in LEF but not in the timing library.
+[06/22 13:49:41     43s] **WARN: (IMPVL-159):	Pin 'VSS' of cell 'XNOR2XL' is defined in LEF but not in the timing library.
+[06/22 13:49:41     43s] **WARN: (IMPVL-159):	Pin 'VDD' of cell 'XNOR2XL' is defined in LEF but not in the timing library.
+[06/22 13:49:41     43s] **WARN: (IMPVL-159):	Pin 'VSS' of cell 'XNOR2X4' is defined in LEF but not in the timing library.
+[06/22 13:49:41     43s] **WARN: (IMPVL-159):	Pin 'VDD' of cell 'XNOR2X4' is defined in LEF but not in the timing library.
+[06/22 13:49:41     43s] **WARN: (EMS-62):	Message <IMPVL-159> has exceeded the default message display limit of 20.
+[06/22 13:49:41     43s] To avoid this warning, increase the display limit per unique message by
+[06/22 13:49:41     43s] using the set_message -limit <number> command.
+[06/22 13:49:41     43s] The message limit can be removed by using the set_message -no_limit command.
+[06/22 13:49:41     43s] Note that setting a very large number using the set_message -limit command
+[06/22 13:49:41     43s] or removing the message limit using the set_message -no_limit command can
+[06/22 13:49:41     43s] significantly increase the log file size.
+[06/22 13:49:41     43s] To suppress a message, use the set_message -suppress command.
+[06/22 13:49:41     43s] Reading verilogBinary netlist '/home/vlsi30/day18/physical_design/mealy_1001_1100_placement.enc.dat/mealy_1001_1100.v.bin'
+[06/22 13:49:41     43s] 
+[06/22 13:49:41     43s] *** Memory Usage v#3 (Current mem = 2081.938M, initial mem = 843.133M) ***
+[06/22 13:49:41     43s] *** End netlist parsing (cpu=0:00:00.0, real=0:00:00.0, mem=2081.9M) ***
+[06/22 13:49:42     43s] #% End Load netlist data ... (date=06/22 13:49:41, total cpu=0:00:00.6, real=0:00:01.0, peak res=1940.2M, current mem=1930.2M)
+[06/22 13:49:42     43s] Top level cell is mealy_1001_1100.
+[06/22 13:49:42     43s] Has not load the powerDB, will keep enalbed
+[06/22 13:49:42     43s] Has not load the powerDB, will keep enalbed
+[06/22 13:49:42     43s] Ending "BindLib:" (total cpu=0:00:00.1, real=0:00:00.0, peak res=1966.9M, current mem=1966.9M)
+[06/22 13:49:42     43s] *** Estimate the number of flat objects and h-objects before Flatten ***
+[06/22 13:49:42     43s] 	flat insts : 24
+[06/22 13:49:42     43s] 	flat terms : 82
+[06/22 13:49:42     43s] 	HNets : 0
+[06/22 13:49:42     43s] 	HInsts : 0
+[06/22 13:49:42     43s] 	HTerms : 0
+[06/22 13:49:42     43s] Building hierarchical netlist for Cell mealy_1001_1100 ...
+[06/22 13:49:42     43s] ***** UseNewTieNetMode *****.
+[06/22 13:49:42     44s] *** Netlist is unique.
+[06/22 13:49:42     44s] Setting Std. cell height to 5220 DBU (smallest netlist inst).
+[06/22 13:49:42     44s] ** info: there are 967 modules.
+[06/22 13:49:42     44s] ** info: there are 24 stdCell insts.
+[06/22 13:49:42     44s] ** info: there are 24 stdCell insts with at least one signal pin.
+[06/22 13:49:42     44s] 
+[06/22 13:49:42     44s] *** Memory Usage v#3 (Current mem = 2563.984M, initial mem = 843.133M) ***
+[06/22 13:49:42     44s] *info: set bottom ioPad orient R0
+[06/22 13:49:42     44s] **WARN: (IMPFP-3961):	The techSite 'pad' has no related standard cells in the LEF/OA library. The calculations for this site type cannot be made unless standard cell models of this type exist in the LEF/OA library. Ignore this warning if the SITE is not used by the library. Alternatively, remove the SITE definition for the LEF/OA library to avoid this message.
+[06/22 13:49:42     44s] **WARN: (IMPFP-3961):	The techSite 'corner' has no related standard cells in the LEF/OA library. The calculations for this site type cannot be made unless standard cell models of this type exist in the LEF/OA library. Ignore this warning if the SITE is not used by the library. Alternatively, remove the SITE definition for the LEF/OA library to avoid this message.
+[06/22 13:49:42     44s] Horizontal Layer M1 offset = 290 (derived)
+[06/22 13:49:42     44s] Vertical Layer M2 offset = 290 (derived)
+[06/22 13:49:42     44s] Start create_tracks
+[06/22 13:49:42     44s] Generated pitch 0.29 in Metal8 is different from 0.87 defined in technology file in unpreferred direction.
+[06/22 13:49:42     44s] Set Default Input Pin Transition as 0.1 ps.
+[06/22 13:49:42     44s] Has not load the powerDB, will keep enalbed
+[06/22 13:49:42     44s] Has not load the powerDB, will keep enalbed
+[06/22 13:49:42     44s] Has not load the powerDB, will keep enalbed
+[06/22 13:49:42     44s] Has not load the powerDB, will keep enalbed
+[06/22 13:49:42     44s] Has not load the powerDB, will keep enalbed
+[06/22 13:49:42     44s] Has not load the powerDB, will keep enalbed
+[06/22 13:49:42     44s] Loading preference file /home/vlsi30/day18/physical_design/mealy_1001_1100_placement.enc.dat/gui.pref.tcl ...
+[06/22 13:49:42     44s] **WARN: (UI-156):	preference name 'MinFPModuleSize' is not supported in Tempus Timing Solution.
+[06/22 13:49:42     44s] **WARN: (UI-156):	preference name 'MinFlightLineWidth' is not supported in Tempus Timing Solution.
+[06/22 13:49:42     44s] **WARN: (UI-156):	preference name 'MaxFlightLineNetTerms' is not supported in Tempus Timing Solution.
+[06/22 13:49:42     44s] **WARN: (UI-156):	preference name 'LevelFlight' is not supported in Tempus Timing Solution.
+[06/22 13:49:42     44s] **WARN: (UI-156):	preference name 'DirectionSink' is not supported in Tempus Timing Solution.
+[06/22 13:49:42     44s] **WARN: (UI-156):	preference name 'DirectionSource' is not supported in Tempus Timing Solution.
+[06/22 13:49:42     44s] **WARN: (UI-156):	preference name 'ShowNumberBlockConnection' is not supported in Tempus Timing Solution.
+[06/22 13:49:42     44s] **WARN: (UI-156):	preference name 'StrecthRestriction' is not supported in Tempus Timing Solution.
+[06/22 13:49:42     44s] **WARN: (UI-156):	preference name 'StretchRectilinear' is not supported in Tempus Timing Solution.
+[06/22 13:49:42     44s] **WARN: (UI-156):	preference name 'MoveRestriction' is not supported in Tempus Timing Solution.
+[06/22 13:49:42     44s] **WARN: (UI-156):	preference name 'DisplayRelFPlan' is not supported in Tempus Timing Solution.
+[06/22 13:49:42     44s] **WARN: (UI-156):	preference name 'LegalizeMacro' is not supported in Tempus Timing Solution.
+[06/22 13:49:42     44s] **WARN: (UI-156):	preference name 'DisplayFPlanFlightLine' is not supported in Tempus Timing Solution.
+[06/22 13:49:42     44s] **WARN: (UI-156):	preference name 'DisplayPinName' is not supported in Tempus Timing Solution.
+[06/22 13:49:42     44s] **WARN: (UI-156):	preference name 'ExclusiveFlight' is not supported in Tempus Timing Solution.
+[06/22 13:49:42     44s] **WARN: (UI-156):	preference name 'ShowToUnplace' is not supported in Tempus Timing Solution.
+[06/22 13:49:42     44s] **WARN: (UI-156):	preference name 'FlightLineInMove' is not supported in Tempus Timing Solution.
+[06/22 13:49:42     44s] **WARN: (UI-156):	preference name 'ShowConnectionInOutNumber' is not supported in Tempus Timing Solution.
+[06/22 13:49:42     44s] **WARN: (UI-156):	preference name 'ConnectionColorType' is not supported in Tempus Timing Solution.
+[06/22 13:49:42     44s] **WARN: (UI-156):	preference name 'OnlyBundleNetFlight' is not supported in Tempus Timing Solution.
+[06/22 13:49:42     44s] **WARN: (EMS-27):	Message (UI-156) has exceeded the current message display limit of 20.
+[06/22 13:49:42     44s] To increase the message display limit, refer to the product command reference manual.
+[06/22 13:49:42     44s] **WARN: (IMPEXT-7000):	The option '-engine preRoute' for setExtractRCMode is ignored because only Quantus QRC extraction mode, that is, '-engine postRoute -effortLevel signoff' is supported in Tempus Timing Solution. To avoid this message, remove this option from your scripts.
+[06/22 13:49:42     44s] Has not load the powerDB, will keep enalbed
+[06/22 13:49:42     44s] Has not load the powerDB, will keep enalbed
+[06/22 13:49:42     44s] addRing command will ignore shorts while creating rings.
+[06/22 13:49:42     44s] addRing command will disallow rings to go over rows.
+[06/22 13:49:42     44s] addRing command will consider rows while creating rings.
+[06/22 13:49:42     44s] The ring targets are set to core/block ring wires.
+[06/22 13:49:42     44s] addStripe will allow jog to connect padcore ring and block ring.
+[06/22 13:49:42     44s] 
+[06/22 13:49:42     44s] Stripes will not extend to closest target.
+[06/22 13:49:42     44s] When breaking rings, the power planner will consider the existence of blocks.
+[06/22 13:49:42     44s] addStripe will break automatically at non-default domains when generating global stripes over the core area or default domain.
+[06/22 13:49:42     44s] The entire stripe set will break at the domain if one of the nets is not in the domain.
+[06/22 13:49:42     44s] Stripes will not be created over regions without power planning wires.
+[06/22 13:49:42     44s] Offset for stripe breaking is set to 0.
+[06/22 13:49:42     44s] Stripes will stop at the boundary of the specified area.
+[06/22 13:49:42     44s] The power planner will set stripe antenna targets to none (no trimming allowed).
+[06/22 13:49:42     44s] Change floorplan default-technical-site to 'gsclib090site'.
+[06/22 13:49:42     44s] Extraction setup Delayed 
+[06/22 13:49:42     44s] Ending "SetAnalysisView" (total cpu=0:00:00.1, real=0:00:00.0, peak res=2518.6M, current mem=2235.1M)
+[06/22 13:49:43     44s] Tech dependent Parameter, Build TLibAnalyzer for: cellAreaConsiderPadding
+[06/22 13:49:43     44s] 
+[06/22 13:49:43     44s] TimeStamp Creating Cell Server ...(0, 1, 1, 1) in restoreDesign Begin ...
+[06/22 13:49:43     44s] SB Latch Setting to complicate: TLATSRXL complicate code: 8
+[06/22 13:49:43     44s] SB Latch Setting to complicate: TLATSRX4 complicate code: 8
+[06/22 13:49:43     44s] SB Latch Setting to complicate: TLATSRX2 complicate code: 8
+[06/22 13:49:43     44s] SB Latch Setting to complicate: TLATSRX1 complicate code: 8
+[06/22 13:49:43     44s] SB Latch Setting to complicate: TLATNSRXL complicate code: 8
+[06/22 13:49:43     44s] SB Latch Setting to complicate: TLATNSRX4 complicate code: 8
+[06/22 13:49:43     44s] SB Latch Setting to complicate: TLATNSRX2 complicate code: 8
+[06/22 13:49:43     44s] SB Latch Setting to complicate: TLATNSRX1 complicate code: 8
+[06/22 13:49:43     44s] SBFF Setting to complicate: SEDFFTRXL complicate code: 30.05
+[06/22 13:49:43     44s] SBFF Setting to complicate: SEDFFTRX4 complicate code: 30.05
+[06/22 13:49:43     44s] SBFF Setting to complicate: SEDFFTRX2 complicate code: 30.05
+[06/22 13:49:43     44s] SBFF Setting to complicate: SEDFFTRX1 complicate code: 30.05
+[06/22 13:49:43     44s] SBFF Setting to complicate: EDFFTRXL complicate code: 30.05
+[06/22 13:49:43     44s] SBFF Setting to complicate: EDFFTRX4 complicate code: 30.05
+[06/22 13:49:43     44s] SBFF Setting to complicate: EDFFTRX2 complicate code: 30.05
+[06/22 13:49:43     44s] SBFF Setting to complicate: EDFFTRX1 complicate code: 30.05
+[06/22 13:49:43     44s] Summary for sequential cells identification: 
+[06/22 13:49:43     44s]   Identified SBFF number: 112
+[06/22 13:49:43     44s]   Identified MBFF number: 0
+[06/22 13:49:43     44s]   Identified SB Latch number: 8
+[06/22 13:49:43     44s]   Identified MB Latch number: 0
+[06/22 13:49:43     44s]   Not identified SBFF number: 8
+[06/22 13:49:43     44s]   Not identified MBFF number: 0
+[06/22 13:49:43     44s]   Not identified SB Latch number: 8
+[06/22 13:49:43     44s]   Not identified MB Latch number: 0
+[06/22 13:49:43     44s]   Number of sequential cells which are not FFs: 16
+[06/22 13:49:43     44s] Total number of combinational cells: 317
+[06/22 13:49:43     44s] Total number of sequential cells: 152
+[06/22 13:49:43     44s] Total number of tristate cells: 10
+[06/22 13:49:43     44s] Total number of level shifter cells: 0
+[06/22 13:49:43     44s] Total number of power gating cells: 0
+[06/22 13:49:43     44s] Total number of isolation cells: 0
+[06/22 13:49:43     44s] Total number of power switch cells: 0
+[06/22 13:49:43     44s] Total number of pulse generator cells: 0
+[06/22 13:49:43     44s] Total number of always on buffers: 0
+[06/22 13:49:43     44s] Total number of retention cells: 0
+[06/22 13:49:43     44s] Total number of physical cells: 0
+[06/22 13:49:43     44s] List of usable buffers: BUFX2 BUFX12 BUFX16 BUFX20 CLKBUFX2 BUFX3 BUFX4 BUFX6 BUFX8 CLKBUFX12 CLKBUFX16 CLKBUFX20 CLKBUFX3 CLKBUFX4 CLKBUFX6 CLKBUFX8
+[06/22 13:49:43     44s] Total number of usable buffers: 16
+[06/22 13:49:43     44s] List of unusable buffers:
+[06/22 13:49:43     44s] Total number of unusable buffers: 0
+[06/22 13:49:43     44s] List of usable inverters: CLKINVX1 CLKINVX2 CLKINVX12 CLKINVX16 CLKINVX20 CLKINVX3 CLKINVX4 CLKINVX6 CLKINVX8 INVX1 INVX2 INVX12 INVX16 INVX20 INVXL INVX3 INVX4 INVX6 INVX8
+[06/22 13:49:43     44s] Total number of usable inverters: 19
+[06/22 13:49:43     44s] List of unusable inverters:
+[06/22 13:49:43     44s] Total number of unusable inverters: 0
+[06/22 13:49:43     44s] List of identified usable delay cells: DLY1X1 DLY1X4 DLY2X1 DLY2X4 DLY3X1 DLY3X4 DLY4X1 DLY4X4
+[06/22 13:49:43     44s] Total number of identified usable delay cells: 8
+[06/22 13:49:43     44s] List of identified unusable delay cells:
+[06/22 13:49:43     44s] Total number of identified unusable delay cells: 0
+[06/22 13:49:43     44s] 
+[06/22 13:49:43     44s] TimeStamp Creating Cell Server ...(0, 1, 1, 1) in restoreDesign End ...
+[06/22 13:49:43     44s] 
+[06/22 13:49:43     44s] TimeStamp Deleting Cell Server Begin ...
+[06/22 13:49:43     44s] 
+[06/22 13:49:43     44s] TimeStamp Deleting Cell Server End ...
+[06/22 13:49:43     44s] Ending "Cell type marking" (total cpu=0:00:00.0, real=0:00:00.0, peak res=2497.8M, current mem=2497.8M)
+[06/22 13:49:43     44s] 
+[06/22 13:49:43     44s] TimeStamp Creating Cell Server ...(0, 0, 0, 0) in restoreDesign Begin ...
+[06/22 13:49:43     44s] SB Latch Setting to complicate: TLATSRXL complicate code: 8
+[06/22 13:49:43     44s] SB Latch Setting to complicate: TLATSRX4 complicate code: 8
+[06/22 13:49:43     44s] SB Latch Setting to complicate: TLATSRX2 complicate code: 8
+[06/22 13:49:43     44s] SB Latch Setting to complicate: TLATSRX1 complicate code: 8
+[06/22 13:49:43     44s] SB Latch Setting to complicate: TLATNSRXL complicate code: 8
+[06/22 13:49:43     44s] SB Latch Setting to complicate: TLATNSRX4 complicate code: 8
+[06/22 13:49:43     44s] SB Latch Setting to complicate: TLATNSRX2 complicate code: 8
+[06/22 13:49:43     44s] SB Latch Setting to complicate: TLATNSRX1 complicate code: 8
+[06/22 13:49:43     44s] SBFF Setting to complicate: SEDFFTRXL complicate code: 30.05
+[06/22 13:49:43     44s] SBFF Setting to complicate: SEDFFTRX4 complicate code: 30.05
+[06/22 13:49:43     44s] SBFF Setting to complicate: SEDFFTRX2 complicate code: 30.05
+[06/22 13:49:43     44s] SBFF Setting to complicate: SEDFFTRX1 complicate code: 30.05
+[06/22 13:49:43     44s] SBFF Setting to complicate: EDFFTRXL complicate code: 30.05
+[06/22 13:49:43     44s] SBFF Setting to complicate: EDFFTRX4 complicate code: 30.05
+[06/22 13:49:43     44s] SBFF Setting to complicate: EDFFTRX2 complicate code: 30.05
+[06/22 13:49:43     44s] SBFF Setting to complicate: EDFFTRX1 complicate code: 30.05
+[06/22 13:49:43     44s] Summary for sequential cells identification: 
+[06/22 13:49:43     44s]   Identified SBFF number: 112
+[06/22 13:49:43     44s]   Identified MBFF number: 0
+[06/22 13:49:43     44s]   Identified SB Latch number: 8
+[06/22 13:49:43     44s]   Identified MB Latch number: 0
+[06/22 13:49:43     44s]   Not identified SBFF number: 8
+[06/22 13:49:43     44s]   Not identified MBFF number: 0
+[06/22 13:49:43     44s]   Not identified SB Latch number: 8
+[06/22 13:49:43     44s]   Not identified MB Latch number: 0
+[06/22 13:49:43     44s]   Number of sequential cells which are not FFs: 16
+[06/22 13:49:43     44s]  Visiting view : worst_case
+[06/22 13:49:43     44s]    : PowerDomain = none : Weighted F : unweighted  = 35.90 (1.000) with rcCorner = 0
+[06/22 13:49:43     44s]    : PowerDomain = none : Weighted F : unweighted  = 33.00 (1.000) with rcCorner = -1
+[06/22 13:49:43     44s]  Visiting view : best_case
+[06/22 13:49:43     44s]    : PowerDomain = none : Weighted F : unweighted  = 12.10 (1.000) with rcCorner = 0
+[06/22 13:49:43     44s]    : PowerDomain = none : Weighted F : unweighted  = 11.00 (1.000) with rcCorner = -1
+[06/22 13:49:43     44s] 
+[06/22 13:49:43     44s] TimeStamp Creating Cell Server ...(0, 0, 0, 0) in restoreDesign End ...
+[06/22 13:49:43     44s] 
+[06/22 13:49:43     44s] TimeStamp Deleting Cell Server Begin ...
+[06/22 13:49:43     44s] 
+[06/22 13:49:43     44s] TimeStamp Deleting Cell Server End ...
+[06/22 13:49:43     44s] Reading floorplan file - /home/vlsi30/day18/physical_design/mealy_1001_1100_placement.enc.dat/mealy_1001_1100.fp.gz (mem = 2810.2M).
+[06/22 13:49:43     44s] #% Begin Load floorplan data ... (date=06/22 13:49:43, mem=2500.5M)
+[06/22 13:49:43     44s] *info: reset 32 existing net BottomPreferredLayer and AvoidDetour
+[06/22 13:49:43     44s] Deleting old partition specification.
+[06/22 13:49:43     44s] Set FPlanBox to (0 0 84100 58580)
+[06/22 13:49:43     44s] **WARN: (IMPFP-3961):	The techSite 'pad' has no related standard cells in the LEF/OA library. The calculations for this site type cannot be made unless standard cell models of this type exist in the LEF/OA library. Ignore this warning if the SITE is not used by the library. Alternatively, remove the SITE definition for the LEF/OA library to avoid this message.
+[06/22 13:49:43     44s] **WARN: (IMPFP-3961):	The techSite 'corner' has no related standard cells in the LEF/OA library. The calculations for this site type cannot be made unless standard cell models of this type exist in the LEF/OA library. Ignore this warning if the SITE is not used by the library. Alternatively, remove the SITE definition for the LEF/OA library to avoid this message.
+[06/22 13:49:43     44s]  ... processed partition successfully.
+[06/22 13:49:43     44s] Reading binary special route file /home/vlsi30/day18/physical_design/mealy_1001_1100_placement.enc.dat/mealy_1001_1100.fp.spr.gz (Created by Innovus v21.15-s110_1 on Mon Jun 22 11:24:10 2026, version: 1)
+[06/22 13:49:43     44s] Convert 0 swires and 0 svias from compressed groups
+[06/22 13:49:43     44s] 38 swires and 134 svias were compressed
+[06/22 13:49:43     44s] 26 swires and 8 svias were decompressed from small or sparse groups
+[06/22 13:49:43     44s] Ending "Read special route file" (total cpu=0:00:00.0, real=0:00:00.0, peak res=2501.8M, current mem=2501.8M)
+[06/22 13:49:43     44s] Extracting standard cell pins and blockage ...... 
+[06/22 13:49:43     44s] Pin and blockage extraction finished
+[06/22 13:49:43     44s] #% End Load floorplan data ... (date=06/22 13:49:43, total cpu=0:00:00.1, real=0:00:00.0, peak res=2514.9M, current mem=2514.9M)
+[06/22 13:49:43     44s] #% Begin Load SymbolTable ... (date=06/22 13:49:43, mem=2514.9M)
+[06/22 13:49:43     44s] #% End Load SymbolTable ... (date=06/22 13:49:43, total cpu=0:00:00.0, real=0:00:00.0, peak res=2514.9M, current mem=2514.9M)
+[06/22 13:49:43     44s] Loading place ...
+[06/22 13:49:43     45s] #% Begin Load placement data ... (date=06/22 13:49:43, mem=2514.9M)
+[06/22 13:49:43     45s] Reading placement file - /home/vlsi30/day18/physical_design/mealy_1001_1100_placement.enc.dat/mealy_1001_1100.place.gz.
+[06/22 13:49:43     45s] ** Reading stdCellPlacement_binary (Created by Innovus v21.15-s110_1 on Mon Jun 22 11:24:11 2026, version# 2) ...
+[06/22 13:49:43     45s] Read Views for adaptive view pruning ...
+[06/22 13:49:43     45s] Read 0 views from Binary DB for adaptive view pruning
+[06/22 13:49:43     45s] *** applyConnectGlobalNets disabled.
+[06/22 13:49:43     45s] *** Completed restorePlace (cpu=0:00:00.0 real=0:00:00.0 mem=2826.3M) ***
+[06/22 13:49:43     45s] Has not load the powerDB, will keep enalbed
+[06/22 13:49:43     45s] Has not load the powerDB, will keep enalbed
+[06/22 13:49:43     45s] Total net length = 3.045e+02 (1.599e+02 1.446e+02) (ext = 1.062e+02)
+[06/22 13:49:43     45s] #% End Load placement data ... (date=06/22 13:49:43, total cpu=0:00:00.1, real=0:00:00.0, peak res=2515.9M, current mem=2515.9M)
+[06/22 13:49:43     45s] Reading PG file /home/vlsi30/day18/physical_design/mealy_1001_1100_placement.enc.dat/mealy_1001_1100.pg.gz, version#2, (Created by Innovus v21.15-s110_1 on       Mon Jun 22 11:24:10 2026)
+[06/22 13:49:43     45s] *** Completed restorePGFile (cpu=0:00:00.0 real=0:00:00.0 mem=2842.3M) ***
+[06/22 13:49:43     45s] #% Begin Load routing data ... (date=06/22 13:49:43, mem=2518.3M)
+[06/22 13:49:43     45s] Reading routing file - /home/vlsi30/day18/physical_design/mealy_1001_1100_placement.enc.dat/mealy_1001_1100.route.gz.
+[06/22 13:49:44     45s] Reading Innovus routing data (Created by Innovus v21.15-s110_1 on Mon Jun 22 11:24:11 2026 Format: 20.1) ...
+[06/22 13:49:44     45s] *** Total 32 nets are successfully restored.
+[06/22 13:49:44     45s] *** Completed restoreRoute (cpu=0:00:00.0 real=0:00:01.0 mem=2842.3M) ***
+[06/22 13:49:44     45s] Has not load the powerDB, will keep enalbed
+[06/22 13:49:44     45s] Has not load the powerDB, will keep enalbed
+[06/22 13:49:44     45s] #% End Load routing data ... (date=06/22 13:49:44, total cpu=0:00:00.0, real=0:00:01.0, peak res=2519.0M, current mem=2518.3M)
+[06/22 13:49:44     45s] Reading property file /home/vlsi30/day18/physical_design/mealy_1001_1100_placement.enc.dat/mealy_1001_1100.prop
+[06/22 13:49:44     45s] *** Completed restoreProperty (cpu=0:00:00.0 real=0:00:00.0 mem=2843.3M) ***
+[06/22 13:49:44     45s] Set Default Input Pin Transition as 0.1 ps.
+[06/22 13:49:44     46s] eee: Design meta data file: /home/vlsi30/day18/physical_design/mealy_1001_1100_placement.enc.dat/extraction/extractionMetaData.gz doesn't exist
+[06/22 13:49:44     46s] Extraction setup Started for TopCell mealy_1001_1100 
+[06/22 13:49:44     46s] Summary of Active RC-Corners : 
+[06/22 13:49:44     46s]  
+[06/22 13:49:44     46s]  Analysis View: worst_case
+[06/22 13:49:44     46s]     RC-Corner Name        : rc_corner
+[06/22 13:49:44     46s]     RC-Corner Index       : 0
+[06/22 13:49:44     46s]     RC-Corner Temperature : 125 Celsius
+[06/22 13:49:44     46s]     RC-Corner Cap Table   : ''
+[06/22 13:49:44     46s]     RC-Corner PostRoute Res Factor        : 1
+[06/22 13:49:44     46s]     RC-Corner PostRoute Cap Factor        : 1
+[06/22 13:49:44     46s]     RC-Corner PostRoute XCap Factor       : 1
+[06/22 13:49:44     46s]     RC-Corner Technology file: '/home/vlsi30/day18/physical_design/mealy_1001_1100_placement.enc.dat/libs/mmmc/rc_corner/gpdk090_9l.tch'
+[06/22 13:49:44     46s]  
+[06/22 13:49:44     46s]  Analysis View: best_case
+[06/22 13:49:44     46s]     RC-Corner Name        : rc_corner
+[06/22 13:49:44     46s]     RC-Corner Index       : 0
+[06/22 13:49:44     46s]     RC-Corner Temperature : 125 Celsius
+[06/22 13:49:44     46s]     RC-Corner Cap Table   : ''
+[06/22 13:49:44     46s]     RC-Corner PostRoute Res Factor        : 1
+[06/22 13:49:44     46s]     RC-Corner PostRoute Cap Factor        : 1
+[06/22 13:49:44     46s]     RC-Corner PostRoute XCap Factor       : 1
+[06/22 13:49:44     46s]     RC-Corner Technology file: '/home/vlsi30/day18/physical_design/mealy_1001_1100_placement.enc.dat/libs/mmmc/rc_corner/gpdk090_9l.tch'
+[06/22 13:49:44     46s] eee: RC Grid memory allocated = 972 (3 X 3 X 9 X 12b)
+[06/22 13:49:44     46s] eee: pegSigSF=1.070000
+[06/22 13:49:44     46s] Initializing multi-corner resistance tables ...
+[06/22 13:49:44     46s] eee: Grid unit RC data computation started
+[06/22 13:49:44     46s] eee: Grid unit RC data computation completed
+[06/22 13:49:44     46s] eee: l=1 avDens=0.045632 usedTrk=8.213793 availTrk=180.000000 sigTrk=8.213793
+[06/22 13:49:44     46s] eee: l=2 avDens=0.026031 usedTrk=7.028352 availTrk=270.000000 sigTrk=7.028352
+[06/22 13:49:44     46s] eee: l=3 avDens=0.035401 usedTrk=6.372222 availTrk=180.000000 sigTrk=6.372222
+[06/22 13:49:44     46s] eee: l=4 avDens=0.001883 usedTrk=0.338889 availTrk=180.000000 sigTrk=0.338889
+[06/22 13:49:44     46s] eee: l=5 avDens=0.000000 usedTrk=0.000000 availTrk=0.000000 sigTrk=0.000000
+[06/22 13:49:44     46s] eee: l=6 avDens=0.000000 usedTrk=0.000000 availTrk=0.000000 sigTrk=0.000000
+[06/22 13:49:44     46s] eee: l=7 avDens=0.000000 usedTrk=0.000000 availTrk=0.000000 sigTrk=0.000000
+[06/22 13:49:44     46s] eee: l=8 avDens=0.073340 usedTrk=8.800766 availTrk=120.000000 sigTrk=8.800766
+[06/22 13:49:44     46s] eee: l=9 avDens=0.126223 usedTrk=15.146743 availTrk=120.000000 sigTrk=15.146743
+[06/22 13:49:44     46s] eee: LAM-FP: thresh=1 ; dimX=145.000000 ; dimY=101.000000 ; multX=1.000000 ; multY=1.000000 ; minP=580 ; fpMult=1.000000 ;
+[06/22 13:49:44     46s] eee: LAM: n=40 LLS=2-3 HLS=3-5 rDens=0.292976 uaWl=1.000000 uaWlH=0.024700 aWlH=0.000000 lMod=0 pMax=0.806400 pMod=83 pModAss=50 wcR=0.700000 crit=0.000000 siPrev=0 newSi=0.001600 wHLS=1.750000 viaL=0.000000 shortMod=0.000000 fModUnas=0.000000 fModAs=0.000000 pDens=0.500000 
+[06/22 13:49:44     46s] eee: uC 0.000130 of RC Grid (0 0 8) is <  min uC 0.000150 of layer.
+[06/22 13:49:44     46s] eee: uR 0.000166 of RC Grid (0 0 8) is > max uR 0.000025 of layer.
+[06/22 13:49:44     46s] eee: uC 0.000123 of RC Grid (0 1 8) is <  min uC 0.000150 of layer.
+[06/22 13:49:44     46s] eee: uR 0.000166 of RC Grid (0 1 8) is > max uR 0.000025 of layer.
+[06/22 13:49:44     46s] eee: uC 0.000127 of RC Grid (1 0 8) is <  min uC 0.000150 of layer.
+[06/22 13:49:44     46s] eee: uR 0.000166 of RC Grid (1 0 8) is > max uR 0.000025 of layer.
+[06/22 13:49:44     46s] eee: uC 0.000123 of RC Grid (1 1 8) is <  min uC 0.000150 of layer.
+[06/22 13:49:44     46s] eee: uR 0.000166 of RC Grid (1 1 8) is > max uR 0.000025 of layer.
+[06/22 13:49:44     46s] eee: uR 0.000166 of RC Grid (0 0 9) is > max uR 0.000027 of layer.
+[06/22 13:49:44     46s] eee: uR 0.000166 of RC Grid (0 1 9) is > max uR 0.000027 of layer.
+[06/22 13:49:44     46s] eee: uR 0.000166 of RC Grid (1 0 9) is > max uR 0.000027 of layer.
+[06/22 13:49:44     46s] eee: uR 0.000166 of RC Grid (1 1 9) is > max uR 0.000027 of layer.
+[06/22 13:49:44     46s] eee: dbu = 2000, Design = [ll(0.000000, 0.000000) ur(42.050000, 29.290000)], Layers = [f(9) b(0)], Grid size = 26.100000 um, Grid Dim = (2 X 2)
+[06/22 13:49:44     46s] eee: Metal Layers Info:
+[06/22 13:49:44     46s] eee: +----------+-----+---------+---------+---------+--------+--------+---+---+----+
+[06/22 13:49:44     46s] eee: |   Layer  |  Id |    W    |    S    |    P    |   uC   |   uR   | D | T | wS |
+[06/22 13:49:44     46s] eee: +----------+-----+---------+---------+---------+--------+--------+---+---+----+
+[06/22 13:49:44     46s] eee: |   Metal1 |   1 |   0.120 |   0.120 |   0.290 |  0.000 |   0.67 | H | 0 |  1 |
+[06/22 13:49:44     46s] eee: |   Metal2 |   2 |   0.140 |   0.140 |   0.290 |  0.000 |   0.43 | V | 0 |  1 |
+[06/22 13:49:44     46s] eee: |   Metal3 |   3 |   0.140 |   0.140 |   0.290 |  0.000 |   0.43 | H | 0 |  1 |
+[06/22 13:49:44     46s] eee: |   Metal4 |   4 |   0.140 |   0.140 |   0.290 |  0.000 |   0.43 | V | 0 |  1 |
+[06/22 13:49:44     46s] eee: |   Metal5 |   5 |   0.140 |   0.140 |   0.290 |  0.000 |   0.43 | H | 0 |  1 |
+[06/22 13:49:44     46s] eee: |   Metal6 |   6 |   0.140 |   0.140 |   0.290 |  0.000 |   0.43 | V | 0 |  1 |
+[06/22 13:49:44     46s] eee: |   Metal7 |   7 |   0.140 |   0.140 |   0.290 |  0.000 |   0.43 | H | 0 |  1 |
+[06/22 13:49:44     46s] eee: |   Metal8 |   8 |   0.440 |   0.400 |   0.870 |  0.000 |   0.05 | V | 0 |  1 |
+[06/22 13:49:44     46s] eee: |   Metal9 |   9 |   0.440 |   0.400 |   0.870 |  0.000 |   0.05 | H | 0 |  1 |
+[06/22 13:49:44     46s] eee: +----------+-----+---------+---------+---------+--------+--------+---+---+----+
+[06/22 13:49:44     46s] eee: uC/uR for corner rc_corner, min-width/min-spacing, 30 perc over/under densities.
+[06/22 13:49:44     46s] eee: +-----------------------NDR Info-----------------------+
+[06/22 13:49:44     46s] eee: NDR Count = 1, Fake NDR = 0
+[06/22 13:49:44     46s] eee: +----------------------------------------------------+
+[06/22 13:49:44     46s] eee: | NDR Name = LEFDefaultRouteSpec_gpdk090  | Id = 1  | isHard = 0 
+[06/22 13:49:44     46s] eee: +----------------------------------------------------+
+[06/22 13:49:44     46s] #% Begin Load power constraints ... (date=06/22 13:49:44, mem=2521.4M)
+[06/22 13:49:45     46s] #% End Load power constraints ... (date=06/22 13:49:44, total cpu=0:00:00.0, real=0:00:01.0, peak res=2522.1M, current mem=2522.1M)
+[06/22 13:49:45     46s] **WARN: (TCLCMD-1263):	The -frame parameter is obsolete and will be removed from the software in a future release. To ensure compatibility with future releases, remove this parameter from your scripts.
+[06/22 13:49:45     46s] #% Begin load AAE data ... (date=06/22 13:49:45, mem=2550.8M)
+[06/22 13:49:45     46s] AAE DB initialization (MEM=2557.132812 CPU=0:00:00.0 REAL=0:00:00.0) 
+[06/22 13:49:45     46s] **WARN: (IMPESI-621):	Timing window restoration data eosdb.dat not found. PBA-SI results may not match in save/restore flow.
+[06/22 13:49:45     46s] #% End load AAE data ... (date=06/22 13:49:45, total cpu=0:00:00.6, real=0:00:00.0, peak res=2557.1M, current mem=2557.1M)
+[06/22 13:49:46     47s] Ending "read_design" (total cpu=0:00:07.1, real=0:00:08.0, peak res=2581.3M, current mem=2403.8M)
+[06/22 13:49:46     47s] Parasitics side thread was NULL.
+[06/22 13:49:46     47s] Loading  (mealy_1001_1100)
+[06/22 13:49:46     47s] Traverse HInst (mealy_1001_1100)
+[06/22 13:49:46     47s] Tech dependent Parameter, Build TLibAnalyzer for: cellAreaConsiderPadding
+[06/22 13:49:46     47s] 
+[06/22 13:49:46     47s] TimeStamp Creating Cell Server ...(0, 0, 0, 0) Begin ...
+[06/22 13:49:46     47s] SB Latch Setting to complicate: TLATSRXL complicate code: 8
+[06/22 13:49:46     47s] SB Latch Setting to complicate: TLATSRX4 complicate code: 8
+[06/22 13:49:46     47s] SB Latch Setting to complicate: TLATSRX2 complicate code: 8
+[06/22 13:49:46     47s] SB Latch Setting to complicate: TLATSRX1 complicate code: 8
+[06/22 13:49:46     47s] SB Latch Setting to complicate: TLATNSRXL complicate code: 8
+[06/22 13:49:46     47s] SB Latch Setting to complicate: TLATNSRX4 complicate code: 8
+[06/22 13:49:46     47s] SB Latch Setting to complicate: TLATNSRX2 complicate code: 8
+[06/22 13:49:46     47s] SB Latch Setting to complicate: TLATNSRX1 complicate code: 8
+[06/22 13:49:46     47s] SBFF Setting to complicate: SEDFFTRXL complicate code: 30.05
+[06/22 13:49:46     47s] SBFF Setting to complicate: SEDFFTRX4 complicate code: 30.05
+[06/22 13:49:46     47s] SBFF Setting to complicate: SEDFFTRX2 complicate code: 30.05
+[06/22 13:49:46     47s] SBFF Setting to complicate: SEDFFTRX1 complicate code: 30.05
+[06/22 13:49:46     47s] SBFF Setting to complicate: EDFFTRXL complicate code: 30.05
+[06/22 13:49:46     47s] SBFF Setting to complicate: EDFFTRX4 complicate code: 30.05
+[06/22 13:49:46     47s] SBFF Setting to complicate: EDFFTRX2 complicate code: 30.05
+[06/22 13:49:46     47s] SBFF Setting to complicate: EDFFTRX1 complicate code: 30.05
+[06/22 13:49:46     47s] Summary for sequential cells identification: 
+[06/22 13:49:46     47s]   Identified SBFF number: 112
+[06/22 13:49:46     47s]   Identified MBFF number: 0
+[06/22 13:49:46     47s]   Identified SB Latch number: 8
+[06/22 13:49:46     47s]   Identified MB Latch number: 0
+[06/22 13:49:46     47s]   Not identified SBFF number: 8
+[06/22 13:49:46     47s]   Not identified MBFF number: 0
+[06/22 13:49:46     47s]   Not identified SB Latch number: 8
+[06/22 13:49:46     47s]   Not identified MB Latch number: 0
+[06/22 13:49:46     47s]   Number of sequential cells which are not FFs: 16
+[06/22 13:49:46     47s]  Visiting view : worst_case
+[06/22 13:49:46     47s]    : PowerDomain = none : Weighted F : unweighted  = 35.90 (1.000) with rcCorner = 0
+[06/22 13:49:46     47s]    : PowerDomain = none : Weighted F : unweighted  = 33.00 (1.000) with rcCorner = -1
+[06/22 13:49:46     47s]  Visiting view : best_case
+[06/22 13:49:46     47s]    : PowerDomain = none : Weighted F : unweighted  = 12.10 (1.000) with rcCorner = 0
+[06/22 13:49:46     47s]    : PowerDomain = none : Weighted F : unweighted  = 11.00 (1.000) with rcCorner = -1
+[06/22 13:49:46     47s] TLC MultiMap info (StdDelay):
+[06/22 13:49:46     47s]   : min_delay + fast + 1 + rc_corner := 12.1ps
+[06/22 13:49:46     47s]   : max_delay + slow + 1 + no RcCorner := 33ps
+[06/22 13:49:46     47s]   : min_delay + fast + 1 + no RcCorner := 11ps
+[06/22 13:49:46     47s]   : max_delay + slow + 1 + rc_corner := 35.9ps
+[06/22 13:49:46     47s]  Setting StdDelay to: 35.9ps
+[06/22 13:49:46     47s] 
+[06/22 13:49:46     47s] TimeStamp Creating Cell Server ...(0, 0, 0, 0) End ...
+[06/22 13:53:26     60s] <CMD> all_setup_analysis_views
+[06/22 13:53:26     60s] <CMD> all_hold_analysis_views
+[06/22 13:53:26     60s] <CMD> all_setup_analysis_views
+[06/22 13:53:26     60s] <CMD> all_hold_analysis_views
+[06/22 13:53:26     60s] **WARN: (IMPSYC-3133):	The unloadTimingCon command is not supported in the MMMC environment.
+[06/22 13:53:26     60s]           To modify the active set of constraints you can use one of the following means:
+[06/22 13:53:26     60s]           - Use the set_analysis_view command to change the set of active views.
+[06/22 13:53:26     60s]           - Use the update_analysis_view command to change the constraint mode associated with an active view.
+[06/22 13:53:26     60s]           - Use the update_constraint_mode command to change the set of SDC files pointed to be active modes.
+[06/22 13:53:26     60s] <CMD> all_setup_analysis_views
+[06/22 13:53:26     60s] <CMD> all_hold_analysis_views
+[06/22 13:53:26     60s] <CMD> all_setup_analysis_views
+[06/22 13:53:26     60s] <CMD> all_hold_analysis_views
+[06/22 13:53:26     60s] **WARN: (IMPSYC-3133):	The unloadTimingCon command is not supported in the MMMC environment.
+[06/22 13:53:26     60s]           To modify the active set of constraints you can use one of the following means:
+[06/22 13:53:26     60s]           - Use the set_analysis_view command to change the set of active views.
+[06/22 13:53:26     60s]           - Use the update_analysis_view command to change the constraint mode associated with an active view.
+[06/22 13:53:26     60s]           - Use the update_constraint_mode command to change the set of SDC files pointed to be active modes.
+[06/22 13:53:55     62s] <CMD> read_spef mealy_1001_1100.spef
+[06/22 13:53:55     62s] Used active corner rc_corner for reading SPEF file as option '-rc_corner <cornerName>' is not specified in MMMC mode.
+[06/22 13:53:55     62s] read_spef Option :  mealy_1001_1100.spef -noStarN 
+[06/22 13:53:55     62s] 
+[06/22 13:53:55     62s] SPEF files for RC Corner rc_corner:
+[06/22 13:53:55     62s] Top-level spef file 'mealy_1001_1100.spef'.
+[06/22 13:53:55     62s] Start spef parsing (MEM=3061.7).
+[06/22 13:53:55     62s] Number of corners: 1
+[06/22 13:53:55     62s] Number of parallel threads processing the nets is: 1
+[06/22 13:53:55     62s] Maximum backlog used in parser: 50.
+[06/22 13:53:55     62s] Reading multiple SPEF files in parallel.
+[06/22 13:53:55     62s] RCDB /tmp/ssv_tmpdir_29526_0e494b24-adba-48fa-bd1b-a869333acc07_V8UJuz/mealy_1001_1100_29526_0e494b24-adba-48fa-bd1b-a869333acc07_1LYgcz.rcdb.d/mealy_1001_1100.rcdb.d Creation Started (CPU Time= 0:00:00.0  MEM= 3071.7M)
+[06/22 13:53:55     62s] Creating parasitic data file '/tmp/ssv_tmpdir_29526_0e494b24-adba-48fa-bd1b-a869333acc07_V8UJuz/mealy_1001_1100_29526_0e494b24-adba-48fa-bd1b-a869333acc07_1LYgcz.rcdb.d/mealy_1001_1100.rcdb.d' for storing RC.
+[06/22 13:53:55     62s] The SPEF file, 'mealy_1001_1100.spef', has encountered the error/warning message(s) during its reading.
+[06/22 13:53:55     62s] **WARN: (SPEF-1132):	An invalid or ignored D_NET reference (FE_RN_1_0) is detected in D_NET. The net name doesn't have corresponding net in the netlist. This D_NET starts on line 92. Check the SPEF file is valid, correct as needed and read it again.
+[06/22 13:53:55     62s] **WARN: (SPEF-1132):	An invalid or ignored D_NET reference (FE_RN_0_0) is detected in D_NET. The net name doesn't have corresponding net in the netlist. This D_NET starts on line 115. Check the SPEF file is valid, correct as needed and read it again.
+[06/22 13:53:55     62s] **WARN: (SPEF-1132):	An invalid or ignored D_NET reference (FE_RN_1) is detected in D_NET. The net name doesn't have corresponding net in the netlist. This D_NET starts on line 133. Check the SPEF file is valid, correct as needed and read it again.
+[06/22 13:53:55     62s] **ERROR: (SPEF-1127):	Invalid CONN connection found (FE_OFC0_rst:A) for D_NET (rst) that starts on line 246.
+**WARN: (SPEF-1124):	Invalid capacitor node (FE_OFC0_rst:A) found in D_NET (rst) that starts on line 246. The net name doesn't have corresponding net in the netlist. Check the SPEF file is valid, correct as needed and read it again.
+[06/22 13:53:55     62s] **WARN: (SPEF-1135):	Invalid resistor node (FE_OFC0_rst:A) found in D_NET (rst) that starts on line 246. The net name doesn't have corresponding net in the netlist. Check the SPEF file is valid, correct as needed and read it again.
+[06/22 13:53:55     62s] **WARN: (SPEF-1152):	Net 'rst ( having pins g723/A rst )' is not fully specified as per its connectivity in design netlist. Missing ports have been added to the net using low RC values. The timing accuracy is not reliable for such nets.
+[06/22 13:53:55     62s] **ERROR: (SPEF-1127):	Invalid CONN connection found (FE_RC_1_0:A) for D_NET (din) that starts on line 268.
+**ERROR: (SPEF-1127):	Invalid CONN connection found (FE_RC_3_0:A) for D_NET (din) that starts on line 268.
+**ERROR: (SPEF-1127):	Invalid CONN connection found (FE_RC_1_0_dup:A) for D_NET (din) that starts on line 268.
+**ERROR: (SPEF-1127):	Invalid CONN connection found (g717__2802:A) for D_NET (din) that starts on line 268.
+**ERROR: (SPEF-1123):	Invalid capacitor node (g717__2802:A) does not belong to net found in D_NET (din) that starts on line 268.
+**ERROR: (SPEF-1134):	Invalid resistor node (g717__2802:A) does not belong to net found in D_NET (din) that starts on line 268.
+**WARN: (SPEF-1135):	Invalid resistor node (FE_RC_1_0_dup:A) found in D_NET (din) that starts on line 268. The net name doesn't have corresponding net in the netlist. Check the SPEF file is valid, correct as needed and read it again.
+[06/22 13:53:55     62s] **WARN: (SPEF-1135):	Invalid resistor node (FE_RC_3_0:A) found in D_NET (din) that starts on line 268. The net name doesn't have corresponding net in the netlist. Check the SPEF file is valid, correct as needed and read it again.
+[06/22 13:53:55     62s] **WARN: (SPEF-1135):	Invalid resistor node (FE_RC_1_0:A) found in D_NET (din) that starts on line 268. The net name doesn't have corresponding net in the netlist. Check the SPEF file is valid, correct as needed and read it again.
+[06/22 13:53:55     62s] **WARN: (SPEF-1152):	Net 'din ( having pins g721/A g714__8246/B g717__2802/B g711__6783/C g710__8428/B ...)' is not fully specified as per its connectivity in design netlist. Missing ports have been added to the net using low RC values. The timing accuracy is not reliable for such nets.
+[06/22 13:53:55     62s] **ERROR: (SPEF-1127):	Invalid CONN connection found (FE_RC_4_0:A) for D_NET (state[2]) that starts on line 413.
+**WARN: (SPEF-1135):	Invalid resistor node (FE_RC_4_0:A) found in D_NET (state[2]) that starts on line 413. The net name doesn't have corresponding net in the netlist. Check the SPEF file is valid, correct as needed and read it again.
+[06/22 13:53:55     62s] **WARN: (SPEF-1152):	Net 'state[2] ( having pins fopt2/A state_reg[2]/Q g718__5122/A g712__5526/A g710__8428/A ...)' is not fully specified as per its connectivity in design netlist. Missing ports have been added to the net using low RC values. The timing accuracy is not reliable for such nets.
+[06/22 13:53:55     62s] **ERROR: (SPEF-1127):	Invalid CONN connection found (FE_RC_0_0:A) for D_NET (state[0]) that starts on line 568.
+**WARN: (SPEF-1124):	Invalid capacitor node (FE_RC_0_0:A) found in D_NET (state[0]) that starts on line 568. The net name doesn't have corresponding net in the netlist. Check the SPEF file is valid, correct as needed and read it again.
+[06/22 13:53:55     62s] **WARN: (SPEF-1135):	Invalid resistor node (FE_RC_0_0:A) found in D_NET (state[0]) that starts on line 568. The net name doesn't have corresponding net in the netlist. Check the SPEF file is valid, correct as needed and read it again.
+[06/22 13:53:55     62s] **WARN: (SPEF-1152):	Net 'state[0] ( having pins state_reg[0]/Q g724/A g714__8246/A g711__6783/A )' is not fully specified as per its connectivity in design netlist. Missing ports have been added to the net using low RC values. The timing accuracy is not reliable for such nets.
+[06/22 13:53:55     62s] **ERROR: (SPEF-1127):	Invalid CONN connection found (FE_RC_4_0:C) for D_NET (n_4) that starts on line 678.
+**ERROR: (SPEF-1127):	Invalid CONN connection found (g716__1617:A) for D_NET (n_4) that starts on line 678.
+**WARN: (SPEF-1124):	Invalid capacitor node (FE_RC_4_0:C) found in D_NET (n_4) that starts on line 678. The net name doesn't have corresponding net in the netlist. Check the SPEF file is valid, correct as needed and read it again.
+[06/22 13:53:55     62s] **ERROR: (SPEF-1134):	Invalid resistor node (g716__1617:A) does not belong to net found in D_NET (n_4) that starts on line 678.
+**WARN: (SPEF-1135):	Invalid resistor node (FE_RC_4_0:C) found in D_NET (n_4) that starts on line 678. The net name doesn't have corresponding net in the netlist. Check the SPEF file is valid, correct as needed and read it again.
+[06/22 13:53:55     62s] **WARN: (SPEF-1152):	Net 'n_4 ( having pins g720/Y g718__5122/B g716__1617/B g710__8428/C )' is not fully specified as per its connectivity in design netlist. Missing ports have been added to the net using low RC values. The timing accuracy is not reliable for such nets.
+[06/22 13:53:55     62s] **ERROR: (SPEF-1127):	Invalid CONN connection found (g716__1617:B) for D_NET (n_6) that starts on line 732.
+**ERROR: (SPEF-1127):	Invalid CONN connection found (g717__2802:B) for D_NET (n_6) that starts on line 732.
+**ERROR: (SPEF-1127):	Invalid CONN connection found (FE_RC_0_0:Y) for D_NET (n_6) that starts on line 732.
+**WARN: (SPEF-1135):	Invalid resistor node (FE_RC_0_0:Y) found in D_NET (n_6) that starts on line 732. The net name doesn't have corresponding net in the netlist. Check the SPEF file is valid, correct as needed and read it again.
+[06/22 13:53:55     62s] **ERROR: (SPEF-1134):	Invalid resistor node (g717__2802:B) does not belong to net found in D_NET (n_6) that starts on line 732.
+**ERROR: (SPEF-1134):	Invalid resistor node (g716__1617:B) does not belong to net found in D_NET (n_6) that starts on line 732.
+**WARN: (SPEF-1152):	Net 'n_6 ( having pins g724/Y g717__2802/A g716__1617/A g715__3680/B g712__5526/C ...)' is not fully specified as per its connectivity in design netlist. Missing ports have been added to the net using low RC values. The timing accuracy is not reliable for such nets.
+[06/22 13:53:55     62s] **ERROR: (SPEF-1127):	Invalid CONN connection found (FE_RC_1_0:Y) for D_NET (n_7) that starts on line 779.
+**WARN: (SPEF-1135):	Invalid resistor node (FE_RC_1_0:Y) found in D_NET (n_7) that starts on line 779. The net name doesn't have corresponding net in the netlist. Check the SPEF file is valid, correct as needed and read it again.
+[06/22 13:53:55     62s] **WARN: (SPEF-1152):	Net 'n_7 ( having pins g721/Y g715__3680/A g707__2398/B0 )' is not fully specified as per its connectivity in design netlist. Missing ports have been added to the net using low RC values. The timing accuracy is not reliable for such nets.
+[06/22 13:53:55     62s] **ERROR: (SPEF-1127):	Invalid CONN connection found (FE_RC_4_0:Y) for D_NET (n_11) that starts on line 867.
+**WARN: (SPEF-1135):	Invalid resistor node (FE_RC_4_0:Y) found in D_NET (n_11) that starts on line 867. The net name doesn't have corresponding net in the netlist. Check the SPEF file is valid, correct as needed and read it again.
+[06/22 13:53:55     62s] **WARN: (SPEF-1152):	Net 'n_11 ( having pins state_reg[2]/D g710__8428/Y )' is not fully specified as per its connectivity in design netlist. Missing ports have been added to the net using low RC values. The timing accuracy is not reliable for such nets.
+[06/22 13:53:55     62s] **ERROR: (SPEF-1127):	Invalid CONN connection found (FE_OFC0_rst:Y) for D_NET (n_17) that starts on line 1036.
+**WARN: (SPEF-1124):	Invalid capacitor node (FE_OFC0_rst:Y) found in D_NET (n_17) that starts on line 1036. The net name doesn't have corresponding net in the netlist. Check the SPEF file is valid, correct as needed and read it again.
+[06/22 13:53:55     62s] **WARN: (SPEF-1135):	Invalid resistor node (FE_OFC0_rst:Y) found in D_NET (n_17) that starts on line 1036. The net name doesn't have corresponding net in the netlist. Check the SPEF file is valid, correct as needed and read it again.
+[06/22 13:53:55     62s] **WARN: (SPEF-1152):	Net 'n_17 ( having pins state_reg[0]/RN state_reg[1]/RN state_reg[2]/RN g723/Y dout_1001_reg/RN ...)' is not fully specified as per its connectivity in design netlist. Missing ports have been added to the net using low RC values. The timing accuracy is not reliable for such nets.
+[06/22 13:53:55     62s] SPEF file mealy_1001_1100.spef.
+[06/22 13:53:55     62s] Number of Resistors     : 353
+[06/22 13:53:55     62s] Number of Ground Caps   : 288
+[06/22 13:53:55     62s] Number of Coupling Caps : 0
+[06/22 13:53:55     62s] 
+[06/22 13:53:55     62s] RCDB /tmp/ssv_tmpdir_29526_0e494b24-adba-48fa-bd1b-a869333acc07_V8UJuz/mealy_1001_1100_29526_0e494b24-adba-48fa-bd1b-a869333acc07_1LYgcz.rcdb.d/mealy_1001_1100.rcdb.d Creation Completed (CPU Time= 0:00:00.0  MEM= 3103.7M)
+[06/22 13:53:55     62s] End spef parsing (MEM=3095.7 CPU=0:00:00.0 REAL=0:00:00.0).
+[06/22 13:53:55     62s] Spef for RC Corner 'rc_corner' was previously specified. Dropping the previous specification.
+[06/22 13:53:55     62s] Lumped Parasitic Loading Started (total cpu=0:00:00.0, real=0:00:00.0, current mem=3095.703M)
+[06/22 13:53:55     62s] Opening parasitic data file '/tmp/ssv_tmpdir_29526_0e494b24-adba-48fa-bd1b-a869333acc07_V8UJuz/mealy_1001_1100_29526_0e494b24-adba-48fa-bd1b-a869333acc07_1LYgcz.rcdb.d/mealy_1001_1100.rcdb.d' for reading (mem: 3095.703M)
+[06/22 13:53:55     62s] Lumped Parasitic Loading Completed (total cpu=0:00:00.0, real=0:00:00.0, current mem=3095.703M)
+[06/22 13:53:55     62s] Closing parasitic data file '/tmp/ssv_tmpdir_29526_0e494b24-adba-48fa-bd1b-a869333acc07_V8UJuz/mealy_1001_1100_29526_0e494b24-adba-48fa-bd1b-a869333acc07_1LYgcz.rcdb.d/mealy_1001_1100.rcdb.d': 0 access done (mem: 3095.703M)
+[06/22 13:53:55     62s] 3 nets are missing in SPEF file. The names of these nets are saved in ./rc_corner.missing_nets.rpt.
+[06/22 13:53:55     62s] **WARN: (IMPEXT-3423):	Detected 9 nets with incomplete RC network. Low-value resistances have been added by the software to complete the RC network of these nets. Review the list of affected nets in the './mealy_1001_1100.rc_corner.incomplete_res.net' file to ensure they are not along the critical path because results of timing analysis performed on nets with incomplete RC network can be inaccurate.
+[06/22 13:54:02     62s] <CMD> all_setup_analysis_views
+[06/22 13:54:15     63s] <CMD> read_sdf mealy_1001_1100.sdf
+[06/22 13:54:15     63s] **WARN: (TCLCMD-1234):	In multi-mode, multi-corner analysis mode, you should include the -view option with the read_sdf command to annotate the SDF file to specific view(s). Without the -view option, the SDF file will only be annotated to the current default view.
+[06/22 13:59:21     76s] <CMD> get_eco_opt_mode -optimization_failure_tracking_file -quiet
+[06/22 13:59:32     77s] <CMD> get_time_unit
+[06/22 13:59:32     77s] <CMD> report_timing -output_format binary -max_paths 50000 -max_slack 0.75 -path_exceptions all -late > top.btarpt
+[06/22 13:59:32     77s] AAE_INFO: opIsDesignInPostRouteState() is 0
+[06/22 13:59:32     77s] #################################################################################
+[06/22 13:59:32     77s] # Design Name: mealy_1001_1100
+[06/22 13:59:32     77s] # Design Mode: 65nm
+[06/22 13:59:32     77s] # Analysis Mode: MMMC Non-OCV 
+[06/22 13:59:32     77s] # Parasitics Mode: SPEF/RCDB 
+[06/22 13:59:32     77s] # Signoff Settings: SI Off 
+[06/22 13:59:32     77s] #################################################################################
+[06/22 13:59:35     77s] Topological Sorting (REAL = 0:00:00.0, MEM = 3307.4M, InitMEM = 3305.4M)
+[06/22 13:59:35     77s] Start delay calculation (fullDC) (1 T). (MEM=1735.63)
+[06/22 13:59:35     77s] Start AAE Lib Loading. (MEM=1736.917969)
+[06/22 13:59:35     77s] End AAE Lib Loading. (MEM=1748.792969 CPU=0:00:00.0 Real=0:00:00.0)
+[06/22 13:59:35     77s] End AAE Lib Interpolated Model. (MEM=1748.792969 CPU Time=0:00:00.0, Real Time=0:00:00.0)
+[06/22 13:59:36     77s] Opening parasitic data file '/tmp/ssv_tmpdir_29526_0e494b24-adba-48fa-bd1b-a869333acc07_V8UJuz/mealy_1001_1100_29526_0e494b24-adba-48fa-bd1b-a869333acc07_1LYgcz.rcdb.d/mealy_1001_1100.rcdb.d' for reading (mem: 3566.094M)
+[06/22 13:59:36     77s] RC Database In Completed (CPU Time= 0:00:00.0  Real Time=0:00:00.0  MEM= 3600.1M)
+[06/22 13:59:36     77s] End Timing Check Calculation. (CPU Time=0:00:00.0, Real Time=0:00:00.0)
+[06/22 13:59:36     77s] End Timing Check Calculation. (CPU Time=0:00:00.0, Real Time=0:00:00.0)
+[06/22 13:59:36     77s] End delay calculation. (MEM=1867.45 CPU=0:00:00.1 REAL=0:00:00.0)
+[06/22 13:59:36     77s] Begin loading slews from CTE ...
+[06/22 13:59:36     77s] Loading slews from CTE completed...
+[06/22 13:59:36     77s] End delay calculation (fullDC). (MEM=1863.49 CPU=0:00:00.2 REAL=0:00:01.0)
+[06/22 13:59:39     78s] **ERROR: (SDF-300):	Could not locate instance 'FE_RC_4_0' in design 'mealy_1001_1100' (File /home/vlsi30/day18/physical_design/mealy_1001_1100.sdf, Line 19).
+
+**ERROR: (SDF-300):	Could not locate instance 'FE_RC_5_0' in design 'mealy_1001_1100' (File /home/vlsi30/day18/physical_design/mealy_1001_1100.sdf, Line 20).
+
+**ERROR: (SDF-300):	Could not locate instance 'FE_RC_1_0_dup' in design 'mealy_1001_1100' (File /home/vlsi30/day18/physical_design/mealy_1001_1100.sdf, Line 21).
+
+**ERROR: (SDF-300):	Could not locate instance 'FE_OFC0_rst' in design 'mealy_1001_1100' (File /home/vlsi30/day18/physical_design/mealy_1001_1100.sdf, Line 28).
+
+**ERROR: (SDF-300):	Could not locate instance 'FE_RC_1_0' in design 'mealy_1001_1100' (File /home/vlsi30/day18/physical_design/mealy_1001_1100.sdf, Line 31).
+
+**ERROR: (SDF-300):	Could not locate instance 'FE_RC_1_0_dup' in design 'mealy_1001_1100' (File /home/vlsi30/day18/physical_design/mealy_1001_1100.sdf, Line 32).
+
+**ERROR: (SDF-300):	Could not locate instance 'FE_RC_3_0' in design 'mealy_1001_1100' (File /home/vlsi30/day18/physical_design/mealy_1001_1100.sdf, Line 34).
+
+**ERROR: (SDF-300):	Could not locate instance 'FE_RC_4_0' in design 'mealy_1001_1100' (File /home/vlsi30/day18/physical_design/mealy_1001_1100.sdf, Line 43).
+
+**ERROR: (SDF-300):	Could not locate instance 'FE_RC_0_0' in design 'mealy_1001_1100' (File /home/vlsi30/day18/physical_design/mealy_1001_1100.sdf, Line 50).
+
+**ERROR: (SDF-300):	Could not locate instance 'FE_RC_4_0' in design 'mealy_1001_1100' (File /home/vlsi30/day18/physical_design/mealy_1001_1100.sdf, Line 56).
+
+**ERROR: (SDF-300):	Could not locate instance 'FE_RC_0_0' in design 'mealy_1001_1100' (File /home/vlsi30/day18/physical_design/mealy_1001_1100.sdf, Line 58).
+
+**ERROR: (SDF-300):	Could not locate instance 'FE_RC_0_0' in design 'mealy_1001_1100' (File /home/vlsi30/day18/physical_design/mealy_1001_1100.sdf, Line 59).
+
+**ERROR: (SDF-300):	Could not locate instance 'FE_RC_0_0' in design 'mealy_1001_1100' (File /home/vlsi30/day18/physical_design/mealy_1001_1100.sdf, Line 60).
+
+**ERROR: (SDF-300):	Could not locate instance 'FE_RC_0_0' in design 'mealy_1001_1100' (File /home/vlsi30/day18/physical_design/mealy_1001_1100.sdf, Line 61).
+
+**ERROR: (SDF-300):	Could not locate instance 'FE_RC_1_0' in design 'mealy_1001_1100' (File /home/vlsi30/day18/physical_design/mealy_1001_1100.sdf, Line 62).
+
+**ERROR: (SDF-300):	Could not locate instance 'FE_RC_4_0' in design 'mealy_1001_1100' (File /home/vlsi30/day18/physical_design/mealy_1001_1100.sdf, Line 66).
+
+**ERROR: (SDF-300):	Could not locate instance 'FE_OFC0_rst' in design 'mealy_1001_1100' (File /home/vlsi30/day18/physical_design/mealy_1001_1100.sdf, Line 73).
+
+**ERROR: (SDF-300):	Could not locate instance 'FE_OFC0_rst' in design 'mealy_1001_1100' (File /home/vlsi30/day18/physical_design/mealy_1001_1100.sdf, Line 74).
+
+**ERROR: (SDF-300):	Could not locate instance 'FE_OFC0_rst' in design 'mealy_1001_1100' (File /home/vlsi30/day18/physical_design/mealy_1001_1100.sdf, Line 75).
+
+**ERROR: (SDF-300):	Could not locate instance 'FE_OFC0_rst' in design 'mealy_1001_1100' (File /home/vlsi30/day18/physical_design/mealy_1001_1100.sdf, Line 76).
+
+Message <SDF-300> has exceeded the message display limit of '20'. Use 'set_message -no_limit -id list_of_msgIDs' to reset the message limit.
+[06/22 13:59:39     78s] **WARN: (SDF-142):	Cell type 'OAI22X2' for instance 'g709__5107' does not match with timing model (Line 227).
+[06/22 13:59:39     78s] 
+[06/22 13:59:39     78s] **WARN: (SDF-142):	Cell type 'NOR2X1' for instance 'g713__4319' does not match with timing model (Line 251).
+[06/22 13:59:39     78s] 
+[06/22 13:59:39     78s] **WARN: (SDF-142):	Cell type 'NAND2X2' for instance 'g716__1617' does not match with timing model (Line 297).
+[06/22 13:59:39     78s] 
+[06/22 13:59:39     78s] **WARN: (SDF-142):	Cell type 'NAND2X2' for instance 'g719__1705' does not match with timing model (Line 319).
+[06/22 13:59:39     78s] 
+[06/22 13:59:39     78s] **WARN: (SDF-142):	Cell type 'NAND2X4' for instance 'g718__5122' does not match with timing model (Line 330).
+[06/22 13:59:39     78s] 
+[06/22 13:59:39     78s] **WARN: (SDF-142):	Cell type 'NAND2X2' for instance 'g714__8246' does not match with timing model (Line 341).
+[06/22 13:59:39     78s] 
+[06/22 13:59:39     78s] **WARN: (SDF-142):	Cell type 'CLKINVX4' for instance 'g720' does not match with timing model (Line 352).
+[06/22 13:59:39     78s] 
+[06/22 13:59:39     78s] *** CDM Built up (cpu=0:00:00.9  real=0:00:07.0  mem= 3844.5M) ***
+[06/22 13:59:39     78s] Has not load the powerDB, will keep enalbed
+[06/22 13:59:39     78s] Has not load the powerDB, will keep enalbed
+[06/22 13:59:40     78s] <CMD> load_timing_debug_report -name default_report top.btarpt -max_path_num 10000 -updateCategory 0 -isDrv 0
+[06/22 13:59:40     78s] Parsing file top.btarpt...

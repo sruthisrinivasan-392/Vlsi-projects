@@ -1,0 +1,12 @@
+#    The following nets have got the unconnected resistances fixed
+wreq
+wclk
+wrst_n
+rreq
+rclk
+rrst_n
+wdata[2]
+wdata[1]
+wdata[0]
+wfull
+rempty

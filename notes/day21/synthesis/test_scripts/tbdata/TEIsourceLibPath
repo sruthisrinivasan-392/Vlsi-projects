@@ -1,0 +1,3 @@
+SOURCE=/home/vlsi30/day21/synthesis/test_scripts/up_down_counter.test_netlist.v
+TECHLIB=/home/install/FOUNDRY/digital/90nm/dig/vlog/slow.v
+RUNDIR=/home/vlsi30/day21/synthesis/

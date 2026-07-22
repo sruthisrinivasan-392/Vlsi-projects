@@ -1,0 +1,23 @@
+irun(64): 15.20-s086: (c) Copyright 1995-2020 Cadence Design Systems, Inc.
+TOOL:	irun(64)	15.20-s086: Started on Jun 09, 2026 at 11:40:31 IST
+irun
+	mel_com.v
+	mel_com_tb.v
+	-access +rwc
+	-gui
+Recompiling... reason: file './mel_com_tb.v' is newer than expected.
+	expected: Fri Jun  5 13:38:28 2026
+	actual:   Tue Jun  9 11:25:52 2026
+file: mel_com_tb.v
+	module worklib.mel_com_tb:v
+		errors: 0, warnings: 0
+		Caching library 'worklib' ....... Done
+	Elaborating the design hierarchy:
+	Top level design units:
+		mel_com_tb
+	Modules w/wo timescales:
+		timescale of worklib.mel_com_tb:v = 1ns/1ns
+		timescale of worklib.mel_com:v = NOTSET
+ncelab: *F,CUMSTS: Timescale directive missing on one or more modules.
+irun: *E,ELBERR: Error during elaboration (status 2), exiting.
+TOOL:	irun(64)	15.20-s086: Exiting on Jun 09, 2026 at 11:40:31 IST  (total: 00:00:00)

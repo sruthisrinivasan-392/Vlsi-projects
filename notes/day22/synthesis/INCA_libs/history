@@ -1,0 +1,8 @@
+//
+// File created by:  irun
+// Do not modify this file
+
+s1::(01Jul2026:10:26:17):( irun fifo.v fifo_tb.v -access +rwc -gui )
+s2::(01Jul2026:10:31:29):( irun fifo.v fifo_tb.sv -access +rwc -gui -coverage all )
+s3::(01Jul2026:10:31:42):( irun fifo.v fifo_tb -access +rwc -gui -coverage all )
+s4::(01Jul2026:10:31:59):( irun fifo.v fifo_tb.v -access +rwc -gui -coverage all )

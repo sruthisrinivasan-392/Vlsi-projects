@@ -1,0 +1,21 @@
+Cadence Genus(TM) Synthesis Solution.
+Copyright 2022 Cadence Design Systems, Inc. All rights reserved worldwide.
+Cadence and the Cadence logo are registered trademarks and Genus is a trademark
+of Cadence Design Systems, Inc. in the United States and other countries.
+
+[10:44:12.095585] Configured Lic search path (21.01-s002): 5280@cadence
+
+Version: 21.14-s082_1, built Thu Jun 23 02:02:08 PDT 2022
+Options: fsm.v 
+Date:    Mon Jun 22 10:44:12 2026
+Host:    cadence (x86_64 w/Linux 4.18.0-425.3.1.el8.x86_64) (8cores*16cpus*1physical cpu*Intel(R) Core(TM) i7-10875H CPU @ 2.30GHz 16384KB) (32312612KB)
+PID:     591519
+OS:      Red Hat Enterprise Linux release 8.7 (Ootpa)
+
+
+[10:44:12.163378] Periodic Lic check successful
+[10:44:12.163387] Feature usage summary:
+[10:44:12.163392] Genus_Synthesis
+Checking out license: Genus_Synthesis
+couldn't read file "fsm.v": no such file or directory
+Abnormal exit.

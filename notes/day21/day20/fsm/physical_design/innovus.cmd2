@@ -1,0 +1,74 @@
+#######################################################
+#                                                     
+#  Innovus Command Logging File                     
+#  Created on Mon Jun 22 11:30:26 2026                
+#                                                     
+#######################################################
+
+#@(#)CDS: Innovus v21.15-s110_1 (64bit) 09/23/2022 13:08 (Linux 3.10.0-693.el7.x86_64)
+#@(#)CDS: NanoRoute 21.15-s110_1 NR220912-2004/21_15-UB (database version 18.20.592) {superthreading v2.17}
+#@(#)CDS: AAE 21.15-s039 (64bit) 09/23/2022 (Linux 3.10.0-693.el7.x86_64)
+#@(#)CDS: CTE 21.15-s038_1 () Sep 20 2022 11:42:13 ( )
+#@(#)CDS: SYNTECH 21.15-s012_1 () Sep  5 2022 10:25:51 ( )
+#@(#)CDS: CPE v21.15-s076
+#@(#)CDS: IQuantus/TQuantus 21.1.1-s867 (64bit) Sun Jun 26 22:12:54 PDT 2022 (Linux 3.10.0-693.el7.x86_64)
+
+set_global _enable_mmmc_by_default_flow      $CTE::mmmc_default
+suppressMessage ENCEXT-2799
+getVersion
+getVersion
+getVersion
+win
+encMessage warning 0
+encMessage debug 0
+is_common_ui_mode
+restoreDesign /home/vlsi30/day18/physical_design/mealy_1001_1100_placement.enc.dat mealy_1001_1100
+setDrawView fplan
+encMessage warning 1
+encMessage debug 0
+setDrawView place
+editSplit
+setOptMode -fixCap true -fixTran true -fixFanoutLoad false
+optDesign -preCTS
+setOptMode -fixCap true -fixTran true -fixFanoutLoad false
+optDesign -preCTS
+setOptMode -fixCap true -fixTran true -fixFanoutLoad false
+optDesign -preCTS
+setOptMode -fixCap true -fixTran true -fixFanoutLoad false
+optDesign -preCTS
+setOptMode -fixCap true -fixTran true -fixFanoutLoad false
+optDesign -preCTS
+setOptMode -fixCap true -fixTran true -fixFanoutLoad false
+optDesign -preCTS
+create_ccopt_clock_tree_spec
+ctd_win -side none -id ctd_window
+setNanoRouteMode -quiet -routeWithTimingDriven 1
+setNanoRouteMode -quiet -routeWithSiDriven 1
+setNanoRouteMode -quiet -routeTopRoutingLayer 9
+setNanoRouteMode -quiet -routeBottomRoutingLayer 1
+setNanoRouteMode -quiet -drouteEndIteration 1
+setNanoRouteMode -quiet -routeWithTimingDriven true
+setNanoRouteMode -quiet -routeWithSiDriven true
+routeDesign -globalDetail
+zoomBox 2.33400 10.60800 42.84200 30.39450
+zoomBox 11.60950 17.87100 36.48700 30.02250
+zoomBox 17.30600 22.33050 32.58500 29.79350
+zoomBox 18.66600 23.39500 31.65350 29.73900
+zoomBox 17.31050 22.33500 32.59050 29.79850
+zoomBox 15.71650 21.08750 33.69300 29.86850
+zoomBox 9.03800 15.86400 38.31050 30.16250
+zoomBox -1.83600 7.35950 45.82900 30.64200
+zoomBox -19.54350 -6.48950 58.07200 31.42250
+setLayerPreference node_layer -isVisible 0
+setLayerPreference node_layer -isVisible 1
+setLayerPreference node_layer -isVisible 0
+setLayerPreference node_layer -isVisible 1
+ctd_win -side none -id ctd_window -unit_delay
+reset_parasitics
+extractRC
+rcOut -spef mealy_1001_1100.spef -rc_corner rc_corner
+all_hold_analysis_views 
+all_setup_analysis_views 
+write_sdf  -ideal_clock_network mealy_1001_1100.sdf
+streamOut fsm.gds -libName DesignLib -units 2000 -mode ALL
+zoomBox -14.59350 -3.49000 51.37950 28.73500

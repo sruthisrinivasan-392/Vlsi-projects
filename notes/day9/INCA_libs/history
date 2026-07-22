@@ -1,0 +1,14 @@
+//
+// File created by:  irun
+// Do not modify this file
+
+s1::(10Jun2026:10:53:08):( irun memory.v memory_tb.v -access +rwc -gui )
+s2::(10Jun2026:11:06:45):( irun memory.v memory_tb.v -access +rwc -gui )
+s3::(10Jun2026:11:08:21):( irun memory.v memory_tb.v -access +rwc -gui -coverage all )
+s4::(10Jun2026:11:11:13):( irun memory.v memory_tb.v -access +rwc -gui -coverage all )
+s5::(10Jun2026:11:13:06):( irun memory.v memory_tb.v -access +rwc -gui -coverage all )
+s6::(16Jun2026:10:07:16):( irun memory.v memory_tb.v -access +rwc -gui -coverage all )
+s7::(16Jun2026:10:08:50):( irun memory.v memory_tb.v -access +rwc -gui -coverage all )
+s8::(16Jun2026:10:22:02):( irun memory.v memory_tb.v -access +rwc -gui -coverage all )
+s9::(16Jun2026:10:22:54):( irun memory.v memory_tb.v -access +rwc -gui -coverage all )
+s10::(16Jun2026:10:37:29):( irun memory.v memory_tb.v -access +rwc -gui -coverage all )

@@ -1,0 +1,12 @@
+MacroModel pin state_reg[2]/CK  17.80ps 17.80ps 17.80ps 17.80ps 0pf worst_case
+MacroModel pin state_reg[1]/CK  12.30ps 12.30ps 12.30ps 12.30ps 0pf worst_case
+MacroModel pin state_reg[2]/CK  17.80ps 17.80ps 17.80ps 17.80ps 0pf worst_case
+MacroModel pin state_reg[1]/CK  12.30ps 12.30ps 12.30ps 12.30ps 0pf worst_case
+MacroModel pin state_reg[2]/CK  17.80ps 17.80ps 17.80ps 17.80ps 0pf worst_case
+MacroModel pin state_reg[1]/CK  12.30ps 12.30ps 12.30ps 12.30ps 0pf worst_case
+MacroModel pin state_reg[2]/CK  17.80ps 17.80ps 17.80ps 17.80ps 0pf worst_case
+MacroModel pin state_reg[1]/CK  12.30ps 12.30ps 12.30ps 12.30ps 0pf worst_case
+MacroModel pin state_reg[2]/CK  17.80ps 17.80ps 17.80ps 17.80ps 0pf worst_case
+MacroModel pin state_reg[1]/CK  12.30ps 12.30ps 12.30ps 12.30ps 0pf worst_case
+MacroModel pin state_reg[2]/CK  17.80ps 17.80ps 17.80ps 17.80ps 0pf worst_case
+MacroModel pin state_reg[1]/CK  12.30ps 12.30ps 12.30ps 12.30ps 0pf worst_case

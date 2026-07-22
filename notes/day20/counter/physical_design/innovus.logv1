@@ -1,0 +1,167 @@
+[06/24 11:38:47      0s] 
+[06/24 11:38:47      0s] Cadence Innovus(TM) Implementation System.
+[06/24 11:38:47      0s] Copyright 2021 Cadence Design Systems, Inc. All rights reserved worldwide.
+[06/24 11:38:47      0s] 
+[06/24 11:38:47      0s] Version:	v21.15-s110_1, built Fri Sep 23 13:08:12 PDT 2022
+[06/24 11:38:47      0s] Options:	
+[06/24 11:38:47      0s] Date:		Wed Jun 24 11:38:47 2026
+[06/24 11:38:47      0s] Host:		cadence (x86_64 w/Linux 4.18.0-425.3.1.el8.x86_64) (8cores*16cpus*Intel(R) Core(TM) i7-10875H CPU @ 2.30GHz 16384KB)
+[06/24 11:38:47      0s] OS:		Red Hat Enterprise Linux release 8.7 (Ootpa)
+[06/24 11:38:47      0s] 
+[06/24 11:38:47      0s] License:
+[06/24 11:38:47      0s] 		[11:38:47.095681] Configured Lic search path (21.01-s002): 5280@cadence
+
+[06/24 11:38:47      0s] 		invs	Innovus Implementation System	21.1	checkout succeeded
+[06/24 11:38:47      0s] 		8 CPU jobs allowed with the current license(s). Use setMultiCpuUsage to set your required CPU count.
+[06/24 11:38:59     11s] Reset Parastics called with the command setExtractRCMode -reset@(#)CDS: Innovus v21.15-s110_1 (64bit) 09/23/2022 13:08 (Linux 3.10.0-693.el7.x86_64)
+[06/24 11:39:02     13s] @(#)CDS: NanoRoute 21.15-s110_1 NR220912-2004/21_15-UB (database version 18.20.592) {superthreading v2.17}
+[06/24 11:39:02     13s] @(#)CDS: AAE 21.15-s039 (64bit) 09/23/2022 (Linux 3.10.0-693.el7.x86_64)
+[06/24 11:39:02     13s] @(#)CDS: CTE 21.15-s038_1 () Sep 20 2022 11:42:13 ( )
+[06/24 11:39:02     13s] @(#)CDS: SYNTECH 21.15-s012_1 () Sep  5 2022 10:25:51 ( )
+[06/24 11:39:02     13s] @(#)CDS: CPE v21.15-s076
+[06/24 11:39:02     13s] @(#)CDS: IQuantus/TQuantus 21.1.1-s867 (64bit) Sun Jun 26 22:12:54 PDT 2022 (Linux 3.10.0-693.el7.x86_64)
+[06/24 11:39:02     13s] @(#)CDS: OA 22.60-p076 Wed May 18 13:45:29 2022
+[06/24 11:39:02     13s] @(#)CDS: SGN 20.10-d001 (01-Jun-2020) (64 bit executable, Qt5.9.0)
+[06/24 11:39:02     13s] @(#)CDS: RCDB 11.15.0
+[06/24 11:39:02     13s] @(#)CDS: STYLUS 21.12-s013_1 (08/15/2022 08:25 PDT)
+[06/24 11:39:02     13s] @(#)CDS: SystemPlanner-21.15Rel-8720 (21.15) (2022-08-22 18:31:54+0800)
+[06/24 11:39:02     13s] Create and set the environment variable TMPDIR to /tmp/innovus_temp_1475236_cadence_vlsi30_AeBlID.
+
+[06/24 11:39:02     13s] Change the soft stacksize limit to 0.2%RAM (63 mbytes). Set global soft_stack_size_limit to change the value.
+[06/24 11:39:04     15s] 
+[06/24 11:39:04     15s] **INFO:  MMMC transition support version v31-84 
+[06/24 11:39:04     15s] 
+[06/24 11:39:04     15s] <CMD> set_global _enable_mmmc_by_default_flow      $CTE::mmmc_default
+[06/24 11:39:04     15s] <CMD> suppressMessage ENCEXT-2799
+[06/24 11:39:04     15s] <CMD> getVersion
+[06/24 11:39:04     15s] <CMD> getVersion
+[06/24 11:39:04     16s] <CMD> getVersion
+[06/24 11:39:04     16s] [INFO] Loading PVS 22.20 fill procedures
+[06/24 11:39:05     16s] <CMD> win
+[06/24 11:39:19     17s] <CMD> encMessage warning 0
+[06/24 11:39:19     17s] Suppress "**WARN ..." messages.
+[06/24 11:39:19     17s] <CMD> encMessage debug 0
+[06/24 11:39:19     17s] <CMD> is_common_ui_mode
+[06/24 11:39:19     17s] <CMD> restoreDesign {/home/vlsi30/day 20/counter/physical_design/up_down_counter_router.enc.dat} up_down_counter
+[06/24 11:39:19     17s] #% Begin load design ... (date=06/24 11:39:19, mem=995.4M)
+[06/24 11:39:19     17s] 
+[06/24 11:39:19     17s] Usage: source [-help] <file_name> [-quiet  | -verbose ] [-quiet  | -echo ]
+[06/24 11:39:19     17s] 
+[06/24 11:39:19     17s] **ERROR: (IMPTCM-48):	"20/counter/physical_design/up_down_counter_router.enc.dat/user.attrdef" is not a legal option for command "source". Either the current option or an option prior to it is not specified correctly.
+**ERROR: (IMPSYT-6790):	Failed to load file /home/vlsi30/day 20/counter/physical_design/up_down_counter_router.enc.dat/user.attrdef
+[06/24 11:39:19     17s] 
+[06/24 11:39:19     17s] Usage: source [-help] <file_name> [-quiet  | -verbose ] [-quiet  | -echo ]
+[06/24 11:39:19     17s] 
+[06/24 11:39:19     17s] **ERROR: (IMPTCM-48):	"20/counter/physical_design/up_down_counter_router.enc.dat/up_down_counter.globals" is not a legal option for command "source". Either the current option or an option prior to it is not specified correctly.
+**ERROR: (IMPSYT-6790):	Failed to load file /home/vlsi30/day 20/counter/physical_design/up_down_counter_router.enc.dat/up_down_counter.globals
+[06/24 11:39:19     17s] Loading design 'up_down_counter' saved by 'Innovus' '21.15-s110_1' on 'Wed Jun 24 11:37:11 2026'.
+[06/24 11:39:19     17s] % Begin Load MMMC data ... (date=06/24 11:39:19, mem=993.9M)
+[06/24 11:39:19     17s] 
+[06/24 11:39:19     17s] 
+[06/24 11:39:19     17s] ERROR: wrong # args: should be "::se_source_orig ?-encoding name? fileName"
+[06/24 11:39:19     17s] 
+[06/24 11:39:19     17s] wrong # args: should be "::se_source_orig ?-encoding name? fileName"
+[06/24 11:39:19     17s]     while executing
+[06/24 11:39:19     17s] "error $catchMsg"
+[06/24 11:39:19     17s]     (procedure "restoreDesign" line 33)
+[06/24 11:39:19     17s] 
+[06/24 11:39:19     17s] **ERROR: (IMPSYT-6300):	Failed to execute command 'source'. For more details, refer to error message: wrong # args: should be "::se_source_orig ?-encoding name? fileName"
+[06/24 11:39:21     17s] <CMD> encMessage warning 1
+[06/24 11:39:21     17s] Un-suppress "**WARN ..." messages.
+[06/24 11:39:21     17s] <CMD> encMessage debug 0
+[06/24 11:39:22     17s] <CMD> encMessage warning 0
+[06/24 11:39:22     17s] Suppress "**WARN ..." messages.
+[06/24 11:39:22     17s] <CMD> encMessage debug 0
+[06/24 11:39:22     17s] <CMD> is_common_ui_mode
+[06/24 11:39:22     17s] <CMD> restoreDesign {/home/vlsi30/day 20/counter/physical_design/up_down_counter_router.enc.dat} up_down_counter
+[06/24 11:39:22     17s] report_message: '-start_cmd/-end_cmd' can not be nested. Interior calls do nothing. Ignore.
+[06/24 11:39:22     17s] % Begin load design ... (date=06/24 11:39:22, mem=994.3M)
+[06/24 11:39:22     17s] 
+[06/24 11:39:22     17s] Usage: source [-help] <file_name> [-quiet  | -verbose ] [-quiet  | -echo ]
+[06/24 11:39:22     17s] 
+[06/24 11:39:22     17s] **ERROR: (IMPTCM-48):	"20/counter/physical_design/up_down_counter_router.enc.dat/user.attrdef" is not a legal option for command "source". Either the current option or an option prior to it is not specified correctly.
+**ERROR: (IMPSYT-6790):	Failed to load file /home/vlsi30/day 20/counter/physical_design/up_down_counter_router.enc.dat/user.attrdef
+[06/24 11:39:22     17s] 
+[06/24 11:39:22     17s] Usage: source [-help] <file_name> [-quiet  | -verbose ] [-quiet  | -echo ]
+[06/24 11:39:22     17s] 
+[06/24 11:39:22     17s] **ERROR: (IMPTCM-48):	"20/counter/physical_design/up_down_counter_router.enc.dat/up_down_counter.globals" is not a legal option for command "source". Either the current option or an option prior to it is not specified correctly.
+**ERROR: (IMPSYT-6790):	Failed to load file /home/vlsi30/day 20/counter/physical_design/up_down_counter_router.enc.dat/up_down_counter.globals
+[06/24 11:39:22     17s] Loading design 'up_down_counter' saved by 'Innovus' '21.15-s110_1' on 'Wed Jun 24 11:37:11 2026'.
+[06/24 11:39:22     17s] % Begin Load MMMC data ... (date=06/24 11:39:22, mem=994.3M)
+[06/24 11:39:22     17s] 
+[06/24 11:39:22     17s] 
+[06/24 11:39:22     17s] ERROR: wrong # args: should be "::se_source_orig ?-encoding name? fileName"
+[06/24 11:39:22     17s] 
+[06/24 11:39:22     17s] wrong # args: should be "::se_source_orig ?-encoding name? fileName"
+[06/24 11:39:22     17s]     while executing
+[06/24 11:39:22     17s] "error $catchMsg"
+[06/24 11:39:22     17s]     (procedure "restoreDesign" line 33)
+[06/24 11:39:22     17s] 
+[06/24 11:39:22     17s] **ERROR: (IMPSYT-6300):	Failed to execute command 'source'. For more details, refer to error message: wrong # args: should be "::se_source_orig ?-encoding name? fileName"
+[06/24 11:39:28     18s] <CMD> encMessage warning 1
+[06/24 11:39:28     18s] Un-suppress "**WARN ..." messages.
+[06/24 11:39:28     18s] <CMD> encMessage debug 0
+[06/24 11:39:53     20s] <CMD> encMessage warning 0
+[06/24 11:39:53     20s] Suppress "**WARN ..." messages.
+[06/24 11:39:53     20s] <CMD> encMessage debug 0
+[06/24 11:39:53     20s] <CMD> is_common_ui_mode
+[06/24 11:39:53     20s] <CMD> restoreDesign {/home/vlsi30/day 20/counter/physical_design/up_down_counter_router.enc.dat} up_down_counter
+[06/24 11:39:53     20s] report_message: '-start_cmd/-end_cmd' can not be nested. Interior calls do nothing. Ignore.
+[06/24 11:39:53     20s] % Begin load design ... (date=06/24 11:39:53, mem=993.9M)
+[06/24 11:39:53     20s] 
+[06/24 11:39:53     20s] Usage: source [-help] <file_name> [-quiet  | -verbose ] [-quiet  | -echo ]
+[06/24 11:39:53     20s] 
+[06/24 11:39:53     20s] **ERROR: (IMPTCM-48):	"20/counter/physical_design/up_down_counter_router.enc.dat/user.attrdef" is not a legal option for command "source". Either the current option or an option prior to it is not specified correctly.
+**ERROR: (IMPSYT-6790):	Failed to load file /home/vlsi30/day 20/counter/physical_design/up_down_counter_router.enc.dat/user.attrdef
+[06/24 11:39:53     20s] 
+[06/24 11:39:53     20s] Usage: source [-help] <file_name> [-quiet  | -verbose ] [-quiet  | -echo ]
+[06/24 11:39:53     20s] 
+[06/24 11:39:53     20s] **ERROR: (IMPTCM-48):	"20/counter/physical_design/up_down_counter_router.enc.dat/up_down_counter.globals" is not a legal option for command "source". Either the current option or an option prior to it is not specified correctly.
+**ERROR: (IMPSYT-6790):	Failed to load file /home/vlsi30/day 20/counter/physical_design/up_down_counter_router.enc.dat/up_down_counter.globals
+[06/24 11:39:53     20s] Loading design 'up_down_counter' saved by 'Innovus' '21.15-s110_1' on 'Wed Jun 24 11:37:11 2026'.
+[06/24 11:39:53     20s] % Begin Load MMMC data ... (date=06/24 11:39:53, mem=993.9M)
+[06/24 11:39:53     20s] 
+[06/24 11:39:53     20s] 
+[06/24 11:39:53     20s] ERROR: wrong # args: should be "::se_source_orig ?-encoding name? fileName"
+[06/24 11:39:53     20s] 
+[06/24 11:39:53     20s] wrong # args: should be "::se_source_orig ?-encoding name? fileName"
+[06/24 11:39:53     20s]     while executing
+[06/24 11:39:53     20s] "error $catchMsg"
+[06/24 11:39:53     20s]     (procedure "restoreDesign" line 33)
+[06/24 11:39:53     20s] 
+[06/24 11:39:53     20s] **ERROR: (IMPSYT-6300):	Failed to execute command 'source'. For more details, refer to error message: wrong # args: should be "::se_source_orig ?-encoding name? fileName"
+[06/24 11:39:59     20s] <CMD> encMessage warning 1
+[06/24 11:39:59     20s] Un-suppress "**WARN ..." messages.
+[06/24 11:39:59     20s] <CMD> encMessage debug 0
+[06/24 11:40:00     20s] <CMD> encMessage warning 0
+[06/24 11:40:00     20s] Suppress "**WARN ..." messages.
+[06/24 11:40:00     20s] <CMD> encMessage debug 0
+[06/24 11:40:00     20s] <CMD> is_common_ui_mode
+[06/24 11:40:00     20s] <CMD> restoreDesign {/home/vlsi30/day 20/counter/physical_design/up_down_counter_router.enc.dat} up_down_counter
+[06/24 11:40:00     20s] report_message: '-start_cmd/-end_cmd' can not be nested. Interior calls do nothing. Ignore.
+[06/24 11:40:00     20s] % Begin load design ... (date=06/24 11:40:00, mem=993.9M)
+[06/24 11:40:00     20s] 
+[06/24 11:40:00     20s] Usage: source [-help] <file_name> [-quiet  | -verbose ] [-quiet  | -echo ]
+[06/24 11:40:00     20s] 
+[06/24 11:40:00     20s] **ERROR: (IMPTCM-48):	"20/counter/physical_design/up_down_counter_router.enc.dat/user.attrdef" is not a legal option for command "source". Either the current option or an option prior to it is not specified correctly.
+**ERROR: (IMPSYT-6790):	Failed to load file /home/vlsi30/day 20/counter/physical_design/up_down_counter_router.enc.dat/user.attrdef
+[06/24 11:40:00     20s] 
+[06/24 11:40:00     20s] Usage: source [-help] <file_name> [-quiet  | -verbose ] [-quiet  | -echo ]
+[06/24 11:40:00     20s] 
+[06/24 11:40:00     20s] **ERROR: (IMPTCM-48):	"20/counter/physical_design/up_down_counter_router.enc.dat/up_down_counter.globals" is not a legal option for command "source". Either the current option or an option prior to it is not specified correctly.
+**ERROR: (IMPSYT-6790):	Failed to load file /home/vlsi30/day 20/counter/physical_design/up_down_counter_router.enc.dat/up_down_counter.globals
+[06/24 11:40:00     20s] Loading design 'up_down_counter' saved by 'Innovus' '21.15-s110_1' on 'Wed Jun 24 11:37:11 2026'.
+[06/24 11:40:01     20s] % Begin Load MMMC data ... (date=06/24 11:40:01, mem=994.2M)
+[06/24 11:40:01     20s] 
+[06/24 11:40:01     20s] 
+[06/24 11:40:01     20s] ERROR: wrong # args: should be "::se_source_orig ?-encoding name? fileName"
+[06/24 11:40:01     20s] 
+[06/24 11:40:01     20s] wrong # args: should be "::se_source_orig ?-encoding name? fileName"
+[06/24 11:40:01     20s]     while executing
+[06/24 11:40:01     20s] "error $catchMsg"
+[06/24 11:40:01     20s]     (procedure "restoreDesign" line 33)
+[06/24 11:40:01     20s] 
+[06/24 11:40:01     20s] **ERROR: (IMPSYT-6300):	Failed to execute command 'source'. For more details, refer to error message: wrong # args: should be "::se_source_orig ?-encoding name? fileName"
+[06/24 11:40:02     21s] <CMD> encMessage warning 1
+[06/24 11:40:02     21s] Un-suppress "**WARN ..." messages.
+[06/24 11:40:02     21s] <CMD> encMessage debug 0

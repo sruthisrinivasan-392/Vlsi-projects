@@ -1,0 +1,1778 @@
+
+Cadence Innovus(TM) Implementation System.
+Copyright 2021 Cadence Design Systems, Inc. All rights reserved worldwide.
+
+Version:	v21.15-s110_1, built Fri Sep 23 13:08:12 PDT 2022
+Options:	
+Date:		Tue Jun 23 11:04:27 2026
+Host:		cadence (x86_64 w/Linux 4.18.0-425.3.1.el8.x86_64) (8cores*16cpus*Intel(R) Core(TM) i7-10875H CPU @ 2.30GHz 16384KB)
+OS:		Red Hat Enterprise Linux release 8.7 (Ootpa)
+
+License:
+		[11:04:27.095609] Configured Lic search path (21.01-s002): 5280@cadence
+
+		invs	Innovus Implementation System	21.1	checkout succeeded
+		8 CPU jobs allowed with the current license(s). Use setMultiCpuUsage to set your required CPU count.
+Change the soft stacksize limit to 0.2%RAM (63 mbytes). Set global soft_stack_size_limit to change the value.
+
+**INFO:  MMMC transition support version v31-84 
+
+<CMD> set_global _enable_mmmc_by_default_flow      $CTE::mmmc_default
+<CMD> suppressMessage ENCEXT-2799
+<CMD> getVersion
+<CMD> getVersion
+<CMD> getVersion
+[INFO] Loading PVS 22.20 fill procedures
+<CMD> win
+<CMD> encMessage warning 0
+Suppress "**WARN ..." messages.
+<CMD> encMessage debug 0
+<CMD> is_common_ui_mode
+<CMD> restoreDesign /home/vlsi30/day19/physical_design/booth_multiplier_route.enc.dat booth_multiplier
+#% Begin load design ... (date=06/23 11:05:15, mem=999.4M)
+Set Default Input Pin Transition as 0.1 ps.
+Loading design 'booth_multiplier' saved by 'Innovus' '21.15-s110_1' on 'Tue Jun 23 09:59:19 2026'.
+% Begin Load MMMC data ... (date=06/23 11:05:15, mem=1004.0M)
+% End Load MMMC data ... (date=06/23 11:05:15, total cpu=0:00:00.0, real=0:00:00.0, peak res=1004.7M, current mem=1004.7M)
+rc_corner
+
+Loading LEF file /home/vlsi30/day19/physical_design/booth_multiplier_route.enc.dat/libs/lef/gsclib090_translated.lef ...
+**WARN: (IMPLF-105):	The layer 'Oxide' specified in SAMENET spacing
+rule is neither a routing layer nor a cut layer. The rule is ignored.
+**WARN: (IMPLF-105):	The layer 'Poly' specified in SAMENET spacing
+rule is neither a routing layer nor a cut layer. The rule is ignored.
+Set DBUPerIGU to M2 pitch 580.
+**WARN: (IMPLF-200):	Pin 'A' in macro 'ANTENNA' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-200' for more detail.
+
+##  Check design process and node:  
+##  Both design process and tech node are not set.
+
+Loading view definition file from /home/vlsi30/day19/physical_design/booth_multiplier_route.enc.dat/viewDefinition.tcl
+Reading slow timing library '/home/install/FOUNDRY/digital/90nm/dig/lib/slow.lib' ...
+Read 479 cells in library 'slow' 
+Reading fast timing library '/home/install/FOUNDRY/digital/90nm/dig/lib/fast.lib' ...
+Read 479 cells in library 'fast' 
+*** End library_loading (cpu=0.01min, real=0.02min, mem=31.0M, fe_cpu=0.42min, fe_real=0.82min, fe_mem=1065.7M) ***
+% Begin Load netlist data ... (date=06/23 11:05:16, mem=1025.5M)
+*** Begin netlist parsing (mem=1065.7M) ***
+**WARN: (IMPVL-159):	Pin 'VDD' of cell 'XOR3XL' is defined in LEF but not in the timing library.
+Type 'man IMPVL-159' for more detail.
+**WARN: (IMPVL-159):	Pin 'VSS' of cell 'XOR3XL' is defined in LEF but not in the timing library.
+Type 'man IMPVL-159' for more detail.
+**WARN: (IMPVL-159):	Pin 'VDD' of cell 'XOR3X1' is defined in LEF but not in the timing library.
+Type 'man IMPVL-159' for more detail.
+**WARN: (IMPVL-159):	Pin 'VSS' of cell 'XOR3X1' is defined in LEF but not in the timing library.
+Type 'man IMPVL-159' for more detail.
+**WARN: (IMPVL-159):	Pin 'VSS' of cell 'XOR2XL' is defined in LEF but not in the timing library.
+Type 'man IMPVL-159' for more detail.
+**WARN: (IMPVL-159):	Pin 'VDD' of cell 'XOR2XL' is defined in LEF but not in the timing library.
+Type 'man IMPVL-159' for more detail.
+**WARN: (IMPVL-159):	Pin 'VSS' of cell 'XOR2X4' is defined in LEF but not in the timing library.
+Type 'man IMPVL-159' for more detail.
+**WARN: (IMPVL-159):	Pin 'VDD' of cell 'XOR2X4' is defined in LEF but not in the timing library.
+Type 'man IMPVL-159' for more detail.
+**WARN: (IMPVL-159):	Pin 'VSS' of cell 'XOR2X2' is defined in LEF but not in the timing library.
+Type 'man IMPVL-159' for more detail.
+**WARN: (IMPVL-159):	Pin 'VDD' of cell 'XOR2X2' is defined in LEF but not in the timing library.
+Type 'man IMPVL-159' for more detail.
+**WARN: (IMPVL-159):	Pin 'VSS' of cell 'XOR2X1' is defined in LEF but not in the timing library.
+Type 'man IMPVL-159' for more detail.
+**WARN: (IMPVL-159):	Pin 'VDD' of cell 'XOR2X1' is defined in LEF but not in the timing library.
+Type 'man IMPVL-159' for more detail.
+**WARN: (IMPVL-159):	Pin 'VSS' of cell 'XNOR3XL' is defined in LEF but not in the timing library.
+Type 'man IMPVL-159' for more detail.
+**WARN: (IMPVL-159):	Pin 'VDD' of cell 'XNOR3XL' is defined in LEF but not in the timing library.
+Type 'man IMPVL-159' for more detail.
+**WARN: (IMPVL-159):	Pin 'VDD' of cell 'XNOR3X1' is defined in LEF but not in the timing library.
+Type 'man IMPVL-159' for more detail.
+**WARN: (IMPVL-159):	Pin 'VSS' of cell 'XNOR3X1' is defined in LEF but not in the timing library.
+Type 'man IMPVL-159' for more detail.
+**WARN: (IMPVL-159):	Pin 'VSS' of cell 'XNOR2XL' is defined in LEF but not in the timing library.
+Type 'man IMPVL-159' for more detail.
+**WARN: (IMPVL-159):	Pin 'VDD' of cell 'XNOR2XL' is defined in LEF but not in the timing library.
+Type 'man IMPVL-159' for more detail.
+**WARN: (IMPVL-159):	Pin 'VSS' of cell 'XNOR2X4' is defined in LEF but not in the timing library.
+Type 'man IMPVL-159' for more detail.
+**WARN: (IMPVL-159):	Pin 'VDD' of cell 'XNOR2X4' is defined in LEF but not in the timing library.
+Type 'man IMPVL-159' for more detail.
+**WARN: (EMS-27):	Message (IMPVL-159) has exceeded the current message display limit of 20.
+To increase the message display limit, refer to the product command reference manual.
+Created 479 new cells from 2 timing libraries.
+Reading netlist ...
+Backslashed names will retain backslash and a trailing blank character.
+Reading verilogBinary netlist '/home/vlsi30/day19/physical_design/booth_multiplier_route.enc.dat/booth_multiplier.v.bin'
+
+*** Memory Usage v#1 (Current mem = 1072.750M, initial mem = 483.863M) ***
+*** End netlist parsing (cpu=0:00:00.0, real=0:00:00.0, mem=1072.8M) ***
+% End Load netlist data ... (date=06/23 11:05:16, total cpu=0:00:00.0, real=0:00:00.0, peak res=1039.5M, current mem=1039.5M)
+Top level cell is booth_multiplier.
+Hooked 958 DB cells to tlib cells.
+Starting recursive module instantiation check.
+No recursion found.
+Building hierarchical netlist for Cell booth_multiplier ...
+*** Netlist is unique.
+** info: there are 967 modules.
+** info: there are 163 stdCell insts.
+
+*** Memory Usage v#1 (Current mem = 1119.164M, initial mem = 483.863M) ***
+*info: set bottom ioPad orient R0
+**WARN: (IMPFP-3961):	The techSite 'pad' has no related standard cells in the LEF/OA library. The calculations for this site type cannot be made unless standard cell models of this type exist in the LEF/OA library. Ignore this warning if the SITE is not used by the library. Alternatively, remove the SITE definition for the LEF/OA library to avoid this message.
+Type 'man IMPFP-3961' for more detail.
+**WARN: (IMPFP-3961):	The techSite 'corner' has no related standard cells in the LEF/OA library. The calculations for this site type cannot be made unless standard cell models of this type exist in the LEF/OA library. Ignore this warning if the SITE is not used by the library. Alternatively, remove the SITE definition for the LEF/OA library to avoid this message.
+Type 'man IMPFP-3961' for more detail.
+Horizontal Layer M1 offset = 290 (derived)
+Vertical Layer M2 offset = 290 (derived)
+Start create_tracks
+Generated pitch 0.29 in Metal8 is different from 0.87 defined in technology file in unpreferred direction.
+Loading preference file /home/vlsi30/day19/physical_design/booth_multiplier_route.enc.dat/gui.pref.tcl ...
+**WARN: (IMPOPT-3602):	The specified path group name reg2reg is not defined.
+Type 'man IMPOPT-3602' for more detail.
+Effort level <high> specified for reg2reg path_group
+#WARNING (NRIF-90) Option setNanoRouteMode -routeBottomRoutingLayer is obsolete. It will continue to work for the current release. To ensure compatibility with future releases, use option setDesignMode -bottomRoutingLayer instead.
+#WARNING (NRIF-91) Option setNanoRouteMode -routeTopRoutingLayer is obsolete. It will continue to work for the current release. To ensure compatibility with future releases, use option setDesignMode -topRoutingLayer instead.
+addRing command will ignore shorts while creating rings.
+addRing command will disallow rings to go over rows.
+addRing command will consider rows while creating rings.
+The ring targets are set to core/block ring wires.
+addStripe will allow jog to connect padcore ring and block ring.
+
+Stripes will not extend to closest target.
+When breaking rings, the power planner will consider the existence of blocks.
+addStripe will break automatically at non-default domains when generating global stripes over the core area or default domain.
+The entire stripe set will break at the domain if one of the nets is not in the domain.
+Stripes will not be created over regions without power planning wires.
+Offset for stripe breaking is set to 0.
+Stripes will stop at the boundary of the specified area.
+The power planner will set stripe antenna targets to none (no trimming allowed).
+Change floorplan default-technical-site to 'gsclib090site'.
+*Info: initialize multi-corner CTS.
+Total number of combinational cells: 317
+Total number of sequential cells: 152
+Total number of tristate cells: 10
+Total number of level shifter cells: 0
+Total number of power gating cells: 0
+Total number of isolation cells: 0
+Total number of power switch cells: 0
+Total number of pulse generator cells: 0
+Total number of always on buffers: 0
+Total number of retention cells: 0
+List of usable buffers: BUFX2 BUFX12 BUFX16 BUFX20 CLKBUFX2 BUFX3 BUFX4 BUFX6 BUFX8 CLKBUFX12 CLKBUFX16 CLKBUFX20 CLKBUFX3 CLKBUFX4 CLKBUFX6 CLKBUFX8
+Total number of usable buffers: 16
+List of unusable buffers:
+Total number of unusable buffers: 0
+List of usable inverters: CLKINVX1 CLKINVX2 CLKINVX12 CLKINVX16 CLKINVX20 CLKINVX3 CLKINVX4 CLKINVX6 CLKINVX8 INVX1 INVX2 INVX12 INVX16 INVX20 INVXL INVX3 INVX4 INVX6 INVX8
+Total number of usable inverters: 19
+List of unusable inverters:
+Total number of unusable inverters: 0
+List of identified usable delay cells: DLY1X1 DLY1X4 DLY2X1 DLY2X4 DLY3X1 DLY3X4 DLY4X1 DLY4X4
+Total number of identified usable delay cells: 8
+List of identified unusable delay cells:
+Total number of identified unusable delay cells: 0
+Reading floorplan file - /home/vlsi30/day19/physical_design/booth_multiplier_route.enc.dat/booth_multiplier.fp.gz (mem = 1371.3M).
+% Begin Load floorplan data ... (date=06/23 11:05:17, mem=1326.7M)
+*info: reset 178 existing net BottomPreferredLayer and AvoidDetour
+Deleting old partition specification.
+Set FPlanBox to (0 0 104400 81780)
+**WARN: (IMPFP-3961):	The techSite 'pad' has no related standard cells in the LEF/OA library. The calculations for this site type cannot be made unless standard cell models of this type exist in the LEF/OA library. Ignore this warning if the SITE is not used by the library. Alternatively, remove the SITE definition for the LEF/OA library to avoid this message.
+Type 'man IMPFP-3961' for more detail.
+**WARN: (IMPFP-3961):	The techSite 'corner' has no related standard cells in the LEF/OA library. The calculations for this site type cannot be made unless standard cell models of this type exist in the LEF/OA library. Ignore this warning if the SITE is not used by the library. Alternatively, remove the SITE definition for the LEF/OA library to avoid this message.
+Type 'man IMPFP-3961' for more detail.
+Horizontal Layer M1 offset = 290 (derived)
+Vertical Layer M2 offset = 290 (derived)
+Start create_tracks
+Generated pitch 0.29 in Metal8 is different from 0.87 defined in technology file in unpreferred direction.
+ ... processed partition successfully.
+Reading binary special route file /home/vlsi30/day19/physical_design/booth_multiplier_route.enc.dat/booth_multiplier.fp.spr.gz (Created by Innovus v21.15-s110_1 on Tue Jun 23 09:59:17 2026, version: 1)
+Ending "Read special route file" (total cpu=0:00:00.0, real=0:00:00.0, peak res=1326.7M, current mem=1326.7M)
+Extracting standard cell pins and blockage ...... 
+Pin and blockage extraction finished
+% End Load floorplan data ... (date=06/23 11:05:17, total cpu=0:00:00.0, real=0:00:00.0, peak res=1329.2M, current mem=1329.2M)
+Reading congestion map file /home/vlsi30/day19/physical_design/booth_multiplier_route.enc.dat/booth_multiplier.route.congmap.gz ...
+% Begin Load SymbolTable ... (date=06/23 11:05:17, mem=1329.5M)
+Un-suppress "**WARN ..." messages.
+% End Load SymbolTable ... (date=06/23 11:05:17, total cpu=0:00:00.0, real=0:00:00.0, peak res=1330.4M, current mem=1330.4M)
+Loading place ...
+% Begin Load placement data ... (date=06/23 11:05:17, mem=1330.4M)
+Reading placement file - /home/vlsi30/day19/physical_design/booth_multiplier_route.enc.dat/booth_multiplier.place.gz.
+** Reading stdCellPlacement_binary (Created by Innovus v21.15-s110_1 on Tue Jun 23 09:59:18 2026, version# 2) ...
+Read Views for adaptive view pruning ...
+Read 0 views from Binary DB for adaptive view pruning
+*** Checked 2 GNC rules.
+*** applyConnectGlobalNets disabled.
+*** Completed restorePlace (cpu=0:00:00.0 real=0:00:00.0 mem=1371.3M) ***
+Total net length = 1.810e+03 (9.590e+02 8.511e+02) (ext = 3.877e+02)
+% End Load placement data ... (date=06/23 11:05:17, total cpu=0:00:00.0, real=0:00:00.0, peak res=1331.2M, current mem=1331.2M)
+Reading PG file /home/vlsi30/day19/physical_design/booth_multiplier_route.enc.dat/booth_multiplier.pg.gz, version#2, (Created by Innovus v21.15-s110_1 on       Tue Jun 23 09:59:17 2026)
+*** Completed restorePGFile (cpu=0:00:00.0 real=0:00:00.0 mem=1367.3M) ***
+% Begin Load routing data ... (date=06/23 11:05:17, mem=1331.3M)
+Reading routing file - /home/vlsi30/day19/physical_design/booth_multiplier_route.enc.dat/booth_multiplier.route.gz.
+Reading Innovus routing data (Created by Innovus v21.15-s110_1 on Tue Jun 23 09:59:18 2026 Format: 20.1) ...
+*** Total 177 nets are successfully restored.
+*** Completed restoreRoute (cpu=0:00:00.0 real=0:00:00.0 mem=1368.3M) ***
+% End Load routing data ... (date=06/23 11:05:17, total cpu=0:00:00.0, real=0:00:00.0, peak res=1332.6M, current mem=1332.1M)
+TAT_INFO: restoreCongMap REAL = 0 : CPU = 0 : MEM = 0.
+Reading property file /home/vlsi30/day19/physical_design/booth_multiplier_route.enc.dat/booth_multiplier.prop
+*** Completed restoreProperty (cpu=0:00:00.0 real=0:00:00.0 mem=1371.3M) ***
+Reading dirtyarea snapshot file /home/vlsi30/day19/physical_design/booth_multiplier_route.enc.dat/booth_multiplier.db.da.gz (Create by Innovus v21.15-s110_1 on Tue Jun 23 09:59:18 2026, version: 4).
+Set Default Input Pin Transition as 0.1 ps.
+Extraction setup Started 
+Initializing multi-corner RC extraction with 1 active RC Corners ...
+**WARN: (IMPEXT-6202):	In addition to the technology file, the capacitance table file is specified for all the RC corners. If the technology file  is already specified for all the RC corners, the capacitance table file is not required for preRoute and postRoute extraction. In a new session, the capacitance table files can be removed from the create_rc_corner command to enable the technology file to be used for preRoute and postRoute (effort level medium/high/signoff) extraction engines.
+Type 'man IMPEXT-6202' for more detail.
+Reading Capacitance Table File /home/vlsi30/day19/physical_design/booth_multiplier_route.enc.dat/libs/mmmc/gpdk090.lef.extended.CapTbl ...
+Cap table was created using Encounter 05.20-s112_1.
+Process name: gpdk090_9l.
+Importing multi-corner RC tables ... 
+Summary of Active RC-Corners : 
+ 
+ Analysis View: worst_case
+    RC-Corner Name        : rc_corner
+    RC-Corner Index       : 0
+    RC-Corner Temperature : 125 Celsius
+    RC-Corner Cap Table   : '/home/vlsi30/day19/physical_design/booth_multiplier_route.enc.dat/libs/mmmc/gpdk090.lef.extended.CapTbl'
+    RC-Corner PreRoute Res Factor         : 1
+    RC-Corner PreRoute Cap Factor         : 1
+    RC-Corner PostRoute Res Factor        : 1 {1 1 1}
+    RC-Corner PostRoute Cap Factor        : 1 {1 1 1}
+    RC-Corner PostRoute XCap Factor       : 1 {1 1 1}
+    RC-Corner PreRoute Clock Res Factor   : 1	[Derived from postRoute_res (effortLevel low)]
+    RC-Corner PreRoute Clock Cap Factor   : 1	[Derived from postRoute_cap (effortLevel low)]
+    RC-Corner PostRoute Clock Cap Factor  : 1 {1 1 1} 	[Derived from postRoute_cap (effortLevel low)]
+    RC-Corner PostRoute Clock Res Factor  : 1 {1 1 1} 	[Derived from postRoute_res (effortLevel low)]
+    RC-Corner PostRoute Clock coupling capacitance Factor : 1 {1 1 1} 
+    RC-Corner Technology file: '/home/vlsi30/day19/physical_design/booth_multiplier_route.enc.dat/libs/mmmc/rc_corner/gpdk090_9l.tch'
+ 
+ Analysis View: best_case
+    RC-Corner Name        : rc_corner
+    RC-Corner Index       : 0
+    RC-Corner Temperature : 125 Celsius
+    RC-Corner Cap Table   : '/home/vlsi30/day19/physical_design/booth_multiplier_route.enc.dat/libs/mmmc/gpdk090.lef.extended.CapTbl'
+    RC-Corner PreRoute Res Factor         : 1
+    RC-Corner PreRoute Cap Factor         : 1
+    RC-Corner PostRoute Res Factor        : 1 {1 1 1}
+    RC-Corner PostRoute Cap Factor        : 1 {1 1 1}
+    RC-Corner PostRoute XCap Factor       : 1 {1 1 1}
+    RC-Corner PreRoute Clock Res Factor   : 1	[Derived from postRoute_res (effortLevel low)]
+    RC-Corner PreRoute Clock Cap Factor   : 1	[Derived from postRoute_cap (effortLevel low)]
+    RC-Corner PostRoute Clock Cap Factor  : 1 {1 1 1} 	[Derived from postRoute_cap (effortLevel low)]
+    RC-Corner PostRoute Clock Res Factor  : 1 {1 1 1} 	[Derived from postRoute_res (effortLevel low)]
+    RC-Corner PostRoute Clock coupling capacitance Factor : 1 {1 1 1} 
+    RC-Corner Technology file: '/home/vlsi30/day19/physical_design/booth_multiplier_route.enc.dat/libs/mmmc/rc_corner/gpdk090_9l.tch'
+Updating RC grid for preRoute extraction ...
+Initializing multi-corner capacitance tables ... 
+Initializing multi-corner resistance tables ...
+Loading rc congestion map /home/vlsi30/day19/physical_design/booth_multiplier_route.enc.dat/booth_multiplier.congmap.gz ...
+Start generating vias ..
+#Skip building auto via since it is not turned on.
+Extracting standard cell pins and blockage ...... 
+Pin and blockage extraction finished
+Via generation completed.
+% Begin Load power constraints ... (date=06/23 11:05:18, mem=1348.5M)
+'set_default_switching_activity' finished successfully.
+% End Load power constraints ... (date=06/23 11:05:18, total cpu=0:00:00.0, real=0:00:01.0, peak res=1355.6M, current mem=1355.6M)
+max_delay min_delay
+% Begin load AAE data ... (date=06/23 11:05:19, mem=1377.5M)
+AAE DB initialization (MEM=1438.46 CPU=0:00:00.0 REAL=0:00:00.0) 
+% End load AAE data ... (date=06/23 11:05:19, total cpu=0:00:00.5, real=0:00:00.0, peak res=1384.0M, current mem=1384.0M)
+Restoring CCOpt config...
+  Extracting original clock gating for clk...
+    clock_tree clk contains 15 sinks and 0 clock gates.
+  Extracting original clock gating for clk done.
+  The skew group clk/sdc was created. It contains 15 sinks and 1 sources.
+Restoring CCOpt config done.
+Total number of combinational cells: 317
+Total number of sequential cells: 152
+Total number of tristate cells: 10
+Total number of level shifter cells: 0
+Total number of power gating cells: 0
+Total number of isolation cells: 0
+Total number of power switch cells: 0
+Total number of pulse generator cells: 0
+Total number of always on buffers: 0
+Total number of retention cells: 0
+List of usable buffers: BUFX2 BUFX12 BUFX16 BUFX20 CLKBUFX2 BUFX3 BUFX4 BUFX6 BUFX8 CLKBUFX12 CLKBUFX16 CLKBUFX20 CLKBUFX3 CLKBUFX4 CLKBUFX6 CLKBUFX8
+Total number of usable buffers: 16
+List of unusable buffers:
+Total number of unusable buffers: 0
+List of usable inverters: CLKINVX1 CLKINVX2 CLKINVX12 CLKINVX16 CLKINVX20 CLKINVX3 CLKINVX4 CLKINVX6 CLKINVX8 INVX1 INVX2 INVX12 INVX16 INVX20 INVXL INVX3 INVX4 INVX6 INVX8
+Total number of usable inverters: 19
+List of unusable inverters:
+Total number of unusable inverters: 0
+List of identified usable delay cells: DLY1X1 DLY1X4 DLY2X1 DLY2X4 DLY3X1 DLY3X4 DLY4X1 DLY4X4
+Total number of identified usable delay cells: 8
+List of identified unusable delay cells:
+Total number of identified unusable delay cells: 0
+**WARN: (IMPCTE-107):	The following globals have been obsoleted since version . They will be removed in the next release. 
+timing_enable_separate_device_slew_effect_sensitivities
+#% End load design ... (date=06/23 11:05:19, total cpu=0:00:03.5, real=0:00:04.0, peak res=1408.0M, current mem=1388.9M)
+
+*** Summary of all messages that are not suppressed in this session:
+Severity  ID               Count  Summary                                  
+WARNING   IMPLF-200            1  Pin '%s' in macro '%s' has no ANTENNAGAT...
+WARNING   IMPLF-105            2  The layer '%s' specified in SAMENET spac...
+WARNING   IMPFP-3961           4  The techSite '%s' has no related standar...
+WARNING   IMPEXT-6202          1  In addition to the technology file, the ...
+WARNING   IMPVL-159          958  Pin '%s' of cell '%s' is defined in LEF ...
+WARNING   IMPOPT-3602          1  The specified path group name %s is not ...
+WARNING   IMPCTE-107           1  The following globals have been obsolete...
+*** Message Summary: 968 warning(s), 0 error(s)
+
+<CMD> setDrawView fplan
+<CMD> encMessage warning 1
+<CMD> encMessage debug 0
+<CMD> setDrawView place
+<CMD> getAnalysisMode -checkType -quiet
+<CMD> get_time_unit
+<CMD> report_timing -machine_readable -max_paths 10000 -max_slack 0.75 -path_exceptions all -early > top.mtarpt
+AAE_INFO: opIsDesignInPostRouteState() is 0
+#################################################################################
+# Design Stage: PreRoute
+# Design Name: booth_multiplier
+# Design Mode: 90nm
+# Analysis Mode: MMMC Non-OCV 
+# Parasitics Mode: No SPEF/RCDB 
+# Signoff Settings: SI Off 
+#################################################################################
+Extraction called for design 'booth_multiplier' of instances=185 and nets=178 using extraction engine 'preRoute' .
+**WARN: (IMPEXT-3530):	The process node is not set. Use the command setDesignMode -process <process node> prior to extraction for maximum accuracy and optimal automatic threshold setting.
+Type 'man IMPEXT-3530' for more detail.
+PreRoute RC Extraction called for design booth_multiplier.
+RC Extraction called in multi-corner(1) mode.
+RCMode: PreRoute
+      RC Corner Indexes            0   
+Capacitance Scaling Factor   : 1.00000 
+Resistance Scaling Factor    : 1.00000 
+Clock Cap. Scaling Factor    : 1.00000 
+Clock Res. Scaling Factor    : 1.00000 
+Shrink Factor                : 1.00000
+PreRoute extraction is honoring NDR/Shielding/ExtraSpace for clock nets.
+Using capacitance table file ...
+Skipped RC grid update for preRoute extraction.
+Initializing multi-corner capacitance tables ... 
+Initializing multi-corner resistance tables ...
+PreRoute RC Extraction DONE (CPU Time: 0:00:00.0  Real Time: 0:00:00.0  MEM: 1638.930M)
+Calculate delays in BcWc mode...
+Start delay calculation (fullDC) (1 T). (MEM=1753.52)
+Total number of fetched objects 175
+End delay calculation. (MEM=1879.51 CPU=0:00:00.0 REAL=0:00:00.0)
+End delay calculation (fullDC). (MEM=1879.51 CPU=0:00:00.1 REAL=0:00:00.0)
+<CMD> load_timing_debug_report -name default_report top.mtarpt -max_path_num 10000 -updateCategory 0
+Parsing file top.mtarpt...
+<CMD> ecoAddRepeater -cell BUFX2 -net n_63 -name FE_ECOC0_n_63
+#################################################################################
+# Design Stage: PreRoute
+# Design Name: booth_multiplier
+# Design Mode: 90nm
+# Analysis Mode: MMMC Non-OCV 
+# Parasitics Mode: No SPEF/RCDB 
+# Signoff Settings: SI Off 
+#################################################################################
+AAE_INFO: opIsDesignInPostRouteState() is 0
+#################################################################################
+# Design Stage: PreRoute
+# Design Name: booth_multiplier
+# Design Mode: 90nm
+# Analysis Mode: MMMC Non-OCV 
+# Parasitics Mode: No SPEF/RCDB 
+# Signoff Settings: SI Off 
+#################################################################################
+Calculate delays in BcWc mode...
+Start delay calculation (fullDC) (1 T). (MEM=1859.99)
+Total number of fetched objects 175
+End delay calculation. (MEM=1890.59 CPU=0:00:00.0 REAL=0:00:00.0)
+End delay calculation (fullDC). (MEM=1890.59 CPU=0:00:00.0 REAL=0:00:00.0)
+   _____________________________________________________________
+  /  Design State
+ +--------------------------------------------------------------
+ | signal nets: 
+ |    routed nets:       19 (10.9% routed)
+ |     total nets:      174
+ | clock nets: 
+ |    routed nets:        0 (0.0% routed)
+ |     total nets:        1
+ +--------------------------------------------------------------
+**INFO: Design is not detail routed
+**WARN: (IMPOPT-3706):	RC data of net 'n_63' has been disabled because it could not be updated as part of this buffer insertion. Timing results for this net may be inaccurate and may require re-extraction.
+Add inst FE_ECOC0_n_63 (BUFX2) to drive load Count_reg[0]/D1 g10354__2398/B0 g10357__8428/B0 g10416__4319/A g10433/A 
+Estimated cell power/ground rail width = 0.408 um
+*** Starting refinePlace (0:00:31.5 mem=2027.7M) ***
+Total net bbox length = 1.814e+03 (9.616e+02 8.524e+02) (ext = 1.766e+02)
+Move report: Detail placement moves 14 insts, mean move: 1.14 um, max move: 2.90 um 
+	Max move on inst (g10403): (11.31, 16.53) --> (11.02, 19.14)
+	Runtime: CPU: 0:00:00.0 REAL: 0:00:00.0 MEM: 2043.7MB
+Summary Report:
+Instances move: 14 (out of 164 movable)
+Instances flipped: 0
+Mean displacement: 1.14 um
+Max displacement: 2.90 um (Instance: g10403) (11.31, 16.53) -> (11.02, 19.14)
+	Length: 3 sites, height: 1 rows, site name: gsclib090site, cell type: INVXL
+Total net bbox length = 1.821e+03 (9.654e+02 8.552e+02) (ext = 1.766e+02)
+Runtime: CPU: 0:00:00.0 REAL: 0:00:00.0 MEM: 2043.7MB
+*** Finished refinePlace (0:00:31.5 mem=2043.7M) ***
+<CMD> ecoAddRepeater -cell BUFX2 -net n_102 -name FE_ECOC1_n_102
+   _____________________________________________________________
+  /  Design State
+ +--------------------------------------------------------------
+ | signal nets: 
+ |    routed nets:       19 (10.9% routed)
+ |     total nets:      175
+ | clock nets: 
+ |    routed nets:        0 (0.0% routed)
+ |     total nets:        1
+ +--------------------------------------------------------------
+**INFO: Design is not detail routed
+**WARN: (IMPOPT-3706):	RC data of net 'n_102' has been disabled because it could not be updated as part of this buffer insertion. Timing results for this net may be inaccurate and may require re-extraction.
+Add inst FE_ECOC1_n_102 (BUFX2) to drive load A_reg[0]/D 
+*** Starting refinePlace (0:00:31.6 mem=2031.0M) ***
+Total net bbox length = 1.822e+03 (9.660e+02 8.559e+02) (ext = 1.766e+02)
+Move report: Detail placement moves 12 insts, mean move: 0.87 um, max move: 2.32 um 
+	Max move on inst (FE_ECOC1_n_102): (30.45, 29.58) --> (32.77, 29.58)
+	Runtime: CPU: 0:00:00.0 REAL: 0:00:00.0 MEM: 2031.0MB
+Summary Report:
+Instances move: 12 (out of 165 movable)
+Instances flipped: 0
+Mean displacement: 0.87 um
+Max displacement: 2.32 um (Instance: FE_ECOC1_n_102) (30.45, 29.58) -> (32.77, 29.58)
+	Length: 6 sites, height: 1 rows, site name: gsclib090site, cell type: BUFX2
+Total net bbox length = 1.823e+03 (9.677e+02 8.555e+02) (ext = 1.775e+02)
+Runtime: CPU: 0:00:00.0 REAL: 0:00:00.0 MEM: 2031.0MB
+*** Finished refinePlace (0:00:31.6 mem=2031.0M) ***
+<CMD> ecoAddRepeater -cell BUFX2 -net FE_ECON1_n_102 -name FE_ECOC2_n_102
+   _____________________________________________________________
+  /  Design State
+ +--------------------------------------------------------------
+ | signal nets: 
+ |    routed nets:       19 (10.8% routed)
+ |     total nets:      176
+ | clock nets: 
+ |    routed nets:        0 (0.0% routed)
+ |     total nets:        1
+ +--------------------------------------------------------------
+**INFO: Design is not detail routed
+**WARN: (IMPOPT-3706):	RC data of net 'FE_ECON1_n_102' has been disabled because it could not be updated as part of this buffer insertion. Timing results for this net may be inaccurate and may require re-extraction.
+Add inst FE_ECOC2_n_102 (BUFX2) to drive load A_reg[0]/D 
+*** Starting refinePlace (0:00:31.6 mem=1975.2M) ***
+Total net bbox length = 1.826e+03 (9.680e+02 8.578e+02) (ext = 1.775e+02)
+Move report: Detail placement moves 7 insts, mean move: 1.28 um, max move: 1.74 um 
+	Max move on inst (FE_ECOC1_n_102): (32.77, 29.58) --> (34.51, 29.58)
+	Runtime: CPU: 0:00:00.0 REAL: 0:00:00.0 MEM: 1975.2MB
+Summary Report:
+Instances move: 7 (out of 166 movable)
+Instances flipped: 0
+Mean displacement: 1.28 um
+Max displacement: 1.74 um (Instance: FE_ECOC1_n_102) (32.77, 29.58) -> (34.51, 29.58)
+	Length: 6 sites, height: 1 rows, site name: gsclib090site, cell type: BUFX2
+Total net bbox length = 1.826e+03 (9.699e+02 8.558e+02) (ext = 1.766e+02)
+Runtime: CPU: 0:00:00.0 REAL: 0:00:00.0 MEM: 1975.2MB
+*** Finished refinePlace (0:00:31.6 mem=1975.2M) ***
+<CMD> ecoAddRepeater -cell BUFX2 -net n_105 -name FE_ECOC3_n_105
+   _____________________________________________________________
+  /  Design State
+ +--------------------------------------------------------------
+ | signal nets: 
+ |    routed nets:       19 (10.7% routed)
+ |     total nets:      177
+ | clock nets: 
+ |    routed nets:        0 (0.0% routed)
+ |     total nets:        1
+ +--------------------------------------------------------------
+**INFO: Design is not detail routed
+**WARN: (IMPOPT-3706):	RC data of net 'n_105' has been disabled because it could not be updated as part of this buffer insertion. Timing results for this net may be inaccurate and may require re-extraction.
+Add inst FE_ECOC3_n_105 (BUFX2) to drive load A_reg[1]/D 
+*** Starting refinePlace (0:00:31.6 mem=2032.4M) ***
+Total net bbox length = 1.828e+03 (9.705e+02 8.575e+02) (ext = 1.766e+02)
+Move report: Detail placement moves 12 insts, mean move: 0.53 um, max move: 2.90 um 
+	Max move on inst (FE_ECOC3_n_105): (37.70, 21.75) --> (40.60, 21.75)
+	Runtime: CPU: 0:00:00.0 REAL: 0:00:00.0 MEM: 2032.4MB
+Summary Report:
+Instances move: 12 (out of 167 movable)
+Instances flipped: 0
+Mean displacement: 0.53 um
+Max displacement: 2.90 um (Instance: FE_ECOC3_n_105) (37.7, 21.75) -> (40.6, 21.75)
+	Length: 6 sites, height: 1 rows, site name: gsclib090site, cell type: BUFX2
+Total net bbox length = 1.831e+03 (9.705e+02 8.601e+02) (ext = 1.766e+02)
+Runtime: CPU: 0:00:00.0 REAL: 0:00:00.0 MEM: 2032.4MB
+*** Finished refinePlace (0:00:31.7 mem=2032.4M) ***
+<CMD> ecoAddRepeater -cell BUFX2 -net n_105 -name FE_ECOC4_n_105
+   _____________________________________________________________
+  /  Design State
+ +--------------------------------------------------------------
+ | signal nets: 
+ |    routed nets:       19 (10.7% routed)
+ |     total nets:      178
+ | clock nets: 
+ |    routed nets:        0 (0.0% routed)
+ |     total nets:        1
+ +--------------------------------------------------------------
+**INFO: Design is not detail routed
+**WARN: (IMPOPT-3706):	RC data of net 'n_105' has been disabled because it could not be updated as part of this buffer insertion. Timing results for this net may be inaccurate and may require re-extraction.
+Add inst FE_ECOC4_n_105 (BUFX2) to drive load FE_ECOC3_n_105/A 
+*** Starting refinePlace (0:00:31.7 mem=2033.7M) ***
+Total net bbox length = 1.831e+03 (9.711e+02 8.604e+02) (ext = 1.766e+02)
+Move report: Detail placement moves 14 insts, mean move: 0.91 um, max move: 2.03 um 
+	Max move on inst (FE_ECOC4_n_105): (37.70, 21.75) --> (39.73, 21.75)
+	Runtime: CPU: 0:00:00.0 REAL: 0:00:00.0 MEM: 2033.7MB
+Summary Report:
+Instances move: 14 (out of 168 movable)
+Instances flipped: 0
+Mean displacement: 0.91 um
+Max displacement: 2.03 um (Instance: FE_ECOC4_n_105) (37.7, 21.75) -> (39.73, 21.75)
+	Length: 6 sites, height: 1 rows, site name: gsclib090site, cell type: BUFX2
+Total net bbox length = 1.836e+03 (9.757e+02 8.604e+02) (ext = 1.761e+02)
+Runtime: CPU: 0:00:00.0 REAL: 0:00:00.0 MEM: 2033.7MB
+*** Finished refinePlace (0:00:31.7 mem=2033.7M) ***
+<CMD> ecoAddRepeater -cell BUFX2 -net n_106 -name FE_ECOC5_n_106
+   _____________________________________________________________
+  /  Design State
+ +--------------------------------------------------------------
+ | signal nets: 
+ |    routed nets:       19 (10.6% routed)
+ |     total nets:      179
+ | clock nets: 
+ |    routed nets:        0 (0.0% routed)
+ |     total nets:        1
+ +--------------------------------------------------------------
+**INFO: Design is not detail routed
+**WARN: (IMPOPT-3706):	RC data of net 'n_106' has been disabled because it could not be updated as part of this buffer insertion. Timing results for this net may be inaccurate and may require re-extraction.
+Add inst FE_ECOC5_n_106 (BUFX2) to drive load A_reg[2]/D 
+*** Starting refinePlace (0:00:31.7 mem=2034.9M) ***
+Total net bbox length = 1.836e+03 (9.763e+02 8.601e+02) (ext = 1.761e+02)
+Move report: Detail placement moves 4 insts, mean move: 0.29 um, max move: 0.29 um 
+	Max move on inst (FE_ECOC5_n_106): (32.48, 8.70) --> (32.77, 8.70)
+	Runtime: CPU: 0:00:00.0 REAL: 0:00:00.0 MEM: 2034.9MB
+Summary Report:
+Instances move: 4 (out of 169 movable)
+Instances flipped: 0
+Mean displacement: 0.29 um
+Max displacement: 0.29 um (Instance: FE_ECOC5_n_106) (32.48, 8.7) -> (32.77, 8.7)
+	Length: 6 sites, height: 1 rows, site name: gsclib090site, cell type: BUFX2
+Total net bbox length = 1.836e+03 (9.760e+02 8.601e+02) (ext = 1.763e+02)
+Runtime: CPU: 0:00:00.0 REAL: 0:00:00.0 MEM: 2034.9MB
+*** Finished refinePlace (0:00:31.7 mem=2034.9M) ***
+<CMD> ecoAddRepeater -cell BUFX2 -net n_106 -name FE_ECOC6_n_106
+   _____________________________________________________________
+  /  Design State
+ +--------------------------------------------------------------
+ | signal nets: 
+ |    routed nets:       19 (10.6% routed)
+ |     total nets:      180
+ | clock nets: 
+ |    routed nets:        0 (0.0% routed)
+ |     total nets:        1
+ +--------------------------------------------------------------
+**INFO: Design is not detail routed
+**WARN: (IMPOPT-3706):	RC data of net 'n_106' has been disabled because it could not be updated as part of this buffer insertion. Timing results for this net may be inaccurate and may require re-extraction.
+Add inst FE_ECOC6_n_106 (BUFX2) to drive load FE_ECOC5_n_106/A 
+*** Starting refinePlace (0:00:31.8 mem=2036.1M) ***
+Total net bbox length = 1.836e+03 (9.766e+02 8.598e+02) (ext = 1.763e+02)
+Move report: Detail placement moves 11 insts, mean move: 0.82 um, max move: 0.87 um 
+	Max move on inst (FE_ECOC5_n_106): (32.77, 8.70) --> (33.64, 8.70)
+	Runtime: CPU: 0:00:00.0 REAL: 0:00:00.0 MEM: 2036.1MB
+Summary Report:
+Instances move: 11 (out of 170 movable)
+Instances flipped: 0
+Mean displacement: 0.82 um
+Max displacement: 0.87 um (Instance: FE_ECOC5_n_106) (32.77, 8.7) -> (33.64, 8.7)
+	Length: 6 sites, height: 1 rows, site name: gsclib090site, cell type: BUFX2
+Total net bbox length = 1.835e+03 (9.741e+02 8.604e+02) (ext = 1.778e+02)
+Runtime: CPU: 0:00:00.0 REAL: 0:00:00.0 MEM: 2036.1MB
+*** Finished refinePlace (0:00:31.8 mem=2036.1M) ***
+<CMD> ecoAddRepeater -cell BUFX2 -net n_106 -name FE_ECOC7_n_106
+   _____________________________________________________________
+  /  Design State
+ +--------------------------------------------------------------
+ | signal nets: 
+ |    routed nets:       19 (10.5% routed)
+ |     total nets:      181
+ | clock nets: 
+ |    routed nets:        0 (0.0% routed)
+ |     total nets:        1
+ +--------------------------------------------------------------
+**INFO: Design is not detail routed
+**WARN: (IMPOPT-3706):	RC data of net 'n_106' has been disabled because it could not be updated as part of this buffer insertion. Timing results for this net may be inaccurate and may require re-extraction.
+Add inst FE_ECOC7_n_106 (BUFX2) to drive load FE_ECOC6_n_106/A 
+*** Starting refinePlace (0:00:31.8 mem=2037.4M) ***
+Total net bbox length = 1.835e+03 (9.747e+02 8.601e+02) (ext = 1.778e+02)
+Move report: Detail placement moves 14 insts, mean move: 0.68 um, max move: 1.16 um 
+	Max move on inst (FE_RC_88_0): (25.52, 11.31) --> (24.36, 11.31)
+	Runtime: CPU: 0:00:00.0 REAL: 0:00:00.0 MEM: 2037.4MB
+Summary Report:
+Instances move: 14 (out of 171 movable)
+Instances flipped: 0
+Mean displacement: 0.68 um
+Max displacement: 1.16 um (Instance: FE_RC_88_0) (25.52, 11.31) -> (24.36, 11.31)
+	Length: 13 sites, height: 1 rows, site name: gsclib090site, cell type: OAI22X2
+Total net bbox length = 1.846e+03 (9.840e+02 8.619e+02) (ext = 1.778e+02)
+Runtime: CPU: 0:00:00.0 REAL: 0:00:00.0 MEM: 2037.4MB
+*** Finished refinePlace (0:00:31.8 mem=2037.4M) ***
+<CMD> ecoAddRepeater -cell BUFX2 -net n_94 -name FE_ECOC8_n_94
+   _____________________________________________________________
+  /  Design State
+ +--------------------------------------------------------------
+ | signal nets: 
+ |    routed nets:       19 (10.4% routed)
+ |     total nets:      182
+ | clock nets: 
+ |    routed nets:        0 (0.0% routed)
+ |     total nets:        1
+ +--------------------------------------------------------------
+**INFO: Design is not detail routed
+**WARN: (IMPOPT-3706):	RC data of net 'n_94' has been disabled because it could not be updated as part of this buffer insertion. Timing results for this net may be inaccurate and may require re-extraction.
+Add inst FE_ECOC8_n_94 (BUFX2) to drive load Count_reg[1]/D 
+*** Starting refinePlace (0:00:31.9 mem=2038.6M) ***
+Total net bbox length = 1.848e+03 (9.849e+02 8.636e+02) (ext = 1.778e+02)
+Move report: Detail placement moves 1 insts, mean move: 2.03 um, max move: 2.03 um 
+	Max move on inst (FE_ECOC8_n_94): (13.34, 24.36) --> (11.31, 24.36)
+	Runtime: CPU: 0:00:00.0 REAL: 0:00:00.0 MEM: 2038.6MB
+Summary Report:
+Instances move: 1 (out of 172 movable)
+Instances flipped: 0
+Mean displacement: 2.03 um
+Max displacement: 2.03 um (Instance: FE_ECOC8_n_94) (13.34, 24.36) -> (11.31, 24.36)
+	Length: 6 sites, height: 1 rows, site name: gsclib090site, cell type: BUFX2
+Total net bbox length = 1.847e+03 (9.846e+02 8.627e+02) (ext = 1.778e+02)
+Runtime: CPU: 0:00:00.0 REAL: 0:00:00.0 MEM: 2038.6MB
+*** Finished refinePlace (0:00:31.9 mem=2038.6M) ***
+<CMD> ecoAddRepeater -cell BUFX2 -net n_94 -name FE_ECOC9_n_94
+   _____________________________________________________________
+  /  Design State
+ +--------------------------------------------------------------
+ | signal nets: 
+ |    routed nets:       19 (10.4% routed)
+ |     total nets:      183
+ | clock nets: 
+ |    routed nets:        0 (0.0% routed)
+ |     total nets:        1
+ +--------------------------------------------------------------
+**INFO: Design is not detail routed
+**WARN: (IMPOPT-3706):	RC data of net 'n_94' has been disabled because it could not be updated as part of this buffer insertion. Timing results for this net may be inaccurate and may require re-extraction.
+Add inst FE_ECOC9_n_94 (BUFX2) to drive load FE_ECOC8_n_94/A 
+*** Starting refinePlace (0:00:31.9 mem=2039.8M) ***
+Total net bbox length = 1.850e+03 (9.852e+02 8.645e+02) (ext = 1.778e+02)
+Move report: Detail placement moves 15 insts, mean move: 0.79 um, max move: 0.87 um 
+	Max move on inst (FE_ECOC8_n_94): (11.31, 24.36) --> (10.44, 24.36)
+	Runtime: CPU: 0:00:00.0 REAL: 0:00:00.0 MEM: 2039.8MB
+Summary Report:
+Instances move: 15 (out of 173 movable)
+Instances flipped: 0
+Mean displacement: 0.79 um
+Max displacement: 0.87 um (Instance: FE_ECOC8_n_94) (11.31, 24.36) -> (10.44, 24.36)
+	Length: 6 sites, height: 1 rows, site name: gsclib090site, cell type: BUFX2
+Total net bbox length = 1.853e+03 (9.895e+02 8.630e+02) (ext = 1.787e+02)
+Runtime: CPU: 0:00:00.0 REAL: 0:00:00.0 MEM: 2039.8MB
+*** Finished refinePlace (0:00:31.9 mem=2039.8M) ***
+<CMD> ecoAddRepeater -cell BUFX2 -net n_94 -name FE_ECOC10_n_94
+   _____________________________________________________________
+  /  Design State
+ +--------------------------------------------------------------
+ | signal nets: 
+ |    routed nets:       19 (10.3% routed)
+ |     total nets:      184
+ | clock nets: 
+ |    routed nets:        0 (0.0% routed)
+ |     total nets:        1
+ +--------------------------------------------------------------
+**INFO: Design is not detail routed
+**WARN: (IMPOPT-3706):	RC data of net 'n_94' has been disabled because it could not be updated as part of this buffer insertion. Timing results for this net may be inaccurate and may require re-extraction.
+Add inst FE_ECOC10_n_94 (BUFX2) to drive load FE_ECOC9_n_94/A 
+*** Starting refinePlace (0:00:32.0 mem=2041.1M) ***
+Total net bbox length = 1.855e+03 (9.901e+02 8.648e+02) (ext = 1.787e+02)
+Move report: Detail placement moves 17 insts, mean move: 1.02 um, max move: 4.06 um 
+	Max move on inst (g10370__2802): (21.17, 21.75) --> (19.72, 24.36)
+	Runtime: CPU: 0:00:00.0 REAL: 0:00:00.0 MEM: 2041.1MB
+Summary Report:
+Instances move: 17 (out of 174 movable)
+Instances flipped: 0
+Mean displacement: 1.02 um
+Max displacement: 4.06 um (Instance: g10370__2802) (21.17, 21.75) -> (19.72, 24.36)
+	Length: 9 sites, height: 1 rows, site name: gsclib090site, cell type: NOR2BX2
+Total net bbox length = 1.866e+03 (9.986e+02 8.674e+02) (ext = 1.792e+02)
+Runtime: CPU: 0:00:00.0 REAL: 0:00:00.0 MEM: 2041.1MB
+*** Finished refinePlace (0:00:32.0 mem=2041.1M) ***
+<CMD> ecoAddRepeater -cell BUFX2 -net n_94 -name FE_ECOC11_n_94
+   _____________________________________________________________
+  /  Design State
+ +--------------------------------------------------------------
+ | signal nets: 
+ |    routed nets:       19 (10.3% routed)
+ |     total nets:      185
+ | clock nets: 
+ |    routed nets:        0 (0.0% routed)
+ |     total nets:        1
+ +--------------------------------------------------------------
+**INFO: Design is not detail routed
+**WARN: (IMPOPT-3706):	RC data of net 'n_94' has been disabled because it could not be updated as part of this buffer insertion. Timing results for this net may be inaccurate and may require re-extraction.
+Add inst FE_ECOC11_n_94 (BUFX2) to drive load FE_ECOC10_n_94/A 
+*** Starting refinePlace (0:00:32.0 mem=2042.3M) ***
+Total net bbox length = 1.868e+03 (9.992e+02 8.691e+02) (ext = 1.792e+02)
+Move report: Detail placement moves 3 insts, mean move: 1.35 um, max move: 1.74 um 
+	Max move on inst (FE_ECOC10_n_94): (12.18, 24.36) --> (13.92, 24.36)
+	Runtime: CPU: 0:00:00.0 REAL: 0:00:00.0 MEM: 2042.3MB
+Summary Report:
+Instances move: 3 (out of 175 movable)
+Instances flipped: 0
+Mean displacement: 1.35 um
+Max displacement: 1.74 um (Instance: FE_ECOC10_n_94) (12.18, 24.36) -> (13.92, 24.36)
+	Length: 6 sites, height: 1 rows, site name: gsclib090site, cell type: BUFX2
+Total net bbox length = 1.870e+03 (1.003e+03 8.677e+02) (ext = 1.792e+02)
+Runtime: CPU: 0:00:00.0 REAL: 0:00:00.0 MEM: 2042.3MB
+*** Finished refinePlace (0:00:32.0 mem=2042.3M) ***
+<CMD> ecoAddRepeater -cell BUFX2 -net n_96 -name FE_ECOC12_n_96
+   _____________________________________________________________
+  /  Design State
+ +--------------------------------------------------------------
+ | signal nets: 
+ |    routed nets:       19 (10.2% routed)
+ |     total nets:      186
+ | clock nets: 
+ |    routed nets:        0 (0.0% routed)
+ |     total nets:        1
+ +--------------------------------------------------------------
+**INFO: Design is not detail routed
+**WARN: (IMPOPT-3706):	RC data of net 'n_96' has been disabled because it could not be updated as part of this buffer insertion. Timing results for this net may be inaccurate and may require re-extraction.
+Add inst FE_ECOC12_n_96 (BUFX2) to drive load P_reg[1]/D 
+*** Starting refinePlace (0:00:32.0 mem=2042.6M) ***
+Total net bbox length = 1.873e+03 (1.003e+03 8.694e+02) (ext = 1.792e+02)
+Move report: Detail placement moves 5 insts, mean move: 1.10 um, max move: 2.61 um 
+	Max move on inst (FE_ECOC12_n_96): (19.14, 32.19) --> (21.75, 32.19)
+	Runtime: CPU: 0:00:00.0 REAL: 0:00:00.0 MEM: 2042.6MB
+Summary Report:
+Instances move: 5 (out of 176 movable)
+Instances flipped: 0
+Mean displacement: 1.10 um
+Max displacement: 2.61 um (Instance: FE_ECOC12_n_96) (19.14, 32.19) -> (21.75, 32.19)
+	Length: 6 sites, height: 1 rows, site name: gsclib090site, cell type: BUFX2
+Total net bbox length = 1.873e+03 (1.005e+03 8.680e+02) (ext = 1.795e+02)
+Runtime: CPU: 0:00:00.0 REAL: 0:00:00.0 MEM: 2042.6MB
+*** Finished refinePlace (0:00:32.1 mem=2042.6M) ***
+<CMD> ecoAddRepeater -cell BUFX2 -net n_96 -name FE_ECOC13_n_96
+   _____________________________________________________________
+  /  Design State
+ +--------------------------------------------------------------
+ | signal nets: 
+ |    routed nets:       19 (10.2% routed)
+ |     total nets:      187
+ | clock nets: 
+ |    routed nets:        0 (0.0% routed)
+ |     total nets:        1
+ +--------------------------------------------------------------
+**INFO: Design is not detail routed
+**WARN: (IMPOPT-3706):	RC data of net 'n_96' has been disabled because it could not be updated as part of this buffer insertion. Timing results for this net may be inaccurate and may require re-extraction.
+Add inst FE_ECOC13_n_96 (BUFX2) to drive load FE_ECOC12_n_96/A 
+*** Starting refinePlace (0:00:32.1 mem=2043.8M) ***
+Total net bbox length = 1.876e+03 (1.006e+03 8.697e+02) (ext = 1.795e+02)
+Move report: Detail placement moves 24 insts, mean move: 1.03 um, max move: 4.35 um 
+	Max move on inst (g10449): (12.76, 32.19) --> (14.50, 29.58)
+	Runtime: CPU: 0:00:00.0 REAL: 0:00:00.0 MEM: 2043.8MB
+Summary Report:
+Instances move: 24 (out of 177 movable)
+Instances flipped: 0
+Mean displacement: 1.03 um
+Max displacement: 4.35 um (Instance: g10449) (12.76, 32.19) -> (14.5, 29.58)
+	Length: 3 sites, height: 1 rows, site name: gsclib090site, cell type: INVXL
+Total net bbox length = 1.888e+03 (1.017e+03 8.709e+02) (ext = 1.792e+02)
+Runtime: CPU: 0:00:00.0 REAL: 0:00:00.0 MEM: 2043.8MB
+*** Finished refinePlace (0:00:32.1 mem=2043.8M) ***
+<CMD> ecoAddRepeater -cell BUFX2 -net n_90 -name FE_ECOC14_n_90
+   _____________________________________________________________
+  /  Design State
+ +--------------------------------------------------------------
+ | signal nets: 
+ |    routed nets:       19 (10.1% routed)
+ |     total nets:      188
+ | clock nets: 
+ |    routed nets:        0 (0.0% routed)
+ |     total nets:        1
+ +--------------------------------------------------------------
+**INFO: Design is not detail routed
+**WARN: (IMPOPT-3706):	RC data of net 'n_90' has been disabled because it could not be updated as part of this buffer insertion. Timing results for this net may be inaccurate and may require re-extraction.
+Add inst FE_ECOC14_n_90 (BUFX2) to drive load P_reg[2]/D 
+*** Starting refinePlace (0:00:32.1 mem=2045.0M) ***
+Total net bbox length = 1.890e+03 (1.018e+03 8.716e+02) (ext = 1.792e+02)
+Move report: Detail placement moves 33 insts, mean move: 1.25 um, max move: 3.48 um 
+	Max move on inst (P_reg[2]): (6.38, 32.19) --> (7.25, 29.58)
+	Runtime: CPU: 0:00:00.0 REAL: 0:00:00.0 MEM: 2045.0MB
+Summary Report:
+Instances move: 33 (out of 178 movable)
+Instances flipped: 0
+Mean displacement: 1.25 um
+Max displacement: 3.48 um (Instance: P_reg[2]) (6.38, 32.19) -> (7.25, 29.58)
+	Length: 22 sites, height: 1 rows, site name: gsclib090site, cell type: DFFHQX1
+Total net bbox length = 1.925e+03 (1.022e+03 9.031e+02) (ext = 1.781e+02)
+Runtime: CPU: 0:00:00.0 REAL: 0:00:00.0 MEM: 2045.0MB
+*** Finished refinePlace (0:00:32.1 mem=2045.0M) ***
+<CMD> ecoAddRepeater -cell BUFX2 -net n_90 -name FE_ECOC15_n_90
+   _____________________________________________________________
+  /  Design State
+ +--------------------------------------------------------------
+ | signal nets: 
+ |    routed nets:       19 (10.1% routed)
+ |     total nets:      189
+ | clock nets: 
+ |    routed nets:        0 (0.0% routed)
+ |     total nets:        1
+ +--------------------------------------------------------------
+**INFO: Design is not detail routed
+**WARN: (IMPOPT-3706):	RC data of net 'n_90' has been disabled because it could not be updated as part of this buffer insertion. Timing results for this net may be inaccurate and may require re-extraction.
+Add inst FE_ECOC15_n_90 (BUFX2) to drive load FE_ECOC14_n_90/A 
+*** Starting refinePlace (0:00:32.2 mem=2046.3M) ***
+Total net bbox length = 1.926e+03 (1.023e+03 9.028e+02) (ext = 1.781e+02)
+Move report: Detail placement moves 51 insts, mean move: 1.10 um, max move: 4.06 um 
+	Max move on inst (g10411__2883): (15.95, 8.70) --> (17.40, 11.31)
+	Runtime: CPU: 0:00:00.0 REAL: 0:00:00.0 MEM: 2046.3MB
+Summary Report:
+Instances move: 51 (out of 179 movable)
+Instances flipped: 0
+Mean displacement: 1.10 um
+Max displacement: 4.06 um (Instance: g10411__2883) (15.95, 8.7) -> (17.4, 11.31)
+	Length: 6 sites, height: 1 rows, site name: gsclib090site, cell type: OAI21X1
+Total net bbox length = 1.929e+03 (1.021e+03 9.085e+02) (ext = 1.850e+02)
+Runtime: CPU: 0:00:00.0 REAL: 0:00:00.0 MEM: 2046.3MB
+*** Finished refinePlace (0:00:32.2 mem=2046.3M) ***
+<CMD> ecoAddRepeater -cell BUFX2 -net n_91 -name FE_ECOC16_n_91
+   _____________________________________________________________
+  /  Design State
+ +--------------------------------------------------------------
+ | signal nets: 
+ |    routed nets:       19 (10.0% routed)
+ |     total nets:      190
+ | clock nets: 
+ |    routed nets:        0 (0.0% routed)
+ |     total nets:        1
+ +--------------------------------------------------------------
+**INFO: Design is not detail routed
+**WARN: (IMPOPT-3706):	RC data of net 'n_91' has been disabled because it could not be updated as part of this buffer insertion. Timing results for this net may be inaccurate and may require re-extraction.
+Add inst FE_ECOC16_n_91 (BUFX2) to drive load P_reg[3]/D 
+*** Starting refinePlace (0:00:32.2 mem=2046.5M) ***
+Total net bbox length = 1.931e+03 (1.020e+03 9.108e+02) (ext = 1.850e+02)
+Move report: Detail placement moves 80 insts, mean move: 1.83 um, max move: 5.80 um 
+	Max move on inst (M_temp_reg[2]): (11.31, 6.09) --> (14.50, 8.70)
+	Runtime: CPU: 0:00:00.0 REAL: 0:00:00.0 MEM: 2046.5MB
+Summary Report:
+Instances move: 80 (out of 180 movable)
+Instances flipped: 0
+Mean displacement: 1.83 um
+Max displacement: 5.80 um (Instance: M_temp_reg[2]) (11.31, 6.09) -> (14.5, 8.7)
+	Length: 26 sites, height: 1 rows, site name: gsclib090site, cell type: DFFQX4
+Total net bbox length = 1.963e+03 (1.027e+03 9.365e+02) (ext = 1.934e+02)
+Runtime: CPU: 0:00:00.0 REAL: 0:00:00.0 MEM: 2046.5MB
+*** Finished refinePlace (0:00:32.2 mem=2046.5M) ***
+<CMD> ecoAddRepeater -cell BUFX2 -net n_91 -name FE_ECOC17_n_91
+   _____________________________________________________________
+  /  Design State
+ +--------------------------------------------------------------
+ | signal nets: 
+ |    routed nets:       19 (9.9% routed)
+ |     total nets:      191
+ | clock nets: 
+ |    routed nets:        0 (0.0% routed)
+ |     total nets:        1
+ +--------------------------------------------------------------
+**INFO: Design is not detail routed
+**WARN: (IMPOPT-3706):	RC data of net 'n_91' has been disabled because it could not be updated as part of this buffer insertion. Timing results for this net may be inaccurate and may require re-extraction.
+Add inst FE_ECOC17_n_91 (BUFX2) to drive load FE_ECOC16_n_91/A 
+*** Starting refinePlace (0:00:32.3 mem=2047.7M) ***
+Total net bbox length = 1.965e+03 (1.026e+03 9.388e+02) (ext = 1.934e+02)
+Move report: Detail placement moves 51 insts, mean move: 1.25 um, max move: 7.83 um 
+	Max move on inst (g10424): (6.38, 26.97) --> (6.38, 19.14)
+	Runtime: CPU: 0:00:00.0 REAL: 0:00:00.0 MEM: 2047.7MB
+Summary Report:
+Instances move: 51 (out of 181 movable)
+Instances flipped: 0
+Mean displacement: 1.25 um
+Max displacement: 7.83 um (Instance: g10424) (6.38, 26.97) -> (6.38, 19.14)
+	Length: 3 sites, height: 1 rows, site name: gsclib090site, cell type: CLKINVX1
+Total net bbox length = 2.015e+03 (1.053e+03 9.628e+02) (ext = 1.977e+02)
+Runtime: CPU: 0:00:00.0 REAL: 0:00:00.0 MEM: 2047.7MB
+*** Finished refinePlace (0:00:32.3 mem=2047.7M) ***
+<CMD> ecoAddRepeater -cell BUFX2 -net n_43 -name FE_ECOC18_n_43
+   _____________________________________________________________
+  /  Design State
+ +--------------------------------------------------------------
+ | signal nets: 
+ |    routed nets:       19 (9.9% routed)
+ |     total nets:      192
+ | clock nets: 
+ |    routed nets:        0 (0.0% routed)
+ |     total nets:        1
+ +--------------------------------------------------------------
+**INFO: Design is not detail routed
+**WARN: (IMPOPT-3706):	RC data of net 'n_43' has been disabled because it could not be updated as part of this buffer insertion. Timing results for this net may be inaccurate and may require re-extraction.
+Add inst FE_ECOC18_n_43 (BUFX2) to drive load Count_reg[2]/D 
+*** Starting refinePlace (0:00:32.3 mem=2049.0M) ***
+Total net bbox length = 2.015e+03 (1.052e+03 9.625e+02) (ext = 1.977e+02)
+Move report: Detail placement moves 16 insts, mean move: 0.76 um, max move: 5.51 um 
+	Max move on inst (FE_ECOC18_n_43): (11.89, 11.31) --> (11.60, 16.53)
+	Runtime: CPU: 0:00:00.0 REAL: 0:00:00.0 MEM: 2049.0MB
+Summary Report:
+Instances move: 16 (out of 182 movable)
+Instances flipped: 0
+Mean displacement: 0.76 um
+Max displacement: 5.51 um (Instance: FE_ECOC18_n_43) (11.89, 11.31) -> (11.6, 16.53)
+	Length: 6 sites, height: 1 rows, site name: gsclib090site, cell type: BUFX2
+Total net bbox length = 2.029e+03 (1.059e+03 9.695e+02) (ext = 1.977e+02)
+Runtime: CPU: 0:00:00.0 REAL: 0:00:00.0 MEM: 2049.0MB
+*** Finished refinePlace (0:00:32.3 mem=2049.0M) ***
+<CMD> ecoAddRepeater -cell BUFX2 -net n_43 -name FE_ECOC19_n_43
+   _____________________________________________________________
+  /  Design State
+ +--------------------------------------------------------------
+ | signal nets: 
+ |    routed nets:       19 (9.8% routed)
+ |     total nets:      193
+ | clock nets: 
+ |    routed nets:        0 (0.0% routed)
+ |     total nets:        1
+ +--------------------------------------------------------------
+**INFO: Design is not detail routed
+**WARN: (IMPOPT-3706):	RC data of net 'n_43' has been disabled because it could not be updated as part of this buffer insertion. Timing results for this net may be inaccurate and may require re-extraction.
+Add inst FE_ECOC19_n_43 (BUFX2) to drive load FE_ECOC18_n_43/A 
+*** Starting refinePlace (0:00:32.4 mem=2050.2M) ***
+Total net bbox length = 2.028e+03 (1.059e+03 9.698e+02) (ext = 1.977e+02)
+Move report: Detail placement moves 19 insts, mean move: 1.01 um, max move: 3.48 um 
+	Max move on inst (FE_ECOC19_n_43): (13.34, 13.92) --> (12.47, 16.53)
+	Runtime: CPU: 0:00:00.0 REAL: 0:00:00.0 MEM: 2050.2MB
+Summary Report:
+Instances move: 19 (out of 183 movable)
+Instances flipped: 0
+Mean displacement: 1.01 um
+Max displacement: 3.48 um (Instance: FE_ECOC19_n_43) (13.34, 13.92) -> (12.47, 16.53)
+	Length: 6 sites, height: 1 rows, site name: gsclib090site, cell type: BUFX2
+Total net bbox length = 2.040e+03 (1.070e+03 9.698e+02) (ext = 1.977e+02)
+Runtime: CPU: 0:00:00.0 REAL: 0:00:00.0 MEM: 2050.2MB
+*** Finished refinePlace (0:00:32.4 mem=2050.2M) ***
+<CMD> ecoAddRepeater -cell BUFX2 -net n_34 -name FE_ECOC20_n_34
+   _____________________________________________________________
+  /  Design State
+ +--------------------------------------------------------------
+ | signal nets: 
+ |    routed nets:       19 (9.8% routed)
+ |     total nets:      194
+ | clock nets: 
+ |    routed nets:        0 (0.0% routed)
+ |     total nets:        1
+ +--------------------------------------------------------------
+**INFO: Design is not detail routed
+**WARN: (IMPOPT-3706):	RC data of net 'n_34' has been disabled because it could not be updated as part of this buffer insertion. Timing results for this net may be inaccurate and may require re-extraction.
+Add inst FE_ECOC20_n_34 (BUFX2) to drive load M_temp_reg[1]/D 
+*** Starting refinePlace (0:00:32.4 mem=2050.4M) ***
+Total net bbox length = 2.043e+03 (1.071e+03 9.721e+02) (ext = 1.977e+02)
+**ERROR: (IMPSP-2002):	Density too high (99.3%), stopping detail placement.
+Type 'man IMPSP-2002' for more detail.
+Total net bbox length = 2.043e+03 (1.071e+03 9.721e+02) (ext = 1.977e+02)
+Runtime: CPU: 0:00:00.0 REAL: 0:00:00.0 MEM: 2050.4MB
+*** Finished refinePlace (0:00:32.4 mem=2050.4M) ***
+<CMD> ecoAddRepeater -cell BUFX2 -net n_34 -name FE_ECOC21_n_34
+   _____________________________________________________________
+  /  Design State
+ +--------------------------------------------------------------
+ | signal nets: 
+ |    routed nets:       19 (9.7% routed)
+ |     total nets:      195
+ | clock nets: 
+ |    routed nets:        0 (0.0% routed)
+ |     total nets:        1
+ +--------------------------------------------------------------
+**INFO: Design is not detail routed
+**WARN: (IMPOPT-3706):	RC data of net 'n_34' has been disabled because it could not be updated as part of this buffer insertion. Timing results for this net may be inaccurate and may require re-extraction.
+Add inst FE_ECOC21_n_34 (BUFX2) to drive load FE_ECOC20_n_34/A 
+*** Starting refinePlace (0:00:32.4 mem=1994.7M) ***
+Total net bbox length = 2.044e+03 (1.071e+03 9.724e+02) (ext = 1.977e+02)
+**ERROR: (IMPSP-2002):	Density too high (99.7%), stopping detail placement.
+Type 'man IMPSP-2002' for more detail.
+Total net bbox length = 2.044e+03 (1.071e+03 9.724e+02) (ext = 1.977e+02)
+Runtime: CPU: 0:00:00.0 REAL: 0:00:00.0 MEM: 1994.7MB
+*** Finished refinePlace (0:00:32.4 mem=1994.7M) ***
+<CMD> ecoAddRepeater -cell BUFX2 -net FE_ECON20_n_34 -name FE_ECOC22_n_34
+   _____________________________________________________________
+  /  Design State
+ +--------------------------------------------------------------
+ | signal nets: 
+ |    routed nets:       19 (9.7% routed)
+ |     total nets:      196
+ | clock nets: 
+ |    routed nets:        0 (0.0% routed)
+ |     total nets:        1
+ +--------------------------------------------------------------
+**INFO: Design is not detail routed
+**WARN: (IMPOPT-3706):	RC data of net 'FE_ECON20_n_34' has been disabled because it could not be updated as part of this buffer insertion. Timing results for this net may be inaccurate and may require re-extraction.
+Add inst FE_ECOC22_n_34 (BUFX2) to drive load M_temp_reg[1]/D 
+*** Starting refinePlace (0:00:32.5 mem=2052.9M) ***
+Total net bbox length = 2.045e+03 (1.072e+03 9.727e+02) (ext = 1.977e+02)
+**ERROR: (IMPSP-2002):	Density too high (100.1%), stopping detail placement.
+Type 'man IMPSP-2002' for more detail.
+Total net bbox length = 2.045e+03 (1.072e+03 9.727e+02) (ext = 1.977e+02)
+Runtime: CPU: 0:00:00.0 REAL: 0:00:00.0 MEM: 2052.9MB
+*** Finished refinePlace (0:00:32.5 mem=2052.9M) ***
+<CMD> ecoAddRepeater -cell BUFX2 -net n_76 -name FE_ECOC23_n_76
+   _____________________________________________________________
+  /  Design State
+ +--------------------------------------------------------------
+ | signal nets: 
+ |    routed nets:       19 (9.6% routed)
+ |     total nets:      197
+ | clock nets: 
+ |    routed nets:        0 (0.0% routed)
+ |     total nets:        1
+ +--------------------------------------------------------------
+**INFO: Design is not detail routed
+**WARN: (IMPOPT-3706):	RC data of net 'n_76' has been disabled because it could not be updated as part of this buffer insertion. Timing results for this net may be inaccurate and may require re-extraction.
+Add inst FE_ECOC23_n_76 (BUFX2) to drive load P_reg[0]/D 
+*** Starting refinePlace (0:00:32.5 mem=2054.1M) ***
+Total net bbox length = 2.045e+03 (1.072e+03 9.727e+02) (ext = 1.977e+02)
+**ERROR: (IMPSP-2002):	Density too high (100.5%), stopping detail placement.
+Type 'man IMPSP-2002' for more detail.
+Total net bbox length = 2.045e+03 (1.072e+03 9.727e+02) (ext = 1.977e+02)
+Runtime: CPU: 0:00:00.0 REAL: 0:00:00.0 MEM: 2054.1MB
+*** Finished refinePlace (0:00:32.5 mem=2054.1M) ***
+<CMD> ecoAddRepeater -cell BUFX2 -net n_76 -name FE_ECOC24_n_76
+   _____________________________________________________________
+  /  Design State
+ +--------------------------------------------------------------
+ | signal nets: 
+ |    routed nets:       19 (9.6% routed)
+ |     total nets:      198
+ | clock nets: 
+ |    routed nets:        0 (0.0% routed)
+ |     total nets:        1
+ +--------------------------------------------------------------
+**INFO: Design is not detail routed
+**WARN: (IMPOPT-3706):	RC data of net 'n_76' has been disabled because it could not be updated as part of this buffer insertion. Timing results for this net may be inaccurate and may require re-extraction.
+Add inst FE_ECOC24_n_76 (BUFX2) to drive load FE_ECOC23_n_76/A 
+*** Starting refinePlace (0:00:32.6 mem=2054.4M) ***
+Total net bbox length = 2.048e+03 (1.073e+03 9.747e+02) (ext = 1.977e+02)
+**ERROR: (IMPSP-2002):	Density too high (100.9%), stopping detail placement.
+Type 'man IMPSP-2002' for more detail.
+Total net bbox length = 2.048e+03 (1.073e+03 9.747e+02) (ext = 1.977e+02)
+Runtime: CPU: 0:00:00.0 REAL: 0:00:00.0 MEM: 2054.4MB
+*** Finished refinePlace (0:00:32.6 mem=2054.4M) ***
+<CMD> ecoAddRepeater -cell BUFX2 -net n_76 -name FE_ECOC25_n_76
+   _____________________________________________________________
+  /  Design State
+ +--------------------------------------------------------------
+ | signal nets: 
+ |    routed nets:       19 (9.5% routed)
+ |     total nets:      199
+ | clock nets: 
+ |    routed nets:        0 (0.0% routed)
+ |     total nets:        1
+ +--------------------------------------------------------------
+**INFO: Design is not detail routed
+**WARN: (IMPOPT-3706):	RC data of net 'n_76' has been disabled because it could not be updated as part of this buffer insertion. Timing results for this net may be inaccurate and may require re-extraction.
+Add inst FE_ECOC25_n_76 (BUFX2) to drive load FE_ECOC24_n_76/A 
+*** Starting refinePlace (0:00:32.6 mem=2055.6M) ***
+Total net bbox length = 2.049e+03 (1.074e+03 9.750e+02) (ext = 1.977e+02)
+**ERROR: (IMPSP-2002):	Density too high (101.3%), stopping detail placement.
+Type 'man IMPSP-2002' for more detail.
+Total net bbox length = 2.049e+03 (1.074e+03 9.750e+02) (ext = 1.977e+02)
+Runtime: CPU: 0:00:00.0 REAL: 0:00:00.0 MEM: 2055.6MB
+*** Finished refinePlace (0:00:32.6 mem=2055.6M) ***
+<CMD> ecoAddRepeater -cell BUFX2 -net n_33 -name FE_ECOC26_n_33
+   _____________________________________________________________
+  /  Design State
+ +--------------------------------------------------------------
+ | signal nets: 
+ |    routed nets:       19 (9.5% routed)
+ |     total nets:      200
+ | clock nets: 
+ |    routed nets:        0 (0.0% routed)
+ |     total nets:        1
+ +--------------------------------------------------------------
+**INFO: Design is not detail routed
+**WARN: (IMPOPT-3706):	RC data of net 'n_33' has been disabled because it could not be updated as part of this buffer insertion. Timing results for this net may be inaccurate and may require re-extraction.
+Add inst FE_ECOC26_n_33 (BUFX2) to drive load M_temp_reg[0]/D 
+*** Starting refinePlace (0:00:32.6 mem=2056.8M) ***
+Total net bbox length = 2.049e+03 (1.073e+03 9.764e+02) (ext = 1.977e+02)
+**ERROR: (IMPSP-2002):	Density too high (101.7%), stopping detail placement.
+Type 'man IMPSP-2002' for more detail.
+Total net bbox length = 2.049e+03 (1.073e+03 9.764e+02) (ext = 1.977e+02)
+Runtime: CPU: 0:00:00.0 REAL: 0:00:00.0 MEM: 2056.8MB
+*** Finished refinePlace (0:00:32.6 mem=2056.8M) ***
+<CMD> ecoAddRepeater -cell BUFX2 -net n_33 -name FE_ECOC27_n_33
+   _____________________________________________________________
+  /  Design State
+ +--------------------------------------------------------------
+ | signal nets: 
+ |    routed nets:       19 (9.5% routed)
+ |     total nets:      201
+ | clock nets: 
+ |    routed nets:        0 (0.0% routed)
+ |     total nets:        1
+ +--------------------------------------------------------------
+**INFO: Design is not detail routed
+**WARN: (IMPOPT-3706):	RC data of net 'n_33' has been disabled because it could not be updated as part of this buffer insertion. Timing results for this net may be inaccurate and may require re-extraction.
+Add inst FE_ECOC27_n_33 (BUFX2) to drive load FE_ECOC26_n_33/A 
+*** Starting refinePlace (0:00:32.7 mem=2058.1M) ***
+Total net bbox length = 2.051e+03 (1.074e+03 9.770e+02) (ext = 1.977e+02)
+**ERROR: (IMPSP-2002):	Density too high (102.1%), stopping detail placement.
+Type 'man IMPSP-2002' for more detail.
+Total net bbox length = 2.051e+03 (1.074e+03 9.770e+02) (ext = 1.977e+02)
+Runtime: CPU: 0:00:00.0 REAL: 0:00:00.0 MEM: 2058.1MB
+*** Finished refinePlace (0:00:32.7 mem=2058.1M) ***
+<CMD> ecoAddRepeater -cell BUFX2 -net FE_ECON26_n_33 -name FE_ECOC28_n_33
+   _____________________________________________________________
+  /  Design State
+ +--------------------------------------------------------------
+ | signal nets: 
+ |    routed nets:       19 (9.4% routed)
+ |     total nets:      202
+ | clock nets: 
+ |    routed nets:        0 (0.0% routed)
+ |     total nets:        1
+ +--------------------------------------------------------------
+**INFO: Design is not detail routed
+**WARN: (IMPOPT-3706):	RC data of net 'FE_ECON26_n_33' has been disabled because it could not be updated as part of this buffer insertion. Timing results for this net may be inaccurate and may require re-extraction.
+Add inst FE_ECOC28_n_33 (BUFX2) to drive load M_temp_reg[0]/D 
+*** Starting refinePlace (0:00:32.7 mem=2058.3M) ***
+Total net bbox length = 2.051e+03 (1.074e+03 9.770e+02) (ext = 1.977e+02)
+**ERROR: (IMPSP-2002):	Density too high (102.5%), stopping detail placement.
+Type 'man IMPSP-2002' for more detail.
+Total net bbox length = 2.051e+03 (1.074e+03 9.770e+02) (ext = 1.977e+02)
+Runtime: CPU: 0:00:00.0 REAL: 0:00:00.0 MEM: 2058.3MB
+*** Finished refinePlace (0:00:32.7 mem=2058.3M) ***
+<CMD> ecoAddRepeater -cell BUFX2 -net n_30 -name FE_ECOC29_n_30
+   _____________________________________________________________
+  /  Design State
+ +--------------------------------------------------------------
+ | signal nets: 
+ |    routed nets:       19 (9.4% routed)
+ |     total nets:      203
+ | clock nets: 
+ |    routed nets:        0 (0.0% routed)
+ |     total nets:        1
+ +--------------------------------------------------------------
+**INFO: Design is not detail routed
+**WARN: (IMPOPT-3706):	RC data of net 'n_30' has been disabled because it could not be updated as part of this buffer insertion. Timing results for this net may be inaccurate and may require re-extraction.
+Add inst FE_ECOC29_n_30 (BUFX2) to drive load M_temp_reg[3]/D 
+*** Starting refinePlace (0:00:32.7 mem=2059.5M) ***
+Total net bbox length = 2.054e+03 (1.075e+03 9.793e+02) (ext = 1.977e+02)
+**ERROR: (IMPSP-2002):	Density too high (102.9%), stopping detail placement.
+Type 'man IMPSP-2002' for more detail.
+Total net bbox length = 2.054e+03 (1.075e+03 9.793e+02) (ext = 1.977e+02)
+Runtime: CPU: 0:00:00.0 REAL: 0:00:00.0 MEM: 2059.5MB
+*** Finished refinePlace (0:00:32.7 mem=2059.5M) ***
+<CMD> ecoAddRepeater -cell BUFX2 -net n_30 -name FE_ECOC30_n_30
+   _____________________________________________________________
+  /  Design State
+ +--------------------------------------------------------------
+ | signal nets: 
+ |    routed nets:       19 (9.3% routed)
+ |     total nets:      204
+ | clock nets: 
+ |    routed nets:        0 (0.0% routed)
+ |     total nets:        1
+ +--------------------------------------------------------------
+**INFO: Design is not detail routed
+**WARN: (IMPOPT-3706):	RC data of net 'n_30' has been disabled because it could not be updated as part of this buffer insertion. Timing results for this net may be inaccurate and may require re-extraction.
+Add inst FE_ECOC30_n_30 (BUFX2) to drive load FE_ECOC29_n_30/A 
+*** Starting refinePlace (0:00:32.8 mem=2060.8M) ***
+Total net bbox length = 2.055e+03 (1.075e+03 9.796e+02) (ext = 1.977e+02)
+**ERROR: (IMPSP-2002):	Density too high (103.3%), stopping detail placement.
+Type 'man IMPSP-2002' for more detail.
+Total net bbox length = 2.055e+03 (1.075e+03 9.796e+02) (ext = 1.977e+02)
+Runtime: CPU: 0:00:00.0 REAL: 0:00:00.0 MEM: 2060.8MB
+*** Finished refinePlace (0:00:32.8 mem=2060.8M) ***
+<CMD> ecoAddRepeater -cell BUFX2 -net n_30 -name FE_ECOC31_n_30
+   _____________________________________________________________
+  /  Design State
+ +--------------------------------------------------------------
+ | signal nets: 
+ |    routed nets:       19 (9.3% routed)
+ |     total nets:      205
+ | clock nets: 
+ |    routed nets:        0 (0.0% routed)
+ |     total nets:        1
+ +--------------------------------------------------------------
+**INFO: Design is not detail routed
+**WARN: (IMPOPT-3706):	RC data of net 'n_30' has been disabled because it could not be updated as part of this buffer insertion. Timing results for this net may be inaccurate and may require re-extraction.
+Add inst FE_ECOC31_n_30 (BUFX2) to drive load FE_ECOC30_n_30/A 
+*** Starting refinePlace (0:00:32.8 mem=2062.0M) ***
+Total net bbox length = 2.056e+03 (1.076e+03 9.799e+02) (ext = 1.977e+02)
+**ERROR: (IMPSP-2002):	Density too high (103.7%), stopping detail placement.
+Type 'man IMPSP-2002' for more detail.
+Total net bbox length = 2.056e+03 (1.076e+03 9.799e+02) (ext = 1.977e+02)
+Runtime: CPU: 0:00:00.0 REAL: 0:00:00.0 MEM: 2062.0MB
+*** Finished refinePlace (0:00:32.8 mem=2062.0M) ***
+<CMD> ecoAddRepeater -cell BUFX2 -net n_31 -name FE_ECOC32_n_31
+   _____________________________________________________________
+  /  Design State
+ +--------------------------------------------------------------
+ | signal nets: 
+ |    routed nets:       19 (9.2% routed)
+ |     total nets:      206
+ | clock nets: 
+ |    routed nets:        0 (0.0% routed)
+ |     total nets:        1
+ +--------------------------------------------------------------
+**INFO: Design is not detail routed
+**WARN: (IMPOPT-3706):	RC data of net 'n_31' has been disabled because it could not be updated as part of this buffer insertion. Timing results for this net may be inaccurate and may require re-extraction.
+Add inst FE_ECOC32_n_31 (BUFX2) to drive load M_temp_reg[2]/D 
+*** Starting refinePlace (0:00:32.8 mem=2063.2M) ***
+Total net bbox length = 2.056e+03 (1.077e+03 9.796e+02) (ext = 1.977e+02)
+**ERROR: (IMPSP-2002):	Density too high (104.1%), stopping detail placement.
+Type 'man IMPSP-2002' for more detail.
+Total net bbox length = 2.056e+03 (1.077e+03 9.796e+02) (ext = 1.977e+02)
+Runtime: CPU: 0:00:00.0 REAL: 0:00:00.0 MEM: 2063.2MB
+*** Finished refinePlace (0:00:32.8 mem=2063.2M) ***
+<CMD> ecoAddRepeater -cell BUFX2 -net n_31 -name FE_ECOC33_n_31
+   _____________________________________________________________
+  /  Design State
+ +--------------------------------------------------------------
+ | signal nets: 
+ |    routed nets:       19 (9.2% routed)
+ |     total nets:      207
+ | clock nets: 
+ |    routed nets:        0 (0.0% routed)
+ |     total nets:        1
+ +--------------------------------------------------------------
+**INFO: Design is not detail routed
+**WARN: (IMPOPT-3706):	RC data of net 'n_31' has been disabled because it could not be updated as part of this buffer insertion. Timing results for this net may be inaccurate and may require re-extraction.
+Add inst FE_ECOC33_n_31 (BUFX2) to drive load FE_ECOC32_n_31/A 
+*** Starting refinePlace (0:00:32.9 mem=2063.5M) ***
+Total net bbox length = 2.057e+03 (1.077e+03 9.799e+02) (ext = 1.977e+02)
+**ERROR: (IMPSP-2002):	Density too high (104.5%), stopping detail placement.
+Type 'man IMPSP-2002' for more detail.
+Total net bbox length = 2.057e+03 (1.077e+03 9.799e+02) (ext = 1.977e+02)
+Runtime: CPU: 0:00:00.0 REAL: 0:00:00.0 MEM: 2063.5MB
+*** Finished refinePlace (0:00:32.9 mem=2063.5M) ***
+<CMD> ecoAddRepeater -cell BUFX2 -net n_31 -name FE_ECOC34_n_31
+   _____________________________________________________________
+  /  Design State
+ +--------------------------------------------------------------
+ | signal nets: 
+ |    routed nets:       19 (9.1% routed)
+ |     total nets:      208
+ | clock nets: 
+ |    routed nets:        0 (0.0% routed)
+ |     total nets:        1
+ +--------------------------------------------------------------
+**INFO: Design is not detail routed
+**WARN: (IMPOPT-3706):	RC data of net 'n_31' has been disabled because it could not be updated as part of this buffer insertion. Timing results for this net may be inaccurate and may require re-extraction.
+Add inst FE_ECOC34_n_31 (BUFX2) to drive load FE_ECOC33_n_31/A 
+*** Starting refinePlace (0:00:32.9 mem=2064.7M) ***
+Total net bbox length = 2.058e+03 (1.078e+03 9.802e+02) (ext = 1.977e+02)
+**ERROR: (IMPSP-2002):	Density too high (104.9%), stopping detail placement.
+Type 'man IMPSP-2002' for more detail.
+Total net bbox length = 2.058e+03 (1.078e+03 9.802e+02) (ext = 1.977e+02)
+Runtime: CPU: 0:00:00.0 REAL: 0:00:00.0 MEM: 2064.7MB
+*** Finished refinePlace (0:00:32.9 mem=2064.7M) ***
+<CMD> ecoAddRepeater -cell BUFX2 -net n_31 -name FE_ECOC35_n_31
+   _____________________________________________________________
+  /  Design State
+ +--------------------------------------------------------------
+ | signal nets: 
+ |    routed nets:       19 (9.1% routed)
+ |     total nets:      209
+ | clock nets: 
+ |    routed nets:        0 (0.0% routed)
+ |     total nets:        1
+ +--------------------------------------------------------------
+**INFO: Design is not detail routed
+**WARN: (IMPOPT-3706):	RC data of net 'n_31' has been disabled because it could not be updated as part of this buffer insertion. Timing results for this net may be inaccurate and may require re-extraction.
+Add inst FE_ECOC35_n_31 (BUFX2) to drive load FE_ECOC34_n_31/A 
+*** Starting refinePlace (0:00:33.0 mem=2065.9M) ***
+Total net bbox length = 2.059e+03 (1.079e+03 9.805e+02) (ext = 1.977e+02)
+**ERROR: (IMPSP-2002):	Density too high (105.3%), stopping detail placement.
+Type 'man IMPSP-2002' for more detail.
+Total net bbox length = 2.059e+03 (1.079e+03 9.805e+02) (ext = 1.977e+02)
+Runtime: CPU: 0:00:00.0 REAL: 0:00:00.0 MEM: 2065.9MB
+*** Finished refinePlace (0:00:33.0 mem=2065.9M) ***
+<CMD> ecoAddRepeater -cell BUFX2 -net n_82 -name FE_ECOC36_n_82
+   _____________________________________________________________
+  /  Design State
+ +--------------------------------------------------------------
+ | signal nets: 
+ |    routed nets:       19 (9.0% routed)
+ |     total nets:      210
+ | clock nets: 
+ |    routed nets:        0 (0.0% routed)
+ |     total nets:        1
+ +--------------------------------------------------------------
+**INFO: Design is not detail routed
+**WARN: (IMPOPT-3706):	RC data of net 'n_82' has been disabled because it could not be updated as part of this buffer insertion. Timing results for this net may be inaccurate and may require re-extraction.
+Add inst FE_ECOC36_n_82 (BUFX2) to drive load Q_minus_one_reg/D 
+*** Starting refinePlace (0:00:33.0 mem=2067.2M) ***
+Total net bbox length = 2.059e+03 (1.078e+03 9.808e+02) (ext = 1.977e+02)
+**ERROR: (IMPSP-2002):	Density too high (105.7%), stopping detail placement.
+Type 'man IMPSP-2002' for more detail.
+Total net bbox length = 2.059e+03 (1.078e+03 9.808e+02) (ext = 1.977e+02)
+Runtime: CPU: 0:00:00.0 REAL: 0:00:00.0 MEM: 2067.2MB
+*** Finished refinePlace (0:00:33.0 mem=2067.2M) ***
+<CMD> ecoAddRepeater -cell BUFX2 -net n_82 -name FE_ECOC37_n_82
+   _____________________________________________________________
+  /  Design State
+ +--------------------------------------------------------------
+ | signal nets: 
+ |    routed nets:       19 (9.0% routed)
+ |     total nets:      211
+ | clock nets: 
+ |    routed nets:        0 (0.0% routed)
+ |     total nets:        1
+ +--------------------------------------------------------------
+**INFO: Design is not detail routed
+**WARN: (IMPOPT-3706):	RC data of net 'n_82' has been disabled because it could not be updated as part of this buffer insertion. Timing results for this net may be inaccurate and may require re-extraction.
+Add inst FE_ECOC37_n_82 (BUFX2) to drive load FE_ECOC36_n_82/A 
+*** Starting refinePlace (0:00:33.0 mem=2068.4M) ***
+Total net bbox length = 2.059e+03 (1.078e+03 9.811e+02) (ext = 1.977e+02)
+**ERROR: (IMPSP-2002):	Density too high (106.1%), stopping detail placement.
+Type 'man IMPSP-2002' for more detail.
+Total net bbox length = 2.059e+03 (1.078e+03 9.811e+02) (ext = 1.977e+02)
+Runtime: CPU: 0:00:00.0 REAL: 0:00:00.0 MEM: 2068.4MB
+*** Finished refinePlace (0:00:33.0 mem=2068.4M) ***
+<CMD> ecoAddRepeater -cell BUFX2 -net n_82 -name FE_ECOC38_n_82
+   _____________________________________________________________
+  /  Design State
+ +--------------------------------------------------------------
+ | signal nets: 
+ |    routed nets:       19 (9.0% routed)
+ |     total nets:      212
+ | clock nets: 
+ |    routed nets:        0 (0.0% routed)
+ |     total nets:        1
+ +--------------------------------------------------------------
+**INFO: Design is not detail routed
+**WARN: (IMPOPT-3706):	RC data of net 'n_82' has been disabled because it could not be updated as part of this buffer insertion. Timing results for this net may be inaccurate and may require re-extraction.
+Add inst FE_ECOC38_n_82 (BUFX2) to drive load FE_ECOC37_n_82/A 
+*** Starting refinePlace (0:00:33.1 mem=2069.6M) ***
+Total net bbox length = 2.060e+03 (1.079e+03 9.814e+02) (ext = 1.977e+02)
+**ERROR: (IMPSP-2002):	Density too high (106.6%), stopping detail placement.
+Type 'man IMPSP-2002' for more detail.
+Total net bbox length = 2.060e+03 (1.079e+03 9.814e+02) (ext = 1.977e+02)
+Runtime: CPU: 0:00:00.0 REAL: 0:00:00.0 MEM: 2069.6MB
+*** Finished refinePlace (0:00:33.1 mem=2069.6M) ***
+<CMD> ecoAddRepeater -cell BUFX2 -net n_82 -name FE_ECOC39_n_82
+   _____________________________________________________________
+  /  Design State
+ +--------------------------------------------------------------
+ | signal nets: 
+ |    routed nets:       19 (8.9% routed)
+ |     total nets:      213
+ | clock nets: 
+ |    routed nets:        0 (0.0% routed)
+ |     total nets:        1
+ +--------------------------------------------------------------
+**INFO: Design is not detail routed
+**WARN: (IMPOPT-3706):	RC data of net 'n_82' has been disabled because it could not be updated as part of this buffer insertion. Timing results for this net may be inaccurate and may require re-extraction.
+Add inst FE_ECOC39_n_82 (BUFX2) to drive load FE_ECOC38_n_82/A 
+*** Starting refinePlace (0:00:33.1 mem=2070.9M) ***
+Total net bbox length = 2.061e+03 (1.079e+03 9.816e+02) (ext = 1.977e+02)
+**ERROR: (IMPSP-2002):	Density too high (107.0%), stopping detail placement.
+Type 'man IMPSP-2002' for more detail.
+Total net bbox length = 2.061e+03 (1.079e+03 9.816e+02) (ext = 1.977e+02)
+Runtime: CPU: 0:00:00.0 REAL: 0:00:00.0 MEM: 2070.9MB
+*** Finished refinePlace (0:00:33.1 mem=2070.9M) ***
+<CMD> saveDesign hold_optimize.enc
+#% Begin save design ... (date=06/23 11:06:49, mem=1736.7M)
+% Begin Save ccopt configuration ... (date=06/23 11:06:49, mem=1736.7M)
+% End Save ccopt configuration ... (date=06/23 11:06:49, total cpu=0:00:00.0, real=0:00:00.0, peak res=1737.7M, current mem=1737.7M)
+% Begin Save netlist data ... (date=06/23 11:06:49, mem=1758.4M)
+Writing Binary DB to hold_optimize.enc.dat/booth_multiplier.v.bin in single-threaded mode...
+% End Save netlist data ... (date=06/23 11:06:49, total cpu=0:00:00.0, real=0:00:00.0, peak res=1760.4M, current mem=1758.5M)
+Saving symbol-table file ...
+Saving congestion map file hold_optimize.enc.dat/booth_multiplier.route.congmap.gz ...
+% Begin Save AAE data ... (date=06/23 11:06:49, mem=1759.0M)
+Saving AAE Data ...
+% End Save AAE data ... (date=06/23 11:06:49, total cpu=0:00:00.0, real=0:00:00.0, peak res=1759.0M, current mem=1759.0M)
+Saving preference file hold_optimize.enc.dat/gui.pref.tcl ...
+Saving mode setting ...
+Saving global file ...
+% Begin Save floorplan data ... (date=06/23 11:06:49, mem=1759.9M)
+Saving floorplan file ...
+Convert 0 swires and 0 svias from compressed groups
+% End Save floorplan data ... (date=06/23 11:06:49, total cpu=0:00:00.0, real=0:00:00.0, peak res=1760.8M, current mem=1760.8M)
+Saving PG file hold_optimize.enc.dat/booth_multiplier.pg.gz, version#2, (Created by Innovus v21.15-s110_1 on Tue Jun 23 11:06:49 2026)
+*** Completed savePGFile (cpu=0:00:00.0 real=0:00:01.0 mem=2043.2M) ***
+Saving Drc markers ...
+... No Drc file written since there is no markers found.
+% Begin Save placement data ... (date=06/23 11:06:50, mem=1760.8M)
+** Saving stdCellPlacement_binary (version# 2) ...
+Save Adaptive View Pruning View Names to Binary file
+% End Save placement data ... (date=06/23 11:06:50, total cpu=0:00:00.0, real=0:00:00.0, peak res=1761.1M, current mem=1761.1M)
+% Begin Save routing data ... (date=06/23 11:06:50, mem=1761.1M)
+Saving route file ...
+*** Completed saveRoute (cpu=0:00:00.0 real=0:00:00.0 mem=2043.2M) ***
+% End Save routing data ... (date=06/23 11:06:50, total cpu=0:00:00.0, real=0:00:00.0, peak res=1761.3M, current mem=1761.3M)
+Saving property file hold_optimize.enc.dat/booth_multiplier.prop
+*** Completed saveProperty (cpu=0:00:00.0 real=0:00:00.0 mem=2046.2M) ***
+#Saving pin access data to file hold_optimize.enc.dat/booth_multiplier.apa ...
+Saving rc congestion map hold_optimize.enc.dat/booth_multiplier.congmap.gz ...
+% Begin Save power constraints data ... (date=06/23 11:06:50, mem=1762.1M)
+% End Save power constraints data ... (date=06/23 11:06:50, total cpu=0:00:00.0, real=0:00:00.0, peak res=1762.1M, current mem=1762.1M)
+rc_corner
+rc_corner
+rc_corner
+Generated self-contained design hold_optimize.enc.dat
+#% End save design ... (date=06/23 11:06:50, total cpu=0:00:00.5, real=0:00:01.0, peak res=1790.5M, current mem=1765.4M)
+*** Message Summary: 0 warning(s), 0 error(s)
+
+<CMD> saveDesign hold_optimize.enc
+#% Begin save design ... (date=06/23 11:06:50, mem=1765.4M)
+% Begin Save ccopt configuration ... (date=06/23 11:06:50, mem=1765.4M)
+% End Save ccopt configuration ... (date=06/23 11:06:50, total cpu=0:00:00.0, real=0:00:00.0, peak res=1765.6M, current mem=1765.6M)
+% Begin Save netlist data ... (date=06/23 11:06:50, mem=1765.6M)
+Writing Binary DB to hold_optimize.enc.dat.tmp/booth_multiplier.v.bin in single-threaded mode...
+% End Save netlist data ... (date=06/23 11:06:50, total cpu=0:00:00.0, real=0:00:00.0, peak res=1765.7M, current mem=1765.7M)
+Saving symbol-table file ...
+Saving congestion map file hold_optimize.enc.dat.tmp/booth_multiplier.route.congmap.gz ...
+% Begin Save AAE data ... (date=06/23 11:06:51, mem=1765.7M)
+Saving AAE Data ...
+% End Save AAE data ... (date=06/23 11:06:51, total cpu=0:00:00.0, real=0:00:00.0, peak res=1765.7M, current mem=1765.7M)
+Saving preference file hold_optimize.enc.dat.tmp/gui.pref.tcl ...
+Saving mode setting ...
+Saving global file ...
+% Begin Save floorplan data ... (date=06/23 11:06:51, mem=1765.7M)
+Saving floorplan file ...
+Convert 0 swires and 0 svias from compressed groups
+% End Save floorplan data ... (date=06/23 11:06:51, total cpu=0:00:00.0, real=0:00:00.0, peak res=1765.7M, current mem=1765.7M)
+Saving PG file hold_optimize.enc.dat.tmp/booth_multiplier.pg.gz, version#2, (Created by Innovus v21.15-s110_1 on Tue Jun 23 11:06:51 2026)
+*** Completed savePGFile (cpu=0:00:00.0 real=0:00:00.0 mem=2088.1M) ***
+Saving Drc markers ...
+... No Drc file written since there is no markers found.
+% Begin Save placement data ... (date=06/23 11:06:51, mem=1765.7M)
+** Saving stdCellPlacement_binary (version# 2) ...
+Save Adaptive View Pruning View Names to Binary file
+% End Save placement data ... (date=06/23 11:06:51, total cpu=0:00:00.0, real=0:00:00.0, peak res=1765.7M, current mem=1765.7M)
+% Begin Save routing data ... (date=06/23 11:06:51, mem=1765.7M)
+Saving route file ...
+*** Completed saveRoute (cpu=0:00:00.0 real=0:00:00.0 mem=2088.1M) ***
+% End Save routing data ... (date=06/23 11:06:51, total cpu=0:00:00.0, real=0:00:00.0, peak res=1765.7M, current mem=1765.7M)
+Saving property file hold_optimize.enc.dat.tmp/booth_multiplier.prop
+*** Completed saveProperty (cpu=0:00:00.0 real=0:00:00.0 mem=2091.1M) ***
+#Saving pin access data to file hold_optimize.enc.dat.tmp/booth_multiplier.apa ...
+Saving rc congestion map hold_optimize.enc.dat.tmp/booth_multiplier.congmap.gz ...
+% Begin Save power constraints data ... (date=06/23 11:06:52, mem=1765.7M)
+% End Save power constraints data ... (date=06/23 11:06:52, total cpu=0:00:00.0, real=0:00:00.0, peak res=1765.7M, current mem=1765.7M)
+rc_corner
+rc_corner
+rc_corner
+Generated self-contained design hold_optimize.enc.dat.tmp
+#% End save design ... (date=06/23 11:06:52, total cpu=0:00:00.4, real=0:00:02.0, peak res=1796.3M, current mem=1766.1M)
+*** Message Summary: 0 warning(s), 0 error(s)
+
+<CMD> saveDesign hold_optimize.enc
+#% Begin save design ... (date=06/23 11:06:52, mem=1766.1M)
+% Begin Save ccopt configuration ... (date=06/23 11:06:52, mem=1766.1M)
+% End Save ccopt configuration ... (date=06/23 11:06:52, total cpu=0:00:00.0, real=0:00:00.0, peak res=1766.1M, current mem=1766.1M)
+% Begin Save netlist data ... (date=06/23 11:06:52, mem=1766.1M)
+Writing Binary DB to hold_optimize.enc.dat.tmp/booth_multiplier.v.bin in single-threaded mode...
+% End Save netlist data ... (date=06/23 11:06:52, total cpu=0:00:00.0, real=0:00:00.0, peak res=1766.1M, current mem=1766.1M)
+Saving symbol-table file ...
+Saving congestion map file hold_optimize.enc.dat.tmp/booth_multiplier.route.congmap.gz ...
+% Begin Save AAE data ... (date=06/23 11:06:52, mem=1766.1M)
+Saving AAE Data ...
+% End Save AAE data ... (date=06/23 11:06:52, total cpu=0:00:00.0, real=0:00:00.0, peak res=1766.1M, current mem=1766.1M)
+Saving preference file hold_optimize.enc.dat.tmp/gui.pref.tcl ...
+Saving mode setting ...
+Saving global file ...
+% Begin Save floorplan data ... (date=06/23 11:06:53, mem=1766.1M)
+Saving floorplan file ...
+Convert 0 swires and 0 svias from compressed groups
+% End Save floorplan data ... (date=06/23 11:06:53, total cpu=0:00:00.0, real=0:00:00.0, peak res=1766.1M, current mem=1766.1M)
+Saving PG file hold_optimize.enc.dat.tmp/booth_multiplier.pg.gz, version#2, (Created by Innovus v21.15-s110_1 on Tue Jun 23 11:06:53 2026)
+*** Completed savePGFile (cpu=0:00:00.0 real=0:00:00.0 mem=2102.7M) ***
+Saving Drc markers ...
+... No Drc file written since there is no markers found.
+% Begin Save placement data ... (date=06/23 11:06:53, mem=1766.1M)
+** Saving stdCellPlacement_binary (version# 2) ...
+Save Adaptive View Pruning View Names to Binary file
+% End Save placement data ... (date=06/23 11:06:53, total cpu=0:00:00.0, real=0:00:00.0, peak res=1766.1M, current mem=1766.1M)
+% Begin Save routing data ... (date=06/23 11:06:53, mem=1766.1M)
+Saving route file ...
+*** Completed saveRoute (cpu=0:00:00.0 real=0:00:00.0 mem=2102.7M) ***
+% End Save routing data ... (date=06/23 11:06:53, total cpu=0:00:00.0, real=0:00:00.0, peak res=1766.1M, current mem=1766.1M)
+Saving property file hold_optimize.enc.dat.tmp/booth_multiplier.prop
+*** Completed saveProperty (cpu=0:00:00.0 real=0:00:00.0 mem=2105.7M) ***
+#Saving pin access data to file hold_optimize.enc.dat.tmp/booth_multiplier.apa ...
+Saving rc congestion map hold_optimize.enc.dat.tmp/booth_multiplier.congmap.gz ...
+% Begin Save power constraints data ... (date=06/23 11:06:53, mem=1766.1M)
+% End Save power constraints data ... (date=06/23 11:06:53, total cpu=0:00:00.0, real=0:00:00.0, peak res=1766.1M, current mem=1766.1M)
+rc_corner
+rc_corner
+rc_corner
+Generated self-contained design hold_optimize.enc.dat.tmp
+#% End save design ... (date=06/23 11:06:54, total cpu=0:00:00.5, real=0:00:02.0, peak res=1796.7M, current mem=1766.1M)
+*** Message Summary: 0 warning(s), 0 error(s)
+
+<CMD> streamOut booth.gds -libName DesignLib -units 2000 -mode ALL
+Parse flat map file...
+Writing GDSII file ...
+	****** db unit per micron = 2000 ******
+	****** output gds2 file unit per micron = 2000 ******
+	****** unit scaling factor = 1 ******
+Output for instance
+Output for bump
+Output for physical terminals
+Output for logical terminals
+Output for regular nets
+Output for special nets and metal fills
+Output for via structure generation total number 15
+Statistics for GDS generated (version 3)
+----------------------------------------
+Stream Out Layer Mapping Information:
+GDS Layer Number          GDS Layer Name
+----------------------------------------
+    191                             COMP
+    192                          DIEAREA
+    181                           Metal9
+    179                           Metal9
+    178                           Metal9
+    177                           Metal9
+    176                           Metal9
+    175                             Via8
+    174                             Via8
+    170                             Via8
+    160                           Metal8
+    158                           Metal8
+    157                           Metal8
+    156                           Metal8
+    155                           Metal8
+    154                             Via7
+    153                             Via7
+    149                             Via7
+    139                           Metal7
+    137                           Metal7
+    136                           Metal7
+    135                           Metal7
+    134                           Metal7
+    133                             Via6
+    132                             Via6
+    131                             Via6
+    130                             Via6
+    129                             Via6
+    128                             Via6
+    127                             Via6
+    122                           Metal6
+    121                           Metal6
+    120                           Metal6
+    119                           Metal6
+    118                           Metal6
+    53                            Metal3
+    52                            Metal3
+    185                           Metal9
+    48                              Via2
+    29                            Metal2
+    180                           Metal9
+    47                              Via2
+    182                           Metal9
+    44                              Via2
+    43                              Via2
+    172                             Via8
+    38                            Metal2
+    95                            Metal5
+    36                            Metal2
+    93                            Metal5
+    112                             Via5
+    55                            Metal3
+    113                           Metal6
+    32                            Metal2
+    54                            Metal3
+    31                            Metal2
+    107                             Via5
+    30                            Metal2
+    49                              Via2
+    106                             Via5
+    33                            Metal2
+    109                             Via5
+    10                            Metal1
+    86                              Via4
+    50                            Metal3
+    69                              Via3
+    143                           Metal7
+    6                               Cont
+    169                             Via8
+    35                            Metal2
+    8                             Metal1
+    164                           Metal8
+    27                              Via1
+    141                           Metal7
+    3                               Cont
+    51                            Metal3
+    70                              Via3
+    7                               Cont
+    64                              Via3
+    173                             Via8
+    34                            Metal2
+    92                            Metal5
+    111                             Via5
+    11                            Metal1
+    142                           Metal7
+    4                               Cont
+    9                             Metal1
+    28                              Via1
+    85                              Via4
+    138                           Metal7
+    5                               Cont
+    12                            Metal1
+    88                              Via4
+    183                           Metal9
+    45                              Via2
+    22                              Via1
+    152                             Via7
+    13                            Metal1
+    71                            Metal4
+    90                              Via4
+    184                           Metal9
+    46                              Via2
+    161                           Metal8
+    23                              Via1
+    171                             Via8
+    37                            Metal2
+    94                            Metal5
+    148                             Via7
+    14                            Metal1
+    15                            Metal1
+    72                            Metal4
+    91                              Via4
+    150                             Via7
+    16                            Metal1
+    73                            Metal4
+    159                           Metal8
+    26                              Via1
+    151                             Via7
+    17                            Metal1
+    74                            Metal4
+    1                               Cont
+    162                           Metal8
+    24                              Via1
+    140                           Metal7
+    2                               Cont
+    163                           Metal8
+    25                              Via1
+    56                            Metal3
+    57                            Metal3
+    114                           Metal6
+    58                            Metal3
+    115                           Metal6
+    59                            Metal3
+    116                           Metal6
+    65                              Via3
+    66                              Via3
+    67                              Via3
+    68                              Via3
+    75                            Metal4
+    76                            Metal4
+    77                            Metal4
+    78                            Metal4
+    79                            Metal4
+    80                            Metal4
+    87                              Via4
+    89                              Via4
+    96                            Metal5
+    97                            Metal5
+    98                            Metal5
+    99                            Metal5
+    100                           Metal5
+    101                           Metal5
+    108                             Via5
+    110                             Via5
+    117                           Metal6
+    189                           Metal9
+    188                           Metal9
+    187                           Metal9
+    186                           Metal9
+    168                           Metal8
+    167                           Metal8
+    166                           Metal8
+    165                           Metal8
+    147                           Metal7
+    146                           Metal7
+    145                           Metal7
+    144                           Metal7
+    63                            Metal3
+    62                            Metal3
+    39                            Metal2
+    105                           Metal5
+    103                           Metal5
+    123                           Metal6
+    42                            Metal2
+    41                            Metal2
+    40                            Metal2
+    20                            Metal1
+    60                            Metal3
+    18                            Metal1
+    61                            Metal3
+    102                           Metal5
+    21                            Metal1
+    19                            Metal1
+    81                            Metal4
+    104                           Metal5
+    82                            Metal4
+    83                            Metal4
+    84                            Metal4
+    124                           Metal6
+    125                           Metal6
+    126                           Metal6
+
+
+Stream Out Information Processed for GDS version 3:
+Units: 2000 DBU
+
+Object                             Count
+----------------------------------------
+Instances                            225
+
+Ports/Pins                            19
+    metal layer Metal2                14
+    metal layer Metal3                 3
+    metal layer Metal4                 2
+
+Nets                                 825
+    metal layer Metal1               218
+    metal layer Metal2               391
+    metal layer Metal3               207
+    metal layer Metal4                 8
+    metal layer Metal5                 1
+
+    Via Instances                    862
+
+Special Nets                          60
+    metal layer Metal1                36
+    metal layer Metal8                12
+    metal layer Metal9                12
+
+    Via Instances                    240
+
+Metal Fills                            0
+
+    Via Instances                      0
+
+Metal FillOPCs                         0
+
+    Via Instances                      0
+
+Metal FillDRCs                         0
+
+    Via Instances                      0
+
+Text                                 227
+    metal layer Metal1                70
+    metal layer Metal2               122
+    metal layer Metal3                31
+    metal layer Metal4                 2
+    metal layer Metal9                 2
+
+
+Blockages                              0
+
+
+Custom Text                            0
+
+
+Custom Box                             0
+
+Trim Metal                             0
+
+######Streamout is finished!
+
+--------------------------------------------------------------------------------
+Exiting Innovus on Tue Jun 23 11:13:59 2026
+  Total CPU time:     0:01:05
+  Total real time:    0:09:34
+  Peak memory (main): 1754.91MB
+
+
+*** Memory Usage v#1 (Current mem = 2110.473M, initial mem = 483.863M) ***
+*** Message Summary: 1009 warning(s), 20 error(s)
+
+--- Ending "Innovus" (totcpu=0:00:59.3, real=0:09:32, mem=2110.5M) ---

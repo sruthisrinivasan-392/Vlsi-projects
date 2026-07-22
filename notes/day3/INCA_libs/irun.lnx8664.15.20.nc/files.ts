@@ -1,0 +1,8 @@
+1780481874 /home/vlsi30/day3/mult.v
+1780482534 /home/vlsi30/day3/mult_tb.v
+1780559483 /home/vlsi30/day3/jk.v
+1780558864 /home/vlsi30/day3/jk_tb.v
+1780569250 /home/vlsi30/day3/sr.v
+1780569400 /home/vlsi30/day3/sr_tb.v
+1780548889 /home/vlsi30/day3/alu.v
+1780549150 /home/vlsi30/day3/alu_tb.v

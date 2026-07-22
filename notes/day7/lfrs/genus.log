@@ -1,0 +1,53 @@
+Cadence Genus(TM) Synthesis Solution.
+Copyright 2024 Cadence Design Systems, Inc. All rights reserved worldwide.
+Cadence and the Cadence logo are registered trademarks and Genus is a trademark
+of Cadence Design Systems, Inc. in the United States and other countries.
+
+[13:10:46.043385] Configured Lic search path (23.02-s003): 5280@cadence
+
+Version: 23.11-s100_1, built Sun Apr 21 22:58:10 PDT 2024
+Options: 
+Date:    Mon Jun 08 13:10:46 2026
+Host:    cadence (x86_64 w/Linux 4.18.0-425.3.1.el8.x86_64) (8cores*16cpus*1physical cpu*Intel(R) Core(TM) i7-10875H CPU @ 2.30GHz 16384KB) (32312612KB)
+PID:     1902132
+OS:      Red Hat Enterprise Linux release 8.7 (Ootpa)
+
+Checking out license: Genus_Synthesis
+[13:10:46.296715] Periodic Lic check successful
+[13:10:46.296729] Feature usage summary:
+[13:10:46.296729] Genus_Synthesis
+
+
+
+***********************************************************************************************************
+***********************************************************************************************************
+
+
+
+Finished executable startup (1 second elapsed).
+
+Loading tool scripts...
+Finished loading tool scripts (13 seconds elapsed).
+
+WARNING: This version of the tool is 777 days old.
+@genus:root: 1> read _libs gedit /home/install/FOUNDRY/digital/90nm/dig/lib/slow.lib
+wrong # args: should be "read channelId ?numChars?" or "read ?-nonewline? channelId"
+@genus:root: 2> read_libs gedit /home/install/FOUNDRY/digital/90nm/dig/lib/slow.lib
+Error   : File error. [FILE-100] [::legacy::set_attribute]
+        : Cannot open file 'gedit'
+        : Make sure that the file is a readable regular file and has the specified name.
+Error   : A library file does not exist. [LBR-68] [::legacy::set_attribute]
+        : File 'gedit' could not be found. File '<none>' was the last file that was successfully read in.
+        : Make sure that the library file exists or check for a typo in the file name.
+Error   : The data value for this attribute is invalid. [TUI-24] [::legacy::set_attribute]
+        : The value '  { gedit }  { /home/install/FOUNDRY/digital/90nm/dig/lib/slow.lib } ' cannot be set for attribute 'library'.
+        : To see the usage/description for this attribute, type '::legacy::set_attribute -h <attr_name> *' (in legacy UI mode) or 'help * <attr_name> -detail' (in CUI mode).
+1
+@genus:root: 3> read_libs gedit /home/install/FOUNDRY/digital/90nm/dig/lib/slow.lib
+Error   : File error. [FILE-100] [::legacy::set_attribute]
+        : Cannot open file 'gedit'
+Error   : A library file does not exist. [LBR-68] [::legacy::set_attribute]
+        : File 'gedit' could not be found. File '<none>' was the last file that was successfully read in.
+Error   : The data value for this attribute is invalid. [TUI-24] [::legacy::set_attribute]
+        : The value '  { gedit }  { /home/install/FOUNDRY/digital/90nm/dig/lib/slow.lib } ' cannot be set for attribute 'library'.
+1

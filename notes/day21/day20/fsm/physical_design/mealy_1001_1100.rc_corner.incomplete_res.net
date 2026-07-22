@@ -1,0 +1,10 @@
+#    The following nets have got the unconnected resistances fixed
+rst
+din
+state[2]
+state[0]
+n_4
+n_6
+n_7
+n_11
+n_17

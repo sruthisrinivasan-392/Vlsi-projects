@@ -1,0 +1,181 @@
+#######################################################
+#                                                     
+#  Innovus Command Logging File                     
+#  Created on Tue Jun 23 09:54:41 2026                
+#                                                     
+#######################################################
+
+#@(#)CDS: Innovus v21.15-s110_1 (64bit) 09/23/2022 13:08 (Linux 3.10.0-693.el7.x86_64)
+#@(#)CDS: NanoRoute 21.15-s110_1 NR220912-2004/21_15-UB (database version 18.20.592) {superthreading v2.17}
+#@(#)CDS: AAE 21.15-s039 (64bit) 09/23/2022 (Linux 3.10.0-693.el7.x86_64)
+#@(#)CDS: CTE 21.15-s038_1 () Sep 20 2022 11:42:13 ( )
+#@(#)CDS: SYNTECH 21.15-s012_1 () Sep  5 2022 10:25:51 ( )
+#@(#)CDS: CPE v21.15-s076
+#@(#)CDS: IQuantus/TQuantus 21.1.1-s867 (64bit) Sun Jun 26 22:12:54 PDT 2022 (Linux 3.10.0-693.el7.x86_64)
+
+set_global _enable_mmmc_by_default_flow      $CTE::mmmc_default
+suppressMessage ENCEXT-2799
+getVersion
+getVersion
+getVersion
+win
+encMessage warning 0
+encMessage debug 0
+is_common_ui_mode
+restoreDesign /home/vlsi30/day19/physical_design/booth_multiplier_PLACEMENT.ENC.dat booth_multiplier
+setDrawView fplan
+encMessage warning 1
+encMessage debug 0
+setDrawView place
+create_ccopt_clock_tree_spec
+ctd_win -side none -id ctd_window -unit_delay
+setNanoRouteMode -quiet -routeWithTimingDriven 1
+setNanoRouteMode -quiet -routeWithSiDriven 1
+setNanoRouteMode -quiet -routeTopRoutingLayer 9
+setNanoRouteMode -quiet -routeBottomRoutingLayer 1
+setNanoRouteMode -quiet -drouteEndIteration 1
+setNanoRouteMode -quiet -routeWithTimingDriven true
+setNanoRouteMode -quiet -routeWithSiDriven true
+routeDesign -globalDetail
+setNanoRouteMode -quiet -routeWithTimingDriven 1
+setNanoRouteMode -quiet -routeWithSiDriven 1
+setNanoRouteMode -quiet -routeWithTimingDriven true
+setNanoRouteMode -quiet -routeWithSiDriven true
+routeDesign -globalDetail
+setOptMode -fixCap true -fixTran true -fixFanoutLoad false
+optDesign -postCTS
+saveDesign booth_multiplier_route.enc
+reset_parasitics
+extractRC
+rcOut -spef booth_multiplier.spef -rc_corner rc_corner
+all_hold_analysis_views 
+all_setup_analysis_views 
+write_sdf  -ideal_clock_network booth_multiplier.sdf
+setLayerPreference node_layer -isVisible 0
+setLayerPreference Poly -isVisible 1
+setLayerPreference node_layer -isVisible 1
+zoomBox -9.10200 2.26500 69.16900 40.49700
+zoomBox 7.94350 9.04100 64.49500 36.66400
+zoomBox 20.25950 13.93700 61.11800 33.89450
+zoomBox 29.15750 17.47400 58.67800 31.89350
+zoomBox 40.23100 21.87600 55.64150 29.40350
+zoomBox 44.95400 22.27850 54.41950 26.90200
+zoomBox 47.85300 22.56400 53.66600 25.40350
+zoomBox 49.13250 22.69000 53.33350 24.74200
+panPage 0 1
+panPage 0 1
+panPage 0 1
+panPage 0 1
+panPage 0 1
+panPage 0 1
+panPage 0 1
+panPage 0 1
+panPage 0 1
+panPage 0 1
+panPage 0 1
+panPage 0 1
+panPage 0 1
+panPage 0 1
+panPage 0 1
+panPage 0 1
+panPage 0 1
+panPage 0 1
+panPage 0 1
+panPage 0 1
+panPage 0 1
+panPage 0 -1
+panPage 0 -1
+panPage 0 -1
+panPage 0 -1
+panPage 0 -1
+panPage 0 -1
+panPage 0 -1
+panPage 0 -1
+panPage 0 -1
+panPage 0 -1
+panPage 0 1
+panPage 0 1
+panPage 0 1
+panPage 0 1
+panPage 0 1
+panPage 0 1
+panPage 0 1
+panPage 0 1
+panPage 0 1
+panPage 0 1
+panPage 0 1
+panPage 0 1
+panPage 0 1
+panPage 0 1
+panPage 0 1
+panPage 0 1
+panPage 0 1
+panPage 0 1
+panPage 0 1
+panPage 0 1
+panPage 0 1
+panPage 0 1
+panPage 0 -1
+panPage 0 -1
+panPage 0 -1
+panPage 0 -1
+panPage 0 -1
+panPage -1 0
+panPage -1 0
+panPage -1 0
+panPage -1 0
+panPage -1 0
+panPage -1 0
+panPage -1 0
+panPage -1 0
+panPage -1 0
+panPage -1 0
+panPage -1 0
+panPage -1 0
+panPage 1 0
+panPage 1 0
+panPage 1 0
+panPage -1 0
+panPage -1 0
+panPage -1 0
+panPage -1 0
+panPage -1 0
+panPage -1 0
+panPage -1 0
+panPage -1 0
+panPage -1 0
+panPage -1 0
+panPage -1 0
+panPage -1 0
+panPage -1 0
+panPage -1 0
+panPage -1 0
+selectObject IO_Pin clk
+zoomBox 14.94650 38.49600 24.41500 43.12100
+fit
+deselectAll
+zoomBox -3.93500 14.67600 52.61600 42.29900
+zoomBox 5.89500 24.94500 40.62450 41.90900
+zoomBox 10.23650 29.48050 35.32850 41.73700
+zoomBox 14.59700 34.03650 30.00750 41.56400
+zoomBox 17.27550 36.83450 26.74000 41.45750
+zoomBox 17.91500 37.50250 25.96000 41.43200
+zoomBox 18.45850 38.07000 25.29700 41.41050
+selectObject IO_Pin clk
+zoomBox 16.48700 36.15650 27.62300 41.59600
+zoomBox 13.27700 33.04100 31.41100 41.89850
+zoomBox 5.66000 25.64650 40.40000 42.61550
+zoomBox -4.35250 15.92700 52.21600 43.55850
+zoomBox -8.93200 11.48150 57.62000 43.98950
+zoomBox -14.31900 6.25200 63.97750 44.49650
+zoomBox -28.11250 -7.13900 80.25650 45.79500
+setDrawView place
+setDrawView place
+setDrawView place
+deselectAll
+ctd_win -side none -id ctd_window -unit_delay
+selectObject Net clk
+zoomSelected
+deselectAll
+selectObject Net clk
+zoomSelected

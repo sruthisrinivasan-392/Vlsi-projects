@@ -1,0 +1,10 @@
+1781245048 /home/vlsi30/day10/randomize.sv
+1781243860 /home/vlsi30/day10/random.sv
+1781258678 /home/vlsi30/day10/constraints_implication.sv
+1781254293 /home/vlsi30/day10/set_membership.sv
+1781252988 /home/vlsi30/day10/constraint_method.sv
+1781258876 /home/vlsi30/day10/constraints_implication2.sv
+1781259515 /home/vlsi30/day10/constraints_inline.sv
+1781257517 /home/vlsi30/day10/constraints_distribution.sv
+1781251452 /home/vlsi30/day10/rand_method.sv
+1781237414 /home/vlsi30/day10/class.sv

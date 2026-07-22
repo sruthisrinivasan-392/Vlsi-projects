@@ -1,0 +1,12 @@
+//
+// File created by:  irun
+// Do not modify this file
+
+s1::(06Jun2026:09:57:22):( irun up_down.v up_down_tb.v -access +rwc -gui )
+s2::(06Jun2026:11:49:52):( irun up_down.v up_down_tb.v -access +rwc -gui -coverage all )
+s3::(06Jun2026:13:30:38):( irun up_down.v up_down_tb.v -access +rwc -gui -coverage all )
+s4::(06Jun2026:13:40:53):( irun up_down.v up_down_tb.v -access +rwc -gui )
+s5::(06Jun2026:13:41:41):( irun up_down.v up_down_tb.v -access +rwc -gui )
+s6::(06Jun2026:13:43:30):( irun up_down.v up_down_tb.v -access +rwc -gui )
+s7::(06Jun2026:13:44:51):( irun up_down.v up_down_tb.v -access +rwc -gui )
+s8::(06Jun2026:13:46:14):( irun up_down.v up_down_tb.v -access +rwc -gui -coverage all )

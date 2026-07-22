@@ -1,0 +1,418 @@
+
+Cadence Tempus(TM) Timing Solution.
+Copyright 2024 Cadence Design Systems, Inc. All rights reserved worldwide.
+
+Version:	v23.13-s084_1, built Fri Nov 22 17:27:06 PST 2024
+Options:	
+Date:		Mon Jun 22 13:41:45 2026
+Host:		cadence (x86_64 w/Linux 4.18.0-425.3.1.el8.x86_64) (8cores*16cpus*Intel(R) Core(TM) i7-10875H CPU @ 2.30GHz 16384KB)
+OS:		Red Hat Enterprise Linux 8.7 (Ootpa)
+
+License:
+		[13:41:45.094097] Configured Lic search path (23.02-s006): 5280@cadence
+
+		tpsxl	Tempus Timing Signoff Solution XL	23.1	checkout succeeded
+		16 CPU jobs allowed with the current license(s). Use set_multi_cpu_usage to set your required CPU count.
+**ERROR: (IMPOAX-8053):	Could not open shared library libtempusoax22.so : liboaPrivateCDS.so: cannot open shared object file: No such file or directory.
+**ERROR: (IMPOAX-8053):	Could not open shared library libcdsSkillPcell.so : /home/install/SSV231/tools.lnx86/ssv/bin/64bit/../../../lib/64bit/libcdsSkillPcell.so: undefined symbol: _ZTIN12OpenAccess_413oaFSComponentE.
+**ERROR: (IMPOAX-8033):	OpenAccess features will be disabled in this session.
+Change the soft stacksize limit to 0.2%RAM (63 mbytes). Set global soft_stack_size_limit to change the value.
+environment variable TMPDIR is '/tmp/ssv_tmpdir_29526_0e494b24-adba-48fa-bd1b-a869333acc07_V8UJuz'.
+<CMD> ::stop_gui -keepDgui
+Has not load the powerDB, will keep enalbed
+Has not load the powerDB, will keep enalbed
+<CMD> read_design -physical_data mealy_1001_1100_placement.enc.dat/ mealy_1001_1100
+# Tempus Timing Solution 23.13-s084_1
+# read_design
+#  -physical_data 1
+#  dir mealy_1001_1100_placement.enc.dat/ mealy_1001_1100
+Set Default Input Pin Transition as 0.1 ps.
+Loading design 'mealy_1001_1100' saved by 'Innovus' '21.15-s110_1' on 'Mon Jun 22 11:24:11 2026'.
+**ERROR: (IMPOAX-820):	The OpenAccess (OA) features are disabled in the current session of Tempus Timing Solution because the oax shared library could not be loaded properly. This could be because your installation was not properly configured. To enable OA features, exit the current session and re-launch Tempus Timing Solution either after fixing your installation by running the Configure Installation phase, or after setting the OA_HOME variable to point to a proper OA installation. Check the "OpenAccess Installation and Configuration Guide" manual for more information.
+
+**ERROR: (IMPOAX-850):	oaxCreateCdsLibArray command cannot be run as OpenAccess features are disabled in this session.
+#% Begin Load MMMC data ... (date=06/22 13:49:39, mem=1751.8M)
+**WARN: (UI-638):	The option '-cap_table' to the command 'create_rc_corner' is ignored since it is related to the RC extraction mode which Tempus does not support. Tempus only supports the signoff QRC extraction.
+Number of views requested 1 are allowed with the current licenses... continuing with set_analysis_view.
+#% End Load MMMC data ... (date=06/22 13:49:39, total cpu=0:00:00.0, real=0:00:00.0, peak res=1752.0M, current mem=1752.0M)
+rc_corner
+
+Loading LEF file /home/vlsi30/day18/physical_design/mealy_1001_1100_placement.enc.dat/libs/lef/gsclib090_translated.lef ...
+**WARN: (IMPLF-105):	The layer 'Oxide' specified in SAMENET spacing
+rule is neither a routing layer nor a cut layer. The rule is ignored.
+**WARN: (IMPLF-105):	The layer 'Poly' specified in SAMENET spacing
+rule is neither a routing layer nor a cut layer. The rule is ignored.
+Set DBUPerIGU to M2 pitch 580.
+**WARN: (IMPLF-200):	Pin 'A' in macro 'ANTENNA' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+
+##  Check design process and node:  
+##  Both design process and tech node are not set.
+
+Loading view definition file from /home/vlsi30/day18/physical_design/mealy_1001_1100_placement.enc.dat/viewDefinition.tcl
+Reading slow timing library '/home/install/FOUNDRY/digital/90nm/dig/lib/slow.lib' ...
+Read 479 cells in library 'slow' 
+Reading fast timing library '/home/install/FOUNDRY/digital/90nm/dig/lib/fast.lib' ...
+Read 479 cells in library 'fast' 
+*** End library_loading (cpu=0.03min, real=0.03min, mem=83.0M, fe_cpu=0.72min, fe_real=7.93min, fe_mem=1877.9M) ***
+#% Begin Load netlist data ... (date=06/22 13:49:41, mem=1820.6M)
+*** Begin netlist parsing (mem=1877.9M) ***
+**WARN: (IMPVL-159):	Pin 'VDD' of cell 'XOR3XL' is defined in LEF but not in the timing library.
+**WARN: (IMPVL-159):	Pin 'VSS' of cell 'XOR3XL' is defined in LEF but not in the timing library.
+**WARN: (IMPVL-159):	Pin 'VDD' of cell 'XOR3X1' is defined in LEF but not in the timing library.
+**WARN: (IMPVL-159):	Pin 'VSS' of cell 'XOR3X1' is defined in LEF but not in the timing library.
+**WARN: (IMPVL-159):	Pin 'VSS' of cell 'XOR2XL' is defined in LEF but not in the timing library.
+**WARN: (IMPVL-159):	Pin 'VDD' of cell 'XOR2XL' is defined in LEF but not in the timing library.
+**WARN: (IMPVL-159):	Pin 'VSS' of cell 'XOR2X4' is defined in LEF but not in the timing library.
+**WARN: (IMPVL-159):	Pin 'VDD' of cell 'XOR2X4' is defined in LEF but not in the timing library.
+**WARN: (IMPVL-159):	Pin 'VSS' of cell 'XOR2X2' is defined in LEF but not in the timing library.
+**WARN: (IMPVL-159):	Pin 'VDD' of cell 'XOR2X2' is defined in LEF but not in the timing library.
+**WARN: (IMPVL-159):	Pin 'VSS' of cell 'XOR2X1' is defined in LEF but not in the timing library.
+**WARN: (IMPVL-159):	Pin 'VDD' of cell 'XOR2X1' is defined in LEF but not in the timing library.
+**WARN: (IMPVL-159):	Pin 'VSS' of cell 'XNOR3XL' is defined in LEF but not in the timing library.
+**WARN: (IMPVL-159):	Pin 'VDD' of cell 'XNOR3XL' is defined in LEF but not in the timing library.
+**WARN: (IMPVL-159):	Pin 'VDD' of cell 'XNOR3X1' is defined in LEF but not in the timing library.
+**WARN: (IMPVL-159):	Pin 'VSS' of cell 'XNOR3X1' is defined in LEF but not in the timing library.
+**WARN: (IMPVL-159):	Pin 'VSS' of cell 'XNOR2XL' is defined in LEF but not in the timing library.
+**WARN: (IMPVL-159):	Pin 'VDD' of cell 'XNOR2XL' is defined in LEF but not in the timing library.
+**WARN: (IMPVL-159):	Pin 'VSS' of cell 'XNOR2X4' is defined in LEF but not in the timing library.
+**WARN: (IMPVL-159):	Pin 'VDD' of cell 'XNOR2X4' is defined in LEF but not in the timing library.
+**WARN: (EMS-62):	Message <IMPVL-159> has exceeded the default message display limit of 20.
+To avoid this warning, increase the display limit per unique message by
+using the set_message -limit <number> command.
+The message limit can be removed by using the set_message -no_limit command.
+Note that setting a very large number using the set_message -limit command
+or removing the message limit using the set_message -no_limit command can
+significantly increase the log file size.
+To suppress a message, use the set_message -suppress command.
+Reading verilogBinary netlist '/home/vlsi30/day18/physical_design/mealy_1001_1100_placement.enc.dat/mealy_1001_1100.v.bin'
+
+*** Memory Usage v#3 (Current mem = 2081.938M, initial mem = 843.133M) ***
+*** End netlist parsing (cpu=0:00:00.0, real=0:00:00.0, mem=2081.9M) ***
+#% End Load netlist data ... (date=06/22 13:49:41, total cpu=0:00:00.6, real=0:00:01.0, peak res=1940.2M, current mem=1930.2M)
+Top level cell is mealy_1001_1100.
+Has not load the powerDB, will keep enalbed
+Has not load the powerDB, will keep enalbed
+Building hierarchical netlist for Cell mealy_1001_1100 ...
+***** UseNewTieNetMode *****.
+*** Netlist is unique.
+** info: there are 967 modules.
+** info: there are 24 stdCell insts.
+** info: there are 24 stdCell insts with at least one signal pin.
+
+*** Memory Usage v#3 (Current mem = 2563.984M, initial mem = 843.133M) ***
+*info: set bottom ioPad orient R0
+**WARN: (IMPFP-3961):	The techSite 'pad' has no related standard cells in the LEF/OA library. The calculations for this site type cannot be made unless standard cell models of this type exist in the LEF/OA library. Ignore this warning if the SITE is not used by the library. Alternatively, remove the SITE definition for the LEF/OA library to avoid this message.
+**WARN: (IMPFP-3961):	The techSite 'corner' has no related standard cells in the LEF/OA library. The calculations for this site type cannot be made unless standard cell models of this type exist in the LEF/OA library. Ignore this warning if the SITE is not used by the library. Alternatively, remove the SITE definition for the LEF/OA library to avoid this message.
+Horizontal Layer M1 offset = 290 (derived)
+Vertical Layer M2 offset = 290 (derived)
+Start create_tracks
+Generated pitch 0.29 in Metal8 is different from 0.87 defined in technology file in unpreferred direction.
+Set Default Input Pin Transition as 0.1 ps.
+Has not load the powerDB, will keep enalbed
+Has not load the powerDB, will keep enalbed
+Has not load the powerDB, will keep enalbed
+Has not load the powerDB, will keep enalbed
+Has not load the powerDB, will keep enalbed
+Has not load the powerDB, will keep enalbed
+Loading preference file /home/vlsi30/day18/physical_design/mealy_1001_1100_placement.enc.dat/gui.pref.tcl ...
+**WARN: (UI-156):	preference name 'MinFPModuleSize' is not supported in Tempus Timing Solution.
+**WARN: (UI-156):	preference name 'MinFlightLineWidth' is not supported in Tempus Timing Solution.
+**WARN: (UI-156):	preference name 'MaxFlightLineNetTerms' is not supported in Tempus Timing Solution.
+**WARN: (UI-156):	preference name 'LevelFlight' is not supported in Tempus Timing Solution.
+**WARN: (UI-156):	preference name 'DirectionSink' is not supported in Tempus Timing Solution.
+**WARN: (UI-156):	preference name 'DirectionSource' is not supported in Tempus Timing Solution.
+**WARN: (UI-156):	preference name 'ShowNumberBlockConnection' is not supported in Tempus Timing Solution.
+**WARN: (UI-156):	preference name 'StrecthRestriction' is not supported in Tempus Timing Solution.
+**WARN: (UI-156):	preference name 'StretchRectilinear' is not supported in Tempus Timing Solution.
+**WARN: (UI-156):	preference name 'MoveRestriction' is not supported in Tempus Timing Solution.
+**WARN: (UI-156):	preference name 'DisplayRelFPlan' is not supported in Tempus Timing Solution.
+**WARN: (UI-156):	preference name 'LegalizeMacro' is not supported in Tempus Timing Solution.
+**WARN: (UI-156):	preference name 'DisplayFPlanFlightLine' is not supported in Tempus Timing Solution.
+**WARN: (UI-156):	preference name 'DisplayPinName' is not supported in Tempus Timing Solution.
+**WARN: (UI-156):	preference name 'ExclusiveFlight' is not supported in Tempus Timing Solution.
+**WARN: (UI-156):	preference name 'ShowToUnplace' is not supported in Tempus Timing Solution.
+**WARN: (UI-156):	preference name 'FlightLineInMove' is not supported in Tempus Timing Solution.
+**WARN: (UI-156):	preference name 'ShowConnectionInOutNumber' is not supported in Tempus Timing Solution.
+**WARN: (UI-156):	preference name 'ConnectionColorType' is not supported in Tempus Timing Solution.
+**WARN: (UI-156):	preference name 'OnlyBundleNetFlight' is not supported in Tempus Timing Solution.
+**WARN: (EMS-27):	Message (UI-156) has exceeded the current message display limit of 20.
+To increase the message display limit, refer to the product command reference manual.
+**WARN: (IMPEXT-7000):	The option '-engine preRoute' for setExtractRCMode is ignored because only Quantus QRC extraction mode, that is, '-engine postRoute -effortLevel signoff' is supported in Tempus Timing Solution. To avoid this message, remove this option from your scripts.
+Has not load the powerDB, will keep enalbed
+Has not load the powerDB, will keep enalbed
+addRing command will ignore shorts while creating rings.
+addRing command will disallow rings to go over rows.
+addRing command will consider rows while creating rings.
+The ring targets are set to core/block ring wires.
+addStripe will allow jog to connect padcore ring and block ring.
+
+Stripes will not extend to closest target.
+When breaking rings, the power planner will consider the existence of blocks.
+addStripe will break automatically at non-default domains when generating global stripes over the core area or default domain.
+The entire stripe set will break at the domain if one of the nets is not in the domain.
+Stripes will not be created over regions without power planning wires.
+Offset for stripe breaking is set to 0.
+Stripes will stop at the boundary of the specified area.
+The power planner will set stripe antenna targets to none (no trimming allowed).
+Change floorplan default-technical-site to 'gsclib090site'.
+/dev/null
+Total number of combinational cells: 317
+Total number of sequential cells: 152
+Total number of tristate cells: 10
+Total number of level shifter cells: 0
+Total number of power gating cells: 0
+Total number of isolation cells: 0
+Total number of power switch cells: 0
+Total number of pulse generator cells: 0
+Total number of always on buffers: 0
+Total number of retention cells: 0
+Total number of physical cells: 0
+List of usable buffers: BUFX2 BUFX12 BUFX16 BUFX20 CLKBUFX2 BUFX3 BUFX4 BUFX6 BUFX8 CLKBUFX12 CLKBUFX16 CLKBUFX20 CLKBUFX3 CLKBUFX4 CLKBUFX6 CLKBUFX8
+Total number of usable buffers: 16
+List of unusable buffers:
+Total number of unusable buffers: 0
+List of usable inverters: CLKINVX1 CLKINVX2 CLKINVX12 CLKINVX16 CLKINVX20 CLKINVX3 CLKINVX4 CLKINVX6 CLKINVX8 INVX1 INVX2 INVX12 INVX16 INVX20 INVXL INVX3 INVX4 INVX6 INVX8
+Total number of usable inverters: 19
+List of unusable inverters:
+Total number of unusable inverters: 0
+List of identified usable delay cells: DLY1X1 DLY1X4 DLY2X1 DLY2X4 DLY3X1 DLY3X4 DLY4X1 DLY4X4
+Total number of identified usable delay cells: 8
+List of identified unusable delay cells:
+Total number of identified unusable delay cells: 0
+Reading floorplan file - /home/vlsi30/day18/physical_design/mealy_1001_1100_placement.enc.dat/mealy_1001_1100.fp.gz (mem = 2810.2M).
+#% Begin Load floorplan data ... (date=06/22 13:49:43, mem=2500.5M)
+*info: reset 32 existing net BottomPreferredLayer and AvoidDetour
+Deleting old partition specification.
+Set FPlanBox to (0 0 84100 58580)
+**WARN: (IMPFP-3961):	The techSite 'pad' has no related standard cells in the LEF/OA library. The calculations for this site type cannot be made unless standard cell models of this type exist in the LEF/OA library. Ignore this warning if the SITE is not used by the library. Alternatively, remove the SITE definition for the LEF/OA library to avoid this message.
+**WARN: (IMPFP-3961):	The techSite 'corner' has no related standard cells in the LEF/OA library. The calculations for this site type cannot be made unless standard cell models of this type exist in the LEF/OA library. Ignore this warning if the SITE is not used by the library. Alternatively, remove the SITE definition for the LEF/OA library to avoid this message.
+ ... processed partition successfully.
+Reading binary special route file /home/vlsi30/day18/physical_design/mealy_1001_1100_placement.enc.dat/mealy_1001_1100.fp.spr.gz (Created by Innovus v21.15-s110_1 on Mon Jun 22 11:24:10 2026, version: 1)
+Convert 0 swires and 0 svias from compressed groups
+38 swires and 134 svias were compressed
+26 swires and 8 svias were decompressed from small or sparse groups
+Ending "Read special route file" (total cpu=0:00:00.0, real=0:00:00.0, peak res=2501.8M, current mem=2501.8M)
+Extracting standard cell pins and blockage ...... 
+Pin and blockage extraction finished
+#% End Load floorplan data ... (date=06/22 13:49:43, total cpu=0:00:00.1, real=0:00:00.0, peak res=2514.9M, current mem=2514.9M)
+#% Begin Load SymbolTable ... (date=06/22 13:49:43, mem=2514.9M)
+#% End Load SymbolTable ... (date=06/22 13:49:43, total cpu=0:00:00.0, real=0:00:00.0, peak res=2514.9M, current mem=2514.9M)
+Loading place ...
+#% Begin Load placement data ... (date=06/22 13:49:43, mem=2514.9M)
+Reading placement file - /home/vlsi30/day18/physical_design/mealy_1001_1100_placement.enc.dat/mealy_1001_1100.place.gz.
+** Reading stdCellPlacement_binary (Created by Innovus v21.15-s110_1 on Mon Jun 22 11:24:11 2026, version# 2) ...
+Read Views for adaptive view pruning ...
+Read 0 views from Binary DB for adaptive view pruning
+*** applyConnectGlobalNets disabled.
+*** Completed restorePlace (cpu=0:00:00.0 real=0:00:00.0 mem=2826.3M) ***
+Has not load the powerDB, will keep enalbed
+Has not load the powerDB, will keep enalbed
+Total net length = 3.045e+02 (1.599e+02 1.446e+02) (ext = 1.062e+02)
+#% End Load placement data ... (date=06/22 13:49:43, total cpu=0:00:00.1, real=0:00:00.0, peak res=2515.9M, current mem=2515.9M)
+Reading PG file /home/vlsi30/day18/physical_design/mealy_1001_1100_placement.enc.dat/mealy_1001_1100.pg.gz, version#2, (Created by Innovus v21.15-s110_1 on       Mon Jun 22 11:24:10 2026)
+*** Completed restorePGFile (cpu=0:00:00.0 real=0:00:00.0 mem=2842.3M) ***
+#% Begin Load routing data ... (date=06/22 13:49:43, mem=2518.3M)
+Reading routing file - /home/vlsi30/day18/physical_design/mealy_1001_1100_placement.enc.dat/mealy_1001_1100.route.gz.
+Reading Innovus routing data (Created by Innovus v21.15-s110_1 on Mon Jun 22 11:24:11 2026 Format: 20.1) ...
+*** Total 32 nets are successfully restored.
+*** Completed restoreRoute (cpu=0:00:00.0 real=0:00:01.0 mem=2842.3M) ***
+Has not load the powerDB, will keep enalbed
+Has not load the powerDB, will keep enalbed
+#% End Load routing data ... (date=06/22 13:49:44, total cpu=0:00:00.0, real=0:00:01.0, peak res=2519.0M, current mem=2518.3M)
+Reading property file /home/vlsi30/day18/physical_design/mealy_1001_1100_placement.enc.dat/mealy_1001_1100.prop
+*** Completed restoreProperty (cpu=0:00:00.0 real=0:00:00.0 mem=2843.3M) ***
+Set Default Input Pin Transition as 0.1 ps.
+Extraction setup Started for TopCell mealy_1001_1100 
+Summary of Active RC-Corners : 
+ 
+ Analysis View: worst_case
+    RC-Corner Name        : rc_corner
+    RC-Corner Index       : 0
+    RC-Corner Temperature : 125 Celsius
+    RC-Corner Cap Table   : ''
+    RC-Corner PostRoute Res Factor        : 1
+    RC-Corner PostRoute Cap Factor        : 1
+    RC-Corner PostRoute XCap Factor       : 1
+    RC-Corner Technology file: '/home/vlsi30/day18/physical_design/mealy_1001_1100_placement.enc.dat/libs/mmmc/rc_corner/gpdk090_9l.tch'
+ 
+ Analysis View: best_case
+    RC-Corner Name        : rc_corner
+    RC-Corner Index       : 0
+    RC-Corner Temperature : 125 Celsius
+    RC-Corner Cap Table   : ''
+    RC-Corner PostRoute Res Factor        : 1
+    RC-Corner PostRoute Cap Factor        : 1
+    RC-Corner PostRoute XCap Factor       : 1
+    RC-Corner Technology file: '/home/vlsi30/day18/physical_design/mealy_1001_1100_placement.enc.dat/libs/mmmc/rc_corner/gpdk090_9l.tch'
+Initializing multi-corner resistance tables ...
+max_delay min_delay
+#% Begin Load power constraints ... (date=06/22 13:49:44, mem=2521.4M)
+#% End Load power constraints ... (date=06/22 13:49:44, total cpu=0:00:00.0, real=0:00:01.0, peak res=2522.1M, current mem=2522.1M)
+**WARN: (TCLCMD-1263):	The -frame parameter is obsolete and will be removed from the software in a future release. To ensure compatibility with future releases, remove this parameter from your scripts.
+max_delay min_delay
+#% Begin load AAE data ... (date=06/22 13:49:45, mem=2550.8M)
+AAE DB initialization (MEM=2557.132812 CPU=0:00:00.0 REAL=0:00:00.0) 
+**WARN: (IMPESI-621):	Timing window restoration data eosdb.dat not found. PBA-SI results may not match in save/restore flow.
+#% End load AAE data ... (date=06/22 13:49:45, total cpu=0:00:00.6, real=0:00:00.0, peak res=2557.1M, current mem=2557.1M)
+Ending "read_design" (total cpu=0:00:07.1, real=0:00:08.0, peak res=2581.3M, current mem=2403.8M)
+Loading  (mealy_1001_1100)
+Traverse HInst (mealy_1001_1100)
+<CMD> all_setup_analysis_views
+<CMD> all_hold_analysis_views
+<CMD> all_setup_analysis_views
+<CMD> all_hold_analysis_views
+**WARN: (IMPSYC-3133):	The unloadTimingCon command is not supported in the MMMC environment.
+          To modify the active set of constraints you can use one of the following means:
+          - Use the set_analysis_view command to change the set of active views.
+          - Use the update_analysis_view command to change the constraint mode associated with an active view.
+          - Use the update_constraint_mode command to change the set of SDC files pointed to be active modes.
+<CMD> all_setup_analysis_views
+<CMD> all_hold_analysis_views
+<CMD> all_setup_analysis_views
+<CMD> all_hold_analysis_views
+**WARN: (IMPSYC-3133):	The unloadTimingCon command is not supported in the MMMC environment.
+          To modify the active set of constraints you can use one of the following means:
+          - Use the set_analysis_view command to change the set of active views.
+          - Use the update_analysis_view command to change the constraint mode associated with an active view.
+          - Use the update_constraint_mode command to change the set of SDC files pointed to be active modes.
+<CMD> read_spef mealy_1001_1100.spef
+Used active corner rc_corner for reading SPEF file as option '-rc_corner <cornerName>' is not specified in MMMC mode.
+
+SPEF files for RC Corner rc_corner:
+Top-level spef file 'mealy_1001_1100.spef'.
+Start spef parsing (MEM=3061.7).
+The SPEF file, 'mealy_1001_1100.spef', has encountered the error/warning message(s) during its reading.
+**WARN: (SPEF-1132):	An invalid or ignored D_NET reference (FE_RN_1_0) is detected in D_NET. The net name doesn't have corresponding net in the netlist. This D_NET starts on line 92. Check the SPEF file is valid, correct as needed and read it again.
+**WARN: (SPEF-1132):	An invalid or ignored D_NET reference (FE_RN_0_0) is detected in D_NET. The net name doesn't have corresponding net in the netlist. This D_NET starts on line 115. Check the SPEF file is valid, correct as needed and read it again.
+**WARN: (SPEF-1132):	An invalid or ignored D_NET reference (FE_RN_1) is detected in D_NET. The net name doesn't have corresponding net in the netlist. This D_NET starts on line 133. Check the SPEF file is valid, correct as needed and read it again.
+**ERROR: (SPEF-1127):	Invalid CONN connection found (FE_OFC0_rst:A) for D_NET (rst) that starts on line 246.
+**WARN: (SPEF-1124):	Invalid capacitor node (FE_OFC0_rst:A) found in D_NET (rst) that starts on line 246. The net name doesn't have corresponding net in the netlist. Check the SPEF file is valid, correct as needed and read it again.
+**WARN: (SPEF-1135):	Invalid resistor node (FE_OFC0_rst:A) found in D_NET (rst) that starts on line 246. The net name doesn't have corresponding net in the netlist. Check the SPEF file is valid, correct as needed and read it again.
+**WARN: (SPEF-1152):	Net 'rst ( having pins g723/A rst )' is not fully specified as per its connectivity in design netlist. Missing ports have been added to the net using low RC values. The timing accuracy is not reliable for such nets.
+**ERROR: (SPEF-1127):	Invalid CONN connection found (FE_RC_1_0:A) for D_NET (din) that starts on line 268.
+**ERROR: (SPEF-1127):	Invalid CONN connection found (FE_RC_3_0:A) for D_NET (din) that starts on line 268.
+**ERROR: (SPEF-1127):	Invalid CONN connection found (FE_RC_1_0_dup:A) for D_NET (din) that starts on line 268.
+**ERROR: (SPEF-1127):	Invalid CONN connection found (g717__2802:A) for D_NET (din) that starts on line 268.
+**ERROR: (SPEF-1123):	Invalid capacitor node (g717__2802:A) does not belong to net found in D_NET (din) that starts on line 268.
+**ERROR: (SPEF-1134):	Invalid resistor node (g717__2802:A) does not belong to net found in D_NET (din) that starts on line 268.
+**WARN: (SPEF-1135):	Invalid resistor node (FE_RC_1_0_dup:A) found in D_NET (din) that starts on line 268. The net name doesn't have corresponding net in the netlist. Check the SPEF file is valid, correct as needed and read it again.
+**WARN: (SPEF-1135):	Invalid resistor node (FE_RC_3_0:A) found in D_NET (din) that starts on line 268. The net name doesn't have corresponding net in the netlist. Check the SPEF file is valid, correct as needed and read it again.
+**WARN: (SPEF-1135):	Invalid resistor node (FE_RC_1_0:A) found in D_NET (din) that starts on line 268. The net name doesn't have corresponding net in the netlist. Check the SPEF file is valid, correct as needed and read it again.
+**WARN: (SPEF-1152):	Net 'din ( having pins g721/A g714__8246/B g717__2802/B g711__6783/C g710__8428/B ...)' is not fully specified as per its connectivity in design netlist. Missing ports have been added to the net using low RC values. The timing accuracy is not reliable for such nets.
+**ERROR: (SPEF-1127):	Invalid CONN connection found (FE_RC_4_0:A) for D_NET (state[2]) that starts on line 413.
+**WARN: (SPEF-1135):	Invalid resistor node (FE_RC_4_0:A) found in D_NET (state[2]) that starts on line 413. The net name doesn't have corresponding net in the netlist. Check the SPEF file is valid, correct as needed and read it again.
+**WARN: (SPEF-1152):	Net 'state[2] ( having pins fopt2/A state_reg[2]/Q g718__5122/A g712__5526/A g710__8428/A ...)' is not fully specified as per its connectivity in design netlist. Missing ports have been added to the net using low RC values. The timing accuracy is not reliable for such nets.
+**ERROR: (SPEF-1127):	Invalid CONN connection found (FE_RC_0_0:A) for D_NET (state[0]) that starts on line 568.
+**WARN: (SPEF-1124):	Invalid capacitor node (FE_RC_0_0:A) found in D_NET (state[0]) that starts on line 568. The net name doesn't have corresponding net in the netlist. Check the SPEF file is valid, correct as needed and read it again.
+**WARN: (SPEF-1135):	Invalid resistor node (FE_RC_0_0:A) found in D_NET (state[0]) that starts on line 568. The net name doesn't have corresponding net in the netlist. Check the SPEF file is valid, correct as needed and read it again.
+**WARN: (SPEF-1152):	Net 'state[0] ( having pins state_reg[0]/Q g724/A g714__8246/A g711__6783/A )' is not fully specified as per its connectivity in design netlist. Missing ports have been added to the net using low RC values. The timing accuracy is not reliable for such nets.
+**ERROR: (SPEF-1127):	Invalid CONN connection found (FE_RC_4_0:C) for D_NET (n_4) that starts on line 678.
+**ERROR: (SPEF-1127):	Invalid CONN connection found (g716__1617:A) for D_NET (n_4) that starts on line 678.
+**WARN: (SPEF-1124):	Invalid capacitor node (FE_RC_4_0:C) found in D_NET (n_4) that starts on line 678. The net name doesn't have corresponding net in the netlist. Check the SPEF file is valid, correct as needed and read it again.
+**ERROR: (SPEF-1134):	Invalid resistor node (g716__1617:A) does not belong to net found in D_NET (n_4) that starts on line 678.
+**WARN: (SPEF-1135):	Invalid resistor node (FE_RC_4_0:C) found in D_NET (n_4) that starts on line 678. The net name doesn't have corresponding net in the netlist. Check the SPEF file is valid, correct as needed and read it again.
+**WARN: (SPEF-1152):	Net 'n_4 ( having pins g720/Y g718__5122/B g716__1617/B g710__8428/C )' is not fully specified as per its connectivity in design netlist. Missing ports have been added to the net using low RC values. The timing accuracy is not reliable for such nets.
+**ERROR: (SPEF-1127):	Invalid CONN connection found (g716__1617:B) for D_NET (n_6) that starts on line 732.
+**ERROR: (SPEF-1127):	Invalid CONN connection found (g717__2802:B) for D_NET (n_6) that starts on line 732.
+**ERROR: (SPEF-1127):	Invalid CONN connection found (FE_RC_0_0:Y) for D_NET (n_6) that starts on line 732.
+**WARN: (SPEF-1135):	Invalid resistor node (FE_RC_0_0:Y) found in D_NET (n_6) that starts on line 732. The net name doesn't have corresponding net in the netlist. Check the SPEF file is valid, correct as needed and read it again.
+**ERROR: (SPEF-1134):	Invalid resistor node (g717__2802:B) does not belong to net found in D_NET (n_6) that starts on line 732.
+**ERROR: (SPEF-1134):	Invalid resistor node (g716__1617:B) does not belong to net found in D_NET (n_6) that starts on line 732.
+**WARN: (SPEF-1152):	Net 'n_6 ( having pins g724/Y g717__2802/A g716__1617/A g715__3680/B g712__5526/C ...)' is not fully specified as per its connectivity in design netlist. Missing ports have been added to the net using low RC values. The timing accuracy is not reliable for such nets.
+**ERROR: (SPEF-1127):	Invalid CONN connection found (FE_RC_1_0:Y) for D_NET (n_7) that starts on line 779.
+**WARN: (SPEF-1135):	Invalid resistor node (FE_RC_1_0:Y) found in D_NET (n_7) that starts on line 779. The net name doesn't have corresponding net in the netlist. Check the SPEF file is valid, correct as needed and read it again.
+**WARN: (SPEF-1152):	Net 'n_7 ( having pins g721/Y g715__3680/A g707__2398/B0 )' is not fully specified as per its connectivity in design netlist. Missing ports have been added to the net using low RC values. The timing accuracy is not reliable for such nets.
+**ERROR: (SPEF-1127):	Invalid CONN connection found (FE_RC_4_0:Y) for D_NET (n_11) that starts on line 867.
+**WARN: (SPEF-1135):	Invalid resistor node (FE_RC_4_0:Y) found in D_NET (n_11) that starts on line 867. The net name doesn't have corresponding net in the netlist. Check the SPEF file is valid, correct as needed and read it again.
+**WARN: (SPEF-1152):	Net 'n_11 ( having pins state_reg[2]/D g710__8428/Y )' is not fully specified as per its connectivity in design netlist. Missing ports have been added to the net using low RC values. The timing accuracy is not reliable for such nets.
+**ERROR: (SPEF-1127):	Invalid CONN connection found (FE_OFC0_rst:Y) for D_NET (n_17) that starts on line 1036.
+**WARN: (SPEF-1124):	Invalid capacitor node (FE_OFC0_rst:Y) found in D_NET (n_17) that starts on line 1036. The net name doesn't have corresponding net in the netlist. Check the SPEF file is valid, correct as needed and read it again.
+**WARN: (SPEF-1135):	Invalid resistor node (FE_OFC0_rst:Y) found in D_NET (n_17) that starts on line 1036. The net name doesn't have corresponding net in the netlist. Check the SPEF file is valid, correct as needed and read it again.
+**WARN: (SPEF-1152):	Net 'n_17 ( having pins state_reg[0]/RN state_reg[1]/RN state_reg[2]/RN g723/Y dout_1001_reg/RN ...)' is not fully specified as per its connectivity in design netlist. Missing ports have been added to the net using low RC values. The timing accuracy is not reliable for such nets.
+SPEF file mealy_1001_1100.spef.
+Number of Resistors     : 353
+Number of Ground Caps   : 288
+Number of Coupling Caps : 0
+
+End spef parsing (MEM=3095.7 CPU=0:00:00.0 REAL=0:00:00.0).
+3 nets are missing in SPEF file. The names of these nets are saved in ./rc_corner.missing_nets.rpt.
+**WARN: (IMPEXT-3423):	Detected 9 nets with incomplete RC network. Low-value resistances have been added by the software to complete the RC network of these nets. Review the list of affected nets in the './mealy_1001_1100.rc_corner.incomplete_res.net' file to ensure they are not along the critical path because results of timing analysis performed on nets with incomplete RC network can be inaccurate.
+<CMD> all_setup_analysis_views
+<CMD> read_sdf mealy_1001_1100.sdf
+**WARN: (TCLCMD-1234):	In multi-mode, multi-corner analysis mode, you should include the -view option with the read_sdf command to annotate the SDF file to specific view(s). Without the -view option, the SDF file will only be annotated to the current default view.
+<CMD> get_eco_opt_mode -optimization_failure_tracking_file -quiet
+<CMD> get_time_unit
+<CMD> report_timing -output_format binary -max_paths 50000 -max_slack 0.75 -path_exceptions all -late > top.btarpt
+AAE_INFO: opIsDesignInPostRouteState() is 0
+#################################################################################
+# Design Name: mealy_1001_1100
+# Design Mode: 65nm
+# Analysis Mode: MMMC Non-OCV 
+# Parasitics Mode: SPEF/RCDB 
+# Signoff Settings: SI Off 
+#################################################################################
+Start delay calculation (fullDC) (1 T). (MEM=1735.63)
+/dev/null
+End delay calculation. (MEM=1867.45 CPU=0:00:00.1 REAL=0:00:00.0)
+Begin loading slews from CTE ...
+Loading slews from CTE completed...
+End delay calculation (fullDC). (MEM=1863.49 CPU=0:00:00.2 REAL=0:00:01.0)
+**ERROR: (SDF-300):	Could not locate instance 'FE_RC_4_0' in design 'mealy_1001_1100' (File /home/vlsi30/day18/physical_design/mealy_1001_1100.sdf, Line 19).
+
+**ERROR: (SDF-300):	Could not locate instance 'FE_RC_5_0' in design 'mealy_1001_1100' (File /home/vlsi30/day18/physical_design/mealy_1001_1100.sdf, Line 20).
+
+**ERROR: (SDF-300):	Could not locate instance 'FE_RC_1_0_dup' in design 'mealy_1001_1100' (File /home/vlsi30/day18/physical_design/mealy_1001_1100.sdf, Line 21).
+
+**ERROR: (SDF-300):	Could not locate instance 'FE_OFC0_rst' in design 'mealy_1001_1100' (File /home/vlsi30/day18/physical_design/mealy_1001_1100.sdf, Line 28).
+
+**ERROR: (SDF-300):	Could not locate instance 'FE_RC_1_0' in design 'mealy_1001_1100' (File /home/vlsi30/day18/physical_design/mealy_1001_1100.sdf, Line 31).
+
+**ERROR: (SDF-300):	Could not locate instance 'FE_RC_1_0_dup' in design 'mealy_1001_1100' (File /home/vlsi30/day18/physical_design/mealy_1001_1100.sdf, Line 32).
+
+**ERROR: (SDF-300):	Could not locate instance 'FE_RC_3_0' in design 'mealy_1001_1100' (File /home/vlsi30/day18/physical_design/mealy_1001_1100.sdf, Line 34).
+
+**ERROR: (SDF-300):	Could not locate instance 'FE_RC_4_0' in design 'mealy_1001_1100' (File /home/vlsi30/day18/physical_design/mealy_1001_1100.sdf, Line 43).
+
+**ERROR: (SDF-300):	Could not locate instance 'FE_RC_0_0' in design 'mealy_1001_1100' (File /home/vlsi30/day18/physical_design/mealy_1001_1100.sdf, Line 50).
+
+**ERROR: (SDF-300):	Could not locate instance 'FE_RC_4_0' in design 'mealy_1001_1100' (File /home/vlsi30/day18/physical_design/mealy_1001_1100.sdf, Line 56).
+
+**ERROR: (SDF-300):	Could not locate instance 'FE_RC_0_0' in design 'mealy_1001_1100' (File /home/vlsi30/day18/physical_design/mealy_1001_1100.sdf, Line 58).
+
+**ERROR: (SDF-300):	Could not locate instance 'FE_RC_0_0' in design 'mealy_1001_1100' (File /home/vlsi30/day18/physical_design/mealy_1001_1100.sdf, Line 59).
+
+**ERROR: (SDF-300):	Could not locate instance 'FE_RC_0_0' in design 'mealy_1001_1100' (File /home/vlsi30/day18/physical_design/mealy_1001_1100.sdf, Line 60).
+
+**ERROR: (SDF-300):	Could not locate instance 'FE_RC_0_0' in design 'mealy_1001_1100' (File /home/vlsi30/day18/physical_design/mealy_1001_1100.sdf, Line 61).
+
+**ERROR: (SDF-300):	Could not locate instance 'FE_RC_1_0' in design 'mealy_1001_1100' (File /home/vlsi30/day18/physical_design/mealy_1001_1100.sdf, Line 62).
+
+**ERROR: (SDF-300):	Could not locate instance 'FE_RC_4_0' in design 'mealy_1001_1100' (File /home/vlsi30/day18/physical_design/mealy_1001_1100.sdf, Line 66).
+
+**ERROR: (SDF-300):	Could not locate instance 'FE_OFC0_rst' in design 'mealy_1001_1100' (File /home/vlsi30/day18/physical_design/mealy_1001_1100.sdf, Line 73).
+
+**ERROR: (SDF-300):	Could not locate instance 'FE_OFC0_rst' in design 'mealy_1001_1100' (File /home/vlsi30/day18/physical_design/mealy_1001_1100.sdf, Line 74).
+
+**ERROR: (SDF-300):	Could not locate instance 'FE_OFC0_rst' in design 'mealy_1001_1100' (File /home/vlsi30/day18/physical_design/mealy_1001_1100.sdf, Line 75).
+
+**ERROR: (SDF-300):	Could not locate instance 'FE_OFC0_rst' in design 'mealy_1001_1100' (File /home/vlsi30/day18/physical_design/mealy_1001_1100.sdf, Line 76).
+
+Message <SDF-300> has exceeded the message display limit of '20'. Use 'set_message -no_limit -id list_of_msgIDs' to reset the message limit.
+**WARN: (SDF-142):	Cell type 'OAI22X2' for instance 'g709__5107' does not match with timing model (Line 227).
+
+**WARN: (SDF-142):	Cell type 'NOR2X1' for instance 'g713__4319' does not match with timing model (Line 251).
+
+**WARN: (SDF-142):	Cell type 'NAND2X2' for instance 'g716__1617' does not match with timing model (Line 297).
+
+**WARN: (SDF-142):	Cell type 'NAND2X2' for instance 'g719__1705' does not match with timing model (Line 319).
+
+**WARN: (SDF-142):	Cell type 'NAND2X4' for instance 'g718__5122' does not match with timing model (Line 330).
+
+**WARN: (SDF-142):	Cell type 'NAND2X2' for instance 'g714__8246' does not match with timing model (Line 341).
+
+**WARN: (SDF-142):	Cell type 'CLKINVX4' for instance 'g720' does not match with timing model (Line 352).
+
+Has not load the powerDB, will keep enalbed
+Has not load the powerDB, will keep enalbed
+<CMD> load_timing_debug_report -name default_report top.btarpt -max_path_num 10000 -updateCategory 0 -isDrv 0
+Parsing file top.btarpt...

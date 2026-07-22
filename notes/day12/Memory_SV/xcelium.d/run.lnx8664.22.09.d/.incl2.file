@@ -1,0 +1,16 @@
+memory.v
+/home/vlsi30/day12/Memory_SV/memory.v
+globals1.sv
+/home/vlsi30/day12/Memory_SV/globals1.sv
+mem_gen.sv
+/home/vlsi30/day12/Memory_SV/mem_gen.sv
+mem_if.sv
+/home/vlsi30/day12/Memory_SV/mem_if.sv
+mem_drv.sv
+/home/vlsi30/day12/Memory_SV/mem_drv.sv
+mem_mon.sv
+/home/vlsi30/day12/Memory_SV/mem_mon.sv
+mem_sb.sv
+/home/vlsi30/day12/Memory_SV/mem_sb.sv
+mem_pgtest.sv
+/home/vlsi30/day12/Memory_SV/mem_pgtest.sv

@@ -1,0 +1,5 @@
+//
+// File created by:  xrun
+// Do not modify this file
+
+s1::(25Jun2026:14:35:25):( xrun +access+rwc +xmstatus +xm64bit +TESTFILE1=./test_scripts/testresults/verilog/VER.FULLSCAN.up_down_counter_atpg.data.scan.ex1.ts1.verilog +TESTFILE2=./test_scripts/testresults/verilog/VER.FULLSCAN.up_down_counter_atpg.data.logic.ex1.ts2.verilog +HEARTBEAT +FAILSET +xmtimescale+1ns/1ps +xmoverride_timescale +xmseq_udp_delay+2ps +libext+.v+.V+.z+.Z+.gz +xmlibdirname+./test_scripts/Inca_libs_11_16_31 -l ./test_scripts/ncverilog_FULLSCAN.log -v /home/install/FOUNDRY/digital/90nm/dig/vlog/slow.v ./test_scripts/up_down_counter.test_netlist.v ./test_scripts/testresults/verilog/VER.FULLSCAN.up_down_counter_atpg.mainsim.v )

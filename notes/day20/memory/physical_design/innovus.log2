@@ -1,0 +1,1220 @@
+
+Cadence Innovus(TM) Implementation System.
+Copyright 2021 Cadence Design Systems, Inc. All rights reserved worldwide.
+
+Version:	v21.15-s110_1, built Fri Sep 23 13:08:12 PDT 2022
+Options:	
+Date:		Thu Jun 18 13:55:11 2026
+Host:		cadence (x86_64 w/Linux 4.18.0-425.3.1.el8.x86_64) (8cores*16cpus*Intel(R) Core(TM) i7-10875H CPU @ 2.30GHz 16384KB)
+OS:		Red Hat Enterprise Linux release 8.7 (Ootpa)
+
+License:
+		[13:55:11.095617] Configured Lic search path (21.01-s002): 5280@cadence
+
+		invs	Innovus Implementation System	21.1	checkout succeeded
+		8 CPU jobs allowed with the current license(s). Use setMultiCpuUsage to set your required CPU count.
+Change the soft stacksize limit to 0.2%RAM (63 mbytes). Set global soft_stack_size_limit to change the value.
+
+**INFO:  MMMC transition support version v31-84 
+
+<CMD> set_global _enable_mmmc_by_default_flow      $CTE::mmmc_default
+<CMD> suppressMessage ENCEXT-2799
+<CMD> getVersion
+<CMD> getVersion
+<CMD> getVersion
+[INFO] Loading PVS 22.20 fill procedures
+<CMD> win
+<CMD> set init_gnd_net VSS
+<CMD> set init_lef_file ../../../../install/FOUNDRY/digital/90nm/dig/lef/gsclib090_translated.lef
+<CMD> set init_verilog ../synthesis/memory_netlist.v
+<CMD> set init_mmmc_file Default.view
+<CMD> set init_pwr_net VDD
+<CMD> init_design
+#% Begin Load MMMC data ... (date=06/18 13:57:01, mem=1015.2M)
+#% End Load MMMC data ... (date=06/18 13:57:01, total cpu=0:00:00.0, real=0:00:00.0, peak res=1015.8M, current mem=1015.8M)
+rc_corner
+
+Loading LEF file ../../../../install/FOUNDRY/digital/90nm/dig/lef/gsclib090_translated.lef ...
+**WARN: (IMPLF-105):	The layer 'Oxide' specified in SAMENET spacing
+rule is neither a routing layer nor a cut layer. The rule is ignored.
+**WARN: (IMPLF-105):	The layer 'Poly' specified in SAMENET spacing
+rule is neither a routing layer nor a cut layer. The rule is ignored.
+Set DBUPerIGU to M2 pitch 580.
+**WARN: (IMPLF-200):	Pin 'A' in macro 'ANTENNA' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-200' for more detail.
+
+##  Check design process and node:  
+##  Both design process and tech node are not set.
+
+Loading view definition file from Default.view
+Reading slow timing library '/home/install/FOUNDRY/digital/90nm/dig/lib/slow.lib' ...
+Read 479 cells in library 'slow' 
+Reading fast timing library '/home/install/FOUNDRY/digital/90nm/dig/lib/fast.lib' ...
+Read 479 cells in library 'fast' 
+*** End library_loading (cpu=0.02min, real=0.02min, mem=31.0M, fe_cpu=0.63min, fe_real=1.85min, fe_mem=1069.2M) ***
+#% Begin Load netlist data ... (date=06/18 13:57:02, mem=1037.6M)
+*** Begin netlist parsing (mem=1069.2M) ***
+**WARN: (IMPVL-159):	Pin 'VDD' of cell 'XOR3XL' is defined in LEF but not in the timing library.
+Type 'man IMPVL-159' for more detail.
+**WARN: (IMPVL-159):	Pin 'VSS' of cell 'XOR3XL' is defined in LEF but not in the timing library.
+Type 'man IMPVL-159' for more detail.
+**WARN: (IMPVL-159):	Pin 'VDD' of cell 'XOR3X1' is defined in LEF but not in the timing library.
+Type 'man IMPVL-159' for more detail.
+**WARN: (IMPVL-159):	Pin 'VSS' of cell 'XOR3X1' is defined in LEF but not in the timing library.
+Type 'man IMPVL-159' for more detail.
+**WARN: (IMPVL-159):	Pin 'VSS' of cell 'XOR2XL' is defined in LEF but not in the timing library.
+Type 'man IMPVL-159' for more detail.
+**WARN: (IMPVL-159):	Pin 'VDD' of cell 'XOR2XL' is defined in LEF but not in the timing library.
+Type 'man IMPVL-159' for more detail.
+**WARN: (IMPVL-159):	Pin 'VSS' of cell 'XOR2X4' is defined in LEF but not in the timing library.
+Type 'man IMPVL-159' for more detail.
+**WARN: (IMPVL-159):	Pin 'VDD' of cell 'XOR2X4' is defined in LEF but not in the timing library.
+Type 'man IMPVL-159' for more detail.
+**WARN: (IMPVL-159):	Pin 'VSS' of cell 'XOR2X2' is defined in LEF but not in the timing library.
+Type 'man IMPVL-159' for more detail.
+**WARN: (IMPVL-159):	Pin 'VDD' of cell 'XOR2X2' is defined in LEF but not in the timing library.
+Type 'man IMPVL-159' for more detail.
+**WARN: (IMPVL-159):	Pin 'VSS' of cell 'XOR2X1' is defined in LEF but not in the timing library.
+Type 'man IMPVL-159' for more detail.
+**WARN: (IMPVL-159):	Pin 'VDD' of cell 'XOR2X1' is defined in LEF but not in the timing library.
+Type 'man IMPVL-159' for more detail.
+**WARN: (IMPVL-159):	Pin 'VSS' of cell 'XNOR3XL' is defined in LEF but not in the timing library.
+Type 'man IMPVL-159' for more detail.
+**WARN: (IMPVL-159):	Pin 'VDD' of cell 'XNOR3XL' is defined in LEF but not in the timing library.
+Type 'man IMPVL-159' for more detail.
+**WARN: (IMPVL-159):	Pin 'VDD' of cell 'XNOR3X1' is defined in LEF but not in the timing library.
+Type 'man IMPVL-159' for more detail.
+**WARN: (IMPVL-159):	Pin 'VSS' of cell 'XNOR3X1' is defined in LEF but not in the timing library.
+Type 'man IMPVL-159' for more detail.
+**WARN: (IMPVL-159):	Pin 'VSS' of cell 'XNOR2XL' is defined in LEF but not in the timing library.
+Type 'man IMPVL-159' for more detail.
+**WARN: (IMPVL-159):	Pin 'VDD' of cell 'XNOR2XL' is defined in LEF but not in the timing library.
+Type 'man IMPVL-159' for more detail.
+**WARN: (IMPVL-159):	Pin 'VSS' of cell 'XNOR2X4' is defined in LEF but not in the timing library.
+Type 'man IMPVL-159' for more detail.
+**WARN: (IMPVL-159):	Pin 'VDD' of cell 'XNOR2X4' is defined in LEF but not in the timing library.
+Type 'man IMPVL-159' for more detail.
+**WARN: (EMS-27):	Message (IMPVL-159) has exceeded the current message display limit of 20.
+To increase the message display limit, refer to the product command reference manual.
+Created 479 new cells from 2 timing libraries.
+Reading netlist ...
+Backslashed names will retain backslash and a trailing blank character.
+Reading verilog netlist '../synthesis/memory_netlist.v'
+
+*** Memory Usage v#1 (Current mem = 1069.164M, initial mem = 483.863M) ***
+*** End netlist parsing (cpu=0:00:00.0, real=0:00:00.0, mem=1069.2M) ***
+#% End Load netlist data ... (date=06/18 13:57:02, total cpu=0:00:00.0, real=0:00:00.0, peak res=1052.1M, current mem=1052.1M)
+Top level cell is memory.
+Hooked 958 DB cells to tlib cells.
+Starting recursive module instantiation check.
+No recursion found.
+Building hierarchical netlist for Cell memory ...
+*** Netlist is unique.
+** info: there are 967 modules.
+** info: there are 726 stdCell insts.
+
+*** Memory Usage v#1 (Current mem = 1126.578M, initial mem = 483.863M) ***
+**WARN: (IMPFP-3961):	The techSite 'pad' has no related standard cells in the LEF/OA library. The calculations for this site type cannot be made unless standard cell models of this type exist in the LEF/OA library. Ignore this warning if the SITE is not used by the library. Alternatively, remove the SITE definition for the LEF/OA library to avoid this message.
+Type 'man IMPFP-3961' for more detail.
+**WARN: (IMPFP-3961):	The techSite 'corner' has no related standard cells in the LEF/OA library. The calculations for this site type cannot be made unless standard cell models of this type exist in the LEF/OA library. Ignore this warning if the SITE is not used by the library. Alternatively, remove the SITE definition for the LEF/OA library to avoid this message.
+Type 'man IMPFP-3961' for more detail.
+Horizontal Layer M1 offset = 290 (derived)
+Vertical Layer M2 offset = 290 (derived)
+Start create_tracks
+Generated pitch 0.29 in Metal8 is different from 0.87 defined in technology file in unpreferred direction.
+Extraction setup Started 
+Initializing multi-corner RC extraction with 1 active RC Corners ...
+**WARN: (IMPEXT-6202):	In addition to the technology file, the capacitance table file is specified for all the RC corners. If the technology file  is already specified for all the RC corners, the capacitance table file is not required for preRoute and postRoute extraction. In a new session, the capacitance table files can be removed from the create_rc_corner command to enable the technology file to be used for preRoute and postRoute (effort level medium/high/signoff) extraction engines.
+Type 'man IMPEXT-6202' for more detail.
+Reading Capacitance Table File ../../../../install/FOUNDRY/digital/90nm/dig/captable/gpdk090.lef.extended.CapTbl ...
+Cap table was created using Encounter 05.20-s112_1.
+Process name: gpdk090_9l.
+Importing multi-corner RC tables ... 
+Summary of Active RC-Corners : 
+ 
+ Analysis View: worst_case
+    RC-Corner Name        : rc_corner
+    RC-Corner Index       : 0
+    RC-Corner Temperature : 25 Celsius
+    RC-Corner Cap Table   : '../../../../install/FOUNDRY/digital/90nm/dig/captable/gpdk090.lef.extended.CapTbl'
+    RC-Corner PreRoute Res Factor         : 1
+    RC-Corner PreRoute Cap Factor         : 1
+    RC-Corner PostRoute Res Factor        : 1 {1 1 1}
+    RC-Corner PostRoute Cap Factor        : 1 {1 1 1}
+    RC-Corner PostRoute XCap Factor       : 1 {1 1 1}
+    RC-Corner PreRoute Clock Res Factor   : 1	[Derived from postRoute_res (effortLevel low)]
+    RC-Corner PreRoute Clock Cap Factor   : 1	[Derived from postRoute_cap (effortLevel low)]
+    RC-Corner PostRoute Clock Cap Factor  : 1 {1 1 1} 	[Derived from postRoute_cap (effortLevel low)]
+    RC-Corner PostRoute Clock Res Factor  : 1 {1 1 1} 	[Derived from postRoute_res (effortLevel low)]
+    RC-Corner PostRoute Clock coupling capacitance Factor : 1 {1 1 1} 
+    RC-Corner Technology file: '../../../../install/FOUNDRY/digital/90nm/dig/qrc/gpdk090_9l.tch'
+ 
+ Analysis View: best_case
+    RC-Corner Name        : rc_corner
+    RC-Corner Index       : 0
+    RC-Corner Temperature : 25 Celsius
+    RC-Corner Cap Table   : '../../../../install/FOUNDRY/digital/90nm/dig/captable/gpdk090.lef.extended.CapTbl'
+    RC-Corner PreRoute Res Factor         : 1
+    RC-Corner PreRoute Cap Factor         : 1
+    RC-Corner PostRoute Res Factor        : 1 {1 1 1}
+    RC-Corner PostRoute Cap Factor        : 1 {1 1 1}
+    RC-Corner PostRoute XCap Factor       : 1 {1 1 1}
+    RC-Corner PreRoute Clock Res Factor   : 1	[Derived from postRoute_res (effortLevel low)]
+    RC-Corner PreRoute Clock Cap Factor   : 1	[Derived from postRoute_cap (effortLevel low)]
+    RC-Corner PostRoute Clock Cap Factor  : 1 {1 1 1} 	[Derived from postRoute_cap (effortLevel low)]
+    RC-Corner PostRoute Clock Res Factor  : 1 {1 1 1} 	[Derived from postRoute_res (effortLevel low)]
+    RC-Corner PostRoute Clock coupling capacitance Factor : 1 {1 1 1} 
+    RC-Corner Technology file: '../../../../install/FOUNDRY/digital/90nm/dig/qrc/gpdk090_9l.tch'
+Updating RC grid for preRoute extraction ...
+Initializing multi-corner capacitance tables ... 
+Initializing multi-corner resistance tables ...
+*Info: initialize multi-corner CTS.
+Reading timing constraints file '../synthesis/memory_tool.sdc' ...
+Current (total cpu=0:00:38.3, real=0:01:52, peak res=1350.2M, current mem=1350.2M)
+**WARN: (TCLCMD-1461):	Skipped unsupported command: set_units (File ../synthesis/memory_tool.sdc, Line 9).
+
+**WARN: (TCLCMD-1461):	Skipped unsupported command: set_units (File ../synthesis/memory_tool.sdc, Line 10).
+
+memory
+INFO (CTE): Reading of timing constraints file ../synthesis/memory_tool.sdc completed, with 2 WARNING
+Ending "Constraint file reading stats" (total cpu=0:00:00.0, real=0:00:00.0, peak res=1370.3M, current mem=1370.3M)
+Current (total cpu=0:00:38.3, real=0:01:52, peak res=1370.3M, current mem=1370.3M)
+Total number of combinational cells: 317
+Total number of sequential cells: 152
+Total number of tristate cells: 10
+Total number of level shifter cells: 0
+Total number of power gating cells: 0
+Total number of isolation cells: 0
+Total number of power switch cells: 0
+Total number of pulse generator cells: 0
+Total number of always on buffers: 0
+Total number of retention cells: 0
+List of usable buffers: BUFX2 BUFX12 BUFX16 BUFX20 CLKBUFX2 BUFX3 BUFX4 BUFX6 BUFX8 CLKBUFX12 CLKBUFX16 CLKBUFX20 CLKBUFX3 CLKBUFX4 CLKBUFX6 CLKBUFX8
+Total number of usable buffers: 16
+List of unusable buffers:
+Total number of unusable buffers: 0
+List of usable inverters: CLKINVX1 CLKINVX2 CLKINVX12 CLKINVX16 CLKINVX20 CLKINVX3 CLKINVX4 CLKINVX6 CLKINVX8 INVX1 INVX2 INVX12 INVX16 INVX20 INVXL INVX3 INVX4 INVX6 INVX8
+Total number of usable inverters: 19
+List of unusable inverters:
+Total number of unusable inverters: 0
+List of identified usable delay cells: DLY1X1 DLY1X4 DLY2X1 DLY2X4 DLY3X1 DLY3X4 DLY4X1 DLY4X4
+Total number of identified usable delay cells: 8
+List of identified unusable delay cells:
+Total number of identified unusable delay cells: 0
+
+*** Summary of all messages that are not suppressed in this session:
+Severity  ID               Count  Summary                                  
+WARNING   IMPLF-200            1  Pin '%s' in macro '%s' has no ANTENNAGAT...
+WARNING   IMPLF-105            2  The layer '%s' specified in SAMENET spac...
+WARNING   IMPFP-3961           2  The techSite '%s' has no related standar...
+WARNING   IMPEXT-6202          1  In addition to the technology file, the ...
+WARNING   IMPVL-159          958  Pin '%s' of cell '%s' is defined in LEF ...
+WARNING   TCLCMD-1461          2  Skipped unsupported command: %s          
+*** Message Summary: 966 warning(s), 0 error(s)
+
+<CMD> getIoFlowFlag
+<CMD> setIoFlowFlag 0
+<CMD> floorPlan -coreMarginsBy die -site gsclib090site -r 1 0.7 8 8 8 8
+**WARN: (IMPFP-3961):	The techSite 'pad' has no related standard cells in the LEF/OA library. The calculations for this site type cannot be made unless standard cell models of this type exist in the LEF/OA library. Ignore this warning if the SITE is not used by the library. Alternatively, remove the SITE definition for the LEF/OA library to avoid this message.
+Type 'man IMPFP-3961' for more detail.
+**WARN: (IMPFP-3961):	The techSite 'corner' has no related standard cells in the LEF/OA library. The calculations for this site type cannot be made unless standard cell models of this type exist in the LEF/OA library. Ignore this warning if the SITE is not used by the library. Alternatively, remove the SITE definition for the LEF/OA library to avoid this message.
+Type 'man IMPFP-3961' for more detail.
+Horizontal Layer M1 offset = 290 (derived)
+Vertical Layer M2 offset = 290 (derived)
+Start create_tracks
+Generated pitch 0.29 in Metal8 is different from 0.87 defined in technology file in unpreferred direction.
+<CMD> uiSetTool select
+<CMD> getIoFlowFlag
+<CMD> fit
+<CMD> clearGlobalNets
+<CMD> globalNetConnect VDD -type pgpin -pin VDD -instanceBasename * -hierarchicalInstance {}
+<CMD> globalNetConnect VSS -type pgpin -pin VSS -instanceBasename * -hierarchicalInstance {}
+<CMD> clearGlobalNets
+<CMD> globalNetConnect VDD -type pgpin -pin VDD -instanceBasename * -hierarchicalInstance {}
+<CMD> globalNetConnect VSS -type pgpin -pin VSS -instanceBasename * -hierarchicalInstance {}
+<CMD> set sprCreateIeRingOffset 1.0
+<CMD> set sprCreateIeRingThreshold 1.0
+<CMD> set sprCreateIeRingJogDistance 1.0
+<CMD> set sprCreateIeRingLayers {}
+<CMD> set sprCreateIeRingOffset 1.0
+<CMD> set sprCreateIeRingThreshold 1.0
+<CMD> set sprCreateIeRingJogDistance 1.0
+<CMD> set sprCreateIeRingLayers {}
+<CMD> set sprCreateIeStripeWidth 10.0
+<CMD> set sprCreateIeStripeThreshold 1.0
+<CMD> set sprCreateIeStripeWidth 10.0
+<CMD> set sprCreateIeStripeThreshold 1.0
+<CMD> set sprCreateIeRingOffset 1.0
+<CMD> set sprCreateIeRingThreshold 1.0
+<CMD> set sprCreateIeRingJogDistance 1.0
+<CMD> set sprCreateIeRingLayers {}
+<CMD> set sprCreateIeStripeWidth 10.0
+<CMD> set sprCreateIeStripeThreshold 1.0
+
+viaInitial starts at Thu Jun 18 13:59:31 2026
+viaInitial ends at Thu Jun 18 13:59:31 2026
+<CMD> setAddRingMode -ring_target default -extend_over_row 0 -ignore_rows 0 -avoid_short 0 -skip_crossing_trunks none -stacked_via_top_layer Metal9 -stacked_via_bottom_layer Metal1 -via_using_exact_crossover_size 1 -orthogonal_only true -skip_via_on_pin {  standardcell } -skip_via_on_wire_shape {  noshape }
+The ring targets are set to core/block ring wires.
+addRing command will consider rows while creating rings.
+addRing command will disallow rings to go over rows.
+addRing command will ignore shorts while creating rings.
+<CMD> addRing -nets {VDD VSS} -type core_rings -follow core -layer {top Metal9 bottom Metal9 left Metal8 right Metal8} -width {top 1.8 bottom 1.8 left 1.8 right 1.8} -spacing {top 0.5 bottom 0.5 left 0.5 right 0.5} -offset {top 1.8 bottom 1.8 left 1.8 right 1.8} -center 0 -threshold 0 -jog_distance 0 -snap_wire_center_to_grid None
+
+Loading cell geometries (cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 1634.2M)
+Ring generation is complete.
+vias are now being generated.
+addRing created 8 wires.
+ViaGen created 8 vias, deleted 0 via to avoid violation.
++--------+----------------+----------------+
+|  Layer |     Created    |     Deleted    |
++--------+----------------+----------------+
+| Metal8 |        4       |       NA       |
+|  Via8  |        8       |        0       |
+| Metal9 |        4       |       NA       |
++--------+----------------+----------------+
+<CMD> set sprCreateIeRingOffset 1.0
+<CMD> set sprCreateIeRingThreshold 1.0
+<CMD> set sprCreateIeRingJogDistance 1.0
+<CMD> set sprCreateIeRingLayers {}
+<CMD> set sprCreateIeRingOffset 1.0
+<CMD> set sprCreateIeRingThreshold 1.0
+<CMD> set sprCreateIeRingJogDistance 1.0
+<CMD> set sprCreateIeRingLayers {}
+<CMD> set sprCreateIeStripeWidth 10.0
+<CMD> set sprCreateIeStripeThreshold 1.0
+<CMD> set sprCreateIeStripeWidth 10.0
+<CMD> set sprCreateIeStripeThreshold 1.0
+<CMD> set sprCreateIeRingOffset 1.0
+<CMD> set sprCreateIeRingThreshold 1.0
+<CMD> set sprCreateIeRingJogDistance 1.0
+<CMD> set sprCreateIeRingLayers {}
+<CMD> set sprCreateIeStripeWidth 10.0
+<CMD> set sprCreateIeStripeThreshold 1.0
+<CMD> setAddStripeMode -ignore_block_check false -break_at none -route_over_rows_only false -rows_without_stripes_only false -extend_to_closest_target none -stop_at_last_wire_for_area false -partial_set_thru_domain false -ignore_nondefault_domains false -trim_antenna_back_to_shape none -spacing_type edge_to_edge -spacing_from_block 0 -stripe_min_length stripe_width -stacked_via_top_layer Metal9 -stacked_via_bottom_layer Metal1 -via_using_exact_crossover_size false -split_vias false -orthogonal_only true -allow_jog { padcore_ring  block_ring } -skip_via_on_pin {  standardcell } -skip_via_on_wire_shape {  noshape   }
+addStripe will allow jog to connect padcore ring and block ring.
+
+Stripes will stop at the boundary of the specified area.
+When breaking rings, the power planner will consider the existence of blocks.
+Stripes will not extend to closest target.
+The power planner will set stripe antenna targets to none (no trimming allowed).
+Stripes will not be created over regions without power planning wires.
+The entire stripe set will break at the domain if one of the nets is not in the domain.
+addStripe will break automatically at non-default domains when generating global stripes over the core area or default domain.
+Offset for stripe breaking is set to 0.
+<CMD> addStripe -nets {VDD VSS} -layer Metal9 -direction horizontal -width 1 -spacing 0.4 -number_of_sets 20 -start_from bottom -switch_layer_over_obs false -max_same_layer_jog_length 2 -padcore_ring_top_layer_limit Metal9 -padcore_ring_bottom_layer_limit Metal1 -block_ring_top_layer_limit Metal9 -block_ring_bottom_layer_limit Metal1 -use_wire_group 0 -snap_wire_center_to_grid None
+
+Initialize fgc environment(mem: 1637.5M) ...  fail and won't use fgc to check drc(cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 1637.5M)
+Loading cell geometries (cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 1637.5M)
+Loading wires (cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 1637.5M)
+Loading via instances (cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 1637.5M)
+Starting stripe generation ...
+Non-Default Mode Option Settings :
+  NONE
+Completing 10% stripe generation(cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 1637.5M)
+Completing 20% stripe generation(cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 1637.5M)
+Completing 30% stripe generation(cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 1637.5M)
+Completing 40% stripe generation(cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 1637.5M)
+Completing 50% stripe generation(cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 1637.5M)
+Completing 60% stripe generation(cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 1637.5M)
+Completing 70% stripe generation(cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 1637.5M)
+Completing 80% stripe generation(cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 1637.5M)
+Completing 90% stripe generation(cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 1637.5M)
+Stripe generation is complete.
+vias are now being generated.
+addStripe created 40 wires.
+ViaGen created 80 vias, deleted 0 via to avoid violation.
++--------+----------------+----------------+
+|  Layer |     Created    |     Deleted    |
++--------+----------------+----------------+
+|  Via8  |       80       |        0       |
+| Metal9 |       40       |       NA       |
++--------+----------------+----------------+
+<CMD> ui_view_box
+<CMD> ui_view_box
+<CMD> dbquery -area {-82.529 -6.6845 218.5385 140.3745} -objType inst
+<CMD> dbquery -area {-82.529 -6.6845 218.5385 140.3745} -objType regular
+<CMD> dbquery -area {-82.529 -6.6845 218.5385 140.3745} -objType special
+<CMD> zoomBox -64.00100 10.96950 191.90650 135.96950
+<CMD> zoomBox -48.25200 25.97450 169.26950 132.22500
+<CMD> zoomBox -34.86600 38.72950 150.02800 129.04250
+<CMD> zoomBox -13.81600 58.78650 119.77050 124.03800
+<CMD> zoomBox 1.39200 73.27750 97.90900 120.42200
+<CMD> zoomBox 12.38050 83.74750 82.11400 117.80950
+<CMD> zoomBox 25.63300 88.90900 62.03500 106.69000
+<CMD> zoomBox 7.48550 81.84050 89.52700 121.91450
+<CMD> zoomBox -33.41400 65.90950 151.48850 156.22650
+<CMD> zoomBox -61.70500 54.90950 194.21600 179.91650
+<CMD> zoomBox -100.93550 39.68600 253.28100 212.70600
+<CMD> zoomBox -130.25850 32.75100 286.46700 236.30400
+<CMD> zoomBox -164.75600 24.64650 325.50950 264.12100
+<CMD> zoomBox -76.01200 45.49400 225.07300 192.56150
+<CMD> zoomBox -54.82650 50.47100 201.09600 175.47850
+<CMD> fit
+<CMD> setAddStripeMode -ignore_block_check false -break_at none -route_over_rows_only false -rows_without_stripes_only false -extend_to_closest_target none -stop_at_last_wire_for_area false -partial_set_thru_domain false -ignore_nondefault_domains false -trim_antenna_back_to_shape none -spacing_type edge_to_edge -spacing_from_block 0 -stripe_min_length stripe_width -stacked_via_top_layer Metal9 -stacked_via_bottom_layer Metal1 -via_using_exact_crossover_size false -split_vias false -orthogonal_only true -allow_jog { padcore_ring  block_ring } -skip_via_on_pin {  standardcell } -skip_via_on_wire_shape {  noshape   }
+addStripe will allow jog to connect padcore ring and block ring.
+
+Stripes will stop at the boundary of the specified area.
+When breaking rings, the power planner will consider the existence of blocks.
+Stripes will not extend to closest target.
+The power planner will set stripe antenna targets to none (no trimming allowed).
+Stripes will not be created over regions without power planning wires.
+The entire stripe set will break at the domain if one of the nets is not in the domain.
+addStripe will break automatically at non-default domains when generating global stripes over the core area or default domain.
+Offset for stripe breaking is set to 0.
+<CMD> addStripe -nets {VDD VSS} -layer Metal8 -direction vertical -width 1 -spacing 0.4 -number_of_sets 20 -start_from left -switch_layer_over_obs false -max_same_layer_jog_length 2 -padcore_ring_top_layer_limit Metal9 -padcore_ring_bottom_layer_limit Metal1 -block_ring_top_layer_limit Metal9 -block_ring_bottom_layer_limit Metal1 -use_wire_group 0 -snap_wire_center_to_grid None
+
+Initialize fgc environment(mem: 2089.4M) ...  fail and won't use fgc to check drc(cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 2089.4M)
+Loading cell geometries (cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 2089.4M)
+Loading wires (cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 2089.4M)
+Loading via instances (cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 2089.4M)
+Starting stripe generation ...
+Non-Default Mode Option Settings :
+  NONE
+Completing 10% stripe generation(cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 2089.4M)
+Completing 20% stripe generation(cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 2089.4M)
+Completing 30% stripe generation(cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 2089.4M)
+Completing 40% stripe generation(cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 2089.4M)
+Completing 50% stripe generation(cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 2089.4M)
+Completing 60% stripe generation(cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 2089.4M)
+Completing 70% stripe generation(cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 2089.4M)
+Completing 80% stripe generation(cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 2089.4M)
+Completing 90% stripe generation(cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 2089.4M)
+Stripe generation is complete.
+vias are now being generated.
+addStripe created 40 wires.
+ViaGen created 880 vias, deleted 0 via to avoid violation.
++--------+----------------+----------------+
+|  Layer |     Created    |     Deleted    |
++--------+----------------+----------------+
+| Metal8 |       40       |       NA       |
+|  Via8  |       880      |        0       |
++--------+----------------+----------------+
+<CMD> setSrouteMode -viaConnectToShape { noshape }
+<CMD> sroute -connect { blockPin padPin padRing corePin floatingStripe } -layerChangeRange { Metal1(1) Metal9(9) } -blockPinTarget { nearestTarget } -padPinPortConnect { allPort oneGeom } -padPinTarget { nearestTarget } -corePinTarget { firstAfterRowEnd } -floatingStripeTarget { blockring padring ring stripe ringpin blockpin followpin } -allowJogging 1 -crossoverViaLayerRange { Metal1(1) Metal9(9) } -nets { VDD VSS } -allowLayerChange 1 -blockPin useLef -targetViaLayerRange { Metal1(1) Metal9(9) }
+*** Begin SPECIAL ROUTE on Thu Jun 18 14:14:44 2026 ***
+SPECIAL ROUTE ran on directory: /home/vlsi30/day16/memory/physical_design
+SPECIAL ROUTE ran on machine: cadence (Linux 4.18.0-425.3.1.el8.x86_64 x86_64 2.30Ghz)
+
+Begin option processing ...
+srouteConnectPowerBump set to false
+routeSelectNet set to "VDD VSS"
+routeSpecial set to true
+srouteBlockPin set to "useLef"
+srouteBottomLayerLimit set to 1
+srouteBottomTargetLayerLimit set to 1
+srouteConnectConverterPin set to false
+srouteCrossoverViaBottomLayer set to 1
+srouteCrossoverViaTopLayer set to 9
+srouteFloatingStripeTarget set to "blockring padring ring stripe ringpin blockpin followpin"
+srouteFollowCorePinEnd set to 3
+srouteJogControl set to "preferWithChanges differentLayer"
+srouteNoViaOnWireShape set to "padring ring stripe blockring blockpin coverpin blockwire corewire followpin iowire"
+sroutePadPinAllPorts set to true
+sroutePreserveExistingRoutes set to true
+srouteRoutePowerBarPortOnBothDir set to true
+srouteStopBlockPin set to "nearestTarget"
+srouteTopLayerLimit set to 9
+srouteTopTargetLayerLimit set to 9
+End option processing: cpu: 0:00:00, real: 0:00:00, peak: 3216.00 megs.
+
+Reading DB technology information...
+Finished reading DB technology information.
+Reading floorplan and netlist information...
+Finished reading floorplan and netlist information.
+Read in 19 layers, 9 routing layers, 1 overlap layer
+Read in 2 nondefault rules, 0 used
+Read in 487 macros, 22 used
+Read in 21 components
+  21 core components: 21 unplaced, 0 placed, 0 fixed
+Read in 85 logical pins
+Read in 85 nets
+Read in 2 special nets, 2 routed
+Read in 42 terminals
+2 nets selected.
+
+Begin power routing ...
+**WARN: (IMPSR-1254):	Unable to connect the specified objects, since block pins of the VDD net were not found in the design. Check netlist or change the parameter value to include block pins in the design.
+**WARN: (IMPSR-1256):	Unable to find any CORE class pad pin of the VDD net due to unavailability of the pin or check netlist in the routing area or layer. Change routing area or layer to include the expected pin or check netlist. Alternatively, change port class in the technology file.
+Type 'man IMPSR-1256' for more detail.
+Cannot find any AREAIO class pad pin of net VDD. Check net list, or change port class in the technology file, or change option to include pin in given range.
+**WARN: (IMPSR-1254):	Unable to connect the specified objects, since block pins of the VSS net were not found in the design. Check netlist or change the parameter value to include block pins in the design.
+**WARN: (IMPSR-1256):	Unable to find any CORE class pad pin of the VSS net due to unavailability of the pin or check netlist in the routing area or layer. Change routing area or layer to include the expected pin or check netlist. Alternatively, change port class in the technology file.
+Type 'man IMPSR-1256' for more detail.
+Cannot find any AREAIO class pad pin of net VSS. Check net list, or change port class in the technology file, or change option to include pin in given range.
+CPU time for VDD FollowPin 0 seconds
+CPU time for VSS FollowPin 0 seconds
+  Number of IO ports routed: 0
+  Number of Block ports routed: 0
+  Number of Stripe ports routed: 0
+  Number of Core ports routed: 92
+  Number of Pad ports routed: 0
+  Number of Power Bump ports routed: 0
+  Number of Followpin connections: 46
+End power routing: cpu: 0:00:00, real: 0:00:00, peak: 3234.00 megs.
+
+
+
+ Begin updating DB with routing results ...
+ Updating DB with 0 via definition ...Extracting standard cell pins and blockage ...... 
+Pin and blockage extraction finished
+
+sroute created 138 wires.
+ViaGen created 644 vias, deleted 0 via to avoid violation.
++--------+----------------+----------------+
+|  Layer |     Created    |     Deleted    |
++--------+----------------+----------------+
+| Metal1 |       138      |       NA       |
+|  Via1  |       92       |        0       |
+|  Via2  |       92       |        0       |
+|  Via3  |       92       |        0       |
+|  Via4  |       92       |        0       |
+|  Via5  |       92       |        0       |
+|  Via6  |       92       |        0       |
+|  Via7  |       92       |        0       |
++--------+----------------+----------------+
+<CMD> setLayerPreference Metal9 -isSelectable 0
+<CMD> setLayerPreference Metal9 -isVisible 0
+<CMD> setLayerPreference Metal9 -isVisible 1
+<CMD> setLayerPreference Metal9 -isSelectable 1
+<CMD> setLayerPreference Metal9 -isVisible 0
+<CMD> setLayerPreference Via8 -isVisible 0
+<CMD> setLayerPreference Metal8 -isVisible 0
+<CMD> zoomBox -20.07400 29.21400 164.82000 119.52700
+<CMD> zoomBox -5.16400 37.78400 151.99600 114.55000
+<CMD> zoomBox 18.28200 51.26000 131.83000 106.72350
+<CMD> zoomBox 25.67200 60.55100 107.71050 100.62350
+<CMD> zoomBox 8.05100 38.40050 165.21300 115.16750
+<CMD> zoomBox -15.11100 9.28250 240.80200 134.28550
+<CMD> zoomBox -38.16650 -19.70050 316.03950 153.31450
+<CMD> zoomBox 30.22300 19.68450 247.75100 125.93800
+<CMD> zoomBox 69.53550 43.68450 203.12600 108.93800
+<CMD> zoomBox 86.89750 54.28400 183.41750 101.43000
+<CMD> zoomBox 99.44200 61.94200 169.17800 96.00500
+<CMD> zoomBox 112.04500 69.63600 154.87200 90.55500
+<CMD> zoomBox 117.61050 73.03350 148.55350 88.14800
+<CMD> zoomBox 121.63150 75.48850 143.98850 86.40900
+<CMD> zoomBox 126.00850 77.64350 137.68000 83.34450
+<CMD> zoomBox 127.83250 78.55850 135.00100 82.06000
+<CMD> fit
+<CMD> zoomBox -9.02250 46.03500 148.13800 122.80150
+<CMD> zoomBox 21.95400 68.25150 118.47100 115.39600
+<CMD> zoomBox 35.63450 78.06300 105.36900 112.12550
+<CMD> zoomBox 40.97750 81.89500 100.25200 110.84800
+<CMD> zoomBox 45.51900 85.15150 95.90250 109.76200
+<CMD> zoomBox 52.66050 90.27350 89.06300 108.05450
+<CMD> zoomBox 55.44950 92.27350 86.39200 107.38750
+<CMD> zoomBox 35.63150 78.06050 105.37150 112.12550
+<CMD> zoomBox -9.03200 46.02800 148.14550 122.80250
+<CMD> zoomBox -109.69100 -26.16500 244.54850 146.86650
+<CMD> zoomBox -92.32300 -7.29250 208.78150 139.78450
+<CMD> zoomBox -54.34400 33.97400 130.57250 124.29800
+<CMD> zoomBox -45.27700 43.88750 111.90200 120.66300
+<CMD> zoomBox -31.01900 59.47650 82.54250 114.94650
+<CMD> zoomBox -10.36950 82.05400 40.01950 106.66700
+<CMD> zoomBox -2.49650 90.66250 23.80700 103.51050
+<CMD> zoomBox 0.82050 94.29000 16.97450 102.18050
+<CMD> zoomBox 2.85750 96.51750 12.77850 101.36350
+<CMD> zoomBox 2.28450 95.89150 13.95700 101.59300
+<CMD> zoomBox 1.61100 95.15500 15.34350 101.86300
+<CMD> zoomBox 0.81850 94.28850 16.97500 102.18050
+<CMD> zoomBox -0.11400 93.26950 18.89400 102.55400
+<CMD> zoomBox 2.32550 96.90650 10.76050 101.02650
+<CMD> zoomBox 3.08600 98.02800 8.26650 100.55850
+<CMD> zoomBox 2.62050 97.34200 9.79100 100.84450
+<CMD> zoomBox 0.51850 94.24300 16.67900 102.13650
+<CMD> zoomBox -4.22000 87.25750 32.20300 105.04850
+<CMD> zoomBox -14.89700 71.51300 67.19250 111.61050
+<CMD> zoomBox -32.64150 45.48600 124.61850 122.30100
+<CMD> zoomBox -66.95350 -4.37300 234.30800 142.78100
+<CMD> zoomBox -112.05750 -69.91400 378.49800 169.70200
+<CMD> setLayerPreference Metal9 -isVisible 1
+<CMD> setLayerPreference Metal8 -isVisible 1
+<CMD> setLayerPreference Via8 -isVisible 1
+<CMD> fit
+<CMD> zoomBox -62.89150 2.56250 193.01650 127.56300
+<CMD> zoomBox -82.52950 -6.68500 218.53900 140.37450
+<CMD> zoomBox -19.95150 22.78250 137.20850 99.54850
+<CMD> zoomBox -0.98800 31.71250 112.56100 87.17650
+<CMD> zoomBox -32.01250 17.10350 152.88250 107.41700
+<CMD> zoomBox -19.15650 36.86550 94.39250 92.32950
+<CMD> zoomBox -16.08750 41.58300 80.42950 88.72750
+<CMD> zoomBox -13.47900 45.59300 68.56050 85.66600
+<CMD> zoomBox -11.26150 49.00150 58.47200 83.06350
+<CMD> zoomBox -0.26800 52.51700 50.11450 77.12700
+<CMD> zoomBox 7.67400 55.05700 44.07650 72.83800
+<CMD> fit
+<CMD> saveDesign memory_powerplan.enc
+#% Begin save design ... (date=06/18 14:19:45, mem=1173.4M)
+% Begin Save ccopt configuration ... (date=06/18 14:19:45, mem=1173.4M)
+% End Save ccopt configuration ... (date=06/18 14:19:45, total cpu=0:00:00.0, real=0:00:00.0, peak res=1176.5M, current mem=1176.5M)
+% Begin Save netlist data ... (date=06/18 14:19:45, mem=1176.8M)
+Writing Binary DB to memory_powerplan.enc.dat/memory.v.bin in single-threaded mode...
+% End Save netlist data ... (date=06/18 14:19:45, total cpu=0:00:00.0, real=0:00:00.0, peak res=1177.2M, current mem=1177.2M)
+Saving symbol-table file ...
+Saving congestion map file memory_powerplan.enc.dat/memory.route.congmap.gz ...
+% Begin Save AAE data ... (date=06/18 14:19:46, mem=1177.2M)
+Saving AAE Data ...
+% End Save AAE data ... (date=06/18 14:19:46, total cpu=0:00:00.0, real=0:00:00.0, peak res=1177.6M, current mem=1177.6M)
+Saving preference file memory_powerplan.enc.dat/gui.pref.tcl ...
+Saving mode setting ...
+Saving global file ...
+% Begin Save floorplan data ... (date=06/18 14:19:46, mem=1193.1M)
+Saving floorplan file ...
+% End Save floorplan data ... (date=06/18 14:19:46, total cpu=0:00:00.0, real=0:00:00.0, peak res=1193.3M, current mem=1193.3M)
+Saving PG file memory_powerplan.enc.dat/memory.pg.gz, version#2, (Created by Innovus v21.15-s110_1 on Thu Jun 18 14:19:46 2026)
+*** Completed savePGFile (cpu=0:00:00.0 real=0:00:00.0 mem=1754.3M) ***
+Saving Drc markers ...
+... No Drc file written since there is no markers found.
+% Begin Save placement data ... (date=06/18 14:19:46, mem=1193.3M)
+** Saving stdCellPlacement_binary (version# 2) ...
+Save Adaptive View Pruning View Names to Binary file
+% End Save placement data ... (date=06/18 14:19:46, total cpu=0:00:00.0, real=0:00:00.0, peak res=1194.1M, current mem=1194.1M)
+% Begin Save routing data ... (date=06/18 14:19:46, mem=1194.1M)
+Saving route file ...
+*** Completed saveRoute (cpu=0:00:00.0 real=0:00:00.0 mem=1754.3M) ***
+% End Save routing data ... (date=06/18 14:19:46, total cpu=0:00:00.0, real=0:00:00.0, peak res=1194.3M, current mem=1194.3M)
+Saving property file memory_powerplan.enc.dat/memory.prop
+*** Completed saveProperty (cpu=0:00:00.0 real=0:00:00.0 mem=1757.3M) ***
+% Begin Save power constraints data ... (date=06/18 14:19:46, mem=1196.6M)
+% End Save power constraints data ... (date=06/18 14:19:46, total cpu=0:00:00.0, real=0:00:00.0, peak res=1196.6M, current mem=1196.6M)
+rc_corner
+rc_corner
+rc_corner
+Generated self-contained design memory_powerplan.enc.dat
+#% End save design ... (date=06/18 14:19:47, total cpu=0:00:00.4, real=0:00:02.0, peak res=1200.0M, current mem=1200.0M)
+*** Message Summary: 0 warning(s), 0 error(s)
+
+<CMD> saveDesign memory_powerplan.enc
+#% Begin save design ... (date=06/18 14:19:47, mem=1200.1M)
+% Begin Save ccopt configuration ... (date=06/18 14:19:47, mem=1200.1M)
+% End Save ccopt configuration ... (date=06/18 14:19:47, total cpu=0:00:00.0, real=0:00:00.0, peak res=1200.1M, current mem=1200.1M)
+% Begin Save netlist data ... (date=06/18 14:19:47, mem=1200.1M)
+Writing Binary DB to memory_powerplan.enc.dat.tmp/memory.v.bin in single-threaded mode...
+% End Save netlist data ... (date=06/18 14:19:47, total cpu=0:00:00.0, real=0:00:00.0, peak res=1200.1M, current mem=1200.1M)
+Saving symbol-table file ...
+Saving congestion map file memory_powerplan.enc.dat.tmp/memory.route.congmap.gz ...
+% Begin Save AAE data ... (date=06/18 14:19:47, mem=1200.1M)
+Saving AAE Data ...
+% End Save AAE data ... (date=06/18 14:19:47, total cpu=0:00:00.0, real=0:00:00.0, peak res=1200.1M, current mem=1200.1M)
+Saving preference file memory_powerplan.enc.dat.tmp/gui.pref.tcl ...
+Saving mode setting ...
+Saving global file ...
+% Begin Save floorplan data ... (date=06/18 14:19:47, mem=1200.1M)
+Saving floorplan file ...
+% End Save floorplan data ... (date=06/18 14:19:47, total cpu=0:00:00.0, real=0:00:00.0, peak res=1200.1M, current mem=1200.1M)
+Saving PG file memory_powerplan.enc.dat.tmp/memory.pg.gz, version#2, (Created by Innovus v21.15-s110_1 on Thu Jun 18 14:19:47 2026)
+*** Completed savePGFile (cpu=0:00:00.0 real=0:00:00.0 mem=1786.1M) ***
+Saving Drc markers ...
+... No Drc file written since there is no markers found.
+% Begin Save placement data ... (date=06/18 14:19:47, mem=1200.1M)
+** Saving stdCellPlacement_binary (version# 2) ...
+Save Adaptive View Pruning View Names to Binary file
+% End Save placement data ... (date=06/18 14:19:47, total cpu=0:00:00.0, real=0:00:00.0, peak res=1200.1M, current mem=1200.1M)
+% Begin Save routing data ... (date=06/18 14:19:48, mem=1200.1M)
+Saving route file ...
+*** Completed saveRoute (cpu=0:00:00.0 real=0:00:00.0 mem=1786.1M) ***
+% End Save routing data ... (date=06/18 14:19:48, total cpu=0:00:00.0, real=0:00:00.0, peak res=1200.1M, current mem=1200.1M)
+Saving property file memory_powerplan.enc.dat.tmp/memory.prop
+*** Completed saveProperty (cpu=0:00:00.0 real=0:00:00.0 mem=1789.1M) ***
+% Begin Save power constraints data ... (date=06/18 14:19:48, mem=1200.1M)
+% End Save power constraints data ... (date=06/18 14:19:48, total cpu=0:00:00.0, real=0:00:00.0, peak res=1200.1M, current mem=1200.1M)
+rc_corner
+rc_corner
+rc_corner
+Generated self-contained design memory_powerplan.enc.dat.tmp
+#% End save design ... (date=06/18 14:19:48, total cpu=0:00:00.3, real=0:00:01.0, peak res=1200.4M, current mem=1200.4M)
+*** Message Summary: 0 warning(s), 0 error(s)
+
+<CMD> addEndCap -preCap FILL1 -postCap FILL1 -prefix ENDCAP
+**WARN: (IMPSP-5224):	Option '-preCap' for command addEndCap is obsolete and has been replaced by 'setEndCapMode -rightEdge cell_name'. 
+The obsolete option still works in this release but to avoid this warning and to ensure compatibility with future releases, 
+update your script to use 'setEndCapMode -rightEdge cell_name' and 'addEndCap'.
+**WARN: (IMPSP-5224):	Option '-postcap' for command addEndCap is obsolete and has been replaced by 'setEndCapMode -leftEdge cell_name'. 
+The obsolete option still works in this release but to avoid this warning and to ensure compatibility with future releases, 
+update your script to use 'setEndCapMode -rightEdge cell_name' and 'addEndCap'.
+**WARN: (IMPSP-5534):	'setEndCapMode -leftEdge' and 'setEndCapMode -rightEdge' are using the same endcap cells
+**WARN: (IMPSP-5534):	'setEndCapMode -leftBottomCorner' and 'setEndCapMode -rightBottomCorner' are using the same endcap cells
+**WARN: (IMPSP-5534):	'setEndCapMode -leftTopCorner' and 'setEndCapMode -rightTopCorner' are using the same endcap cells
+Estimated cell power/ground rail width = 0.408 um
+Minimum row-size in sites for endcap insertion = 3.
+Minimum number of sites for row blockage       = 1.
+Inserted 45 pre-endcap <FILL1> cells (prefix ENDCAP).
+Inserted 45 post-endcap <FILL1> cells (prefix ENDCAP).
+For 90 new insts, <CMD> zoomBox -47.25700 20.62450 170.26450 126.87500
+<CMD> zoomBox -33.48250 31.29000 151.41150 121.60300
+<CMD> zoomBox -47.25800 20.62400 170.26450 126.87500
+<CMD> zoomBox -63.46550 8.07600 192.44450 133.07750
+<CMD> zoomBox -82.53200 -6.68600 218.53900 140.37450
+<CMD> setLayerPreference node_layer -isVisible 0
+<CMD> zoomBox -57.71050 20.87250 159.81350 127.12400
+<CMD> zoomBox -32.77300 48.56000 100.81350 113.81150
+<CMD> zoomBox -17.45950 65.56300 64.58000 105.63600
+<CMD> zoomBox -8.05500 76.00500 42.32850 100.61550
+<CMD> zoomBox -2.27950 82.41800 28.66300 97.53200
+<CMD> zoomBox 0.27150 85.25050 22.62750 96.17050
+<CMD> zoomBox 2.11450 87.29650 18.26750 95.18650
+<CMD> zoomBox 3.96650 89.35250 13.88650 94.19800
+<CMD> zoomBox 5.72750 90.56350 11.82000 93.53950
+<CMD> zoomBox 6.80850 91.30750 10.55100 93.13550
+<CMD> zoomBox 7.47250 91.76450 9.77150 92.88750
+<CMD> zoomBox 7.76600 91.96600 9.42750 92.77750
+<CMD> zoomBox 7.47250 91.76400 9.77250 92.88750
+<CMD> zoomBox 7.32650 91.68750 10.03250 93.00950
+<CMD> zoomBox 7.47150 91.76350 9.77250 92.88750
+<CMD> gui_select -rect {8.51850 92.38400 8.51850 92.55350}
+<CMD> zoomBox 6.44500 91.19650 10.85450 93.35050
+<CMD> zoomBox 5.08850 90.45150 12.26950 93.95900
+<CMD> zoomBox 3.68150 89.95050 13.62100 94.80550
+<CMD> zoomBox 5.04950 90.44150 12.23050 93.94900
+<CMD> zoomBox 6.42300 90.93400 10.83400 93.08850
+<CMD> zoomBox 7.02950 91.15150 10.21700 92.70850
+<CMD> zoomBox 7.26650 91.23650 9.97600 92.56000
+<CMD> zoomBox 7.46800 91.30900 9.77100 92.43400
+<CMD> zoomBox 7.95500 91.41650 9.36950 92.10750
+<CMD> zoomBox 8.32500 91.50000 9.06400 91.86100
+<CMD> zoomBox 8.43500 91.53150 8.96950 91.79250
+<CMD> zoomBox 8.51300 91.56150 8.89900 91.75000
+<CMD> zoomBox 8.25750 91.46150 9.13050 91.88800
+<CMD> zoomBox 7.83900 91.29800 9.51100 92.11450
+<CMD> zoomBox 7.68450 91.23700 9.65150 92.19800
+<CMD> fit
+<CMD> setRouteMode -earlyGlobalHonorMsvRouteConstraint false -earlyGlobalRoutePartitionPinGuide true
+<CMD> setEndCapMode -reset
+<CMD> setEndCapMode -boundary_tap false
+<CMD> setNanoRouteMode -quiet -droutePostRouteSpreadWire 1
+<CMD> setNanoRouteMode -quiet -droutePostRouteWidenWireRule LEFDefaultRouteSpec_gpdk090
+<CMD> setNanoRouteMode -quiet -timingEngine {}
+<CMD> setUsefulSkewMode -noBoundary false -maxAllowedDelay 1
+<CMD> setPlaceMode -reset
+<CMD> setPlaceMode -congEffort auto -timingDriven 1 -clkGateAware 1 -powerDriven 0 -ignoreScan 1 -reorderScan 1 -ignoreSpare 0 -placeIOPins 1 -moduleAwareSpare 0 -preserveRouting 1 -rmAffectedRouting 0 -checkRoute 0 -swapEEQ 0
+<CMD> setPlaceMode -fp false
+<CMD> place_design
+*** placeDesign #1 [begin] : totSession cpu/real = 0:02:40.4/0:31:30.5 (0.1), mem = 1803.7M
+Extracting standard cell pins and blockage ...... 
+Pin and blockage extraction finished
+*** Starting placeDesign default flow ***
+*** Start deleteBufferTree ***
+Info: Detect buffers to remove automatically.
+Analyzing netlist ...
+Updating netlist
+
+*summary: 0 instances (buffers/inverters) removed
+*** Finish deleteBufferTree (0:00:00.2) ***
+**INFO: Enable pre-place timing setting for timing analysis
+Set Using Default Delay Limit as 101.
+**WARN: (IMPDC-1629):	The default delay limit was set to 101. This is less than the default of 1000 and may result in inaccurate delay calculation for nets with a fanout higher than the setting.  If needed, the default delay limit may be adjusted by running the command 'set delaycal_use_default_delay_limit'.
+Set Default Net Delay as 0 ps.
+Set Default Net Load as 0 pF. 
+Set Default Input Pin Transition as 1 ps.
+**INFO: Analyzing IO path groups for slack adjustment
+Effort level <high> specified for reg2reg_tmp.48748 path_group
+AAE_INFO: opIsDesignInPostRouteState() is 0
+AAE DB initialization (MEM=1917.23 CPU=0:00:00.0 REAL=0:00:00.0) 
+#################################################################################
+# Design Stage: PreRoute
+# Design Name: memory
+# Design Mode: 90nm
+# Analysis Mode: MMMC Non-OCV 
+# Parasitics Mode: No SPEF/RCDB 
+# Signoff Settings: SI Off 
+#################################################################################
+Calculate delays in BcWc mode...
+Start delay calculation (fullDC) (1 T). (MEM=1920.24)
+Total number of fetched objects 779
+End delay calculation. (MEM=2076.85 CPU=0:00:00.1 REAL=0:00:00.0)
+End delay calculation (fullDC). (MEM=2076.85 CPU=0:00:00.2 REAL=0:00:00.0)
+**INFO: Disable pre-place timing setting for timing analysis
+Set Using Default Delay Limit as 1000.
+Set Default Net Delay as 1000 ps.
+Set Default Input Pin Transition as 0.1 ps.
+Set Default Net Load as 0.5 pF. 
+**INFO: Pre-place timing setting for timing analysis already disabled
+Deleted 0 physical inst  (cell - / prefix -).
+Did not delete 90 physical insts as they were marked preplaced.
+INFO: #ExclusiveGroups=0
+INFO: There are no Exclusive Groups.
+*** Starting "NanoPlace(TM) placement v#6 (mem=2059.3M)" ...
+*** Build Buffered Sizing Timing Model
+(cpu=0:00:02.1 mem=2067.3M) ***
+*** Build Virtual Sizing Timing Model
+(cpu=0:00:02.3 mem=2067.3M) ***
+No user-set net weight.
+Net fanout histogram:
+2		: 666 (85.5%) nets
+3		: 39 (5.0%) nets
+4     -	14	: 49 (6.3%) nets
+15    -	39	: 24 (3.1%) nets
+40    -	79	: 0 (0.0%) nets
+80    -	159	: 0 (0.0%) nets
+160   -	319	: 0 (0.0%) nets
+320   -	639	: 1 (0.1%) nets
+640   -	1279	: 0 (0.0%) nets
+1280  -	2559	: 0 (0.0%) nets
+2560  -	5119	: 0 (0.0%) nets
+5120+		: 0 (0.0%) nets
+Options: timingDriven clkGateAware ignoreScan pinGuide congEffort=auto gpeffort=medium 
+**WARN: (IMPSP-9042):	Scan chains were not defined, -place_global_ignore_scan option will be ignored.
+Define the scan chains before using this option.
+Type 'man IMPSP-9042' for more detail.
+#std cell=816 (90 fixed + 726 movable) #buf cell=0 #inv cell=9 #block=0 (0 floating + 0 preplaced)
+#ioInst=0 #net=779 #term=3100 #term/net=3.98, #fixedIo=0, #floatIo=0, #fixedPin=0, #floatPin=85
+stdCell: 816 single + 0 double + 0 multi
+Total standard cell length = 3.7938 (mm), area = 0.0099 (mm^2)
+Average module density = 0.702.
+Density for the design = 0.702.
+       = stdcell_area 12992 sites (9834 um^2) / alloc_area 18495 sites (13999 um^2).
+Pin Density = 0.1668.
+            = total # of pins 3100 / total area 18585.
+=== lastAutoLevel = 7 
+Clock gating cells determined by native netlist tracing.
+Iteration  1: Total net bbox = 4.042e-10 (2.55e-10 1.50e-10)
+              Est.  stn bbox = 4.300e-10 (2.70e-10 1.60e-10)
+              cpu = 0:00:00.0 real = 0:00:00.0 mem = 2090.5M
+Iteration  2: Total net bbox = 4.042e-10 (2.55e-10 1.50e-10)
+              Est.  stn bbox = 4.300e-10 (2.70e-10 1.60e-10)
+              cpu = 0:00:00.0 real = 0:00:00.0 mem = 2090.5M
+Iteration  3: Total net bbox = 1.784e+01 (7.37e+00 1.05e+01)
+              Est.  stn bbox = 3.097e+01 (1.28e+01 1.82e+01)
+              cpu = 0:00:00.0 real = 0:00:00.0 mem = 2094.0M
+Active setup views:
+    worst_case
+Iteration  4: Total net bbox = 1.172e+04 (6.13e+03 5.59e+03)
+              Est.  stn bbox = 1.428e+04 (7.40e+03 6.88e+03)
+              cpu = 0:00:00.0 real = 0:00:00.0 mem = 2094.0M
+Iteration  5: Total net bbox = 5.060e+03 (2.55e+03 2.51e+03)
+              Est.  stn bbox = 1.040e+04 (5.24e+03 5.16e+03)
+              cpu = 0:00:00.2 real = 0:00:00.0 mem = 2094.0M
+Iteration  6: Total net bbox = 7.724e+03 (3.71e+03 4.01e+03)
+              Est.  stn bbox = 1.370e+04 (6.59e+03 7.11e+03)
+              cpu = 0:00:00.3 real = 0:00:00.0 mem = 2095.0M
+Iteration  7: Total net bbox = 9.769e+03 (4.70e+03 5.07e+03)
+              Est.  stn bbox = 1.599e+04 (7.71e+03 8.28e+03)
+              cpu = 0:00:00.5 real = 0:00:01.0 mem = 2095.0M
+Iteration  8: Total net bbox = 1.079e+04 (5.19e+03 5.60e+03)
+              Est.  stn bbox = 1.702e+04 (8.20e+03 8.82e+03)
+              cpu = 0:00:00.4 real = 0:00:00.0 mem = 2096.0M
+Iteration  9: Total net bbox = 9.865e+03 (4.58e+03 5.29e+03)
+              Est.  stn bbox = 1.591e+04 (7.45e+03 8.45e+03)
+              cpu = 0:00:00.2 real = 0:00:00.0 mem = 2097.0M
+Iteration 10: Total net bbox = 1.262e+04 (6.15e+03 6.48e+03)
+              Est.  stn bbox = 1.873e+04 (9.06e+03 9.67e+03)
+              cpu = 0:00:00.0 real = 0:00:01.0 mem = 2097.0M
+Iteration 11: Total net bbox = 1.262e+04 (6.15e+03 6.48e+03)
+              Est.  stn bbox = 1.873e+04 (9.06e+03 9.67e+03)
+              cpu = 0:00:00.0 real = 0:00:00.0 mem = 2097.0M
+Iteration 12: Total net bbox = 1.262e+04 (6.15e+03 6.48e+03)
+              Est.  stn bbox = 1.873e+04 (9.06e+03 9.67e+03)
+              cpu = 0:00:00.0 real = 0:00:00.0 mem = 2097.0M
+*** cost = 1.262e+04 (6.15e+03 6.48e+03) (cpu for global=0:00:01.8) real=0:00:03.0***
+Info: 0 clock gating cells identified, 0 (on average) moved 0/2
+Solver runtime cpu: 0:00:01.6 real: 0:00:01.6
+Core Placement runtime cpu: 0:00:01.7 real: 0:00:02.0
+**WARN: (IMPSP-9025):	No scan chain specified/traced.
+Type 'man IMPSP-9025' for more detail.
+*** Starting refinePlace (0:02:46 mem=2097.0M) ***
+Total net bbox length = 1.267e+04 (6.206e+03 6.463e+03) (ext = 2.510e+03)
+Move report: Detail placement moves 726 insts, mean move: 1.21 um, max move: 21.01 um 
+	Max move on inst (g18803__6131): (30.00, 37.12) --> (9.28, 36.83)
+	Runtime: CPU: 0:00:00.1 REAL: 0:00:00.0 MEM: 2121.0MB
+Summary Report:
+Instances move: 726 (out of 726 movable)
+Instances flipped: 0
+Mean displacement: 1.21 um
+Max displacement: 21.01 um (Instance: g18803__6131) (29.9955, 37.121) -> (9.28, 36.83)
+	Length: 6 sites, height: 1 rows, site name: gsclib090site, cell type: AND2X1
+Total net bbox length = 1.202e+04 (5.563e+03 6.452e+03) (ext = 2.301e+03)
+Runtime: CPU: 0:00:00.1 REAL: 0:00:00.0 MEM: 2121.0MB
+*** Finished refinePlace (0:02:46 mem=2121.0M) ***
+*** End of Placement (cpu=0:00:04.4, real=0:00:06.0, mem=2121.0M) ***
+default core: bins with density > 0.750 =  8.00 % ( 2 / 25 )
+Density distribution unevenness ratio = 2.631%
+*** Free Virtual Timing Model ...(mem=2121.0M)
+Starting IO pin assignment...
+The design is not routed. Using placement based method for pin assignment.
+Completed IO pin assignment.
+**INFO: Enable pre-place timing setting for timing analysis
+Set Using Default Delay Limit as 101.
+**WARN: (IMPDC-1629):	The default delay limit was set to 101. This is less than the default of 1000 and may result in inaccurate delay calculation for nets with a fanout higher than the setting.  If needed, the default delay limit may be adjusted by running the command 'set delaycal_use_default_delay_limit'.
+Set Default Net Delay as 0 ps.
+Set Default Net Load as 0 pF. 
+**INFO: Analyzing IO path groups for slack adjustment
+Effort level <high> specified for reg2reg_tmp.48748 path_group
+AAE_INFO: opIsDesignInPostRouteState() is 0
+#################################################################################
+# Design Stage: PreRoute
+# Design Name: memory
+# Design Mode: 90nm
+# Analysis Mode: MMMC Non-OCV 
+# Parasitics Mode: No SPEF/RCDB 
+# Signoff Settings: SI Off 
+#################################################################################
+Calculate delays in BcWc mode...
+Start delay calculation (fullDC) (1 T). (MEM=2109.52)
+Total number of fetched objects 779
+End delay calculation. (MEM=2152.73 CPU=0:00:00.1 REAL=0:00:00.0)
+End delay calculation (fullDC). (MEM=2152.73 CPU=0:00:00.1 REAL=0:00:00.0)
+**INFO: Disable pre-place timing setting for timing analysis
+Set Using Default Delay Limit as 1000.
+Set Default Net Delay as 1000 ps.
+Set Default Net Load as 0.5 pF. 
+Info: Disable timing driven in postCTS congRepair.
+
+Starting congRepair ...
+[NR-eGR] Track table information for default rule: 
+[NR-eGR] Metal1 has single uniform track structure
+[NR-eGR] Metal2 has single uniform track structure
+[NR-eGR] Metal3 has single uniform track structure
+[NR-eGR] Metal4 has single uniform track structure
+[NR-eGR] Metal5 has single uniform track structure
+[NR-eGR] Metal6 has single uniform track structure
+[NR-eGR] Metal7 has single uniform track structure
+[NR-eGR] Metal8 has single uniform track structure
+[NR-eGR] Metal9 has single uniform track structure
+[NR-eGR] Read 3220 PG shapes
+[NR-eGR] Read 0 clock shapes
+[NR-eGR] Read 0 other shapes
+[NR-eGR] #Routing Blockages  : 0
+[NR-eGR] #Instance Blockages : 0
+[NR-eGR] #PG Blockages       : 3220
+[NR-eGR] #Halo Blockages     : 0
+[NR-eGR] #Boundary Blockages : 0
+[NR-eGR] #Clock Blockages    : 0
+[NR-eGR] #Other Blockages    : 0
+[NR-eGR] Num Prerouted Nets = 0  Num Prerouted Wires = 0
+[NR-eGR] Read 779 nets ( ignored 0 )
+[NR-eGR] There are 1 clock nets ( 0 with NDR ).
+[NR-eGR] ============ Routing rule table ============
+[NR-eGR] Rule id: 0  Nets: 779
+[NR-eGR] ========================================
+[NR-eGR] 
+[NR-eGR] Layer group 1: route 779 net(s) in layer range [2, 9]
+[NR-eGR] Early Global Route overflow of layer group 1: 0.00% H + 0.00% V. EstWL: 2.073645e+04um
+[NR-eGR] Congestion Analysis By layer: (blocked Gcells are excluded) 
+[NR-eGR]                        OverCon            
+[NR-eGR]                         #Gcell     %Gcell
+[NR-eGR]        Layer             (1-0)    OverCon
+[NR-eGR] ----------------------------------------------
+[NR-eGR]  Metal1 ( 1)         0( 0.00%)   ( 0.00%) 
+[NR-eGR]  Metal2 ( 2)         0( 0.00%)   ( 0.00%) 
+[NR-eGR]  Metal3 ( 3)         0( 0.00%)   ( 0.00%) 
+[NR-eGR]  Metal4 ( 4)         0( 0.00%)   ( 0.00%) 
+[NR-eGR]  Metal5 ( 5)         0( 0.00%)   ( 0.00%) 
+[NR-eGR]  Metal6 ( 6)         0( 0.00%)   ( 0.00%) 
+[NR-eGR]  Metal7 ( 7)         0( 0.00%)   ( 0.00%) 
+[NR-eGR]  Metal8 ( 8)         0( 0.00%)   ( 0.00%) 
+[NR-eGR]  Metal9 ( 9)         0( 0.00%)   ( 0.00%) 
+[NR-eGR] ----------------------------------------------
+[NR-eGR]        Total         0( 0.00%)   ( 0.00%) 
+[NR-eGR] 
+[NR-eGR] Overflow after Early Global Route 0.00% H + 0.00% V
+Early Global Route congestion estimation runtime: 0.03 seconds, mem = 2151.2M
+Local HotSpot Analysis: normalized max congestion hotspot area = 0.00, normalized total congestion hotspot area = 0.00 (area is in unit of 4 std-cell row bins)
+Skipped repairing congestion.
+[NR-eGR]                 Length (um)  Vias 
+[NR-eGR] ----------------------------------
+[NR-eGR]  Metal1  (1H)             0  3015 
+[NR-eGR]  Metal2  (2V)         10758  4598 
+[NR-eGR]  Metal3  (3H)          9886   137 
+[NR-eGR]  Metal4  (4V)           674    12 
+[NR-eGR]  Metal5  (5H)           138     3 
+[NR-eGR]  Metal6  (6V)             0     3 
+[NR-eGR]  Metal7  (7H)            38     0 
+[NR-eGR]  Metal8  (8V)             0     0 
+[NR-eGR]  Metal9  (9H)             0     0 
+[NR-eGR] ----------------------------------
+[NR-eGR]          Total        21494  7768 
+[NR-eGR] --------------------------------------------------------------------------
+[NR-eGR] Total half perimeter of net bounding box: 11959um
+[NR-eGR] Total length: 21494um, number of vias: 7768
+[NR-eGR] --------------------------------------------------------------------------
+[NR-eGR] Total eGR-routed clock nets wire length: 1811um, number of vias: 1055
+[NR-eGR] --------------------------------------------------------------------------
+Early Global Route wiring runtime: 0.02 seconds, mem = 2089.2M
+Tdgp not successfully inited but do clear! skip clearing
+End of congRepair (cpu=0:00:00.1, real=0:00:00.0)
+*** Finishing placeDesign default flow ***
+**placeDesign ... cpu = 0: 0: 6, real = 0: 0: 7, mem = 2089.2M **
+Tdgp not successfully inited but do clear! skip clearing
+
+*** Summary of all messages that are not suppressed in this session:
+Severity  ID               Count  Summary                                  
+WARNING   IMPDC-1629           2  The default delay limit was set to %d. T...
+WARNING   IMPSP-9025           1  No scan chain specified/traced.          
+WARNING   IMPSP-9042           1  Scan chains were not defined, -place_glo...
+*** Message Summary: 4 warning(s), 0 error(s)
+
+*** placeDesign #1 [finish] : cpu/real = 0:00:06.2/0:00:07.4 (0.8), totSession cpu/real = 0:02:46.6/0:31:37.9 (0.1), mem = 2089.2M
+<CMD> setLayerPreference node_layer -isVisible 1
+<CMD> zoomBox -13.06750 13.98950 171.82650 104.30250
+<CMD> zoomBox 17.61000 23.12000 151.19650 88.37150
+<CMD> zoomBox -13.06850 13.98850 171.82700 104.30250
+<CMD> zoomBox -32.57800 8.18200 184.94650 114.43350
+<CMD> zoomBox -82.53300 -6.68650 218.53950 140.37500
+<CMD> setLayerPreference node_layer -isVisible 0
+**ERROR: (IMPSYT-6000):	No Object Selected.
+<CMD> setLayerPreference node_layer -isVisible 1
+<CMD> setLayerPreference node_layer -isVisible 0
+<CMD> selectInst {mem_reg[1][6]}
+<CMD> deselectAll
+<CMD> selectInst {mem_reg[4][3]}
+<CMD> ui_view_box
+<CMD> ui_view_box
+<CMD> dbquery -area {-82.533 -6.6865 218.5395 140.375} -objType inst
+<CMD> dbquery -area {-82.533 -6.6865 218.5395 140.375} -objType regular
+<CMD> dbquery -area {-82.533 -6.6865 218.5395 140.375} -objType special
+<CMD> selectInst {mem_reg[4][3]}
+<CMD> deselectInst {mem_reg[4][3]}
+<CMD> deselectInst {mem_reg[4][3]}
+<CMD> selectInst {mem_reg[8][13]}
+<CMD> deselectInst {mem_reg[8][13]}
+<CMD> deselectInst {mem_reg[8][13]}
+<CMD> gui_select -rect {57.13050 93.52150 68.33950 74.69050}
+<CMD> deselectAll
+<CMD> gui_select -rect {45.02500 101.36800 75.06500 43.97800}
+<CMD> deselectAll
+<CMD> zoomBox -285.03950 -74.95850 291.72150 206.76550
+<CMD> zoomBox -169.79800 -34.08150 246.91200 169.46400
+<CMD> zoomBox -86.36450 -4.20400 214.70900 142.85800
+<CMD> zoomBox -0.03250 26.93800 184.86450 117.25250
+<CMD> zoomBox 38.09600 40.69200 171.68400 105.94400
+<CMD> zoomBox 65.64300 50.62850 162.16100 97.77350
+<CMD> zoomBox 85.54650 57.80750 155.28100 91.87000
+<CMD> zoomBox 99.92650 62.99450 150.31000 87.60500
+<CMD> zoomBox 110.31550 66.74200 146.71850 84.52350
+<CMD> zoomBox 117.82100 69.44950 144.12300 82.29700
+<CMD> selectObject IO_Pin {data_in[7]}
+<CMD> deselectAll
+<CMD> selectObject IO_Pin {data_in[7]}
+<CMD> zoomBox 99.79700 62.64700 159.07800 91.60350
+<CMD> zoomBox 79.43850 54.96450 175.96900 102.11550
+<CMD> zoomBox 31.12900 36.73300 216.05150 127.06000
+<CMD> zoomBox -32.46300 12.76700 268.65450 159.85050
+<CMD> zoomBox -95.93100 -11.17350 320.84100 192.40250
+<CMD> zoomBox 21.55050 31.84350 239.10850 138.11150
+<CMD> zoomBox 82.87550 54.29850 196.44300 109.77150
+<CMD> zoomBox 108.01900 63.42800 177.76400 97.49550
+<CMD> zoomBox 123.42900 69.01850 166.26150 89.94050
+<CMD> zoomBox 116.51100 59.38200 213.04550 106.53500
+<CMD> zoomBox 110.22350 52.02400 243.83550 117.28800
+<CMD> fit
+<CMD> setLayerPreference node_layer -isVisible 1
+<CMD> zoomBox -287.11450 -95.72550 289.63750 185.99400
+<CMD> zoomBox -170.44450 -50.44000 246.25850 153.10200
+<CMD> zoomBox -53.23050 -4.94350 202.67750 120.05700
+<CMD> zoomBox 18.86800 23.01800 176.02800 99.78400
+<CMD> zoomBox 64.29450 43.21500 160.81050 90.35900
+<CMD> zoomBox 92.22000 55.72150 151.49300 84.67400
+<CMD> zoomBox 109.34850 63.29750 145.75050 81.07850
+<CMD> zoomBox 119.91150 68.14000 142.26750 79.06000
+<CMD> zoomBox 127.94750 71.82400 139.61800 77.52450
+<CMD> zoomBox 124.58100 68.48950 146.93900 79.41050
+<CMD> zoomBox 127.29850 71.18150 141.02850 77.88800
+<CMD> zoomBox 128.96650 72.83400 137.39900 76.95300
+<CMD> zoomBox 130.00300 73.86600 135.18250 76.39600
+<CMD> zoomBox 130.80650 74.68650 133.51100 76.00750
+<CMD> zoomBox 131.14900 75.03650 132.81000 75.84800
+<CMD> zoomBox 130.24600 74.11400 134.65350 76.26700
+<CMD> zoomBox 128.43000 72.25800 138.36550 77.11100
+<CMD> fit
+<CMD> setLayerPreference node_layer -isVisible 0
+<CMD> deselectAll
+<CMD> selectInst {mem_reg[10][26]}
+<CMD> deselectAll
+<CMD> selectInst {mem_reg[10][26]}
+<CMD> zoomBox -145.38350 -41.47000 271.31900 162.07200
+<CMD> zoomBox -82.52900 -6.68450 218.53850 140.37450
+<CMD> zoomBox -37.11700 18.44700 180.40450 124.69750
+<CMD> gui_select -rect {68.97100 81.45250 78.52700 78.05100}
+<CMD> deselectAll
+<CMD> zoomBox -5.63150 27.38750 179.26250 117.70050
+<CMD> zoomBox -74.16100 7.92800 181.74800 132.92900
+<CMD> zoomBox 33.84150 42.34650 130.35750 89.49050
+<CMD> zoomBox 22.30050 38.66850 135.84900 94.13200
+<CMD> deselectAll
+<CMD> selectInst {mem_reg[3][6]}
+<CMD> zoomBox 33.23250 42.11750 129.74900 89.26200
+<CMD> zoomBox 42.52450 45.04950 124.56400 85.12250
+<CMD> zoomBox 22.30000 38.66800 135.84900 94.13200
+<CMD> zoomBox -5.69300 29.83500 151.46850 106.60200
+<CMD> zoomBox 3.26950 40.03150 116.81900 95.49550
+<CMD> zoomBox 6.77000 44.01350 103.28700 91.15800
+<CMD> zoomBox 14.42250 52.72050 73.69750 81.67400
+<CMD> zoomBox 16.24950 54.79950 66.63350 79.41000
+<CMD> zoomBox 19.12250 58.06800 55.52550 75.84950
+<CMD> zoomBox 20.24350 59.34450 51.18700 74.45900
+<CMD> deselectAll
+<CMD> selectInst g18838
+<CMD> zoomBox 22.00200 61.51850 44.35850 72.43850
+<CMD> zoomBox 22.68850 62.36750 41.69150 71.64950
+<CMD> zoomBox 23.76750 63.70250 37.49750 70.40900
+<CMD> zoomBox 24.71000 65.64700 33.14250 69.76600
+<CMD> zoomBox 24.94250 66.11450 32.11050 69.61600
+<CMD> zoomBox 24.69500 65.64050 33.12850 69.76000
+<CMD> zoomBox 24.40450 65.08300 34.32650 69.92950
+<CMD> zoomBox 24.06250 64.42700 35.73600 70.12900
+<CMD> zoomBox 23.66050 63.65550 37.39400 70.36350
+<CMD> zoomBox 23.18750 62.74750 39.34500 70.64000
+<CMD> zoomBox 21.97600 60.42250 44.34100 71.34700
+<CMD> zoomBox 21.20600 58.94400 47.51800 71.79650
+<CMD> zoomBox 19.23400 55.15900 55.65250 72.94800
+<CMD> zoomBox 16.50450 49.91950 66.91200 74.54150
+<CMD> zoomBox 12.72750 42.66800 82.49550 76.74700
+<CMD> zoomBox 4.17400 26.24850 117.78150 81.74100
+<CMD> zoomBox -4.33850 9.90550 152.90400 86.71200
+<CMD> zoomBox -23.61300 -27.09900 232.43050 97.96750
+<CMD> zoomBox -43.61800 -91.90650 373.30550 111.74350
+<CMD> zoomBox -76.19350 -197.43450 602.69750 134.17550
+<CMD> zoomBox -43.61800 -91.90650 373.30550 111.74350
+<CMD> zoomBox -23.61300 -27.09900 232.43050 97.96750
+<CMD> zoomBox -11.32800 12.70050 145.91550 89.50750
+<CMD> gui_select -rect {8.22500 76.04300 17.00650 74.98900}
+<CMD> deselectAll
+<CMD> fit
+<CMD> selectInst g18558__4319
+<CMD> zoomBox -175.51850 -86.53650 401.23250 195.18250
+<CMD> zoomBox -250.23800 -150.70000 548.03300 239.22250
+<CMD> zoomBox -121.53350 -40.17850 295.16900 163.36350
+<CMD> zoomBox -82.53000 -6.68500 218.53850 140.37450
+<CMD> zoomBox -43.34450 26.96450 141.55050 117.27800
+<CMD> zoomBox -19.27950 47.62950 94.27000 103.09350
+<CMD> zoomBox -8.65100 56.75600 73.38850 96.82900
+<CMD> zoomBox -0.97200 63.35050 58.30150 92.30300
+<CMD> zoomBox 2.02700 65.92550 52.40950 90.53550
+<CMD> zoomBox 4.57550 68.11450 47.40100 89.03300
+<CMD> zoomBox 6.74150 69.97500 43.14400 87.75600
+<CMD> zoomBox 8.58350 71.55650 39.52550 86.67050
+<CMD> zoomBox 18.28550 76.01650 34.43850 83.90650
+<CMD> zoomBox 23.35000 78.34450 31.78250 82.46350
+<CMD> zoomBox 18.28350 76.01500 34.43950 83.90650
+<CMD> zoomBox 11.62350 72.95350 37.93200 85.80400
+<CMD> fit
+<CMD> zoomBox -33.13200 33.60500 124.02850 110.37150
+<CMD> zoomBox -12.31600 50.58350 84.20100 97.72800
+<CMD> zoomBox 3.51950 63.49950 53.90250 88.10950
+<CMD> zoomBox 8.31850 67.41350 44.72050 85.19450
+<CMD> zoomBox 10.19250 68.94200 41.13450 84.05600
+<CMD> zoomBox 13.13950 71.34600 35.49550 82.26600
+<CMD> zoomBox 14.29050 72.28500 33.29300 81.56700
+<CMD> zoomBox 15.26900 73.08300 31.42100 80.97250
+<CMD> zoomBox 17.34100 75.03600 27.26100 79.88150
+<CMD> zoomBox 15.26650 73.08250 31.41950 80.97250
+<CMD> zoomBox 11.88800 69.90100 38.19100 82.74900
+<CMD> zoomBox 6.38650 64.71900 49.21800 85.64050
+<CMD> fit
+<CMD> zoomBox -82.52900 -6.68450 218.53850 140.37450
+<CMD> zoomBox -146.05600 -66.26750 344.18300 173.19400
+<CMD> zoomBox -100.27000 -23.21650 253.92800 149.79450
+<CMD> zoomBox -5.72250 54.18650 179.17150 144.49950
+<CMD> zoomBox 51.71650 101.21000 133.75600 141.28300
+<CMD> zoomBox 75.45500 118.11600 118.28050 139.03450
+<CMD> zoomBox 89.09650 126.16350 111.45250 137.08350
+<CMD> zoomBox 94.96050 129.24650 108.69050 135.95300
+<CMD> zoomBox 98.31000 130.94300 106.74200 135.06150
+<CMD> zoomBox 100.81250 132.21200 105.21400 134.36200
+<CMD> zoomBox 102.11250 132.87300 104.41050 133.99550
+<CMD> panPage -1 0
+<CMD> panPage -1 0
+<CMD> panPage -1 0
+<CMD> panPage -1 0
+<CMD> panPage -1 0
+<CMD> panPage -1 0
+<CMD> panPage -1 0
+<CMD> panPage -1 0
+<CMD> panPage -1 0
+<CMD> panPage -1 0
+<CMD> panPage -1 0
+<CMD> panPage -1 0
+<CMD> panPage -1 0
+<CMD> panPage -1 0
+<CMD> panPage -1 0
+<CMD> panPage -1 0
+<CMD> panPage -1 0
+<CMD> panPage -1 0
+<CMD> panPage -1 0
+<CMD> panPage -1 0
+<CMD> panPage -1 0
+<CMD> panPage -1 0
+<CMD> panPage -1 0
+<CMD> panPage -1 0
+<CMD> panPage -1 0
+<CMD> panPage -1 0
+<CMD> panPage -1 0
+<CMD> panPage -1 0
+<CMD> panPage -1 0
+<CMD> panPage -1 0
+<CMD> panPage -1 0
+<CMD> panPage -1 0
+<CMD> panPage -1 0
+<CMD> panPage -1 0
+<CMD> panPage -1 0
+<CMD> panPage -1 0
+<CMD> panPage -1 0
+<CMD> panPage -1 0
+<CMD> panPage -1 0
+<CMD> panPage -1 0
+<CMD> panPage -1 0
+<CMD> panPage 1 0
+<CMD> panPage 1 0
+<CMD> panPage -1 0
+<CMD> panPage -1 0
+<CMD> panPage -1 0
+<CMD> panPage -1 0
+<CMD> panPage -1 0
+<CMD> panPage -1 0
+<CMD> panPage -1 0
+<CMD> panPage -1 0
+<CMD> panPage -1 0
+<CMD> panPage -1 0
+<CMD> deselectAll
+<CMD> selectObject IO_Pin clk
+<CMD> fit
+<CMD> zoomBox -167.46750 -76.92750 322.77200 162.53400
+<CMD> zoomBox -100.86250 -25.69950 253.33650 147.31200
+<CMD> zoomBox -53.95000 10.89400 201.95900 135.89500
+<CMD> zoomBox -6.81850 47.65800 150.34200 124.42450
+<CMD> zoomBox 4.43300 56.43450 138.01950 121.68600
+<CMD> zoomBox 29.03550 75.62550 111.07500 115.69850
+<CMD> zoomBox -6.82050 47.65700 150.34200 124.42450
+<CMD> zoomBox -35.63150 25.18350 181.89450 131.43600
+<CMD> zoomBox -75.50900 -5.92150 225.56550 141.14100
+<CMD> saveDesign memory_placement.enc
+#% Begin save design ... (date=06/18 14:39:57, mem=1004.7M)
+% Begin Save ccopt configuration ... (date=06/18 14:39:57, mem=1004.7M)
+% End Save ccopt configuration ... (date=06/18 14:39:57, total cpu=0:00:00.0, real=0:00:00.0, peak res=1005.5M, current mem=1005.5M)
+% Begin Save netlist data ... (date=06/18 14:39:57, mem=1005.5M)
+Writing Binary DB to memory_placement.enc.dat/memory.v.bin in single-threaded mode...
+% End Save netlist data ... (date=06/18 14:39:57, total cpu=0:00:00.0, real=0:00:00.0, peak res=1008.0M, current mem=1008.0M)
+Saving symbol-table file ...
+Saving congestion map file memory_placement.enc.dat/memory.route.congmap.gz ...
+% Begin Save AAE data ... (date=06/18 14:39:57, mem=1008.3M)
+Saving AAE Data ...
+% End Save AAE data ... (date=06/18 14:39:58, total cpu=0:00:00.0, real=0:00:00.0, peak res=1008.3M, current mem=1008.3M)
+Saving preference file memory_placement.enc.dat/gui.pref.tcl ...
+Saving mode setting ...
+Saving global file ...
+% Begin Save floorplan data ... (date=06/18 14:39:58, mem=1009.4M)
+Saving floorplan file ...
+% End Save floorplan data ... (date=06/18 14:39:58, total cpu=0:00:00.0, real=0:00:00.0, peak res=1009.9M, current mem=1009.9M)
+Saving PG file memory_placement.enc.dat/memory.pg.gz, version#2, (Created by Innovus v21.15-s110_1 on Thu Jun 18 14:39:58 2026)
+*** Completed savePGFile (cpu=0:00:00.0 real=0:00:00.0 mem=2382.5M) ***
+Saving Drc markers ...
+... No Drc file written since there is no markers found.
+% Begin Save placement data ... (date=06/18 14:39:58, mem=1009.9M)
+** Saving stdCellPlacement_binary (version# 2) ...
+Save Adaptive View Pruning View Names to Binary file
+% End Save placement data ... (date=06/18 14:39:58, total cpu=0:00:00.0, real=0:00:00.0, peak res=1010.2M, current mem=1010.2M)
+% Begin Save routing data ... (date=06/18 14:39:58, mem=1010.2M)
+Saving route file ...
+*** Completed saveRoute (cpu=0:00:00.0 real=0:00:00.0 mem=2382.5M) ***
+% End Save routing data ... (date=06/18 14:39:58, total cpu=0:00:00.0, real=0:00:00.0, peak res=1010.4M, current mem=1010.4M)
+Saving property file memory_placement.enc.dat/memory.prop
+*** Completed saveProperty (cpu=0:00:00.0 real=0:00:00.0 mem=2385.5M) ***
+% Begin Save power constraints data ... (date=06/18 14:39:58, mem=1011.1M)
+% End Save power constraints data ... (date=06/18 14:39:58, total cpu=0:00:00.0, real=0:00:00.0, peak res=1011.1M, current mem=1011.1M)
+rc_corner
+rc_corner
+rc_corner
+Generated self-contained design memory_placement.enc.dat
+#% End save design ... (date=06/18 14:39:59, total cpu=0:00:00.6, real=0:00:02.0, peak res=1012.3M, current mem=1012.3M)
+*** Message Summary: 0 warning(s), 0 error(s)
+

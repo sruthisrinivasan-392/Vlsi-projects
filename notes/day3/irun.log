@@ -1,0 +1,59 @@
+irun(64): 15.20-s086: (c) Copyright 1995-2020 Cadence Design Systems, Inc.
+TOOL:	irun(64)	15.20-s086: Started on Jun 09, 2026 at 11:33:53 IST
+irun
+	alu.v
+	alu_tb.v
+	-access +rwc
+	-gui
+file: alu.v
+	module worklib.alu:v
+		errors: 0, warnings: 0
+file: alu_tb.v
+	module worklib.aru_tb:v
+		errors: 0, warnings: 0
+		Caching library 'worklib' ....... Done
+	Elaborating the design hierarchy:
+	Top level design units:
+		aru_tb
+	Building instance overlay tables: .................... Done
+	Generating native compiled code:
+		worklib.alu:v <0x63c32aae>
+			streams:   1, words:  1294
+		worklib.aru_tb:v <0x42112955>
+			streams:   6, words:  7396
+	Building instance specific data structures.
+	Loading native compiled code:     .................... Done
+	Design hierarchy summary:
+		             Instances  Unique
+		Modules:             2       2
+		Registers:           4       4
+		Vectored wires:      4       -
+		Always blocks:       1       1
+		Initial blocks:      2       2
+		Pseudo assignments:  3       3
+	Writing initial simulation snapshot: worklib.aru_tb:v
+
+-------------------------------------
+Relinquished control to SimVision...
+ncsim> 
+ncsim> source /home/install/INCISIVE152/tools/inca/files/ncsimrc
+ncsim> database -open waves -into waves.shm -default
+Created default SHM database waves
+ncsim> probe -create -shm aru_tb.a aru_tb.b aru_tb.ctrl aru_tb.y
+Created probe 1
+ncsim> run
+Time =                    0 A = 0001 B = Control = 1 x
+Time =                   10 A = 0001 B = Control = 1 1
+Time =                   20 A = 0001 B = Control = 1 2
+Time =                   30 A = 0001 B = Control = 1 3
+Time =                   40 A = 0001 B = Control = 1 4
+Time =                   50 A = 0001 B = Control = 1 5
+Time =                   60 A = 0001 B = Control = 1 6
+Time =                   70 A = 0001 B = Control = 1 7
+Time =                   80 A = 0001 B = Control = 1 8
+Time =                   90 A = 0001 B = Control = 1 9
+Time =                  100 A = 0001 B = Control = 110
+Time =                  110 A = 0001 B = Control = 111
+Time =                  120 A = 0001 B = Control = 112
+ncsim: *W,RNQUIE: Simulation is complete.
+ncsim> TOOL:	irun(64)	15.20-s086: Exiting on Jun 09, 2026 at 11:37:13 IST  (total: 00:03:20)

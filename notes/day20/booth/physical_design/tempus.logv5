@@ -1,0 +1,940 @@
+[06/23 13:14:44      0s] 
+[06/23 13:14:44      0s] Cadence Tempus(TM) Timing Solution.
+[06/23 13:14:44      0s] Copyright 2024 Cadence Design Systems, Inc. All rights reserved worldwide.
+[06/23 13:14:44      0s] 
+[06/23 13:14:44      0s] Version:	v23.13-s084_1, built Fri Nov 22 17:27:06 PST 2024
+[06/23 13:14:44      0s] Options:	
+[06/23 13:14:44      0s] Date:		Tue Jun 23 13:14:44 2026
+[06/23 13:14:44      0s] Host:		cadence (x86_64 w/Linux 4.18.0-425.3.1.el8.x86_64) (8cores*16cpus*Intel(R) Core(TM) i7-10875H CPU @ 2.30GHz 16384KB)
+[06/23 13:14:44      0s] OS:		Red Hat Enterprise Linux 8.7 (Ootpa)
+[06/23 13:14:44      0s] 
+[06/23 13:14:44      0s] License:
+[06/23 13:14:44      0s] 		[13:14:44.094089] Configured Lic search path (23.02-s006): 5280@cadence
+
+[06/23 13:14:44      0s] 		tpsxl	Tempus Timing Signoff Solution XL	23.1	checkout succeeded
+[06/23 13:14:44      0s] 		16 CPU jobs allowed with the current license(s). Use set_multi_cpu_usage to set your required CPU count.
+[06/23 13:14:45      0s] **ERROR: (IMPOAX-8053):	Could not open shared library libtempusoax22.so : liboaPrivateCDS.so: cannot open shared object file: No such file or directory.
+**ERROR: (IMPOAX-8053):	Could not open shared library libcdsSkillPcell.so : /home/install/SSV231/tools.lnx86/ssv/bin/64bit/../../../lib/64bit/libcdsSkillPcell.so: undefined symbol: _ZTIN12OpenAccess_413oaFSComponentE.
+**ERROR: (IMPOAX-8033):	OpenAccess features will be disabled in this session.
+Memory management switch to non-aggressive memory release mode.
+[06/23 13:14:55     11s] 
+[06/23 13:14:55     11s] OS Mmap count monitoring thread starts. Limit of OS Mmap count is 65530
+[06/23 13:14:55     11s] 
+[06/23 13:14:56     11s] Reset Parastics called with the command setExtractRCMode -reset@(#)CDS: Tempus Timing Solution v23.13-s084_1 (64bit) 11/22/2024 17:27 (Linux 3.10.0-693.el7.x86_64)
+[06/23 13:14:58     13s] @(#)CDS: NanoRoute 23.13-s084_1 NR241029-2256/23_13-UB (database version 18.20.652) {superthreading v2.20}
+[06/23 13:14:58     13s] @(#)CDS: AAE 23.13-s022 (64bit) 11/22/2024 (Linux 3.10.0-693.el7.x86_64)
+[06/23 13:14:58     13s] @(#)CDS: CTE 23.13-s030_1 () Nov 21 2024 17:17:38 ( )
+[06/23 13:14:58     13s] @(#)CDS: SYNTECH 23.13-s009_1 () Oct 30 2024 09:17:13 ( )
+[06/23 13:14:58     13s] @(#)CDS: CPE v23.13-s064
+[06/23 13:14:58     13s] @(#)CDS: OA 22.61-p018 Fri Oct 18 10:45:49 2024
+[06/23 13:14:58     13s] @(#)CDS: SGN 23.10-d005 (03-Oct-2023) (64 bit executable, TkQt5.15.9)
+[06/23 13:14:58     13s] @(#)CDS: RCDB 11.15.0
+[06/23 13:14:58     13s] @(#)CDS: STYLUS 23.14-s002_1 (09/11/2024 13:54 PDT)
+[06/23 13:14:58     13s] Change the soft stacksize limit to 0.2%RAM (63 mbytes). Set global soft_stack_size_limit to change the value.
+[06/23 13:14:58     13s] **INFO: (TMPDIR-1001): The environment variable TMPDIR is not set.
+Create and set the environment variable TMPDIR to '/tmp/ssv_tmpdir_727482_498d8d1a-999e-4496-943e-8a6e8fce9ce9_f6d2re'.
+environment variable TMPDIR is '/tmp/ssv_tmpdir_727482_498d8d1a-999e-4496-943e-8a6e8fce9ce9_f6d2re'.
+[06/23 13:14:59     14s] <CMD> ::stop_gui -keepDgui
+[06/23 13:14:59     15s] Has not load the powerDB, will keep enalbed
+[06/23 13:14:59     15s] Has not load the powerDB, will keep enalbed
+[06/23 13:16:23     20s] <CMD> read_design -physical_data hold_optimize.enc.dat/ booth_multiplier
+[06/23 13:16:23     20s] # Tempus Timing Solution 23.13-s084_1
+[06/23 13:16:23     20s] # read_design
+[06/23 13:16:23     20s] #  -physical_data 1
+[06/23 13:16:23     20s] #  dir hold_optimize.enc.dat/ booth_multiplier
+[06/23 13:16:24     20s] Set Default Input Pin Transition as 0.1 ps.
+[06/23 13:16:24     20s] **WARN: (IMPSYC-141):	You have set -timerMode to 1 so the setting in the config file will be ignored.
+[06/23 13:16:24     21s] Loading design 'booth_multiplier' saved by 'Innovus' '21.15-s110_1' on 'Tue Jun 23 11:06:54 2026'.
+[06/23 13:16:24     21s] **ERROR: (IMPOAX-820):	The OpenAccess (OA) features are disabled in the current session of Tempus Timing Solution because the oax shared library could not be loaded properly. This could be because your installation was not properly configured. To enable OA features, exit the current session and re-launch Tempus Timing Solution either after fixing your installation by running the Configure Installation phase, or after setting the OA_HOME variable to point to a proper OA installation. Check the "OpenAccess Installation and Configuration Guide" manual for more information.
+
+**ERROR: (IMPOAX-850):	oaxCreateCdsLibArray command cannot be run as OpenAccess features are disabled in this session.
+#% Begin Load MMMC data ... (date=06/23 13:16:24, mem=1675.8M)
+[06/23 13:16:24     21s] **WARN: (UI-638):	The option '-cap_table' to the command 'create_rc_corner' is ignored since it is related to the RC extraction mode which Tempus does not support. Tempus only supports the signoff QRC extraction.
+[06/23 13:16:24     21s] Number of views requested 1 are allowed with the current licenses... continuing with set_analysis_view.
+[06/23 13:16:24     21s] #% End Load MMMC data ... (date=06/23 13:16:24, total cpu=0:00:00.0, real=0:00:00.0, peak res=1675.9M, current mem=1675.9M)
+[06/23 13:16:24     21s] 
+[06/23 13:16:24     21s] Loading LEF file /home/vlsi30/day19/physical_design/hold_optimize.enc.dat/libs/lef/gsclib090_translated.lef ...
+[06/23 13:16:24     21s] **WARN: (IMPLF-105):	The layer 'Oxide' specified in SAMENET spacing
+[06/23 13:16:24     21s] rule is neither a routing layer nor a cut layer. The rule is ignored.
+[06/23 13:16:24     21s] **WARN: (IMPLF-105):	The layer 'Poly' specified in SAMENET spacing
+[06/23 13:16:24     21s] rule is neither a routing layer nor a cut layer. The rule is ignored.
+[06/23 13:16:24     21s] Set DBUPerIGU to M2 pitch 580.
+[06/23 13:16:24     21s] **WARN: (IMPLF-200):	Pin 'A' in macro 'ANTENNA' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[06/23 13:16:24     21s] 
+##  Check design process and node:  
+##  Both design process and tech node are not set.
+
+[06/23 13:16:24     21s] Loading view definition file from /home/vlsi30/day19/physical_design/hold_optimize.enc.dat/viewDefinition.tcl
+[06/23 13:16:24     21s] Reading slow timing library '/home/install/FOUNDRY/digital/90nm/dig/lib/slow.lib' ...
+[06/23 13:16:25     22s] Read 479 cells in library 'slow' 
+[06/23 13:16:25     22s] Reading fast timing library '/home/install/FOUNDRY/digital/90nm/dig/lib/fast.lib' ...
+[06/23 13:16:25     22s] Read 479 cells in library 'fast' 
+[06/23 13:16:25     22s] Ending "PreSetAnalysisView" (total cpu=0:00:01.2, real=0:00:01.0, peak res=1808.5M, current mem=1744.1M)
+[06/23 13:16:25     22s] *** End library_loading (cpu=0.02min, real=0.02min, mem=83.0M, fe_cpu=0.38min, fe_real=1.68min, fe_mem=1875.2M) ***
+[06/23 13:16:25     22s] #% Begin Load netlist data ... (date=06/23 13:16:25, mem=1743.4M)
+[06/23 13:16:25     22s] *** Begin netlist parsing (mem=1875.2M) ***
+[06/23 13:16:25     22s] **WARN: (IMPVL-159):	Pin 'VDD' of cell 'XOR3XL' is defined in LEF but not in the timing library.
+[06/23 13:16:25     22s] **WARN: (IMPVL-159):	Pin 'VSS' of cell 'XOR3XL' is defined in LEF but not in the timing library.
+[06/23 13:16:25     22s] **WARN: (IMPVL-159):	Pin 'VDD' of cell 'XOR3X1' is defined in LEF but not in the timing library.
+[06/23 13:16:25     22s] **WARN: (IMPVL-159):	Pin 'VSS' of cell 'XOR3X1' is defined in LEF but not in the timing library.
+[06/23 13:16:25     22s] **WARN: (IMPVL-159):	Pin 'VSS' of cell 'XOR2XL' is defined in LEF but not in the timing library.
+[06/23 13:16:25     22s] **WARN: (IMPVL-159):	Pin 'VDD' of cell 'XOR2XL' is defined in LEF but not in the timing library.
+[06/23 13:16:25     22s] **WARN: (IMPVL-159):	Pin 'VSS' of cell 'XOR2X4' is defined in LEF but not in the timing library.
+[06/23 13:16:25     22s] **WARN: (IMPVL-159):	Pin 'VDD' of cell 'XOR2X4' is defined in LEF but not in the timing library.
+[06/23 13:16:25     22s] **WARN: (IMPVL-159):	Pin 'VSS' of cell 'XOR2X2' is defined in LEF but not in the timing library.
+[06/23 13:16:25     22s] **WARN: (IMPVL-159):	Pin 'VDD' of cell 'XOR2X2' is defined in LEF but not in the timing library.
+[06/23 13:16:25     22s] **WARN: (IMPVL-159):	Pin 'VSS' of cell 'XOR2X1' is defined in LEF but not in the timing library.
+[06/23 13:16:25     22s] **WARN: (IMPVL-159):	Pin 'VDD' of cell 'XOR2X1' is defined in LEF but not in the timing library.
+[06/23 13:16:25     22s] **WARN: (IMPVL-159):	Pin 'VSS' of cell 'XNOR3XL' is defined in LEF but not in the timing library.
+[06/23 13:16:25     22s] **WARN: (IMPVL-159):	Pin 'VDD' of cell 'XNOR3XL' is defined in LEF but not in the timing library.
+[06/23 13:16:25     22s] **WARN: (IMPVL-159):	Pin 'VDD' of cell 'XNOR3X1' is defined in LEF but not in the timing library.
+[06/23 13:16:25     22s] **WARN: (IMPVL-159):	Pin 'VSS' of cell 'XNOR3X1' is defined in LEF but not in the timing library.
+[06/23 13:16:25     22s] **WARN: (IMPVL-159):	Pin 'VSS' of cell 'XNOR2XL' is defined in LEF but not in the timing library.
+[06/23 13:16:25     22s] **WARN: (IMPVL-159):	Pin 'VDD' of cell 'XNOR2XL' is defined in LEF but not in the timing library.
+[06/23 13:16:25     22s] **WARN: (IMPVL-159):	Pin 'VSS' of cell 'XNOR2X4' is defined in LEF but not in the timing library.
+[06/23 13:16:25     22s] **WARN: (IMPVL-159):	Pin 'VDD' of cell 'XNOR2X4' is defined in LEF but not in the timing library.
+[06/23 13:16:25     22s] **WARN: (EMS-62):	Message <IMPVL-159> has exceeded the default message display limit of 20.
+[06/23 13:16:25     22s] To avoid this warning, increase the display limit per unique message by
+[06/23 13:16:25     22s] using the set_message -limit <number> command.
+[06/23 13:16:25     22s] The message limit can be removed by using the set_message -no_limit command.
+[06/23 13:16:25     22s] Note that setting a very large number using the set_message -limit command
+[06/23 13:16:25     22s] or removing the message limit using the set_message -no_limit command can
+[06/23 13:16:25     22s] significantly increase the log file size.
+[06/23 13:16:25     22s] To suppress a message, use the set_message -suppress command.
+[06/23 13:16:26     22s] Reading verilogBinary netlist '/home/vlsi30/day19/physical_design/hold_optimize.enc.dat/booth_multiplier.v.bin'
+[06/23 13:16:26     22s] 
+[06/23 13:16:26     22s] *** Memory Usage v#3 (Current mem = 2142.195M, initial mem = 835.133M) ***
+[06/23 13:16:26     22s] *** End netlist parsing (cpu=0:00:00.0, real=0:00:01.0, mem=2142.2M) ***
+[06/23 13:16:26     22s] #% End Load netlist data ... (date=06/23 13:16:26, total cpu=0:00:00.4, real=0:00:01.0, peak res=1863.5M, current mem=1855.5M)
+[06/23 13:16:26     22s] Top level cell is booth_multiplier.
+[06/23 13:16:26     22s] Has not load the powerDB, will keep enalbed
+[06/23 13:16:26     22s] Has not load the powerDB, will keep enalbed
+[06/23 13:16:26     23s] Ending "BindLib:" (total cpu=0:00:00.1, real=0:00:00.0, peak res=1892.9M, current mem=1892.9M)
+[06/23 13:16:26     23s] *** Estimate the number of flat objects and h-objects before Flatten ***
+[06/23 13:16:26     23s] 	flat insts : 204
+[06/23 13:16:26     23s] 	flat terms : 584
+[06/23 13:16:26     23s] 	HNets : 0
+[06/23 13:16:26     23s] 	HInsts : 0
+[06/23 13:16:26     23s] 	HTerms : 0
+[06/23 13:16:26     23s] Building hierarchical netlist for Cell booth_multiplier ...
+[06/23 13:16:26     23s] ***** UseNewTieNetMode *****.
+[06/23 13:16:26     23s] *** Netlist is unique.
+[06/23 13:16:26     23s] Setting Std. cell height to 5220 DBU (smallest netlist inst).
+[06/23 13:16:26     23s] ** info: there are 967 modules.
+[06/23 13:16:26     23s] ** info: there are 203 stdCell insts.
+[06/23 13:16:26     23s] ** info: there are 203 stdCell insts with at least one signal pin.
+[06/23 13:16:26     23s] 
+[06/23 13:16:26     23s] *** Memory Usage v#3 (Current mem = 2554.242M, initial mem = 835.133M) ***
+[06/23 13:16:26     23s] *info: set bottom ioPad orient R0
+[06/23 13:16:26     23s] **WARN: (IMPFP-3961):	The techSite 'pad' has no related standard cells in the LEF/OA library. The calculations for this site type cannot be made unless standard cell models of this type exist in the LEF/OA library. Ignore this warning if the SITE is not used by the library. Alternatively, remove the SITE definition for the LEF/OA library to avoid this message.
+[06/23 13:16:26     23s] **WARN: (IMPFP-3961):	The techSite 'corner' has no related standard cells in the LEF/OA library. The calculations for this site type cannot be made unless standard cell models of this type exist in the LEF/OA library. Ignore this warning if the SITE is not used by the library. Alternatively, remove the SITE definition for the LEF/OA library to avoid this message.
+[06/23 13:16:26     23s] Horizontal Layer M1 offset = 290 (derived)
+[06/23 13:16:26     23s] Vertical Layer M2 offset = 290 (derived)
+[06/23 13:16:26     23s] Start create_tracks
+[06/23 13:16:26     23s] Generated pitch 0.29 in Metal8 is different from 0.87 defined in technology file in unpreferred direction.
+[06/23 13:16:26     23s] Set Default Input Pin Transition as 0.1 ps.
+[06/23 13:16:26     23s] Has not load the powerDB, will keep enalbed
+[06/23 13:16:26     23s] Has not load the powerDB, will keep enalbed
+[06/23 13:16:26     23s] Has not load the powerDB, will keep enalbed
+[06/23 13:16:26     23s] Has not load the powerDB, will keep enalbed
+[06/23 13:16:26     23s] Has not load the powerDB, will keep enalbed
+[06/23 13:16:26     23s] Has not load the powerDB, will keep enalbed
+[06/23 13:16:26     23s] Loading preference file /home/vlsi30/day19/physical_design/hold_optimize.enc.dat/gui.pref.tcl ...
+[06/23 13:16:26     23s] **WARN: (UI-156):	preference name 'MinFPModuleSize' is not supported in Tempus Timing Solution.
+[06/23 13:16:26     23s] **WARN: (UI-156):	preference name 'MinFlightLineWidth' is not supported in Tempus Timing Solution.
+[06/23 13:16:26     23s] **WARN: (UI-156):	preference name 'MaxFlightLineNetTerms' is not supported in Tempus Timing Solution.
+[06/23 13:16:26     23s] **WARN: (UI-156):	preference name 'LevelFlight' is not supported in Tempus Timing Solution.
+[06/23 13:16:26     23s] **WARN: (UI-156):	preference name 'DirectionSink' is not supported in Tempus Timing Solution.
+[06/23 13:16:26     23s] **WARN: (UI-156):	preference name 'DirectionSource' is not supported in Tempus Timing Solution.
+[06/23 13:16:26     23s] **WARN: (UI-156):	preference name 'ShowNumberBlockConnection' is not supported in Tempus Timing Solution.
+[06/23 13:16:26     23s] **WARN: (UI-156):	preference name 'StrecthRestriction' is not supported in Tempus Timing Solution.
+[06/23 13:16:26     23s] **WARN: (UI-156):	preference name 'StretchRectilinear' is not supported in Tempus Timing Solution.
+[06/23 13:16:26     23s] **WARN: (UI-156):	preference name 'MoveRestriction' is not supported in Tempus Timing Solution.
+[06/23 13:16:26     23s] **WARN: (UI-156):	preference name 'DisplayRelFPlan' is not supported in Tempus Timing Solution.
+[06/23 13:16:26     23s] **WARN: (UI-156):	preference name 'LegalizeMacro' is not supported in Tempus Timing Solution.
+[06/23 13:16:26     23s] **WARN: (UI-156):	preference name 'DisplayFPlanFlightLine' is not supported in Tempus Timing Solution.
+[06/23 13:16:26     23s] **WARN: (UI-156):	preference name 'DisplayPinName' is not supported in Tempus Timing Solution.
+[06/23 13:16:26     23s] **WARN: (UI-156):	preference name 'ExclusiveFlight' is not supported in Tempus Timing Solution.
+[06/23 13:16:26     23s] **WARN: (UI-156):	preference name 'ShowToUnplace' is not supported in Tempus Timing Solution.
+[06/23 13:16:26     23s] **WARN: (UI-156):	preference name 'FlightLineInMove' is not supported in Tempus Timing Solution.
+[06/23 13:16:26     23s] **WARN: (UI-156):	preference name 'ShowConnectionInOutNumber' is not supported in Tempus Timing Solution.
+[06/23 13:16:26     23s] **WARN: (UI-156):	preference name 'ConnectionColorType' is not supported in Tempus Timing Solution.
+[06/23 13:16:26     23s] **WARN: (UI-156):	preference name 'OnlyBundleNetFlight' is not supported in Tempus Timing Solution.
+[06/23 13:16:26     23s] **WARN: (EMS-27):	Message (UI-156) has exceeded the current message display limit of 20.
+[06/23 13:16:26     23s] To increase the message display limit, refer to the product command reference manual.
+[06/23 13:16:26     23s] **WARN: (IMPEXT-7000):	The option '-engine preRoute' for setExtractRCMode is ignored because only Quantus QRC extraction mode, that is, '-engine postRoute -effortLevel signoff' is supported in Tempus Timing Solution. To avoid this message, remove this option from your scripts.
+[06/23 13:16:26     23s] Has not load the powerDB, will keep enalbed
+[06/23 13:16:26     23s] Has not load the powerDB, will keep enalbed
+[06/23 13:16:26     23s] #WARNING (NRIF-90) Option setNanoRouteMode -route_bottom_routing_layer is obsolete. It will continue to work for the current release. To ensure compatibility with future releases, use option setDesignMode -bottomRoutingLayer instead.
+[06/23 13:16:26     23s] #WARNING (NRIF-91) Option setNanoRouteMode -route_top_routing_layer is obsolete. It will continue to work for the current release. To ensure compatibility with future releases, use option setDesignMode -topRoutingLayer instead.
+[06/23 13:16:26     23s] addRing command will ignore shorts while creating rings.
+[06/23 13:16:26     23s] addRing command will disallow rings to go over rows.
+[06/23 13:16:26     23s] addRing command will consider rows while creating rings.
+[06/23 13:16:26     23s] The ring targets are set to core/block ring wires.
+[06/23 13:16:26     23s] addStripe will allow jog to connect padcore ring and block ring.
+[06/23 13:16:26     23s] 
+[06/23 13:16:26     23s] Stripes will not extend to closest target.
+[06/23 13:16:26     23s] When breaking rings, the power planner will consider the existence of blocks.
+[06/23 13:16:26     23s] addStripe will break automatically at non-default domains when generating global stripes over the core area or default domain.
+[06/23 13:16:26     23s] The entire stripe set will break at the domain if one of the nets is not in the domain.
+[06/23 13:16:26     23s] Stripes will not be created over regions without power planning wires.
+[06/23 13:16:26     23s] Offset for stripe breaking is set to 0.
+[06/23 13:16:26     23s] Stripes will stop at the boundary of the specified area.
+[06/23 13:16:26     23s] The power planner will set stripe antenna targets to none (no trimming allowed).
+[06/23 13:16:26     23s] Change floorplan default-technical-site to 'gsclib090site'.
+[06/23 13:16:26     23s] Extraction setup Delayed 
+[06/23 13:16:26     23s] Ending "SetAnalysisView" (total cpu=0:00:00.0, real=0:00:00.0, peak res=2442.2M, current mem=2162.4M)
+[06/23 13:16:26     23s] Tech dependent Parameter, Build TLibAnalyzer for: cellAreaConsiderPadding
+[06/23 13:16:26     23s] 
+[06/23 13:16:26     23s] TimeStamp Creating Cell Server ...(0, 1, 1, 1) in restoreDesign Begin ...
+[06/23 13:16:26     23s] SB Latch Setting to complicate: TLATSRXL complicate code: 8
+[06/23 13:16:26     23s] SB Latch Setting to complicate: TLATSRX4 complicate code: 8
+[06/23 13:16:26     23s] SB Latch Setting to complicate: TLATSRX2 complicate code: 8
+[06/23 13:16:26     23s] SB Latch Setting to complicate: TLATSRX1 complicate code: 8
+[06/23 13:16:26     23s] SB Latch Setting to complicate: TLATNSRXL complicate code: 8
+[06/23 13:16:26     23s] SB Latch Setting to complicate: TLATNSRX4 complicate code: 8
+[06/23 13:16:26     23s] SB Latch Setting to complicate: TLATNSRX2 complicate code: 8
+[06/23 13:16:26     23s] SB Latch Setting to complicate: TLATNSRX1 complicate code: 8
+[06/23 13:16:26     23s] SBFF Setting to complicate: SEDFFTRXL complicate code: 30.05
+[06/23 13:16:26     23s] SBFF Setting to complicate: SEDFFTRX4 complicate code: 30.05
+[06/23 13:16:26     23s] SBFF Setting to complicate: SEDFFTRX2 complicate code: 30.05
+[06/23 13:16:26     23s] SBFF Setting to complicate: SEDFFTRX1 complicate code: 30.05
+[06/23 13:16:27     23s] SBFF Setting to complicate: EDFFTRXL complicate code: 30.05
+[06/23 13:16:27     23s] SBFF Setting to complicate: EDFFTRX4 complicate code: 30.05
+[06/23 13:16:27     23s] SBFF Setting to complicate: EDFFTRX2 complicate code: 30.05
+[06/23 13:16:27     23s] SBFF Setting to complicate: EDFFTRX1 complicate code: 30.05
+[06/23 13:16:27     23s] Summary for sequential cells identification: 
+[06/23 13:16:27     23s]   Identified SBFF number: 112
+[06/23 13:16:27     23s]   Identified MBFF number: 0
+[06/23 13:16:27     23s]   Identified SB Latch number: 8
+[06/23 13:16:27     23s]   Identified MB Latch number: 0
+[06/23 13:16:27     23s]   Not identified SBFF number: 8
+[06/23 13:16:27     23s]   Not identified MBFF number: 0
+[06/23 13:16:27     23s]   Not identified SB Latch number: 8
+[06/23 13:16:27     23s]   Not identified MB Latch number: 0
+[06/23 13:16:27     23s]   Number of sequential cells which are not FFs: 16
+[06/23 13:16:27     23s] Total number of combinational cells: 317
+[06/23 13:16:27     23s] Total number of sequential cells: 152
+[06/23 13:16:27     23s] Total number of tristate cells: 10
+[06/23 13:16:27     23s] Total number of level shifter cells: 0
+[06/23 13:16:27     23s] Total number of power gating cells: 0
+[06/23 13:16:27     23s] Total number of isolation cells: 0
+[06/23 13:16:27     23s] Total number of power switch cells: 0
+[06/23 13:16:27     23s] Total number of pulse generator cells: 0
+[06/23 13:16:27     23s] Total number of always on buffers: 0
+[06/23 13:16:27     23s] Total number of retention cells: 0
+[06/23 13:16:27     23s] Total number of physical cells: 0
+[06/23 13:16:27     23s] List of usable buffers: BUFX2 BUFX12 BUFX16 BUFX20 CLKBUFX2 BUFX3 BUFX4 BUFX6 BUFX8 CLKBUFX12 CLKBUFX16 CLKBUFX20 CLKBUFX3 CLKBUFX4 CLKBUFX6 CLKBUFX8
+[06/23 13:16:27     23s] Total number of usable buffers: 16
+[06/23 13:16:27     23s] List of unusable buffers:
+[06/23 13:16:27     23s] Total number of unusable buffers: 0
+[06/23 13:16:27     23s] List of usable inverters: CLKINVX1 CLKINVX2 CLKINVX12 CLKINVX16 CLKINVX20 CLKINVX3 CLKINVX4 CLKINVX6 CLKINVX8 INVX1 INVX2 INVX12 INVX16 INVX20 INVXL INVX3 INVX4 INVX6 INVX8
+[06/23 13:16:27     23s] Total number of usable inverters: 19
+[06/23 13:16:27     23s] List of unusable inverters:
+[06/23 13:16:27     23s] Total number of unusable inverters: 0
+[06/23 13:16:27     23s] List of identified usable delay cells: DLY1X1 DLY1X4 DLY2X1 DLY2X4 DLY3X1 DLY3X4 DLY4X1 DLY4X4
+[06/23 13:16:27     23s] Total number of identified usable delay cells: 8
+[06/23 13:16:27     23s] List of identified unusable delay cells:
+[06/23 13:16:27     23s] Total number of identified unusable delay cells: 0
+[06/23 13:16:27     23s] 
+[06/23 13:16:27     23s] TimeStamp Creating Cell Server ...(0, 1, 1, 1) in restoreDesign End ...
+[06/23 13:16:27     23s] 
+[06/23 13:16:27     23s] TimeStamp Deleting Cell Server Begin ...
+[06/23 13:16:27     23s] 
+[06/23 13:16:27     23s] TimeStamp Deleting Cell Server End ...
+[06/23 13:16:27     23s] Ending "Cell type marking" (total cpu=0:00:00.0, real=0:00:00.0, peak res=2424.8M, current mem=2424.8M)
+[06/23 13:16:27     23s] 
+[06/23 13:16:27     23s] TimeStamp Creating Cell Server ...(0, 0, 0, 0) in restoreDesign Begin ...
+[06/23 13:16:27     23s] SB Latch Setting to complicate: TLATSRXL complicate code: 8
+[06/23 13:16:27     23s] SB Latch Setting to complicate: TLATSRX4 complicate code: 8
+[06/23 13:16:27     23s] SB Latch Setting to complicate: TLATSRX2 complicate code: 8
+[06/23 13:16:27     23s] SB Latch Setting to complicate: TLATSRX1 complicate code: 8
+[06/23 13:16:27     23s] SB Latch Setting to complicate: TLATNSRXL complicate code: 8
+[06/23 13:16:27     23s] SB Latch Setting to complicate: TLATNSRX4 complicate code: 8
+[06/23 13:16:27     23s] SB Latch Setting to complicate: TLATNSRX2 complicate code: 8
+[06/23 13:16:27     23s] SB Latch Setting to complicate: TLATNSRX1 complicate code: 8
+[06/23 13:16:27     23s] SBFF Setting to complicate: SEDFFTRXL complicate code: 30.05
+[06/23 13:16:27     23s] SBFF Setting to complicate: SEDFFTRX4 complicate code: 30.05
+[06/23 13:16:27     23s] SBFF Setting to complicate: SEDFFTRX2 complicate code: 30.05
+[06/23 13:16:27     23s] SBFF Setting to complicate: SEDFFTRX1 complicate code: 30.05
+[06/23 13:16:27     23s] SBFF Setting to complicate: EDFFTRXL complicate code: 30.05
+[06/23 13:16:27     23s] SBFF Setting to complicate: EDFFTRX4 complicate code: 30.05
+[06/23 13:16:27     23s] SBFF Setting to complicate: EDFFTRX2 complicate code: 30.05
+[06/23 13:16:27     23s] SBFF Setting to complicate: EDFFTRX1 complicate code: 30.05
+[06/23 13:16:27     23s] Summary for sequential cells identification: 
+[06/23 13:16:27     23s]   Identified SBFF number: 112
+[06/23 13:16:27     23s]   Identified MBFF number: 0
+[06/23 13:16:27     23s]   Identified SB Latch number: 8
+[06/23 13:16:27     23s]   Identified MB Latch number: 0
+[06/23 13:16:27     23s]   Not identified SBFF number: 8
+[06/23 13:16:27     23s]   Not identified MBFF number: 0
+[06/23 13:16:27     23s]   Not identified SB Latch number: 8
+[06/23 13:16:27     23s]   Not identified MB Latch number: 0
+[06/23 13:16:27     23s]   Number of sequential cells which are not FFs: 16
+[06/23 13:16:27     23s]  Visiting view : worst_case
+[06/23 13:16:27     23s]    : PowerDomain = none : Weighted F : unweighted  = 35.90 (1.000) with rcCorner = 0
+[06/23 13:16:27     23s]    : PowerDomain = none : Weighted F : unweighted  = 33.00 (1.000) with rcCorner = -1
+[06/23 13:16:27     23s]  Visiting view : best_case
+[06/23 13:16:27     23s]    : PowerDomain = none : Weighted F : unweighted  = 12.10 (1.000) with rcCorner = 0
+[06/23 13:16:27     23s]    : PowerDomain = none : Weighted F : unweighted  = 11.00 (1.000) with rcCorner = -1
+[06/23 13:16:27     23s] 
+[06/23 13:16:27     23s] TimeStamp Creating Cell Server ...(0, 0, 0, 0) in restoreDesign End ...
+[06/23 13:16:27     23s] 
+[06/23 13:16:27     23s] TimeStamp Deleting Cell Server Begin ...
+[06/23 13:16:27     23s] 
+[06/23 13:16:27     23s] TimeStamp Deleting Cell Server End ...
+[06/23 13:16:27     23s] Reading floorplan file - /home/vlsi30/day19/physical_design/hold_optimize.enc.dat/booth_multiplier.fp.gz (mem = 2799.5M).
+[06/23 13:16:27     23s] #% Begin Load floorplan data ... (date=06/23 13:16:27, mem=2427.5M)
+[06/23 13:16:27     23s] *info: reset 218 existing net BottomPreferredLayer and AvoidDetour
+[06/23 13:16:27     23s] Deleting old partition specification.
+[06/23 13:16:27     23s] Set FPlanBox to (0 0 104400 81780)
+[06/23 13:16:27     23s] **WARN: (IMPFP-3961):	The techSite 'pad' has no related standard cells in the LEF/OA library. The calculations for this site type cannot be made unless standard cell models of this type exist in the LEF/OA library. Ignore this warning if the SITE is not used by the library. Alternatively, remove the SITE definition for the LEF/OA library to avoid this message.
+[06/23 13:16:27     23s] **WARN: (IMPFP-3961):	The techSite 'corner' has no related standard cells in the LEF/OA library. The calculations for this site type cannot be made unless standard cell models of this type exist in the LEF/OA library. Ignore this warning if the SITE is not used by the library. Alternatively, remove the SITE definition for the LEF/OA library to avoid this message.
+[06/23 13:16:27     23s]  ... processed partition successfully.
+[06/23 13:16:27     23s] Reading binary special route file /home/vlsi30/day19/physical_design/hold_optimize.enc.dat/booth_multiplier.fp.spr.gz (Created by Innovus v21.15-s110_1 on Tue Jun 23 11:06:53 2026, version: 1)
+[06/23 13:16:27     23s] Ending "Read special route file" (total cpu=0:00:00.0, real=0:00:00.0, peak res=2427.5M, current mem=2427.5M)
+[06/23 13:16:27     23s] Extracting standard cell pins and blockage ...... 
+[06/23 13:16:27     23s] Pin and blockage extraction finished
+[06/23 13:16:27     23s] #% End Load floorplan data ... (date=06/23 13:16:27, total cpu=0:00:00.1, real=0:00:00.0, peak res=2441.8M, current mem=2441.8M)
+[06/23 13:16:27     23s] #% Begin Load SymbolTable ... (date=06/23 13:16:27, mem=2441.8M)
+[06/23 13:16:27     23s] #% End Load SymbolTable ... (date=06/23 13:16:27, total cpu=0:00:00.0, real=0:00:00.0, peak res=2441.8M, current mem=2441.8M)
+[06/23 13:16:27     23s] Loading place ...
+[06/23 13:16:27     23s] #% Begin Load placement data ... (date=06/23 13:16:27, mem=2441.8M)
+[06/23 13:16:27     23s] Reading placement file - /home/vlsi30/day19/physical_design/hold_optimize.enc.dat/booth_multiplier.place.gz.
+[06/23 13:16:27     23s] ** Reading stdCellPlacement_binary (Created by Innovus v21.15-s110_1 on Tue Jun 23 11:06:53 2026, version# 2) ...
+[06/23 13:16:27     23s] Read Views for adaptive view pruning ...
+[06/23 13:16:27     23s] Read 0 views from Binary DB for adaptive view pruning
+[06/23 13:16:27     23s] *** applyConnectGlobalNets disabled.
+[06/23 13:16:27     23s] *** Completed restorePlace (cpu=0:00:00.0 real=0:00:00.0 mem=2816.5M) ***
+[06/23 13:16:27     23s] Has not load the powerDB, will keep enalbed
+[06/23 13:16:27     23s] Has not load the powerDB, will keep enalbed
+[06/23 13:16:27     23s] Total net length = 2.058e+03 (1.079e+03 9.790e+02) (ext = 4.178e+02)
+[06/23 13:16:27     23s] #% End Load placement data ... (date=06/23 13:16:27, total cpu=0:00:00.0, real=0:00:00.0, peak res=2443.2M, current mem=2443.2M)
+[06/23 13:16:27     23s] Reading PG file /home/vlsi30/day19/physical_design/hold_optimize.enc.dat/booth_multiplier.pg.gz, version#2, (Created by Innovus v21.15-s110_1 on       Tue Jun 23 11:06:53 2026)
+[06/23 13:16:27     23s] *** Completed restorePGFile (cpu=0:00:00.0 real=0:00:00.0 mem=2832.5M) ***
+[06/23 13:16:27     23s] #% Begin Load routing data ... (date=06/23 13:16:27, mem=2443.6M)
+[06/23 13:16:27     23s] Reading routing file - /home/vlsi30/day19/physical_design/hold_optimize.enc.dat/booth_multiplier.route.gz.
+[06/23 13:16:27     23s] Reading Innovus routing data (Created by Innovus v21.15-s110_1 on Tue Jun 23 11:06:53 2026 Format: 20.1) ...
+[06/23 13:16:27     23s] *** Total 217 nets are successfully restored.
+[06/23 13:16:27     23s] *** Completed restoreRoute (cpu=0:00:00.0 real=0:00:00.0 mem=2832.5M) ***
+[06/23 13:16:27     23s] Has not load the powerDB, will keep enalbed
+[06/23 13:16:27     23s] Has not load the powerDB, will keep enalbed
+[06/23 13:16:27     24s] #% End Load routing data ... (date=06/23 13:16:27, total cpu=0:00:00.0, real=0:00:00.0, peak res=2444.8M, current mem=2444.2M)
+[06/23 13:16:27     24s] Reading property file /home/vlsi30/day19/physical_design/hold_optimize.enc.dat/booth_multiplier.prop
+[06/23 13:16:27     24s] *** Completed restoreProperty (cpu=0:00:00.0 real=0:00:00.0 mem=2832.5M) ***
+[06/23 13:16:27     24s] Set Default Input Pin Transition as 0.1 ps.
+[06/23 13:16:28     24s] eee: Design meta data file: /home/vlsi30/day19/physical_design/hold_optimize.enc.dat/extraction/extractionMetaData.gz doesn't exist
+[06/23 13:16:28     24s] Extraction setup Started for TopCell booth_multiplier 
+[06/23 13:16:28     24s] Summary of Active RC-Corners : 
+[06/23 13:16:28     24s]  
+[06/23 13:16:28     24s]  Analysis View: worst_case
+[06/23 13:16:28     24s]     RC-Corner Name        : rc_corner
+[06/23 13:16:28     24s]     RC-Corner Index       : 0
+[06/23 13:16:28     24s]     RC-Corner Temperature : 125 Celsius
+[06/23 13:16:28     24s]     RC-Corner Cap Table   : ''
+[06/23 13:16:28     24s]     RC-Corner PostRoute Res Factor        : 1
+[06/23 13:16:28     24s]     RC-Corner PostRoute Cap Factor        : 1
+[06/23 13:16:28     24s]     RC-Corner PostRoute XCap Factor       : 1
+[06/23 13:16:28     24s]     RC-Corner Technology file: '/home/vlsi30/day19/physical_design/hold_optimize.enc.dat/libs/mmmc/rc_corner/gpdk090_9l.tch'
+[06/23 13:16:28     24s]  
+[06/23 13:16:28     24s]  Analysis View: best_case
+[06/23 13:16:28     24s]     RC-Corner Name        : rc_corner
+[06/23 13:16:28     24s]     RC-Corner Index       : 0
+[06/23 13:16:28     24s]     RC-Corner Temperature : 125 Celsius
+[06/23 13:16:28     24s]     RC-Corner Cap Table   : ''
+[06/23 13:16:28     24s]     RC-Corner PostRoute Res Factor        : 1
+[06/23 13:16:28     24s]     RC-Corner PostRoute Cap Factor        : 1
+[06/23 13:16:28     24s]     RC-Corner PostRoute XCap Factor       : 1
+[06/23 13:16:28     24s]     RC-Corner Technology file: '/home/vlsi30/day19/physical_design/hold_optimize.enc.dat/libs/mmmc/rc_corner/gpdk090_9l.tch'
+[06/23 13:16:28     24s] eee: RC Grid memory allocated = 1296 (4 X 3 X 9 X 12b)
+[06/23 13:16:28     24s] eee: Grid density data restore started
+[06/23 13:16:28     24s] eee: readRCGridDensityData file read failed: extractionRCGridDensityData.gz
+[06/23 13:16:28     24s] eee: Grid density data restore failedeee: pegSigSF=1.070000
+[06/23 13:16:28     24s] Initializing multi-corner resistance tables ...
+[06/23 13:16:28     24s] Loading rc congestion map /home/vlsi30/day19/physical_design/hold_optimize.enc.dat/booth_multiplier.congmap.gz ...
+[06/23 13:16:28     24s] eee: Grid unit RC data computation started
+[06/23 13:16:28     24s] eee: Grid unit RC data computation completed
+[06/23 13:16:28     24s] eee: l=1 avDens=0.100845 usedTrk=36.304329 availTrk=360.000000 sigTrk=36.304329
+[06/23 13:16:28     24s] eee: l=2 avDens=0.110477 usedTrk=39.771571 availTrk=360.000000 sigTrk=39.771571
+[06/23 13:16:28     24s] eee: l=3 avDens=0.095016 usedTrk=34.205861 availTrk=360.000000 sigTrk=34.205861
+[06/23 13:16:28     24s] eee: l=4 avDens=0.005139 usedTrk=1.850000 availTrk=360.000000 sigTrk=1.850000
+[06/23 13:16:28     24s] eee: l=5 avDens=0.000123 usedTrk=0.011111 availTrk=90.000000 sigTrk=0.011111
+[06/23 13:16:28     24s] eee: l=6 avDens=0.000000 usedTrk=0.000000 availTrk=0.000000 sigTrk=0.000000
+[06/23 13:16:28     24s] eee: l=7 avDens=0.000000 usedTrk=0.000000 availTrk=0.000000 sigTrk=0.000000
+[06/23 13:16:28     24s] eee: l=8 avDens=0.158754 usedTrk=19.050498 availTrk=120.000000 sigTrk=19.050498
+[06/23 13:16:28     24s] eee: l=9 avDens=0.206958 usedTrk=24.835019 availTrk=120.000000 sigTrk=24.835019
+[06/23 13:16:28     24s] eee: LAM-FP: thresh=1 ; dimX=180.000000 ; dimY=141.000000 ; multX=1.000000 ; multY=1.000000 ; minP=580 ; fpMult=1.000000 ;
+[06/23 13:16:28     24s] eee: LAM: n=40 LLS=2-3 HLS=3-5 rDens=0.235153 uaWl=0.000000 uaWlH=0.022400 aWlH=0.000000 lMod=0 pMax=0.806300 pMod=83 pModAss=50 wcR=0.700000 crit=0.000000 siPrev=0 newSi=0.001600 wHLS=1.750000 viaL=0.000000 shortMod=0.000000 fModUnas=0.000000 fModAs=0.000000 pDens=0.500000 
+[06/23 13:16:28     24s] eee: uC 0.000130 of RC Grid (0 0 8) is <  min uC 0.000150 of layer.
+[06/23 13:16:28     24s] eee: uR 0.000166 of RC Grid (0 0 8) is > max uR 0.000025 of layer.
+[06/23 13:16:28     24s] eee: uC 0.000127 of RC Grid (0 1 8) is <  min uC 0.000150 of layer.
+[06/23 13:16:28     24s] eee: uR 0.000166 of RC Grid (0 1 8) is > max uR 0.000025 of layer.
+[06/23 13:16:28     24s] eee: uC 0.000130 of RC Grid (1 0 8) is <  min uC 0.000150 of layer.
+[06/23 13:16:28     24s] eee: uR 0.000166 of RC Grid (1 0 8) is > max uR 0.000025 of layer.
+[06/23 13:16:28     24s] eee: uC 0.000130 of RC Grid (1 1 8) is <  min uC 0.000150 of layer.
+[06/23 13:16:28     24s] eee: uR 0.000166 of RC Grid (1 1 8) is > max uR 0.000025 of layer.
+[06/23 13:16:28     24s] eee: uR 0.000166 of RC Grid (0 0 9) is > max uR 0.000027 of layer.
+[06/23 13:16:28     24s] eee: uR 0.000166 of RC Grid (0 1 9) is > max uR 0.000027 of layer.
+[06/23 13:16:28     24s] eee: uR 0.000166 of RC Grid (1 0 9) is > max uR 0.000027 of layer.
+[06/23 13:16:28     24s] eee: uR 0.000166 of RC Grid (1 1 9) is > max uR 0.000027 of layer.
+[06/23 13:16:28     24s] eee: dbu = 2000, Design = [ll(0.000000, 0.000000) ur(52.200000, 40.890000)], Layers = [f(9) b(0)], Grid size = 26.100000 um, Grid Dim = (3 X 2)
+[06/23 13:16:28     24s] eee: Metal Layers Info:
+[06/23 13:16:28     24s] eee: +----------+-----+---------+---------+---------+--------+--------+---+---+----+
+[06/23 13:16:28     24s] eee: |   Layer  |  Id |    W    |    S    |    P    |   uC   |   uR   | D | T | wS |
+[06/23 13:16:28     24s] eee: +----------+-----+---------+---------+---------+--------+--------+---+---+----+
+[06/23 13:16:28     24s] eee: |   Metal1 |   1 |   0.120 |   0.120 |   0.290 |  0.000 |   0.67 | H | 0 |  1 |
+[06/23 13:16:28     24s] eee: |   Metal2 |   2 |   0.140 |   0.140 |   0.290 |  0.000 |   0.43 | V | 0 |  1 |
+[06/23 13:16:28     24s] eee: |   Metal3 |   3 |   0.140 |   0.140 |   0.290 |  0.000 |   0.43 | H | 0 |  1 |
+[06/23 13:16:28     24s] eee: |   Metal4 |   4 |   0.140 |   0.140 |   0.290 |  0.000 |   0.43 | V | 0 |  1 |
+[06/23 13:16:28     24s] eee: |   Metal5 |   5 |   0.140 |   0.140 |   0.290 |  0.000 |   0.43 | H | 0 |  1 |
+[06/23 13:16:28     24s] eee: |   Metal6 |   6 |   0.140 |   0.140 |   0.290 |  0.000 |   0.43 | V | 0 |  1 |
+[06/23 13:16:28     24s] eee: |   Metal7 |   7 |   0.140 |   0.140 |   0.290 |  0.000 |   0.43 | H | 0 |  1 |
+[06/23 13:16:28     24s] eee: |   Metal8 |   8 |   0.440 |   0.400 |   0.870 |  0.000 |   0.05 | V | 0 |  1 |
+[06/23 13:16:28     24s] eee: |   Metal9 |   9 |   0.440 |   0.400 |   0.870 |  0.000 |   0.05 | H | 0 |  1 |
+[06/23 13:16:28     24s] eee: +----------+-----+---------+---------+---------+--------+--------+---+---+----+
+[06/23 13:16:28     24s] eee: uC/uR for corner rc_corner, min-width/min-spacing, 30 perc over/under densities.
+[06/23 13:16:28     24s] eee: +-----------------------NDR Info-----------------------+
+[06/23 13:16:28     24s] eee: NDR Count = 1, Fake NDR = 0
+[06/23 13:16:28     24s] eee: +----------------------------------------------------+
+[06/23 13:16:28     24s] eee: | NDR Name = LEFDefaultRouteSpec_gpdk090  | Id = 1  | isHard = 0 
+[06/23 13:16:28     24s] eee: +----------------------------------------------------+
+[06/23 13:16:28     24s] eee: LAM-FP: thresh=1 ; dimX=180.000000 ; dimY=141.000000 ; multX=1.000000 ; multY=1.000000 ; minP=580 ; fpMult=1.000000 ;
+[06/23 13:16:28     24s] eee: LAM: n=40 LLS=2-3 HLS=3-5 rDens=0.235153 uaWl=0.000000 uaWlH=0.022400 aWlH=0.000000 lMod=0 pMax=0.806300 pMod=83 pModAss=50 wcR=0.700000 crit=0.000000 siPrev=0 newSi=0.001600 wHLS=1.750000 viaL=0.000000 shortMod=0.000000 fModUnas=0.000000 fModAs=0.000000 pDens=0.500000 
+[06/23 13:16:28     24s] #% Begin Load power constraints ... (date=06/23 13:16:28, mem=2448.6M)
+[06/23 13:16:28     24s] #% End Load power constraints ... (date=06/23 13:16:28, total cpu=0:00:00.0, real=0:00:00.0, peak res=2455.3M, current mem=2455.3M)
+[06/23 13:16:28     24s] **WARN: (TCLCMD-1263):	The -frame parameter is obsolete and will be removed from the software in a future release. To ensure compatibility with future releases, remove this parameter from your scripts.
+[06/23 13:16:28     24s] #% Begin load AAE data ... (date=06/23 13:16:28, mem=2478.5M)
+[06/23 13:16:28     25s] AAE DB initialization (MEM=2484.515625 CPU=0:00:00.0 REAL=0:00:00.0) 
+[06/23 13:16:28     25s] #% End load AAE data ... (date=06/23 13:16:28, total cpu=0:00:00.4, real=0:00:00.0, peak res=2484.9M, current mem=2484.9M)
+[06/23 13:16:28     25s] Restoring CCOpt config...
+[06/23 13:16:28     25s] 
+[06/23 13:16:28     25s] TimeStamp Creating Cell Server ...(0, 0, 0, 0) in restoreDesign Begin ...
+[06/23 13:16:28     25s] SB Latch Setting to complicate: TLATSRXL complicate code: 8
+[06/23 13:16:28     25s] SB Latch Setting to complicate: TLATSRX4 complicate code: 8
+[06/23 13:16:28     25s] SB Latch Setting to complicate: TLATSRX2 complicate code: 8
+[06/23 13:16:28     25s] SB Latch Setting to complicate: TLATSRX1 complicate code: 8
+[06/23 13:16:28     25s] SB Latch Setting to complicate: TLATNSRXL complicate code: 8
+[06/23 13:16:28     25s] SB Latch Setting to complicate: TLATNSRX4 complicate code: 8
+[06/23 13:16:28     25s] SB Latch Setting to complicate: TLATNSRX2 complicate code: 8
+[06/23 13:16:28     25s] SB Latch Setting to complicate: TLATNSRX1 complicate code: 8
+[06/23 13:16:28     25s] SBFF Setting to complicate: SEDFFTRXL complicate code: 30.05
+[06/23 13:16:28     25s] SBFF Setting to complicate: SEDFFTRX4 complicate code: 30.05
+[06/23 13:16:28     25s] SBFF Setting to complicate: SEDFFTRX2 complicate code: 30.05
+[06/23 13:16:28     25s] SBFF Setting to complicate: SEDFFTRX1 complicate code: 30.05
+[06/23 13:16:28     25s] SBFF Setting to complicate: EDFFTRXL complicate code: 30.05
+[06/23 13:16:28     25s] SBFF Setting to complicate: EDFFTRX4 complicate code: 30.05
+[06/23 13:16:28     25s] SBFF Setting to complicate: EDFFTRX2 complicate code: 30.05
+[06/23 13:16:28     25s] SBFF Setting to complicate: EDFFTRX1 complicate code: 30.05
+[06/23 13:16:28     25s] Summary for sequential cells identification: 
+[06/23 13:16:28     25s]   Identified SBFF number: 112
+[06/23 13:16:28     25s]   Identified MBFF number: 0
+[06/23 13:16:28     25s]   Identified SB Latch number: 8
+[06/23 13:16:28     25s]   Identified MB Latch number: 0
+[06/23 13:16:28     25s]   Not identified SBFF number: 8
+[06/23 13:16:28     25s]   Not identified MBFF number: 0
+[06/23 13:16:28     25s]   Not identified SB Latch number: 8
+[06/23 13:16:28     25s]   Not identified MB Latch number: 0
+[06/23 13:16:28     25s]   Number of sequential cells which are not FFs: 16
+[06/23 13:16:28     25s]  Visiting view : worst_case
+[06/23 13:16:28     25s]    : PowerDomain = none : Weighted F : unweighted  = 35.90 (1.000) with rcCorner = 0
+[06/23 13:16:28     25s]    : PowerDomain = none : Weighted F : unweighted  = 33.00 (1.000) with rcCorner = -1
+[06/23 13:16:28     25s]  Visiting view : best_case
+[06/23 13:16:28     25s]    : PowerDomain = none : Weighted F : unweighted  = 12.10 (1.000) with rcCorner = 0
+[06/23 13:16:28     25s]    : PowerDomain = none : Weighted F : unweighted  = 11.00 (1.000) with rcCorner = -1
+[06/23 13:16:28     25s] 
+[06/23 13:16:28     25s] TimeStamp Creating Cell Server ...(0, 0, 0, 0) in restoreDesign End ...
+[06/23 13:16:28     25s]   Extracting original clock gating for clk...
+[06/23 13:16:28     25s]     clock_tree clk contains 15 sinks and 0 clock gates.
+[06/23 13:16:28     25s]   Extracting original clock gating for clk done.
+[06/23 13:16:28     25s]   The skew group clk/sdc was created. It contains 15 sinks and 1 sources.
+[06/23 13:16:28     25s] Restoring CCOpt config done.
+[06/23 13:16:28     25s] **WARN: (IMPCTE-107):	The following globals have been obsoleted since version (null). They will be removed in the next release. 
+[06/23 13:16:28     25s] timing_enable_separate_device_slew_effect_sensitivities
+[06/23 13:16:29     25s] Ending "read_design" (total cpu=0:00:05.0, real=0:00:06.0, peak res=2509.0M, current mem=2337.0M)
+[06/23 13:16:29     25s] Parasitics side thread was NULL.
+[06/23 13:16:29     25s] Loading  (booth_multiplier)
+[06/23 13:16:29     25s] Traverse HInst (booth_multiplier)
+[06/23 13:16:43     26s] <CMD> all_setup_analysis_views
+[06/23 13:16:43     26s] <CMD> all_hold_analysis_views
+[06/23 13:16:43     26s] <CMD> all_setup_analysis_views
+[06/23 13:16:43     26s] <CMD> all_hold_analysis_views
+[06/23 13:16:43     26s] **WARN: (IMPSYC-3133):	The unloadTimingCon command is not supported in the MMMC environment.
+[06/23 13:16:43     26s]           To modify the active set of constraints you can use one of the following means:
+[06/23 13:16:43     26s]           - Use the set_analysis_view command to change the set of active views.
+[06/23 13:16:43     26s]           - Use the update_analysis_view command to change the constraint mode associated with an active view.
+[06/23 13:16:43     26s]           - Use the update_constraint_mode command to change the set of SDC files pointed to be active modes.
+[06/23 13:16:43     26s] <CMD> all_setup_analysis_views
+[06/23 13:16:43     26s] <CMD> all_hold_analysis_views
+[06/23 13:16:43     26s] <CMD> all_setup_analysis_views
+[06/23 13:16:43     26s] <CMD> all_hold_analysis_views
+[06/23 13:16:43     26s] **WARN: (IMPSYC-3133):	The unloadTimingCon command is not supported in the MMMC environment.
+[06/23 13:16:43     26s]           To modify the active set of constraints you can use one of the following means:
+[06/23 13:16:43     26s]           - Use the set_analysis_view command to change the set of active views.
+[06/23 13:16:43     26s]           - Use the update_analysis_view command to change the constraint mode associated with an active view.
+[06/23 13:16:43     26s]           - Use the update_constraint_mode command to change the set of SDC files pointed to be active modes.
+[06/23 13:16:49     27s] <CMD> read_spef booth_multiplier.spef
+[06/23 13:16:49     27s] Used active corner rc_corner for reading SPEF file as option '-rc_corner <cornerName>' is not specified in MMMC mode.
+[06/23 13:16:49     27s] read_spef Option :  booth_multiplier.spef -noStarN 
+[06/23 13:16:49     27s] 
+[06/23 13:16:49     27s] SPEF files for RC Corner rc_corner:
+[06/23 13:16:49     27s] Top-level spef file 'booth_multiplier.spef'.
+[06/23 13:16:49     27s] Start spef parsing (MEM=3057.01).
+[06/23 13:16:49     27s] Number of corners: 1
+[06/23 13:16:49     27s] Number of parallel threads processing the nets is: 1
+[06/23 13:16:49     27s] Maximum backlog used in parser: 50.
+[06/23 13:16:49     27s] Reading multiple SPEF files in parallel.
+[06/23 13:16:49     27s] RCDB /tmp/ssv_tmpdir_727482_498d8d1a-999e-4496-943e-8a6e8fce9ce9_f6d2re/booth_multiplier_727482_498d8d1a-999e-4496-943e-8a6e8fce9ce9_uVcoS0.rcdb.d/booth_multiplier.rcdb.d Creation Started (CPU Time= 0:00:00.0  MEM= 3067.0M)
+[06/23 13:16:49     27s] Creating parasitic data file '/tmp/ssv_tmpdir_727482_498d8d1a-999e-4496-943e-8a6e8fce9ce9_f6d2re/booth_multiplier_727482_498d8d1a-999e-4496-943e-8a6e8fce9ce9_uVcoS0.rcdb.d/booth_multiplier.rcdb.d' for storing RC.
+[06/23 13:16:49     27s] The SPEF file, 'booth_multiplier.spef', has encountered the error/warning message(s) during its reading.
+[06/23 13:16:49     27s] **ERROR: (SPEF-1127):	Invalid CONN connection found (M_temp_reg[3]:D) for D_NET (n_30) that starts on line 3611.
+**ERROR: (SPEF-1134):	Invalid resistor node (M_temp_reg[3]:D) does not belong to net found in D_NET (n_30) that starts on line 3611.
+**WARN: (SPEF-1152):	Net 'n_30 ( having pins g10412__2346/Y FE_ECOC31_n_30/A )' is not fully specified as per its connectivity in design netlist. Missing ports have been added to the net using low RC values. The timing accuracy is not reliable for such nets.
+[06/23 13:16:49     27s] **ERROR: (SPEF-1127):	Invalid CONN connection found (M_temp_reg[2]:D) for D_NET (n_31) that starts on line 3630.
+**ERROR: (SPEF-1123):	Invalid capacitor node (M_temp_reg[2]:D) does not belong to net found in D_NET (n_31) that starts on line 3630.
+**ERROR: (SPEF-1134):	Invalid resistor node (M_temp_reg[2]:D) does not belong to net found in D_NET (n_31) that starts on line 3630.
+**WARN: (SPEF-1152):	Net 'n_31 ( having pins g10411__2883/Y FE_ECOC35_n_31/A )' is not fully specified as per its connectivity in design netlist. Missing ports have been added to the net using low RC values. The timing accuracy is not reliable for such nets.
+[06/23 13:16:49     27s] **ERROR: (SPEF-1127):	Invalid CONN connection found (M_temp_reg[0]:D) for D_NET (n_33) that starts on line 3697.
+**ERROR: (SPEF-1123):	Invalid capacitor node (M_temp_reg[0]:D) does not belong to net found in D_NET (n_33) that starts on line 3697.
+**ERROR: (SPEF-1134):	Invalid resistor node (M_temp_reg[0]:D) does not belong to net found in D_NET (n_33) that starts on line 3697.
+**WARN: (SPEF-1152):	Net 'n_33 ( having pins g10410__9945/Y FE_ECOC27_n_33/A )' is not fully specified as per its connectivity in design netlist. Missing ports have been added to the net using low RC values. The timing accuracy is not reliable for such nets.
+[06/23 13:16:49     27s] **ERROR: (SPEF-1127):	Invalid CONN connection found (M_temp_reg[1]:D) for D_NET (n_34) that starts on line 3716.
+**ERROR: (SPEF-1123):	Invalid capacitor node (M_temp_reg[1]:D) does not belong to net found in D_NET (n_34) that starts on line 3716.
+**ERROR: (SPEF-1134):	Invalid resistor node (M_temp_reg[1]:D) does not belong to net found in D_NET (n_34) that starts on line 3716.
+**WARN: (SPEF-1152):	Net 'n_34 ( having pins g10409__9315/Y FE_ECOC21_n_34/A )' is not fully specified as per its connectivity in design netlist. Missing ports have been added to the net using low RC values. The timing accuracy is not reliable for such nets.
+[06/23 13:16:49     27s] **ERROR: (SPEF-1127):	Invalid CONN connection found (Count_reg[2]:D) for D_NET (n_43) that starts on line 3972.
+**ERROR: (SPEF-1134):	Invalid resistor node (Count_reg[2]:D) does not belong to net found in D_NET (n_43) that starts on line 3972.
+**WARN: (SPEF-1152):	Net 'n_43 ( having pins g10376__6131/Y FE_ECOC19_n_43/A )' is not fully specified as per its connectivity in design netlist. Missing ports have been added to the net using low RC values. The timing accuracy is not reliable for such nets.
+[06/23 13:16:49     27s] **ERROR: (SPEF-1127):	Invalid CONN connection found (g10433:A) for D_NET (n_63) that starts on line 4550.
+**ERROR: (SPEF-1127):	Invalid CONN connection found (g10357__8428:B0) for D_NET (n_63) that starts on line 4550.
+**ERROR: (SPEF-1127):	Invalid CONN connection found (g10354__2398:B0) for D_NET (n_63) that starts on line 4550.
+**ERROR: (SPEF-1127):	Invalid CONN connection found (g10416__4319:A) for D_NET (n_63) that starts on line 4550.
+**ERROR: (SPEF-1127):	Invalid CONN connection found (Count_reg[0]:D1) for D_NET (n_63) that starts on line 4550.
+**ERROR: (SPEF-1123):	Invalid capacitor node (g10357__8428:B0) does not belong to net found in D_NET (n_63) that starts on line 4550.
+**ERROR: (SPEF-1123):	Invalid capacitor node (g10354__2398:B0) does not belong to net found in D_NET (n_63) that starts on line 4550.
+**ERROR: (SPEF-1123):	Invalid capacitor node (Count_reg[0]:D1) does not belong to net found in D_NET (n_63) that starts on line 4550.
+**ERROR: (SPEF-1134):	Invalid resistor node (Count_reg[0]:D1) does not belong to net found in D_NET (n_63) that starts on line 4550.
+**ERROR: (SPEF-1134):	Invalid resistor node (g10416__4319:A) does not belong to net found in D_NET (n_63) that starts on line 4550.
+**ERROR: (SPEF-1134):	Invalid resistor node (g10354__2398:B0) does not belong to net found in D_NET (n_63) that starts on line 4550.
+**ERROR: (SPEF-1134):	Invalid resistor node (g10357__8428:B0) does not belong to net found in D_NET (n_63) that starts on line 4550.
+**ERROR: (SPEF-1134):	Invalid resistor node (g10357__8428:B0) does not belong to net found in D_NET (n_63) that starts on line 4550.
+**ERROR: (SPEF-1134):	Invalid resistor node (g10433:A) does not belong to net found in D_NET (n_63) that starts on line 4550.
+**WARN: (SPEF-1152):	Net 'n_63 ( having pins g10440__9945/Y FE_ECOC0_n_63/A )' is not fully specified as per its connectivity in design netlist. Missing ports have been added to the net using low RC values. The timing accuracy is not reliable for such nets.
+[06/23 13:16:49     27s] **ERROR: (SPEF-1127):	Invalid CONN connection found (P_reg[0]:D) for D_NET (n_76) that starts on line 4833.
+**ERROR: (SPEF-1134):	Invalid resistor node (P_reg[0]:D) does not belong to net found in D_NET (n_76) that starts on line 4833.
+**WARN: (SPEF-1152):	Net 'n_76 ( having pins g10351__2883/Y FE_ECOC25_n_76/A )' is not fully specified as per its connectivity in design netlist. Missing ports have been added to the net using low RC values. The timing accuracy is not reliable for such nets.
+[06/23 13:16:49     27s] **ERROR: (SPEF-1127):	Invalid CONN connection found (Q_minus_one_reg:D) for D_NET (n_82) that starts on line 4971.
+**ERROR: (SPEF-1134):	Invalid resistor node (Q_minus_one_reg:D) does not belong to net found in D_NET (n_82) that starts on line 4971.
+**WARN: (SPEF-1152):	Net 'n_82 ( having pins g10353__6161/Y FE_ECOC39_n_82/A )' is not fully specified as per its connectivity in design netlist. Missing ports have been added to the net using low RC values. The timing accuracy is not reliable for such nets.
+[06/23 13:16:49     27s] **ERROR: (SPEF-1127):	Invalid CONN connection found (P_reg[2]:D) for D_NET (n_90) that starts on line 5140.
+**ERROR: (SPEF-1123):	Invalid capacitor node (P_reg[2]:D) does not belong to net found in D_NET (n_90) that starts on line 5140.
+**ERROR: (SPEF-1134):	Invalid resistor node (P_reg[2]:D) does not belong to net found in D_NET (n_90) that starts on line 5140.
+**WARN: (SPEF-1152):	Net 'n_90 ( having pins g10348__6131/Y FE_ECOC15_n_90/A )' is not fully specified as per its connectivity in design netlist. Missing ports have been added to the net using low RC values. The timing accuracy is not reliable for such nets.
+[06/23 13:16:49     27s] **ERROR: (SPEF-1127):	Invalid CONN connection found (P_reg[3]:D) for D_NET (n_91) that starts on line 5159.
+**ERROR: (SPEF-1134):	Invalid resistor node (P_reg[3]:D) does not belong to net found in D_NET (n_91) that starts on line 5159.
+**WARN: (SPEF-1152):	Net 'n_91 ( having pins g10349__7098/Y FE_ECOC17_n_91/A )' is not fully specified as per its connectivity in design netlist. Missing ports have been added to the net using low RC values. The timing accuracy is not reliable for such nets.
+[06/23 13:16:49     27s] **ERROR: (SPEF-1127):	Invalid CONN connection found (Count_reg[1]:D) for D_NET (n_94) that starts on line 5206.
+**ERROR: (SPEF-1123):	Invalid capacitor node (Count_reg[1]:D) does not belong to net found in D_NET (n_94) that starts on line 5206.
+**ERROR: (SPEF-1134):	Invalid resistor node (Count_reg[1]:D) does not belong to net found in D_NET (n_94) that starts on line 5206.
+**WARN: (SPEF-1152):	Net 'n_94 ( having pins g10356__5122/Y FE_ECOC11_n_94/A )' is not fully specified as per its connectivity in design netlist. Missing ports have been added to the net using low RC values. The timing accuracy is not reliable for such nets.
+[06/23 13:16:49     27s] **ERROR: (SPEF-1127):	Invalid CONN connection found (P_reg[1]:D) for D_NET (n_96) that starts on line 5233.
+**ERROR: (SPEF-1134):	Invalid resistor node (P_reg[1]:D) does not belong to net found in D_NET (n_96) that starts on line 5233.
+**WARN: (SPEF-1152):	Net 'n_96 ( having pins g10345__2802/Y FE_ECOC13_n_96/A )' is not fully specified as per its connectivity in design netlist. Missing ports have been added to the net using low RC values. The timing accuracy is not reliable for such nets.
+[06/23 13:16:49     27s] **ERROR: (SPEF-1127):	Invalid CONN connection found (A_reg[0]:D) for D_NET (n_102) that starts on line 5303.
+**ERROR: (SPEF-1123):	Invalid capacitor node (A_reg[0]:D) does not belong to net found in D_NET (n_102) that starts on line 5303.
+**ERROR: (SPEF-1134):	Invalid resistor node (A_reg[0]:D) does not belong to net found in D_NET (n_102) that starts on line 5303.
+**WARN: (SPEF-1152):	Net 'n_102 ( having pins FE_RC_45_0/Y FE_ECOC1_n_102/A )' is not fully specified as per its connectivity in design netlist. Missing ports have been added to the net using low RC values. The timing accuracy is not reliable for such nets.
+[06/23 13:16:49     27s] **ERROR: (SPEF-1127):	Invalid CONN connection found (A_reg[1]:D) for D_NET (n_105) that starts on line 5385.
+**ERROR: (SPEF-1134):	Invalid resistor node (A_reg[1]:D) does not belong to net found in D_NET (n_105) that starts on line 5385.
+**WARN: (SPEF-1152):	Net 'n_105 ( having pins FE_RC_38_0/Y FE_ECOC4_n_105/A )' is not fully specified as per its connectivity in design netlist. Missing ports have been added to the net using low RC values. The timing accuracy is not reliable for such nets.
+[06/23 13:16:49     27s] **ERROR: (SPEF-1127):	Invalid CONN connection found (A_reg[2]:D) for D_NET (n_106) that starts on line 5409.
+**ERROR: (SPEF-1134):	Invalid resistor node (A_reg[2]:D) does not belong to net found in D_NET (n_106) that starts on line 5409.
+**WARN: (SPEF-1152):	Net 'n_106 ( having pins FE_RC_4_0/Y FE_ECOC7_n_106/A )' is not fully specified as per its connectivity in design netlist. Missing ports have been added to the net using low RC values. The timing accuracy is not reliable for such nets.
+[06/23 13:16:49     27s] SPEF file booth_multiplier.spef.
+[06/23 13:16:49     27s] Number of Resistors     : 1654
+[06/23 13:16:49     27s] Number of Ground Caps   : 1436
+[06/23 13:16:49     27s] Number of Coupling Caps : 0
+[06/23 13:16:49     27s] 
+[06/23 13:16:49     27s] RCDB /tmp/ssv_tmpdir_727482_498d8d1a-999e-4496-943e-8a6e8fce9ce9_f6d2re/booth_multiplier_727482_498d8d1a-999e-4496-943e-8a6e8fce9ce9_uVcoS0.rcdb.d/booth_multiplier.rcdb.d Creation Completed (CPU Time= 0:00:00.0  MEM= 3107.0M)
+[06/23 13:16:49     27s] End spef parsing (MEM=3099.01 CPU=0:00:00.0 REAL=0:00:00.0).
+[06/23 13:16:49     27s] Spef for RC Corner 'rc_corner' was previously specified. Dropping the previous specification.
+[06/23 13:16:49     27s] Lumped Parasitic Loading Started (total cpu=0:00:00.0, real=0:00:00.0, current mem=3099.008M)
+[06/23 13:16:49     27s] Opening parasitic data file '/tmp/ssv_tmpdir_727482_498d8d1a-999e-4496-943e-8a6e8fce9ce9_f6d2re/booth_multiplier_727482_498d8d1a-999e-4496-943e-8a6e8fce9ce9_uVcoS0.rcdb.d/booth_multiplier.rcdb.d' for reading (mem: 3099.008M)
+[06/23 13:16:49     27s] Lumped Parasitic Loading Completed (total cpu=0:00:00.0, real=0:00:00.0, current mem=3099.008M)
+[06/23 13:16:49     27s] Closing parasitic data file '/tmp/ssv_tmpdir_727482_498d8d1a-999e-4496-943e-8a6e8fce9ce9_f6d2re/booth_multiplier_727482_498d8d1a-999e-4496-943e-8a6e8fce9ce9_uVcoS0.rcdb.d/booth_multiplier.rcdb.d': 0 access done (mem: 3099.008M)
+[06/23 13:16:49     27s] 40 nets are missing in SPEF file. The names of these nets are saved in ./rc_corner.missing_nets.rpt.
+[06/23 13:16:49     27s] **WARN: (IMPEXT-3423):	Detected 15 nets with incomplete RC network. Low-value resistances have been added by the software to complete the RC network of these nets. Review the list of affected nets in the './booth_multiplier.rc_corner.incomplete_res.net' file to ensure they are not along the critical path because results of timing analysis performed on nets with incomplete RC network can be inaccurate.
+[06/23 13:16:51     27s] <CMD> all_setup_analysis_views
+[06/23 13:16:58     27s] <CMD> read_sdf booth_multiplier.sdf
+[06/23 13:16:58     27s] **WARN: (TCLCMD-1234):	In multi-mode, multi-corner analysis mode, you should include the -view option with the read_sdf command to annotate the SDF file to specific view(s). Without the -view option, the SDF file will only be annotated to the current default view.
+[06/23 13:17:03     27s] <CMD> get_eco_opt_mode -optimization_failure_tracking_file -quiet
+[06/23 13:17:05     28s] <CMD> get_time_unit
+[06/23 13:17:05     28s] <CMD> report_timing -output_format binary -max_paths 50000 -max_slack 0.75 -path_exceptions all -late > top.btarpt
+[06/23 13:17:05     28s] AAE_INFO: opIsDesignInPostRouteState() is 0
+[06/23 13:17:05     28s] #################################################################################
+[06/23 13:17:05     28s] # Design Name: booth_multiplier
+[06/23 13:17:05     28s] # Design Mode: 65nm
+[06/23 13:17:05     28s] # Analysis Mode: MMMC Non-OCV 
+[06/23 13:17:05     28s] # Parasitics Mode: SPEF/RCDB 
+[06/23 13:17:05     28s] # Signoff Settings: SI Off 
+[06/23 13:17:05     28s] #################################################################################
+[06/23 13:17:06     28s] Topological Sorting (REAL = 0:00:00.0, MEM = 3120.6M, InitMEM = 3118.6M)
+[06/23 13:17:06     28s] Start delay calculation (fullDC) (1 T). (MEM=2518.15)
+[06/23 13:17:06     28s] Start AAE Lib Loading. (MEM=2518.148438)
+[06/23 13:17:06     28s] End AAE Lib Loading. (MEM=2526.863281 CPU=0:00:00.0 Real=0:00:00.0)
+[06/23 13:17:06     28s] End AAE Lib Interpolated Model. (MEM=2526.863281 CPU Time=0:00:00.0, Real Time=0:00:00.0)
+[06/23 13:17:06     28s] Opening parasitic data file '/tmp/ssv_tmpdir_727482_498d8d1a-999e-4496-943e-8a6e8fce9ce9_f6d2re/booth_multiplier_727482_498d8d1a-999e-4496-943e-8a6e8fce9ce9_uVcoS0.rcdb.d/booth_multiplier.rcdb.d' for reading (mem: 3379.328M)
+[06/23 13:17:06     28s] RC Database In Completed (CPU Time= 0:00:00.0  Real Time=0:00:00.0  MEM= 3381.3M)
+[06/23 13:17:06     28s] End Timing Check Calculation. (CPU Time=0:00:00.0, Real Time=0:00:00.0)
+[06/23 13:17:06     28s] End Timing Check Calculation. (CPU Time=0:00:00.0, Real Time=0:00:00.0)
+[06/23 13:17:06     28s] End delay calculation. (MEM=2619.46 CPU=0:00:00.1 REAL=0:00:00.0)
+[06/23 13:17:06     28s] Begin loading slews from CTE ...
+[06/23 13:17:06     28s] Loading slews from CTE completed...
+[06/23 13:17:06     28s] End delay calculation (fullDC). (MEM=2613.93 CPU=0:00:00.2 REAL=0:00:00.0)
+[06/23 13:17:06     28s] *** CDM Built up (cpu=0:00:00.6  real=0:00:01.0  mem= 3619.2M) ***
+[06/23 13:17:06     28s] Has not load the powerDB, will keep enalbed
+[06/23 13:17:06     28s] Has not load the powerDB, will keep enalbed
+[06/23 13:17:06     28s] <CMD> load_timing_debug_report -name default_report top.btarpt -max_path_num 10000 -updateCategory 0 -isDrv 0
+[06/23 13:17:06     28s] Parsing file top.btarpt...
+[06/23 13:17:22     30s] <CMD_INTERNAL> zoomSelected
+[06/23 13:17:22     30s] <CMD_INTERNAL> zoomSelected
+[06/23 13:17:22     30s] <CMD> all_analysis_views
+[06/23 13:17:22     30s] <CMD> all_setup_analysis_views
+[06/23 13:17:22     30s] <CMD> all_hold_analysis_views
+[06/23 13:17:22     30s] <CMD> get_analysis_view $view -delay_corner
+[06/23 13:17:22     30s] <CMD> get_delay_corner $dc -rc_corner
+[06/23 13:17:34     30s] <CMD> add_repeater -net {P[3]}
+[06/23 13:17:34     30s] #################################################################################
+[06/23 13:17:34     30s] # Design Name: booth_multiplier
+[06/23 13:17:34     30s] # Design Mode: 65nm
+[06/23 13:17:34     30s] # Analysis Mode: MMMC Non-OCV 
+[06/23 13:17:34     30s] # Parasitics Mode: SPEF/RCDB 
+[06/23 13:17:34     30s] # Signoff Settings: SI Off 
+[06/23 13:17:34     30s] #################################################################################
+[06/23 13:17:34     30s] **ERROR: (IMPOPT-155):	No buffer found for repeater insertion.
+**ERROR: (IMPSYT-7004):	Failed to execute add_repeater command.
+[06/23 13:17:37     31s] <CMD_INTERNAL> redraw
+[06/23 13:17:54     32s] <CMD_INTERNAL> zoomSelected
+[06/23 13:17:54     32s] <CMD_INTERNAL> zoomSelected
+[06/23 13:17:54     32s] <CMD_INTERNAL> zoomSelected
+[06/23 13:17:54     32s] <CMD> all_analysis_views
+[06/23 13:17:54     32s] <CMD> all_setup_analysis_views
+[06/23 13:17:54     32s] <CMD> all_hold_analysis_views
+[06/23 13:17:54     32s] <CMD> get_analysis_view $view -delay_corner
+[06/23 13:17:54     32s] <CMD> get_delay_corner $dc -rc_corner
+[06/23 13:18:34     34s] <CMD> change_cell -inst g10384_0__5107 -cell NOR2X4
+[06/23 13:18:34     34s] #################################################################################
+[06/23 13:18:34     34s] # Design Name: booth_multiplier
+[06/23 13:18:34     34s] # Design Mode: 65nm
+[06/23 13:18:34     34s] # Analysis Mode: MMMC Non-OCV 
+[06/23 13:18:34     34s] # Parasitics Mode: SPEF/RCDB 
+[06/23 13:18:34     34s] # Signoff Settings: SI Off 
+[06/23 13:18:34     34s] #################################################################################
+[06/23 13:18:34     34s] Resize g10384_0__5107 (NOR2X6) to NOR2X4.
+[06/23 13:18:34     34s] <CMD_INTERNAL> redraw
+[06/23 13:18:42     35s] <CMD> get_time_unit
+[06/23 13:18:42     35s] <CMD> report_timing -output_format binary -max_paths 50000 -max_slack 0.75 -path_exceptions all -late > top.btarpt
+[06/23 13:18:42     35s] <CMD> load_timing_debug_report -name default_report top.btarpt -max_path_num 10000 -updateCategory 0 -isDrv 0
+[06/23 13:18:42     35s] Parsing file top.btarpt...
+[06/23 13:18:51     35s] <CMD_INTERNAL> zoomSelected
+[06/23 13:18:51     35s] <CMD_INTERNAL> zoomSelected
+[06/23 13:18:51     35s] <CMD_INTERNAL> zoomSelected
+[06/23 13:18:52     36s] <CMD> all_analysis_views
+[06/23 13:18:52     36s] <CMD> all_setup_analysis_views
+[06/23 13:18:52     36s] <CMD> all_hold_analysis_views
+[06/23 13:18:52     36s] <CMD> get_analysis_view $view -delay_corner
+[06/23 13:18:52     36s] <CMD> get_delay_corner $dc -rc_corner
+[06/23 13:18:59     36s] <CMD> change_cell -inst g10384_0__5107 -cell NOR2X6
+[06/23 13:18:59     36s] #################################################################################
+[06/23 13:18:59     36s] # Design Name: booth_multiplier
+[06/23 13:18:59     36s] # Design Mode: 65nm
+[06/23 13:18:59     36s] # Analysis Mode: MMMC Non-OCV 
+[06/23 13:18:59     36s] # Parasitics Mode: SPEF/RCDB 
+[06/23 13:18:59     36s] # Signoff Settings: SI Off 
+[06/23 13:18:59     36s] #################################################################################
+[06/23 13:18:59     36s] Resize g10384_0__5107 (NOR2X4) to NOR2X6.
+[06/23 13:18:59     36s] <CMD_INTERNAL> redraw
+[06/23 13:19:03     36s] <CMD> get_time_unit
+[06/23 13:19:03     36s] <CMD> report_timing -output_format binary -max_paths 50000 -max_slack 0.75 -path_exceptions all -late > top.btarpt
+[06/23 13:19:03     36s] <CMD> load_timing_debug_report -name default_report top.btarpt -max_path_num 10000 -updateCategory 0 -isDrv 0
+[06/23 13:19:03     36s] Parsing file top.btarpt...
+[06/23 13:19:23     38s] <CMD_INTERNAL> zoomSelected
+[06/23 13:19:23     38s] <CMD_INTERNAL> zoomSelected
+[06/23 13:19:23     38s] <CMD_INTERNAL> zoomSelected
+[06/23 13:19:23     38s] <CMD> all_analysis_views
+[06/23 13:19:23     38s] <CMD> all_setup_analysis_views
+[06/23 13:19:23     38s] <CMD> all_hold_analysis_views
+[06/23 13:19:23     38s] <CMD> get_analysis_view $view -delay_corner
+[06/23 13:19:23     38s] <CMD> get_delay_corner $dc -rc_corner
+[06/23 13:19:28     38s] <CMD> delete_repeater -inst FE_ECOC0_n_63
+[06/23 13:19:28     38s] #################################################################################
+[06/23 13:19:28     38s] # Design Name: booth_multiplier
+[06/23 13:19:28     38s] # Design Mode: 65nm
+[06/23 13:19:28     38s] # Analysis Mode: MMMC Non-OCV 
+[06/23 13:19:28     38s] # Parasitics Mode: SPEF/RCDB 
+[06/23 13:19:28     38s] # Signoff Settings: SI Off 
+[06/23 13:19:28     38s] #################################################################################
+[06/23 13:19:28     38s] Delete FE_ECOC0_n_63 (BUFX2).
+[06/23 13:19:28     38s] **WARN: (IMPESI-3014):	The RC network is incomplete for net n_63. As a result, a lumped model will be used during delay calculation which may compromise timing accuracy. To resolve this, check parasitics for completeness, re-extraction may be required.
+[06/23 13:19:28     38s] **WARN: (IMPESI-3014):	The RC network is incomplete for net n_63. As a result, a lumped model will be used during delay calculation which may compromise timing accuracy. To resolve this, check parasitics for completeness, re-extraction may be required.
+[06/23 13:19:28     38s] Dumping Information for Job ...
+[06/23 13:19:28     38s] **WARN: (IMPESI-3014):	The RC network is incomplete for net n_63. As a result, a lumped model will be used during delay calculation which may compromise timing accuracy. To resolve this, check parasitics for completeness, re-extraction may be required.
+**WARN: (IMPESI-3014):	The RC network is incomplete for net n_63. As a result, a lumped model will be used during delay calculation which may compromise timing accuracy. To resolve this, check parasitics for completeness, re-extraction may be required.
+
+[06/23 13:19:28     38s] <CMD_INTERNAL> redraw
+[06/23 13:19:52     39s] <CMD> get_time_unit
+[06/23 13:19:52     39s] <CMD> report_timing -output_format binary -max_paths 50000 -max_slack 0.75 -path_exceptions all -late > top.btarpt
+[06/23 13:19:52     39s] <CMD> load_timing_debug_report -name default_report top.btarpt -max_path_num 10000 -updateCategory 0 -isDrv 0
+[06/23 13:19:52     39s] Parsing file top.btarpt...
+[06/23 13:20:14     41s] <CMD_INTERNAL> zoomSelected
+[06/23 13:20:14     41s] <CMD_INTERNAL> zoomSelected
+[06/23 13:20:14     41s] <CMD_INTERNAL> zoomSelected
+[06/23 13:20:15     41s] <CMD> all_analysis_views
+[06/23 13:20:15     41s] <CMD> all_setup_analysis_views
+[06/23 13:20:15     41s] <CMD> all_hold_analysis_views
+[06/23 13:20:15     41s] <CMD> get_analysis_view $view -delay_corner
+[06/23 13:20:15     41s] <CMD> get_delay_corner $dc -rc_corner
+[06/23 13:20:22     41s] <CMD> change_cell -inst FE_RC_103_0 -cell CLKINVX2
+[06/23 13:20:22     41s] #################################################################################
+[06/23 13:20:22     41s] # Design Name: booth_multiplier
+[06/23 13:20:22     41s] # Design Mode: 65nm
+[06/23 13:20:22     41s] # Analysis Mode: MMMC Non-OCV 
+[06/23 13:20:22     41s] # Parasitics Mode: SPEF/RCDB 
+[06/23 13:20:22     41s] # Signoff Settings: SI Off 
+[06/23 13:20:22     41s] #################################################################################
+[06/23 13:20:22     41s] Resize FE_RC_103_0 (CLKINVX1) to CLKINVX2.
+[06/23 13:20:22     41s] <CMD_INTERNAL> redraw
+[06/23 13:20:28     42s] <CMD> get_time_unit
+[06/23 13:20:28     42s] <CMD> report_timing -output_format binary -max_paths 50000 -max_slack 0.75 -path_exceptions all -late > top.btarpt
+[06/23 13:20:28     42s] <CMD> load_timing_debug_report -name default_report top.btarpt -max_path_num 10000 -updateCategory 0 -isDrv 0
+[06/23 13:20:28     42s] Parsing file top.btarpt...
+[06/23 13:20:38     42s] <CMD_INTERNAL> zoomSelected
+[06/23 13:20:38     42s] <CMD_INTERNAL> zoomSelected
+[06/23 13:20:38     42s] <CMD_INTERNAL> zoomSelected
+[06/23 13:20:57     43s] <CMD> all_analysis_views
+[06/23 13:20:57     43s] <CMD> all_setup_analysis_views
+[06/23 13:20:57     43s] <CMD> all_hold_analysis_views
+[06/23 13:20:57     43s] <CMD> get_analysis_view $view -delay_corner
+[06/23 13:20:57     43s] <CMD> get_delay_corner $dc -rc_corner
+[06/23 13:21:05     43s] <CMD> change_cell -inst FE_RC_102_0 -cell NOR2BX2
+[06/23 13:21:05     43s] #################################################################################
+[06/23 13:21:05     43s] # Design Name: booth_multiplier
+[06/23 13:21:05     43s] # Design Mode: 65nm
+[06/23 13:21:05     43s] # Analysis Mode: MMMC Non-OCV 
+[06/23 13:21:05     43s] # Parasitics Mode: SPEF/RCDB 
+[06/23 13:21:05     43s] # Signoff Settings: SI Off 
+[06/23 13:21:05     43s] #################################################################################
+[06/23 13:21:05     43s] Resize FE_RC_102_0 (NOR2BX1) to NOR2BX2.
+[06/23 13:21:05     43s] <CMD_INTERNAL> redraw
+[06/23 13:21:17     43s] <CMD> get_time_unit
+[06/23 13:21:17     43s] <CMD> report_timing -output_format binary -max_paths 50000 -max_slack 0.75 -path_exceptions all -late > top.btarpt
+[06/23 13:21:17     43s] <CMD> load_timing_debug_report -name default_report top.btarpt -max_path_num 10000 -updateCategory 0 -isDrv 0
+[06/23 13:21:17     43s] Parsing file top.btarpt...
+[06/23 13:21:28     44s] <CMD_INTERNAL> zoomSelected
+[06/23 13:21:28     44s] <CMD_INTERNAL> zoomSelected
+[06/23 13:21:28     44s] <CMD_INTERNAL> zoomSelected
+[06/23 13:21:29     44s] <CMD> all_analysis_views
+[06/23 13:21:29     44s] <CMD> all_setup_analysis_views
+[06/23 13:21:29     44s] <CMD> all_hold_analysis_views
+[06/23 13:21:29     44s] <CMD> get_analysis_view $view -delay_corner
+[06/23 13:21:29     44s] <CMD> get_delay_corner $dc -rc_corner
+[06/23 13:21:35     44s] <CMD> change_cell -inst FE_RC_102_0 -cell NOR2BX1
+[06/23 13:21:35     44s] #################################################################################
+[06/23 13:21:35     44s] # Design Name: booth_multiplier
+[06/23 13:21:35     44s] # Design Mode: 65nm
+[06/23 13:21:35     44s] # Analysis Mode: MMMC Non-OCV 
+[06/23 13:21:35     44s] # Parasitics Mode: SPEF/RCDB 
+[06/23 13:21:35     44s] # Signoff Settings: SI Off 
+[06/23 13:21:35     44s] #################################################################################
+[06/23 13:21:35     44s] Resize FE_RC_102_0 (NOR2BX2) to NOR2BX1.
+[06/23 13:21:35     44s] <CMD_INTERNAL> redraw
+[06/23 13:21:39     44s] <CMD> get_time_unit
+[06/23 13:21:39     44s] <CMD> report_timing -output_format binary -max_paths 50000 -max_slack 0.75 -path_exceptions all -late > top.btarpt
+[06/23 13:21:39     44s] <CMD> load_timing_debug_report -name default_report top.btarpt -max_path_num 10000 -updateCategory 0 -isDrv 0
+[06/23 13:21:39     44s] Parsing file top.btarpt...
+[06/23 13:24:07     50s] <CMD> get_time_unit
+[06/23 13:24:07     50s] <CMD> report_timing -output_format binary -max_paths 50000 -max_slack 0.75 -path_exceptions all -late > top.btarpt
+[06/23 13:24:07     50s] <CMD> load_timing_debug_report -name default_report top.btarpt -max_path_num 10000 -updateCategory 0 -isDrv 0
+[06/23 13:24:07     50s] Parsing file top.btarpt...
+[06/23 13:24:15     51s] <CMD_INTERNAL> zoomSelected
+[06/23 13:24:15     51s] <CMD_INTERNAL> zoomSelected
+[06/23 13:24:15     51s] <CMD_INTERNAL> zoomSelected
+[06/23 13:24:15     51s] <CMD> all_analysis_views
+[06/23 13:24:15     51s] <CMD> all_setup_analysis_views
+[06/23 13:24:15     51s] <CMD> all_hold_analysis_views
+[06/23 13:24:15     51s] <CMD> get_analysis_view $view -delay_corner
+[06/23 13:24:15     51s] <CMD> get_delay_corner $dc -rc_corner
+[06/23 13:24:22     51s] <CMD> change_cell -inst FE_RC_103_0 -cell CLKINVX1
+[06/23 13:24:22     51s] #################################################################################
+[06/23 13:24:22     51s] # Design Name: booth_multiplier
+[06/23 13:24:22     51s] # Design Mode: 65nm
+[06/23 13:24:22     51s] # Analysis Mode: MMMC Non-OCV 
+[06/23 13:24:22     51s] # Parasitics Mode: SPEF/RCDB 
+[06/23 13:24:22     51s] # Signoff Settings: SI Off 
+[06/23 13:24:22     51s] #################################################################################
+[06/23 13:24:22     51s] Resize FE_RC_103_0 (CLKINVX2) to CLKINVX1.
+[06/23 13:24:22     51s] <CMD_INTERNAL> redraw
+[06/23 13:24:28     51s] <CMD> get_time_unit
+[06/23 13:24:28     51s] <CMD> report_timing -output_format binary -max_paths 50000 -max_slack 0.75 -path_exceptions all -late > top.btarpt
+[06/23 13:24:28     51s] <CMD> load_timing_debug_report -name default_report top.btarpt -max_path_num 10000 -updateCategory 0 -isDrv 0
+[06/23 13:24:28     51s] Parsing file top.btarpt...
+[06/23 13:24:37     52s] <CMD> all_analysis_views
+[06/23 13:24:37     52s] <CMD> all_setup_analysis_views
+[06/23 13:24:37     52s] <CMD> all_hold_analysis_views
+[06/23 13:24:37     52s] <CMD> get_analysis_view $view -delay_corner
+[06/23 13:24:37     52s] <CMD> get_delay_corner $dc -rc_corner
+[06/23 13:24:43     52s] <CMD> change_cell -inst FE_RC_103_0 -cell CLKINVX2
+[06/23 13:24:43     52s] #################################################################################
+[06/23 13:24:43     52s] # Design Name: booth_multiplier
+[06/23 13:24:43     52s] # Design Mode: 65nm
+[06/23 13:24:43     52s] # Analysis Mode: MMMC Non-OCV 
+[06/23 13:24:43     52s] # Parasitics Mode: SPEF/RCDB 
+[06/23 13:24:43     52s] # Signoff Settings: SI Off 
+[06/23 13:24:43     52s] #################################################################################
+[06/23 13:24:43     52s] Resize FE_RC_103_0 (CLKINVX1) to CLKINVX2.
+[06/23 13:24:43     52s] <CMD_INTERNAL> redraw
+[06/23 13:25:00     53s] <CMD_INTERNAL> zoomSelected
+[06/23 13:25:00     53s] <CMD_INTERNAL> zoomSelected
+[06/23 13:25:00     53s] <CMD_INTERNAL> zoomSelected
+[06/23 13:25:00     53s] <CMD> all_analysis_views
+[06/23 13:25:00     53s] <CMD> all_setup_analysis_views
+[06/23 13:25:00     53s] <CMD> all_hold_analysis_views
+[06/23 13:25:00     53s] <CMD> get_analysis_view $view -delay_corner
+[06/23 13:25:00     53s] <CMD> get_delay_corner $dc -rc_corner
+[06/23 13:25:05     53s] <CMD> change_cell -inst FE_RC_103_0 -cell CLKINVX2
+[06/23 13:25:05     53s] #################################################################################
+[06/23 13:25:05     53s] # Design Name: booth_multiplier
+[06/23 13:25:05     53s] # Design Mode: 65nm
+[06/23 13:25:05     53s] # Analysis Mode: MMMC Non-OCV 
+[06/23 13:25:05     53s] # Parasitics Mode: SPEF/RCDB 
+[06/23 13:25:05     53s] # Signoff Settings: SI Off 
+[06/23 13:25:05     53s] #################################################################################
+[06/23 13:25:05     53s] Resize FE_RC_103_0 (CLKINVX2) to CLKINVX2.
+[06/23 13:25:05     53s] <CMD_INTERNAL> redraw
+[06/23 13:25:13     53s] <CMD> get_time_unit
+[06/23 13:25:13     53s] <CMD> report_timing -output_format binary -max_paths 50000 -max_slack 0.75 -path_exceptions all -late > top.btarpt
+[06/23 13:25:13     53s] <CMD> load_timing_debug_report -name default_report top.btarpt -max_path_num 10000 -updateCategory 0 -isDrv 0
+[06/23 13:25:13     53s] Parsing file top.btarpt...
+[06/23 13:25:22     54s] <CMD_INTERNAL> zoomSelected
+[06/23 13:25:22     54s] <CMD_INTERNAL> zoomSelected
+[06/23 13:25:22     54s] <CMD> all_analysis_views
+[06/23 13:25:22     54s] <CMD> all_setup_analysis_views
+[06/23 13:25:22     54s] <CMD> all_hold_analysis_views
+[06/23 13:25:22     54s] <CMD> get_analysis_view $view -delay_corner
+[06/23 13:25:22     54s] <CMD> get_delay_corner $dc -rc_corner
+[06/23 13:25:30     54s] <CMD> change_cell -inst FE_RC_103_0 -cell CLKINVX3
+[06/23 13:25:30     54s] #################################################################################
+[06/23 13:25:30     54s] # Design Name: booth_multiplier
+[06/23 13:25:30     54s] # Design Mode: 65nm
+[06/23 13:25:30     54s] # Analysis Mode: MMMC Non-OCV 
+[06/23 13:25:30     54s] # Parasitics Mode: SPEF/RCDB 
+[06/23 13:25:30     54s] # Signoff Settings: SI Off 
+[06/23 13:25:30     54s] #################################################################################
+[06/23 13:25:30     54s] Resize FE_RC_103_0 (CLKINVX2) to CLKINVX3.
+[06/23 13:25:30     54s] <CMD_INTERNAL> redraw
+[06/23 13:25:49     54s] <CMD> get_time_unit
+[06/23 13:25:49     54s] <CMD> report_timing -output_format binary -max_paths 50000 -max_slack 0.75 -path_exceptions all -late > top.btarpt
+[06/23 13:25:49     54s] <CMD> load_timing_debug_report -name default_report top.btarpt -max_path_num 10000 -updateCategory 0 -isDrv 0
+[06/23 13:25:49     54s] Parsing file top.btarpt...
+[06/23 13:25:58     55s] <CMD_INTERNAL> zoomSelected
+[06/23 13:25:58     55s] <CMD_INTERNAL> zoomSelected
+[06/23 13:25:58     55s] <CMD> all_analysis_views
+[06/23 13:25:58     55s] <CMD> all_setup_analysis_views
+[06/23 13:25:58     55s] <CMD> all_hold_analysis_views
+[06/23 13:25:58     55s] <CMD> get_analysis_view $view -delay_corner
+[06/23 13:25:58     55s] <CMD> get_delay_corner $dc -rc_corner
+[06/23 13:26:06     55s] <CMD> change_cell -inst FE_RC_103_0 -cell CLKINVX2
+[06/23 13:26:06     55s] #################################################################################
+[06/23 13:26:06     55s] # Design Name: booth_multiplier
+[06/23 13:26:06     55s] # Design Mode: 65nm
+[06/23 13:26:06     55s] # Analysis Mode: MMMC Non-OCV 
+[06/23 13:26:06     55s] # Parasitics Mode: SPEF/RCDB 
+[06/23 13:26:06     55s] # Signoff Settings: SI Off 
+[06/23 13:26:06     55s] #################################################################################
+[06/23 13:26:06     55s] Resize FE_RC_103_0 (CLKINVX3) to CLKINVX2.
+[06/23 13:26:06     55s] <CMD_INTERNAL> redraw
+[06/23 13:26:14     55s] <CMD> get_time_unit
+[06/23 13:26:14     55s] <CMD> report_timing -output_format binary -max_paths 50000 -max_slack 0.75 -path_exceptions all -late > top.btarpt
+[06/23 13:26:14     55s] <CMD> load_timing_debug_report -name default_report top.btarpt -max_path_num 10000 -updateCategory 0 -isDrv 0
+[06/23 13:26:14     55s] Parsing file top.btarpt...
+[06/23 13:27:15     58s] <CMD_INTERNAL> zoomSelected
+[06/23 13:27:15     58s] <CMD_INTERNAL> zoomSelected
+[06/23 13:27:15     58s] <CMD_INTERNAL> zoomSelected
+[06/23 13:27:15     58s] <CMD> all_analysis_views
+[06/23 13:27:15     58s] <CMD> all_setup_analysis_views
+[06/23 13:27:15     58s] <CMD> all_hold_analysis_views
+[06/23 13:27:15     58s] <CMD> get_analysis_view $view -delay_corner
+[06/23 13:27:15     58s] <CMD> get_delay_corner $dc -rc_corner
+[06/23 13:27:20     58s] <CMD> change_cell -inst FE_OCPC7_P_6 -cell BUFX2
+[06/23 13:27:20     58s] #################################################################################
+[06/23 13:27:20     58s] # Design Name: booth_multiplier
+[06/23 13:27:20     58s] # Design Mode: 65nm
+[06/23 13:27:20     58s] # Analysis Mode: MMMC Non-OCV 
+[06/23 13:27:20     58s] # Parasitics Mode: SPEF/RCDB 
+[06/23 13:27:20     58s] # Signoff Settings: SI Off 
+[06/23 13:27:20     58s] #################################################################################
+[06/23 13:27:20     58s] Resize FE_OCPC7_P_6 (BUFX3) to BUFX2.
+[06/23 13:27:20     58s] <CMD_INTERNAL> redraw
+[06/23 13:27:25     58s] <CMD> get_time_unit
+[06/23 13:27:25     58s] <CMD> report_timing -output_format binary -max_paths 50000 -max_slack 0.75 -path_exceptions all -late > top.btarpt
+[06/23 13:27:25     58s] <CMD> load_timing_debug_report -name default_report top.btarpt -max_path_num 10000 -updateCategory 0 -isDrv 0
+[06/23 13:27:25     58s] Parsing file top.btarpt...
+[06/23 14:02:53    125s] **WARN: (IMPSYC-123):	No wire on net FE_ECON15_n_90.
+[06/23 14:02:57    125s] <CMD_INTERNAL> zoomSelected
+[06/23 14:02:57    125s] <CMD_INTERNAL> zoomSelected
+[06/23 14:02:57    125s] <CMD_INTERNAL> zoomSelected
+[06/23 14:02:57    125s] <CMD> all_analysis_views
+[06/23 14:02:57    125s] <CMD> all_setup_analysis_views
+[06/23 14:02:57    125s] <CMD> all_hold_analysis_views
+[06/23 14:02:57    125s] <CMD> get_analysis_view $view -delay_corner
+[06/23 14:02:57    125s] <CMD> get_delay_corner $dc -rc_corner
+[06/23 14:03:03    125s] <CMD> delete_repeater -inst FE_ECOC15_n_90
+[06/23 14:03:03    125s] #################################################################################
+[06/23 14:03:03    125s] # Design Name: booth_multiplier
+[06/23 14:03:03    125s] # Design Mode: 65nm
+[06/23 14:03:03    125s] # Analysis Mode: MMMC Non-OCV 
+[06/23 14:03:03    125s] # Parasitics Mode: SPEF/RCDB 
+[06/23 14:03:03    125s] # Signoff Settings: SI Off 
+[06/23 14:03:03    125s] #################################################################################
+[06/23 14:03:03    125s] Delete FE_ECOC15_n_90 (BUFX2).
+[06/23 14:03:03    125s] <CMD_INTERNAL> redraw
+[06/23 14:04:17    128s] **WARN: (IMPSYC-123):	No wire on net FE_ECON13_n_96.
+[06/23 14:04:19    128s] <CMD_INTERNAL> zoomSelected
+[06/23 14:04:19    128s] <CMD_INTERNAL> zoomSelected
+[06/23 14:04:19    128s] <CMD_INTERNAL> zoomSelected
+[06/23 14:04:19    128s] <CMD> all_analysis_views
+[06/23 14:04:19    128s] <CMD> all_setup_analysis_views
+[06/23 14:04:19    128s] <CMD> all_hold_analysis_views
+[06/23 14:04:19    128s] <CMD> get_analysis_view $view -delay_corner
+[06/23 14:04:19    128s] <CMD> get_delay_corner $dc -rc_corner
+[06/23 14:04:23    128s] <CMD> delete_repeater -inst FE_ECOC13_n_96
+[06/23 14:04:23    128s] #################################################################################
+[06/23 14:04:23    128s] # Design Name: booth_multiplier
+[06/23 14:04:23    128s] # Design Mode: 65nm
+[06/23 14:04:23    128s] # Analysis Mode: MMMC Non-OCV 
+[06/23 14:04:23    128s] # Parasitics Mode: SPEF/RCDB 
+[06/23 14:04:23    128s] # Signoff Settings: SI Off 
+[06/23 14:04:23    128s] #################################################################################
+[06/23 14:04:23    128s] Delete FE_ECOC13_n_96 (BUFX2).
+[06/23 14:04:23    128s] <CMD_INTERNAL> redraw
+[06/23 14:04:26    128s] <CMD_INTERNAL> zoomSelected
+[06/23 14:04:26    128s] <CMD_INTERNAL> zoomSelected
+[06/23 14:04:26    128s] <CMD_INTERNAL> zoomSelected
+[06/23 14:04:26    128s] <CMD> all_analysis_views
+[06/23 14:04:26    128s] <CMD> all_setup_analysis_views
+[06/23 14:04:26    128s] <CMD> all_hold_analysis_views
+[06/23 14:04:26    128s] <CMD> get_analysis_view $view -delay_corner
+[06/23 14:04:26    128s] <CMD> get_delay_corner $dc -rc_corner
+[06/23 14:04:29    128s] <CMD> delete_repeater -inst FE_ECOC12_n_96
+[06/23 14:04:29    128s] #################################################################################
+[06/23 14:04:29    128s] # Design Name: booth_multiplier
+[06/23 14:04:29    128s] # Design Mode: 65nm
+[06/23 14:04:29    128s] # Analysis Mode: MMMC Non-OCV 
+[06/23 14:04:29    128s] # Parasitics Mode: SPEF/RCDB 
+[06/23 14:04:29    128s] # Signoff Settings: SI Off 
+[06/23 14:04:29    128s] #################################################################################
+[06/23 14:04:29    128s] Delete FE_ECOC12_n_96 (BUFX2).
+[06/23 14:04:29    128s] <CMD_INTERNAL> redraw
+[06/23 14:04:43    129s] <CMD> get_time_unit
+[06/23 14:04:43    129s] <CMD> report_timing -output_format binary -max_paths 50000 -max_slack 0.75 -path_exceptions all -late > top.btarpt
+[06/23 14:04:44    129s] <CMD> load_timing_debug_report -name default_report top.btarpt -max_path_num 10000 -updateCategory 0 -isDrv 0
+[06/23 14:04:44    129s] Parsing file top.btarpt...

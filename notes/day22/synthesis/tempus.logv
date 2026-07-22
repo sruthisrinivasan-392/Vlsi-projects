@@ -1,0 +1,1046 @@
+[07/01 14:57:04      0s] 
+[07/01 14:57:04      0s] Cadence Tempus(TM) Timing Solution.
+[07/01 14:57:04      0s] Copyright 2024 Cadence Design Systems, Inc. All rights reserved worldwide.
+[07/01 14:57:04      0s] 
+[07/01 14:57:04      0s] Version:	v23.13-s084_1, built Fri Nov 22 17:27:06 PST 2024
+[07/01 14:57:04      0s] Options:	
+[07/01 14:57:04      0s] Date:		Wed Jul  1 14:57:04 2026
+[07/01 14:57:04      0s] Host:		cadence (x86_64 w/Linux 4.18.0-425.3.1.el8.x86_64) (8cores*16cpus*Intel(R) Core(TM) i7-10875H CPU @ 2.30GHz 16384KB)
+[07/01 14:57:04      0s] OS:		Red Hat Enterprise Linux 8.7 (Ootpa)
+[07/01 14:57:04      0s] 
+[07/01 14:57:04      0s] License:
+[07/01 14:57:04      0s] 		[14:57:04.094121] Configured Lic search path (23.02-s006): 5280@cadence
+
+[07/01 14:57:04      0s] 		tpsxl	Tempus Timing Signoff Solution XL	23.1	checkout succeeded
+[07/01 14:57:04      0s] 		16 CPU jobs allowed with the current license(s). Use set_multi_cpu_usage to set your required CPU count.
+[07/01 14:57:04      0s] **ERROR: (IMPOAX-8053):	Could not open shared library libtempusoax22.so : liboaPrivateCDS.so: cannot open shared object file: No such file or directory.
+**ERROR: (IMPOAX-8053):	Could not open shared library libcdsSkillPcell.so : /home/install/SSV231/tools.lnx86/ssv/bin/64bit/../../../lib/64bit/libcdsSkillPcell.so: undefined symbol: _ZTIN12OpenAccess_413oaFSComponentE.
+**ERROR: (IMPOAX-8033):	OpenAccess features will be disabled in this session.
+Memory management switch to non-aggressive memory release mode.
+[07/01 14:57:16     12s] 
+[07/01 14:57:16     12s] OS Mmap count monitoring thread starts. Limit of OS Mmap count is 65530
+[07/01 14:57:16     12s] 
+[07/01 14:57:17     13s] Reset Parastics called with the command setExtractRCMode -reset@(#)CDS: Tempus Timing Solution v23.13-s084_1 (64bit) 11/22/2024 17:27 (Linux 3.10.0-693.el7.x86_64)
+[07/01 14:57:19     15s] @(#)CDS: NanoRoute 23.13-s084_1 NR241029-2256/23_13-UB (database version 18.20.652) {superthreading v2.20}
+[07/01 14:57:19     15s] @(#)CDS: AAE 23.13-s022 (64bit) 11/22/2024 (Linux 3.10.0-693.el7.x86_64)
+[07/01 14:57:19     15s] @(#)CDS: CTE 23.13-s030_1 () Nov 21 2024 17:17:38 ( )
+[07/01 14:57:19     15s] @(#)CDS: SYNTECH 23.13-s009_1 () Oct 30 2024 09:17:13 ( )
+[07/01 14:57:19     15s] @(#)CDS: CPE v23.13-s064
+[07/01 14:57:19     15s] @(#)CDS: OA 22.61-p018 Fri Oct 18 10:45:49 2024
+[07/01 14:57:19     15s] @(#)CDS: SGN 23.10-d005 (03-Oct-2023) (64 bit executable, TkQt5.15.9)
+[07/01 14:57:19     15s] @(#)CDS: RCDB 11.15.0
+[07/01 14:57:19     15s] @(#)CDS: STYLUS 23.14-s002_1 (09/11/2024 13:54 PDT)
+[07/01 14:57:19     15s] Change the soft stacksize limit to 0.2%RAM (63 mbytes). Set global soft_stack_size_limit to change the value.
+[07/01 14:57:19     15s] **INFO: (TMPDIR-1001): The environment variable TMPDIR is not set.
+Create and set the environment variable TMPDIR to '/tmp/ssv_tmpdir_193997_7cdbbedd-8680-4121-ae49-81f208e3a8ce_KPTOwh'.
+environment variable TMPDIR is '/tmp/ssv_tmpdir_193997_7cdbbedd-8680-4121-ae49-81f208e3a8ce_KPTOwh'.
+[07/01 14:57:20     16s] <CMD> ::stop_gui -keepDgui
+[07/01 14:57:21     16s] Has not load the powerDB, will keep enalbed
+[07/01 14:57:21     16s] Has not load the powerDB, will keep enalbed
+[07/01 15:03:47     26s] <CMD> read_design -physical_data FIFO_ROUTE.enc/async_fifo
+[07/01 15:03:47     27s] # Tempus Timing Solution 23.13-s084_1
+[07/01 15:03:47     27s] # read_design
+[07/01 15:03:47     27s] #  -physical_data 1
+[07/01 15:03:47     27s] #  dir FIFO_ROUTE.enc/async_fifo
+[07/01 15:03:47     27s] **ERROR: (UI-474):	"read_design FIFO_ROUTE.enc/async_fifo" is obsoleted, not supported and replaced by "read_design <designDir topcell> for non-OA database or -cellview for OAdatabase". Update the script and re-run.
+[07/01 15:03:48     27s] 
+[07/01 15:07:41     33s] <CMD> read_design -physical_data FIFO_ROUTE.enc.dat/ async_fifo
+[07/01 15:07:41     33s] # Tempus Timing Solution 23.13-s084_1
+[07/01 15:07:41     33s] # read_design
+[07/01 15:07:41     33s] #  -physical_data 1
+[07/01 15:07:41     33s] #  dir FIFO_ROUTE.enc.dat/ async_fifo
+[07/01 15:07:41     33s] Set Default Input Pin Transition as 0.1 ps.
+[07/01 15:07:42     34s] Loading design 'async_fifo' saved by 'Innovus' '21.15-s110_1' on 'Wed Jul 1 14:55:12 2026'.
+[07/01 15:07:42     34s] **ERROR: (IMPOAX-820):	The OpenAccess (OA) features are disabled in the current session of Tempus Timing Solution because the oax shared library could not be loaded properly. This could be because your installation was not properly configured. To enable OA features, exit the current session and re-launch Tempus Timing Solution either after fixing your installation by running the Configure Installation phase, or after setting the OA_HOME variable to point to a proper OA installation. Check the "OpenAccess Installation and Configuration Guide" manual for more information.
+
+**ERROR: (IMPOAX-850):	oaxCreateCdsLibArray command cannot be run as OpenAccess features are disabled in this session.
+#% Begin Load MMMC data ... (date=07/01 15:07:42, mem=1657.7M)
+[07/01 15:07:42     34s] **WARN: (UI-638):	The option '-cap_table' to the command 'create_rc_corner' is ignored since it is related to the RC extraction mode which Tempus does not support. Tempus only supports the signoff QRC extraction.
+[07/01 15:07:42     34s] Number of views requested 1 are allowed with the current licenses... continuing with set_analysis_view.
+[07/01 15:07:42     34s] #% End Load MMMC data ... (date=07/01 15:07:42, total cpu=0:00:00.0, real=0:00:00.0, peak res=1659.1M, current mem=1659.1M)
+[07/01 15:07:42     34s] 
+[07/01 15:07:42     34s] Loading LEF file /home/vlsi30/day22/synthesis/FIFO_ROUTE.enc.dat/libs/lef/gsclib045_tech.lef ...
+[07/01 15:07:42     34s] Set DBUPerIGU to M2 pitch 400.
+[07/01 15:07:42     34s] 
+[07/01 15:07:42     34s] Loading LEF file /home/vlsi30/day22/synthesis/FIFO_ROUTE.enc.dat/libs/lef/gsclib045_macro.lef ...
+[07/01 15:07:42     34s] 
+[07/01 15:07:42     34s] Loading LEF file /home/vlsi30/day22/synthesis/FIFO_ROUTE.enc.dat/libs/lef/giolib045.lef ...
+[07/01 15:07:42     34s] 
+[07/01 15:07:42     34s] Loading LEF file /home/vlsi30/day22/synthesis/FIFO_ROUTE.enc.dat/libs/lef/pdkIO.lef ...
+[07/01 15:07:42     34s] **WARN: (IMPLF-200):	Pin 'PAD' in macro 'PADI' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[07/01 15:07:42     34s] **WARN: (IMPLF-201):	Pin 'OUT' in macro 'PADI' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[07/01 15:07:42     34s] **WARN: (IMPLF-201):	Pin 'PAD' in macro 'PADO' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[07/01 15:07:42     34s] **WARN: (IMPLF-200):	Pin 'IN' in macro 'PADO' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[07/01 15:07:42     34s] **WARN: (IMPLF-201):	Pin 'PAD' in macro 'PADIO' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[07/01 15:07:42     34s] **WARN: (IMPLF-200):	Pin 'PAD' in macro 'PADIO' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[07/01 15:07:42     34s] **WARN: (IMPLF-200):	Pin 'OEN' in macro 'PADIO' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[07/01 15:07:42     34s] **WARN: (IMPLF-200):	Pin 'IN' in macro 'PADIO' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[07/01 15:07:42     34s] **WARN: (IMPLF-201):	Pin 'OUT' in macro 'PADIO' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[07/01 15:07:42     34s] **WARN: (IMPLF-200):	Pin 'VDDPAD25' in macro 'padIORINGFEED60' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[07/01 15:07:42     34s] **WARN: (IMPLF-200):	Pin 'VSSPAD' in macro 'padIORINGFEED60' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[07/01 15:07:42     34s] **WARN: (IMPLF-200):	Pin 'VDDPAD25' in macro 'padIORINGFEED5' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[07/01 15:07:42     34s] **WARN: (IMPLF-200):	Pin 'VSSPAD' in macro 'padIORINGFEED5' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[07/01 15:07:42     34s] **WARN: (IMPLF-200):	Pin 'VDDPAD25' in macro 'padIORINGFEED3' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[07/01 15:07:42     34s] **WARN: (IMPLF-200):	Pin 'VSSPAD' in macro 'padIORINGFEED3' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[07/01 15:07:42     34s] **WARN: (IMPLF-200):	Pin 'VDDPAD25' in macro 'padIORINGFEED10' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[07/01 15:07:42     34s] **WARN: (IMPLF-200):	Pin 'VSSPAD' in macro 'padIORINGFEED10' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[07/01 15:07:42     34s] **WARN: (IMPLF-200):	Pin 'VDDPAD25' in macro 'padIORINGFEED1' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[07/01 15:07:42     34s] **WARN: (IMPLF-200):	Pin 'VSSPAD' in macro 'padIORINGFEED1' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[07/01 15:07:42     34s] **WARN: (IMPLF-200):	Pin 'VSS25' in macro 'PADVSS25' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[07/01 15:07:42     34s] **WARN: (IMPLF-200):	Pin 'VDD25' in macro 'PADVDD25' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[07/01 15:07:42     34s] **WARN: (IMPLF-200):	Pin 'OEN' in macro 'PADDOZ' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[07/01 15:07:42     34s] **WARN: (IMPLF-200):	Pin 'A' in macro 'PADDOZ' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[07/01 15:07:42     34s] **WARN: (IMPLF-201):	Pin 'PAD' in macro 'PADDOZ' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[07/01 15:07:42     34s] **WARN: (IMPLF-200):	Pin 'A' in macro 'PADDO' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[07/01 15:07:42     34s] **WARN: (IMPLF-201):	Pin 'PAD' in macro 'PADDO' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[07/01 15:07:42     34s] **WARN: (IMPLF-201):	Pin 'PAD' in macro 'PADDI' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[07/01 15:07:42     34s] **WARN: (EMS-62):	Message <IMPLF-200> has exceeded the default message display limit of 20.
+[07/01 15:07:42     34s] To avoid this warning, increase the display limit per unique message by
+[07/01 15:07:42     34s] using the set_message -limit <number> command.
+[07/01 15:07:42     34s] The message limit can be removed by using the set_message -no_limit command.
+[07/01 15:07:42     34s] Note that setting a very large number using the set_message -limit command
+[07/01 15:07:42     34s] or removing the message limit using the set_message -no_limit command can
+[07/01 15:07:42     34s] significantly increase the log file size.
+[07/01 15:07:42     34s] To suppress a message, use the set_message -suppress command.
+[07/01 15:07:42     34s] **WARN: (IMPLF-201):	Pin 'Y' in macro 'PADDI' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[07/01 15:07:42     34s] **WARN: (IMPLF-201):	Pin 'Y' in macro 'PADDB' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[07/01 15:07:42     34s] **WARN: (IMPLF-201):	Pin 'PAD' in macro 'PADDB' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[07/01 15:07:42     34s] 
+##  Check design process and node:  
+##  Both design process and tech node are not set.
+
+[07/01 15:07:42     34s] Loading view definition file from /home/vlsi30/day22/synthesis/FIFO_ROUTE.enc.dat/viewDefinition.tcl
+[07/01 15:07:42     34s] Reading slow timing library '/home/vlsi30/45nm_Library/lib/slow_vdd1v0_basicCells.lib' ...
+[07/01 15:07:43     35s] **WARN: (TECHLIB-302):	No function defined for cell 'ANTENNA'. The cell will only be used for analysis. (File /home/vlsi30/45nm_Library/lib/slow_vdd1v0_basicCells.lib)
+[07/01 15:07:43     35s] Read 480 cells in library 'slow_vdd1v0' 
+[07/01 15:07:43     35s] Reading fast timing library '/home/vlsi30/45nm_Library/lib/fast_vdd1v0_basicCells.lib' ...
+[07/01 15:07:43     35s] **WARN: (TECHLIB-302):	No function defined for cell 'ANTENNA'. The cell will only be used for analysis. (File /home/vlsi30/45nm_Library/lib/fast_vdd1v0_basicCells.lib)
+[07/01 15:07:44     35s] Read 480 cells in library 'fast_vdd1v0' 
+[07/01 15:07:44     35s] Ending "PreSetAnalysisView" (total cpu=0:00:01.3, real=0:00:02.0, peak res=1785.2M, current mem=1729.0M)
+[07/01 15:07:44     35s] *** End library_loading (cpu=0.02min, real=0.03min, mem=77.5M, fe_cpu=0.60min, fe_real=10.67min, fe_mem=1870.1M) ***
+[07/01 15:07:44     35s] #% Begin Load netlist data ... (date=07/01 15:07:44, mem=1728.2M)
+[07/01 15:07:44     36s] *** Begin netlist parsing (mem=1870.1M) ***
+[07/01 15:07:44     36s] Reading verilogBinary netlist '/home/vlsi30/day22/synthesis/FIFO_ROUTE.enc.dat/async_fifo.v.bin'
+[07/01 15:07:44     36s] 
+[07/01 15:07:44     36s] *** Memory Usage v#3 (Current mem = 2130.133M, initial mem = 843.133M) ***
+[07/01 15:07:44     36s] *** End netlist parsing (cpu=0:00:00.0, real=0:00:00.0, mem=2130.1M) ***
+[07/01 15:07:44     36s] #% End Load netlist data ... (date=07/01 15:07:44, total cpu=0:00:00.5, real=0:00:00.0, peak res=1838.0M, current mem=1827.9M)
+[07/01 15:07:44     36s] Top level cell is async_fifo.
+[07/01 15:07:44     36s] Has not load the powerDB, will keep enalbed
+[07/01 15:07:44     36s] Has not load the powerDB, will keep enalbed
+[07/01 15:07:44     36s] Ending "BindLib:" (total cpu=0:00:00.0, real=0:00:00.0, peak res=1866.1M, current mem=1866.1M)
+[07/01 15:07:44     36s] *** Estimate the number of flat objects and h-objects before Flatten ***
+[07/01 15:07:44     36s] 	flat insts : 619
+[07/01 15:07:44     36s] 	flat terms : 2168
+[07/01 15:07:44     36s] 	HNets : 0
+[07/01 15:07:44     36s] 	HInsts : 0
+[07/01 15:07:44     36s] 	HTerms : 0
+[07/01 15:07:44     36s] Building hierarchical netlist for Cell async_fifo ...
+[07/01 15:07:44     36s] ***** UseNewTieNetMode *****.
+[07/01 15:07:44     36s] *** Netlist is unique.
+[07/01 15:07:44     36s] Setting Std. cell height to 3420 DBU (smallest netlist inst).
+[07/01 15:07:44     36s] ** info: there are 1080 modules.
+[07/01 15:07:44     36s] ** info: there are 595 stdCell insts.
+[07/01 15:07:44     36s] ** info: there are 595 stdCell insts with at least one signal pin.
+[07/01 15:07:44     36s] ** info: there are 24 Pad insts.
+[07/01 15:07:44     36s] 
+[07/01 15:07:44     36s] *** Memory Usage v#3 (Current mem = 2555.180M, initial mem = 843.133M) ***
+[07/01 15:07:44     36s] *info: set bottom ioPad orient R0
+[07/01 15:07:44     36s] Reading IO assignment file "/home/vlsi30/day22/synthesis/FIFO_ROUTE.enc.dat/libs/iofile/fifo.io" ...
+[07/01 15:07:44     36s] **WARN: (IMPFP-3961):	The techSite 'Corner' has no related standard cells in the LEF/OA library. The calculations for this site type cannot be made unless standard cell models of this type exist in the LEF/OA library. Ignore this warning if the SITE is not used by the library. Alternatively, remove the SITE definition for the LEF/OA library to avoid this message.
+[07/01 15:07:44     36s] **WARN: (IMPFP-3961):	The techSite 'Pad' has no related standard cells in the LEF/OA library. The calculations for this site type cannot be made unless standard cell models of this type exist in the LEF/OA library. Ignore this warning if the SITE is not used by the library. Alternatively, remove the SITE definition for the LEF/OA library to avoid this message.
+[07/01 15:07:44     36s] **WARN: (IMPFP-3961):	The techSite 'corner' has no related standard cells in the LEF/OA library. The calculations for this site type cannot be made unless standard cell models of this type exist in the LEF/OA library. Ignore this warning if the SITE is not used by the library. Alternatively, remove the SITE definition for the LEF/OA library to avoid this message.
+[07/01 15:07:44     36s] **WARN: (IMPFP-3961):	The techSite 'pad' has no related standard cells in the LEF/OA library. The calculations for this site type cannot be made unless standard cell models of this type exist in the LEF/OA library. Ignore this warning if the SITE is not used by the library. Alternatively, remove the SITE definition for the LEF/OA library to avoid this message.
+[07/01 15:07:44     36s] **WARN: (IMPFP-3961):	The techSite 'CornerSite' has no related standard cells in the LEF/OA library. The calculations for this site type cannot be made unless standard cell models of this type exist in the LEF/OA library. Ignore this warning if the SITE is not used by the library. Alternatively, remove the SITE definition for the LEF/OA library to avoid this message.
+[07/01 15:07:44     36s] **WARN: (IMPFP-3961):	The techSite 'IOSite' has no related standard cells in the LEF/OA library. The calculations for this site type cannot be made unless standard cell models of this type exist in the LEF/OA library. Ignore this warning if the SITE is not used by the library. Alternatively, remove the SITE definition for the LEF/OA library to avoid this message.
+[07/01 15:07:44     36s] Start create_tracks
+[07/01 15:07:44     36s] Set Default Input Pin Transition as 0.1 ps.
+[07/01 15:07:44     36s] Set Shrink Factor to 0.90000
+[07/01 15:07:44     36s] Has not load the powerDB, will keep enalbed
+[07/01 15:07:44     36s] Has not load the powerDB, will keep enalbed
+[07/01 15:07:45     36s] Has not load the powerDB, will keep enalbed
+[07/01 15:07:45     36s] Has not load the powerDB, will keep enalbed
+[07/01 15:07:45     36s] Has not load the powerDB, will keep enalbed
+[07/01 15:07:45     36s] Has not load the powerDB, will keep enalbed
+[07/01 15:07:45     37s] Loading preference file /home/vlsi30/day22/synthesis/FIFO_ROUTE.enc.dat/gui.pref.tcl ...
+[07/01 15:07:45     37s] **WARN: (UI-156):	preference name 'MinFPModuleSize' is not supported in Tempus Timing Solution.
+[07/01 15:07:45     37s] **WARN: (UI-156):	preference name 'MinFlightLineWidth' is not supported in Tempus Timing Solution.
+[07/01 15:07:45     37s] **WARN: (UI-156):	preference name 'MaxFlightLineNetTerms' is not supported in Tempus Timing Solution.
+[07/01 15:07:45     37s] **WARN: (UI-156):	preference name 'LevelFlight' is not supported in Tempus Timing Solution.
+[07/01 15:07:45     37s] **WARN: (UI-156):	preference name 'DirectionSink' is not supported in Tempus Timing Solution.
+[07/01 15:07:45     37s] **WARN: (UI-156):	preference name 'DirectionSource' is not supported in Tempus Timing Solution.
+[07/01 15:07:45     37s] **WARN: (UI-156):	preference name 'ShowNumberBlockConnection' is not supported in Tempus Timing Solution.
+[07/01 15:07:45     37s] **WARN: (UI-156):	preference name 'StrecthRestriction' is not supported in Tempus Timing Solution.
+[07/01 15:07:45     37s] **WARN: (UI-156):	preference name 'StretchRectilinear' is not supported in Tempus Timing Solution.
+[07/01 15:07:45     37s] **WARN: (UI-156):	preference name 'MoveRestriction' is not supported in Tempus Timing Solution.
+[07/01 15:07:45     37s] **WARN: (UI-156):	preference name 'DisplayRelFPlan' is not supported in Tempus Timing Solution.
+[07/01 15:07:45     37s] **WARN: (UI-156):	preference name 'LegalizeMacro' is not supported in Tempus Timing Solution.
+[07/01 15:07:45     37s] **WARN: (UI-156):	preference name 'DisplayFPlanFlightLine' is not supported in Tempus Timing Solution.
+[07/01 15:07:45     37s] **WARN: (UI-156):	preference name 'DisplayPinName' is not supported in Tempus Timing Solution.
+[07/01 15:07:45     37s] **WARN: (UI-156):	preference name 'ExclusiveFlight' is not supported in Tempus Timing Solution.
+[07/01 15:07:45     37s] **WARN: (UI-156):	preference name 'ShowToUnplace' is not supported in Tempus Timing Solution.
+[07/01 15:07:45     37s] **WARN: (UI-156):	preference name 'FlightLineInMove' is not supported in Tempus Timing Solution.
+[07/01 15:07:45     37s] **WARN: (UI-156):	preference name 'ShowConnectionInOutNumber' is not supported in Tempus Timing Solution.
+[07/01 15:07:45     37s] **WARN: (UI-156):	preference name 'ConnectionColorType' is not supported in Tempus Timing Solution.
+[07/01 15:07:45     37s] **WARN: (UI-156):	preference name 'OnlyBundleNetFlight' is not supported in Tempus Timing Solution.
+[07/01 15:07:45     37s] **WARN: (EMS-27):	Message (UI-156) has exceeded the current message display limit of 20.
+[07/01 15:07:45     37s] To increase the message display limit, refer to the product command reference manual.
+[07/01 15:07:45     37s] **WARN: (IMPSYC-6134):	Setting analysis mode to setup does not have any impact on timing analysis as simultaneous setup/hold mode analysis is on. Use '-late' option to report setup timing reports.
+[07/01 15:07:45     37s] **WARN: (IMPEXT-7000):	The option '-engine preRoute' for setExtractRCMode is ignored because only Quantus QRC extraction mode, that is, '-engine postRoute -effortLevel signoff' is supported in Tempus Timing Solution. To avoid this message, remove this option from your scripts.
+[07/01 15:07:45     37s] Has not load the powerDB, will keep enalbed
+[07/01 15:07:45     37s] Has not load the powerDB, will keep enalbed
+[07/01 15:07:45     37s] #WARNING (NRIF-90) Option setNanoRouteMode -route_bottom_routing_layer is obsolete. It will continue to work for the current release. To ensure compatibility with future releases, use option setDesignMode -bottomRoutingLayer instead.
+[07/01 15:07:45     37s] #WARNING (NRIF-91) Option setNanoRouteMode -route_top_routing_layer is obsolete. It will continue to work for the current release. To ensure compatibility with future releases, use option setDesignMode -topRoutingLayer instead.
+[07/01 15:07:45     37s] addRing command will ignore shorts while creating rings.
+[07/01 15:07:45     37s] addRing command will disallow rings to go over rows.
+[07/01 15:07:45     37s] addRing command will consider rows while creating rings.
+[07/01 15:07:45     37s] The ring targets are set to core/block ring wires.
+[07/01 15:07:45     37s] addStripe will allow jog to connect padcore ring and block ring.
+[07/01 15:07:45     37s] 
+[07/01 15:07:45     37s] Stripes will not extend to closest target.
+[07/01 15:07:45     37s] When breaking rings, the power planner will consider the existence of blocks.
+[07/01 15:07:45     37s] addStripe will break automatically at non-default domains when generating global stripes over the core area or default domain.
+[07/01 15:07:45     37s] The entire stripe set will break at the domain if one of the nets is not in the domain.
+[07/01 15:07:45     37s] Stripes will not be created over regions without power planning wires.
+[07/01 15:07:45     37s] Offset for stripe breaking is set to 0.
+[07/01 15:07:45     37s] Stripes will stop at the boundary of the specified area.
+[07/01 15:07:45     37s] The power planner will set stripe antenna targets to none (no trimming allowed).
+[07/01 15:07:45     37s] Change floorplan default-technical-site to 'CoreSite'.
+[07/01 15:07:45     37s] Extraction setup Delayed 
+[07/01 15:07:45     37s] Ending "SetAnalysisView" (total cpu=0:00:00.0, real=0:00:00.0, peak res=2387.4M, current mem=2113.0M)
+[07/01 15:07:45     37s] Tech dependent Parameter, Build TLibAnalyzer for: cellAreaConsiderPadding
+[07/01 15:07:45     37s] 
+[07/01 15:07:45     37s] TimeStamp Creating Cell Server ...(0, 1, 1, 1) in restoreDesign Begin ...
+[07/01 15:07:45     37s] SB Latch Setting to complicate: TLATSRXL complicate code: 8
+[07/01 15:07:45     37s] SB Latch Setting to complicate: TLATSRX4 complicate code: 8
+[07/01 15:07:45     37s] SB Latch Setting to complicate: TLATSRX2 complicate code: 8
+[07/01 15:07:45     37s] SB Latch Setting to complicate: TLATSRX1 complicate code: 8
+[07/01 15:07:45     37s] SB Latch Setting to complicate: TLATNSRXL complicate code: 8
+[07/01 15:07:45     37s] SB Latch Setting to complicate: TLATNSRX4 complicate code: 8
+[07/01 15:07:45     37s] SB Latch Setting to complicate: TLATNSRX2 complicate code: 8
+[07/01 15:07:45     37s] SB Latch Setting to complicate: TLATNSRX1 complicate code: 8
+[07/01 15:07:45     37s] SBFF Setting to complicate: SMDFFHQX8 complicate code: 30.1
+[07/01 15:07:45     37s] SBFF Setting to complicate: SMDFFHQX4 complicate code: 30.1
+[07/01 15:07:45     37s] SBFF Setting to complicate: SMDFFHQX2 complicate code: 30.1
+[07/01 15:07:45     37s] SBFF Setting to complicate: SMDFFHQX1 complicate code: 30.1
+[07/01 15:07:45     37s] SBFF Setting to complicate: SEDFFTRXL complicate code: 30.05
+[07/01 15:07:45     37s] SBFF Setting to complicate: SEDFFTRX4 complicate code: 30.05
+[07/01 15:07:45     37s] SBFF Setting to complicate: SEDFFTRX2 complicate code: 30.05
+[07/01 15:07:45     37s] SBFF Setting to complicate: SEDFFTRX1 complicate code: 30.05
+[07/01 15:07:45     37s] SBFF Setting to complicate: SEDFFHQX8 complicate code: 30.05
+[07/01 15:07:45     37s] SBFF Setting to complicate: SEDFFHQX4 complicate code: 30.05
+[07/01 15:07:45     37s] SBFF Setting to complicate: SEDFFHQX2 complicate code: 30.05
+[07/01 15:07:45     37s] SBFF Setting to complicate: SEDFFHQX1 complicate code: 30.05
+[07/01 15:07:45     37s] SBFF Setting to complicate: EDFFTRXL complicate code: 30.05
+[07/01 15:07:45     37s] SBFF Setting to complicate: EDFFTRX4 complicate code: 30.05
+[07/01 15:07:45     37s] SBFF Setting to complicate: EDFFTRX2 complicate code: 30.05
+[07/01 15:07:45     37s] SBFF Setting to complicate: EDFFTRX1 complicate code: 30.05
+[07/01 15:07:45     37s] Summary for sequential cells identification: 
+[07/01 15:07:45     37s]   Identified SBFF number: 104
+[07/01 15:07:45     37s]   Identified MBFF number: 0
+[07/01 15:07:45     37s]   Identified SB Latch number: 8
+[07/01 15:07:45     37s]   Identified MB Latch number: 0
+[07/01 15:07:45     37s]   Not identified SBFF number: 16
+[07/01 15:07:45     37s]   Not identified MBFF number: 0
+[07/01 15:07:45     37s]   Not identified SB Latch number: 8
+[07/01 15:07:45     37s]   Not identified MB Latch number: 0
+[07/01 15:07:45     37s]   Number of sequential cells which are not FFs: 16
+[07/01 15:07:45     37s] Total number of combinational cells: 318
+[07/01 15:07:45     37s] Total number of sequential cells: 152
+[07/01 15:07:45     37s] Total number of tristate cells: 10
+[07/01 15:07:45     37s] Total number of level shifter cells: 0
+[07/01 15:07:45     37s] Total number of power gating cells: 0
+[07/01 15:07:45     37s] Total number of isolation cells: 0
+[07/01 15:07:45     37s] Total number of power switch cells: 0
+[07/01 15:07:45     37s] Total number of pulse generator cells: 0
+[07/01 15:07:45     37s] Total number of always on buffers: 0
+[07/01 15:07:45     37s] Total number of retention cells: 0
+[07/01 15:07:45     37s] Total number of physical cells: 0
+[07/01 15:07:45     37s] List of usable buffers: BUFX2 BUFX12 BUFX16 BUFX20 CLKBUFX2 BUFX3 BUFX4 BUFX6 BUFX8 CLKBUFX12 CLKBUFX16 CLKBUFX20 CLKBUFX3 CLKBUFX4 CLKBUFX6 CLKBUFX8
+[07/01 15:07:45     37s] Total number of usable buffers: 16
+[07/01 15:07:45     37s] List of unusable buffers:
+[07/01 15:07:45     37s] Total number of unusable buffers: 0
+[07/01 15:07:45     37s] List of usable inverters: CLKINVX1 CLKINVX2 CLKINVX12 CLKINVX16 CLKINVX20 CLKINVX4 CLKINVX3 CLKINVX6 CLKINVX8 INVX1 INVX2 INVX12 INVX16 INVX20 INVXL INVX3 INVX4 INVX6 INVX8
+[07/01 15:07:45     37s] Total number of usable inverters: 19
+[07/01 15:07:45     37s] List of unusable inverters:
+[07/01 15:07:45     37s] Total number of unusable inverters: 0
+[07/01 15:07:45     37s] List of identified usable delay cells: DLY1X1 DLY1X4 DLY2X1 DLY2X4 DLY3X1 DLY3X4 DLY4X1 DLY4X4
+[07/01 15:07:45     37s] Total number of identified usable delay cells: 8
+[07/01 15:07:45     37s] List of identified unusable delay cells:
+[07/01 15:07:45     37s] Total number of identified unusable delay cells: 0
+[07/01 15:07:45     37s] 
+[07/01 15:07:45     37s] TimeStamp Creating Cell Server ...(0, 1, 1, 1) in restoreDesign End ...
+[07/01 15:07:45     37s] 
+[07/01 15:07:45     37s] TimeStamp Deleting Cell Server Begin ...
+[07/01 15:07:45     37s] 
+[07/01 15:07:45     37s] TimeStamp Deleting Cell Server End ...
+[07/01 15:07:45     37s] Ending "Cell type marking" (total cpu=0:00:00.0, real=0:00:00.0, peak res=2373.4M, current mem=2373.4M)
+[07/01 15:07:45     37s] 
+[07/01 15:07:45     37s] TimeStamp Creating Cell Server ...(0, 0, 0, 0) in restoreDesign Begin ...
+[07/01 15:07:45     37s] SB Latch Setting to complicate: TLATSRXL complicate code: 8
+[07/01 15:07:45     37s] SB Latch Setting to complicate: TLATSRX4 complicate code: 8
+[07/01 15:07:45     37s] SB Latch Setting to complicate: TLATSRX2 complicate code: 8
+[07/01 15:07:45     37s] SB Latch Setting to complicate: TLATSRX1 complicate code: 8
+[07/01 15:07:45     37s] SB Latch Setting to complicate: TLATNSRXL complicate code: 8
+[07/01 15:07:45     37s] SB Latch Setting to complicate: TLATNSRX4 complicate code: 8
+[07/01 15:07:45     37s] SB Latch Setting to complicate: TLATNSRX2 complicate code: 8
+[07/01 15:07:45     37s] SB Latch Setting to complicate: TLATNSRX1 complicate code: 8
+[07/01 15:07:45     37s] SBFF Setting to complicate: SMDFFHQX8 complicate code: 30.1
+[07/01 15:07:45     37s] SBFF Setting to complicate: SMDFFHQX4 complicate code: 30.1
+[07/01 15:07:45     37s] SBFF Setting to complicate: SMDFFHQX2 complicate code: 30.1
+[07/01 15:07:45     37s] SBFF Setting to complicate: SMDFFHQX1 complicate code: 30.1
+[07/01 15:07:45     37s] SBFF Setting to complicate: SEDFFTRXL complicate code: 30.05
+[07/01 15:07:45     37s] SBFF Setting to complicate: SEDFFTRX4 complicate code: 30.05
+[07/01 15:07:45     37s] SBFF Setting to complicate: SEDFFTRX2 complicate code: 30.05
+[07/01 15:07:45     37s] SBFF Setting to complicate: SEDFFTRX1 complicate code: 30.05
+[07/01 15:07:45     37s] SBFF Setting to complicate: SEDFFHQX8 complicate code: 30.05
+[07/01 15:07:45     37s] SBFF Setting to complicate: SEDFFHQX4 complicate code: 30.05
+[07/01 15:07:45     37s] SBFF Setting to complicate: SEDFFHQX2 complicate code: 30.05
+[07/01 15:07:45     37s] SBFF Setting to complicate: SEDFFHQX1 complicate code: 30.05
+[07/01 15:07:45     37s] SBFF Setting to complicate: EDFFTRXL complicate code: 30.05
+[07/01 15:07:45     37s] SBFF Setting to complicate: EDFFTRX4 complicate code: 30.05
+[07/01 15:07:45     37s] SBFF Setting to complicate: EDFFTRX2 complicate code: 30.05
+[07/01 15:07:45     37s] SBFF Setting to complicate: EDFFTRX1 complicate code: 30.05
+[07/01 15:07:45     37s] Summary for sequential cells identification: 
+[07/01 15:07:45     37s]   Identified SBFF number: 104
+[07/01 15:07:45     37s]   Identified MBFF number: 0
+[07/01 15:07:45     37s]   Identified SB Latch number: 8
+[07/01 15:07:45     37s]   Identified MB Latch number: 0
+[07/01 15:07:45     37s]   Not identified SBFF number: 16
+[07/01 15:07:45     37s]   Not identified MBFF number: 0
+[07/01 15:07:45     37s]   Not identified SB Latch number: 8
+[07/01 15:07:45     37s]   Not identified MB Latch number: 0
+[07/01 15:07:45     37s]   Number of sequential cells which are not FFs: 16
+[07/01 15:07:45     37s]  Visiting view : worst_case
+[07/01 15:07:45     37s]    : PowerDomain = none : Weighted F : unweighted  = 37.60 (1.000) with rcCorner = 0
+[07/01 15:07:45     37s]    : PowerDomain = none : Weighted F : unweighted  = 20.10 (1.000) with rcCorner = -1
+[07/01 15:07:45     37s]  Visiting view : best_case
+[07/01 15:07:45     37s]    : PowerDomain = none : Weighted F : unweighted  = 11.90 (1.000) with rcCorner = 0
+[07/01 15:07:45     37s]    : PowerDomain = none : Weighted F : unweighted  = 5.30 (1.000) with rcCorner = -1
+[07/01 15:07:45     37s] 
+[07/01 15:07:45     37s] TimeStamp Creating Cell Server ...(0, 0, 0, 0) in restoreDesign End ...
+[07/01 15:07:45     37s] 
+[07/01 15:07:45     37s] TimeStamp Deleting Cell Server Begin ...
+[07/01 15:07:45     37s] 
+[07/01 15:07:45     37s] TimeStamp Deleting Cell Server End ...
+[07/01 15:07:45     37s] Reading floorplan file - /home/vlsi30/day22/synthesis/FIFO_ROUTE.enc.dat/async_fifo.fp.gz (mem = 2818.4M).
+[07/01 15:07:45     37s] #% Begin Load floorplan data ... (date=07/01 15:07:45, mem=2375.8M)
+[07/01 15:07:45     37s] *info: reset 624 existing net BottomPreferredLayer and AvoidDetour
+[07/01 15:07:45     37s] Deleting old partition specification.
+[07/01 15:07:45     37s]  ... processed partition successfully.
+[07/01 15:07:45     37s] Reading binary special route file /home/vlsi30/day22/synthesis/FIFO_ROUTE.enc.dat/async_fifo.fp.spr.gz (Created by Innovus v21.15-s110_1 on Wed Jul  1 14:55:10 2026, version: 1)
+[07/01 15:07:45     37s] Convert 0 swires and 0 svias from compressed groups
+[07/01 15:07:45     37s] 14 swires and 20 svias were compressed
+[07/01 15:07:45     37s] 14 swires and 20 svias were decompressed from small or sparse groups
+[07/01 15:07:45     37s] Ending "Read special route file" (total cpu=0:00:00.0, real=0:00:00.0, peak res=2376.6M, current mem=2376.6M)
+[07/01 15:07:45     37s] There are 30 io inst loaded
+[07/01 15:07:45     37s] There are 7 nets with avoidDetour being set
+[07/01 15:07:45     37s] Extracting standard cell pins and blockage ...... 
+[07/01 15:07:45     37s] Pin and blockage extraction finished
+[07/01 15:07:45     37s] #% End Load floorplan data ... (date=07/01 15:07:45, total cpu=0:00:00.1, real=0:00:00.0, peak res=2390.4M, current mem=2390.0M)
+[07/01 15:07:45     37s] #% Begin Load SymbolTable ... (date=07/01 15:07:45, mem=2390.0M)
+[07/01 15:07:46     37s] #% End Load SymbolTable ... (date=07/01 15:07:46, total cpu=0:00:00.0, real=0:00:01.0, peak res=2390.4M, current mem=2390.4M)
+[07/01 15:07:46     37s] Loading place ...
+[07/01 15:07:46     37s] #% Begin Load placement data ... (date=07/01 15:07:46, mem=2390.4M)
+[07/01 15:07:46     37s] Reading placement file - /home/vlsi30/day22/synthesis/FIFO_ROUTE.enc.dat/async_fifo.place.gz.
+[07/01 15:07:46     37s] ** Reading stdCellPlacement_binary (Created by Innovus v21.15-s110_1 on Wed Jul  1 14:55:11 2026, version# 2) ...
+[07/01 15:07:46     37s] Read Views for adaptive view pruning ...
+[07/01 15:07:46     37s] Read 0 views from Binary DB for adaptive view pruning
+[07/01 15:07:46     37s] *** applyConnectGlobalNets disabled.
+[07/01 15:07:46     37s] *** Completed restorePlace (cpu=0:00:00.0 real=0:00:00.0 mem=2836.4M) ***
+[07/01 15:07:46     37s] Has not load the powerDB, will keep enalbed
+[07/01 15:07:46     37s] Has not load the powerDB, will keep enalbed
+[07/01 15:07:46     37s] Total net length = 1.601e+04 (9.457e+03 6.553e+03) (ext = 8.410e+03)
+[07/01 15:07:46     37s] #% End Load placement data ... (date=07/01 15:07:46, total cpu=0:00:00.0, real=0:00:00.0, peak res=2391.8M, current mem=2391.7M)
+[07/01 15:07:46     37s] Reading PG file /home/vlsi30/day22/synthesis/FIFO_ROUTE.enc.dat/async_fifo.pg.gz, version#2, (Created by Innovus v21.15-s110_1 on       Wed Jul  1 14:55:11 2026)
+[07/01 15:07:46     37s] *** Completed restorePGFile (cpu=0:00:00.0 real=0:00:00.0 mem=2852.4M) ***
+[07/01 15:07:46     37s] #% Begin Load routing data ... (date=07/01 15:07:46, mem=2392.2M)
+[07/01 15:07:46     37s] Reading routing file - /home/vlsi30/day22/synthesis/FIFO_ROUTE.enc.dat/async_fifo.route.gz.
+[07/01 15:07:46     37s] Reading Innovus routing data (Created by Innovus v21.15-s110_1 on Wed Jul  1 14:55:11 2026 Format: 20.1) ...
+[07/01 15:07:46     37s] *** Total 624 nets are successfully restored.
+[07/01 15:07:46     37s] *** Completed restoreRoute (cpu=0:00:00.0 real=0:00:00.0 mem=2852.4M) ***
+[07/01 15:07:46     37s] Has not load the powerDB, will keep enalbed
+[07/01 15:07:46     37s] Has not load the powerDB, will keep enalbed
+[07/01 15:07:46     37s] #% End Load routing data ... (date=07/01 15:07:46, total cpu=0:00:00.0, real=0:00:00.0, peak res=2394.7M, current mem=2393.8M)
+[07/01 15:07:46     37s] Loading Drc markers ...
+[07/01 15:07:46     37s] ... 75 markers are loaded ...
+[07/01 15:07:46     37s] ... 65 geometry drc markers are loaded ...
+[07/01 15:07:46     37s] ... 0 antenna drc markers are loaded ...
+[07/01 15:07:46     37s] Reading property file /home/vlsi30/day22/synthesis/FIFO_ROUTE.enc.dat/async_fifo.prop
+[07/01 15:07:46     37s] *** Completed restoreProperty (cpu=0:00:00.0 real=0:00:00.0 mem=2855.4M) ***
+[07/01 15:07:46     37s] Set Default Input Pin Transition as 0.1 ps.
+[07/01 15:07:47     38s] eee: Design meta data file: /home/vlsi30/day22/synthesis/FIFO_ROUTE.enc.dat/extraction/extractionMetaData.gz doesn't exist
+[07/01 15:07:47     38s] Extraction setup Started for TopCell async_fifo 
+[07/01 15:07:47     38s] Summary of Active RC-Corners : 
+[07/01 15:07:47     38s]  
+[07/01 15:07:47     38s]  Analysis View: worst_case
+[07/01 15:07:47     38s]     RC-Corner Name        : rc_corner
+[07/01 15:07:47     38s]     RC-Corner Index       : 0
+[07/01 15:07:47     38s]     RC-Corner Temperature : 125 Celsius
+[07/01 15:07:47     38s]     RC-Corner Cap Table   : ''
+[07/01 15:07:47     38s]     RC-Corner PostRoute Res Factor        : 1
+[07/01 15:07:47     38s]     RC-Corner PostRoute Cap Factor        : 1
+[07/01 15:07:47     38s]     RC-Corner PostRoute XCap Factor       : 1
+[07/01 15:07:47     38s]     RC-Corner Technology file: '/home/vlsi30/day22/synthesis/FIFO_ROUTE.enc.dat/libs/mmmc/rc_corner/gpdk045.tch'
+[07/01 15:07:47     38s]  
+[07/01 15:07:47     38s]  Analysis View: best_case
+[07/01 15:07:47     38s]     RC-Corner Name        : rc_corner
+[07/01 15:07:47     38s]     RC-Corner Index       : 0
+[07/01 15:07:47     38s]     RC-Corner Temperature : 125 Celsius
+[07/01 15:07:47     38s]     RC-Corner Cap Table   : ''
+[07/01 15:07:47     38s]     RC-Corner PostRoute Res Factor        : 1
+[07/01 15:07:47     38s]     RC-Corner PostRoute Cap Factor        : 1
+[07/01 15:07:47     38s]     RC-Corner PostRoute XCap Factor       : 1
+[07/01 15:07:47     38s]     RC-Corner Technology file: '/home/vlsi30/day22/synthesis/FIFO_ROUTE.enc.dat/libs/mmmc/rc_corner/gpdk045.tch'
+[07/01 15:07:47     38s] eee: RC Grid memory allocated = 370260 (55 X 51 X 11 X 12b)
+[07/01 15:07:47     38s] eee: pegSigSF=1.070000
+[07/01 15:07:47     38s] Initializing multi-corner resistance tables ...
+[07/01 15:07:47     38s] eee: Grid unit RC data computation started
+[07/01 15:07:47     38s] eee: Grid unit RC data computation completed
+[07/01 15:07:47     38s] eee: l=1 avDens=0.007725 usedTrk=15.849708 availTrk=2051.791390 sigTrk=15.849708
+[07/01 15:07:47     38s] eee: l=2 avDens=0.070886 usedTrk=245.097956 availTrk=3457.658099 sigTrk=245.097956
+[07/01 15:07:47     38s] eee: l=3 avDens=0.040776 usedTrk=324.669007 availTrk=7962.197435 sigTrk=324.669007
+[07/01 15:07:47     38s] eee: l=4 avDens=0.018211 usedTrk=135.251461 availTrk=7426.875819 sigTrk=135.251461
+[07/01 15:07:47     38s] eee: l=5 avDens=0.050425 usedTrk=65.716374 availTrk=1303.257632 sigTrk=65.716374
+[07/01 15:07:47     38s] eee: l=6 avDens=0.005906 usedTrk=0.957895 availTrk=162.193043 sigTrk=0.957895
+[07/01 15:07:47     38s] eee: l=7 avDens=0.039282 usedTrk=30.859064 availTrk=785.586110 sigTrk=30.859064
+[07/01 15:07:47     38s] eee: l=8 avDens=0.007070 usedTrk=16.311111 availTrk=2306.993829 sigTrk=16.311111
+[07/01 15:07:47     38s] eee: l=9 avDens=0.062847 usedTrk=144.697076 availTrk=2302.366671 sigTrk=144.697076
+[07/01 15:07:47     38s] eee: l=10 avDens=0.100091 usedTrk=314.812281 availTrk=3145.269117 sigTrk=314.812281
+[07/01 15:07:47     38s] eee: l=11 avDens=0.087961 usedTrk=155.113742 availTrk=1763.441654 sigTrk=155.113742
+[07/01 15:07:47     38s] eee: LAM-FP: thresh=1 ; dimX=4810.526316 ; dimY=4484.210526 ; multX=1.000000 ; multY=1.000000 ; minP=380 ; fpMult=1.000000 ;
+[07/01 15:07:47     38s] eee: LAM: n=40 LLS=2-3 HLS=3-5 rDens=0.281822 uaWl=1.000000 uaWlH=0.483300 aWlH=0.000000 lMod=0 pMax=0.867200 pMod=80 pModAss=50 wcR=0.772700 crit=0.000000 siPrev=0 newSi=0.001600 wHLS=1.931800 viaL=0.000000 shortMod=0.000000 fModUnas=0.000000 fModAs=0.000000 pDens=0.500000 
+[07/01 15:07:47     38s] eee: uR 0.000256 of RC Grid (14 17 8) is > max uR 0.000147 of layer.
+[07/01 15:07:47     38s] eee: uR 0.000256 of RC Grid (14 21 8) is > max uR 0.000147 of layer.
+[07/01 15:07:47     38s] eee: uR 0.000256 of RC Grid (14 24 8) is > max uR 0.000147 of layer.
+[07/01 15:07:47     38s] eee: uR 0.000256 of RC Grid (14 26 8) is > max uR 0.000147 of layer.
+[07/01 15:07:47     38s] eee: uR 0.000256 of RC Grid (14 28 8) is > max uR 0.000147 of layer.
+[07/01 15:07:47     38s] eee: uR 0.000256 of RC Grid (14 32 8) is > max uR 0.000147 of layer.
+[07/01 15:07:47     38s] eee: uR 0.000256 of RC Grid (15 24 8) is > max uR 0.000147 of layer.
+[07/01 15:07:47     38s] eee: uR 0.000256 of RC Grid (16 32 8) is > max uR 0.000147 of layer.
+[07/01 15:07:47     38s] eee: uR 0.000256 of RC Grid (16 33 8) is > max uR 0.000147 of layer.
+[07/01 15:07:47     38s] eee: uR 0.000256 of RC Grid (16 34 8) is > max uR 0.000147 of layer.
+[07/01 15:07:47     38s] eee: uR 0.000256 of RC Grid (16 35 8) is > max uR 0.000147 of layer.
+[07/01 15:07:47     38s] eee: uR 0.000256 of RC Grid (17 14 8) is > max uR 0.000147 of layer.
+[07/01 15:07:47     38s] eee: uR 0.000256 of RC Grid (17 27 8) is > max uR 0.000147 of layer.
+[07/01 15:07:47     38s] eee: uR 0.000256 of RC Grid (17 28 8) is > max uR 0.000147 of layer.
+[07/01 15:07:47     38s] eee: uR 0.000256 of RC Grid (17 29 8) is > max uR 0.000147 of layer.
+[07/01 15:07:47     38s] eee: uR 0.000256 of RC Grid (17 30 8) is > max uR 0.000147 of layer.
+[07/01 15:07:47     38s] eee: uR 0.000256 of RC Grid (17 31 8) is > max uR 0.000147 of layer.
+[07/01 15:07:47     38s] eee: uR 0.000256 of RC Grid (17 32 8) is > max uR 0.000147 of layer.
+[07/01 15:07:47     38s] eee: uR 0.000256 of RC Grid (17 33 8) is > max uR 0.000147 of layer.
+[07/01 15:07:47     38s] eee: uR 0.000256 of RC Grid (17 34 8) is > max uR 0.000147 of layer.
+[07/01 15:07:47     38s] eee: uR 0.000245 of RC Grid (17 35 8) is > max uR 0.000147 of layer.
+[07/01 15:07:47     38s] eee: uR 0.000256 of RC Grid (17 36 8) is > max uR 0.000147 of layer.
+[07/01 15:07:47     38s] eee: uR 0.000256 of RC Grid (21 14 8) is > max uR 0.000147 of layer.
+[07/01 15:07:47     38s] eee: uR 0.000256 of RC Grid (24 14 8) is > max uR 0.000147 of layer.
+[07/01 15:07:47     38s] eee: uR 0.000256 of RC Grid (25 14 8) is > max uR 0.000147 of layer.
+[07/01 15:07:47     38s] eee: uR 0.000256 of RC Grid (28 36 8) is > max uR 0.000147 of layer.
+[07/01 15:07:47     38s] eee: uR 0.000256 of RC Grid (32 36 8) is > max uR 0.000147 of layer.
+[07/01 15:07:47     38s] eee: uR 0.000256 of RC Grid (35 36 8) is > max uR 0.000147 of layer.
+[07/01 15:07:47     38s] eee: uR 0.000256 of RC Grid (39 16 8) is > max uR 0.000147 of layer.
+[07/01 15:07:47     38s] eee: uR 0.000256 of RC Grid (39 17 8) is > max uR 0.000147 of layer.
+[07/01 15:07:47     38s] eee: uR 0.000256 of RC Grid (39 24 8) is > max uR 0.000147 of layer.
+[07/01 15:07:47     38s] eee: uR 0.000256 of RC Grid (39 32 8) is > max uR 0.000147 of layer.
+[07/01 15:07:47     38s] eee: uR 0.000256 of RC Grid (39 33 8) is > max uR 0.000147 of layer.
+[07/01 15:07:47     38s] eee: uR 0.000180 of RC Grid (0 25 9) is > max uR 0.000147 of layer.
+[07/01 15:07:47     38s] eee: uR 0.000256 of RC Grid (1 25 9) is > max uR 0.000147 of layer.
+[07/01 15:07:47     38s] eee: uR 0.000256 of RC Grid (2 25 9) is > max uR 0.000147 of layer.
+[07/01 15:07:47     38s] eee: uR 0.000256 of RC Grid (3 25 9) is > max uR 0.000147 of layer.
+[07/01 15:07:47     38s] eee: uC 0.000125 of RC Grid (4 17 9) is <  min uC 0.000128 of layer.
+[07/01 15:07:47     38s] eee: uR 0.000256 of RC Grid (4 17 9) is > max uR 0.000147 of layer.
+[07/01 15:07:47     38s] eee: uC 0.000123 of RC Grid (4 21 9) is <  min uC 0.000128 of layer.
+[07/01 15:07:47     38s] eee: uR 0.000256 of RC Grid (4 21 9) is > max uR 0.000147 of layer.
+[07/01 15:07:47     38s] eee: uR 0.000256 of RC Grid (4 25 9) is > max uR 0.000147 of layer.
+[07/01 15:07:47     38s] eee: uC 0.000123 of RC Grid (4 28 9) is <  min uC 0.000128 of layer.
+[07/01 15:07:47     38s] eee: uR 0.000256 of RC Grid (4 28 9) is > max uR 0.000147 of layer.
+[07/01 15:07:47     38s] eee: uR 0.000256 of RC Grid (4 32 9) is > max uR 0.000147 of layer.
+[07/01 15:07:47     38s] eee: uR 0.000256 of RC Grid (5 17 9) is > max uR 0.000147 of layer.
+[07/01 15:07:47     38s] eee: uR 0.000256 of RC Grid (5 21 9) is > max uR 0.000147 of layer.
+[07/01 15:07:47     38s] eee: uR 0.000256 of RC Grid (5 25 9) is > max uR 0.000147 of layer.
+[07/01 15:07:47     38s] eee: uR 0.000256 of RC Grid (5 28 9) is > max uR 0.000147 of layer.
+[07/01 15:07:47     38s] eee: uR 0.000256 of RC Grid (5 32 9) is > max uR 0.000147 of layer.
+[07/01 15:07:47     38s] eee: uR 0.000256 of RC Grid (6 17 9) is > max uR 0.000147 of layer.
+[07/01 15:07:47     38s] eee: uR 0.000256 of RC Grid (6 21 9) is > max uR 0.000147 of layer.
+[07/01 15:07:47     38s] eee: uR 0.000256 of RC Grid (6 25 9) is > max uR 0.000147 of layer.
+[07/01 15:07:47     38s] eee: uR 0.000256 of RC Grid (6 28 9) is > max uR 0.000147 of layer.
+[07/01 15:07:47     38s] eee: uR 0.000256 of RC Grid (6 32 9) is > max uR 0.000147 of layer.
+[07/01 15:07:47     38s] eee: uR 0.000256 of RC Grid (7 17 9) is > max uR 0.000147 of layer.
+[07/01 15:07:47     38s] eee: uR 0.000256 of RC Grid (7 21 9) is > max uR 0.000147 of layer.
+[07/01 15:07:47     38s] eee: uR 0.000256 of RC Grid (7 25 9) is > max uR 0.000147 of layer.
+[07/01 15:07:47     38s] eee: uR 0.000256 of RC Grid (7 28 9) is > max uR 0.000147 of layer.
+[07/01 15:07:47     38s] eee: uR 0.000256 of RC Grid (7 32 9) is > max uR 0.000147 of layer.
+[07/01 15:07:47     38s] eee: uR 0.000256 of RC Grid (8 17 9) is > max uR 0.000147 of layer.
+[07/01 15:07:47     38s] eee: uR 0.000256 of RC Grid (8 21 9) is > max uR 0.000147 of layer.
+[07/01 15:07:47     38s] eee: uR 0.000256 of RC Grid (8 25 9) is > max uR 0.000147 of layer.
+[07/01 15:07:47     38s] eee: uR 0.000256 of RC Grid (8 28 9) is > max uR 0.000147 of layer.
+[07/01 15:07:47     38s] eee: uR 0.000256 of RC Grid (8 32 9) is > max uR 0.000147 of layer.
+[07/01 15:07:47     38s] eee: uR 0.000256 of RC Grid (9 17 9) is > max uR 0.000147 of layer.
+[07/01 15:07:47     38s] eee: uR 0.000256 of RC Grid (9 21 9) is > max uR 0.000147 of layer.
+[07/01 15:07:47     38s] eee: uR 0.000256 of RC Grid (9 25 9) is > max uR 0.000147 of layer.
+[07/01 15:07:47     38s] eee: uR 0.000256 of RC Grid (9 28 9) is > max uR 0.000147 of layer.
+[07/01 15:07:47     38s] eee: uR 0.000256 of RC Grid (9 32 9) is > max uR 0.000147 of layer.
+[07/01 15:07:47     38s] eee: uR 0.000256 of RC Grid (10 17 9) is > max uR 0.000147 of layer.
+[07/01 15:07:47     38s] eee: uR 0.000256 of RC Grid (10 21 9) is > max uR 0.000147 of layer.
+[07/01 15:07:47     38s] eee: uR 0.000256 of RC Grid (10 25 9) is > max uR 0.000147 of layer.
+[07/01 15:07:47     38s] eee: uR 0.000256 of RC Grid (10 28 9) is > max uR 0.000147 of layer.
+[07/01 15:07:47     38s] eee: uR 0.000256 of RC Grid (10 32 9) is > max uR 0.000147 of layer.
+[07/01 15:07:47     38s] eee: uR 0.000256 of RC Grid (11 17 9) is > max uR 0.000147 of layer.
+[07/01 15:07:47     38s] eee: uR 0.000256 of RC Grid (11 21 9) is > max uR 0.000147 of layer.
+[07/01 15:07:47     38s] eee: uR 0.000256 of RC Grid (11 25 9) is > max uR 0.000147 of layer.
+[07/01 15:07:47     38s] eee: uR 0.000256 of RC Grid (11 28 9) is > max uR 0.000147 of layer.
+[07/01 15:07:47     38s] eee: uR 0.000256 of RC Grid (11 32 9) is > max uR 0.000147 of layer.
+[07/01 15:07:47     38s] eee: uR 0.000256 of RC Grid (12 17 9) is > max uR 0.000147 of layer.
+[07/01 15:07:47     38s] eee: uR 0.000256 of RC Grid (12 21 9) is > max uR 0.000147 of layer.
+[07/01 15:07:47     38s] eee: uR 0.000256 of RC Grid (12 25 9) is > max uR 0.000147 of layer.
+[07/01 15:07:47     38s] eee: uR 0.000256 of RC Grid (12 28 9) is > max uR 0.000147 of layer.
+[07/01 15:07:47     38s] eee: uR 0.000256 of RC Grid (12 32 9) is > max uR 0.000147 of layer.
+[07/01 15:07:47     38s] eee: uR 0.000256 of RC Grid (13 17 9) is > max uR 0.000147 of layer.
+[07/01 15:07:47     38s] eee: uR 0.000256 of RC Grid (13 21 9) is > max uR 0.000147 of layer.
+[07/01 15:07:47     38s] eee: uR 0.000256 of RC Grid (13 25 9) is > max uR 0.000147 of layer.
+[07/01 15:07:47     38s] eee: uR 0.000256 of RC Grid (13 28 9) is > max uR 0.000147 of layer.
+[07/01 15:07:47     38s] eee: uR 0.000256 of RC Grid (13 32 9) is > max uR 0.000147 of layer.
+[07/01 15:07:47     38s] eee: uC 0.000112 of RC Grid (14 17 9) is <  min uC 0.000128 of layer.
+[07/01 15:07:47     38s] eee: uR 0.000256 of RC Grid (14 17 9) is > max uR 0.000147 of layer.
+[07/01 15:07:47     38s] eee: uC 0.000112 of RC Grid (14 21 9) is <  min uC 0.000128 of layer.
+[07/01 15:07:47     38s] eee: uR 0.000256 of RC Grid (14 21 9) is > max uR 0.000147 of layer.
+[07/01 15:07:47     38s] eee: uR 0.000164 of RC Grid (14 24 9) is > max uR 0.000147 of layer.
+[07/01 15:07:47     38s] eee: uC 0.000116 of RC Grid (14 25 9) is <  min uC 0.000128 of layer.
+[07/01 15:07:47     38s] eee: uR 0.000251 of RC Grid (14 25 9) is > max uR 0.000147 of layer.
+[07/01 15:07:47     38s] eee: uC 0.000112 of RC Grid (14 28 9) is <  min uC 0.000128 of layer.
+[07/01 15:07:47     38s] eee: uR 0.000256 of RC Grid (14 28 9) is > max uR 0.000147 of layer.
+[07/01 15:07:47     38s] eee: uC 0.000112 of RC Grid (14 32 9) is <  min uC 0.000128 of layer.
+[07/01 15:07:47     38s] eee: uR 0.000256 of RC Grid (14 32 9) is > max uR 0.000147 of layer.
+[07/01 15:07:47     38s] eee: uC 0.000116 of RC Grid (17 35 9) is <  min uC 0.000128 of layer.
+[07/01 15:07:47     38s] eee: uR 0.000251 of RC Grid (17 35 9) is > max uR 0.000147 of layer.
+[07/01 15:07:47     38s] eee: uC 0.000117 of RC Grid (18 35 9) is <  min uC 0.000128 of layer.
+[07/01 15:07:47     38s] eee: uR 0.000256 of RC Grid (18 35 9) is > max uR 0.000147 of layer.
+[07/01 15:07:47     38s] eee: uC 0.000117 of RC Grid (19 35 9) is <  min uC 0.000128 of layer.
+[07/01 15:07:47     38s] eee: uR 0.000256 of RC Grid (19 35 9) is > max uR 0.000147 of layer.
+[07/01 15:07:47     38s] eee: uC 0.000117 of RC Grid (20 35 9) is <  min uC 0.000128 of layer.
+[07/01 15:07:47     38s] eee: uR 0.000256 of RC Grid (20 35 9) is > max uR 0.000147 of layer.
+[07/01 15:07:47     38s] eee: uC 0.000111 of RC Grid (21 14 9) is <  min uC 0.000128 of layer.
+[07/01 15:07:47     38s] eee: uR 0.000256 of RC Grid (21 14 9) is > max uR 0.000147 of layer.
+[07/01 15:07:47     38s] eee: uC 0.000113 of RC Grid (21 35 9) is <  min uC 0.000128 of layer.
+[07/01 15:07:47     38s] eee: uR 0.000256 of RC Grid (21 35 9) is > max uR 0.000147 of layer.
+[07/01 15:07:47     38s] eee: uC 0.000113 of RC Grid (21 36 9) is <  min uC 0.000128 of layer.
+[07/01 15:07:47     38s] eee: uR 0.000256 of RC Grid (21 36 9) is > max uR 0.000147 of layer.
+[07/01 15:07:47     38s] eee: uC 0.000111 of RC Grid (24 14 9) is <  min uC 0.000128 of layer.
+[07/01 15:07:47     38s] eee: uC 0.000111 of RC Grid (25 14 9) is <  min uC 0.000128 of layer.
+[07/01 15:07:47     38s] eee: uC 0.000118 of RC Grid (39 17 9) is <  min uC 0.000128 of layer.
+[07/01 15:07:47     38s] eee: uC 0.000118 of RC Grid (39 24 9) is <  min uC 0.000128 of layer.
+[07/01 15:07:47     38s] eee: uC 0.000118 of RC Grid (39 32 9) is <  min uC 0.000128 of layer.
+[07/01 15:07:47     38s] eee: uC 0.000098 of RC Grid (4 21 10) is <  min uC 0.000124 of layer.
+[07/01 15:07:47     38s] eee: uC 0.000103 of RC Grid (4 24 10) is <  min uC 0.000124 of layer.
+[07/01 15:07:47     38s] eee: uC 0.000098 of RC Grid (4 28 10) is <  min uC 0.000124 of layer.
+[07/01 15:07:47     38s] eee: uC 0.000098 of RC Grid (4 32 10) is <  min uC 0.000124 of layer.
+[07/01 15:07:47     38s] eee: uC 0.000104 of RC Grid (14 14 10) is <  min uC 0.000124 of layer.
+[07/01 15:07:47     38s] eee: uC 0.000106 of RC Grid (14 15 10) is <  min uC 0.000124 of layer.
+[07/01 15:07:47     38s] eee: uC 0.000106 of RC Grid (14 16 10) is <  min uC 0.000124 of layer.
+[07/01 15:07:47     38s] eee: uC 0.000106 of RC Grid (14 17 10) is <  min uC 0.000124 of layer.
+[07/01 15:07:47     38s] eee: uC 0.000106 of RC Grid (14 18 10) is <  min uC 0.000124 of layer.
+[07/01 15:07:47     38s] eee: uC 0.000106 of RC Grid (14 19 10) is <  min uC 0.000124 of layer.
+[07/01 15:07:47     38s] eee: uC 0.000106 of RC Grid (14 20 10) is <  min uC 0.000124 of layer.
+[07/01 15:07:47     38s] eee: uC 0.000106 of RC Grid (14 21 10) is <  min uC 0.000124 of layer.
+[07/01 15:07:47     38s] eee: uC 0.000106 of RC Grid (14 22 10) is <  min uC 0.000124 of layer.
+[07/01 15:07:47     38s] eee: uC 0.000106 of RC Grid (14 23 10) is <  min uC 0.000124 of layer.
+[07/01 15:07:47     38s] eee: uC 0.000109 of RC Grid (14 24 10) is <  min uC 0.000124 of layer.
+[07/01 15:07:47     38s] eee: uC 0.000114 of RC Grid (14 25 10) is <  min uC 0.000124 of layer.
+[07/01 15:07:47     38s] eee: uC 0.000107 of RC Grid (14 26 10) is <  min uC 0.000124 of layer.
+[07/01 15:07:47     38s] eee: uC 0.000106 of RC Grid (14 27 10) is <  min uC 0.000124 of layer.
+[07/01 15:07:47     38s] eee: uC 0.000110 of RC Grid (14 28 10) is <  min uC 0.000124 of layer.
+[07/01 15:07:47     38s] eee: uC 0.000106 of RC Grid (14 29 10) is <  min uC 0.000124 of layer.
+[07/01 15:07:47     38s] eee: uC 0.000106 of RC Grid (14 30 10) is <  min uC 0.000124 of layer.
+[07/01 15:07:47     38s] eee: uC 0.000106 of RC Grid (14 31 10) is <  min uC 0.000124 of layer.
+[07/01 15:07:47     38s] eee: uC 0.000106 of RC Grid (14 32 10) is <  min uC 0.000124 of layer.
+[07/01 15:07:47     38s] eee: uC 0.000106 of RC Grid (14 33 10) is <  min uC 0.000124 of layer.
+[07/01 15:07:47     38s] eee: uC 0.000106 of RC Grid (14 34 10) is <  min uC 0.000124 of layer.
+[07/01 15:07:47     38s] eee: uC 0.000102 of RC Grid (14 35 10) is <  min uC 0.000124 of layer.
+[07/01 15:07:47     38s] eee: uC 0.000105 of RC Grid (17 4 10) is <  min uC 0.000124 of layer.
+[07/01 15:07:47     38s] eee: uC 0.000117 of RC Grid (17 5 10) is <  min uC 0.000124 of layer.
+[07/01 15:07:47     38s] eee: uC 0.000117 of RC Grid (17 6 10) is <  min uC 0.000124 of layer.
+[07/01 15:07:47     38s] eee: uC 0.000117 of RC Grid (17 7 10) is <  min uC 0.000124 of layer.
+[07/01 15:07:47     38s] eee: uC 0.000117 of RC Grid (17 8 10) is <  min uC 0.000124 of layer.
+[07/01 15:07:47     38s] eee: uC 0.000117 of RC Grid (17 9 10) is <  min uC 0.000124 of layer.
+[07/01 15:07:47     38s] eee: uC 0.000117 of RC Grid (17 10 10) is <  min uC 0.000124 of layer.
+[07/01 15:07:47     38s] eee: uC 0.000117 of RC Grid (17 11 10) is <  min uC 0.000124 of layer.
+[07/01 15:07:47     38s] eee: uC 0.000117 of RC Grid (17 12 10) is <  min uC 0.000124 of layer.
+[07/01 15:07:47     38s] eee: uC 0.000117 of RC Grid (17 13 10) is <  min uC 0.000124 of layer.
+[07/01 15:07:47     38s] eee: uC 0.000118 of RC Grid (17 14 10) is <  min uC 0.000124 of layer.
+[07/01 15:07:47     38s] eee: uC 0.000114 of RC Grid (17 36 10) is <  min uC 0.000124 of layer.
+[07/01 15:07:47     38s] eee: uC 0.000117 of RC Grid (17 37 10) is <  min uC 0.000124 of layer.
+[07/01 15:07:47     38s] eee: uC 0.000117 of RC Grid (17 38 10) is <  min uC 0.000124 of layer.
+[07/01 15:07:47     38s] eee: uC 0.000117 of RC Grid (17 39 10) is <  min uC 0.000124 of layer.
+[07/01 15:07:47     38s] eee: uC 0.000117 of RC Grid (17 40 10) is <  min uC 0.000124 of layer.
+[07/01 15:07:47     38s] eee: uC 0.000117 of RC Grid (17 41 10) is <  min uC 0.000124 of layer.
+[07/01 15:07:47     38s] eee: uC 0.000117 of RC Grid (17 42 10) is <  min uC 0.000124 of layer.
+[07/01 15:07:47     38s] eee: uC 0.000117 of RC Grid (17 43 10) is <  min uC 0.000124 of layer.
+[07/01 15:07:47     38s] eee: uC 0.000117 of RC Grid (17 44 10) is <  min uC 0.000124 of layer.
+[07/01 15:07:47     38s] eee: uC 0.000100 of RC Grid (17 45 10) is <  min uC 0.000124 of layer.
+[07/01 15:07:47     38s] eee: uC 0.000106 of RC Grid (21 4 10) is <  min uC 0.000124 of layer.
+[07/01 15:07:47     38s] eee: uC 0.000117 of RC Grid (21 5 10) is <  min uC 0.000124 of layer.
+[07/01 15:07:47     38s] eee: uC 0.000117 of RC Grid (21 6 10) is <  min uC 0.000124 of layer.
+[07/01 15:07:47     38s] eee: uC 0.000117 of RC Grid (21 7 10) is <  min uC 0.000124 of layer.
+[07/01 15:07:47     38s] eee: uC 0.000117 of RC Grid (21 8 10) is <  min uC 0.000124 of layer.
+[07/01 15:07:47     38s] eee: uC 0.000117 of RC Grid (21 9 10) is <  min uC 0.000124 of layer.
+[07/01 15:07:47     38s] eee: uC 0.000117 of RC Grid (21 10 10) is <  min uC 0.000124 of layer.
+[07/01 15:07:47     38s] eee: uC 0.000117 of RC Grid (21 11 10) is <  min uC 0.000124 of layer.
+[07/01 15:07:47     38s] eee: uC 0.000117 of RC Grid (21 12 10) is <  min uC 0.000124 of layer.
+[07/01 15:07:47     38s] eee: uC 0.000118 of RC Grid (21 13 10) is <  min uC 0.000124 of layer.
+[07/01 15:07:47     38s] eee: uC 0.000118 of RC Grid (21 14 10) is <  min uC 0.000124 of layer.
+[07/01 15:07:47     38s] eee: uC 0.000098 of RC Grid (21 35 10) is <  min uC 0.000124 of layer.
+[07/01 15:07:47     38s] eee: uC 0.000103 of RC Grid (21 45 10) is <  min uC 0.000124 of layer.
+[07/01 15:07:47     38s] eee: uC 0.000111 of RC Grid (24 4 10) is <  min uC 0.000124 of layer.
+[07/01 15:07:47     38s] eee: uC 0.000118 of RC Grid (24 14 10) is <  min uC 0.000124 of layer.
+[07/01 15:07:47     38s] eee: uC 0.000107 of RC Grid (25 14 10) is <  min uC 0.000124 of layer.
+[07/01 15:07:47     38s] eee: uC 0.000100 of RC Grid (26 14 10) is <  min uC 0.000124 of layer.
+[07/01 15:07:47     38s] eee: uC 0.000101 of RC Grid (26 15 10) is <  min uC 0.000124 of layer.
+[07/01 15:07:47     38s] eee: uC 0.000101 of RC Grid (26 16 10) is <  min uC 0.000124 of layer.
+[07/01 15:07:47     38s] eee: uC 0.000101 of RC Grid (26 17 10) is <  min uC 0.000124 of layer.
+[07/01 15:07:47     38s] eee: uC 0.000101 of RC Grid (26 18 10) is <  min uC 0.000124 of layer.
+[07/01 15:07:47     38s] eee: uC 0.000101 of RC Grid (26 19 10) is <  min uC 0.000124 of layer.
+[07/01 15:07:47     38s] eee: uC 0.000101 of RC Grid (26 20 10) is <  min uC 0.000124 of layer.
+[07/01 15:07:47     38s] eee: uC 0.000101 of RC Grid (26 21 10) is <  min uC 0.000124 of layer.
+[07/01 15:07:47     38s] eee: uC 0.000101 of RC Grid (26 22 10) is <  min uC 0.000124 of layer.
+[07/01 15:07:47     38s] eee: uC 0.000101 of RC Grid (26 23 10) is <  min uC 0.000124 of layer.
+[07/01 15:07:47     38s] eee: uC 0.000101 of RC Grid (26 24 10) is <  min uC 0.000124 of layer.
+[07/01 15:07:47     38s] eee: uC 0.000101 of RC Grid (26 25 10) is <  min uC 0.000124 of layer.
+[07/01 15:07:47     38s] eee: uC 0.000101 of RC Grid (26 26 10) is <  min uC 0.000124 of layer.
+[07/01 15:07:47     38s] eee: uC 0.000101 of RC Grid (26 27 10) is <  min uC 0.000124 of layer.
+[07/01 15:07:47     38s] eee: uC 0.000101 of RC Grid (26 28 10) is <  min uC 0.000124 of layer.
+[07/01 15:07:47     38s] eee: uC 0.000101 of RC Grid (26 29 10) is <  min uC 0.000124 of layer.
+[07/01 15:07:47     38s] eee: uC 0.000101 of RC Grid (26 30 10) is <  min uC 0.000124 of layer.
+[07/01 15:07:47     38s] eee: dbu = 2000, Design = [ll(0.000000, 0.000000) ur(914.000000, 852.000000)], Layers = [f(11) b(0)], Grid size = 17.100000 um, Grid Dim = (54 X 50)
+[07/01 15:07:47     38s] eee: Metal Layers Info:
+[07/01 15:07:47     38s] eee: +----------+-----+---------+---------+---------+--------+--------+---+---+----+
+[07/01 15:07:47     38s] eee: |   Layer  |  Id |    W    |    S    |    P    |   uC   |   uR   | D | T | wS |
+[07/01 15:07:47     38s] eee: +----------+-----+---------+---------+---------+--------+--------+---+---+----+
+[07/01 15:07:47     38s] eee: |   Metal1 |   1 |   0.060 |   0.060 |   0.190 |  0.000 |   1.23 | H | 0 |  1 |
+[07/01 15:07:47     38s] eee: |   Metal2 |   2 |   0.080 |   0.070 |   0.200 |  0.000 |   0.76 | V | 0 |  1 |
+[07/01 15:07:47     38s] eee: |   Metal3 |   3 |   0.080 |   0.070 |   0.190 |  0.000 |   0.76 | H | 0 |  1 |
+[07/01 15:07:47     38s] eee: |   Metal4 |   4 |   0.080 |   0.070 |   0.200 |  0.000 |   0.76 | V | 0 |  1 |
+[07/01 15:07:47     38s] eee: |   Metal5 |   5 |   0.080 |   0.070 |   0.190 |  0.000 |   0.76 | H | 0 |  1 |
+[07/01 15:07:47     38s] eee: |   Metal6 |   6 |   0.080 |   0.070 |   0.200 |  0.000 |   0.76 | V | 0 |  1 |
+[07/01 15:07:47     38s] eee: |   Metal7 |   7 |   0.080 |   0.070 |   0.190 |  0.000 |   0.76 | H | 0 |  1 |
+[07/01 15:07:47     38s] eee: |   Metal8 |   8 |   0.080 |   0.070 |   0.200 |  0.000 |   0.27 | V | 0 |  1 |
+[07/01 15:07:47     38s] eee: |   Metal9 |   9 |   0.080 |   0.070 |   0.190 |  0.000 |   0.27 | H | 0 |  1 |
+[07/01 15:07:47     38s] eee: |  Metal10 |  10 |   0.220 |   0.200 |   0.500 |  0.000 |   0.10 | V | 0 |  1 |
+[07/01 15:07:47     38s] eee: |  Metal11 |  11 |   0.220 |   0.200 |   0.475 |  0.000 |   0.10 | H | 0 |  1 |
+[07/01 15:07:47     38s] eee: +----------+-----+---------+---------+---------+--------+--------+---+---+----+
+[07/01 15:07:47     38s] eee: uC/uR for corner rc_corner, min-width/min-spacing, 30 perc over/under densities.
+[07/01 15:07:47     38s] eee: +-----------------------NDR Info-----------------------+
+[07/01 15:07:47     38s] eee: NDR Count = 2, Fake NDR = 0
+[07/01 15:07:47     38s] eee: +----------------------------------------------------+
+[07/01 15:07:47     38s] eee: | NDR Name = LEFSpecialRouteSpec  | Id = 1  | isHard = 0 
+[07/01 15:07:47     38s] eee: +----------------------------------------------------+
+[07/01 15:07:47     38s] eee: +----------------------------------------------------+
+[07/01 15:07:47     38s] eee: | NDR Name = VLMDefaultSetup  | Id = 2  | isHard = 0 
+[07/01 15:07:47     38s] eee: +----------------------------------------------------+
+[07/01 15:07:47     38s] #% Begin Load power constraints ... (date=07/01 15:07:47, mem=2400.4M)
+[07/01 15:07:47     38s] #% End Load power constraints ... (date=07/01 15:07:47, total cpu=0:00:00.0, real=0:00:00.0, peak res=2407.4M, current mem=2407.4M)
+[07/01 15:07:47     38s] **WARN: (TCLCMD-1263):	The -frame parameter is obsolete and will be removed from the software in a future release. To ensure compatibility with future releases, remove this parameter from your scripts.
+[07/01 15:07:47     38s] #% Begin load AAE data ... (date=07/01 15:07:47, mem=2424.2M)
+[07/01 15:07:47     39s] AAE DB initialization (MEM=2430.816406 CPU=0:00:00.0 REAL=0:00:00.0) 
+[07/01 15:07:47     39s] #% End load AAE data ... (date=07/01 15:07:47, total cpu=0:00:00.5, real=0:00:00.0, peak res=2431.2M, current mem=2431.2M)
+[07/01 15:07:47     39s] Restoring CCOpt config...
+[07/01 15:07:47     39s] 
+[07/01 15:07:47     39s] TimeStamp Creating Cell Server ...(0, 0, 0, 0) in restoreDesign Begin ...
+[07/01 15:07:47     39s] SB Latch Setting to complicate: TLATSRXL complicate code: 8
+[07/01 15:07:47     39s] SB Latch Setting to complicate: TLATSRX4 complicate code: 8
+[07/01 15:07:47     39s] SB Latch Setting to complicate: TLATSRX2 complicate code: 8
+[07/01 15:07:47     39s] SB Latch Setting to complicate: TLATSRX1 complicate code: 8
+[07/01 15:07:47     39s] SB Latch Setting to complicate: TLATNSRXL complicate code: 8
+[07/01 15:07:47     39s] SB Latch Setting to complicate: TLATNSRX4 complicate code: 8
+[07/01 15:07:47     39s] SB Latch Setting to complicate: TLATNSRX2 complicate code: 8
+[07/01 15:07:47     39s] SB Latch Setting to complicate: TLATNSRX1 complicate code: 8
+[07/01 15:07:47     39s] SBFF Setting to complicate: SMDFFHQX8 complicate code: 30.1
+[07/01 15:07:47     39s] SBFF Setting to complicate: SMDFFHQX4 complicate code: 30.1
+[07/01 15:07:47     39s] SBFF Setting to complicate: SMDFFHQX2 complicate code: 30.1
+[07/01 15:07:47     39s] SBFF Setting to complicate: SMDFFHQX1 complicate code: 30.1
+[07/01 15:07:47     39s] SBFF Setting to complicate: SEDFFTRXL complicate code: 30.05
+[07/01 15:07:47     39s] SBFF Setting to complicate: SEDFFTRX4 complicate code: 30.05
+[07/01 15:07:47     39s] SBFF Setting to complicate: SEDFFTRX2 complicate code: 30.05
+[07/01 15:07:47     39s] SBFF Setting to complicate: SEDFFTRX1 complicate code: 30.05
+[07/01 15:07:47     39s] SBFF Setting to complicate: SEDFFHQX8 complicate code: 30.05
+[07/01 15:07:47     39s] SBFF Setting to complicate: SEDFFHQX4 complicate code: 30.05
+[07/01 15:07:47     39s] SBFF Setting to complicate: SEDFFHQX2 complicate code: 30.05
+[07/01 15:07:47     39s] SBFF Setting to complicate: SEDFFHQX1 complicate code: 30.05
+[07/01 15:07:47     39s] SBFF Setting to complicate: EDFFTRXL complicate code: 30.05
+[07/01 15:07:47     39s] SBFF Setting to complicate: EDFFTRX4 complicate code: 30.05
+[07/01 15:07:47     39s] SBFF Setting to complicate: EDFFTRX2 complicate code: 30.05
+[07/01 15:07:47     39s] SBFF Setting to complicate: EDFFTRX1 complicate code: 30.05
+[07/01 15:07:47     39s] Summary for sequential cells identification: 
+[07/01 15:07:47     39s]   Identified SBFF number: 104
+[07/01 15:07:47     39s]   Identified MBFF number: 0
+[07/01 15:07:47     39s]   Identified SB Latch number: 8
+[07/01 15:07:47     39s]   Identified MB Latch number: 0
+[07/01 15:07:47     39s]   Not identified SBFF number: 16
+[07/01 15:07:47     39s]   Not identified MBFF number: 0
+[07/01 15:07:47     39s]   Not identified SB Latch number: 8
+[07/01 15:07:47     39s]   Not identified MB Latch number: 0
+[07/01 15:07:47     39s]   Number of sequential cells which are not FFs: 16
+[07/01 15:07:47     39s]  Visiting view : worst_case
+[07/01 15:07:47     39s]    : PowerDomain = none : Weighted F : unweighted  = 37.60 (1.000) with rcCorner = 0
+[07/01 15:07:47     39s]    : PowerDomain = none : Weighted F : unweighted  = 20.10 (1.000) with rcCorner = -1
+[07/01 15:07:47     39s]  Visiting view : best_case
+[07/01 15:07:47     39s]    : PowerDomain = none : Weighted F : unweighted  = 11.90 (1.000) with rcCorner = 0
+[07/01 15:07:47     39s]    : PowerDomain = none : Weighted F : unweighted  = 5.30 (1.000) with rcCorner = -1
+[07/01 15:07:47     39s] 
+[07/01 15:07:47     39s] TimeStamp Creating Cell Server ...(0, 0, 0, 0) in restoreDesign End ...
+[07/01 15:07:47     39s]   Extracting original clock gating for wclk...
+[07/01 15:07:47     39s]     clock_tree wclk contains 147 sinks and 0 clock gates.
+[07/01 15:07:47     39s]   Extracting original clock gating for wclk done.
+[07/01 15:07:47     39s]   Extracting original clock gating for rclk...
+[07/01 15:07:47     39s]     clock_tree rclk contains 19 sinks and 0 clock gates.
+[07/01 15:07:47     39s]   Extracting original clock gating for rclk done.
+[07/01 15:07:47     39s]   The skew group rclk/sdc was created. It contains 19 sinks and 1 sources.
+[07/01 15:07:47     39s]   The skew group wclk/sdc was created. It contains 147 sinks and 1 sources.
+[07/01 15:07:47     39s] Restoring CCOpt config done.
+[07/01 15:07:47     39s] **WARN: (IMPCTE-107):	The following globals have been obsoleted since version (null). They will be removed in the next release. 
+[07/01 15:07:47     39s] timing_enable_separate_device_slew_effect_sensitivities
+[07/01 15:07:48     39s] Ending "read_design" (total cpu=0:00:06.1, real=0:00:07.0, peak res=2455.6M, current mem=2254.6M)
+[07/01 15:07:48     39s] Parasitics side thread was NULL.
+[07/01 15:07:48     39s] Loading  (async_fifo)
+[07/01 15:07:48     39s] Traverse HInst (async_fifo)
+[07/01 15:08:41     42s] <CMD> all_setup_analysis_views
+[07/01 15:08:41     42s] <CMD> all_hold_analysis_views
+[07/01 15:08:41     42s] <CMD> all_setup_analysis_views
+[07/01 15:08:41     42s] <CMD> all_hold_analysis_views
+[07/01 15:08:41     42s] **WARN: (IMPSYC-3133):	The unloadTimingCon command is not supported in the MMMC environment.
+[07/01 15:08:41     42s]           To modify the active set of constraints you can use one of the following means:
+[07/01 15:08:41     42s]           - Use the set_analysis_view command to change the set of active views.
+[07/01 15:08:41     42s]           - Use the update_analysis_view command to change the constraint mode associated with an active view.
+[07/01 15:08:41     42s]           - Use the update_constraint_mode command to change the set of SDC files pointed to be active modes.
+[07/01 15:08:41     42s] <CMD> all_setup_analysis_views
+[07/01 15:08:41     42s] <CMD> all_hold_analysis_views
+[07/01 15:08:41     42s] <CMD> all_setup_analysis_views
+[07/01 15:08:41     42s] <CMD> all_hold_analysis_views
+[07/01 15:08:41     42s] **WARN: (IMPSYC-3133):	The unloadTimingCon command is not supported in the MMMC environment.
+[07/01 15:08:41     42s]           To modify the active set of constraints you can use one of the following means:
+[07/01 15:08:41     42s]           - Use the set_analysis_view command to change the set of active views.
+[07/01 15:08:41     42s]           - Use the update_analysis_view command to change the constraint mode associated with an active view.
+[07/01 15:08:41     42s]           - Use the update_constraint_mode command to change the set of SDC files pointed to be active modes.
+[07/01 15:08:48     42s] <CMD> read_spef async_fifo.spef
+[07/01 15:08:48     42s] Used active corner rc_corner for reading SPEF file as option '-rc_corner <cornerName>' is not specified in MMMC mode.
+[07/01 15:08:48     42s] read_spef Option :  async_fifo.spef -noStarN 
+[07/01 15:08:48     42s] 
+[07/01 15:08:48     42s] SPEF files for RC Corner rc_corner:
+[07/01 15:08:48     42s] Top-level spef file 'async_fifo.spef'.
+[07/01 15:08:48     42s] Start spef parsing (MEM=3082.91).
+[07/01 15:08:48     42s] Number of corners: 1
+[07/01 15:08:48     42s] Number of parallel threads processing the nets is: 1
+[07/01 15:08:48     42s] Maximum backlog used in parser: 50.
+[07/01 15:08:48     42s] Reading multiple SPEF files in parallel.
+[07/01 15:08:48     42s] RCDB /tmp/ssv_tmpdir_193997_7cdbbedd-8680-4121-ae49-81f208e3a8ce_KPTOwh/async_fifo_193997_7cdbbedd-8680-4121-ae49-81f208e3a8ce_EhH0Eo.rcdb.d/async_fifo.rcdb.d Creation Started (CPU Time= 0:00:00.0  MEM= 3090.9M)
+[07/01 15:08:48     42s] Creating parasitic data file '/tmp/ssv_tmpdir_193997_7cdbbedd-8680-4121-ae49-81f208e3a8ce_KPTOwh/async_fifo_193997_7cdbbedd-8680-4121-ae49-81f208e3a8ce_EhH0Eo.rcdb.d/async_fifo.rcdb.d' for storing RC.
+[07/01 15:08:48     42s] The SPEF file, 'async_fifo.spef', has encountered the error/warning message(s) during its reading.
+[07/01 15:08:48     42s] **WARN: (SPEF-1152):	Net 'wreq ( having pins in1/PAD in1/Y g12788__1705/B g12767__9945/A g12773__6161/A ...)' is not fully specified as per its connectivity in design netlist. Missing ports have been added to the net using low RC values. The timing accuracy is not reliable for such nets.
+[07/01 15:08:48     42s] **WARN: (SPEF-1152):	Net 'wclk ( having pins in2/PAD in2/Y wbin_reg[3]/CK wbin_reg[4]/CK wbin_reg[0]/CK ...)' is not fully specified as per its connectivity in design netlist. Missing ports have been added to the net using low RC values. The timing accuracy is not reliable for such nets.
+[07/01 15:08:48     42s] **WARN: (SPEF-1152):	Net 'wrst_n ( having pins in3/PAD in3/Y wbin_reg[3]/RN wbin_reg[4]/RN wbin_reg[0]/RN ...)' is not fully specified as per its connectivity in design netlist. Missing ports have been added to the net using low RC values. The timing accuracy is not reliable for such nets.
+[07/01 15:08:48     42s] **WARN: (SPEF-1152):	Net 'rreq ( having pins in4/PAD in4/Y g13171/B g210/AN g211/AN ...)' is not fully specified as per its connectivity in design netlist. Missing ports have been added to the net using low RC values. The timing accuracy is not reliable for such nets.
+[07/01 15:08:48     42s] **WARN: (SPEF-1152):	Net 'rclk ( having pins in5/PAD in5/Y rempty_reg/CK rq2_wptr_reg[3]/CK rbin_reg[0]/CK ...)' is not fully specified as per its connectivity in design netlist. Missing ports have been added to the net using low RC values. The timing accuracy is not reliable for such nets.
+[07/01 15:08:48     42s] **WARN: (SPEF-1152):	Net 'rrst_n ( having pins in6/PAD in6/Y rempty_reg/RN rq2_wptr_reg[3]/RN rbin_reg[0]/RN ...)' is not fully specified as per its connectivity in design netlist. Missing ports have been added to the net using low RC values. The timing accuracy is not reliable for such nets.
+[07/01 15:08:48     42s] **WARN: (SPEF-1152):	Net 'wdata[2] ( having pins in9/PAD mem_reg[7][2]/D mem_reg[15][2]/D mem_reg[1][2]/D mem_reg[5][2]/D ...)' is not fully specified as per its connectivity in design netlist. Missing ports have been added to the net using low RC values. The timing accuracy is not reliable for such nets.
+[07/01 15:08:48     42s] **WARN: (SPEF-1152):	Net 'wdata[1] ( having pins in8/PAD in8/Y mem_reg[7][1]/D mem_reg[15][1]/D mem_reg[5][1]/D ...)' is not fully specified as per its connectivity in design netlist. Missing ports have been added to the net using low RC values. The timing accuracy is not reliable for such nets.
+[07/01 15:08:48     42s] **WARN: (SPEF-1152):	Net 'wdata[0] ( having pins in14/PAD in14/Y in13/PAD in13/Y in12/PAD ...)' is not fully specified as per its connectivity in design netlist. Missing ports have been added to the net using low RC values. The timing accuracy is not reliable for such nets.
+[07/01 15:08:48     42s] **WARN: (SPEF-1152):	Net 'wfull ( having pins out9/A out9/PAD g12788__1705/AN g12787__6260/A g12801__2883/A ...)' is not fully specified as per its connectivity in design netlist. Missing ports have been added to the net using low RC values. The timing accuracy is not reliable for such nets.
+[07/01 15:08:48     42s] **WARN: (SPEF-1152):	Net 'rempty ( having pins out10/A out10/PAD g13250/A rempty_reg/Q g13156/A ...)' is not fully specified as per its connectivity in design netlist. Missing ports have been added to the net using low RC values. The timing accuracy is not reliable for such nets.
+[07/01 15:08:48     42s] SPEF file async_fifo.spef.
+[07/01 15:08:48     42s] Number of Resistors     : 10618
+[07/01 15:08:48     42s] Number of Ground Caps   : 8551
+[07/01 15:08:48     42s] Number of Coupling Caps : 0
+[07/01 15:08:48     42s] 
+[07/01 15:08:48     42s] RCDB /tmp/ssv_tmpdir_193997_7cdbbedd-8680-4121-ae49-81f208e3a8ce_KPTOwh/async_fifo_193997_7cdbbedd-8680-4121-ae49-81f208e3a8ce_EhH0Eo.rcdb.d/async_fifo.rcdb.d Creation Completed (CPU Time= 0:00:00.1  MEM= 3124.9M)
+[07/01 15:08:48     42s] End spef parsing (MEM=3116.91 CPU=0:00:00.1 REAL=0:00:00.0).
+[07/01 15:08:48     42s] Spef for RC Corner 'rc_corner' was previously specified. Dropping the previous specification.
+[07/01 15:08:48     42s] Lumped Parasitic Loading Started (total cpu=0:00:00.0, real=0:00:00.0, current mem=3116.906M)
+[07/01 15:08:48     42s] Opening parasitic data file '/tmp/ssv_tmpdir_193997_7cdbbedd-8680-4121-ae49-81f208e3a8ce_KPTOwh/async_fifo_193997_7cdbbedd-8680-4121-ae49-81f208e3a8ce_EhH0Eo.rcdb.d/async_fifo.rcdb.d' for reading (mem: 3116.906M)
+[07/01 15:08:48     42s] Lumped Parasitic Loading Completed (total cpu=0:00:00.0, real=0:00:00.0, current mem=3116.906M)
+[07/01 15:08:48     42s] Closing parasitic data file '/tmp/ssv_tmpdir_193997_7cdbbedd-8680-4121-ae49-81f208e3a8ce_KPTOwh/async_fifo_193997_7cdbbedd-8680-4121-ae49-81f208e3a8ce_EhH0Eo.rcdb.d/async_fifo.rcdb.d': 0 access done (mem: 3116.906M)
+[07/01 15:08:48     42s] 2 nets are missing in SPEF file. The names of these nets are saved in ./rc_corner.missing_nets.rpt.
+[07/01 15:08:48     42s] **WARN: (IMPEXT-3423):	Detected 11 nets with incomplete RC network. Low-value resistances have been added by the software to complete the RC network of these nets. Review the list of affected nets in the './async_fifo.rc_corner.incomplete_res.net' file to ensure they are not along the critical path because results of timing analysis performed on nets with incomplete RC network can be inaccurate.
+[07/01 15:08:50     43s] <CMD> all_setup_analysis_views
+[07/01 15:09:06     44s] <CMD> read_sdf async_fifo.sdf
+[07/01 15:09:06     44s] **WARN: (TCLCMD-1234):	In multi-mode, multi-corner analysis mode, you should include the -view option with the read_sdf command to annotate the SDF file to specific view(s). Without the -view option, the SDF file will only be annotated to the current default view.
+[07/01 15:12:09     49s] <CMD> get_eco_opt_mode -optimization_failure_tracking_file -quiet
+[07/01 15:12:11     49s] <CMD> get_time_unit
+[07/01 15:12:11     49s] <CMD> report_timing -output_format binary -max_paths 50000 -max_slack 0.75 -path_exceptions all -early > top.btarpt
+[07/01 15:12:11     49s] AAE_INFO: opIsDesignInPostRouteState() is 1
+[07/01 15:12:11     49s] #################################################################################
+[07/01 15:12:11     49s] # Design Name: async_fifo
+[07/01 15:12:11     49s] # Design Mode: 65nm
+[07/01 15:12:11     49s] # Analysis Mode: MMMC Non-OCV 
+[07/01 15:12:11     49s] # Parasitics Mode: SPEF/RCDB 
+[07/01 15:12:11     49s] # Signoff Settings: SI Off 
+[07/01 15:12:11     49s] #################################################################################
+[07/01 15:12:12     49s] Topological Sorting (REAL = 0:00:00.0, MEM = 3332.4M, InitMEM = 3330.3M)
+[07/01 15:12:12     49s] Start delay calculation (fullDC) (1 T). (MEM=2336.29)
+[07/01 15:12:12     49s] Start AAE Lib Loading. (MEM=2345.589844)
+[07/01 15:12:12     49s] End AAE Lib Loading. (MEM=2354.640625 CPU=0:00:00.0 Real=0:00:00.0)
+[07/01 15:12:12     49s] End AAE Lib Interpolated Model. (MEM=2354.640625 CPU Time=0:00:00.0, Real Time=0:00:00.0)
+[07/01 15:12:12     49s] Opening parasitic data file '/tmp/ssv_tmpdir_193997_7cdbbedd-8680-4121-ae49-81f208e3a8ce_KPTOwh/async_fifo_193997_7cdbbedd-8680-4121-ae49-81f208e3a8ce_EhH0Eo.rcdb.d/async_fifo.rcdb.d' for reading (mem: 3595.047M)
+[07/01 15:12:12     49s] RC Database In Completed (CPU Time= 0:00:00.0  Real Time=0:00:00.0  MEM= 3629.0M)
+[07/01 15:12:12     49s] End Timing Check Calculation. (CPU Time=0:00:00.0, Real Time=0:00:00.0)
+[07/01 15:12:12     49s] End Timing Check Calculation. (CPU Time=0:00:00.0, Real Time=0:00:00.0)
+[07/01 15:12:12     49s] End delay calculation. (MEM=2452.33 CPU=0:00:00.3 REAL=0:00:00.0)
+[07/01 15:12:12     49s] Begin loading slews from CTE ...
+[07/01 15:12:12     49s] Loading slews from CTE completed...
+[07/01 15:12:12     49s] End delay calculation (fullDC). (MEM=2446.7 CPU=0:00:00.4 REAL=0:00:00.0)
+[07/01 15:12:13     50s] *** CDM Built up (cpu=0:00:00.9  real=0:00:02.0  mem= 3868.9M) ***
+[07/01 15:12:13     50s] Has not load the powerDB, will keep enalbed
+[07/01 15:12:13     50s] Has not load the powerDB, will keep enalbed
+[07/01 15:12:13     50s] <CMD> load_timing_debug_report -name default_report top.btarpt -max_path_num 10000 -updateCategory 0 -isDrv 0
+[07/01 15:12:13     50s] Parsing file top.btarpt...
+[07/01 15:15:10     55s] <CMD> all_analysis_views
+[07/01 15:15:10     55s] <CMD> all_setup_analysis_views
+[07/01 15:15:10     55s] <CMD> all_hold_analysis_views
+[07/01 15:15:10     55s] <CMD> get_analysis_view $view -delay_corner
+[07/01 15:15:10     55s] <CMD> get_delay_corner $dc -rc_corner
+[07/01 15:15:22     56s] <CMD> add_repeater -cell BUFX2 -net {wdata[2]}
+[07/01 15:15:22     56s] #################################################################################
+[07/01 15:15:22     56s] # Design Name: async_fifo
+[07/01 15:15:22     56s] # Design Mode: 65nm
+[07/01 15:15:22     56s] # Analysis Mode: MMMC Non-OCV 
+[07/01 15:15:22     56s] # Parasitics Mode: SPEF/RCDB 
+[07/01 15:15:22     56s] # Signoff Settings: SI Off 
+[07/01 15:15:22     56s] #################################################################################
+[07/01 15:15:22     56s] #################################################################################
+[07/01 15:15:22     56s] # Design Name: async_fifo
+[07/01 15:15:22     56s] # Design Mode: 65nm
+[07/01 15:15:22     56s] # Analysis Mode: MMMC Non-OCV 
+[07/01 15:15:22     56s] # Parasitics Mode: SPEF/RCDB 
+[07/01 15:15:22     56s] # Signoff Settings: SI Off 
+[07/01 15:15:22     56s] #################################################################################
+[07/01 15:15:22     56s] **ERROR: (IMPOPT-6217):	Net 'wdata[2]' is a multi-driver net, and cannot be buffered by 'add_repeater' command.
+**ERROR: (IMPSYT-7004):	Failed to execute add_repeater command.
+[07/01 15:15:41     58s] <CMD_INTERNAL> redraw
+[07/01 15:15:58     59s] <CMD_INTERNAL> zoomSelected
+[07/01 15:15:58     59s] <CMD_INTERNAL> zoomSelected
+[07/01 15:15:59     59s] <CMD> all_analysis_views
+[07/01 15:15:59     59s] <CMD> all_setup_analysis_views
+[07/01 15:15:59     59s] <CMD> all_hold_analysis_views
+[07/01 15:15:59     59s] <CMD> get_analysis_view $view -delay_corner
+[07/01 15:15:59     59s] <CMD> get_delay_corner $dc -rc_corner
+[07/01 15:16:03     59s] <CMD> all_analysis_views
+[07/01 15:16:03     59s] <CMD> all_setup_analysis_views
+[07/01 15:16:03     59s] <CMD> all_hold_analysis_views
+[07/01 15:16:03     59s] <CMD> get_analysis_view $view -delay_corner
+[07/01 15:16:03     59s] <CMD> get_delay_corner $dc -rc_corner
+[07/01 15:16:07     59s] <CMD> add_repeater -cell BUFX2 -net {wdata[2]}
+[07/01 15:16:07     59s] #################################################################################
+[07/01 15:16:07     59s] # Design Name: async_fifo
+[07/01 15:16:07     59s] # Design Mode: 65nm
+[07/01 15:16:07     59s] # Analysis Mode: MMMC Non-OCV 
+[07/01 15:16:07     59s] # Parasitics Mode: SPEF/RCDB 
+[07/01 15:16:07     59s] # Signoff Settings: SI Off 
+[07/01 15:16:07     59s] #################################################################################
+[07/01 15:16:07     59s] **ERROR: (IMPOPT-6217):	Net 'wdata[2]' is a multi-driver net, and cannot be buffered by 'add_repeater' command.
+**ERROR: (IMPSYT-7004):	Failed to execute add_repeater command.
+[07/01 15:16:39     65s] <CMD_INTERNAL> redraw
+[07/01 15:16:55     66s] <CMD> all_analysis_views
+[07/01 15:16:55     66s] <CMD> all_setup_analysis_views
+[07/01 15:16:55     66s] <CMD> all_hold_analysis_views
+[07/01 15:16:55     66s] <CMD> get_analysis_view $view -delay_corner
+[07/01 15:16:55     66s] <CMD> get_delay_corner $dc -rc_corner
+[07/01 15:17:00     66s] <CMD> add_repeater -cell BUFX2 -net {wdata[2]}
+[07/01 15:17:00     66s] #################################################################################
+[07/01 15:17:00     66s] # Design Name: async_fifo
+[07/01 15:17:00     66s] # Design Mode: 65nm
+[07/01 15:17:00     66s] # Analysis Mode: MMMC Non-OCV 
+[07/01 15:17:00     66s] # Parasitics Mode: SPEF/RCDB 
+[07/01 15:17:00     66s] # Signoff Settings: SI Off 
+[07/01 15:17:00     66s] #################################################################################
+[07/01 15:17:00     66s] **ERROR: (IMPOPT-6217):	Net 'wdata[2]' is a multi-driver net, and cannot be buffered by 'add_repeater' command.
+**ERROR: (IMPSYT-7004):	Failed to execute add_repeater command.
+[07/01 15:17:08     68s] <CMD_INTERNAL> redraw
+[07/01 15:17:16     68s] <CMD> add_repeater -cell BUFX2 -net {wdata[2]}
+[07/01 15:17:16     68s] #################################################################################
+[07/01 15:17:16     68s] # Design Name: async_fifo
+[07/01 15:17:16     68s] # Design Mode: 65nm
+[07/01 15:17:16     68s] # Analysis Mode: MMMC Non-OCV 
+[07/01 15:17:16     68s] # Parasitics Mode: SPEF/RCDB 
+[07/01 15:17:16     68s] # Signoff Settings: SI Off 
+[07/01 15:17:16     68s] #################################################################################
+[07/01 15:17:16     68s] **ERROR: (IMPOPT-6217):	Net 'wdata[2]' is a multi-driver net, and cannot be buffered by 'add_repeater' command.
+**ERROR: (IMPSYT-7004):	Failed to execute add_repeater command.
+[07/01 15:17:30     71s] <CMD_INTERNAL> redraw
+[07/01 15:17:31     71s] <CMD> add_repeater -cell BUFX2 -net {wdata[2]}
+[07/01 15:17:31     71s] #################################################################################
+[07/01 15:17:31     71s] # Design Name: async_fifo
+[07/01 15:17:31     71s] # Design Mode: 65nm
+[07/01 15:17:31     71s] # Analysis Mode: MMMC Non-OCV 
+[07/01 15:17:31     71s] # Parasitics Mode: SPEF/RCDB 
+[07/01 15:17:31     71s] # Signoff Settings: SI Off 
+[07/01 15:17:31     71s] #################################################################################
+[07/01 15:17:31     71s] **ERROR: (IMPOPT-6217):	Net 'wdata[2]' is a multi-driver net, and cannot be buffered by 'add_repeater' command.
+**ERROR: (IMPSYT-7004):	Failed to execute add_repeater command.
+[07/01 15:17:42     74s] <CMD_INTERNAL> redraw
+[07/01 15:18:02     75s] <CMD> all_analysis_views
+[07/01 15:18:02     75s] <CMD> all_setup_analysis_views
+[07/01 15:18:02     75s] <CMD> all_hold_analysis_views
+[07/01 15:18:02     75s] <CMD> get_analysis_view $view -delay_corner
+[07/01 15:18:02     75s] <CMD> get_delay_corner $dc -rc_corner
+[07/01 15:18:21     76s] <CMD> add_repeater -cell BUFX2 -net {}
+[07/01 15:18:21     76s] **ERROR: (IMPOPT-560):	Net '' not found.
+**ERROR: (IMPSYT-7004):	Failed to execute add_repeater command.
+[07/01 15:18:25     77s] <CMD_INTERNAL> redraw
+[07/01 15:18:41     77s] <CMD_INTERNAL> zoomSelected
+[07/01 15:18:41     77s] <CMD_INTERNAL> zoomSelected
+[07/01 15:18:41     77s] <CMD_INTERNAL> zoomSelected
+[07/01 15:18:41     77s] <CMD_INTERNAL> zoomSelected
+[07/01 15:18:42     77s] <CMD> all_analysis_views
+[07/01 15:18:42     77s] <CMD> all_setup_analysis_views
+[07/01 15:18:42     77s] <CMD> all_hold_analysis_views
+[07/01 15:18:42     77s] <CMD> get_analysis_view $view -delay_corner
+[07/01 15:18:42     77s] <CMD> get_delay_corner $dc -rc_corner
+[07/01 15:18:43     77s] <CMD> all_analysis_views
+[07/01 15:18:43     77s] <CMD> all_setup_analysis_views
+[07/01 15:18:43     77s] <CMD> all_hold_analysis_views
+[07/01 15:18:43     77s] <CMD> get_analysis_view $view -delay_corner
+[07/01 15:18:43     77s] <CMD> get_delay_corner $dc -rc_corner
+[07/01 15:19:01     78s] <CMD> add_repeater -cell BUFX2 -net {wdata[2]}
+[07/01 15:19:01     78s] #################################################################################
+[07/01 15:19:01     78s] # Design Name: async_fifo
+[07/01 15:19:01     78s] # Design Mode: 65nm
+[07/01 15:19:01     78s] # Analysis Mode: MMMC Non-OCV 
+[07/01 15:19:01     78s] # Parasitics Mode: SPEF/RCDB 
+[07/01 15:19:01     78s] # Signoff Settings: SI Off 
+[07/01 15:19:01     78s] #################################################################################
+[07/01 15:19:01     78s] **ERROR: (IMPOPT-6217):	Net 'wdata[2]' is a multi-driver net, and cannot be buffered by 'add_repeater' command.
+**ERROR: (IMPSYT-7004):	Failed to execute add_repeater command.
+[07/01 15:19:05     79s] <CMD_INTERNAL> redraw
+[07/01 15:19:34     80s] <CMD_INTERNAL> zoomSelected
+[07/01 15:19:34     80s] <CMD_INTERNAL> zoomSelected
+[07/01 15:19:35     80s] <CMD_INTERNAL> zoomSelected
+[07/01 15:19:35     80s] <CMD_INTERNAL> zoomSelected
+[07/01 15:19:35     80s] <CMD_INTERNAL> zoomSelected
+[07/01 15:19:36     80s] <CMD_INTERNAL> zoomSelected
+[07/01 15:19:36     80s] <CMD_INTERNAL> zoomSelected
+[07/01 15:19:36     80s] <CMD> all_analysis_views
+[07/01 15:19:36     80s] <CMD> all_setup_analysis_views
+[07/01 15:19:36     80s] <CMD> all_hold_analysis_views
+[07/01 15:19:36     80s] <CMD> get_analysis_view $view -delay_corner
+[07/01 15:19:36     80s] <CMD> get_delay_corner $dc -rc_corner
+[07/01 15:20:00     81s] <CMD> add_repeater -cell BUFX2 -net {wdata[2]}
+[07/01 15:20:00     81s] #################################################################################
+[07/01 15:20:00     81s] # Design Name: async_fifo
+[07/01 15:20:00     81s] # Design Mode: 65nm
+[07/01 15:20:00     81s] # Analysis Mode: MMMC Non-OCV 
+[07/01 15:20:00     81s] # Parasitics Mode: SPEF/RCDB 
+[07/01 15:20:00     81s] # Signoff Settings: SI Off 
+[07/01 15:20:00     81s] #################################################################################
+[07/01 15:20:00     81s] **ERROR: (IMPOPT-6217):	Net 'wdata[2]' is a multi-driver net, and cannot be buffered by 'add_repeater' command.
+**ERROR: (IMPSYT-7004):	Failed to execute add_repeater command.
+[07/01 15:20:03     82s] <CMD_INTERNAL> redraw
+[07/01 15:20:25     82s] <CMD> get_time_unit
+[07/01 15:20:25     82s] <CMD> report_timing -output_format binary -max_paths 50000 -max_slack 0.75 -path_exceptions all -early > top.btarpt
+[07/01 15:20:25     82s] <CMD> load_timing_debug_report -name default_report top.btarpt -max_path_num 10000 -updateCategory 0 -isDrv 0
+[07/01 15:20:25     82s] Parsing file top.btarpt...
+[07/01 15:20:31     83s] <CMD_INTERNAL> zoomSelected
+[07/01 15:20:31     83s] <CMD_INTERNAL> zoomSelected
+[07/01 15:20:32     83s] <CMD> all_analysis_views
+[07/01 15:20:32     83s] <CMD> all_setup_analysis_views
+[07/01 15:20:32     83s] <CMD> all_hold_analysis_views
+[07/01 15:20:32     83s] <CMD> get_analysis_view $view -delay_corner
+[07/01 15:20:32     83s] <CMD> get_delay_corner $dc -rc_corner
+[07/01 15:20:49     83s] <CMD> add_repeater -cell BUFX2 -net {wdata[2]}
+[07/01 15:20:49     83s] #################################################################################
+[07/01 15:20:49     83s] # Design Name: async_fifo
+[07/01 15:20:49     83s] # Design Mode: 65nm
+[07/01 15:20:49     83s] # Analysis Mode: MMMC Non-OCV 
+[07/01 15:20:49     83s] # Parasitics Mode: SPEF/RCDB 
+[07/01 15:20:49     83s] # Signoff Settings: SI Off 
+[07/01 15:20:49     83s] #################################################################################
+[07/01 15:20:49     83s] **ERROR: (IMPOPT-6217):	Net 'wdata[2]' is a multi-driver net, and cannot be buffered by 'add_repeater' command.
+**ERROR: (IMPSYT-7004):	Failed to execute add_repeater command.
+[07/01 15:20:59     86s] <CMD_INTERNAL> redraw
+[07/01 15:21:26     87s] <CMD> all_analysis_views
+[07/01 15:21:26     87s] <CMD> all_setup_analysis_views
+[07/01 15:21:26     87s] <CMD> all_hold_analysis_views
+[07/01 15:21:26     87s] <CMD> get_analysis_view $view -delay_corner
+[07/01 15:21:26     87s] <CMD> get_delay_corner $dc -rc_corner
+[07/01 15:21:38     88s] <CMD_INTERNAL> zoomSelected
+[07/01 15:21:38     88s] <CMD_INTERNAL> zoomSelected
+[07/01 15:21:41     88s] <CMD_INTERNAL> zoomSelected
+[07/01 15:21:41     88s] <CMD_INTERNAL> zoomSelected
+[07/01 15:21:41     88s] <CMD> all_analysis_views
+[07/01 15:21:41     88s] <CMD> all_setup_analysis_views
+[07/01 15:21:41     88s] <CMD> all_hold_analysis_views
+[07/01 15:21:41     88s] <CMD> get_analysis_view $view -delay_corner
+[07/01 15:21:41     88s] <CMD> get_delay_corner $dc -rc_corner
+[07/01 15:21:57     88s] <CMD> add_repeater -cell BUFX2 -net {wdata[2]}
+[07/01 15:21:57     88s] #################################################################################
+[07/01 15:21:57     88s] # Design Name: async_fifo
+[07/01 15:21:57     88s] # Design Mode: 65nm
+[07/01 15:21:57     88s] # Analysis Mode: MMMC Non-OCV 
+[07/01 15:21:57     88s] # Parasitics Mode: SPEF/RCDB 
+[07/01 15:21:57     88s] # Signoff Settings: SI Off 
+[07/01 15:21:57     88s] #################################################################################
+[07/01 15:21:57     88s] **ERROR: (IMPOPT-6217):	Net 'wdata[2]' is a multi-driver net, and cannot be buffered by 'add_repeater' command.
+**ERROR: (IMPSYT-7004):	Failed to execute add_repeater command.
+[07/01 15:23:46    131s] <CMD_INTERNAL> redraw
+[07/01 15:23:48    131s] <CMD> deselectAll
+[07/01 15:24:03    132s] <CMD> all_analysis_views
+[07/01 15:24:03    132s] <CMD> all_setup_analysis_views
+[07/01 15:24:03    132s] <CMD> all_hold_analysis_views
+[07/01 15:24:03    132s] <CMD> get_analysis_view $view -delay_corner
+[07/01 15:24:03    132s] <CMD> get_delay_corner $dc -rc_corner
+[07/01 15:24:08    132s] <CMD> all_analysis_views
+[07/01 15:24:08    132s] <CMD> all_setup_analysis_views
+[07/01 15:24:08    132s] <CMD> all_hold_analysis_views
+[07/01 15:24:08    132s] <CMD> get_analysis_view $view -delay_corner
+[07/01 15:24:08    132s] <CMD> get_delay_corner $dc -rc_corner
+[07/01 15:24:26    133s] <CMD> get_time_unit
+[07/01 15:24:26    133s] <CMD> report_timing -output_format binary -max_paths 50000 -max_slack 0.75 -path_exceptions all -late > top.btarpt
+[07/01 15:24:27    133s] <CMD> load_timing_debug_report -name default_report top.btarpt -max_path_num 10000 -updateCategory 0 -isDrv 0
+[07/01 15:24:27    133s] Parsing file top.btarpt...
+[07/01 15:24:33    133s] <CMD> get_time_unit
+[07/01 15:24:33    133s] <CMD> report_timing -output_format binary -max_paths 50000 -max_slack 0.75 -path_exceptions all -early > top.btarpt
+[07/01 15:24:33    133s] <CMD> load_timing_debug_report -name default_report top.btarpt -max_path_num 10000 -updateCategory 0 -isDrv 0
+[07/01 15:24:33    133s] Parsing file top.btarpt...
+[07/01 15:24:39    134s] <CMD> all_analysis_views
+[07/01 15:24:39    134s] <CMD> all_setup_analysis_views
+[07/01 15:24:39    134s] <CMD> all_hold_analysis_views
+[07/01 15:24:39    134s] <CMD> get_analysis_view $view -delay_corner
+[07/01 15:24:39    134s] <CMD> get_delay_corner $dc -rc_corner
+[07/01 15:24:49    134s] <CMD> all_analysis_views
+[07/01 15:24:49    134s] <CMD> all_setup_analysis_views
+[07/01 15:24:49    134s] <CMD> all_hold_analysis_views
+[07/01 15:24:49    134s] <CMD> get_analysis_view $view -delay_corner
+[07/01 15:24:49    134s] <CMD> get_delay_corner $dc -rc_corner
+[07/01 15:25:17    136s] <CMD_INTERNAL> zoomSelected
+[07/01 15:25:17    136s] <CMD_INTERNAL> zoomSelected
+[07/01 15:25:17    136s] <CMD_INTERNAL> zoomSelected
+[07/01 15:25:18    136s] <CMD> all_analysis_views
+[07/01 15:25:18    136s] <CMD> all_setup_analysis_views
+[07/01 15:25:18    136s] <CMD> all_hold_analysis_views
+[07/01 15:25:18    136s] <CMD> get_analysis_view $view -delay_corner
+[07/01 15:25:18    136s] <CMD> get_delay_corner $dc -rc_corner
+[07/01 15:25:18    136s] <CMD> all_analysis_views
+[07/01 15:25:18    136s] <CMD> all_setup_analysis_views
+[07/01 15:25:18    136s] <CMD> all_hold_analysis_views
+[07/01 15:25:18    136s] <CMD> get_analysis_view $view -delay_corner
+[07/01 15:25:18    136s] <CMD> get_delay_corner $dc -rc_corner
+[07/01 15:25:20    136s] <CMD_INTERNAL> zoomSelected
+[07/01 15:25:20    136s] <CMD_INTERNAL> zoomSelected
+[07/01 15:25:20    136s] <CMD> all_analysis_views
+[07/01 15:25:20    136s] <CMD> all_setup_analysis_views
+[07/01 15:25:20    136s] <CMD> all_hold_analysis_views
+[07/01 15:25:20    136s] <CMD> get_analysis_view $view -delay_corner
+[07/01 15:25:20    136s] <CMD> get_delay_corner $dc -rc_corner
+[07/01 15:25:21    136s] <CMD> all_analysis_views
+[07/01 15:25:21    136s] <CMD> all_setup_analysis_views
+[07/01 15:25:21    136s] <CMD> all_hold_analysis_views
+[07/01 15:25:21    136s] <CMD> get_analysis_view $view -delay_corner
+[07/01 15:25:21    136s] <CMD> get_delay_corner $dc -rc_corner
+[07/01 15:25:43    136s] <CMD> add_repeater -cell BUFX2 -net wrst_n
+[07/01 15:25:43    136s] #################################################################################
+[07/01 15:25:43    136s] # Design Name: async_fifo
+[07/01 15:25:43    136s] # Design Mode: 65nm
+[07/01 15:25:43    136s] # Analysis Mode: MMMC Non-OCV 
+[07/01 15:25:43    136s] # Parasitics Mode: SPEF/RCDB 
+[07/01 15:25:43    136s] # Signoff Settings: SI Off 
+[07/01 15:25:43    136s] #################################################################################
+[07/01 15:25:43    136s] **ERROR: (IMPOPT-6217):	Net 'wrst_n' is a multi-driver net, and cannot be buffered by 'add_repeater' command.
+**ERROR: (IMPSYT-7004):	Failed to execute add_repeater command.
+[07/01 15:25:44    137s] <CMD_INTERNAL> redraw
